@@ -1,0 +1,54 @@
+{
+  "version.label": {
+    "message": "2.2.9.RELEASE",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Overview": {
+    "message": "Overview",
+    "description": "The label for category Overview in sidebar docs"
+  },
+  "sidebar.docs.category.User Guide": {
+    "message": "User Guide",
+    "description": "The label for category User Doc in sidebar docs"
+  },
+  "sidebar.docs.category.Nacos": {
+    "message": "Registration Configuration Center",
+    "description": "The label for category User Doc in sidebar docs"
+  },
+  "sidebar.docs.category.Seata": {
+    "message": "Distributed Transaction",
+    "description": "The label for category User Doc in sidebar docs"
+  },
+  "sidebar.docs.category.Sentinel": {
+    "message": "Current-Limiting Degradation",
+    "description": "The label for category User Doc in sidebar docs"
+  },
+  "sidebar.docs.category.RocketMQ": {
+    "message": "Distributed Message",
+    "description": "The label for category User Doc in sidebar docs"
+  },
+  "sidebar.docs.category.Sidecar": {
+    "message": "Heterogeneous Service",
+    "description": "The label for category User Doc in sidebar docs"
+  },
+  "sidebar.docs.category.Service Governance": {
+    "message": "Service Governance",
+    "description": "The label for category User Doc in sidebar docs"
+  },
+  "sidebar.docs.category.Traffic Managent": {
+    "message": "Traffic Managent",
+    "description": "The label for category User Doc in sidebar docs"
+  },
+  "sidebar.docs.category.Service Security": {
+    "message": "Service Security",
+    "description": "The label for category User Doc in sidebar docs"
+  },
+  "sidebar.docs.category.Best practice": {
+    "message": "Best Practice",
+    "description": "The label for category Parameters Configurations Guide in sidebar docs"
+  },
+  "sidebar.docs.category.Reference manual": {
+    "message": "Reference Manual",
+    "description": "The label for category Reference in sidebar docs"
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "developers": [{
+        "type": "category",
+        "label": "Developer",
+        "collapsed": false,
+        "items": [
+            "developers_dev",
+            {
+                "type": "category",
+                "label": "Contribution guide",
+                "collapsible": false,
+                "collapsed": false,
+                "items": [
+                    "contributor-guide/new-contributor-guide_dev",
+                    "contributor-guide/reporting-security-issues_dev"
+                ]
+            }
+        ]
+    }]
+}

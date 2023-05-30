@@ -1,0 +1,10 @@
+{
+    "sidebar.developers.category.Developer": {
+        "message": "开发者",
+        "description": "The label for link GitHub in sidebar sidebar, linking to https://github.com/LinwoodCloud/Butterfly"
+    },
+    "sidebar.developers.category.Contribution guide": {
+        "message": "贡献者指南",
+        "description": "The label for category Embedding in sidebar sidebar"
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "community": [{
+        "type": "category",
+        "label": "Community",
+        "collapsed": false,
+        "items": [{
+                "type": "category",
+                "label": "Community Meeting",
+                "collapsible": false,
+                "collapsed": false,
+                "items": [
+                    "community-weekly-meeting/host-of-weekly-meeting",
+                    "community-weekly-meeting/attend-a-meeting",
+                    "community-weekly-meeting/minutes-of-meeting"
+                ]
+            },
+            {
+                "type": "category",
+                "label": "Events News",
+                "collapsible": false,
+                "collapsed": false,
+                "items": [
+                    "events-news/events-news"
+                ]
+            },
+            {
+                "type": "category",
+                "label": "Discussion Feedback",
+                "collapsible": false,
+                "collapsed": false,
+                "items": [
+                    "discussion-feedback/discussion-feedback"
+                ]
+            }
+        ]
+    }]
+}

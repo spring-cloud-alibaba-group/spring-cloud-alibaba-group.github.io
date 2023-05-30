@@ -1,0 +1,30 @@
+{
+    "sidebar.community.category.Community": {
+        "message": "社区",
+        "description": "The label for Community Meeting in sidebar sidebar"
+    },
+    "sidebar.community.category.Community Meeting": {
+        "message": "社区周会",
+        "description": "The label for Community Meeting in sidebar sidebar"
+    },
+    "sidebar.community.category.Events News": {
+        "message": "事件 & 新闻",
+        "description": "The label for Events News in sidebar sidebar"
+    },
+    "sidebar.community.category.Discussion Feedback": {
+        "message": "讨论 & 反馈",
+        "description": "The label for Discussion Feedback in sidebar sidebar"
+    },
+    "sidebar.community.category.Construction Development": {
+        "message": "建设 & 发展",
+        "description": "The label for Construction Development in sidebar sidebar"
+    },
+    "sidebar.community.category.Community Construction": {
+        "message": "社区建设",
+        "description": "The label for Community Construction in sidebar sidebar"
+    },
+    "sidebar.community.category.Document Construction": {
+        "message": "文档建设",
+        "description": "The label for Document Construction in sidebar sidebar"
+    }
+}
