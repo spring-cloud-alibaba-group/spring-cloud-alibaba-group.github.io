@@ -40,4 +40,4 @@ User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
 Disallow: /bin/
-Sitemap: https://higress.io/sitemap.xml
+Sitemap: https://spring-cloud-alibaba.io/sitemap.xml

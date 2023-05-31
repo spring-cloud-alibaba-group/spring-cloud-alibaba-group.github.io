@@ -15,13 +15,14 @@ const commonDocsOptions = {
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Spring Cloud Alibaba',
-  favicon: 'img/higress_logo_small.png',
+  // TODO 更新 logo
+  favicon: 'img/spring-cloud-alibaba_logo_small.png',
   themes: [
     require.resolve("@easyops-cn/docusaurus-search-local"),
     /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
   ],
   // Set the production url of your site here
-  url: 'https://higress.io',
+  url: 'https://spring-cloud-alibaba.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -140,7 +141,8 @@ const config = {
     ({
       metadata: [{ name: 'keywords', content: 'Spring Cloud Alibaba,微服务' }],
       // Replace with your project's social card
-      image: 'img/higress_logo_small.png',
+      // TODO 更新 logo
+      image: 'img/spring-cloud-alibaba_logo_small.png',
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true, // 禁止切换主题模式

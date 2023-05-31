@@ -1,6 +1,6 @@
-FROM registry.cn-hangzhou.aliyuncs.com/mse-ingress/higress-docsite-base:v1
+FROM registry.cn-hangzhou.aliyuncs.com/mse-spring-cloud-alibaba/spring-cloud-alibaba-docsite-base:v1
 
-WORKDIR /higress
+WORKDIR /spring-cloud-alibaba
 
 COPY . .
 
