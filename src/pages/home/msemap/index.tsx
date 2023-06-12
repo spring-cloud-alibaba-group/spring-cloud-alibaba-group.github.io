@@ -1,11 +1,11 @@
-import React from 'react';
-import { translate } from '@docusaurus/Translate';
-import './index.scss';
+import React from "react";
+import { translate } from "@docusaurus/Translate";
+import "./index.scss";
 
-import BrowserOnly from '@docusaurus/BrowserOnly';
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
 const data = {
-  title: translate({ id: 'homepage.msemapTitle', message: '微服务全景图' }),
+  title: translate({ id: "homepage.msemapTitle", message: "微服务全景图" }),
 };
 
 const MseMap = () => {
@@ -14,7 +14,7 @@ const MseMap = () => {
       {() => (
         <section className="msemap-section">
           <div className="msemap-container">
-            <h3>{data.title}</h3>
+            {/* <h3>{data.title}</h3> */}
             <div id="mse-arc-container"></div>
           </div>
         </section>

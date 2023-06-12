@@ -1,50 +1,53 @@
-import React from 'react';
-import { translate } from '@docusaurus/Translate';
-import { Button, ButtonType } from '../../../components';
-import { getLink } from '../../../utils';
+import React from "react";
+import { translate } from "@docusaurus/Translate";
+import { Button, ButtonType } from "../../../components";
+import { getLink } from "../../../utils";
 
-import BrowserOnly from '@docusaurus/BrowserOnly';
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
-import './index.scss';
+import "./index.scss";
 
 const topData = {
   // 删除logo
   // brandLogoUrl: 'https://img.alicdn.com/imgextra/i1/O1CN01bmdCFQ1Zupzs0XIKc_!!6000000003255-55-tps-288-86.svg',
-  briefIntroduction: translate({
-    id: 'homepage.briefIntroduction',
-    message:
-      'Spring Cloud Alibaba 致力于提供微服务开发的一站式解决方案!',
+  briefIntroductionTitle: translate({
+    id: "homepage.briefIntroductionTitle",
+    message: "Spring Cloud Alibaba",
+  }),
+  briefIntroductionDesc: translate({
+    id: "homepage.briefIntroductionDesc",
+    message: "致力于提供微服务开发的一站式解决方案!",
   }),
   buttons: [
     {
-      text: translate({ id: 'homepage.quickstartButton', message: '快速入门' }),
-      link: '/docs/user-guide/nacos/quick-start',
-      type: 'primary',
+      text: translate({ id: "homepage.quickstartButton", message: "快速入门" }),
+      link: "/docs/user-guide/nacos/quick-start",
+      type: "normal",
     },
     {
-      text: 'GitHub',
-      link: 'https://github.com/alibaba/spring-cloud-alibaba',
-      type: 'normal',
-      target: '_blank',
+      text: "GitHub",
+      link: "https://github.com/alibaba/spring-cloud-alibaba",
+      type: "normal",
+      target: "_blank",
     },
   ],
   versionNote: {
-    text: 'Release Note of 2021.0.5.0',
-    link: 'https://github.com/alibaba/spring-cloud-alibaba/releases/tag/2021.0.5.0',
+    text: "Release Note of 2021.0.5.0",
+    link: "https://github.com/alibaba/spring-cloud-alibaba/releases/tag/2021.0.5.0",
   },
-  releaseDate: 'Released on March 22, 2023',
+  releaseDate: "Released on March 22, 2023",
 };
 
 const Top = ({ language }: { language?: string }) => {
   const [state, setState] = React.useState({
-    starCount: '',
-    forkCount: '',
+    starCount: "",
+    forkCount: "",
   });
 
   const { starCount, forkCount } = state;
 
   React.useEffect(() => {
-    fetch('//api.github.com/repos/alibaba/spring-cloud-alibaba')
+    fetch("//api.github.com/repos/alibaba/spring-cloud-alibaba")
       .then((res) => res.json())
       .then((data) => {
         setState({
@@ -60,39 +63,55 @@ const Top = ({ language }: { language?: string }) => {
         <section className="top-section">
           <div className="top-body">
             <div className="vertical-middle">
-              <div className="product-name">
+              {/* <div className="product-name">
                 <img src={getLink(topData.brandLogoUrl)} />
-              </div>
-              <p className="product-desc">{topData.briefIntroduction}</p>
+              </div> */}
+              <p className="product-title">{topData.briefIntroductionTitle}</p>
+              <p className="product-desc">{topData.briefIntroductionDesc}</p>
               <div className="button-area">
                 {topData.buttons.map((b) => (
-                  <Button type={b.type as ButtonType} key={b.text} link={b.link} target={b.target} language={language}>
+                  <Button
+                    type={b.type as ButtonType}
+                    key={b.text}
+                    link={b.link}
+                    target={b.target}
+                    language={language}
+                  >
                     {b.text}
                   </Button>
                 ))}
               </div>
               <div className="github-buttons">
-                <a href="https://github.com/alibaba/spring-cloud-alibaba" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/alibaba/spring-cloud-alibaba"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="star">
-                    <img src="https://img.alicdn.com/tfs/TB1FlB1JwHqK1RjSZFPXXcwapXa-32-32.png" />
+                    <img src="https://img.alicdn.com/imgextra/i2/O1CN01p5mlMy1jXc76s8KB2_!!6000000004558-2-tps-300-300.png" />
                     <span className="type">Star</span>
                     <span className="line" />
-                    <span className="count">{starCount}</span>
                   </div>
+                  <div className="count">{starCount}</div>
                 </a>
-                <a href="https://github.com/alibaba/spring-cloud-alibaba/fork" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/alibaba/spring-cloud-alibaba/fork"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="fork">
-                    <img src="https://img.alicdn.com/tfs/TB1zbxSJwDqK1RjSZSyXXaxEVXa-32-32.png" />
+                    <img src="https://img.alicdn.com/imgextra/i2/O1CN01GQIcbr1o7ZfwkxGs1_!!6000000005178-2-tps-300-300.png" />
                     <span className="type">Fork</span>
                     <span className="line" />
-                    <span className="count">{forkCount}</span>
+                  </div>
+                  <div className="count">{forkCount}</div>
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href={getLink(topData.versionNote.link)}>
+                  <div className="release-note">
+                    <span className="type ">{topData.versionNote.text}</span>
                   </div>
                 </a>
-              </div>
-              <div className="version-note">
-                <a target="_blank" rel="noopener noreferrer" href={getLink(topData.versionNote.link)}>
-                  {topData.versionNote.text}
-                </a>
+                {/* <div className="version-note"></div> */}
               </div>
               {/* <div className="release-date">{dataSource.brand.releaseDate}</div> */}
             </div>

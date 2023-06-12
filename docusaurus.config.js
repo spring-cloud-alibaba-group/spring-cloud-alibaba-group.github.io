@@ -150,7 +150,8 @@ const config = {
         title: '',
         logo: {
           alt: 'Spring Cloud Alibaba logo',
-          src: 'https://sca-storage.oss-cn-hangzhou.aliyuncs.com/website/logo-touming.png',
+          src: 'https://img.alicdn.com/imgextra/i3/O1CN01gnjFs91iXme8gzkDu_!!6000000004423-55-tps-252-40.svg',
+          style: { marginTop: '4px' },
         },
         items: [
           {
@@ -196,85 +197,85 @@ const config = {
           },
         ],
       },
-      footer: {
-        style: 'light',
-        links: [
-          {
-            title: 'Vision',
-            items: [
-              {
-                label: 'introduce',
-                to: '/',
-              },
-            ],
-          },
-          {
-            title: 'Documentation',
-            items: [
-              {
-                label: 'What is Spring Cloud Alibaba?',
-                to: '/docs/overview/what-is-sca',
-              },
-              {
-                label: 'Quick Start',
-                to: '/docs/user-guide/nacos/quick-start',
-              },
-              {
-                label: 'Report a doc issue',
-                href: 'https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/issues/new',
-              },
-              {
-                label: 'Edit This Page on GitHub',
-                href: 'https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io',
-              },
-            ],
-          },
-          {
-            title: 'Resources',
-            items: [
-              {
-                label: 'Last Version',
-                to: '/docs/2021.0.5.0/overview/what-is-sca',
-              },
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'Community',
-                to: '/community/events-news',
-              },
-              {
-                label: "Github",
-                href: "https://github.com/alibaba/spring-cloud-alibaba"
-              }
-            ],
-          },
-          {
-            title: 'Friend Chain',
-            items: [
-              {
-                label: 'Higress',
-                href: 'https://higress.io/zh-cn/index.html',
-              },
-              {
-                label: 'Seata',
-                href: 'https://seata.io/zh-cn/index.html',
-              },
-              {
-                label: 'Nacos',
-                href: 'https://nacos.io/zh-cn/index.html',
-              },
-            ],
-          }
-        ],
-        /*logo: {
-          src: '//img.alicdn.com/imgextra/i2/O1CN01oNTGgE1lfW7oEPIzP_!!6000000004846-2-tps-960-290.png',
-          width: 120,
-          height: 36,
-        },*/
-        copyright: `Copyright © ${new Date().getFullYear()} Spring Cloud Alibaba<br/>浙公网安备 33011002016922号 浙ICP备12022327号-1119`,
-      },
+      // footer: {
+      //   style: 'light',
+      //   links: [
+      //     {
+      //       title: 'Vision',
+      //       items: [
+      //         {
+      //           label: 'introduce',
+      //           to: '/',
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       title: 'Documentation',
+      //       items: [
+      //         {
+      //           label: 'What is Spring Cloud Alibaba?',
+      //           to: '/docs/overview/what-is-sca',
+      //         },
+      //         {
+      //           label: 'Quick Start',
+      //           to: '/docs/user-guide/nacos/quick-start',
+      //         },
+      //         {
+      //           label: 'Report a doc issue',
+      //           href: 'https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/issues/new',
+      //         },
+      //         {
+      //           label: 'Edit This Page on GitHub',
+      //           href: 'https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io',
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       title: 'Resources',
+      //       items: [
+      //         {
+      //           label: 'Last Version',
+      //           to: '/docs/2021.0.5.0/overview/what-is-sca',
+      //         },
+      //         {
+      //           label: 'Blog',
+      //           to: '/blog',
+      //         },
+      //         {
+      //           label: 'Community',
+      //           to: '/community/events-news',
+      //         },
+      //         {
+      //           label: "Github",
+      //           href: "https://github.com/alibaba/spring-cloud-alibaba"
+      //         }
+      //       ],
+      //     },
+      //     {
+      //       title: 'Friend Chain',
+      //       items: [
+      //         {
+      //           label: 'Higress',
+      //           href: 'https://higress.io/zh-cn/index.html',
+      //         },
+      //         {
+      //           label: 'Seata',
+      //           href: 'https://seata.io/zh-cn/index.html',
+      //         },
+      //         {
+      //           label: 'Nacos',
+      //           href: 'https://nacos.io/zh-cn/index.html',
+      //         },
+      //       ],
+      //     }
+      //   ],
+      //   /*logo: {
+      //     src: '//img.alicdn.com/imgextra/i2/O1CN01oNTGgE1lfW7oEPIzP_!!6000000004846-2-tps-960-290.png',
+      //     width: 120,
+      //     height: 36,
+      //   },*/
+      //   // copyright: `Copyright © ${new Date().getFullYear()} Spring Cloud Alibaba<br/>浙公网安备 33011002016922号 浙ICP备12022327号-1119`,
+      // },
       docs: {
         sidebar: {
           autoCollapseCategories: true,

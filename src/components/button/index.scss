@@ -15,11 +15,17 @@
   text-decoration: none;
 
   &-primary {
-    border: 4px solid #5381fd;
+    border: 2px solid #5381fd;
     color: #5381fd;
   }
+
   &-normal {
-    border: 4px solid #fff;
+    border: 2px solid #333;
     color: #333;
+  }
+
+  &-normal:hover {
+    border: 2px solid #69BD44;
+    color: #69BD44;
   }
 }
