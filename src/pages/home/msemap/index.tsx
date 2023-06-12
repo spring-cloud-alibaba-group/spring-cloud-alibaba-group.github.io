@@ -14,7 +14,7 @@ const MseMap = () => {
       {() => (
         <section className="msemap-section">
           <div className="msemap-container">
-            {/* <h3>{data.title}</h3> */}
+            <h3>{data.title}</h3>
             <div id="mse-arc-container"></div>
           </div>
         </section>

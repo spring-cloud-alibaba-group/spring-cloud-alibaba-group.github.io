@@ -53,7 +53,7 @@ const config = {
     },
   },
   scripts: [
-    { src: '//g.alicdn.com/mamba/assets/0.0.19/mse-arc-ui.min.js' },
+    { src: '//g.alicdn.com/mamba/mse-arc-ui/0.0.1/umd/mse-arc-ui.min.js' },
     {
       src: '//g.alicdn.com/alilog/mlog/aplus_v2.js',
       id: 'beacon-aplus',
@@ -69,7 +69,7 @@ const config = {
   ],
   stylesheets: [
     {
-      href: '//g.alicdn.com/mamba/assets/0.0.19/mse-arc-ui.min.css',
+      href: '//g.alicdn.com/mamba/mse-arc-ui/0.0.1/umd/mse-arc-ui.min.css',
     },
   ],
   plugins: [
