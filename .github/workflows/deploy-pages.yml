@@ -22,7 +22,8 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile --non-interactive
       - name: Build
-        run: yarn build
+        run: |
+          npm install && npm run build
       # 👆 Build steps
       - name: Setup Pages
         uses: actions/configure-pages@v1
