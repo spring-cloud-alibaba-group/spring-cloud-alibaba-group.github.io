@@ -1,12 +1,16 @@
 @import '../../../css/variables.scss';
+
 .msemap-section {
   .msemap-container {
     h3 {
-      font-family: Avenir-Medium;
-      font-weight: 700;
-      font-size: 36px;
-      color: #333;
+      font-family: PingFangSC;
+      font-weight: 500;
+      font-size: 48px;
+      color: #69BD44;
       text-align: center;
+      background-image: repeating-linear-gradient(to left, #93dc83, #ffffff);
+      margin-bottom: 0;
+      padding: 40px 0 10px 0;
     }
   }
 }

@@ -1,11 +1,11 @@
-import React from 'react';
-import { translate } from '@docusaurus/Translate';
-import './index.scss';
+import React from "react";
+import { translate } from "@docusaurus/Translate";
+import "./index.scss";
 
-import BrowserOnly from '@docusaurus/BrowserOnly';
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
 const data = {
-  title: translate({ id: 'homepage.msemapTitle', message: '微服务全景图' }),
+  title: translate({ id: "homepage.msemapTitle", message: "微服务全景图" }),
 };
 
 const MseMap = () => {

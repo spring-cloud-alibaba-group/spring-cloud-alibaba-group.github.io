@@ -1,8 +1,11 @@
 @import '../../../css/variables.scss';
+
 .introduction-section {
-  background: #fff;
+  // background: #fff;
+  background-image: repeating-linear-gradient(to top, #93dc83, #fff);
+
   .introduction-body {
-    max-width: $contentWidth;
+    // max-width: $contentWidth;
     box-sizing: border-box;
     margin: 0 auto;
     min-height: 640px;
@@ -12,37 +15,48 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
     .introduction {
       display: inline-block;
       width: calc(100% - 530px);
-      min-width: 300px;
-      max-width: 650px;
+      // min-width: 300px;
+      // max-width: 650px;
+
       h3 {
-        font-family: Avenir-Medium;
-        font-weight: 700;
-        font-size: 36px;
+        font-family: PingFangSC;
+        font-weight: 500;
+        font-size: 48px;
         margin-bottom: 20px;
         word-break: break-word;
-        color: #5381fd;
+        color: #69BD44;
+        text-align: center;
       }
+
       p {
         line-height: 28px;
-        opacity: 0.56;
+        // opacity: 0.56;
         font-family: Avenir-Medium;
         font-size: 18px;
-        color: #333;
+        color: #000;
         margin-bottom: 20px;
+        // padding: 0 40px;
+        // width: 80%;
+        // text-align: center;
       }
+
       ul {
         list-style: none;
         margin-top: 25px;
+
         li {
           position: relative;
           margin-bottom: 25px;
+
           &:last-child {
             margin-bottom: 0;
           }
         }
+
         li::before {
           content: '';
           position: absolute;
@@ -53,17 +67,20 @@
           background: #999;
           border-radius: 50%;
         }
+
         p {
           display: inline-block;
           margin-left: 12px;
         }
       }
     }
+
     .img-wrapper {
       width: 100vw;
-      text-align:center;
+      text-align: center;
+
       img {
-        width: 70%;
+        width: 80%;
         height: auto;
         // width: 1134px;
         // height: 553px;
@@ -77,6 +94,7 @@
         width: 100%;
         max-width: 100%;
       }
+
       img {
         margin: 0;
       }

@@ -286,6 +286,9 @@
     "message": "Quick Start"
   },
   "homepage.footerDocListText3": {
+    "message": "Report documentation problems"
+  },
+  "homepage.footerDocListText4": {
     "message": "Edit This Page on GitHub"
   },
   "homepage.footerResourcesTitle": {
@@ -352,55 +355,61 @@
     "message": "Create a brilliant"
   },
   "homepage.introTitle": {
-    "message": "Welcome to scan and join the community to build Spring Cloud Alibaba"
+    "message": "What is Spring Cloud Alibaba?"
   },
   "homepage.featureListTitle1": {
-    "message": "Easy to use"
+    "message": "Multiple registry types supported"
   },
   "homepage.featureListContent1": {
-    "message": "Provide one-stop gateway solutions for traffic scheduling, service management, and security protection, support Console, K8s Ingress, and Gateway API configuration methods, and also support HTTP to Dubbo protocol conversion, and easily complete protocol mapping configuration."
+    "message": "Provides a multi-registry component, support Nacos、 ZooKeeper、 Consul, and based on this component can add more types of registry"
   },
   "homepage.featureListTitle2": {
-    "message": "Production grade"
+    "message": "Multi-kubernetes cluster support"
   },
   "homepage.featureListContent2": {
-    "message": "An internal product that was born out of Alibaba's production and verification, experienced the peak of Double Eleven, and an enterprise-level open source product"
+    "message": "A Higress Controller can listen to multiple Kubernetes clusters at the same time, facilitating unified route management across multiple clusters"
   },
   "homepage.featureListTitle3": {
-    "message": "Easy to expand"
+    "message": "Multiple extension modes are supported"
   },
   "homepage.featureListContent3": {
-    "message": "Provides Wasm, Lua, and out-of-process plug-in extension mechanisms, so that multi-language plug-in writing is no longer an obstacle. The granularity of plug-in effectiveness supports not only the global level, domain name level, but also fine-grained routing level"
+    "message": "It supports Wasm plug-ins, Lua plug-ins, and out-of-process plug-ins. With a variety of plug-in extension mechanisms, users can write plug-in extensions in multiple languages, effectively reducing the threshold for writing plug-in extensions and meeting user-defined extension requirements"
   },
   "homepage.featureListTitle4": {
-    "message": "Dynamic hot update"
+    "message": "Dubbo protocol conversion"
   },
   "homepage.featureListContent4": {
-    "message": "Get rid of the traffic jitter caused by reload at the bottom, the configuration change takes effect in milliseconds and the business is not affected, the Wasm plug-in is hot updated and the traffic is not damaged"
+    "message": "The HTTP protocol can be converted to the Dubbo protocol, reducing the access cost of exposing Dubbo services to external users, and meeting the scenarios where traditional Dubbo microservice users wish to provide external access requests"
   },
   "homepage.featureListTitle5": {
-    "message": "Smooth upgrade"
+    "message": "Sentinel support"
   },
   "homepage.featureListContent5": {
-    "message": "Compatible with 80%+ usage scenarios of Nginx Ingress Annotation, and provides more feature-rich annotations, easy to handle Nginx Ingress migration in one step"
+    "message": "In-depth integration of Sentinel, one-stop to meet the traditional microservice users on the current limiting, downgrade, fuse and other high availability requirements"
   },
   "homepage.featureTitle": {
     "message": "Feature List"
   },
   "homepage.featureListTitle6": {
-    "message": "Security"
+    "message": "Modsecurity"
   },
   "homepage.featureListContent6": {
-    "message": "Provides JWT, OIDC, custom authentication and authentication, deeply integrates open source web application firewall."
+    "message": "It integrates the open source Web application firewall to meet the primary protection requirements of gateway users for security"
   },
-  "homepage.introDesc": {
-    "message": "Powered by Spring Cloud"
+  "homepage.introDescFirst": {
+    "message": "Spring Cloud Alibaba provides a one-stop solution for distributed application development. It contains all the components you need to develop distributed applications, making it easy to develop applications using Spring Cloud."
+  },
+  "homepage.introDescSecond": {
+    "message": "With Spring Cloud Alibaba, you only need to add a few comments and a small amount of configuration, you can connect Spring Cloud applications to Alibaba's distributed solution, using Alibaba's middleware to build a distributed application system."
   },
   "homepage.msemapTitle": {
     "message": "Microservice Ecosystem Landscape"
   },
-  "homepage.briefIntroduction": {
-    "message": "Spring Cloud Alibaba is a one-stop solution for micro-service development launched by Alibaba in combination with its own rich micro-service practice."
+  "homepage.briefIntroductionTitle": {
+    "message": "Spring Cloud Alibaba"
+  },
+  "homepage.briefIntroductionDesc": {
+    "message": ""
   },
   "homepage.quickstartButton": {
     "message": "Get Started"
