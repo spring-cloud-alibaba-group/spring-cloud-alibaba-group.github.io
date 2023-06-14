@@ -5,8 +5,8 @@ on:
     branches:
       - master
 jobs:
-  if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
   deploy:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
       pages: write      # to deploy to Pages
