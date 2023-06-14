@@ -23,7 +23,7 @@ export const getScrollTop = () => {
 export const getLink = (link, language) => {
   if (`${link}`.length > 1 && /^\/[^/]/.test(`${link}`)) {
     if (!language) {
-      const path = window.location.pathname;
+      const path = window?.location.pathname;
       if (path !== '/') {
         const secondSlash = path.indexOf('/', 1);
         const topDir = path.substring(1, secondSlash);
