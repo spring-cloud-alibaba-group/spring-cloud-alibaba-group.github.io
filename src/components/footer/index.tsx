@@ -1,6 +1,7 @@
 import React from "react";
 import { translate } from "@docusaurus/Translate";
-import { getLink } from "../../utils";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+
 import "./index.scss";
 
 const LicenseLogo =
@@ -27,12 +28,12 @@ const data = {
     list: [
       {
         text: translate({ id: "homepage.footerDocListText1", message: "概览" }),
-        link: "docs/overview/what-is-sca",
+        link: "/docs/overview/what-is-sca",
         target: "",
       },
       {
         text: translate({ id: "homepage.footerDocListText2", message: "快速开始" }),
-        link: "docs/user-guide/nacos/quick-start",
+        link: "/docs/user-guide/nacos/quick-start",
         target: "",
       },
       {
@@ -52,12 +53,12 @@ const data = {
     list: [
       {
         text: translate({ id: "homepage.footerResourcesListText2", message: "社区" }),
-        link: "community/community-weekly-meeting/host-of-weekly-meeting",
+        link: "/community/community-weekly-meeting/host-of-weekly-meeting",
         target: "",
       },
       {
         text: translate({ id: "homepage.footerResourcesListText1", message: "博客" }),
-        link: "blog",
+        link: "/blog",
         target: "",
       },
     ],
@@ -71,6 +72,8 @@ type Props = {
 
 const Footer = (props: Props) => {
   const { logo } = props;
+  const { i18n } = useDocusaurusContext();
+  const curLang = i18n.currentLocale;
 
   return (
     <footer className="footer-container">
@@ -94,7 +97,7 @@ const Footer = (props: Props) => {
                     </a>
                   )}
                   {d.link?.substr(0, 4) !== "http" && (
-                    <a href={`${window.location.pathname}${d.link}`} target={d.target || "_self"}>
+                    <a href={`/${curLang}${d.link}`} target={d.target || "_self"}>
                       {d.text}
                     </a>
                   )}
@@ -107,7 +110,7 @@ const Footer = (props: Props) => {
               <dt>{data.resources.title}</dt>
               {data.resources.list.map((d, i) => (
                 <dd key={i}>
-                  <a href={`${window.location.pathname}${d.link}`} target={d.target || "_self"}>
+                  <a href={`/${curLang}${d.link}`} target={d.target || "_self"}>
                     {d.text}
                   </a>
                 </dd>
