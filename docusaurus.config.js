@@ -21,10 +21,10 @@ const config = {
     /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
   ],
   // Set the production url of your site here
-  url: 'https://higress.io',
+  url: 'https://sca.aliyun.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/spring-cloud-alibaba-group.github.io/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
