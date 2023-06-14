@@ -4,7 +4,7 @@
 .top-section {
   height: 100vh;
   // background-color: #ddebc9;
-  background-image: url('https://img.alicdn.com/imgextra/i3/O1CN01oVVy7R253lrD1VVQe_!!6000000007471-2-tps-3200-1440.png');
+  background-image: url('https://img.alicdn.com/imgextra/i1/O1CN01RJxUCt29hqz2quJDJ_!!6000000008100-2-tps-3200-1440.png');
   background-size: cover;
 
   .top-body {
@@ -13,6 +13,61 @@
     height: 100%;
     max-width: $contentWidth;
     margin: 0 auto;
+    z-index: 2;
+  }
+
+  .anmination-img {
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    z-index: 1;
+
+    img {
+      width: 350px;
+
+    }
+  }
+
+  .anmination-img {
+    /* background-color: cyan; */
+    /* 第二步：animation-name 指定要绑定到选择器的关键帧的名称，告诉系统需要执行哪个动画 */
+    animation-name: leftTopRight;
+
+    /* -animation-duration	动画指定需要多少秒或毫秒完成，告诉系统动画持续的时长 */
+    /* 持续动画时间 */
+    animation-duration: 2s;
+
+    /* -animation-timing-function 设置动画将如何完成一个周期，告诉系统动画执行的速度 */
+    animation-timing-function: ease-in-out;
+
+    /* -animation-delay  设置动画在启动前的延迟间隔。 */
+    animation-delay: 0.5s;
+
+    /* -animation-iteration-count	定义动画的播放次数。告诉系统动画需要执行几次 */
+    /* 无限次  infinite*/
+    animation-iteration-count: infinite;
+
+    /* -animation-direction	指定是否应该轮流反向播放动画。 */
+    /* 默认的取值, 执行完一次之后回到起点继续执行下一次 */
+    /* 往返动画, 执行完一次之后往回执行下一次 */
+    animation-direction: alternate;
+
+
+    /* -animation-fill-mode	规定当动画不播放时（当动画完成时，或当动画有一个延迟未开始播放时），要应用到元素的样式。 */
+    /* 让元素结束状态保持动画最后一帧的样式 */
+    animation-fill-mode: forwards;
+  }
+
+
+  /* 第一步：新建动画的关键帧 */
+  @keyframes leftTopRight {
+    from {
+      margin-left: 0;
+    }
+
+    to {
+      margin-top: 30px;
+    }
   }
 
   .vertical-middle {
@@ -46,6 +101,7 @@
     font-size: 60px;
     color: #69BD44;
     letter-spacing: 0;
+    z-index: 2;
   }
 
   .product-desc {
@@ -73,6 +129,8 @@
       }
     }
   }
+
+
 
   .github-buttons {
     margin-top: 10px;

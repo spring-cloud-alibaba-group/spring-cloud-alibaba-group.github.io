@@ -420,7 +420,10 @@
   "homepage.userDesc2": {
     "message": "to help improving Spring Cloud Alibaba better."
   },
-  "homepage.userTitle": {
-    "message": "Who is using Spring Cloud Alibaba?"
+  "homepage.userTitleBefore": {
+    "message": "Who is using"
+  },
+  "homepage.userTitleAfter": {
+    "message": "Spring Cloud Alibaba"
   }
 }
