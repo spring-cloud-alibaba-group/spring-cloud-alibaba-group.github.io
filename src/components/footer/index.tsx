@@ -1,6 +1,7 @@
 import React from "react";
 import { translate } from "@docusaurus/Translate";
-import { getLink } from "../../utils";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+
 import "./index.scss";
 
 const LicenseLogo =
@@ -27,7 +28,7 @@ const data = {
     list: [
       {
         text: translate({ id: "homepage.footerDocListText1", message: "概览" }),
-        link: "/docs/overview/what-is-higress",
+        link: "/docs/overview/what-is-sca",
         target: "",
       },
       {
@@ -38,12 +39,12 @@ const data = {
       {
         text: translate({ id: "homepage.footerDocListText3", message: "报告文档问题" }),
         link: "https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/issues/new",
-        target: "",
+        target: "_blank",
       },
       {
         text: translate({ id: "homepage.footerDocListText4", message: "在Github上编辑此文档" }),
         link: "https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io",
-        target: "",
+        target: "_blank",
       },
     ],
   },
@@ -52,7 +53,7 @@ const data = {
     list: [
       {
         text: translate({ id: "homepage.footerResourcesListText2", message: "社区" }),
-        link: "/community",
+        link: "/community/community-weekly-meeting/host-of-weekly-meeting",
         target: "",
       },
       {
@@ -71,10 +72,13 @@ type Props = {
 
 const Footer = (props: Props) => {
   const { logo } = props;
+  const { i18n } = useDocusaurusContext();
+  const curLang = i18n.currentLocale;
+
   return (
     <footer className="footer-container">
       <div className="footer-body">
-        <img src={getLink(logo)} />
+        <img src={logo} />
         {/* <p className="docusaurus-power">website powered by docusaurus</p> */}
         <div className="cols-container">
           <div className="col col-12">
@@ -87,9 +91,16 @@ const Footer = (props: Props) => {
               <dt>{data.documentation.title}</dt>
               {data.documentation.list.map((d, i) => (
                 <dd key={i}>
-                  <a href={getLink(d.link)} target={d.target || "_self"}>
-                    {d.text}
-                  </a>
+                  {d.link?.substr(0, 4) === "http" && (
+                    <a href={d.link} target={d.target || "_self"}>
+                      {d.text}
+                    </a>
+                  )}
+                  {d.link?.substr(0, 4) !== "http" && (
+                    <a href={`/${curLang}${d.link}`} target={d.target || "_self"}>
+                      {d.text}
+                    </a>
+                  )}
                 </dd>
               ))}
             </dl>
@@ -99,7 +110,7 @@ const Footer = (props: Props) => {
               <dt>{data.resources.title}</dt>
               {data.resources.list.map((d, i) => (
                 <dd key={i}>
-                  <a href={getLink(d.link)} target={d.target || "_self"}>
+                  <a href={`/${curLang}${d.link}`} target={d.target || "_self"}>
                     {d.text}
                   </a>
                 </dd>
