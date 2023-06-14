@@ -3,7 +3,7 @@ name: sca.aliyun.com deploy
 on:
   push:
     branches:
-      - notenabled
+      - master
 jobs:
   Build-Deploy:
     runs-on: ubuntu-latest
