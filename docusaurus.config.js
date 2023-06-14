@@ -21,7 +21,7 @@ const config = {
     /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
   ],
   // Set the production url of your site here
-  url: 'https://higress.io',
+  url: 'https://sca.aliyun.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -130,6 +130,10 @@ const config = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
+        },
+        gtag: {
+          trackingID: 'G-NP3B57ZGEF',
+          anonymizeIP: true,
         },
       }),
     ],
