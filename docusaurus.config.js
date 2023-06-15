@@ -15,7 +15,7 @@ const commonDocsOptions = {
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Spring Cloud Alibaba',
-  favicon: 'img/higress_logo_small.png',
+  favicon: 'img/logo.png',
   themes: [
     require.resolve("@easyops-cn/docusaurus-search-local"),
     /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
@@ -144,7 +144,7 @@ const config = {
     ({
       metadata: [{ name: 'keywords', content: 'Spring Cloud Alibaba,微服务' }],
       // Replace with your project's social card
-      image: 'img/higress_logo_small.png',
+      image: 'img/logo.png',
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true, // 禁止切换主题模式
