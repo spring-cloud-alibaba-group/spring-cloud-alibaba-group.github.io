@@ -37,11 +37,11 @@
   },
   "link.item.label.Report a doc issue": {
     "message": "报告文档问题",
-    "description": "The label of footer link with label=Report a doc issue linking to https://github.com/higress-group/higress-group.github.io/issues/new"
+    "description": "The label of footer link with label=Report a doc issue linking to https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/issues"
   },
   "link.item.label.Edit This Page on GitHub": {
     "message": "在GitHub上编辑此文档",
-    "description": "The label of footer link with label=Edit This Page on GitHub linking to https://github.com/higress-group/higress-group.github.io"
+    "description": "The label of footer link with label=Edit This Page on GitHub linking to https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io"
   },
   "link.item.label.Community": {
     "message": "社区",

@@ -11,10 +11,6 @@
     "message": "用户指南",
     "description": "The label for category User Doc in sidebar docs"
   },
-  "sidebar.docs.category.User Guide": {
-    "message": "用户指南",
-    "description": "The label for category User Doc in sidebar docs"
-  },
   "sidebar.docs.category.Nacos": {
     "message": "注册配置中心",
     "description": "The label for category User Doc in sidebar docs"
