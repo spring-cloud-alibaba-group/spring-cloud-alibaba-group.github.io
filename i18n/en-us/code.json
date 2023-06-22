@@ -399,9 +399,6 @@
   "homepage.introDescFirst": {
     "message": "Spring Cloud Alibaba provides a one-stop solution for distributed application development. It contains all the components you need to develop distributed applications, making it easy to develop applications using Spring Cloud."
   },
-  "homepage.introDescSecond": {
-    "message": "With Spring Cloud Alibaba, you only need to add a few comments and a small amount of configuration, you can connect Spring Cloud applications to Alibaba's distributed solution, using Alibaba's middleware to build a distributed application system."
-  },
   "homepage.msemapTitle": {
     "message": "Microservice Ecosystem Landscape"
   },
