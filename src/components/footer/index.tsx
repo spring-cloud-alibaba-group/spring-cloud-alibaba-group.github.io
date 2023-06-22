@@ -15,12 +15,7 @@ const data = {
     contentFist: translate({
       id: "homepage.introDescFirst",
       message:
-        "Spring Cloud Alibaba为分布式应用开发提供一站式解决方案。它包含开发分布式应用程序所需的所有组件，使您可以轻松地使用Spring Cloud开发应用程序。",
-    }),
-    contentSecond: translate({
-      id: "homepage.introDescSecond",
-      message:
-        "有了Spring Cloud Alibaba，你只需要添加一些注释和少量的配置，就可以将Spring Cloud应用连接到阿里的分布式解决方案上，用阿里的中间件构建一个分布式应用系统。",
+        "Spring Cloud Alibaba 为分布式应用开发提供一站式解决方案。它包含开发分布式应用程序所需的所有组件，使您可以轻松地使用 Spring Cloud 微服务框架开发应用程序。",
     }),
   },
   documentation: {
@@ -84,7 +79,6 @@ const Footer = (props: Props) => {
           <div className="col col-12">
             <h3>{data.vision.title}</h3>
             <p>{data.vision.contentFist}</p>
-            <p>{data.vision.contentSecond}</p>
           </div>
           <div className="col col-6">
             <dl>
@@ -118,19 +112,6 @@ const Footer = (props: Props) => {
             </dl>
           </div>
         </div>
-        {/* <div className="copyright">
-          <span>{data.copyright}</span>
-        </div> */}
-        {/* <div className="record">
-          <div>
-            <a
-              target="_blank"
-              href="http://idinfo.zjamr.zj.gov.cn/bscx.do?method=lzxx&id=3301843301000000126540"
-            >
-              <img src={getLink(LicenseLogo)} style={{ width: 20, height: 20, marginRight: 8 }} />
-            </a>
-          </div>
-        </div> */}
       </div>
       <div className="footer-box">{data.copyright}</div>
     </footer>
