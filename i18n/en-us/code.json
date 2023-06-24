@@ -357,44 +357,29 @@
   "homepage.introTitle": {
     "message": "What is Spring Cloud Alibaba?"
   },
-  "homepage.featureListTitle1": {
-    "message": "Multiple registry types supported"
+  "homepage. featureListTitle1": {
+    "message": "Easy to use"
   },
-  "homepage.featureListContent1": {
-    "message": "Provides a multi-registry component, support Nacos、 ZooKeeper、 Consul, and based on this component can add more types of registry"
+  "homepage. featureListContent1": {
+    "message": "Spring Cloud Alibaba is a one-stop microservice construction solution. Users only need to add some annotations and a small amount of configuration to quickly build a distributed application system through Alibaba middleware."
   },
-  "homepage.featureListTitle2": {
-    "message": "Multi-kubernetes cluster support"
+  "homepage. featureListTitle2": {
+    "message": "Production Level"
   },
-  "homepage.featureListContent2": {
-    "message": "A Higress Controller can listen to multiple Kubernetes clusters at the same time, facilitating unified route management across multiple clusters"
+  "homepage. featureListContent2": {
+    "message": "The core components have all been tested by Alibaba's Double 11 flood peak for many years, and are mature and stable."
   },
-  "homepage.featureListTitle3": {
-    "message": "Multiple extension modes are supported"
+  "homepage. featureListTitle3": {
+    "message": "Extensible"
   },
-  "homepage.featureListContent3": {
-    "message": "It supports Wasm plug-ins, Lua plug-ins, and out-of-process plug-ins. With a variety of plug-in extension mechanisms, users can write plug-in extensions in multiple languages, effectively reducing the threshold for writing plug-in extensions and meeting user-defined extension requirements"
+  "homepage. featureListContent3": {
+    "message": "Spring Cloud Alibaba is based on the Spring Cloud microservice solution specification, and the components in it can be easily extended and replaced."
   },
-  "homepage.featureListTitle4": {
-    "message": "Dubbo protocol conversion"
+  "homepage. featureListTitle4": {
+    "message": "Comprehensive capabilities"
   },
-  "homepage.featureListContent4": {
-    "message": "The HTTP protocol can be converted to the Dubbo protocol, reducing the access cost of exposing Dubbo services to external users, and meeting the scenarios where traditional Dubbo microservice users wish to provide external access requests"
-  },
-  "homepage.featureListTitle5": {
-    "message": "Sentinel support"
-  },
-  "homepage.featureListContent5": {
-    "message": "In-depth integration of Sentinel, one-stop to meet the traditional microservice users on the current limiting, downgrade, fuse and other high availability requirements"
-  },
-  "homepage.featureTitle": {
-    "message": "Feature List"
-  },
-  "homepage.featureListTitle6": {
-    "message": "Modsecurity"
-  },
-  "homepage.featureListContent6": {
-    "message": "It integrates the open source Web application firewall to meet the primary protection requirements of gateway users for security"
+  "homepage. featureListContent4": {
+    "message": "Corresponding solutions are provided for important areas such as service registration and discovery, distributed messaging, microservice current limiting and degradation, distributed transactions, and microservice governance in the microservice architecture."
   },
   "homepage.introDescFirst": {
     "message": "Spring Cloud Alibaba provides a one-stop solution for distributed application development. It contains all the components you need to develop distributed applications, making it easy to develop applications using Spring Cloud."

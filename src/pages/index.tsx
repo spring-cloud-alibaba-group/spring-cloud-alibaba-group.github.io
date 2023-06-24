@@ -4,7 +4,7 @@ import Layout from "@theme/Layout";
 import Top from "./home/top";
 import Introduction from "./home/introduction";
 import MseMap from "./home/msemap";
-import Feature from "./home/feature";
+import Feature from "./home/feature/index.tsx";
 import User from "./home/users";
 import Community from "./home/community";
 import { Footer } from "../components";
