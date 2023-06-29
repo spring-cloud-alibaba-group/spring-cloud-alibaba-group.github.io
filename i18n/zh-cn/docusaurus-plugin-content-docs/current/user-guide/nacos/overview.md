@@ -11,7 +11,6 @@ description: nacos,overivew.
 <p align="center">
 <img src="https://sca-storage.oss-cn-hangzhou.aliyuncs.com/website/docs/zh/nacos/service-register-discovery.png"/>
 </p>
-
 在传统的单体应用架构中，一次请求处理可以在同一个应用内完成。然而，在微服务架构中，由于服务被拆分为多个模块，可能会涉及到跨进程和跨主机的服务调用。因此，如何实现微服务之间的相互发现并像单体应用一样提供统一对外的服务调用能力成为微服务框架需要重点解决的核心问题之一。
 在 Spring Cloud 生态中，采用了以下服务注册与发现模型来实现微服务之间的互相发现和调用。
 

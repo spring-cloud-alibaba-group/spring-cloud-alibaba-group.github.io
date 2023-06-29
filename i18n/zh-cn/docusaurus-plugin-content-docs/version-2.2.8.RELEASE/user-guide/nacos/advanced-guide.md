@@ -1,7 +1,7 @@
 ---
 title: 进阶指南
 keywords: [Spring Cloud Alibaba, Nacos]
-description: Advanced,Nacos,Guide.
+description: Advanced, Nacos, Guide.
 ---
 
 本章节展示 spring-cloud-starter-alibaba-nacos-config 和 spring-cloud-starter-alibaba-nacos-discovery 的高级特性和进阶用法。
