@@ -215,9 +215,9 @@ description: RocketMQ, Quick Start.
           }
           ```
 
-       消费者2
+   消费者2
     
-       消费者2创建过程的详细解释可参考上述消费者1的创建过程的解释。
+   消费者2创建过程的详细解释可参考上述消费者1的创建过程的解释。
 
     `application.yml`
       ```yaml
