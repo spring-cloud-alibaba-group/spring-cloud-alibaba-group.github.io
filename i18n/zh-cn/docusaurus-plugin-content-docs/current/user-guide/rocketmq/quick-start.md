@@ -101,7 +101,7 @@ description: RocketMQ, Quick Start.
 
 ## 广播消费示例
 
-​广播会发送消息给所有消费者。如果你想同一消费组下所有消费者接收到同一个topic下的消息，广播消费非常适合此场景。
+​广播会发送消息给所有消费者。如果你想同一消费组下所有消费者接收到同一个 topic 下的消息，广播消费非常适合此场景。
 
 ### 引入依赖
 
@@ -133,7 +133,7 @@ description: RocketMQ, Quick Start.
 
 1. 相关配置
 
-  在应用的 `/src/main/resources/application.yaml` 配置文件中完成 RocketMQ 广播消息生产者的相关配置。如下所示，对服务端口号、RocketMQ 的 Name Server 地址、消息发送的目标进行配置：
+  在应用的 `/src/main/resources/application.yaml` 配置文件中完成 RocketMQ 广播消息生产者的相关配置。如下所示，对服务端口号、RocketMQ 的 NameServer 地址、消息发送的目标进行配置：
 
   ```yaml
   server:
@@ -198,7 +198,7 @@ description: RocketMQ, Quick Start.
 
 1. 相关配置
 
-  在应用的 `/src/main/resources/application.yaml` 配置文件中完成 RocketMQ 广播消息消费者1的相关配置。如下所示，对服务端口号、消费者函数、RocketMQ 的 Name Server 地址、消息消费模式以及消费者分组进行配置：
+  在应用的 `/src/main/resources/application.yaml` 配置文件中完成 RocketMQ 广播消息消费者1的相关配置。如下所示，对服务端口号、消费者函数、RocketMQ 的 NameServer 地址、消息消费模式以及消费者分组进行配置：
 
   ```yaml
   server:
