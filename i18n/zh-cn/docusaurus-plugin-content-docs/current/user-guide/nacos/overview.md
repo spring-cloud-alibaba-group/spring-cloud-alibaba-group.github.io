@@ -1,7 +1,7 @@
 ---
 title: 概述
 keywords: [Spring Cloud Alibaba,Nacos]
-description: nacos,overivew.
+description: nacos, overview.
 ---
 
 ## 服务注册与发现
