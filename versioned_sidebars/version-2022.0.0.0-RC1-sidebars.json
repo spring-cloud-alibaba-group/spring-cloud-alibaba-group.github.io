@@ -5,9 +5,7 @@
       "collapsible": true,
       "items": [
         "overview/what-is-sca",
-        "overview/roadmap",
         "overview/faq",
-        "overview/terminology",
         "overview/version-explain"
       ]
     },
@@ -77,14 +75,6 @@
       "collapsible": true,
       "items": [
         "best-practice/integrated-example"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Reference manual",
-      "collapsible": true,
-      "items": [
-        "reference-manual/glossary"
       ]
     }
   ]

@@ -1,14 +1,11 @@
 {
-  "docs": [
-    {
+  "docs": [{
       "type": "category",
       "label": "Overview",
       "collapsible": true,
       "items": [
         "overview/what-is-sca",
-        "overview/roadmap",
         "overview/faq",
-        "overview/terminology",
         "overview/version-explain"
       ]
     },
@@ -16,8 +13,7 @@
       "type": "category",
       "label": "User Guide",
       "collapsible": true,
-      "items": [
-        {
+      "items": [{
           "type": "category",
           "label": "Nacos",
           "items": [
@@ -79,14 +75,6 @@
       "collapsible": true,
       "items": [
         "best-practice/integrated-example"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Reference manual",
-      "collapsible": true,
-      "items": [
-        "reference-manual/glossary"
       ]
     }
   ]

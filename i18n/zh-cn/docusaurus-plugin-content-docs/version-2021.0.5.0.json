@@ -9,31 +9,35 @@
   },
   "sidebar.docs.category.User Guide": {
     "message": "用户指南",
-    "description": "The label for category User Doc in sidebar docs"
+    "description": "Labels for the user guide category in the documentation sidebar"
   },
   "sidebar.docs.category.Nacos": {
     "message": "注册配置中心",
-    "description": "The label for category User Doc in sidebar docs"
+    "description": "Labels for the User Documentation Registration Configuration Center category in the sidebar documentation"
   },
   "sidebar.docs.category.Seata": {
     "message": "分布式事务",
-    "description": "The label for category User Doc in sidebar docs"
+    "description": "Labels for the User Documentation Distributed Transactions category in the Documentation sidebar"
   },
   "sidebar.docs.category.Sentinel": {
     "message": "限流降级",
-    "description": "The label for category User Doc in sidebar docs"
+    "description": "Labels for user documentation rate-limiting downgrade category in sidebar documentation"
   },
   "sidebar.docs.category.RocketMQ": {
     "message": "分布式消息",
-    "description": "The label for category User Doc in sidebar docs"
+    "description": "Labels for the user documentation distributed message category in the sidebar docs"
   },
   "sidebar.docs.category.Sidecar": {
     "message": "异构服务",
-    "description": "The label for category User Doc in sidebar docs"
+    "description": "Labels for user documentation heterogeneous service categories in sidebar docs"
+  },
+  "sidebar.docs.category.AOT And Native": {
+    "message": "静态编译",
+    "description": "Labels for the User Documentation Static Compilation category in the sidebar docs"
   },
   "sidebar.docs.category.Best practice": {
     "message": "最佳实践示例",
-    "description": "The label for category Parameters Configurations Guide in sidebar docs"
+    "description": "Labels for the Best Practices Examples category in the sidebar docs"
   },
   "sidebar.docs.category.Reference manual": {
     "message": "参考手册",
