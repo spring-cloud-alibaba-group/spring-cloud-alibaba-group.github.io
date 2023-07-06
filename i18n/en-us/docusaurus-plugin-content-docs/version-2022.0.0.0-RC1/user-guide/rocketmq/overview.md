@@ -19,7 +19,7 @@ Has the following characteristics:
 
 * Billion-level message accumulation capability.
 
-Before introducing `spring-cloud-starter-stream-rocketmq`, let's take a look at Spring Cloud Stream.
+Before introducing spring-cloud-starter-stream-rocketmq, let's take a look at Spring Cloud Stream.
 
 ## Introduction to Spring Cloud Stream
 
@@ -31,7 +31,7 @@ There are two concepts inside Spring Cloud Stream: Binder and Binding.
 
 * Binder: A component integrated with external message middleware, used to create Binding, each message middleware has its own Binder implementation.
 
-    For example, `Kafka` implements `KafkaMessageChannelBinder`, `RabbitMQ` implements `RabbitMessageChannelBinder`, and `RocketMQ` implements `RocketMQMessageChannelBinder`.
+    For example, Kafka implements KafkaMessageChannelBinder, RabbitMQ implements RabbitMessageChannelBinder, and RocketMQ implements RocketMQMessageChannelBinder.
 
 * Binding: Including Input Binding and Output Binding.
 

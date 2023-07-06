@@ -4,7 +4,7 @@ keywords: [Spring Cloud Alibaba]
 description: Advanced, RocketMQ, Guide.
 ---
 
-This section shows the implementation and related configuration of `spring-cloud-statrer-stream-rocketmq`.
+This section shows the implementation and related configuration of spring-cloud-statrer-stream-rocketmq.
 
 ## Implementation of Spring Cloud Stream RocketMQ Binder
 
@@ -13,7 +13,7 @@ This section shows the implementation and related configuration of `spring-cloud
 <img src="https://img.alicdn.com/tfs/TB1v8rcbUY1gK0jSZFCXXcwqXXa-1236-773.png" />
 </p>
 
-`spring-cloud-statrer-stream-rocketmq` removes the dependency on [RocketMQ-Spring](https://github.com/apache/rocketmq-spring) framework. The Spring Cloud Stream Binder core class **RocketMQMessageChannelBinder** implements the Spring Cloud Stream specification, and internally builds RocketMQInboundChannelAdapter and RocketMQProducerMessageHandler.
+spring-cloud-statrer-stream-rocketmq removes the dependency on [RocketMQ-Spring](https://github.com/apache/rocketmq-spring) framework. The Spring Cloud Stream Binder core class **RocketMQMessageChannelBinder** implements the Spring Cloud Stream specification, and internally builds RocketMQInboundChannelAdapter and RocketMQProducerMessageHandler.
 
 **RocketMQProducerMessageHandler** will construct RocketMQ Producer through RocketMQProduceFactory based on the Binding configuration, and internally convert the org.springframework.messaging.Message message class in the spring-messaging module into the RocketMQ message class org.apache.rocketmq.common.message.Message , and send it out.
 
@@ -49,19 +49,19 @@ streamBridge.send("producer-out-0", message);
 
 ### Binder Properties
 
-The configuration items prefixed with `spring-cloud-starter-stream-rocketmq-binder` are as follows:
+The configuration items prefixed with spring-cloud-starter-stream-rocketmq-binder are as follows:
 
 Configuration item|Key|Default value|Description 
 ----|----|-----|-----  
-| RocketMQ NameServer address| spring.cloud.stream.binder.rocketmq.name-server | 127.0.0.1:9876 | Older versions use the namesrv-addr configuration item |
-| Authentication public key | spring.cloud.stream.rocketmq.  binder.access-key | null | Aliyun account AccessKey |
-| Authentication private key | spring.cloud.stream.rocketmq.  binder.secret-key | null | Aliyun account SecretKey |
-| Message track function |spring.cloud.stream.rocketmq.  binder.enable-msg-trace | true | Whether to enable the message track function for Producer and Consumer |
-| Topic name | spring.cloud.stream.rocketmq.  binder.customized-trace-topic | RMQ_SYS_TRACE_TOPIC | The topic name stored after the message track is turned on |
+| RocketMQ NameServer address| spring.cloud.stream.rocketmq.binder.name-server | 127.0.0.1:9876 | Older versions use the namesrv-addr configuration item |
+| Authentication public key | spring.cloud.stream.rocketmq.binder.access-key | null | Aliyun account AccessKey |
+| Authentication private key | spring.cloud.stream.rocketmq.binder.secret-key | null | Aliyun account SecretKey |
+| Message track function |spring.cloud.stream.rocketmq.binder.enable-msg-trace | true | Whether to enable the message track function for Producer and Consumer |
+| Topic name | spring.cloud.stream.rocketmq.binder.customized-trace-topic | RMQ_SYS_TRACE_TOPIC | The topic name stored after the message track is turned on |
 
 ### Consumer Properties
 
- The configuration items prefixed with `spring-cloud-starter-stream-rocketmq-binder-consumer` are as follows:
+ The configuration items prefixed with spring-cloud-starter-stream-rocketmq-binder-consumer are as follows:
 
 Configuration item|Key|Default value|Description  
 ----|----|-----|-----  
@@ -73,7 +73,7 @@ Configuration item|Key|Default value|Description
 > **NOTE**   See more [RocketMQConsumerProperties](https://github.com/alibaba/spring-cloud-alibaba/blob/rocketmq/spring-cloud-alibaba-starters/spring-cloud-starter-stream-rocketmq/src/main/java/com/alibaba/cloud/stream/binder/rocketmq/properties/RocketMQConsumerProperties.java).
 
 
-The configuration items prefixed with `spring-cloud-starter-stream-rocketmq-binder-consumer-push` are as follows:
+The configuration items prefixed with spring-cloud-starter-stream-rocketmq-binder-consumer-push are as follows:
 
 Configuration item|Key|Default value|Description 
 --------------|----|--------------|-----  
@@ -83,7 +83,7 @@ Time interval for consumption again after consumption failure|spring.cloud.start
 
 > **NOTE** For more parameters, see [RocketMQConsumerProperties.Push](https://github.com/alibaba/spring-cloud-alibaba/blob/2022.x/spring-cloud-alibaba-starters/spring-cloud-starter-stream-rocketmq/src/main/java/com/alibaba/cloud/stream/binder/rocketmq/properties/RocketMQConsumerProperties.java).
 
-The configuration items prefixed with `spring-cloud-starter-stream-rocketmq-binder-consumer-pull` are as follows:
+The configuration items prefixed with spring-cloud-starter-stream-rocketmq-binder-consumer-pull are as follows:
 
 Configuration item|Key|Default value|Description  
 ----|----|-----|-----  
@@ -94,7 +94,7 @@ Configuration item|Key|Default value|Description
 
 ### Provider Properties
 
-The starter configuration items for `spring-cloud-starter-stream-rocketmq-binder-producer` are as follows:
+The configuration items prefixed with spring-cloud-starter-stream-rocketmq-binder-producer are as follows:
 
 Configuration item|Key|Default value|Description  
 ----|----|-----|-----  
