@@ -18,7 +18,12 @@ const sidebars = {
       type: 'category',
       label: 'Overview',
       collapsible: true,
-      items: ['overview/what-is-sca', 'overview/faq', "overview/version-explain"],
+      items: [
+        'overview/what-is-sca',
+        'overview/faq',
+        "overview/roadmap",
+        "overview/version-explain"
+      ],
     },
     {
       type: 'category',

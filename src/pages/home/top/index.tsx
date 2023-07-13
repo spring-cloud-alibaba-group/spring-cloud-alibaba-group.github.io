@@ -32,8 +32,8 @@ const topData = {
     },
   ],
   versionNote: {
-    text: "Release Note of 2021.0.5.0",
-    link: "https://github.com/alibaba/spring-cloud-alibaba/releases/tag/2021.0.5.0",
+    text: "Release Note of 2022.0.0.0",
+    link: "https://github.com/alibaba/spring-cloud-alibaba/tree/2022.0.0.0",
   },
   releaseDate: "Released on March 22, 2023",
 };
