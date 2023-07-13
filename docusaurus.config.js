@@ -107,12 +107,12 @@ const config = {
           editUrl: ({ docPath, locale }) => {
             return `https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/main/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`;
           },
-          lastVersion: '2022.0.0.0-RC2',
+          lastVersion: '2022.0.0.0',
           versions: {
             '2.2.10-RC1': {
               banner: 'none'
             },
-            '2022.0.0.0-RC2': {
+            '2022.0.0.0': {
               banner: 'none'
             },
             '2021.0.5.0': {
