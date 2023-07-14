@@ -287,7 +287,7 @@ const config = {
       },
       prism: {
         theme: lightCodeTheme,
-        additionalLanguages: ['java', 'properties'],
+        additionalLanguages: ['java', 'properties', 'sql'],
       },
     }),
 };
