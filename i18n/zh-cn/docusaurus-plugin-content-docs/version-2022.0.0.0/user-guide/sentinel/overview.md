@@ -1,7 +1,7 @@
 ---
 title: 概述
-keywords: [Spring Cloud Alibaba]
-description: sentinel,overivew.
+keywords: [Spring Cloud Alibaba, Sentinel]
+description: Sentinel, Overivew.
 ---
 
 ## 限流降级
