@@ -1,7 +1,7 @@
 ---
 title: "Advanced Guide"
 keywords: [Spring Cloud Alibaba,Sidecar,Advanced Guide]
-description: Sidecar.Advanced Guide
+description: Sidecar, Advanced Guide.
 ---
 
 ## principle
@@ -28,7 +28,7 @@ Disadvantages:
 
 ## Endpoint Infomaration
 
-Request `http://127.0.0.1:8070/actuator/health` address you can see the EndPoint node information
+Request http://127.0.0.1:8070/actuator/health address you can see the EndPoint node information
 
 ```shell
 curl http://127.0.0.1:8070/actuator/health
