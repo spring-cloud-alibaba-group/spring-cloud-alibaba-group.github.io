@@ -1,7 +1,8 @@
 ---
 title: 概述
-keywords: [Spring Cloud Alibaba,Nacos]
-description: nacos,overivew.
+keywords: [Spring Cloud Alibaba, Nacos]
+description: nacos, overview.
+custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/master/i18n/zh-cn/docusaurus-plugin-content-docs/current/user-guide/nacos/overview.md
 ---
 
 ## 服务注册与发现
@@ -15,7 +16,7 @@ description: nacos,overivew.
 原来一次在一个应用内即可完成的请求处理，会出现跨进程跨主机的服务调用，如何让这个服务之间能互相发现像单体式应用一样提供统一对外的服务调用能力是微服务框架层面需要重点解决的核心问题之一。
 在 Spring Cloud 生态中，采用了如下服务注册与发现模型，来实现微服务之间的互相发现与调用。
 
-![服务注册与发现模型](https://sca-storage.oss-cn-hangzhou.aliyuncs.com/website/docs/zh/nacos/service-register-discovery-module.png)
+![服务注册与发现模型](https://sca-storage.oss-cn-hangzhou.aliyuncs.com/website/docs/zh/nacos/nacos-sercvice-register-plus.png)
 
 如上图所示，通过在微服务系统中引入一个叫做注册中心的组件，来作为协调者。其最简化的过程是，所有的微服务应用在启动过程中会将自身包含服务名称、主机IP地址和端口号等信息发送到注册中心中，然后上游的微服务在处理请求过程中，根据服务名称到注册中心中查找对应服务的所有实例IP地址和端口号来进行服务调用，整个过程如图中虚线所示。从而让分散的微服务系统之间能像一个整体一样对外提供请求处理能力。
 
@@ -24,7 +25,7 @@ description: nacos,overivew.
 在正式介绍分布式配置内容之前，还是先简单介绍一下配置的概念。软件系统中的配置是指在软件运行过程中所需要的各种设定和参数，包括系统配置、应用配置和用户配置等。系统配置包括操作系统、硬件和网络等基本环境参数的设定；应用配置包括应用程序的各种参数和选项的设定，如数据库连接字符串、日志级别等；用户配置则是指用户自定义的各种选项和参数，如快捷键、界面布局、语言等。配置在软件系统中是对软件源代码的一种重要补充，通过其可以便捷的调整软件系统的执行行为，让软件系统更加灵活。
 除了单体式应用，在分布式系统中，配置信息应用非常广泛，可以通过配置来实现不同的功能。这些配置信息如数据库连接信息、日志级别、业务配置等等。在传统的开发方式中，这些配置信息通常硬编码到应用程序的代码中，与程序代码一起打包和部署。然而，这种方式有很多缺点，比如配置信息不易维护，只要修改配置就得重新构建和部署等。
 
-![service-config](https://sca-storage.oss-cn-hangzhou.aliyuncs.com/website/docs/zh/nacos/service-config.png)
+![service-config](https://sca-storage.oss-cn-hangzhou.aliyuncs.com/website/docs/zh/nacos/nacos-service-config-center.png)
 
 采用分布式配置中心的软件架构如上图所示，其可以在分布式场景中帮助解决以下问题：
 1. 管理应用程序配置：当有大量应用程序需要管理时，手动维护配置文件会变得非常困难。分布式配置中心提供了一个集中管理和分发配置信息的解决方案。

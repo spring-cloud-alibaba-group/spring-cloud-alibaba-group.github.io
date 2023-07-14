@@ -12,11 +12,11 @@ description: Advanced, Nacos, Guide.
 
 spring-cloud-starter-alibaba-nacos-config 在加载服务配置时：
 
-不仅仅加载了以 dataId 为 `${spring.application.name}.${file-extension:properties}` 为前缀的基础配置，
+不仅仅加载了以 dataId 为 ${spring.application.name}.${file-extension:properties} 为前缀的基础配置，
 
-还加载了dataId为 `${spring.application.name}-${profile}.${file-extension:properties}` 的基础配置。
+还加载了dataId为 ${spring.application.name}-${profile}.${file-extension:properties} 的基础配置。
 
-在日常开发中如果遇到多套环境下的不同配置，可以通过 Spring 提供的 `${spring.profiles.active}` 这个配置项选择不同情况下的配置。
+在日常开发中如果遇到多套环境下的不同配置，可以通过 Spring 提供的 ${spring.profiles.active} 这个配置项选择不同情况下的配置。
 
 ```properties
 spring.profiles.active=develop
@@ -56,7 +56,7 @@ in develop-env enviroment; user name :nacos-config-yaml-update; age: 68
 2018-11-02 15:34:25.013  INFO 33014 --- [ Thread-11] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6f1c29b7: startup date [Fri Nov 02 15:33:57 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@63355449
 ```
 
-如果需要切换到生产环境，只需要更改 `${spring.profiles.active}` 参数配置即可。如下所示：
+如果需要切换到生产环境，只需要更改 ${spring.profiles.active} 参数配置即可。如下所示：
 
 ```properties
 spring.profiles.active=product
@@ -114,9 +114,9 @@ spring.cloud.nacos.config.group=YOUR_GROUP_NAME
 
 Nacos Config 目前提供了三种配置能力从 Nacos 拉取相关的配置：
 
-- A: 通过 `spring.cloud.nacos.config.shared-dataids` 支持多个共享 Data Id 的配置
+- A: 通过 spring.cloud.nacos.config.shared-dataids 支持多个共享 Data Id 的配置
 
-- B: 通过 `spring.cloud.nacos.config.ext-config[n].data-id` 的方式支持多个扩展 Data Id 的配置
+- B: 通过 spring.cloud.nacos.config.ext-config[n].data-id 的方式支持多个扩展 Data Id 的配置
 
 - C: 通过内部相关规则(应用名、应用名+ Profile )自动生成相关的 Data Id 配置
 
@@ -202,10 +202,10 @@ SecretKey|spring.cloud.nacos.config.secret-key||
 
 ### Endpoint 信息
 
-请求 `127.0.0.1:18083/actuator/nacosconfig` 地址，可以看到相关的 EndPoint 节点信息。
+请求 http://127.0.0.1:18083/actuator/nacosconfig 地址，可以看到相关的 EndPoint 节点信息。
 
 ```shell
-$ curl 127.0.0.1:18084/actuator/nacosconfig 
+$ curl http://127.0.0.1:18083/actuator/nacosconfig
 ```
 
 响应结果：
@@ -331,10 +331,10 @@ Metadata|spring.cloud.nacos.discovery.metadata||使用Map格式配置
 
 ### Endpoint 信息
 
-请求 `127.0.0.1:18083/actuator/nacosdiscovery` 地址，可以看到相关的 EndPoint 节点信息。
+请求 http://127.0.0.1:18083/actuator/nacosdiscovery 地址，可以看到相关的 EndPoint 节点信息。
 
 ```shell
-$ curl 127.0.0.1:18083/actuator/nacosdiscovery
+$ curl http://127.0.0.1:18083/actuator/nacosdiscovery
 ```
 
 响应结果：

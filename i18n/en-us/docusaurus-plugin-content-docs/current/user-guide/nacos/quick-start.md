@@ -9,9 +9,9 @@ This chapter will demonstrate how to use spring-cloud-starter-alibaba-nacos-conf
 ## Nacos Server
 For details, refer to the official website of [Nacos](https://nacos.io/zh-cn/).
 
-After Nacos Server is started successfully, enter 'http://ip:8848/nacos' in the browser address bar to view Nacos console (default account name and password are nacos/nacos) :
+After Nacos Server is started successfully, enter http://ip:8848/nacos in the browser address bar to view Nacos console (default account name and password are nacos/nacos) :
 
-! [nacos-server-start](https://sca-storage.oss-cn-hangzhou.aliyuncs.com/website/docs/zh/nacos/nacos-server-start.png)
+![nacos-server-start](https://sca-storage.oss-cn-hangzhou.aliyuncs.com/website/docs/zh/nacos/nacos-server-start.png)
 
 For more Nacos Server version, can from [release](https://github.com/alibaba/nacos/releases) page to download the latest version.
 
@@ -29,7 +29,7 @@ If you want to use Nacos for configuration management in your project. You need 
     </dependency>
     ```
 
-2. The application/SRC/main/resources/application. The yaml configuration file configuration Nacos Config address and introduce the service configuration:
+2. The application/src/main/resources/application. The yaml configuration file configuration Nacos Config address and introduce the service configuration:
 
     ```yml
     spring:
@@ -75,7 +75,7 @@ If you want to use Nacos for configuration management in your project. You need 
 ### Start the application and validate
 #### Application startup
 
-1. Add other configuration: in application/SRC/main/resources/application. The yaml add basic configuration information:
+1. Add other configuration: in application /src/main/resources/application. The yaml add basic configuration information:
 
     ```yaml
     server:
@@ -96,7 +96,7 @@ If you want to use Nacos for configuration management in your project. You need 
 
 1. Verify automatic injection
 
-    Request `http://127.0.0.1:18084/nacos/bean` address, it can be seen that the data is successfully obtained from the Nacos collocation center.
+    Request http://127.0.0.1:18084/nacos/bean address, it can be seen that the data is successfully obtained from the Nacos collocation center.
     
     ```shell
     $ curl http://127.0.0.1:18084/nacos/bean
@@ -115,7 +115,7 @@ If you want to use Nacos for configuration management in your project. You need 
 
 2. Verify the dynamic refresh
 
-    Again request `http://127.0.0.1:18084/nacos/bean` address, you can see applications have access to the latest data from Nacos.
+    Again request http://127.0.0.1:18084/nacos/bean address, you can see applications have access to the latest data from Nacos.
 
     ```shell
     $ curl http://127.0.0.1:18084/nacos/bean
@@ -151,7 +151,7 @@ If you want to use Nacos for service discovery in your project. You need to do t
     </dependency>
     ```
 
-2. Add application configuration: in application/SRC/main/resources/application properties Nacos Server address that is configured in the configuration file:
+2. Add application configuration: in application /src/main/resources/application properties Nacos Server address that is configured in the configuration file:
 
     ```properties
     spring.cloud.nacos.discovery.server-addr=127.0.0.1:8848
@@ -303,7 +303,7 @@ This section only covers the Ribbon, RestTemplate, and FeignClient for your unde
 
 4. Add necessary configurations:
 
-    In nacos - discovery - the consumer - example project/SRC/main/resources/application. The basic configuration information added to the properties:
+    In nacos-discovery-consumer-example project /src/main/resources/application. The basic configuration information added to the properties:
 
     ```properties
     spring.application.name=service-consumer
@@ -317,7 +317,7 @@ This section only covers the Ribbon, RestTemplate, and FeignClient for your unde
 
 #### verification
 
-1. Request `http://127.0.0.1:18083/echo-rest/1234` address, You can see that the response displays the message "hello Nacos Discovery 1234" returned by Nacos-discovery-provider-example, proving that the service Discovery is valid.
+1. Request http://127.0.0.1:18083/echo-rest/1234 address, You can see that the response displays the message "hello Nacos Discovery 1234" returned by Nacos-discovery-provider-example, proving that the service Discovery is valid.
 
     ```shell
     curl http://127.0.0.1:18083/echo-rest/1234
@@ -330,7 +330,7 @@ This section only covers the Ribbon, RestTemplate, and FeignClient for your unde
     ```
 
 
-2. Request `http://127.0.0.1:18083/echo-feign/12345` address, You can see that the response shows the message "hello Nacos Discovery 12345" returned by Nacos-discovery-provider-example, proving that the service Discovery is valid.
+2. Request http://127.0.0.1:18083/echo-feign/12345 address, You can see that the response shows the message "hello Nacos Discovery 12345" returned by Nacos-discovery-provider-example, proving that the service Discovery is valid.
 
     ```shell
     $ curl http://127.0.0.1:18083/echo-feign/12345
