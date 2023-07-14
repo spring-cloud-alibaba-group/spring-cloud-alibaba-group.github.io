@@ -1,5 +1,5 @@
 ---
-title: Quick Start
+title: "Quick Start"
 keywords: [Spring Cloud Alibaba, RocketMQ]
 description: RocketMQ, Quick Start.
 ---
@@ -30,14 +30,13 @@ This chapter will demonstrate the basic use of RocketMQ and the basic use of Roc
   Linux / Unix / Mac operating system, execute the command:
 
     ```shell
-    nohup sh bin/mqnamesrv &
-    tail -f ~/logs/rocketmqlogs/namesrv.log
+    $ nohup sh bin/mqnamesrv & tail -f ~/logs/rocketmqlogs/namesrv.log
     ```
 
 	Windows operating system, execute the command:
 
     ```
-    .\bin\mqnamesrv.cmd
+    $ .\bin\mqnamesrv.cmd
     ```
 
 3. Start Broker
@@ -45,13 +44,12 @@ This chapter will demonstrate the basic use of RocketMQ and the basic use of Roc
   Linux / Unix / Mac operating system, execute the command:
 
     ```bash
-    nohup sh bin/mqbroker -n localhost:9876 &
-    tail -f ~/logs/rocketmqlogs/broker.log
+    $ nohup sh bin/mqbroker -n localhost:9876 & tail -f ~/logs/rocketmqlogs/broker.log
     ```
 
 	Windows operating system, execute the command:
     ```
-    .\bin\mqbroker.cmd -n localhost:9876
+    $ .\bin\mqbroker.cmd -n localhost:9876
     ```
 
 ### Test sending and receiving messages
@@ -61,24 +59,24 @@ This chapter will demonstrate the basic use of RocketMQ and the basic use of Roc
   Linux / Unix / Mac operating system, execute the command:
 
     ```shell
-    sh bin/mqadmin updatetopic -n localhost:9876 -t TestTopic -c DefaultCluster
+    $ sh bin/mqadmin updatetopic -n localhost:9876 -t TestTopic -c DefaultCluster
     ```
 
 	Windows operating system, execute the command:
 
     ```
-    .\bin\mqadmin.cmd updatetopic -n localhost:9876 -t TopicTest -c DefaultCluster
+    $ .\bin\mqadmin.cmd updatetopic -n localhost:9876 -t TopicTest -c DefaultCluster
     ```
 2. Send a message:
 
   Linux / Unix / Mac operating system, execute the command:
     ```shell
-    sh bin/tools.sh org.apache.rocketmq.example.quickstart.Producer
+    $ sh bin/tools.sh org.apache.rocketmq.example.quickstart.Producer
     ```
 
 	Windows operating system, execute the command:
     ```cmd
-    .\bin\tools.cmd org.apache.rocketmq.example.quickstart.Producer
+    $ .\bin\tools.cmd org.apache.rocketmq.example.quickstart.Producer
     ```
     After sending successfully, it will display: SendResult [sendStatus=SEND_OK, msgId= ...
 
@@ -87,12 +85,12 @@ This chapter will demonstrate the basic use of RocketMQ and the basic use of Roc
     Linux / Unix / Mac operating system, execute the command:
 
     ```shell
-    sh bin/tools.sh org.apache.rocketmq.example.quickstart.Consumer
+    $ sh bin/tools.sh org.apache.rocketmq.example.quickstart.Consumer
     ```
 
     Windows operating system, execute the command:  
       ```
-      .\bin\tools.cmd org.apache.rocketmq.example.quickstart.Consumer
+      $ .\bin\tools.cmd org.apache.rocketmq.example.quickstart.Consumer
       ```
 
       After sending successfully, it will display: SendResult [sendStatus=SEND_OK, msgId= ...
@@ -105,7 +103,7 @@ This chapter will demonstrate the basic use of RocketMQ and the basic use of Roc
 
 ### Introduce dependencies
 
-A starter whose group ID is `com.alibaba.cloud` and artifact ID is `spring-cloud-starter-stream-rocketmq` needs to be introduced in the `pom.xml` file:       
+A starter whose group ID is com.alibaba.cloud and artifact ID is spring-cloud-starter-stream-rocketmq needs to be introduced in the pom.xml file:       
 
 ```xml
 <dependency>
@@ -133,7 +131,7 @@ A starter whose group ID is `com.alibaba.cloud` and artifact ID is `spring-cloud
 
 1. Related configuration
 
-  Complete the configuration of the RocketMQ broadcast message producer in the `/src/main/resources/application.yaml` configuration file of the application. Configure the service port number, the NameServer address of RocketMQ, and the destination for sending messages as follows:
+  Complete the configuration of the RocketMQ broadcast message producer in the /src/main/resources/application.yaml configuration file of the application. Configure the service port number, the NameServer address of RocketMQ, and the destination for sending messages as follows:
 
   ```yaml
   server:
@@ -160,7 +158,7 @@ A starter whose group ID is `com.alibaba.cloud` and artifact ID is `spring-cloud
   
 2. Send a message
 
-  Inject the StreamBridge into the application via the `@Autowired` annotation to send messages. In the producer method, use a loop to send 100 messages. Each message contains a key and headers, and creates a GenericMessage object as the message body, and then uses the streamBridge.send method to send the message to the destination named "producer-out-0".
+  Inject the StreamBridge into the application via the@Autowired  annotation to send messages. In the producer method, use a loop to send 100 messages. Each message contains a key and headers, and creates a GenericMessage object as the message body, and then uses the streamBridge.send method to send the message to the destination named "producer-out-0".
 
   ```java
   @SpringBootApplication
@@ -198,7 +196,7 @@ Start two consumer instances.
 
 1. Related configuration
 
-  Complete the relevant configuration of RocketMQ broadcast message consumer 1 in the `/src/main/resources/application.yaml` configuration file of the application. Configure the service port number, consumer function, RocketMQ NameServer address, message consumption mode and consumer group as follows:
+  Complete the relevant configuration of RocketMQ broadcast message consumer 1 in the /src/main/resources/application.yaml configuration file of the application. Configure the service port number, consumer function, RocketMQ NameServer address, message consumption mode and consumer group as follows:
 
   ```yaml
   server:
@@ -228,7 +226,7 @@ Start two consumer instances.
 
 2. Receive message  
 
-  The consumer method marked with the `@Bean` annotation returns a Consumer object for processing the received message. In the consumer method, a consumer function is defined through a Lambda expression, and when a new message is received, the message content is printed out.
+  The consumer method marked with the @Bean annotation returns a Consumer object for processing the received message. In the consumer method, a consumer function is defined through a Lambda expression, and when a new message is received, the message content is printed out.
 
   ```java
   @SpringBootApplication

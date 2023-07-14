@@ -45,7 +45,7 @@ streamBridge.send("producer-out-0", message);
 
 > **NOTE** 更多使用请参考样例：[com.alibaba.cloud.examples.SenderService](https://github.com/alibaba/spring-cloud-alibaba/blob/rocketmq/spring-cloud-alibaba-examples/rocketmq-example/rocketmq-produce-example/src/main/java/com/alibaba/cloud/examples/SenderService.java)。
 
-## RocketMQ 配置项参考
+## 更多配置项参考
 
 ### 绑定器配置
 

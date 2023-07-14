@@ -1,5 +1,5 @@
 ---
-title: Advanced Guide
+title: "Advanced Guide"
 keywords: [Spring Cloud Alibaba]
 description: Advanced, RocketMQ, Guide.
 ---
@@ -45,7 +45,7 @@ streamBridge.send("producer-out-0", message);
 
 > **NOTE** For more usage, please refer to the sample: [com.alibaba.cloud.examples.SenderService](https://github.com/alibaba/spring-cloud-alibaba/blob/rocketmq/spring-cloud-alibaba-examples/rocketmq-example/rocketmq-produce-example/src/main/java/com/alibaba/cloud/examples/SenderService.java).
 
-## RocketMQ configuration item reference
+## More configuration item reference
 
 ### Binder Properties
 
