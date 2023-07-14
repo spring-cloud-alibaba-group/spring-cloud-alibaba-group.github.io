@@ -1,7 +1,7 @@
 ---
 title: 进阶指南
-keywords: [Spring Cloud Alibaba]
-description: sentinel.
+keywords: [Spring Cloud Alibaba, Sentinel]
+description: sentinel, Advanced Guide.
 ---
 
 ## Sentinel 控制台
@@ -17,7 +17,7 @@ Sentinel 提供了开箱即用的控制台：
 您也可以从最新版本的源码自行构建 Sentinel 控制台：
 
 * 下载 [控制台](https://github.com/alibaba/Sentinel/tree/master/sentinel-dashboard) 工程。
-* 使用以下命令将代码打包成一个 fat jar: 
+* 使用以下命令将代码打包成一个 fat jar：
 
   ```shell
   $ mvn clean package
@@ -306,30 +306,29 @@ Endpoint 暴露的 json 中包含了多种属性:
 
 Spring Cloud Alibaba Sentinel 提供了这些配置选项：
 
-|配置项 | 含义                                                                                                 |默认值|
-|---|----------------------------------------------------------------------------------------------------|---|
-|spring.application.name or project.name| Sentinel项目名                                                                                       |
-|spring.cloud.sentinel.enabled| Sentinel自动化配置是否生效                                                                                  |true|
-|spring.cloud.sentinel.eager| 是否提前触发 Sentinel 初始化                                                                                |false|
-|spring.cloud.sentinel.transport.port| 应用与Sentinel控制台交互的端口，应用本地会起一个该端口占用的HttpServer                                                       |8719|
-|spring.cloud.sentinel.transport.dashboard| Sentinel 控制台地址                                                                                     |
-|spring.cloud.sentinel.transport.heartbeat-interval-ms| 应用与Sentinel控制台的心跳间隔时间                                                                              |
-|spring.cloud.sentinel.transport.client-ip| 此配置的客户端IP将被注册到 Sentinel Server 端                                                                   |
-|spring.cloud.sentinel.filter.order| Servlet Filter的加载顺序。Starter内部会构造这个filter                                                           |Integer.MIN_VALUE|
-|spring.cloud.sentinel.filter.url-patterns| 数据类型是数组。表示Servlet Filter的url pattern集合                                                             |/*|
-|spring.cloud.sentinel.filter.enabled| Enable to instance CommonFilter                                                                    |true|
-|spring.cloud.sentinel.metric.charset| metric文件字符集                                                                                        |UTF-8|
-|spring.cloud.sentinel.metric.file-single-size| Sentinel metric 单个文件的大小                                                                            ||
-|spring.cloud.sentinel.metric.file-total-count| Sentinel metric 总文件数量                                                                              ||
-|spring.cloud.sentinel.log.dir| Sentinel 日志文件所在的目录                                                                                 |
-|spring.cloud.sentinel.log.switch-pid| Sentinel 日志文件名是否需要带上pid                                                                            |false|
-|spring.cloud.sentinel.servlet.block-page| 自定义的跳转 URL，当请求被限流时会自动跳转至设定好的 URL                                                                   ||
-|spring.cloud.sentinel.flow.cold-factor| [冷启动因子](https://github.com/alibaba/Sentinel/wiki/%E9%99%90%E6%B5%81---%E5%86%B7%E5%90%AF%E5%8A%A8) ||
-|spring.cloud.sentinel.scg.fallback.mode| Spring Cloud Gateway 熔断后的响应模式(选择 redirect or response)                                         ||
-|spring.cloud.sentinel.scg.fallback.redirect| Spring Cloud Gateway 响应模式为 redirect 模式对应的重定向 URL                                                 ||
-|spring.cloud.sentinel.scg.fallback.response-body| Spring Cloud Gateway 响应模式为 response 模式对应的响应内容                                                    ||
-|spring.cloud.sentinel.scg.fallback.response-status| Spring Cloud Gateway 响应模式为 response 模式对应的响应码                                                     | 429|
-|spring.cloud.sentinel.scg.fallback.content-type| Spring Cloud Gateway 响应模式为 response 模式对应的 content-type                                           | application/json|
+|配置项|key|默认值|说明|
+|---|---|---|---|
+|项目名|spring.application.name or project.name| application | Sentinel 项目名称
+|自动化配置|spring.cloud.sentinel.enabled|true|Sentinel 是否生效|
+|Sentinel 初始化|spring.cloud.sentinel.eager|false|是否提前触发 Sentinel 初始化 |
+|Sentinel控制台交互端口|spring.cloud.sentinel.transport.port| 8719|应用与 Sentinel 控制台交互的端口，应用本地会起一个该端口占用的 HttpServer |
+|控制台地址|spring.cloud.sentinel.transport.dashboard| 8719 |Sentinel 控制台地址|
+|心跳间隔时间|spring.cloud.sentinel.transport.heartbeat-interval-ms| | 应用与 Sentinel 控制台的心跳间隔时间 |
+|注册IP|spring.cloud.sentinel.transport.client-ip| |此配置的客户端IP将被注册到 Sentinel Server 端|
+|过滤器加载顺序|spring.cloud.sentinel.filter.order| |Servlet Filter的加载顺序。Starter内部会构造这个filter|
+|url pattern集合|spring.cloud.sentinel.filter.url-patterns| |数据类型是数组。表示Servlet Filter的url pattern集合|
+|是否开启 CommonFilter |spring.cloud.sentinel.filter.enabled|true|Enable to instance CommonFilter|
+|metric文件字符集 |spring.cloud.sentinel.metric.charset| |metric文件字符集  |
+|metric 单个文件的大小|spring.cloud.sentinel.metric.file-single-size| |Sentinel metric 单个文件的大小 |
+|metric 总文件数量|spring.cloud.sentinel.metric.file-total-count|   |metric 总文件数量|
+|日志文件路径|spring.cloud.sentinel.log.dir| |Sentinel 日志文件所在的目录 |
+|是否追加日志 PID|spring.cloud.sentinel.log.switch-pid|false| Sentinel 日志文件名是否需要带上pid  |
+|跳转 URL|spring.cloud.sentinel.servlet.block-page| |自定义的跳转 URL，当请求被限流时会自动跳转至设定好的 URL |
+|冷启动因子|spring.cloud.sentinel.flow.cold-factor|| [冷启动因子](https://github.com/alibaba/Sentinel/wiki/%E9%99%90%E6%B5%81---%E5%86%B7%E5%90%AF%E5%8A%A8) |
+|熔断后的响应模式|spring.cloud.sentinel.scg.fallback.mode| |Spring Cloud Gateway 熔断后的响应模式(选择 redirect or response)|
+|为 redirect 时重定向的 URL|spring.cloud.sentinel.scg.fallback.redirect| |Spring Cloud Gateway 响应模式为 redirect 模式对应的重定向 URL|
+|为 response 时重定向的响应内容|spring.cloud.sentinel.scg.fallback.response-body| |Spring Cloud Gateway 响应模式为 response 模式对应的响应内容 |
+|为 response 时重定向的响应码|spring.cloud.sentinel.scg.fallback.response-status| 429|Spring Cloud Gateway 响应模式为 response 模式对应的响应码 |
+|为 response 时重定向的Content-Type|spring.cloud.sentinel.scg.fallback.content-type| application/json|Spring Cloud Gateway 响应模式为 response 模式对应的 content-type| 
 
-
-NOTE: 请注意。这些配置只有在 Servlet 环境下才会生效，RestTemplate 和 OpenFeign 针对这些配置都无法生效。
+> NOTE： 请注意。这些配置只有在 Servlet 环境下才会生效，RestTemplate 和 OpenFeign 针对这些配置都无法生效。
