@@ -23,7 +23,7 @@
     ul {
       list-style: none;
       padding: 0;
-      width: $contentWidth;
+      max-width: $contentWidth;
       margin: 0 auto;
 
       li {

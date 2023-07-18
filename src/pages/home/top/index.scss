@@ -19,12 +19,12 @@
   .anmination-img {
     position: absolute;
     top: 40%;
-    right: 20px;
+    right: 0;
     z-index: 1;
+    width: 25%;
 
     img {
-      width: 350px;
-
+      width: 100%;
     }
   }
 
