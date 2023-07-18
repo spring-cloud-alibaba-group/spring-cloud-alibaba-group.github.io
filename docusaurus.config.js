@@ -15,13 +15,13 @@ const commonDocsOptions = {
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Spring Cloud Alibaba',
-  favicon: 'img/higress_logo_small.png',
+  favicon: 'img/logo.png',
   themes: [
     require.resolve("@easyops-cn/docusaurus-search-local"),
     /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
   ],
   // Set the production url of your site here
-  url: 'https://higress.io',
+  url: 'https://sca.aliyun.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -63,7 +63,7 @@ const config = {
       src: '//g.alicdn.com/aes/??tracker/1.0.34/index.js,tracker-plugin-pv/2.4.5/index.js,tracker-plugin-event/1.2.5/index.js,tracker-plugin-jserror/1.0.13/index.js,tracker-plugin-api/1.1.14/index.js,tracker-plugin-perf/1.1.8/index.js,tracker-plugin-eventTiming/1.0.4/index.js',
     },
     {
-      src: 'https://www.googletagmanager.com/gtag/js?id=G-YHS75WKFBR',
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-NP3B57ZGEF',
       async: true,
     },
   ],
@@ -107,12 +107,12 @@ const config = {
           editUrl: ({ docPath, locale }) => {
             return `https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/main/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`;
           },
-          lastVersion: '2022.0.0.0-RC1',
+          lastVersion: '2022.0.0.0',
           versions: {
             '2.2.10-RC1': {
               banner: 'none'
             },
-            '2022.0.0.0-RC1': {
+            '2022.0.0.0': {
               banner: 'none'
             },
             '2021.0.5.0': {
@@ -131,6 +131,10 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
         },
+        gtag: {
+          trackingID: 'G-NP3B57ZGEF',
+          anonymizeIP: true,
+        },
       }),
     ],
   ],
@@ -140,7 +144,7 @@ const config = {
     ({
       metadata: [{ name: 'keywords', content: 'Spring Cloud Alibaba,微服务' }],
       // Replace with your project's social card
-      image: 'img/higress_logo_small.png',
+      image: 'img/logo.png',
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true, // 禁止切换主题模式

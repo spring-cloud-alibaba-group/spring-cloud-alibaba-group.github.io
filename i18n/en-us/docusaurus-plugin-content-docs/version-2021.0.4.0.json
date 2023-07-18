@@ -9,34 +9,42 @@
   },
   "sidebar.docs.category.User Guide": {
     "message": "User Guide",
-    "description": "The label for category User Doc in sidebar docs"
+    "description": "Labels for the user guide category in the documentation sidebar"
   },
   "sidebar.docs.category.Nacos": {
     "message": "Registration Configuration Center",
-    "description": "The label for category User Doc in sidebar docs"
+    "description": "Labels for the User Documentation Registration Configuration Center category in the sidebar documentation"
   },
   "sidebar.docs.category.Seata": {
-    "message": "Distributed Transaction",
-    "description": "The label for category User Doc in sidebar docs"
+    "message": "Distributed transaction",
+    "description": "Labels for the User Documentation Distributed Transactions category in the Documentation sidebar"
   },
   "sidebar.docs.category.Sentinel": {
-    "message": "Current-Limiting Degradation",
-    "description": "The label for category User Doc in sidebar docs"
+    "message": "Current limit downgrade",
+    "description": "Labels for user documentation rate-limiting downgrade category in sidebar documentation"
   },
   "sidebar.docs.category.RocketMQ": {
     "message": "Distributed Message",
-    "description": "The label for category User Doc in sidebar docs"
+    "description": "Labels for the user documentation distributed message category in the sidebar docs"
   },
   "sidebar.docs.category.Sidecar": {
-    "message": "Heterogeneous Service",
-    "description": "The label for category User Doc in sidebar docs"
+    "message": "Heterogeneous Services",
+    "description": "Labels for user documentation heterogeneous service categories in sidebar docs"
+  },
+  "sidebar.docs.category.AOT And Native": {
+    "message": "Static compilation",
+    "description": "Labels for the User Documentation Static Compilation category in the sidebar docs"
   },
   "sidebar.docs.category.Best practice": {
-    "message": "Best Practice",
-    "description": "The label for category Parameters Configurations Guide in sidebar docs"
+    "message": "Best practice example",
+    "description": "Labels for the Best Practices Examples category in the sidebar docs"
   },
   "sidebar.docs.category.Reference manual": {
     "message": "Reference Manual",
     "description": "The label for category Reference in sidebar docs"
+  },
+  "sidebar.docs.category.Roadmap": {
+    "message": "Roadmap",
+    "description": "The label for Roadmap Reference in sidebar docs"
   }
 }

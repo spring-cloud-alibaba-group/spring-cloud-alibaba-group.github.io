@@ -159,11 +159,11 @@
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "最后{byUser}{atDate}更新",
+    "message": "最后 {byUser}{atDate} 更新",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.common.headingLinkTitle": {
-    "message": "{heading}的直接链接",
+    "message": "{heading} 的直接链接",
     "description": "Title for link to heading"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
@@ -280,43 +280,31 @@
     "message": "Spring Cloud Alibaba 是什么？"
   },
   "homepage.featureListTitle1": {
-    "message": "多种类型注册中心支持"
+    "message": "简单易用"
   },
   "homepage.featureListContent1": {
-    "message": "提供多注册中心组件，支持Nacos、ZooKeeper、Consul，同时基于该组件可添加更多其他类型注册中心"
+    "message": "Spring Cloud Alibaba 作为一站式的微服务构建方案，用户只需要添加一些注解和少量配置，就可以通过阿里中间件来迅速搭建分布式应用系统。"
   },
   "homepage.featureListTitle2": {
-    "message": "多Kubernetes集群支持"
+    "message": "扩展性强"
   },
   "homepage.featureListContent2": {
-    "message": "一个Higress Controller可同时监听多个Kubernetes集群，方便跨多集群的统一路由管理"
+    "message": "Spring Cloud Alibaba 基于 Spring Cloud 微服务解决方案规范，可便捷地对其中的组件进行扩展和替换。"
   },
   "homepage.featureListTitle3": {
-    "message": "多种扩展方式支持"
+    "message": "生产等级"
   },
   "homepage.featureListContent3": {
-    "message": "支持Wasm插件、Lua插件、进程外插件，通过丰富的插件扩展机制，用户可以使用多语言编写扩展插件，有效降低插件编写门槛，满足用户自定义的扩展诉求"
+    "message": "核心组件都经过经历过阿里巴巴多年双十一洪峰考验，成熟稳定。"
   },
   "homepage.featureListTitle4": {
-    "message": "Dubbo协议转换"
+    "message": "能力全面"
   },
   "homepage.featureListContent4": {
-    "message": "提供HTTP协议到Dubbo协议的转换能力，降低用户对外暴露Dubbo服务的接入成本，满足传统Dubbo微服务用户希望提供对外请求访问的场景"
-  },
-  "homepage.featureListTitle5": {
-    "message": "Sentinel支持"
-  },
-  "homepage.featureListContent5": {
-    "message": "深度集成Sentinel，一站式的满足传统微服务用户对限流、降级、熔断等高可用能力的诉求"
-  },
-  "homepage.featureTitle": {
-    "message": "核心特色"
-  },
-  "homepage.featureListTitle6": {
-    "message": "Modsecurity"
+    "message": "针对微服务架构中的服务注册与发现、分布式消息、微服务限流降级、分布式事务和微服务治理等重要领域，都提供了对应解决方案。"
   },
   "homepage.featureListContent6": {
-    "message": "深度集成开源Web应用防火墙，满足网关用户对安全的首要防护诉求"
+    "message": "深度集成开源 Web 应用防火墙，满足网关用户对安全的首要防护诉求"
   },
   "homepage.footerVersionTitle": {
     "message": "愿景"
@@ -337,7 +325,7 @@
     "message": "报告文档问题"
   },
   "homepage.footerDocListText4": {
-    "message": "在Github上编辑此文档"
+    "message": "在 Github 上编辑此文档"
   },
   "homepage.footerResourcesTitle": {
     "message": "资源"
@@ -349,10 +337,10 @@
     "message": "社区"
   },
   "homepage.introDescFirst": {
-    "message": "Spring Cloud Alibaba为分布式应用开发提供一站式解决方案。它包含开发分布式应用程序所需的所有组件，使您可以轻松地使用Spring Cloud开发应用程序。"
+    "message": "Spring Cloud Alibaba 为分布式应用开发提供一站式解决方案。它包含开发分布式应用程序所需的所有组件，使您可以轻松地使用 Spring Cloud 微服务框架开发应用程序。"
   },
-  "homepage.introDescSecond": {
-    "message": "有了Spring Cloud Alibaba，你只需要添加一些注释和少量的配置，就可以将Spring Cloud应用连接到阿里的分布式解决方案上，用阿里的中间件构建一个分布式应用系统。"
+  "homepage.userTitleBefore": {
+    "message": "谁在使用"
   },
   "homepage.msemapTitle": {
     "message": "微服务全景图"

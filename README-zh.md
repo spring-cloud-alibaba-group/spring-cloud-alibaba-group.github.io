@@ -1,5 +1,11 @@
 # Spring Cloud Alibaba 官网
 
+## 构建项目
+### 环境准备
+项目源码基于 docusaurus v2.3.1 构建，因此要编译运行本项目需确保安装 Node.js 等基础环境。
+
+* Node.js version 16.14+
+
 ### 快速启动
 
 1. `npm install`
@@ -23,9 +29,27 @@ localhost:3000/
 localhost:3000/
 ```
 
-## 本地环境准备
-Base docusaurus v2.3.1
-Node.js version 16.14+
+## Docker 方式运行
+### 本地开发
+1. 构建镜像
+```shell
+docker build --target development -t docs:dev .
+```
+
+2. 运行容器
+```shell
+docker run -p 3000:3000 docs:dev
+```
+
+### 生产部署
+```shella
+docker build -t sca-site:latest .
+```
+
+2. 运行容器
+```shell
+docker run --rm -p 3000:80 sca-site:latest
+```
 
 ## i18n注意事项
 

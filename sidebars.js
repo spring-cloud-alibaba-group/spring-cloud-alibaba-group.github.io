@@ -18,7 +18,12 @@ const sidebars = {
       type: 'category',
       label: 'Overview',
       collapsible: true,
-      items: ['overview/what-is-sca', 'overview/roadmap', 'overview/faq', 'overview/terminology', "overview/version-explain"],
+      items: [
+        'overview/what-is-sca',
+        'overview/faq',
+        "overview/roadmap",
+        "overview/version-explain"
+      ],
     },
     {
       type: 'category',
@@ -89,12 +94,13 @@ const sidebars = {
         'best-practice/integrated-example'
       ]
     },
-    {
-      type: 'category',
-      label: 'Reference manual',
-      collapsible: true,
-      items: ['reference-manual/glossary']
-    }
+    // todo 后续补充或彻底删除
+    // {
+    //   type: 'category',
+    //   label: 'Reference manual',
+    //   collapsible: true,
+    //   items: []
+    // }
   ]
 };
 
