@@ -1,6 +1,5 @@
 {
-  "docs": [
-    {
+  "docs": [{
       "type": "category",
       "label": "Overview",
       "collapsible": true,
@@ -15,8 +14,7 @@
       "type": "category",
       "label": "User Guide",
       "collapsible": true,
-      "items": [
-        {
+      "items": [{
           "type": "category",
           "label": "Nacos",
           "items": [
@@ -66,8 +64,7 @@
           "label": "AOT And Native",
           "items": [
             "user-guide/graalvm/overview",
-            "user-guide/graalvm/quick-start",
-            "user-guide/graalvm/advanced-guide"
+            "user-guide/graalvm/quick-start"
           ]
         }
       ]
