@@ -30,14 +30,13 @@ description: RocketMQ, Quick Start.
   Linux / Unix / Mac 操作系统，执行命令 ：
 
     ```shell
-    nohup sh bin/mqnamesrv &
-    tail -f ~/logs/rocketmqlogs/namesrv.log
+    $ nohup sh bin/mqnamesrv & tail -f ~/logs/rocketmqlogs/namesrv.log
     ```
 
 	Windows 操作系统，执行命令：  
 
     ```
-    .\bin\mqnamesrv.cmd
+    $ .\bin\mqnamesrv.cmd
     ```
 
 3. 启动 Broker  
@@ -45,13 +44,12 @@ description: RocketMQ, Quick Start.
   Linux / Unix / Mac 操作系统，执行命令 ：
 
     ```bash
-    nohup sh bin/mqbroker -n localhost:9876 &
-    tail -f ~/logs/rocketmqlogs/broker.log
+    $ nohup sh bin/mqbroker -n localhost:9876 & tail -f ~/logs/rocketmqlogs/broker.log
     ```
 
 	Windows 操作系统，执行命令：  
     ```
-    .\bin\mqbroker.cmd -n localhost:9876
+    $ .\bin\mqbroker.cmd -n localhost:9876
     ```
 
 ### 测试发送与接受消息
@@ -61,24 +59,24 @@ description: RocketMQ, Quick Start.
   Linux / Unix / Mac 操作系统，执行命令 ：
 
     ```shell
-    sh bin/mqadmin updatetopic -n localhost:9876 -t TestTopic -c DefaultCluster
+    $ sh bin/mqadmin updatetopic -n localhost:9876 -t TestTopic -c DefaultCluster
     ```
 
 	Windows 操作系统，执行命令：  
 
     ```
-    .\bin\mqadmin.cmd updatetopic -n localhost:9876 -t TopicTest -c DefaultCluster
+    $ .\bin\mqadmin.cmd updatetopic -n localhost:9876 -t TopicTest -c DefaultCluster
     ```
 2. 发送消息：
 
   Linux / Unix / Mac 操作系统，执行命令 ：  
     ```shell
-    sh bin/tools.sh org.apache.rocketmq.example.quickstart.Producer
+    $ sh bin/tools.sh org.apache.rocketmq.example.quickstart.Producer
     ```
 
 	Windows 操作系统，执行命令：  
     ```cmd
-    .\bin\tools.cmd org.apache.rocketmq.example.quickstart.Producer
+    $ .\bin\tools.cmd org.apache.rocketmq.example.quickstart.Producer
     ```
     发送成功后显示：SendResult [sendStatus=SEND_OK, msgId= ...
 
@@ -87,12 +85,12 @@ description: RocketMQ, Quick Start.
     Linux / Unix / Mac 操作系统，执行命令 ：
 
     ```shell
-    sh bin/tools.sh org.apache.rocketmq.example.quickstart.Consumer
+    $ sh bin/tools.sh org.apache.rocketmq.example.quickstart.Consumer
     ```
 
     Windows 操作系统，执行命令：  
       ```
-      .\bin\tools.cmd org.apache.rocketmq.example.quickstart.Consumer
+      $ .\bin\tools.cmd org.apache.rocketmq.example.quickstart.Consumer
       ```
 
       发送成功后显示：SendResult [sendStatus=SEND_OK, msgId= ...
@@ -121,12 +119,12 @@ description: RocketMQ, Quick Start.
   Linux / Unix / Mac 操作系统，执行命令 ：
 
   ```shell
-  sh bin/mqadmin updateTopic -n localhost:9876 -c DefaultCluster -t broadcast
+  $ sh bin/mqadmin updateTopic -n localhost:9876 -c DefaultCluster -t broadcast
   ```
 
   Windows 操作系统，执行命令：  
   ```
-  .\bin\mqadmin.cmd updateTopic -n localhost:9876 -c DefaultCluster -t broadcast
+  $ .\bin\mqadmin.cmd updateTopic -n localhost:9876 -c DefaultCluster -t broadcast
   ```
 
 ### 创建生产者
