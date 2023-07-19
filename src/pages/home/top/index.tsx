@@ -143,6 +143,9 @@ const Top = ({ language }: { language?: string }) => {
             <img className="img5" src="//img.alicdn.com/tfs/TB115i2JmzqK1RjSZPxXXc4tVXa-186-78.png" />
           </div> */}
           </div>
+          <div className="anmination-img">
+            <img src="https://img.alicdn.com/imgextra/i4/O1CN01EMOOQU1PtKa4C3rvA_!!6000000001898-2-tps-948-632.png" />
+          </div>
         </section>
       )}
     </BrowserOnly>

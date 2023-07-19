@@ -351,8 +351,11 @@
   "homepage.userDesc2": {
     "message": "上提供信息来帮助社区做得更好！"
   },
-  "homepage.userTitle": {
-    "message": "谁在使用 Spring Cloud Alibaba"
+  "homepage.userTitleBefore": {
+    "message": "谁在使用"
+  },
+  "homepage.userTitleAfter": {
+    "message": "Spring Cloud Alibaba"
   },
   "homepage.quickstartButton": {
     "message": "快速入门"
