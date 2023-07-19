@@ -19,7 +19,7 @@ Nacos Server 启动成功之后，浏览器地址栏输入 `http://ip:8848/nacos
 ### 接入 Nacos Config
 
 如果要在您的项目中使用 Nacos 来实现配置管理，需要进行以下操作（确保 Nacos Server 已启动）：
-1. 需要在 pom.xml 文件中引入 group ID 为 `com.alibaba.cloud` 和 artifact ID 为 `spring-cloud-starter-alibaba-nacos-config` 的 starter：
+1. 需要在 pom.xml 文件中引入 group ID 为 com.alibaba.cloud 和 artifact ID 为 spring-cloud-starter-alibaba-nacos-config 的 starter：
 
     ```xml
     <dependency>
@@ -94,7 +94,7 @@ Nacos Server 启动成功之后，浏览器地址栏输入 `http://ip:8848/nacos
 #### 功能验证
 1. 验证自动注入
 
-    请求 `http://127.0.0.1:18084/nacos/bean` 地址，可以看到成功从 Nacos 配置中心中获取了数据。
+    请求 http://127.0.0.1:18084/nacos/bean 地址，可以看到成功从 Nacos 配置中心中获取了数据。
     
     ```shell
     $ curl http://127.0.0.1:18084/nacos/bean
@@ -119,7 +119,7 @@ Nacos Server 启动成功之后，浏览器地址栏输入 `http://ip:8848/nacos
     $ curl -X POST "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=nacos-config-example.properties&group=DEFAULT_GROUP&content=spring.cloud.nacos.config.serveraddr=127.0.0.1:8848%0Aspring.cloud.nacos.config.prefix=PREFIX%0Aspring.cloud.nacos.config.group=DEFAULT_GROUP%0Aspring.cloud.nacos.config.namespace=NAMESPACE"
     ```
 
-    再次请求 `http://127.0.0.1:18084/nacos/bean` 地址，可以看到应用已经从 Nacos 中获取到了最新的数据。
+    再次请求 http://127.0.0.1:18084/nacos/bean 地址，可以看到应用已经从 Nacos 中获取到了最新的数据。
     
     ```shell
     $ curl http://127.0.0.1:18084/nacos/bean
@@ -146,7 +146,7 @@ Nacos 配置管理示例源码参考：[Nacos 配置管理示例](https://github
 
 如果要在您的项目中使用 Nacos 来作为服务发现的组件。需要进行以下操作（确保 Nacos Server 已启动）：
 
-1. 需要在 pom.xml 文件中引入 group ID 为 `com.alibaba.cloud` 和 artifact ID 为`spring-cloud-starter-alibaba-nacos-discovery` 的 starter：
+1. 需要在 pom.xml 文件中引入 group ID 为 com.alibaba.cloud 和 artifact ID 为 spring-cloud-starter-alibaba-nacos-discovery 的 starter：
 
     ```xml
     <dependency> 
@@ -161,7 +161,7 @@ Nacos 配置管理示例源码参考：[Nacos 配置管理示例](https://github
     spring.cloud.nacos.discovery.server-addr=127.0.0.1:8848
     ```
 
-3. 使用 `@EnableDiscoveryClient` 注解开启服务注册与发现功能：
+3. 使用 @EnableDiscoveryClient 注解开启服务注册与发现功能：
 
     ```java
     @SpringBootApplication
@@ -196,13 +196,13 @@ Nacos 配置管理示例源码参考：[Nacos 配置管理示例](https://github
 2. 启动应用，支持 IDE 直接启动和编译打包后启动。
 
     - IDE直接启动：找到 [nacos-discovery-provider-example](https://github.com/alibaba/spring-cloud-alibaba/tree/2022.x/spring-cloud-alibaba-examples/nacos-example/nacos-discovery-example/nacos-discovery-provider-example) 项目的主类 ProviderApplication，执行 main 方法启动应用。
-    - 打包编译后启动：在 [nacos-discovery-provider-example](https://github.com/alibaba/spring-cloud-alibaba/tree/2022.x/spring-cloud-alibaba-examples/nacos-example/nacos-discovery-example/nacos-discovery-provider-example) 项目中执行 mvn clean package 将工程编译打包，然后执行 java - jar nacos-discovery-provider-example.jar启动应用。
+    - 打包编译后启动：在 [nacos-discovery-provider-example](https://github.com/alibaba/spring-cloud-alibaba/tree/2022.x/spring-cloud-alibaba-examples/nacos-example/nacos-discovery-example/nacos-discovery-provider-example) 项目中执行 mvn clean package 将工程编译打包，然后执行 java - jar nacos-discovery-provider-example.jar 启动应用。
 
 #### 验证
 
 1. 查询服务
 
-    使用shell终端输入如下命令查询，可以看到服务节点已经成功注册到 Nacos Server。
+    使用 Shell 终端输入如下命令查询，可以看到服务节点已经成功注册到 Nacos Server。
 
     ```shell
     $ curl http://127.0.0.1:8848/nacos/v1/ns/catalog/instances?serviceName=service-provider&clusterName=DEFAULT&pageSize=10&pageNo=1&namespaceId=
@@ -236,7 +236,7 @@ Nacos 配置管理示例源码参考：[Nacos 配置管理示例](https://github
 
 2. 服务发现
 
-    在pom.xml中加入以下依赖：
+    在 pom.xml 中加入以下依赖：
 
     ```xml
     <dependencies>
@@ -283,7 +283,7 @@ Nacos 配置管理示例源码参考：[Nacos 配置管理示例](https://github
 
     echo 方法上的 @GetMapping 注解将 echo 方法与 URL "/echo/{str}" 相对应，@PathVariable 注解将 URL 路径中的 {str} 对应成 echo 方法的参数 str。
 
-3. 将两者注入到Controller中：
+3. 将两者注入到 Controller 中：
 
     ```java
     @RestController
@@ -317,11 +317,11 @@ Nacos 配置管理示例源码参考：[Nacos 配置管理示例](https://github
 5. 启动应用
 
     - IDE直接启动：找到 [nacos-discovery-consumer-example](https://github.com/alibaba/spring-cloud-alibaba/tree/2022.x/spring-cloud-alibaba-examples/nacos-example/nacos-discovery-example/nacos-discovery-consumer-example) 项目的主类 ConsumerApplication，执行 main 方法启动应用。
-    - 打包编译后启动：在 [nacos-discovery-consumer-example](https://github.com/alibaba/spring-cloud-alibaba/tree/2022.x/spring-cloud-alibaba-examples/nacos-example/nacos-discovery-example/nacos-discovery-consumer-example) 项目中执行 mvn clean package 将工程编译打包，然后执行 java -jar nacos-discovery-consumer-example.jar启动应用。
+    - 打包编译后启动：在 [nacos-discovery-consumer-example](https://github.com/alibaba/spring-cloud-alibaba/tree/2022.x/spring-cloud-alibaba-examples/nacos-example/nacos-discovery-example/nacos-discovery-consumer-example) 项目中执行 mvn clean package 将工程编译打包，然后执行 java -jar nacos-discovery-consumer-example.jar 启动应用。
 
 #### 验证
 
-1. 请求 `http://127.0.0.1:18083/echo-rest/1234` 地址，可以看到响应显示了 nacos-discovery-provider-example 返回的消息 "hello Nacos Discovery 1234"，证明服务发现生效。
+1. 请求 http://127.0.0.1:18083/echo-rest/1234 地址，可以看到响应显示了 nacos-discovery-provider-example 返回的消息 "hello Nacos Discovery 1234"，证明服务发现生效。
 
     ```shell
     $ curl http://127.0.0.1:18083/echo-rest/1234
@@ -333,7 +333,7 @@ Nacos 配置管理示例源码参考：[Nacos 配置管理示例](https://github
     hello Nacos Discovery 1234
     ```
 
-2. 请求 `http://127.0.0.1:18083/echo-feign/12345` 地址，可以看到响应显示了 nacos-discovery-provider-example 返回的消息 "hello Nacos Discovery 12345"，证明服务发现生效。
+2. 请求 http://127.0.0.1:18083/echo-feign/12345 地址，可以看到响应显示了 nacos-discovery-provider-example 返回的消息 "hello Nacos Discovery 12345"，证明服务发现生效。
 
     ```shell
     $ curl http://127.0.0.1:18083/echo-feign/12345

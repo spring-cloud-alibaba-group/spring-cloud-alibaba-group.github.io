@@ -12,11 +12,11 @@ This chapter shows the advanced features and advanced usage of spring-cloud-star
 
 spring-cloud-starter-alibaba-nacos-config When loading the service configuration:
 
-Not only is the base configuration prefixed with dataId `${spring.application.name}.${file-extension:properties}` loaded,
+Not only is the base configuration prefixed with dataId ${spring.application.name}.${file-extension:properties} loaded,
 
-The base configuration with dataId of `${spring.application.name}-${profile}.${file-extension:properties}` is also loaded.
+The base configuration with dataId of ${spring.application.name}-${profile}.${file-extension:properties} is also loaded.
 
-In daily development, if you encounter different configurations in multiple environments, you can select different configurations through the `${spring.Profiles.active}` configuration item provided by spring.
+In daily development, if you encounter different configurations in multiple environments, you can select different configurations through the ${spring.Profiles.active} configuration item provided by spring.
 
 ```properties
 spring.profiles.active=develop
@@ -31,8 +31,8 @@ A new dataId on nacos is: basic configuration of nacos-config-develop.yaml, as s
 ```properties
 Data ID: nacos-config-develop.yaml
 Group: DEFAULT_GROUP
-配置格式: YAML
-配置内容: current.env: develop-env
+configuratioon style: YAML
+configuration content: current.env: develop-env
 ```
 
 The code to start the Spring Boot application test is as follows:
@@ -62,7 +62,7 @@ in develop-env enviroment;  user name :nacos-config-yaml-update;  age: 68
 The 2018-11-02 15:34:25. 33014-013 the INFO/Thread - 11 ConfigServletWebServerApplicationContext: Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6f1c29b7:  startup date [Fri Nov 02 15:33:57 CST 2018];  parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@63355449
 ```
 
-If you need to switch to production, just change the `${spring.profiles.active}` parameter configuration. As follows:
+If you need to switch to production, just change the ${spring.profiles.active} parameter configuration. As follows:
 
 ```properties
 spring.profiles.active=product
@@ -70,11 +70,11 @@ spring.profiles.active=product
 
 At the same time, basic configuration of corresponding dataId needs to be added to Nacos in the production environment. For example, nacos in the generation environment adds a configuration with dataId of: nacos-config-product.yaml:
 
-```markdown
-Data ID: nacos-config-product.yaml
+```properties
+Data ID: nacos-config-develop.yaml
 Group: DEFAULT_GROUP
-配置格式: YAML
-配置内容: current.env: product-env
+configuratioon style: YAML
+configuration content: current.env: develop-env
 ```
 
 Start the test program, and the output is as follows:
@@ -86,7 +86,7 @@ The 2018-11-02 15:42:14. 33024-628 the INFO/Thread - 11 ConfigServletWebServerAp
 
 > Note:
 >
-> In this case, we wrote `spring.profilename.active=<profilename>` to the configuration file, but in real project implementation, the value of this variable will vary depending on the environment. It is common practice at this point to specify its configuration via the `-dspring.profes.active =<profile>` parameter to achieve flexible switching between environments.
+> In this case, we wrote spring.profilename.active=profilename to the configuration file, but in real project implementation, the value of this variable will vary depending on the environment. It is common practice at this point to specify its configuration via the spring.profes.active=profile parameter to achieve flexible switching between environments.
 
 ### User-defined namespace configurations
 
@@ -119,9 +119,9 @@ spring.cloud.nacos.config.group=YOUR_GROUP_NAME
 
 Nacos Config currently offers three configuration capabilities to pull relevant configurations from Nacos.
 
-- A: through `spring.cloud.nacos.config.shared-dataids` support multiple Shared Data Id configuration;
+- A: through spring.cloud.nacos.config.shared-dataids support multiple Shared Data Id configuration;
 
-- B: through `spring.cloud.nacos.config.ext-config[n].data-id` The data - id way to support multiple extended data id configuration;
+- B: through spring.cloud.nacos.config.ext-config[n].data-id The data -id way to support multiple extended data id configuration;
 
 - C: Automatically generates related Data ids based on internal rules (application name, application name + Profile).
 
@@ -207,10 +207,10 @@ Cluster service name|spring.cloud.nacos.config.cluster-name||
 
 ### Endpoint information
 
-Request `127.0.0.1:18084/actuator/nacosconfig` address, you can see related EndPoint node information:
+Request http://127.0.0.1:18084/actuator/nacosconfig address, you can see related EndPoint node information:
 
 ```shell
-$ curl 127.0.0.1:18084/actuator/nacosconfig 
+$ curl http://127.0.0.1:18084/actuator/nacosconfig 
 ```
 
 Response:
@@ -336,10 +336,10 @@ Whether to enable Nacos|spring.cloud.nacos.discovery.enabled|true|Start by defau
 
 ### Endpoint Information
 
-Request `127.0.0.1:18083/actuator/nacosdiscovery` Address，You can view information about the EndPoint node
+Request http://127.0.0.1:18083/actuator/nacosdiscovery Address，You can view information about the EndPoint node
 
 ```shell
-$ curl 127.0.0.1:18083/actuator/nacosdiscovery
+$ curl http://127.0.0.1:18083/actuator/nacosdiscovery
 ```
 
 Response:

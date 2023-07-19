@@ -12,11 +12,11 @@ description: Advanced,Nacos,Guide.
 
 spring-cloud-starter-alibaba-nacos-config 在加载服务配置时：
 
-不仅仅加载了以 dataId 为 `${spring.application.name}.${file-extension:properties}` 为前缀的基础配置，
+不仅仅加载了以 dataId 为 ${spring.application.name}.${file-extension:properties} 为前缀的基础配置，
 
-还加载了dataId为 `${spring.application.name}-${profile}.${file-extension:properties}` 的基础配置。
+还加载了dataId为 ${spring.application.name}-${profile}.${file-extension:properties} 的基础配置。
 
-在日常开发中如果遇到多套环境下的不同配置，可以通过 Spring 提供的 `${spring.profiles.active}` 这个配置项选择不同情况下的配置。
+在日常开发中如果遇到多套环境下的不同配置，可以通过 Spring 提供的 ${spring.profiles.active} 这个配置项选择不同情况下的配置。
 
 ```properties
 spring.profiles.active=develop
@@ -56,7 +56,7 @@ in develop-env enviroment; user name :nacos-config-yaml-update; age: 68
 2018-11-02 15:34:25.013  INFO 33014 --- [ Thread-11] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6f1c29b7: startup date [Fri Nov 02 15:33:57 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@63355449
 ```
 
-如果需要切换到生产环境，只需要更改 `${spring.profiles.active}` 参数配置即可。如下所示：
+如果需要切换到生产环境，只需要更改 ${spring.profiles.active} 参数配置即可。如下所示：
 
 ```properties
 spring.profiles.active=product
@@ -133,17 +133,17 @@ spring.cloud.nacos.config.extension-configs[2].refresh=true
 ```
 
 可以看到：
-- 通过 `spring.cloud.nacos.config.extension-configs[n].data-id` 的配置方式来支持多个 Data Id 的配置。
+- 通过 spring.cloud.nacos.config.extension-configs[n].data-id 的配置方式来支持多个 Data Id 的配置。
 
-- 通过 `spring.cloud.nacos.config.extension-configs[n].group` 的配置方式自定义 Data Id 所在的组，不明确配置的话，默认是 DEFAULT_GROUP。
+- 通过 spring.cloud.nacos.config.extension-configs[n].group 的配置方式自定义 Data Id 所在的组，不明确配置的话，默认是 DEFAULT_GROUP。
 
-- 通过 `spring.cloud.nacos.config.extension-configs[n].refresh` 的配置方式来控制该 Data Id 在配置变更时，是否支持应用中可动态刷新， 感知到最新的配置值。默认是不支持的。
+- 通过 spring.cloud.nacos.config.extension-configs[n].refresh 的配置方式来控制该 Data Id 在配置变更时，是否支持应用中可动态刷新， 感知到最新的配置值。默认是不支持的。
 
 > Note:
 >
-> 多个 Data Id 同时配置时，他的优先级关系是 `spring.cloud.nacos.config.extension-configs[n].data-id` 其中 n 的值越大，优先级越高。
+> 多个 Data Id 同时配置时，他的优先级关系是 spring.cloud.nacos.config.extension-configs[n].data-id 其中 n 的值越大，优先级越高。
 > 
-> `spring.cloud.nacos.config.extension-configs[n].data-id` 的值必须带文件扩展名，文件扩展名既可支持 properties，又可以支持 yaml/yml。 此时 `spring.cloud.nacos.config.file-extension` 的配置对自定义扩展配置的 Data Id 文件扩展名没有影响。
+> spring.cloud.nacos.config.extension-configs[n].data-id 的值必须带文件扩展名，文件扩展名既可支持 properties，又可以支持 yaml/yml。 此时 spring.cloud.nacos.config.file-extension 的配置对自定义扩展配置的 Data Id 文件扩展名没有影响。
 
 通过自定义扩展的 Data Id 配置，既可以解决多个应用间配置共享的问题，又可以支持一个应用有多个配置文件。
 
@@ -162,19 +162,19 @@ spring.cloud.nacos.config.shared-configs[0].refresh=true
 
 可以看到：
 
-- 通过 `spring.cloud.nacos.config.shared-configs[n].data-id` 来支持多个共享 Data Id 的配置。
+- 通过 spring.cloud.nacos.config.shared-configs[n].data-id 来支持多个共享 Data Id 的配置。
 
-- 通过 `spring.cloud.nacos.config.shared-configs[n].group` 来配置自定义 Data Id 所在的组，不明确配置的话，默认是 DEFAULT_GROUP。
+- 通过 spring.cloud.nacos.config.shared-configs[n].group 来配置自定义 Data Id 所在的组，不明确配置的话，默认是 DEFAULT_GROUP。
 
-- 通过 `spring.cloud.nacos.config.shared-configs[n].refresh` 来控制该Data Id在配置变更时，是否支持应用中动态刷新，默认false。
+- 通过 spring.cloud.nacos.config.shared-configs[n].refresh 来控制该Data Id在配置变更时，是否支持应用中动态刷新，默认false。
 
 ### 配置的优先级
 
 Nacos Config 目前提供了三种配置能力从 Nacos 拉取相关的配置：
 
-- A: 通过 `spring.cloud.nacos.config.shared-dataids` 支持多个共享 Data Id 的配置
+- A: 通过 spring.cloud.nacos.config.shared-dataids 支持多个共享 Data Id 的配置
 
-- B: 通过 `spring.cloud.nacos.config.ext-config[n].data-id` 的方式支持多个扩展 Data Id 的配置
+- B: 通过 spring.cloud.nacos.config.ext-config[n].data-id 的方式支持多个扩展 Data Id 的配置
 
 - C: 通过内部相关规则(应用名、应用名+ Profile )自动生成相关的 Data Id 配置
 
@@ -202,10 +202,10 @@ SecretKey|spring.cloud.nacos.config.secret-key||
 
 ### Endpoint 信息
 
-请求 `127.0.0.1:18083/actuator/nacosconfig` 地址，可以看到相关的 EndPoint 节点信息。
+请求 http://127.0.0.1:18083/actuator/nacosconfig 地址，可以看到相关的 EndPoint 节点信息。
 
 ```shell
-$ curl 127.0.0.1:18084/actuator/nacosconfig 
+$ curl http://127.0.0.1:18084/actuator/nacosconfig 
 ```
 
 响应结果：
@@ -330,10 +330,10 @@ Metadata|spring.cloud.nacos.discovery.metadata||使用Map格式配置
 
 ### Endpoint 信息
 
-请求 `127.0.0.1:18083/actuator/nacosdiscovery` 地址，可以看到相关的 EndPoint 节点信息。
+请求 http://127.0.0.1:18083/actuator/nacosdiscovery 地址，可以看到相关的 EndPoint 节点信息。
 
 ```shell
-$ curl 127.0.0.1:18083/actuator/nacosdiscovery
+$ curl http://127.0.0.1:18083/actuator/nacosdiscovery
 ```
 
 响应结果：
