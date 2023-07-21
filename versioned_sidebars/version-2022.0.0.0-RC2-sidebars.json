@@ -6,6 +6,7 @@
       "items": [
         "overview/what-is-sca",
         "overview/faq",
+        "overview/roadmap",
         "overview/version-explain"
       ]
     },
@@ -63,8 +64,7 @@
           "label": "AOT And Native",
           "items": [
             "user-guide/graalvm/overview",
-            "user-guide/graalvm/quick-start",
-            "user-guide/graalvm/advanced-guide"
+            "user-guide/graalvm/quick-start"
           ]
         }
       ]

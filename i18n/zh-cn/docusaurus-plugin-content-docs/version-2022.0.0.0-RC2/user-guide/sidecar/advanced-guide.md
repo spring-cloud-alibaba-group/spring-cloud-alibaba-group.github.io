@@ -8,7 +8,7 @@ description: sidecar.
 
 - spring-cloud-starter-alibaba-sidecar 根据配置的异构微服务的IP、端口等信息，将异构微服务的IP/端口注册到服务发现组件上。
 
-- spring-cloud-starter-alibaba-sidecar 实现了异构服务的健康检查, spring-cloud-starter-alibaba-sidecar 会定时检测异构微服务是否健康。如果发现异构微服务不健康，Sidecar 会自动将代表异构微服务的 Sidecar 实例下线；如果异构微服务恢复正常，则会自动上线。最长延迟是30秒，详见 `Alibaba SidecarChecker#check`。
+- spring-cloud-starter-alibaba-sidecar 实现了异构服务的健康检查, spring-cloud-starter-alibaba-sidecar 会定时检测异构微服务是否健康。如果发现异构微服务不健康，Sidecar 会自动将代表异构微服务的 Sidecar 实例下线；如果异构微服务恢复正常，则会自动上线。最长延迟是30秒，详见 Spring Cloud Alibaba SidecarChecker#check。
 
 ## 优缺点分析
 
@@ -28,7 +28,7 @@ spring-cloud-starter-alibaba-sidecar 的设计和 spring-cloud-netflix-sidecar �
 
 ## EndPoint信息
 
-请求 `http://127.0.0.1:8070/actuator/health` 地址可以看到 EndPoint 节点信息
+请求 http://127.0.0.1:8070/actuator/health 地址可以看到 EndPoint 节点信息
 
 ```shell
 $ curl http://127.0.0.1:8070/actuator/health

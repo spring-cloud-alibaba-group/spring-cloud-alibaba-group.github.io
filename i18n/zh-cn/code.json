@@ -159,11 +159,11 @@
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "最后{byUser}{atDate}更新",
+    "message": "最后 {byUser}{atDate} 更新",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.common.headingLinkTitle": {
-    "message": "{heading}的直接链接",
+    "message": "{heading} 的直接链接",
     "description": "Title for link to heading"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
@@ -283,13 +283,13 @@
     "message": "简单易用"
   },
   "homepage.featureListContent1": {
-    "message": "Spring Cloud Alibaba作为一站式的微服务构建方案，用户只需要添加一些注解和少量配置，就可以通过阿里中间件来迅速搭建分布式应用系统。"
+    "message": "Spring Cloud Alibaba 作为一站式的微服务构建方案，用户只需要添加一些注解和少量配置，就可以通过阿里中间件来迅速搭建分布式应用系统。"
   },
   "homepage.featureListTitle2": {
     "message": "扩展性强"
   },
   "homepage.featureListContent2": {
-    "message": "Spring Cloud Alibaba基于Spring Cloud微服务解决方案规范，可便捷地对其中的组件进行扩展和替换。"
+    "message": "Spring Cloud Alibaba 基于 Spring Cloud 微服务解决方案规范，可便捷地对其中的组件进行扩展和替换。"
   },
   "homepage.featureListTitle3": {
     "message": "生产等级"
@@ -304,7 +304,7 @@
     "message": "针对微服务架构中的服务注册与发现、分布式消息、微服务限流降级、分布式事务和微服务治理等重要领域，都提供了对应解决方案。"
   },
   "homepage.featureListContent6": {
-    "message": "深度集成开源Web应用防火墙，满足网关用户对安全的首要防护诉求"
+    "message": "深度集成开源 Web 应用防火墙，满足网关用户对安全的首要防护诉求"
   },
   "homepage.footerVersionTitle": {
     "message": "愿景"
@@ -325,7 +325,7 @@
     "message": "报告文档问题"
   },
   "homepage.footerDocListText4": {
-    "message": "在Github上编辑此文档"
+    "message": "在 Github 上编辑此文档"
   },
   "homepage.footerResourcesTitle": {
     "message": "资源"
@@ -351,8 +351,11 @@
   "homepage.userDesc2": {
     "message": "上提供信息来帮助社区做得更好！"
   },
-  "homepage.userTitle": {
-    "message": "谁在使用 Spring Cloud Alibaba"
+  "homepage.userTitleBefore": {
+    "message": "谁在使用"
+  },
+  "homepage.userTitleAfter": {
+    "message": "Spring Cloud Alibaba"
   },
   "homepage.quickstartButton": {
     "message": "快速入门"

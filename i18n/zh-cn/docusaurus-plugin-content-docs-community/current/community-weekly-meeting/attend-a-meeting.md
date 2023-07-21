@@ -4,14 +4,34 @@ keywords: [Spring Cloud Alibaba,Meeting]
 description: 如何参与周会
 ---
 
-## Spring Cloud Alibaba社区双周会
+## Spring Cloud Alibaba 社区双周会
 
-- Time: 每隔一周的周四晚上20:00~21:00举行
+有兴趣参与社区周会讨论，和其他用户一起讨论关于 Spring Cloud Alibaba 的下一步发展计划和已有问题的解决方案。这是一个用于讨论最佳实践，提出问题和解决问题的会议。快来与其他用户一起参与到周会讨论中吧！
 
-- 钉钉会议码: 283 094 71498 
+:::info
+有关于会议讨论的任何内容都将会被记录在[周会纪要](./minutes-of-meeting.md)中去，您可以点击查看他们，以了解周会的主要讨论内容！
+:::
 
-- 电话接入方式: 
-    - +8657128356285（中国大陆）
-    - +867936168709（中国大陆） 
+**时间：** 
+
+每隔一周的周四晚上 **20:00~21:00** 举行
+
+**钉钉会议码：**
     
-- 钉钉接入方式: `//dingtalkclient/page/videoConfFromCalendar?confId=cbd36eab-7264-4914-bae8-1a60ccde98fc&calendarId=1799616207`
+您可以通过打开钉钉，在会议中输入如下的会议码参与社区周会讨论！
+
+> 会议码：***28309471498***
+
+**电话接入方式：**
+
+您也可以通过钉钉电话的方式接入社区周会：
+
+- 057128095818
+- 02162681677 
+ 
+更多电话接入方式参见：
+- https://meeting.dingtalk.com/dialin/?corpId=dingd8e1123006514592
+    
+**钉钉接入方式：**
+
+您也可以通过在浏览器中点击[此连接](https://meeting.dingtalk.com/j/1n50ea96INf)参与周会！

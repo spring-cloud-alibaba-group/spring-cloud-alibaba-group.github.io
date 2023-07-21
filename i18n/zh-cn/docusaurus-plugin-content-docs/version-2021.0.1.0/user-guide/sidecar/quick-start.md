@@ -10,7 +10,7 @@ description: Sidecar,Quick Start.
 
 - 【必须】异构微服务需使用 HTTP 通信。这一点严格来说不算要求，因为 Spring Cloud 本身就是基于 HTTP 的。
 
-- 【可选】如果微服务配置了 `sidecar.health-check-url` ，则表示开启健康检查，此时，异构微服务需实现健康检查（可以是空实现，只要暴露一个端点，返回类似 `{"status": "UP"}` 的字符串即可）。
+- 【可选】如果微服务配置了 sidecar.health-check-url ，则表示开启健康检查，此时，异构微服务需实现健康检查（可以是空实现，只要暴露一个端点，返回类似 {"status": "UP"} 的字符串即可）。
 
 ## 准备工作
 
@@ -25,18 +25,18 @@ description: Sidecar,Quick Start.
     下载解压后 我们需要进入到 bin 目录启动 Nacos 服务，一定不要双击启动，双击默认会以集群方式启动，示例只需以单机方式启动即可。
 
     ```shell
-    startup.cmd -m standalone
+    $ startup.cmd -m standalone
     ```
 
 3. 登录 Nacos。
 
-  在浏览器地址栏中输入`localhost:8848/nacos` 可以看到 Nacos 提供的控制台界面 **（用户名和密码都是 nacos/nacos）**。
+  在浏览器地址栏中输入 localhost:8848/nacos 可以看到 Nacos 提供的控制台界面 **（用户名和密码都是 nacos/nacos）**。
 
 ### 引入依赖
 
 在已经创建的 Spring Boot 项目中引入如下依赖：
 
-```xml title="pom.xml"
+```xml
 <dependency>
     <groupId>org.springframework.cloud</groupId>
     <artifactId>spring-cloud-starter-gateway</artifactId>
@@ -125,7 +125,7 @@ endpoint:
 
 访问异构服务：
 
-请求 `http://127.0.0.1:8070/node-service/health.json` 地址，显示服务健康检查信息则说明整合成功。
+请求 http://127.0.0.1:8070/node-service/health.json 地址，显示服务健康检查信息则说明整合成功。
 
 ```shell
 $ curl http://127.0.0.1:8070/node-service/health.json

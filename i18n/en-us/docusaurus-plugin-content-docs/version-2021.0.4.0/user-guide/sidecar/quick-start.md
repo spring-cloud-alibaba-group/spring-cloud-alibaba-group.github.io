@@ -1,7 +1,7 @@
 ---
 title: "Quick Start"
 keywords: [Spring Cloud Alibaba,Sidecar]
-description: Sidecar,Quick Start.
+description: Sidecar, Quick Start.
 ---
 
 This section demonstrates how to use Spring Cloud Alibaba Sidecar to access heterogeneous micro-services written in a non-Java language.
@@ -25,12 +25,12 @@ Before adding Sidecar, start the Nacos Server.
     After downloading and decompressing, we need to enter the bin directory to start nacos service. Do not double-click to start NACos service. By default, double-click to start NACos service will be started in cluster mode.
 
     ```shell
-    startup.cmd -m standalone
+    $ startup.cmd -m standalone
     ```
 
 3. Log in to Nacos.
 
-    If we go to the browser and type `localhost:8848/nacos`, we can see that Nacos provides the console interface username and password are both nacos/nacos
+    If we go to the browser and type localhost:8848/nacos, we can see that Nacos provides the console interface username and password are both nacos/nacos.
 
 ### Introduce dependencies
 
@@ -124,7 +124,7 @@ View heterogeneous services on the Nacos console:
 
 Access heterogeneous services:
 
-Browser to access `http://127.0.0.1:8070/node-service/health.json` to transfer general principles of the integration of success.
+Browser to access http://127.0.0.1:8070/node-service/health.json to transfer general principles of the integration of success.
 
 Spring Cloud Alibaba Sidecar Example reference: [Spring Cloud Alibaba Sidecar Example](https://github.com/alibaba/spring-cloud-alibaba/tree/2022.x/spring-cloud-alibaba-examples/spring-cloud-alibaba-sidecar-examples/spring-cloud-alibaba-sidecar-nacos-example)
 

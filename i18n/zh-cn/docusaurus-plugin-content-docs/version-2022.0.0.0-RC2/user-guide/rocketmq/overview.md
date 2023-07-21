@@ -19,7 +19,7 @@ description: RocketMQ, overview.
 
 * 亿级消息堆积能力。
 
-在介绍 `spring-cloud-starter-stream-rocketmq` 之前，先了解一下 Spring Cloud Stream。
+在介绍 spring-cloud-starter-stream-rocketmq 之前，先了解一下 Spring Cloud Stream。
 
 ## Spring Cloud Stream 介绍
 
@@ -31,7 +31,7 @@ Spring Cloud Stream 内部有两个概念：Binder 和 Binding。
 
 * Binder： 跟外部消息中间件集成的组件，用来创建 Binding，各消息中间件都有自己的 Binder 实现。
 
-    比如 `Kafka` 的实现 `KafkaMessageChannelBinder`，`RabbitMQ` 的实现 `RabbitMessageChannelBinder` 以及 `RocketMQ` 的实现 `RocketMQMessageChannelBinder`。
+    比如 Kafka 的实现 KafkaMessageChannelBinde，RabbitMQ 的实现 RabbitMessageChannelBinder 以及 RocketMQ 的实现 RocketMQMessageChannelBinder。
 
 * Binding： 包括 Input Binding 和 Output Binding。
 

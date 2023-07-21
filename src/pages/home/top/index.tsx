@@ -32,8 +32,8 @@ const topData = {
     },
   ],
   versionNote: {
-    text: "Release Note of 2021.0.5.0",
-    link: "https://github.com/alibaba/spring-cloud-alibaba/releases/tag/2021.0.5.0",
+    text: "Release Note of 2022.0.0.0",
+    link: "https://github.com/alibaba/spring-cloud-alibaba/tree/2022.0.0.0",
   },
   releaseDate: "Released on March 22, 2023",
 };
@@ -142,6 +142,9 @@ const Top = ({ language }: { language?: string }) => {
             <img className="img4" src="//img.alicdn.com/tfs/TB115i2JmzqK1RjSZPxXXc4tVXa-186-78.png" />
             <img className="img5" src="//img.alicdn.com/tfs/TB115i2JmzqK1RjSZPxXXc4tVXa-186-78.png" />
           </div> */}
+          </div>
+          <div className="anmination-img">
+            <img src="https://img.alicdn.com/imgextra/i4/O1CN01EMOOQU1PtKa4C3rvA_!!6000000001898-2-tps-948-632.png" />
           </div>
         </section>
       )}

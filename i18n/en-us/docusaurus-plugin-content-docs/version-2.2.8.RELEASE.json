@@ -50,5 +50,9 @@
   "sidebar.docs.category.Reference manual": {
     "message": "Reference Manual",
     "description": "The label for category Reference in sidebar docs"
+  },
+  "sidebar.docs.category.Roadmap": {
+    "message": "Roadmap",
+    "description": "The label for Roadmap Reference in sidebar docs"
   }
 }

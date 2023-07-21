@@ -23,7 +23,7 @@
     ul {
       list-style: none;
       padding: 0;
-      width: $contentWidth;
+      max-width: $contentWidth;
       margin: 0 auto;
 
       li {
@@ -47,14 +47,14 @@
 
         div {
           display: inline-block;
-          width: 80%;
+          width: 90%;
 
           h4 {
             font-family: PingFangSC;
             font-weight: 500;
             font-size: 24px;
             color: #80DB58;
-            margin: 30px 0 20px 50px;
+            margin: 30px 0 15px 50px;
           }
 
           p {
