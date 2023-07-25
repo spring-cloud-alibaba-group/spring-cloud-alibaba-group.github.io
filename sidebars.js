@@ -21,8 +21,18 @@ const sidebars = {
       items: [
         'overview/what-is-sca',
         'overview/faq',
-        "overview/roadmap",
-        "overview/version-explain"
+        "overview/version-explain",
+        {
+          type: 'category',
+          label: 'Roadmap',
+          collapsible: true,
+          items: [
+            'overview/roadmap/doc/doc',
+            'overview/roadmap/graalvm-adapter/graalvm',
+            'overview/roadmap/rocketmq-5.0.0/rocketmq-5.0.0',
+            'overview/roadmap/service-governance/service-governance'
+          ]
+        }
       ],
     },
     {
