@@ -113,6 +113,8 @@ const config = {
               banner: 'none'
             },
             '2022.0.0.0': {
+              // Add routing path configuration to solve the release notes mapping problem when the version is released
+              path: '/2022.0.0.0',
               banner: 'none'
             },
             '2021.0.5.0': {
