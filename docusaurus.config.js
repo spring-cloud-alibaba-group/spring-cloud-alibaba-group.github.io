@@ -169,7 +169,7 @@ const config = {
           {
             type: 'docsVersionDropdown',
             label: 'Docs',
-            docid: 'overview/what-is-sca',
+            docid: '/overview/what-is-sca',
             position: 'right',
             dropdownItemsAfter: [{
               label: 'All Versions',
