@@ -18,7 +18,7 @@ title: Markdown page example
 
 |版本号|文档|发行说明|
 | ---- | ------- | -----|
-|2022.0.0.0-RC1|[文档](docs/overview/what-is-sca)|[发行说明](https://github.com/alibaba/spring-cloud-alibaba/releases/tag/2022.0.0.0-RC1)|
+|2022.0.0.0-RC1|[文档](docs/2022.0.0.0-RC1/overview/what-is-sca)|[发行说明](https://github.com/alibaba/spring-cloud-alibaba/releases/tag/2022.0.0.0-RC1)|
 |2.2.10-RC1|[文档](docs/2.2.10-RC1/overview/what-is-sca)|[发行说明](https://github.com/alibaba/spring-cloud-alibaba/releases/tag/2.2.10-RC1)|
 
 ## 下一版本（未发布）
