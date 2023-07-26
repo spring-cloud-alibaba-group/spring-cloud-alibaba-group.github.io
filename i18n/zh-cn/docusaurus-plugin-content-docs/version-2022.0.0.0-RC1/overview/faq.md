@@ -67,7 +67,7 @@ Spring Cloud Alibaba 目前有三个版本在积极维护，分别是 `2.2.x`，
 
 **A：**
 
-社区对各个版本的建设，都有详细的规划设计，具体可参见：[Roadmap](./roadmap.md)
+社区对各个版本的建设，都有详细的规划设计，具体可参见：[Roadmap](./roadmap/doc/doc.md)
 
 ********
 
@@ -105,7 +105,7 @@ Spring Cloud Alibaba：Alibaba 提供的基于 Spring Cloud 编程模型实现�
 
 **A：**
 
-可以集成，相关功能正在规划中，具体可参见 [Roadmap](./roadmap.md)：
+可以集成，相关功能正在规划中，具体可参见 [Roadmap](./roadmap/doc/doc.md)：
 
 ********
 
