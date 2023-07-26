@@ -1,72 +1,86 @@
 ---
-title: Spring Cloud Alibaba在Proxyless Mesh 上的探索
-keywords: [Proxyless Mesh,微服务治理]
-description: 介绍Spring Cloud Alibaba在Proxyless Mesh上的探索
-author: 铖朴
+title: Exploration of Spring Cloud Alibaba on Proxyless Mesh
+keywords: [Proxyless Mesh, Microservice Governance]
+description: Introduce Spring Cloud Alibaba's exploration on Proxyless Mesh
+author: Cheng Pu
 date: 2023-01-20
 ---
 
-# 摘要
-经过过去几年的发展，Service Mesh已再是一个新兴的概念，其从一经推出就受到来自全世界的主流技术公司关注和追捧。Proxyless Mesh全称是Proxyless Service Mesh，其是近几年在Service Mesh基础上发展而来的一种新型软件架构。Service Mesh理想很丰满，但现实很骨感！通过一层代理虽然做到了对应用无侵入，但增加的网络代理开销对很多性能要求很高的互联网业务落地存在不少挑战。因此Proxyless Mesh作为一种在传统侵入式微服务框架与Service Mesh之间的折中方案，通过取众家之所长，为大量的非Service Mesh应用在云原生时代，拥抱云原生基础设施，解决流量治理等痛点提供了一种有效的解决方案。本文将介绍Spring Cloud Alibaba在Proxyless Mesh上的探索。
+# Summary
+After several years of development, Service Mesh is an emerging concept, which has attracted the attention and pursuit of mainstream technology companies from all over the world since its launch. The full name of Proxyless Mesh is Proxyless Service Mesh, which is a new software architecture developed on the basis of Service Mesh in recent years. The ideal of Service Mesh is full, but the reality is very skinny! Although there is no intrusion to the application through a layer of proxy, the increased network proxy overhead poses many challenges to the implementation of many Internet services with high performance requirements. Therefore, Proxyless Mesh, as a compromise between the traditional intrusive microservice framework and Service Mesh, provides an effective solution for a large number of non-Service Mesh applications in the cloud-native era, embracing cloud-native infrastructure, and solving pain points such as traffic management. This article will introduce Spring Cloud Alibaba's exploration on Proxyless Mesh.
 <!--truncate-->
 
 # Service Mesh
-站在2023年的今天，Service Mesh 早已不是一个新兴的概念， 回顾过去6年多的发展历程，Service Mesh 从一经推出就受到来自全世界的主流技术公司关注和追捧。
+Standing today in 2023, Service Mesh is no longer an emerging concept. Looking back on the development history of the past 6 years, Service Mesh has been concerned and sought after by mainstream technology companies from all over the world since its launch.
 
-- 2016 年作为 Service Mesh 的元年，Buoyant 公司 CEO William Morgan 率先发布 Linkerd[[1]](https://linkerd.io/) ，成为业界首个 Service Mesh 项目，同年 Lyft 发布 Envoy[[2]](https://www.envoyproxy.io/) ，成为第二个 Service Mesh 项目。
-- 2017年，Google、IBM、Lyft 联手发布了 Istio[[3]](https://github.com/istio/istio)，它与 Linkerd / Envoy 等项目相比，它首次给大家增加了控制平面的概念，提供了强大的流量控制能力。经过多年的发展 Istio，已经逐步成为服务网格领域控制平面的事实标准。
-- 2018年7月，Istio 1.0版本发布[[4]](https://istio.io/latest/news/releases/1.0.x/announcing-1.0/)，标志着其进入了可以生产可用的时代，逐渐也有越来越多的企业开始考虑和尝试将服务网格应用于生产中。
+- In 2016, the first year of Service Mesh, Buoyant CEO William Morgan first released Linkerd[[1]](https://linkerd.io/), which became the first Service Mesh project in the industry. In the same year, Lyft released Envoy[[2]](https://www.envoyproxy.io/), which became the second Service Mesh project.
+- In 2017, Google, IBM, and Lyft jointly released Istio[[3]](https://github.com/istio/istio). Compared with Linkerd / Envoy and other projects, it added the concept of control plane to everyone for the first time and provided powerful traffic control capabilities. After years of development, Istio has gradually become the de facto standard for the control plane in the service mesh field.
+- In July 2018, Istio 1.0 was released[[4]](https://istio.io/latest/news/releases/1.0.x/announcing-1.0/), marking that it has entered the era of production and availability. Gradually, more and more enterprises have begun to consider and try to apply service mesh to production.
 
-Istio 作为当前最流行的开源服务网格技术，它由控制平面和数据平面两部分构成。
+As the most popular open source service mesh technology, Istio consists of two parts: the control plane and the data plane.
+
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1673166074579-f43be3c0-d868-4c14-b33d-1582c1671293.png#clientId=uadda20a3-5fed-4&from=paste&height=307&id=u304b5422&name=image.png&originHeight=675&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=112132&status=done&style=none&taskId=u4d5e51cc-6bcb-4c84-aa17-0286854ca95&title=&width=490.90908026892316)
-在 Istio Mesh 架构中，其控制平面是一个名为 Istiod 的进程，网络代理是 Envoy 。Istiod 作为控制面的统一组件，负责对接服务注册发现、路由规则管理、证书管理等能力，Envoy 则是作为数据面通过 Sidecar 方式代理业务流量，Istio 和 Envoy 之间通过 xDS 协议接口完成服务发现、路由规则等数据的传递。Istiod 通过监听 K8s 资源例如 Service、Endpoint 等，获取服务信息，并将这些资源统一通过 xDS 协议下发给位于数据平面的网络代理。Envoy 则是独立于应用之外的一个进程，以 Sidecar 的方式（一般是以 Container 方式）伴随业务应用 Pod 运行，它与应用进程共用同一个主机网络，通过修改路由表的方式劫持业务应用的网络流量从而达到为应用无侵入地提供如服务鉴权、标签路由等能力。
+
+In the Istio Mesh architecture, its control plane is a process called Istiod, and the network proxy is Envoy. As a unified component of the control plane, Istiod is responsible for docking service registration discovery, routing rule management, certificate management and other capabilities. Envoy is used as a data plane to proxy business traffic through Sidecar. Istio and Envoy complete the transfer of data such as service discovery and routing rules through the xDS protocol interface. Istiod obtains service information by monitoring K8s resources such as Service and Endpoint, and sends these resources to the network agent on the data plane through the xDS protocol. Envoy is a process independent of the application. It runs with the business application Pod in the form of a sidecar (usually in the form of a container). It shares the same host network with the application process, and hijacks the network traffic of the business application by modifying the routing table to provide applications with non-intrusive capabilities such as service authentication and label routing.
 # Proxyless Mesh
-Proxyless Mesh 全称是 Proxyless Service Mesh，其是近几年在 Service Mesh 基础上发展而来的一种新型软件架构。Service Mesh 理想很丰满，但现实很骨感！通过一层代理虽然做到了对应用无侵入，但增加的网络代理开销对很多性能要求很高的互联网业务落地存在不少挑战。因此Proxyless Mesh作为一种在传统侵入式微服务框架与Service Mesh之间的折中方案，通过取众家之所长，为大量的非Service Mesh应用在云原生时代，拥抱云原生基础设施，解决流量治理等痛点提供了一种有效的解决方案。 <!--truncate-->Service Mesh 和 Proxyless Mesh 架构区别如下图所示：
+The full name of Proxyless Mesh is Proxyless Service Mesh, which is a new software architecture developed on the basis of Service Mesh in recent years. The ideal of Service Mesh is full, but the reality is very skinny! Although there is no intrusion to the application through a layer of proxy, the increased network proxy overhead poses many challenges to the implementation of many Internet services with high performance requirements. Therefore, Proxyless Mesh, as a compromise between the traditional intrusive microservice framework and Service Mesh, provides an effective solution for a large number of non-Service Mesh applications in the cloud-native era, embracing cloud-native infrastructure, and solving pain points such as traffic management. <!--truncate-->The difference between Service Mesh and Proxyless Mesh architecture is shown in the following figure:
+
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1673167496757-9dc2f06a-ace3-4782-b145-adeac449ec7a.png#clientId=uadda20a3-5fed-4&from=paste&height=186&id=u496e40ee&name=image.png&originHeight=409&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=84637&status=done&style=none&taskId=ub601935d-93fc-4219-a593-57888c2d40b&title=&width=490.90908026892316)
-过去几年，国内外的知名软件开源社区也都在相关领域进行了大量探索，例如在2021年10月，gRPC社区为用户提供如下架构形式[[5]](https://istio.io/v1.12/blog/2021/proxyless-grpc/)，通过对接Istio控制平面，遵循 VirtualService & DestinationRule CRD规范为gRPC应用提供流量治理能力。
+
+In the past few years, well-known software open source communities at home and abroad have also conducted a lot of exploration in related fields. For example, in October 2021, the gRPC community provided users with the following architecture [[5]](https://istio.io/v1.12/blog/2021/proxyless-grpc/), which provides traffic management capabilities for gRPC applications by connecting to the Istio control plane and following the VirtualService & DestinationRule CRD specification.
+
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1673167810474-02ebacab-109e-40ce-a9c0-b3b8c162176e.png#clientId=uadda20a3-5fed-4&from=paste&height=210&id=ub3a3231c&name=image.png&originHeight=461&originWidth=1040&originalType=binary&ratio=1&rotation=0&showTitle=false&size=124238&status=done&style=none&taskId=uef9fe286-41d7-4104-b2f0-046d4ca7e14&title=&width=472.7272624811853)
-# Spring Cloud Alibaba Mesh 化方案
-Spring Cloud Alibaba作为一种侵入式的微服务解决方案，通过基于Spring Cloud微服务标准为用户提供了微服务应用构建过程中的如服务注册与发现、限流降级、分布式事务与分布式消息等在内的一站式微服务解决方案。过去几年被国内大量中小企业所采用，帮助大量企业更加方便地拥抱微服务。
-但随着企业应用微服化的不断深入，微服务给应用带来系统解耦、高可扩展性等诸多优势的同时，也让应用变得更加复杂。如何管理好微服务？成为了很多企业逐渐开始关注和重视的一个新的问题。Spring Cloud Alibaba社区也注意到很多用户有微服务治理方面的诉求，于是从2022年初，就开始了在该方面的探索，社区觉得相比于Service Mesh，Proxyless Mesh是一种对广大中小企业更合适的技术方案，其不仅不会有额外Sidecar代理所带来的较大性能损耗，而且更重要的是对企业来说，其落地成本很低！
-要通过Mesh化方案解决微服务治理需求，一个能给应用动态下发规则的控制面不可或缺，社区本着不重复造轮子，拥抱业界主流解决方案的原则，通过支持xDS协议不仅为用户提供通过主流的Istio控制面来对Spring Cloud Alibaba应用进行服务治理以外，用户也可以使用阿里巴巴开源的OpenSergo微服务治理控制面所提供的差异化治理能力进行应用治理。相关提供Mesh技术方案社区在最近发布的 2.2.10-RC版本[[6]](https://github.com/alibaba/spring-cloud-alibaba/releases)中进行了提供。做了提供微服治理能力的第一个版本，社区当前已经部分兼容了Istio VirtualService & DestinationRule的标签路由和服务鉴权能力，用户可以通过Istio控制面给应用下发相关规则，对应用进行流量治理。
+
+# Spring Cloud Alibaba Mesh Solution
+As an intrusive microservice solution, Spring Cloud Alibaba provides users with one-stop microservice solutions in the process of building microservice applications, such as service registration and discovery, current limiting and degradation, distributed transactions and distributed messages, based on Spring Cloud microservice standards. In the past few years, it has been adopted by a large number of small and medium-sized enterprises in China, helping a large number of enterprises to embrace microservices more conveniently.
+However, with the continuous deepening of microservices in enterprise applications, microservices bring many advantages such as system decoupling and high scalability to applications, and at the same time make applications more complex. How to manage microservices well? It has become a new issue that many enterprises gradually begin to pay attention to and pay attention to. The Spring Cloud Alibaba community has also noticed that many users have demands for microservice governance, so they have started exploring in this area since the beginning of 2022. The community believes that compared to Service Mesh, Proxyless Mesh is a more suitable technical solution for small and medium-sized enterprises. Not only will it not have a large performance loss caused by additional Sidecar agents, but more importantly, for enterprises, its implementation cost is very low!
+To solve the microservice governance needs through the Mesh solution, a control plane that can dynamically issue rules to applications is indispensable. The community adheres to the principle of not reinventing the wheel and embracing mainstream solutions in the industry. By supporting the xDS protocol, users can not only provide users with service governance for Spring Cloud Alibaba applications through the mainstream Istio control plane, but also users can use the differentiated governance capabilities provided by Alibaba's open source OpenSergo microservice governance control plane for application governance. The relevant Mesh technology solution community provides it in the recently released 2.2.10-RC version [[6]](https://github.com/alibaba/spring-cloud-alibaba/releases). The first version that provides microservice governance capabilities has been made. The community is now partially compatible with the label routing and service authentication capabilities of Istio VirtualService & DestinationRule. Users can issue relevant rules to applications through the Istio control plane to manage traffic for applications.
+
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/59256332/1673253324947-3effabdf-3956-48cf-a101-5c366a91b2ab.png#clientId=u641e2097-531f-4&from=paste&height=245&id=u670014cb&name=image.png&originHeight=360&originWidth=762&originalType=binary&ratio=1&rotation=0&showTitle=false&size=155552&status=done&style=none&taskId=ud58f82c8-67cb-4fb2-988a-88eb670d8ff&title=&width=517.9971313476562)
-### 准备工作
-Proxyless Mesh的方案首先需要准备好一个能给应用动态下发规则的控制面，本次Spring Cloud Alibaba 2.2.10-RC1 版本支持了2种当前市面上的主流控制面来更好的满足各类用户诉求：
-#### 1. Istio控制面
-为了使用Istio控制面下发治理规则，首先需要在K8s环境中安装Istio控制面，您可以使用Spring Cloud Alibaba社区提供的测试用的Istio环境，也可以选择自己尝试安装一套Istio控制面，安装Istio控制面的流程如下：
 
-1. 安装K8s环境，请参考K8s的[安装工具](https://kubernetes.io/zh-cn/docs/tasks/tools/)小节
-2. 在K8s上安装并启用Istio，请参考Istio官方文档的[安装](https://istio.io/latest/zh/docs/setup/install/)小节
-#### 2. OpenSergo控制面
-OpenSergo 是开放通用的，覆盖微服务及上下游关联组件的微服务治理项目。OpenSergo 从微服务的角度出发，涵盖流量治理、服务容错、服务元信息治理、安全治理等关键治理领域，提供一系列的治理能力与标准、生态适配与最佳实践，支持 Java, Go, Rust 等多语言生态。
-OpenSergo 控制平面 (Control Plane) 作为 OpenSergo CRD 的统一管控组件，承载服务治理配置转换与下发的职责。
+### Preparation
+The Proxyless Mesh solution first needs to prepare a control plane that can dynamically deliver rules to applications. This Spring Cloud Alibaba version 2.2.10-RC1 supports two mainstream control planes currently on the market to better meet various user demands:
+#### 1. Istio control plane
+In order to use the Istio control plane to issue governance rules, you first need to install the Istio control plane in the K8s environment. You can use the Istio environment for testing provided by the Spring Cloud Alibaba community, or you can try to install an Istio control plane yourself. The process of installing the Istio control plane is as follows:
 
-1. 安装K8s环境，请参考K8s的[安装工具](https://kubernetes.io/zh-cn/docs/tasks/tools/)小节
-2. 在K8s上安装并启用 OpenSergo Control Plane，请参考 OpenSergo 官方提供的 [OpenSergo 控制面安装文档](https://opensergo.io/zh-cn/docs/quick-start/opensergo-control-plane/)
+1. To install the K8s environment, please refer to the [Installation Tools](https://kubernetes.io/zh-cn/docs/tasks/tools/) section of K8s
+2. Install and enable Istio on K8s, please refer to the [Installation](https://istio.io/latest/zh/docs/setup/install/) section of the Istio official document
+#### 2. OpenSergo control plane
+OpenSergo is an open and general-purpose microservice governance project covering microservices and upstream and downstream related components. From the perspective of microservices, OpenSergo covers key governance areas such as traffic governance, service fault tolerance, service meta-information governance, and security governance. It provides a series of governance capabilities and standards, ecological adaptation, and best practices, and supports Java, Go, Rust, and other multi-language ecosystems.
+As the unified control component of OpenSergo CRD, the OpenSergo control plane (Control Plane) carries the responsibility of service governance configuration conversion and distribution.
+
+1. To install the K8s environment, please refer to the [Installation Tools](https://kubernetes.io/zh-cn/docs/tasks/tools/) section of K8s
+2. To install and enable OpenSergo Control Plane on K8s, please refer to [OpenSergo Control Plane Installation Documentation](https://opensergo.io/zh-cn/docs/quick-start/opensergo-control-plane/) officially provided by OpenSergo
 
 ![](https://user-images.githubusercontent.com/9434884/182856237-8ce85f41-1a1a-4a2a-8f58-db042bd4db42.png#height=336&id=MSEWC&originHeight=1362&originWidth=1856&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=&width=458)
-### 标签路由
-#### 应用背景
-在现在的微服务架构中，服务的数量十分庞大，为了更好的管理这些微服务应用，可能需要给这些应用打上标签，并且将一个或多个服务的提供者划分到同一个分组，从而约束流量只在指定分组中流转，实现流量隔离的目的。标签路由可以作为蓝绿发布、灰度发布等场景的能力基础，它可以被应用在以下场景中：
 
-- **多版本开发测试**
+### Label Routing
+#### App Background
+In the current micro-service architecture, the number of services is very large. In order to better manage these micro-service applications, it may be necessary to label these applications and divide one or more service providers into the same group, so as to restrict traffic to only flow in designated groups and achieve the purpose of traffic isolation. Label routing can be used as the capability basis for scenarios such as blue-green release and grayscale release. It can be applied in the following scenarios:
 
-多个版本并行开发时，需要为每个版本准备一套开发环境。如果版本较多，开发环境成本会非常大。流量隔离方案可以在多版本开发测试时大幅度降低资源成本。使用基于标签路由的全链路流量隔离机制，可以将特定的流量路由到指定的开发环境。例如在开发环境1中只修改应用B和应用D，则为这两个应用在开发环境1中的版本创建Tag1标签，并配置对应的路由规则。入口应用A调用B时，会判断流量是否满足路由规则。如果满足，路由到开发环境1中应用B的V1.1版本；如果不满足，路由到基线环境中的应用B的V1版本。应用C调用D的时候同样根据流量决定路由到D的V1版本或V1.1版本。
+- **Multi-Version Development Test**
+
+When multiple versions are developed in parallel, a development environment needs to be prepared for each version. If there are many versions, the cost of the development environment will be very high. The traffic isolation solution can greatly reduce resource costs during multi-version development and testing. Using the full-link traffic isolation mechanism based on label routing, specific traffic can be routed to a designated development environment. For example, if only application B and application D are modified in development environment 1, Tag1 is created for the versions of these two applications in development environment 1, and corresponding routing rules are configured. When the ingress application A calls B, it will determine whether the traffic meets the routing rules. If it is satisfied, route to the V1.1 version of application B in the development environment 1; if not, route to the V1 version of application B in the baseline environment. When application C calls D, it also decides to route to version V1 or version V1.1 of D according to the traffic.
+
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/59256332/1670813937718-d4452227-257c-46e5-9393-843b53a43368.png#clientId=ub03674c8-c3cf-4&from=paste&height=403&id=ue987ff03&name=image.png&originHeight=818&originWidth=1112&originalType=url&ratio=1&rotation=0&showTitle=false&size=197904&status=done&style=none&taskId=ua8cbb3d3-dfd1-4841-882c-9d88f8d7976&title=&width=548)
 
-- **应用流量隔离**
+- **Application Traffic Isolation**
 
-如果一个应用有多个版本在线上同时运行，部署在不同环境中，如日常环境和特殊环境，则可以使用标签路由对不同环境中的不同版本进行流量隔离，将秒杀订单流量或不同渠道订单流量路由到特殊环境，将正常的流量路由到日常环境。即使特殊环境异常，本应进入特殊环境的流量也不会进入日常环境，不影响日常环境的使用。
+If multiple versions of an application run simultaneously online and are deployed in different environments, such as a daily environment and a special environment, you can use label routing to isolate the traffic of different versions in different environments, route the flash sale order traffic or order traffic from different channels to the special environment, and route normal traffic to the daily environment. Even if the special environment is abnormal, the traffic that should have entered the special environment will not enter the daily environment, and will not affect the use of the daily environment.
+
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/59256332/1670815218649-63c6da62-8ec8-461c-9d84-a2ea3c346353.png#clientId=ub03674c8-c3cf-4&from=paste&height=500&id=uc429db27&name=image.png&originHeight=668&originWidth=570&originalType=url&ratio=1&rotation=0&showTitle=false&size=104683&status=done&style=none&taskId=ub264d897-984d-400a-a09e-ee9fd6bd2ac&title=&width=427)
 
 - **A/B Testing**
 
-线上有多个应用版本同时运行，期望对不同版本的应用进行A/B Testing，则可以使用标签路由的全链路流量控制将地域A（如杭州）的客户流量路由到V1版本，地域B（如上海）的客户流量路由到V1.1版本，对不同版本进行验证，从而降低新产品或新特性的发布风险，为产品创新提供保障。
+There are multiple application versions running online at the same time, and it is expected to perform A/B testing on different versions of the application. You can use the full-link traffic control of label routing to route the customer traffic in region A (such as Hangzhou) to version V1, and route the customer traffic in region B (such as Shanghai) to version V1.1 to verify different versions, thereby reducing the risk of releasing new products or new features, and providing guarantee for product innovation.
+
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/59256332/1670815281296-8caae5f2-278f-410b-847c-c3751cb741be.png#clientId=ub03674c8-c3cf-4&from=paste&height=527&id=u65a948c4&name=image.png&originHeight=842&originWidth=724&originalType=url&ratio=1&rotation=0&showTitle=false&size=137213&status=done&style=none&taskId=u1351cdf1-5842-4688-92fa-b688bcbf1fc&title=&width=453)
-目前，Spring Cloud Alibaba Mesh提供的标签路由能力支持根据请求路径、请求头和HTTP请求参数等请求元信息对请求做标签路由，让应用发出的请求根据Istio控制面下发的规则发送至指定版本的上游服务。
-#### 使用方式
-##### 1. 导入依赖并配置应用
-首先，修改`pom.xml` 文件，导入Spring Cloud Alibaba 2.2.10-RC1版本下的标签路由以及Istio资源转换模块的相关依赖（推荐通过云原生应用脚手架 [start.aliyun.com](https://start.aliyun.com) 进行项目构建试用）：
+
+Currently, the tag routing capability provided by Spring Cloud Alibaba Mesh supports tag routing for requests based on request meta-information such as request path, request header, and HTTP request parameters, so that requests sent by applications are sent to upstream services of a specified version according to the rules issued by the Istio control plane.
+#### Usage
+##### 1. Import dependencies and configure the application
+First, modify the `pom.xml` file, and import the label routing under Spring Cloud Alibaba 2.2.10-RC1 version and the related dependencies of the Istio resource conversion module (it is recommended to use the cloud-native application scaffolding [start.aliyun.com](https://start.aliyun.com) for project construction trial):
+
 ```xml
 <dependencyManagement>
     <dependencies>
@@ -91,7 +105,8 @@ OpenSergo 控制平面 (Control Plane) 作为 OpenSergo CRD 的统一管控组�
     </dependency>
 </dependencies>
 ```
-在`application.yml`配置文件给消费者配置Istio控制面以及Nacos注册中心的相关信息:
+Configure the Istio control plane and Nacos registration center information for consumers in the `application.yml` configuration file:
+
 ```yaml
 server:
   port: 18084
@@ -109,36 +124,36 @@ spring:
         password: nacos
     istio:
       config:
-        # 是否开启Istio配置转换
+        # Whether to enable Istio configuration conversion
         enabled: ${ISTIO_CONFIG_ENABLE:true}
         # Istiod IP
         host: ${ISTIOD_ADDR:127.0.0.1}
-        # Istiod 端口
+        # Istiod port
         port: ${ISTIOD_PORT:15010}
-        # 轮询Istio线程池大小
+        # Polling Istio thread pool size
         polling-pool-size: ${POLLING_POOL_SIZE:10}
-        # 轮询Istio时间间隔
+        # Polling Istio interval
         polling-time: ${POLLING_TIME:10}
-        # Istiod鉴权token(访问Istiod 15012端口时可用)
+        # Istiod authentication token (available when accessing Istiod port 15012)
         istiod-token: ${ISTIOD_TOKEN:}
-      	# 是否打印xds相关日志
-				log-xds: ${LOG_XDS:true}
+        # Whether to print xds related logs
+        log-xds: ${LOG_XDS:true}
 ```
-在`application.yml`配置文件给生产者应用配置元信息:
+
+Configure metadata for the producer application in the `application.yml` configuration file:
 ```yaml
-# 第一个生产者，版本为v1
+# The first producer, version v1
 spring.cloud.nacos.discovery.metadata.version=v1
-# 第二个生产者，版本为v2
+# The second producer, version v2
 spring.cloud.nacos.discovery.metadata.version=v2
 ```
-如果是需要对接 OpenSergo 控制面的，则需要给消费者应用加上 `spring-cloud-starter-alibaba-governance-routing` 跟 `spring-cloud-starter-opensergo-adapter `相关依赖，并配置OpenSergo所需的配置即可。
-##### 2. 运行应用程序
-启动两个生产者应用和一个消费者应用，并将这些应用都注册到本地的Nacos注册中心里，消费者在调用生产者时，会根据控制面下发的标签路由规则来调用不同的生产者实例。启动消费者和两个生产者后，可以在Nacos注册中心里看到这几个已注册的服务:
+If you need to connect to the OpenSergo control plane, you need to add `spring-cloud-starter-alibaba-governance-routing` and `spring-cloud-starter-opensergo-adapter to the consumer application
+
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/59256332/1670829548457-b8c4c868-4eba-48df-9977-94a487cf7a16.png#clientId=ub03674c8-c3cf-4&from=paste&height=1014&id=u8f0da6dc&name=image.png&originHeight=2028&originWidth=3574&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1263912&status=done&style=none&taskId=u7ec88d37-d168-486e-b571-607313aa1fa&title=&width=1787)
-控制台上会打印出以下信息，说明此应用正在监听Istio控制面下发的配置：
+The following information will be printed on the console, indicating that the application is listening to the configuration delivered by the Istio control plane:
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/59256332/1670827540929-bacb3da6-5c5e-47ec-8ceb-e2ba9047da6b.png#clientId=ub03674c8-c3cf-4&from=paste&height=253&id=FEeSH&name=image.png&originHeight=506&originWidth=2442&originalType=binary&ratio=1&rotation=0&showTitle=false&size=755462&status=done&style=none&taskId=ue6ca5f99-8c2b-41a3-b7fb-47b02395ec5&title=&width=1221)
-##### 3. 通过Istio控制面下发标签路由规则
-通过Istio控制面下发标签路由规则，首先下发DestinationRule规则：
+##### 3. Send label routing rules through the Istio control plane
+Deliver label routing rules through the Istio control plane, first deliver the DestinationRule rule:
 ```yaml
 kubectl apply -f - << EOF
 apiVersion: networking.istio.io/v1alpha3
@@ -156,8 +171,8 @@ spec:
       version: v2
 EOF
 ```
-此规则将后端服务拆分为两个版本，label为v1的pod被分到v1版本，label为v2的pod被分到v2版本
-之后，下发VirtualService规则：
+This rule splits the backend service into two versions, the pod with the label v1 is divided into the v1 version, and the pod with the label v2 is divided into the v2 version
+After that, issue the VirtualService rule:
 ```yaml
 kubectl apply -f - << EOF
 apiVersion: networking.istio.io/v1alpha3
@@ -185,8 +200,8 @@ spec:
         subset: v1
 EOF
 ```
-这条VirtualService指定了一条最简单的标签路由规则，将请求头tag为gray，请求路径为/istio-label-routing的HTTP请求路由到v2版本，其余的流量都路由到v1版本
-发送若干条不带请求头的HTTP请求至IstioConsumerApplication
+This VirtualService specifies the simplest label routing rule, routing the HTTP request whose request header is gray and the request path is /istio-label-routing to v2 version, and the rest of the traffic is routed to v1 version
+Send several HTTP requests without request headers to IstioConsumerApplication
 ```shell
 while true;
 	do curl localhost:18084/istio-label-routing;
@@ -194,9 +209,9 @@ while true;
 	echo "";
 done;
 ```
-因为请求头不为gray，所以请求将会被路由到v1版本，返回如下
+Because the request header is not gray, the request will be routed to the v1 version, and the return is as follows
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/59256332/1673425287375-0d16c3eb-f984-4335-8774-011a22fa7478.png#clientId=ua63dc71d-6efb-4&from=paste&height=373&id=u8b6db133&name=image.png&originHeight=373&originWidth=630&originalType=binary&ratio=1&rotation=0&showTitle=false&size=158936&status=done&style=none&taskId=u436246ae-c6ed-446e-9ee1-d492e9d9f8f&title=&width=630)
-之后发送一条请求头tag为gray，且请求路径为/istio-label-routing的HTTP请求
+Then send an HTTP request with the request header tag as gray and the request path as /istio-label-routing
 ```shell
 while true;
 	do curl localhost:18084/istio-label-routing -H "tag: gray";
@@ -204,10 +219,10 @@ while true;
 	echo "";
 done;
 ```
-因为满足路由规则，所以请求会被路由至v2版本
+Because the routing rules are met, the request will be routed to the v2 version
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/59256332/1673425317396-bcf22604-c090-44f2-81e7-a383de341f02.png#clientId=ua63dc71d-6efb-4&from=paste&height=384&id=u468f4062&name=image.png&originHeight=384&originWidth=706&originalType=binary&ratio=1&rotation=0&showTitle=false&size=184842&status=done&style=none&taskId=u53c51ea5-7663-44f1-8166-0c454ec4664&title=&width=706)
-##### 4. 通过 OpenSergo 控制面下发标签路由规则
-通过OpenSergo控制面也定义了特定的流量路由规则TrafficRouter ，如下是一个OpenSergo控制面对应的流量路由规则：
+##### 4. Issue label routing rules through the OpenSergo control plane
+Specific traffic routing rules TrafficRouter are also defined through the OpenSergo control plane
 ```yaml
 kubectl apply -f - << EOF
 apiVersion: traffic.opensergo.io/v1alpha1
@@ -238,29 +253,29 @@ spec:
             subset: v1
 EOF
 ```
-这条TrafficRouter指定了一条最简单的流量路由规则，将请求头tag为v2的HTTP请求路由到v2版本，其余的流量都路由到v1版本。如果 v2 版本没有对应的节点，则将流量fallback至v1版本。
-停止v2版本的ProviderApplication后，继续发送一条请求头 tag 为 v2 的HTTP请求
+This TrafficRouter specifies the simplest traffic routing rule, routing HTTP requests with the request header tag v2 to the v2 version, and routing the rest of the traffic to the v1 version. If the v2 version does not have a corresponding node, the traffic will fallback to the v1 version.
+After stopping the v2 version of ProviderApplication, continue to send an HTTP request with the request header tag as v2
 ```
 curl --location --request GET '127.0.0.1:18083/router-test' --header 'tag: v2'
 ```
-因为v2版本没有服务提供者，因此流量被fallback至 v1 版本。
+Because the v2 version has no service provider, the traffic is fallback to the v1 version.
 ```
 Route in 30.221.132.228: 18081,version is v1.
 ```
- 上述详细示例代码可以在社区Github上[示例代码](https://github.com/alibaba/spring-cloud-alibaba/tree/2.2.x/spring-cloud-alibaba-examples/governance-example/label-routing-example)中获取。
-### 服务鉴权
-正常生产场景，微服务应用都具有安全要求，不会让任意的服务都可直接调用。因此需要对调用该应用的上游应用进行服务鉴权，保证应用自身的安全。
-未配置服务鉴权Consumer 1、2、3和Provider在同一个命名空间内，Consumer 1、2、3默认可以调用Provider的所有Path（Path 1、2和3）。
+The above detailed example code can be obtained in [Example Code](https://github.com/alibaba/spring-cloud-alibaba/tree/2.2.x/spring-cloud-alibaba-examples/governance-example/label-routing-example) on the community Github.
+### Service Authentication
+In normal production scenarios, microservice applications have security requirements, and any service cannot be called directly. Therefore, service authentication needs to be performed on the upstream application that calls the application to ensure the security of the application itself.
+Service authentication not configured Consumer 1, 2, 3 and Provider are in the same namespace, and Consumer 1, 2, 3 can call all Paths (Path 1, 2, and 3) of Provider by default.
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/59256332/1673254389920-9f6f971f-83e4-4c13-80b5-54828110a636.png#clientId=u3be2ec29-8f22-4&from=paste&height=336&id=udccbb0df&name=image.png&originHeight=626&originWidth=1330&originalType=binary&ratio=1&rotation=0&showTitle=false&size=236089&status=done&style=none&taskId=u2c0ff2dc-ede5-4870-ae6f-cb04eb2fc5a&title=&width=713)
-配置服务鉴权规则后，应用间合法的调用关系如下图所示：
+After configuring the service authentication rules, the legal call relationship between applications is shown in the following figure:
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/59256332/1673254350473-804e54d7-3759-4d58-a62a-9967b7b12124.png#clientId=u3be2ec29-8f22-4&from=paste&height=458&id=uffef029a&name=image.png&originHeight=728&originWidth=1388&originalType=binary&ratio=1&rotation=0&showTitle=false&size=269716&status=done&style=none&taskId=u5cc09038-2571-4378-bf77-8851dfa7447&title=&width=874)
-设置所有Path的鉴权可以对Provider的所有Path设置鉴权规则，例如Provider所有Path的鉴权规则设置为拒绝Consumer 1调用（黑名单），则允许Consumer 2、3调用（白名单）。
-设置指定Path的鉴权在设置所有Path的鉴权基础上，还可以设置Consumer指定Path的鉴权规则，例如按所有Path的鉴权方式，Consumer 2、3可以访问Provider的所有Path，但Provider的Path2涉及一些核心业务或数据，不希望Consumer 2调用，可以将Path 2对Consumer 2的鉴权方式设置为黑名单（拒绝调用），则Consumer 2只能访问Provider的Path 1和Path 3。
-目前，Spring Cloud Alibaba Mesh支持了Istio的大部分鉴权规则，支持了除了需要mTLS支持以外的鉴权规则，支持了Istio的所有字符串匹配模式以及规则的逻辑运算。
+Setting the authentication of all Paths can set the authentication rules for all the Paths of the Provider. For example, if the authentication rules of all the Paths of the Provider are set to reject calls from Consumer 1 (blacklist), then calls from Consumers 2 and 3 are allowed (whitelist).
+Set the authentication of the specified Path. On the basis of setting the authentication of all the Paths, you can also set the authentication rules of the Consumer-specified Path. For example, according to the authentication method of all the Paths, Consumer 2 and 3 can access all the Paths of the Provider, but the Path2 of the Provider involves some core business or data, and you do not want Consumer 2 to call it. Path 1 and Path 3.
+Currently, Spring Cloud Alibaba Mesh supports most of Istio's authentication rules, supports authentication rules other than mTLS support, and supports all Istio's string matching modes and logical operations of rules.
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/59256332/1673252085838-33a554dc-84a7-4368-9184-8d67b859cca6.png#clientId=u96cc9714-768f-4&from=paste&height=290&id=u1209da2a&name=image.png&originHeight=878&originWidth=2416&originalType=binary&ratio=1&rotation=0&showTitle=false&size=580493&status=done&style=none&taskId=u9c846760-e12a-4c76-9ca3-ef0686baa12&title=&width=799)
-#### 使用方式
-##### 1. 导入依赖并配置应用
-修改`pom.xml`文件，引入Istio资源转换以及Spring Cloud Alibaba鉴权模块（推荐通过云原生应用脚手架 [start.aliyun.com](https://start.aliyun.com) 进行项目构建试用）:
+#### Usage
+##### 1. Import dependencies and configure the application
+Modify the `pom.xml` file, and introduce the Istio resource conversion and Spring Cloud Alibaba authentication modules (it is recommended to use the cloud-native application scaffolding [start.aliyun.com](https://start.aliyun.com) for project construction trial):
 ```xml
 <dependencyManagement>
     <dependencies>
@@ -285,7 +300,7 @@ Route in 30.221.132.228: 18081,version is v1.
     </dependency>
 </dependencies>
 ```
-在应用的 `application.yml` 配置文件中配置Istio相关元数据:
+Configure Istio-related metadata in the application's `application.yml` configuration file:
 ```yaml
 server:
   port: ${SERVER_PORT:80}
@@ -293,31 +308,31 @@ spring:
   cloud:
     governance:
       auth:
-        # 是否开启鉴权
+        # Whether to enable authentication
         enabled: ${ISTIO_AUTH_ENABLE:true}
-    istio:
-      config:
-        # 是否开启Istio配置转换
+     istio:
+       config:
+        # Whether to enable Istio configuration conversion
         enabled: ${ISTIO_CONFIG_ENABLE:true}
         # Istiod IP
         host: ${ISTIOD_ADDR:127.0.0.1}
-        # Istiod 端口
+        # Istiod port
         port: ${ISTIOD_PORT:15010}
-        # 轮询Istio线程池大小
+        # Polling Istio thread pool size
         polling-pool-size: ${POLLING_POOL_SIZE:10}
-        # 轮询Istio时间间隔
+        # Polling Istio interval
         polling-time: ${POLLING_TIMEOUT:10}
-        # Istiod鉴权token(访问Istiod 15012端口时可用)
+        # Istiod authentication token (available when accessing Istiod port 15012)
         istiod-token: ${ISTIOD_TOKEN:}
-      	# 是否打印xds相关日志
-				log-xds: ${LOG_XDS:true}
+       # Whether to print xds related logs
+      log-xds: ${LOG_XDS:true}
 ```
-##### 2. 运行应用程序
-在导入好以上的依赖并且在`application.yml`文件中配置了相关配置之后，可以将此应用程序运行起来，启动一个简单的Spring Boot应用，其中只含有一个简单的接口，此接口将会把本次请求的详细信息返回给客户端。
-启动应用后，控制台上会打印出以下信息，说明此应用正在监听Istio控制面下发的配置:
+##### 2. Run the application
+After importing the above dependencies and configuring the relevant configuration in the `application.yml` file, you can run the application and start a simple Spring Boot application, which contains only a simple interface, which will return the detailed information of this request to the client.
+After starting the application, the following information will be printed on the console, indicating that the application is listening to the configuration issued by the Istio control plane:
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/59256332/1670827540929-bacb3da6-5c5e-47ec-8ceb-e2ba9047da6b.png#clientId=ub03674c8-c3cf-4&from=paste&height=253&id=u83065cbf&name=image.png&originHeight=506&originWidth=2442&originalType=binary&ratio=1&rotation=0&showTitle=false&size=755462&status=done&style=none&taskId=ue6ca5f99-8c2b-41a3-b7fb-47b02395ec5&title=&width=1221)
-##### 3. 通过Istio控制面下发鉴权配置
-在使用如下命令通过Istio下发一条鉴权规则至demo应用，这条规则的限制了访问该应用的请求header:
+##### 3. Send the authentication configuration through the Istio control plane
+Use the following command to issue an authentication rule to the demo application through Istio. This rule restricts access to the request header of the application:
 ```yaml
 kubectl apply -f - << EOF
 apiVersion: security.istio.io/v1beta1
@@ -336,7 +351,7 @@ spec:
       values: ["PostmanRuntime/*"]
 EOF
 ```
-之后发送一个带User-Agent头部的HTTP请求来验证规则是否生效:
+Then send an HTTP request with a User-Agent header to verify that the rule is in effect:
 ```shell
 while true;
 	do curl localhost/auth -H "User-Agent: PostmanRuntime/7.29.2";
@@ -344,9 +359,9 @@ while true;
 	echo "";
 done;
 ```
-由于此请求由于携带了正确的HTTP Header信息，将会返回:
+Then send an HTTP request with a User-Agent header to verify that the rule is in effect:
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/59256332/1673429632757-50615c92-6307-49db-b83f-24d3e2740c7f.png#clientId=ub4579414-6c96-4&from=paste&height=334&id=ua5e2086d&name=image.png&originHeight=334&originWidth=809&originalType=binary&ratio=1&rotation=0&showTitle=false&size=215055&status=done&style=none&taskId=ue812a526-5099-4827-aa3b-cbdb04e8de6&title=&width=809)
-之后发送一个不带User-Agent头部的HTTP请求来验证规则是否生效:
+Then send an HTTP request with a User-Agent header to verify that the rule is in effect:
 ```shell
 while true;
 	do curl localhost/auth;
@@ -354,7 +369,6 @@ while true;
 	echo "";
 done;
 ```
-由于此请求没有携带正确的HTTP Header信息，将会返回:
+Since this request does not carry correct HTTP Header information, it will return:
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/59256332/1673426265876-d384df51-0a0f-41dc-bc62-c0bb96e019a3.png#clientId=ua63dc71d-6efb-4&from=paste&height=489&id=u2a04e281&name=image.png&originHeight=489&originWidth=496&originalType=binary&ratio=1&rotation=0&showTitle=false&size=155659&status=done&style=none&taskId=u1096f881-6679-48af-acf2-40382786ec1&title=&width=496)
- 上述详细示例代码可以在社区Github上[示例代码](https://github.com/alibaba/spring-cloud-alibaba/tree/2.2.x/spring-cloud-alibaba-examples/governance-example/authentication-example)中获取。
-
+The above detailed example code can be obtained from [Example Code](https://github.com/alibaba/spring-cloud-alibaba/tree/2.2.x/spring-cloud-alibaba-examples/governance-example/authentication-example) on the community Github.

@@ -1,84 +1,109 @@
 ---
-title: Spring Cloud Alibaba应用如何平滑迁移至IPv6？
-keywords: [IPv6,IP协议栈平滑迁移]
-description: 介绍Spring Cloud Alibaba应用如何平滑迁移至IPv6
-author: 铖朴
+title: How to smoothly migrate Spring Cloud Alibaba applications to IPv6?
+keywords: [IPv6, IP protocol stack smooth migration]
+description: Introduces how Spring Cloud Alibaba applications can be smoothly migrated to IPv6
+author: Cheng Pu
 date: 2023-03-30
 ---
 
-# 摘要
-作为下一代互联网协议，向IPv6迁移是未来的大势所趋。但由于当前互联网中IPv4协议的应用规模非常大，对于用户来说，没办法通过规定一个时间日期，从那一刻开始，所有互联网上的设备全部使用IPv6，这是不现实的。一次性迁移不仅在基础设施层面不可行，对企业用户来说，就算基础设施都能准备完毕，让其将少则上百，多则成千上万的应用实例在一段时间内一次性停机进行协议栈迁移，无论是在风险上，还是成本上，对企业用户来说都是难以接受的！既然无法一步到位，渐进式的IP地址迁移成为当前的主流选择。本文将介绍一些主流渐进式的IP地址迁移方法。
+# Summary
+As a next-generation Internet protocol, migration to IPv6 is the general trend in the future. However, due to the large-scale application of the IPv4 protocol in the current Internet, there is no way for users to specify a time and date. From that moment on, all devices on the Internet will use IPv6, which is unrealistic. One-time migration is not only unfeasible at the infrastructure level, but for enterprise users, even if the infrastructure can be prepared, it is unacceptable for enterprise users to shut down at least hundreds or even thousands of application instances for a period of time for protocol stack migration, no matter in terms of risk or cost! Since it cannot be done in one step, gradual IP address migration has become the current mainstream choice. This article will introduce some mainstream gradual IP address migration methods.
 <!--truncate-->
 
-# 背景
-IPv4协议（后文简称IPv4）为互联网的发展与普及做出了重要贡献，但近年来，随着应用程序、数据和 IT 服务的爆炸式增长。当初协议设计过程中用来描述IP地址所采用的32位二进制数格式的IPv4地址已经于2011年[[1]](https://www.infoq.cn/article/vpdcmupcw3mev3l2kx41)被申请耗尽，从那时起，全世界都已经处于无新地址可用的局面。
+# background
+The IPv4 protocol (hereinafter referred to as IPv4) has made important contributions to the development and popularization of the Internet, but in recent years, with the explosive growth of applications, data and IT services. The IPv4 address used to describe the 32-bit binary number format used in the protocol design process has been exhausted in 2011 [[1]](https://www.infoq.cn/article/vpdcmupcw3mev3l2kx41), and since then, the whole world has been in a situation where no new addresses are available.
 
-IPv6协议（后文简称IPv6）作为IPv4之后被采用的下一代互联网协议，相比IPv4协议中采用32位来表示IP地址，其地址表示位数扩充到了128位，地址数量是IPv4所能提供的2的96次方倍。简单看数字可能显得不太直观，换成一句描述IPv6地址之多更直观和经典的话：“采用128位表示地址的IPv6可以为地球上的每一粒沙子都分配一个IP地址”！此外，IPv6协议其不仅可以解决IPv4协议中的地址短缺问题，同时也能为互联网提供更高效、更安全的网络通信。IPv6协议在网络通信中提供了许多新的功能和优势。例如，在数据传输和路由方面，其通过新的设计提高了效率和可靠性，减少了网络拥堵和数据包丢失的情况。此外，在安全领域，其内置对IPSec的支持，可以更好地保护网络中的数据传输安全，防止黑客攻击和窃取数据。
-作为下一代互联网协议，向IPv6迁移是未来的大势所趋。在我国，从2014年开始相关机构已经逐步停止向新用户和应用分配IPv4地址，开始全面商用IPv6协议(计算机网络（第七版）谢希仁)。在政府引导测，近年来，陆续也出台了一系列相关指导文件例如：2017年国务院发布的《[推进互联网协议第六版（IPv6）规模部署行动计划](http://www.gov.cn/zhengce/2017-11/26/content_5242389.htm)》、2021年工业与信息化部发布的《[IPv6流量提升三年专项行动计划（2021-2023年）](http://www.xinhuanet.com/info/2021-07/09/c_1310052164.htm)》、2021年网信办发布的[《关于推动IPv6规模部署的指导意见》](http://www.gov.cn/zhengce/zhengceku/2021-07/23/content_5626963.htm)等不断地在引导企业从IPv4协议向IPv6协议迁移。
-但由于当前互联网中IPv4协议的应用规模非常大，对于用户来说，没办法通过规定一个时间日期，从那一刻开始，所有互联网上的设备全部使用IPv6，这是不现实的。一次性迁移不仅在基础设施层面不可行，对企业用户来说，就算基础设施都能准备完毕，让其将少则上百，多则成千上万的应用实例在一段时间内一次性停机进行协议栈迁移，无论是在风险上，还是成本上，对企业用户来说都是难以接受的！既然无法一步到位，渐进式的IP地址迁移成为当前的主流选择。接下来本文将介绍一些主流渐进式的IP地址迁移方法。
+The IPv6 protocol (hereafter referred to as IPv6) is the next-generation Internet protocol adopted after IPv4. Compared with the IPv4 protocol, which uses 32 bits to represent IP addresses, the number of address representation bits has been expanded to 128 bits, and the number of addresses is 2 to the 96th power that IPv4 can provide. Simply looking at the numbers may seem unintuitive. Instead, it is more intuitive and classic to describe the number of IPv6 addresses: "IPv6, which uses 128 bits to represent addresses, can assign an IP address to every grain of sand on the earth"! In addition, the IPv6 protocol can not only solve the address shortage problem in the IPv4 protocol, but also provide more efficient and secure network communication for the Internet. The IPv6 protocol provides many new functions and advantages in network communication. For example, in terms of data transmission and routing, its new design improves efficiency and reliability, reducing network congestion and packet loss. In addition, in the field of security, its built-in support for IPSec can better protect the security of data transmission in the network and prevent hackers from attacking and stealing data.
+As a next-generation Internet protocol, migration to IPv6 is the general trend in the future. In my country, since 2014, relevant agencies have gradually stopped allocating IPv4 addresses to new users and applications, and started to fully commercialize the IPv6 protocol (Computer Network (Seventh Edition) Xie Xiren). According to government guidance, in recent years, a series of related guidance documents have been issued successively, such as: [Action Plan for Promoting Internet Protocol Version 6 (IPv6) Scale Deployment](http://www.gov.cn/zhengce/2017-11/26/content_5242389.htm)” issued by the State Council in 2017, and “[IPv6 Traffic Improvement Three-Year Special Action Plan (2021-2023)]( http://www.xinhuanet.com/info/2021-07/09/c_1310052164.htm) issued by the Ministry of Industry and Information Technology in 2021, the [Guiding Opinions on Promoting IPv6 Scale Deployment](http://www.gov.cn/zhengce/zhengceku/2021-07/23/content_5626963.htm) issued by the Cyberspace Administration of China 4 protocol migration to IPv6 protocol.
+However, due to the large-scale application of the IPv4 protocol in the current Internet, there is no way for users to specify a time and date. From that moment on, all devices on the Internet will use IPv6, which is unrealistic. One-time migration is not only unfeasible at the infrastructure level, but for enterprise users, even if the infrastructure can be prepared, it is unacceptable for enterprise users to shut down at least hundreds or even thousands of application instances for a period of time for protocol stack migration, no matter in terms of risk or cost! Since it cannot be done in one step, gradual IP address migration has become the current mainstream choice. Next, this article will introduce some mainstream gradual IP address migration methods.
 
-# 迁移方案
-虽然IPv6协议具有许多优势，但是其推广和应用仍然面临许多挑战。IPv6的普及需要全球范围内的配套基础措施和支持，包括网络设备的更新、人员培训和政策法规的推进等等。同时，IPv6与IPv4之间的兼容性也是一个重要的问题，需要通过技术手段和过渡机制来解决。
-常见的IP协议渐进式迁移共存方案，主要有双栈（Dual Stack）、隧道（Tunneling）等技术。其中，双栈技术是目前业界应用较为广泛的一种IPv4/IPv6共存的一种技术，其目的是在互联网完全过度到IPv6之前，通过为设备安装IPv4和IPv6双协议栈。具有双栈的设备可以实现与单IPv4、单IPv6或者双栈的设备进行通信。通过让各种协议栈能共存，渐进式地进行IP协议栈的迁移。像Kubernetes很早也已经对[双栈功能](https://kubernetes.io/zh-cn/docs/concepts/services-networking/dual-stack/)进行了支持。
-隧道技术是一种把IPv6地址封装到IPv4数据报中的方法，当数据从IPv6单协议栈发出后，在经过IPv4单栈网络环境的过程中，将IPv6地址封装到IPv4数据报作为IPv4数据报内容后，通过IPv4协议栈进行传输。在经过IPv4单栈环境后，来到IPv6单栈环境时，再将数据报中的IPv6数据段内容解析出来，构造新的IPv6数据报在IPv6协议栈环境中进行传输。
-## 微服务双栈迁移方案
-上文介绍的方案更多的是一般化的方法论。但具体到微服务系统中，远程调用过程如何实现多协议栈共存以便帮助企业用户平滑进行协议栈的迁移呢？
+# Migration scheme
+Although the IPv6 protocol has many advantages, its promotion and application still face many challenges. The popularization of IPv6 requires supporting infrastructure measures and support on a global scale, including updating of network equipment, personnel training, promotion of policies and regulations, and so on. At the same time, the compatibility between IPv6 and IPv4 is also an important issue, which needs to be solved through technical means and transition mechanism.
+Common IP protocol gradual migration coexistence solutions mainly include dual stack (Dual Stack), tunneling (Tunneling) and other technologies. Among them, dual-stack technology is a widely used IPv4/IPv6 coexistence technology in the industry. Its purpose is to install IPv4 and IPv6 dual protocol stacks for devices before the Internet completely transitions to IPv6. A dual-stack device can communicate with a single-IPv4, single-IPv6, or dual-stack device. By allowing various protocol stacks to coexist, the migration of the IP protocol stack is carried out gradually. For example, Kubernetes has already supported [dual-stack function](https://kubernetes.io/zh-cn/docs/concepts/services-networking/dual-stack/) very early.
+Tunneling technology is a method of encapsulating IPv6 addresses into IPv4 datagrams. After the data is sent from the IPv6 single protocol stack, in the process of passing through the IPv4 single stack network environment, the IPv6 address is encapsulated into the IPv4 datagram as the content of the IPv4 datagram, and then transmitted through the IPv4 protocol stack. After passing through the IPv4 single-stack environment, when coming to the IPv6 single-stack environment, the content of the IPv6 data segment in the datagram is parsed out, and a new IPv6 datagram is constructed for transmission in the IPv6 protocol stack environment.
+
+## Microservice dual-stack migration solution
+The solutions presented above are more of a generalized methodology. But specifically in the microservice system, how does the remote call process realize the coexistence of multiple protocol stacks so as to help enterprise users smoothly migrate the protocol stacks?
+
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679207793618-9c431106-93a2-452f-be71-32185f826569.png#clientId=u0b49bd32-d731-4&from=paste&height=386&id=F7Hec&name=image.png&originHeight=772&originWidth=1464&originalType=binary&ratio=2&rotation=0&showTitle=false&size=71775&status=done&style=none&taskId=u05d69bc5-9d7e-4646-987b-e869da537ba&title=&width=732)
-上图是当前业界微服务系统中服务之间普遍采用的远程调用过程架构图，本文接下来介绍如何基于双栈技术实现微服务应用的协议栈平滑迁移的常用方式。
-### 双注册双订阅实现协议栈平滑迁移
-在微服务系统中，相比于单栈环境下，只有一个IP地址，微服务的注册与发现过程都基于该地址完成服务远程调用。在多协议栈共存的环境中，其本质就是要解决服务注册和发现过程怎么使用IP地址的问题。
-梳理清楚了问题，就不难发现基于双注册双订阅的方法可以较好地解决微服务系统中多协议栈共存的问题，以便实现微服务系统协议栈的平滑迁移。该方案的服务注册和订阅过程可以被描述为下图所示：
+
+The above figure is the remote call process architecture diagram commonly used between services in the current microservice system in the industry. Next, this article introduces how to implement the common method of smooth migration of the protocol stack of the microservice application based on the dual-stack technology.
+
+### Double registration and double subscription to achieve smooth migration of the protocol stack
+In the microservice system, compared with the single-stack environment, there is only one IP address, and the registration and discovery process of the microservice is based on the address to complete the service remote call. In an environment where multiple protocol stacks coexist, the essence is to solve the problem of how to use IP addresses during service registration and discovery.
+After sorting out the problem, it is not difficult to find that the method based on double registration and double subscription can better solve the problem of coexistence of multiple protocol stacks in the microservice system, so as to realize the smooth migration of the protocol stack of the microservice system. The service registration and subscription process of this solution can be described as shown in the following figure:
+
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679216863247-e13d938b-a2a5-4965-b417-0d323d1c11fd.png#clientId=u21221381-1afe-4&from=paste&height=534&id=R9qXH&name=image.png&originHeight=1068&originWidth=1352&originalType=binary&ratio=2&rotation=0&showTitle=false&size=115412&status=done&style=none&taskId=u4adc2aaa-4fcc-4830-aca5-beccded9a22&title=&width=676)
 
-采用双注册双订阅实现微服务系统平滑进行IP协议栈迁移的过程可以被大致描述为以下步骤：
+The process of using double registration and double subscription to realize the smooth IP protocol stack migration of the microservice system can be roughly described as the following steps:
 
-1. 在新的应用升级或者发版之前，对相关微服务应用所在宿主机进行IP地址协议栈升级改造，让其同时支持IPv4和IPv6双协议栈。
-2. 经过步骤1改造的微服务应用，在微服务框架层面，通过一个双栈地址提取模块提取应用宿主机中有效的IPv4和IPv6地址，并通过服务注册模块，将双栈地址都注册到注册中心。
-3. 消费者订阅注册中心中的某个服务的IPv4和IPv6双栈地址，通过应用服务框架层面的双栈地址解析模块，比对宿主机所支持的协议栈类型，如果宿主机仅支持IPv4协议，则使用提供者的IPv4地址发起服务调用；如果仅支持IPv6或同时支持双栈，则用提供者的IPv6地址发起服务调用；
-4. 当系统中的所有微服务都完成支持IPv6协议栈的支持后，逐步对所有应用宿主机关闭IPv4协议栈，从而平滑完成大规模微服务系统从IPv4协议栈到IPv6协议栈的迁移。
-### 基于DNS技术实现协议栈平滑迁移
-双注册双订阅的方法虽然很自然和清晰，但是其由于服务注册过程中针对双栈环境中的应用会多注册一条IP地址对应的记录，会降低注册中心的服务承载量。
-因此，也可以基于DNS技术实现多协议栈共存，解决微服务系统协议栈迁移的方法。其本质是将原来的注册服务实例地址过程变成注册服务实例域名（这里域名更多是实例标识作用），可实现在注册中心所注册服务实例记录数量不变的情况下，通过额外的DNS域名系统存储服务域名所对应的双栈IP地址，从而实现多协议栈的共存。采用该方案的服务注册和订阅过程如下图所示：
+1. Before the new application is upgraded or released, upgrade the IP address protocol stack of the host machine where the relevant microservice application is located, so that it supports both IPv4 and IPv6 dual protocol stacks.
+2. For the microservice application transformed in step 1, at the microservice framework level, a dual-stack address extraction module extracts valid IPv4 and IPv6 addresses in the application host, and registers both dual-stack addresses to the registration center through the service registration module.
+3. The consumer subscribes to the IPv4 and IPv6 dual-stack addresses of a service in the registration center, and compares the protocol stack type supported by the host through the dual-stack address resolution module at the application service framework level. If the host only supports IPv4 protocol, use the provider’s IPv4 address to initiate a service call; if it only supports IPv6 or supports both dual stacks, use the provider’s IPv6 address to initiate a service call;
+4. After all the microservices in the system support the IPv6 protocol stack, gradually close the IPv4 protocol stack for all application hosts, so as to smoothly complete the migration of the large-scale microservice system from the IPv4 protocol stack to the IPv6 protocol stack.
+
+### Realize smooth migration of protocol stack based on DNS technology
+Although the method of dual registration and dual subscription is natural and clear, it will reduce the service capacity of the registration center because an additional record corresponding to the IP address will be registered for the application in the dual-stack environment during the service registration process.
+Therefore, it is also possible to realize the coexistence of multiple protocol stacks based on DNS technology, and to solve the method of protocol stack migration in the microservice system. Its essence is to change the original process of registering the service instance address into the registration service instance domain name (the domain name here is more of an instance identification function), which can realize the coexistence of multiple protocol stacks through the additional DNS domain name system to store the dual-stack IP address corresponding to the service domain name under the condition that the number of registered service instance records in the registry remains unchanged. The service registration and subscription process using this scheme is shown in the following figure:
+
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679217073664-4fc6c45d-b58c-4ae7-b446-ba0c3ff60400.png#clientId=u21221381-1afe-4&from=paste&height=462&id=u23c7c9fd&name=image.png&originHeight=924&originWidth=1600&originalType=binary&ratio=2&rotation=0&showTitle=false&size=141458&status=done&style=none&taskId=ud6e287ba-8c6f-404a-975b-53976811967&title=&width=800)
-基于DNS技术实现微服务系统平滑进行IP地址迁移的过程可以被大致描述为以下步骤：
 
-1. 在新的应用升级或者发版之前，对相关微服务应用进行IP地址协议栈改造，让其同时支持IPv4和IPv6双协议栈。改造后的应用需要将本机的双栈IP地址信息和本应用实例特点的域名注册到系统的DNS服务上。
-2. 完成域名注册后，应用实例将本地域名注册到注册中心。
-3. 消费者订阅注册中心中的某个服务所有实例的域名，通过应用框架层面的域名解析模块，向系统中的DNS服务发起基于域名解析请求，在通过DNS获取到示例域名对应的IP地址后，比对宿主机所支持的协议栈类型，如果宿主机仅支持IPv4，则使用IPv4地址发起服务调用；如果仅支持IPv6或同时支持双栈，则优先使用IPv6地址发起服务调用；
-4. 当系统中的所有微服务都完成支持IPv6协议栈的支持后，逐步对所有应用宿主机关闭IPv4协议栈，从而平滑完成大规模微服务系统从IPv4协议栈到IPv6协议栈的迁移。
+The process of implementing smooth IP address migration in a microservice system based on DNS technology can be roughly described as the following steps:
 
-相比于双注册双订阅方式，基于DNS的方法可以较好地解决双注册双订阅过程中带给注册中心的多余压力，但DNS的高可用也是企业用户需要特别注意的点。
-# 实践
-Spring Cloud Alibaba作为应用广泛的微服务框架，目前在2021.0.5.0版本中已经提供了微服务场景下的不同协议栈应用互通共存方案，以便帮助企业用户实现大规模微服务系统的协议栈迁移能力。社区方案基于双注册双订阅实现，应用启动后会默认将微服务的IPv4地址和IPv6地址注册到注册中心中，其中IPv4地址会存放在Nacos服务列表中的IP字段下，IPv6地址在Nacos的metadata字段中，其对应的Key为IPv6（可以解决普通双注册双订阅过程中的同一个服务实例有两条记录，对注册中心造成压力的问题）。当服务消费者调用服务提供者时，会根据自身的IP协议栈支持情况，选择合适的IP地址类型发起服务调用。具体规则：
+1. Before the new application is upgraded or released, the IP address protocol stack of the relevant micro-service application is transformed so that it supports both IPv4 and IPv6 dual protocol stacks. The modified application needs to register the dual-stack IP address information of the machine and the domain name characteristic of this application instance to the DNS service of the system.
+2. After completing the domain name registration, the application instance registers the local domain name to the registration center.
+3. The consumer subscribes to the domain name of all instances of a certain service in the registration center, and initiates a request based on domain name resolution to the DNS service in the system through the domain name resolution module at the application framework level. After obtaining the IP address corresponding to the example domain name through DNS, compare the protocol stack type supported by the host machine. If the host machine only supports IPv4, use the IPv4 address to initiate the service call; if the host machine only supports IPv6 or supports both stacks at the same time, use the IPv6 address to initiate the service call;
+4. After all the microservices in the system support the IPv6 protocol stack, gradually close the IPv4 protocol stack for all application hosts, so as to smoothly complete the migration of the large-scale microservice system from the IPv4 protocol stack to the IPv6 protocol stack.
+Compared with the double registration and double subscription method, the DNS-based method can better solve the redundant pressure on the registration center during the double registration and double subscription process, but the high availability of DNS is also a point that enterprise users need to pay special attention to.
 
-1. 服务消费者本身支持IPv4和IPv6双协议栈或仅支持IPv6协议栈的情况下，服务消费者会使用服务提供的IPv6地址发起服务调用；
-2. 服务消费者本身仅支持IPv4单协议栈的情况下，服务消费者会使用服务提供的IPv4地址发起服务调用。
-## 应用配置
-相比于一般使用Spring Cloud Alibaba构建微服务，要使用协议栈共存迁移功能需要对应用增加如下配置：
-### 服务注册
-目前，使用支持协议栈共存迁移功能的Spring Cloud Alibaba版本以后，服务提供者在进行服务注册过中，不需要做任何配置，会默认检查当前应用所支持的协议栈情况，如果默认是单IPv6或IPv4协议栈，则仅注册相应的地址。如果应用支持双栈，则会自动获取应用的IPv6地址，然后，将IPv6地址作为应用实例的服务示例元数据注册到注册中心上。
-### 服务消费
-如果应用是采用Spring Cloud Alibaba 2021.0.5.0版本，默认使用Spring Cloud LoadBalancer负载均衡策略，需要在消费者应用application.properties配置文件中增加如下配置开启协议栈共存迁移功能：
+# practice
+As a widely used microservice framework, Spring Cloud Alibaba has provided a solution for interoperability and coexistence of different protocol stack applications in microservice scenarios in version 2021.0.5.0, so as to help enterprise users realize the protocol stack migration capability of large-scale microservice systems. The community solution is based on the implementation of dual registration and dual subscription. After the application is started, the IPv4 address and IPv6 address of the microservice will be registered in the registration center by default. The IPv4 address will be stored under the IP field in the Nacos service list, and the IPv6 address will be in the metadata field of Nacos. When a service consumer calls a service provider, it will select an appropriate IP address type to initiate a service call according to its own IP protocol stack support. Specific rules:
+
+1. If the service consumer itself supports IPv4 and IPv6 dual protocol stacks or only supports the IPv6 protocol stack, the service consumer will use the IPv6 address provided by the service to initiate a service call;
+2. If the service consumer itself only supports IPv4 single protocol stack, the service consumer will use the IPv4 address provided by the service to initiate a service call.
+
+## Application configuration
+Compared with the general use of Spring Cloud Alibaba to build microservices, the following configuration needs to be added to the application to use the protocol stack coexistence migration function:
+
+### Service Registration
+At present, after using the Spring Cloud Alibaba version that supports the protocol stack coexistence and migration function, the service provider does not need to do any configuration during the service registration process, and will check the protocol stack supported by the current application by default. If the default is a single IPv6 or IPv4 protocol stack, only the corresponding address will be registered. If the application supports dual-stack, it will automatically obtain the IPv6 address of the application, and then register the IPv6 address in the registration center as the service instance metadata of the application instance.
+
+### Service Consumption
+If the application uses the Spring Cloud Alibaba 2021.0.5.0 version, the Spring Cloud LoadBalancer load balancing strategy is used by default, and the following configuration needs to be added to the consumer application application.properties configuration file to enable the protocol stack coexistence migration function:
+
 ```properties
 spring.cloud.loadbalancer.ribbon.enabled=false
 spring.cloud.loadbalancer.nacos.enabled=true
 ```
-## 效果演示
-为了便于演示，本文直接基于[阿里云容器服务ACK](https://www.aliyun.com/product/kubernetes)构建了一个双栈环境，来进行双栈环境的服务注册与消费演示。
-## 服务注册
-如下本文演示用的服务提供者实例Pod信息：
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679227819209-cb1b2ad6-4402-4075-aced-065f76160da4.png#clientId=uf73c13f1-991a-4&from=paste&height=156&id=u81a5cd10&name=image.png&originHeight=312&originWidth=2446&originalType=binary&ratio=2&rotation=0&showTitle=false&size=204807&status=done&style=none&taskId=uefd0add8-a6af-4436-807e-6606dc783fd&title=&width=1223)
-基于Spring Cloud Alibaba协议栈共存迁移功能，其在注册中心上的服务实例列表信息：
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679227850292-4c9d3cae-9a3a-4464-b863-17d4390bbb17.png#clientId=uf73c13f1-991a-4&from=paste&height=126&id=u78988947&name=image.png&originHeight=252&originWidth=2554&originalType=binary&ratio=2&rotation=0&showTitle=false&size=143946&status=done&style=none&taskId=u05f1052d-335b-4533-a72e-66a703f4b3d&title=&width=1277)
-## 服务消费
-单栈环境服务消费者：
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679280217276-9e3cd3dc-b181-49a9-b6cf-c156e6720112.png#clientId=uf73c13f1-991a-4&from=paste&height=154&id=u326c0cf1&name=image.png&originHeight=308&originWidth=2462&originalType=binary&ratio=2&rotation=0&showTitle=false&size=181070&status=done&style=none&taskId=uddf23c9b-d437-4022-8d3b-9b3edf72c14&title=&width=1231)
-服务调用成功以后，服务提供者会打印调用消费者的调用IP地址：
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679280312813-4cb6d6e3-8a65-4be4-8660-b8af1cbecc23.png#clientId=uf73c13f1-991a-4&from=paste&height=181&id=u77731e53&name=image.png&originHeight=362&originWidth=2248&originalType=binary&ratio=2&rotation=0&showTitle=false&size=185950&status=done&style=none&taskId=u1b6c29bc-8997-4926-affd-f4a5f252ff3&title=&width=1124)
-从上述返回结果来看，IPv4单栈环境中的消费者由于仅支持单栈，所以一直通过IPv4协议栈向双栈服务提供者发起请求。
-双栈环境服务消费者：
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679280399202-87209390-cddf-4f48-b53c-d035f67312c9.png#clientId=uf73c13f1-991a-4&from=paste&height=153&id=u7b1bfd9e&name=image.png&originHeight=306&originWidth=2436&originalType=binary&ratio=2&rotation=0&showTitle=false&size=192353&status=done&style=none&taskId=u4f98585e-d87d-466b-b7de-0c6d25df563&title=&width=1218)
-服务调用成功以后，服务提供者会打印调用消费者的调用IP地址，可以看到打印的是消费者的IPv6地址：
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679280496522-771aa27f-3c61-4c27-b2ba-931bfa3702d0.png#clientId=uf73c13f1-991a-4&from=paste&height=155&id=u808935b7&name=image.png&originHeight=310&originWidth=2252&originalType=binary&ratio=2&rotation=0&showTitle=false&size=202478&status=done&style=none&taskId=u68cd3a36-1de8-4598-b73d-c027faf51f8&title=&width=1126)
-从上述返回结果来看，IPv4/IPv6双栈环境中的消费者由于支持IPv6，为了实现协议栈向IPv6的迁移，所以默认一直通过IPv6协议栈向双栈服务提供者发起请求。
 
+## Effect demonstration
+For the convenience of demonstration, this article builds a dual-stack environment directly based on [Aliyun Container Service ACK](https://www.aliyun.com/product/kubernetes) to demonstrate service registration and consumption in a dual-stack environment.
+
+## Service Registration
+The Pod information of the service provider instance used in this article is as follows:
+
+![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679227819209-cb1b2ad6-4402-4075-aced-065f76160da4.png#clientId=uf73c13f1-991a-4&from=paste&height=156&id=u81a5cd10&name=image.png&originHeight=312&originWidth=2446&originalType=binary&ratio=2&rotation=0&showTitle=false&size=204807&status=done&style=none&taskId=uefd0add8-a6af-4436-807e-6606dc783fd&title=&width=1223)
+
+Based on the coexistence and migration function of the Spring Cloud Alibaba protocol stack, its service instance list information on the registration center:
+
+![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679227850292-4c9d3cae-9a3a-4464-b863-17d4390bbb17.png#clientId=uf73c13f1-991a-4&from=paste&height=126&id=u78988947&name=image.png&originHeight=252&originWidth=2554&originalType=binary&ratio=2&rotation=0&showTitle=false&size=143946&status=done&style=none&taskId=u05f1052d-335b-4533-a72e-66a703f4b3d&title=&width=1277)
+
+## Service Consumption
+Single-stack environment service consumer:
+
+![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679280217276-9e3cd3dc-b181-49a9-b6cf-c156e6720112.png#clientId=uf73c13f1-991a-4&from=paste&height=154&id=u326c0cf1&name=image.png&originHeight=308&originWidth=2462&originalType=binary&ratio=2&rotation=0&showTitle=false&size=181070&status=done&style=none&taskId=uddf23c9b-d437-4022-8d3b-9b3edf72c14&title=&width=1231)
+
+After the service call is successful, the service provider will print the calling IP address of the calling consumer:
+
+![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679280312813-4cb6d6e3-8a65-4be4-8660-b8af1cbecc23.png#clientId=uf73c13f1-991a-4&from=paste&height=181&id=u77731e53&name=image.png&originHeight=362&originWidth=2248&originalType=binary&ratio=2&rotation=0&showTitle=false&size=185950&status=done&style=none&taskId=u1b6c29bc-8997-4926-affd-f4a5f252ff3&title=&width=1124)
+
+From the above returned results, consumers in the IPv4 single-stack environment always initiate requests to dual-stack service providers through the IPv4 protocol stack because they only support single-stack.
+Dual-stack environment service consumer:
+
+![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679280399202-87209390-cddf-4f48-b53c-d035f67312c9.png#clientId=uf73c13f1-991a-4&from=paste&height=153&id=u7b1bfd9e&name=image.png&originHeight=306&originWidth=2436&originalType=binary&ratio=2&rotation=0&showTitle=false&size=192353&status=done&style=none&taskId=u4f98585e-d87d-466b-b7de-0c6d25df563&title=&width=1218)
+
+After the service call is successful, the service provider will print the calling IP address of the calling consumer, and you can see that the IPv6 address of the consumer is printed:
+
+![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679280496522-771aa27f-3c61-4c27-b2ba-931bfa3702d0.png#clientId=uf73c13f1-991a-4&from=paste&height=155&id=u808935b7&name=image.png&originHeight=310&originWidth=2252&originalType=binary&ratio=2&rotation=0&showTitle=false&size=202478&status=done&style=none&taskId=u68cd3a36-1de8-4598-b73d-c027faf51f8&title=&width=1126)
+
+From the above returned results, consumers in the IPv4/IPv6 dual-stack environment support IPv6, and in order to realize the migration of the protocol stack to IPv6, they always send requests to the dual-stack service provider through the IPv6 protocol stack by default.
