@@ -1,6 +1,5 @@
 import React from "react";
 import { translate } from "@docusaurus/Translate";
-import { Icon } from "../../../components";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import "./index.scss";
 
@@ -8,18 +7,16 @@ const data = {
 
     list: [
         {
-            icon: 'feature-1',
-            title: translate({ id: 'homepage.featureListTitle1', message: '简单易用' }),
+            title: translate({ id: "homepage.featureListTitle1", message: '简单易用' }),
             content: [
                 translate({
-                    id: 'homepage.featureListContent1',
+                    id: "homepage.featureListContent1",
                     message:
                         'Spring Cloud Alibaba 作为一站式的微服务构建方案，用户只需要添加一些注解和少量配置，就可以通过阿里中间件来迅速搭建分布式应用系统。',
                 }),
             ],
         },
         {
-            icon: 'feature-2',
             title: translate({ id: 'homepage.featureListTitle2', message: '生产等级' }),
             content: [
                 translate({
@@ -29,7 +26,6 @@ const data = {
             ],
         },
         {
-            icon: 'feature-3',
             title: translate({ id: 'homepage.featureListTitle3', message: '扩展性强' }),
             content: translate({
                 id: 'homepage.featureListContent3',
@@ -38,7 +34,6 @@ const data = {
             }),
         },
         {
-            icon: 'feature-4',
             title: translate({ id: 'homepage.featureListTitle4', message: '能力全面' }),
             content: translate({
                 id: 'homepage.featureListContent4',
@@ -68,7 +63,9 @@ const Feature = () => {
     );
 };
 
-const Item = (props) => {
+const Item = (props: any) => {
+    console.log(props);
+
     const { feature } = props;
     return (
         <BrowserOnly>
