@@ -357,6 +357,9 @@
   "homepage.introTitle": {
     "message": "What is Spring Cloud Alibaba?"
   },
+  "homepage. featureTitle": {
+    "message": "Core Features"
+  },
   "homepage. featureListTitle1": {
     "message": "Easy to use"
   },
@@ -364,16 +367,16 @@
     "message": "Spring Cloud Alibaba is a one-stop microservice construction solution. Users only need to add some annotations and a small amount of configuration to quickly build a distributed application system through Alibaba middleware."
   },
   "homepage. featureListTitle2": {
-    "message": "Production Level"
-  },
-  "homepage. featureListContent2": {
-    "message": "The core components have all been tested by Alibaba's Double 11 flood peak for many years, and are mature and stable."
-  },
-  "homepage. featureListTitle3": {
     "message": "Extensible"
   },
-  "homepage. featureListContent3": {
+  "homepage. featureListContent2": {
     "message": "Spring Cloud Alibaba is based on the Spring Cloud microservice solution specification, and the components in it can be easily extended and replaced."
+  },
+  "homepage. featureListTitle3": {
+    "message": "Production Level"
+  },
+  "homepage. featureListContent3": {
+    "message": "The core components have all been tested by Alibaba's Double 11 flood peak for many years, and are mature and stable."
   },
   "homepage. featureListTitle4": {
     "message": "Comprehensive capabilities"
@@ -385,7 +388,7 @@
     "message": "Spring Cloud Alibaba provides a one-stop solution for distributed application development. It contains all the components you need to develop distributed applications, making it easy to develop applications using Spring Cloud."
   },
   "homepage.userTitleBefore": {
-    "message": "Who is using"
+    "message": "Who is using "
   },
   "homepage.msemapTitle": {
     "message": "Microservice Ecosystem Landscape"
@@ -394,7 +397,7 @@
     "message": "Spring Cloud Alibaba"
   },
   "homepage.briefIntroductionDesc": {
-    "message": ""
+    "message": "Committed to providing a one-stop solution for microservice development!"
   },
   "homepage.quickstartButton": {
     "message": "Get Started"
@@ -404,9 +407,6 @@
   },
   "homepage.userDesc2": {
     "message": "to help improving Spring Cloud Alibaba better."
-  },
-  "homepage.userTitleBefore": {
-    "message": "Who is using"
   },
   "homepage.userTitleAfter": {
     "message": "Spring Cloud Alibaba"
