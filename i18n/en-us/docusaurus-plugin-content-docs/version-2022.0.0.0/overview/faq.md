@@ -113,7 +113,7 @@ Can be integrated, related functions are under planning, see [Roadmap](./roadmap
 
 <!-- todo: need to update the connection, can not connect through the relative path -->
 
-- For community contributions, please refer to [Developer Module](../../../developers/contributor-guide/new-contributor-guide_dev), which contains related descriptions.
+- For community contributions, please refer to [Developer Module](../../../community/developer/contributor-guide/new-contributor-guide_dev), which contains related descriptions.
 
 - A Committer is an individual with write access to the repository, including the following criteria:
 

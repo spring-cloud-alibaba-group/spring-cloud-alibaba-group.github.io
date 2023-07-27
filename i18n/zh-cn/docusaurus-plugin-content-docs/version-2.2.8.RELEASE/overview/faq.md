@@ -115,7 +115,7 @@ Spring Cloud Alibaba：Alibaba 提供的基于 Spring Cloud 编程模型实现�
 
 <!-- todo：需要更新连接，无法通过相对路径连接 -->
 
-- 关于社区贡献，可以参考[开发者模块](../../../developers/contributor-guide/new-contributor-guide_dev)，其中有相关叙述。
+- 关于社区贡献，可以参考[开发者模块](../../../community/developer/contributor-guide/new-contributor-guide_dev)，其中有相关叙述。
 
 - Committer 是具有仓库写权限的个人，包含以下的标准：
 

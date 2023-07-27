@@ -31,6 +31,24 @@
                 "items": [
                     "discussion-feedback/discussion-feedback"
                 ]
+            },
+            {
+                "type": "category",
+                "label": "Developer",
+                "collapsed": false,
+                "items": [
+                    "developer/developers_dev",
+                    {
+                        "type": "category",
+                        "label": "Contribution Guide",
+                        "collapsible": false,
+                        "collapsed": false,
+                        "items": [
+                            "developer/contributor-guide/new-contributor-guide_dev",
+                            "developer/contributor-guide/reporting-security-issues_dev"
+                        ]
+                    }
+                ]
             }
         ]
     }]
