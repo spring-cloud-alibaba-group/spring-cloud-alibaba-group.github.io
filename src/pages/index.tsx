@@ -49,7 +49,7 @@ export default function Home(): React.Element {
         {/* <Community /> */}
         <Footer
           logo={
-            "https://img.alicdn.com/imgextra/i3/O1CN01gnjFs91iXme8gzkDu_!!6000000004423-55-tps-252-40.svg"
+            "img/spring_cloud_alibaba_colorful.png"
           }
         />
       </div>

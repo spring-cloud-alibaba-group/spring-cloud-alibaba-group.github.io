@@ -6,7 +6,13 @@ description: Nacos Quick Start.
 
 本章节将演示如何使用 spring-cloud-starter-alibaba-nacos-config 和 spring-cloud-starter-alibaba-nacos-discovery 完成 Spring Cloud 应用的配置管理和服务发现。
 
-## Nacos Server
+## 安装 Nacos Server
+### 接入云上免费版本
+体验 Spring Cloud Alibaba 注册配置中心的最简单的方式就是直接接入阿里云上的托管 Nacos Server，这样可以免去本地安装下载的繁琐步骤。具体请参考 <a href="https://free.aliyun.com/?searchKey=nacos&spm=sca-quickstart-free.topbar.0.0.0" target="_blank">如何体验和接入阿里云托管免费 Nacos Server</a>。
+
+> 如果用的云上托管版本 Nacos Server，在接下来的文档中使用 `云上 Nacos Server 地址` 替换 `127.0.0.1:8848` 即可。
+
+### 本地安装方式
 具体启动方式参考 [Nacos](https://nacos.io/zh-cn/docs/quick-start.html) 官网。
 
 Nacos Server 启动成功之后，浏览器地址栏输入 `http://ip:8848/nacos` 查看 Nacos 控制台（默认账号名和密码为 nacos/nacos）：
@@ -15,7 +21,7 @@ Nacos Server 启动成功之后，浏览器地址栏输入 `http://ip:8848/nacos
 
 关于更多的 Nacos Server 版本，可以从 Nacos 官方 [release](https://github.com/alibaba/nacos/releases) 页面查看。
 
-## Nacos 配置中心
+## 接入 Nacos 配置中心
 ### 接入 Nacos Config
 
 如果要在您的项目中使用 Nacos 来实现配置管理，需要进行以下操作（确保 Nacos Server 已启动）：
@@ -34,7 +40,7 @@ Nacos Server 启动成功之后，浏览器地址栏输入 `http://ip:8848/nacos
     spring:
       cloud:
         nacos:
-          serverAddr: 127.0.0.1:8848
+          serverAddr: 127.0.0.1:8848 #如果用的云上托管版本，输入可访问的Nacos Server地址即可
       config:
         import:
           - nacos:nacos-config-example.properties?refresh=true
@@ -140,7 +146,7 @@ Nacos 配置管理示例源码参考：[Nacos 配置管理示例](https://github
 
 有关更多 Nacos 配置管理 的高级特性和使用方法，请参看注册配置中心进阶指南章节！
 
-## Nacos 服务注册与发现
+## 接入 Nacos 服务注册与发现
 
 ### 接入 Nacos Discovery
 

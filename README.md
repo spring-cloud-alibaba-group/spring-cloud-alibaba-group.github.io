@@ -1,31 +1,60 @@
 # Spring Cloud Alibaba Official Website
 
+## Run 
+### Prerequirements
+> If requirements cannot meet in local environment, please refer to the following [Run with Docker](#).
+
+The project source code is built based on docusaurus v2.3.1, so to compile and run this project, it is necessary to ensure the installation of Node.js and other basic environments.
+
+* Node.js version 16.14+
+
 ### Quick Start
 
 1. `npm install`
 
 2. `npm run start`
 
-3. Browser input
+3. visit with browser
 
 ```shell
 localhost:3000/
 ```
 
-### Build and start as a service
+### Buil and Serve
 
 1. `npm run build`
 
 2. `npm run serve`
 
-3. Browser input
+3. visit with browser
 ```shell
 localhost:3000/
 ```
 
-## Local environment preparation
-Base docusaurus v2.3.1
-Node.js version 16.14+
+## Docker 方式运行
+> No extra components needed except docker.
+
+### Run locally
+1. build image
+```shell
+docker build --target development -t docs:dev .
+```
+
+2. run container
+```shell
+docker run -p 3000:3000 docs:dev
+```
+
+### Run in production
+1. build image
+```shell
+docker build -t sca-site:latest .
+```
+
+2. run container
+```shell
+docker run --rm -p 3000:80 sca-site:latest
+```
 
 ## i18n Considerations
 
