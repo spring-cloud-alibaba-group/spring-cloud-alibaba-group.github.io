@@ -15,7 +15,7 @@ const commonDocsOptions = {
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Spring Cloud Alibaba',
-  favicon: 'img/logo.png',
+  favicon: 'img/favicon.png',
   themes: [
     require.resolve("@easyops-cn/docusaurus-search-local"),
     /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
@@ -154,7 +154,7 @@ const config = {
         title: '',
         logo: {
           alt: 'Spring Cloud Alibaba logo',
-          src: 'https://img.alicdn.com/imgextra/i3/O1CN01gnjFs91iXme8gzkDu_!!6000000004423-55-tps-252-40.svg',
+          src: 'img/spring_cloud_alibaba_colorful.png',
           style: { marginTop: '4px' },
         },
         items: [
