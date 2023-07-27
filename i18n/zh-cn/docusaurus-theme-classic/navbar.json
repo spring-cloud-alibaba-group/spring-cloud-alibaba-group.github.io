@@ -4,12 +4,12 @@
     "description": "Navbar item with label Home"
   },
   "item.label.Docs": {
-    "message": "2022.0.5.0",
+    "message": "2022.0.0.0",
     "description": "Navbar item with label version Docs"
   },
-  "item.label.Developers": {
-    "message": "开发者",
-    "description": "Navbar item with label Developers"
+  "item.label.MicroServices": {
+    "message": "微服务解决方案",
+    "description": "Navbar item with label MicroServices"
   },
   "item.label.Blog": {
     "message": "博客",

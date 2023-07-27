@@ -78,10 +78,10 @@ const config = {
       'content-docs',
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
-        id: 'developers',
-        path: 'developers',
-        routeBasePath: '/developers',
-        sidebarPath: require.resolve('./sidebarDevelopers.json'),
+        id: 'microservices',
+        path: 'microservices',
+        routeBasePath: '/microservices',
+        sidebarPath: require.resolve('./sidebarMicroServices.json'),
         ...commonDocsOptions,
       }),
     ],
@@ -178,8 +178,8 @@ const config = {
             dropdownActiveClassDisabled: true,
           },
           {
-            label: 'Developers',
-            to: '/developers/developers_dev',
+            label: 'MicroServices',
+            to: '/microservices/free-version/free',
             position: 'right',
           },
           {
