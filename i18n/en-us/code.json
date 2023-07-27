@@ -357,31 +357,31 @@
   "homepage.introTitle": {
     "message": "What is Spring Cloud Alibaba?"
   },
-  "homepage. featureTitle": {
+  "homepage.featureTitle": {
     "message": "Core Features"
   },
-  "homepage. featureListTitle1": {
+  "homepage.featureListTitle1": {
     "message": "Easy to use"
   },
-  "homepage. featureListContent1": {
+  "homepage.featureListContent1": {
     "message": "Spring Cloud Alibaba is a one-stop microservice construction solution. Users only need to add some annotations and a small amount of configuration to quickly build a distributed application system through Alibaba middleware."
   },
-  "homepage. featureListTitle2": {
+  "homepage.featureListTitle2": {
     "message": "Extensible"
   },
-  "homepage. featureListContent2": {
+  "homepage.featureListContent2": {
     "message": "Spring Cloud Alibaba is based on the Spring Cloud microservice solution specification, and the components in it can be easily extended and replaced."
   },
-  "homepage. featureListTitle3": {
+  "homepage.featureListTitle3": {
     "message": "Production Level"
   },
-  "homepage. featureListContent3": {
+  "homepage.featureListContent3": {
     "message": "The core components have all been tested by Alibaba's Double 11 flood peak for many years, and are mature and stable."
   },
-  "homepage. featureListTitle4": {
+  "homepage.featureListTitle4": {
     "message": "Comprehensive capabilities"
   },
-  "homepage. featureListContent4": {
+  "homepage.featureListContent4": {
     "message": "Corresponding solutions are provided for important areas such as service registration and discovery, distributed messaging, microservice current limiting and degradation, distributed transactions, and microservice governance in the microservice architecture."
   },
   "homepage.introDescFirst": {
@@ -397,7 +397,7 @@
     "message": "Spring Cloud Alibaba"
   },
   "homepage.briefIntroductionDesc": {
-    "message": "Committed to providing a one-stop solution for microservice development!"
+    "message": "Committed to providing an one-stop solution for microservice development!"
   },
   "homepage.quickstartButton": {
     "message": "Get Started"
