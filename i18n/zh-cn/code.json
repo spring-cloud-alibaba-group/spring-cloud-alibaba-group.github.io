@@ -127,7 +127,7 @@
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "此为 {siteTitle} {versionLabel} 版的文档，现已不再积极维护。",
+    "message": "此为 {siteTitle} {versionLabel} 版的文档。",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
@@ -413,11 +413,5 @@
   },
   "community.contributeListContent4": {
     "message": "创建一个"
-  },
-  "theme.navbar.items[2].items[0].label": {
-    "message": "微服务社区版"
-  },
-  "theme.navbar.items[2].items[1].label": {
-    "message": "微服务企业版"
   }
 }

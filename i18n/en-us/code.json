@@ -127,7 +127,7 @@
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "message": "This is documentation for {siteTitle} {versionLabel}.",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
@@ -373,10 +373,10 @@
     "message": "Spring Cloud Alibaba is based on the Spring Cloud microservice solution specification, and the components in it can be easily extended and replaced."
   },
   "homepage.featureListTitle3": {
-    "message": "Production Level"
+    "message": "Production level"
   },
   "homepage.featureListContent3": {
-    "message": "The core components have all been tested by Alibaba's Double 11 flood peak for many years, and are mature and stable."
+    "message": "The core components have all been tested by Alibaba's 11.11 flood peak for many years, and are mature and stable."
   },
   "homepage.featureListTitle4": {
     "message": "Comprehensive capabilities"
