@@ -11,9 +11,9 @@
     "message": "All Versionas",
     "description": "Navbar item with label Docs"
   },
-  "item.label.Developers": {
-    "message": "DEVELOPERS",
-    "description": "Navbar item with label Developers"
+  "item.label.MicroServices": {
+    "message": "Microservice Solutions",
+    "description": "Navbar item with label Microservice Solutions"
   },
   "item.label.Blog": {
     "message": "BLOG",

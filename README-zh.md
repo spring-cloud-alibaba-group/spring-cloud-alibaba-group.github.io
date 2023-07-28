@@ -1,7 +1,8 @@
 # Spring Cloud Alibaba 官网
 
-## 构建项目
+## 本地环境构建项目
 ### 环境准备
+> 如果不想在本地安装依赖组件，可参考下文 [Docker 环境运行方式](#docker-方式运行)。
 项目源码基于 docusaurus v2.3.1 构建，因此要编译运行本项目需确保安装 Node.js 等基础环境。
 
 * Node.js version 16.14+
@@ -30,6 +31,8 @@ localhost:3000/
 ```
 
 ## Docker 方式运行
+无需在本地机器安装任何组件
+
 ### 本地开发
 1. 构建镜像
 ```shell
@@ -42,7 +45,8 @@ docker run -p 3000:3000 docs:dev
 ```
 
 ### 生产部署
-```shella
+1. 构建镜像
+```shell
 docker build -t sca-site:latest .
 ```
 

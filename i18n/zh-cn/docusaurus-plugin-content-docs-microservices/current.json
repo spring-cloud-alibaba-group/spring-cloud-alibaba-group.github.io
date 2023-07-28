@@ -1,0 +1,14 @@
+{
+    "sidebar.microservices.category.MicroServices": {
+        "message": "微服务解决方案",
+        "description": "Microservice Solutions"
+    },
+    "sidebar.microservices.category.Enterprise Edition": {
+        "message": "企业版",
+        "description": "The label for category Enterprise Edition Version of microservice in sidebar sidebar"
+    },
+    "sidebar.microservices.category.Free Version": {
+        "message": "免费版",
+        "description": "The label for category Free Version of microservice in sidebar sidebar"
+    }
+}

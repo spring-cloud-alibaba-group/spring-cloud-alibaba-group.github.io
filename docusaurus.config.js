@@ -15,7 +15,7 @@ const commonDocsOptions = {
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Spring Cloud Alibaba',
-  favicon: 'img/logo.png',
+  favicon: 'img/favicon.png',
   themes: [
     require.resolve("@easyops-cn/docusaurus-search-local"),
     /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
@@ -78,10 +78,10 @@ const config = {
       'content-docs',
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
-        id: 'developers',
-        path: 'developers',
-        routeBasePath: '/developers',
-        sidebarPath: require.resolve('./sidebarDevelopers.json'),
+        id: 'microservices',
+        path: 'microservices',
+        routeBasePath: '/microservices',
+        sidebarPath: require.resolve('./sidebarMicroServices.json'),
         ...commonDocsOptions,
       }),
     ],
@@ -113,6 +113,8 @@ const config = {
               banner: 'none'
             },
             '2022.0.0.0': {
+              // Add routing path configuration to solve the release notes mapping problem when the version is released
+              path: '/2022.0.0.0',
               banner: 'none'
             },
             '2021.0.5.0': {
@@ -154,7 +156,7 @@ const config = {
         title: '',
         logo: {
           alt: 'Spring Cloud Alibaba logo',
-          src: 'https://img.alicdn.com/imgextra/i3/O1CN01gnjFs91iXme8gzkDu_!!6000000004423-55-tps-252-40.svg',
+          src: 'img/spring_cloud_alibaba_colorful.png',
           style: { marginTop: '4px' },
         },
         items: [
@@ -167,7 +169,7 @@ const config = {
           {
             type: 'docsVersionDropdown',
             label: 'Docs',
-            docid: 'overview/what-is-sca',
+            docid: '/overview/what-is-sca',
             position: 'right',
             dropdownItemsAfter: [{
               label: 'All Versions',
@@ -176,8 +178,8 @@ const config = {
             dropdownActiveClassDisabled: true,
           },
           {
-            label: 'Developers',
-            to: '/developers/developers_dev',
+            label: 'MicroServices',
+            to: '/microservices/free-version/free',
             position: 'right',
           },
           {
