@@ -113,6 +113,16 @@ const config = {
               banner: "none",
             },
           },
+          // Set the version that needs to be displayed in the documentation
+          onlyIncludeVersions: [
+            "2022.0.0.0",
+            "2021.0.5.0",
+            "2021.0.4.0",
+            "2021.0.1.0",
+            "2.2.10-RC1",
+            "2.2.9.RELEASE",
+            "2.2.8.RELEASE"
+          ],
         },
         blog: {
           showReadingTime: true,
