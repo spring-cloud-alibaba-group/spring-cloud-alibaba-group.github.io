@@ -1,6 +1,6 @@
 {
   "version.label": {
-    "message": "用户文档",
+    "message": "文档",
     "description": "The label for version current"
   },
   "sidebar.docs.category.Overview": {
