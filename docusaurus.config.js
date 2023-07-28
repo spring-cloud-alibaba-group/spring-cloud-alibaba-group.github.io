@@ -88,6 +88,17 @@ const config = {
         ...commonDocsOptions,
       }),
     ],
+    [
+      "content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: "version",
+        path: "version",
+        routeBasePath: "/version",
+        sidebarPath: require.resolve("./sidebarVersion.json"),
+        ...commonDocsOptions,
+      })
+    ]
   ],
   presets: [
     [
@@ -176,11 +187,10 @@ const config = {
             position: "right",
             dropdownItemsAfter: [
               {
-                label: "All Versions",
-                to: "/versions",
+                label: "Versions",
+                to: "/version/version",
               },
             ],
-            dropdownActiveClassDisabled: true,
           },
           {
             type: "dropdown",

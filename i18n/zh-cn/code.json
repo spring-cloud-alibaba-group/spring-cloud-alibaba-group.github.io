@@ -413,11 +413,5 @@
   },
   "community.contributeListContent4": {
     "message": "创建一个"
-  },
-  "theme.navbar.items[2].items[0].label": {
-    "message": "微服务社区版"
-  },
-  "theme.navbar.items[2].items[1].label": {
-    "message": "微服务企业版"
   }
 }
