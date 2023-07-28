@@ -410,5 +410,11 @@
   },
   "homepage.userTitleAfter": {
     "message": "Spring Cloud Alibaba"
+  },
+  "themeConfig.navbar.MicroServices.items[0].label": {
+    "message": "Microservices Community Edition"
+  },
+  "theme.navbar.MicroServices.items[1].label": {
+    "message": "Microservice Enterprise Edition"
   }
 }
