@@ -7,6 +7,13 @@ description: Nacos.
 This chapter will demonstrate how to use spring-cloud-starter-alibaba-nacos-config and spring-cloud-starter-alibaba-nacos-discovery to complete the configuration management and service discovery of Spring Cloud applications.
 
 ## Nacos Server
+
+### Free Nacos Server On Alibaba Cloud
+The easiest way to experience the Spring Cloud Alibaba registration and configuration center is to directly access the hosted Nacos Server on Alibaba Cloud, which eliminates the tedious steps of local installation and download. Please refer to how to <a href="https://free.aliyun.com/?searchKey=nacos&spm=sca-quickstart-free.topbar.0.0.0" target="_blank">experience and access Alibaba Cloud hosted free Nacos Server</a> for details.
+
+If using the cloud hosted version of Nacos Server, replace `127.0.0.1:8848` with `the cloud hosted Nacos Server address` in the following document.
+
+### Start Your Own Nacos Server
 For details, refer to the official website of [Nacos](https://nacos.io/zh-cn/).
 
 After Nacos Server is started successfully, enter http://ip:8848/nacos in the browser address bar to view Nacos console (default account name and password are nacos/nacos) :

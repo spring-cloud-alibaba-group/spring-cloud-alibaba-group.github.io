@@ -157,7 +157,7 @@ const config = {
         logo: {
           alt: 'Spring Cloud Alibaba logo',
           src: 'img/spring_cloud_alibaba_colorful.png',
-          style: { marginTop: '4px' },
+          style: { marginTop: '4px', maxWidth: '230px', height: 'auto' },
         },
         items: [
           {
