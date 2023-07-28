@@ -4,7 +4,7 @@ keywords: [Spring Cloud Alibaba]
 description: GraalVM.
 ---
 
-To use GraalVM's static compilation capability, first ensure that your project's Spring Boot version is 3.0.0 or above, and Spring Cloud version is 2022.0.0 or above. Then introduce the required module dependencies of Spring Cloud Alibaba 2022.0.0.0 or above into the project.
+To use GraalVM's static compilation capability, first ensure that your project's Spring Boot version is 3.0.0 or above, and Spring Cloud version is 2022.0.0 or above. Then introduce the required module dependencies of Spring Cloud Alibaba 2022.0.0.0-RC2 into the project.
 
 ## Environment preparation
 To build a native image using Native Build Tools, the GraalVM distribution needs to be installed on the machine first. You can download it manually on the Liberica Native Image Kit page, or use a tool like SDKMAN!
@@ -74,4 +74,4 @@ Physical footprint: 214.0M
 Physical footprint (peak): 256.8M
 ```
 
-It can be seen that after starting the Java application through the native image, the memory usage is greatly reduced. After the application is started, the functions are the same as those started by jar.
+It can be seen that after starting the Java application through the native image, the memory usage is greatly reduced. After the application is started, the functions are the same as those started by JVM.
