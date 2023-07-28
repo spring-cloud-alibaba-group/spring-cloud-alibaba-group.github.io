@@ -8,7 +8,7 @@ description: Quick Start.
 
 ## 环境准备
 要使用 Native Build Tools 构建原生镜像，需要在首先在机器上安装 GraalVM 发行版。 您可以在 Liberica Native Image Kit 页面上手动下载它，也可以使用像 SDKMAN!
-这样的下载管理器。本文演示环境为 macOS，如果是 Windows 可参考相应文档进行操作。执行以下命令安装 GraalVM 环境：
+这样的下载管理器。本文演示环境为 MacOS，如果是 Windows 可参考相应文档进行操作。执行以下命令安装 GraalVM 环境：
 
 ```bash
 $ sdk install java 22.3.r17-nik
@@ -31,7 +31,7 @@ OpenJDK 64-Bit Server VM GraalVM 22.3.0 (build 17.0.5+8-LTS, mixed mode)
 $ mvn -Pnative spring-boot:run    
 ```
 
-之后应用会启动，需要尽可能完整的测试一遍应用的所有功能，保证应用的大部分代码都被测试用例覆盖，这样才能确保完整生成应用运行过程中的所有必须的动态属性。 运行完所有测试用例后，我们发现`resource/META-INF/native-image` 目录下会生成以下一些 hints 文件:
+之后应用会启动，进行预执行，需要尽可能完整的测试一遍应用的所有功能，保证应用的大部分代码都被测试用例覆盖，这样才能确保完整生成应用运行过程中的所有必须的动态属性。 运行完所有测试用例后，我们发现 `resource/META-INF/native-image` 目录下会生成以下一些 hints 文件:
 
 - resource-config.json：应用中资源hint文件
 - reflect-config.json：应用中反射定义hint文件
@@ -39,7 +39,7 @@ $ mvn -Pnative spring-boot:run
 - proxy-config.json：应用中Java代理相关内容hint文件
 - jni-config.json：应用中Java Native Interface（JNI）内容hint文件
 
-注意事项：RocketMQ 应用通过上述命令进行 hint 文件生成过程中，可能会出现配置信息扫描不全问题，可参考 [相关issue](https://github.com/alibaba/spring-cloud-alibaba/issues/3101)，Sentinel应用通过上述命令进行 hint 文件生成过程中，可能会遇到如下问题，可参考 [相关issue](https://github.com/alibaba/Sentinel/issues/3012)。
+注意事项：Spring Cloud Alibaba 2022.0.0.0 正式版本除了 `spring-cloud-circuitbreaker-sentinel` 和 `spring-cloud-alibaba-sentinel-gateway` 以外其他所有模块都已经默认将自身组件相关动态特性所需的配置内容都包含在了依赖中，因此上述预执行过程主要为了扫描应用自身业务代码以及其他第三方包中的动态特性，以便后续静态编译过程能顺利进行，应用能正常启动。
 
 
 ## 构建原生应用
@@ -67,13 +67,13 @@ Physical footprint:         59.2M
 Physical footprint (peak):  59.2M
 ```
 
-社区对比了同一个应用通过普通的方式启动Java应用的内存占用情况如下：
+社区对比了同一个应用通过普通的方式启动 Java 应用的内存占用情况如下：
 
 ```
 Physical footprint:         214.0M
 Physical footprint (peak):  256.8M
 ```
 
-可以看到，通过原生镜像启动 Java 应用后，内存占用大大减少。 应用启动后各项功能与通过 jar 启动无异。
+可以看到，通过原生镜像启动 Java 应用后，内存占用大大减少。应用启动后各项功能与通过 JVM 启动运行无异。
 
 

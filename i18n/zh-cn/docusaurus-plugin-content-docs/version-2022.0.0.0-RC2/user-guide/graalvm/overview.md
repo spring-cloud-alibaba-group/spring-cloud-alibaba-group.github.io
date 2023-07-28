@@ -17,7 +17,7 @@ Spring Boot 3.0 本次带来最大的改动就是 GraalVM 原生镜像的支持�
 * 没有惰性类加载，可执行文件中的所有内容都将在启动时加载到内存中。
 * 支持的 Java 应用程序在某些方面存在一些限制，因此目前并不能保证之前的 Java 应用都可直接使用 GraalVM 技术进行应用构建，有一定概率会存在不兼容的异常情况。
 
-本次发布的 Spring Cloud Alibaba 2022.0.0.0 版本所包含的部分中间件客户端已完成了构建 GraalVM 原生应用的适配，以下是社区对目前所支持的服务注册与发现模块相关示例应用在升级为 Spring Boot 3.0 以后，使用 GraalVM 构建原生应用镜像做的在启动速度和运行时占用内容相关的测试（测试过程在 macOS 11.4，2.6 GHz 6-Core Intel Core i7 处理器，16G 内存环境下分别模拟3次取平均值测得）：
+本次发布的 Spring Cloud Alibaba 2022.0.0.0-RC2 版本所包含的部分中间件客户端已完成了构建 GraalVM 原生应用的适配，以下是社区对目前所支持的服务注册与发现模块相关示例应用在升级为 Spring Boot 3.0 以后，使用 GraalVM 构建原生应用镜像做的在启动速度和运行时占用内容相关的测试（测试过程在 macOS 11.4，2.6 GHz 6-Core Intel Core i7 处理器，16G 内存环境下分别模拟3次取平均值测得）：
 
 ![GraalVM Performance](https://sca-storage.oss-cn-hangzhou.aliyuncs.com/website/docs/zh/graalvm_performance.jpg)
 

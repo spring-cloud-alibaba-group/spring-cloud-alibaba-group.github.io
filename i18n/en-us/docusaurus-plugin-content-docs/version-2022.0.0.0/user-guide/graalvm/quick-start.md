@@ -39,7 +39,7 @@ After the application will start, it is necessary to test all the functions of t
 - proxy-config.json: a hint file for Java proxy related content in the application
 - jni-config.json: Java Native Interface (JNI) content hint file in the application
 
-Note: During the generation of the hint file by the RocketMQ application through the above command, there may be incomplete scanning of configuration information, please refer to [related issues](https://github.com/alibaba/spring-cloud-alibaba/issues/3101 ), the Sentinel application may encounter the following problems during the hint file generation process through the above command, please refer to [related issues](https://github.com/alibaba/Sentinel/issues/3012).
+Note: In the GA version of Spring Cloud Alibaba 2022.0.0.0, all modules except `spring-cloud-circuitbreaker-sentinel` and `spring-cloud-alibaba-sentinel-gateway` have included the configuration content required by the dynamic features of their own components by default. Therefore, the above pre-execution process is mainly to scan the dynamic features in the application's own business code and other third-party packages, so that the subsequent static compilation process can proceed smoothly and the application can start normally.
 
 
 ## Build the native application
@@ -74,4 +74,4 @@ Physical footprint: 214.0M
 Physical footprint (peak): 256.8M
 ```
 
-It can be seen that after starting the Java application through the native image, the memory usage is greatly reduced. After the application is started, the functions are the same as those started by jar.
+It can be seen that after starting the Java application through the native image, the memory usage is greatly reduced. After the application is started, the functions are the same as those started by JVM.

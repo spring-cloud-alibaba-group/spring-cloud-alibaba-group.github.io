@@ -4,7 +4,7 @@ title: Spring Cloud Alibaba 发行版本
 
 # Spring Cloud Alibaba 发行版本
 
-## 当前版本（稳定）
+## 最新版本
 
 在这里可以找到当前发布版本的文档。
 
@@ -14,21 +14,13 @@ title: Spring Cloud Alibaba 发行版本
 |2021.0.5.0|[文档](docs/2021.0.5.0/overview/what-is-sca)|[发行说明](https://github.com/alibaba/spring-cloud-alibaba/releases/tag/2021.0.5.0)|
 
 
-## RC 版本
+## Release Candidate 版本
 
 |版本号|文档|发行说明|
 | ---- | ------- | -----|
 |2.2.10-RC1|[文档](docs/2.2.10-RC1/overview/what-is-sca)|[发行说明](https://github.com/alibaba/spring-cloud-alibaba/releases/tag/2.2.10-RC1)|
 
-## 下一版本（预发布）
-
-在这里可以找到未发布版本的在制品文档。
-
-|版本号|文档|
-| ---- | ------- |
-|用户文档|[文档](docs/next/overview/what-is-sca)|
-
-## 过去版本
+## 历史版本
 
 在这里可以找到 Spring Cloud Alibaba 以前版本的文档。
 
