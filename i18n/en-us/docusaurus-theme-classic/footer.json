@@ -28,7 +28,7 @@
     "description": "The label of footer link with label=What is Spring Cloud Alibaba? linking to /docs/overview/what-is-sca"
   },
   "link.item.label.introduce": {
-    "message": "Spring Cloud Alibaba is committed to providing a one-stop solution for microservice development!",
+    "message": "Spring Cloud Alibaba is committed to providing an one-stop solution for microservice development!",
     "description": "The label of footer link with label=What is Spring Cloud Alibaba? linking to /docs/overview/what-is-sca"
   },
   "link.item.label.Quick Start": {

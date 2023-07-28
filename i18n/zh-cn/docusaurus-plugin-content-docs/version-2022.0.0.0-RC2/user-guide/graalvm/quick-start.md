@@ -4,11 +4,11 @@ keywords: [Spring Cloud Alibaba]
 description: Quick Start.
 ---
 
-要使用 GraalVM 静态编译能力，首先确保您项目的 Spring Boot 版本为 3.0.0 或以上，Spring Cloud 版本为 2022.0.0 或以上。然后在项目中引入 Spring Cloud Alibaba 2022.0.0.0 或以上版本的所需模块依赖即可。
+要使用 GraalVM 静态编译能力，首先确保您项目的 Spring Boot 版本为 3.0.0 或以上，Spring Cloud 版本为 2022.0.0 或以上。然后在项目中引入 Spring Cloud Alibaba 2022.0.0.0-RC2 版本的所需模块依赖即可。
 
 ## 环境准备
 要使用 Native Build Tools 构建原生镜像，需要在首先在机器上安装 GraalVM 发行版。 您可以在 Liberica Native Image Kit 页面上手动下载它，也可以使用像 SDKMAN!
-这样的下载管理器。本文演示环境为 macOS，如果是 Windows 可参考相应文档进行操作。执行以下命令安装 GraalVM 环境：
+这样的下载管理器。本文演示环境为 MacOS，如果是 Windows 可参考相应文档进行操作。执行以下命令安装 GraalVM 环境：
 
 ```bash
 $ sdk install java 22.3.r17-nik
@@ -74,6 +74,5 @@ Physical footprint:         214.0M
 Physical footprint (peak):  256.8M
 ```
 
-可以看到，通过原生镜像启动 Java 应用后，内存占用大大减少。 应用启动后各项功能与通过 jar 启动无异。
-
+可以看到，通过原生镜像启动 Java 应用后，内存占用大大减少。应用启动后各项功能与通过 JVM 启动运行无异。
 
