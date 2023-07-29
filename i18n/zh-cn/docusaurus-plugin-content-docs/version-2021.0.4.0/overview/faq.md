@@ -40,7 +40,7 @@ custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alib
 
 **A：**
 
-Spring Cloud Alibaba 目前有三个版本在积极维护，分别是 `2.2.x`，`2021.x`，`2022.x`
+Spring Cloud Alibaba 目前有三个分支版本在积极维护，分别是 `2.2.x`，`2021.x`，`2022.x`
 
 版本特性如下：
 
