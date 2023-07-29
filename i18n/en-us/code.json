@@ -123,7 +123,7 @@
     "message": "Version: {versionLabel}"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "message": "This is unreleased documentation for {siteTitle} {versionLabel}.",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
@@ -385,7 +385,7 @@
     "message": "Corresponding solutions are provided for important areas such as service registration and discovery, distributed messaging, microservice current limiting and degradation, distributed transactions, and microservice governance in the microservice architecture."
   },
   "homepage.introDescFirst": {
-    "message": "Spring Cloud Alibaba provides a one-stop solution for distributed application development. It contains all the components you need to develop distributed applications, making it easy to develop applications using Spring Cloud."
+    "message": "Spring Cloud Alibaba provides an one-stop solution for distributed application development. It contains all the components you need to develop distributed applications, making it easy to develop applications using Spring Cloud."
   },
   "homepage.userTitleBefore": {
     "message": "Who is using "
