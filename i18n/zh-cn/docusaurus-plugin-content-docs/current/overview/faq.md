@@ -46,7 +46,7 @@ Spring Cloud Alibaba 目前有三个分支在积极维护，分别是 `2.2.x`，
 
 - [2.2.x](https://github.com/alibaba/spring-cloud-alibaba/tree/2.2.x)：集成了服务治理相关的功能模块，比如[异地多活](https://github.com/alibaba/spring-cloud-alibaba/tree/2.2.x/spring-cloud-alibaba-examples/appactive-example), [标签路由](https://github.com/alibaba/spring-cloud-alibaba/tree/2.2.x/spring-cloud-alibaba-examples/governance-example/label-routing-example)，[Istio 权限验证](https://github.com/alibaba/spring-cloud-alibaba/tree/2.2.x/spring-cloud-alibaba-examples/governance-example/authentication-example)功能。
 
-- [2021.x](https://github.com/alibaba/spring-cloud-alibaba/tree/2021.x)：算是比较中庸的版本，集成了 Spring Cloud Alibaba 各个功能组件。
+- [2021.x](https://github.com/alibaba/spring-cloud-alibaba/tree/2021.x)：适配了 Spring Cloud 2021.x 系列的版本，集成了 Spring Cloud Alibaba 各个功能组件。
 
 - [2022.x](https://github.com/alibaba/spring-cloud-alibaba)：集成了 Spring Cloud Alibaba 对于 [GraalVM](https://www.graalvm.org/) 静态编译的支持。
 
@@ -87,7 +87,7 @@ Spring Cloud Alibaba 目前有三个分支在积极维护，分别是 `2.2.x`，
 
 Spring Cloud：Spring 官方提供的分布式应用开发的一套共用模式，也可以理解成一套微服务开发的统一的抽象编程模型。
 
-Spring Cloud Netfilx：基于 Spring Cloud 编程模型实现的微服务框架，是最早期的微服务框架。近年来，Netfilx 宣布大多数组件停止维护。
+Spring Cloud Netflix：基于 Spring Cloud 编程模型实现的微服务框架，是最早期的微服务框架。近年来，Netflix 宣布大多数组件停止维护。
 
 Spring Cloud Alibaba：Alibaba 提供的基于 Spring Cloud 编程模型实现的微服务框架，其所有组件都来自于阿里巴巴微服务技术，无论是解决方案完整性、技术成熟度、社区还是文档资料等都对国内开发者非常友好。
 

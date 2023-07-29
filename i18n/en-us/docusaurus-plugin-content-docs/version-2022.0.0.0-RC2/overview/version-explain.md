@@ -14,7 +14,9 @@ The Spring Cloud Alibaba versions adapted to Spring Boot 3.0, Spring Cloud 2022.
 
 | Spring Cloud Alibaba Version | Spring Cloud Version  | Spring Boot Version |
 |------------------------------|-----------------------|---------------------|
-| 2022.0.0.0-RC*               | Spring Cloud 2022.0.0 | 3.0.0               |
+| 2022.0.0.0*                  | Spring Cloud 2022.0.0 | 3.0.2               |
+| 2022.0.0.0-RC2               | Spring Cloud 2022.0.0 | 3.0.2               |
+| 2022.0.0.0-RC1               | Spring Cloud 2022.0.0 | 3.0.0               |
 
 
 ### 2021.x branch

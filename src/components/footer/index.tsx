@@ -28,7 +28,7 @@ const data = {
       },
       {
         text: translate({ id: "homepage.footerDocListText2", message: "快速开始" }),
-        link: "/docs/user-guide/nacos/quick-start",
+        link: "/docs/2022.0.0.0/user-guide/nacos/quick-start",
         target: "",
       },
       {

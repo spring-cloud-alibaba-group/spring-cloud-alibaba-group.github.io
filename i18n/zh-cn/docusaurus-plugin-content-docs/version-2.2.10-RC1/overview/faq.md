@@ -87,7 +87,7 @@ Spring Cloud Alibaba 目前有三个分支在积极维护，分别是 `2.2.x`，
 
 Spring Cloud：Spring 官方提供的分布式应用开发的一套共用模式，也可以理解成一套微服务开发的统一的抽象编程模型。
 
-Spring Cloud Netfilx：基于 Spring Cloud 编程模型实现的微服务框架，是最早期的微服务框架。近年来，Netfilx 宣布大多数组件停止维护。
+Spring Cloud Netflix：基于 Spring Cloud 编程模型实现的微服务框架，是最早期的微服务框架。近年来，Netflix 宣布大多数组件停止维护。
 
 Spring Cloud Alibaba：Alibaba 提供的基于 Spring Cloud 编程模型实现的微服务框架，其所有组件都来自于阿里巴巴微服务技术，无论是解决方案完整性、技术成熟度、社区还是文档资料等都对国内开发者非常友好。
 
