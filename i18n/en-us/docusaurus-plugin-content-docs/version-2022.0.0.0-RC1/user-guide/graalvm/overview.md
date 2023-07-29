@@ -1,7 +1,7 @@
 ---
 title: Overview
 keywords: [Spring Cloud Alibaba]
-description: Graalvm.
+description: GraalVM.
 ---
 
 ## Introduction to GraalVM

@@ -7,7 +7,7 @@ custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alib
 
 # FAQ
 
-<a href="#1" target="_self">1. Spring Cloud Alibaba 有几个版本，版本特性是什么，在同时维护吗？</a>
+<a href="#1" target="_self">1. Spring Cloud Alibaba 维护了几个分支，对应的区别是什么？</a>
 <br/>
 
 <a href="#2" target="_self">2. 关于组件版本选择，需要去哪参考？</a>
@@ -19,7 +19,7 @@ custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alib
 <a href="#4" target="_self">4. 社区有周会讨论吗，怎么参与进来？</a>
 <br/>
 
-<a href="#5" target="_self">5. Spring Cloud Alibaba 和 Spring Cloud、Spring Cloud Netfilx 的区别在哪？</a>
+<a href="#5" target="_self">5. Spring Cloud Alibaba 和 Spring Cloud、Spring Cloud Netflix 的区别在哪？</a>
 <br/>
 
 <a href="#6" target="_self">6. 有最佳实践示例吗？</a>
@@ -28,7 +28,7 @@ custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alib
 <a href="#7" target="_self">7. Spring Cloud Alibaba 可以集成新开源的网关 Higress 吗？</a>
 <br/>
 
-<a href="#8" target="_self">8. 如何成为社区 Commiter？</a>
+<a href="#8" target="_self">8. 如何成为社区 Committer？</a>
 <br/>
 
 <a href="#9" target="_self">9. 社区有提供相关的学习资料，或者是技术博客吗？</a>
@@ -36,19 +36,19 @@ custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alib
 
 ********
 
-<h3 id='1'>Q： 1. Spring Cloud Alibaba 有几个版本，版本特性是什么，在同时维护吗？</h3>
+<h3 id='1'>Q： 1. Spring Cloud Alibaba 维护了几个分支，对应的区别是什么？</h3>
 
 **A：**
 
-Spring Cloud Alibaba 目前有三个版本在积极维护，分别是 `2.2.x`，`2021.x`，`2022.x`
+Spring Cloud Alibaba 目前有三个分支在积极维护，分别是 `2.2.x`，`2021.x`，`2022.x`
 
 版本特性如下：
 
 - [2.2.x](https://github.com/alibaba/spring-cloud-alibaba/tree/2.2.x)：集成了服务治理相关的功能模块，比如[异地多活](https://github.com/alibaba/spring-cloud-alibaba/tree/2.2.x/spring-cloud-alibaba-examples/appactive-example), [标签路由](https://github.com/alibaba/spring-cloud-alibaba/tree/2.2.x/spring-cloud-alibaba-examples/governance-example/label-routing-example)，[Istio 权限验证](https://github.com/alibaba/spring-cloud-alibaba/tree/2.2.x/spring-cloud-alibaba-examples/governance-example/authentication-example)功能。
 
-- [2021.x](https://github.com/alibaba/spring-cloud-alibaba/tree/2021.x)：算是比较中庸的版本，集成了 Spring Cloud Alibaba 各个功能组件。
+- [2021.x](https://github.com/alibaba/spring-cloud-alibaba/tree/2021.x)：适配了 Spring Cloud 2021.x 系列的版本，集成了 Spring Cloud Alibaba 各个功能组件。
 
-- [2022.x](https://github.com/alibaba/spring-cloud-alibaba)：集成了 Spring Cloud Alibaba 对于 [Graalvm](https://www.graalvm.org/) 静态编译的支持。
+- [2022.x](https://github.com/alibaba/spring-cloud-alibaba)：集成了 Spring Cloud Alibaba 对于 [GraalVM](https://www.graalvm.org/) 静态编译的支持。
 
 ********
 
@@ -81,7 +81,7 @@ Spring Cloud Alibaba 目前有三个版本在积极维护，分别是 `2.2.x`，
 
 ********
 
-<h3 id='5'>Q： 5. Spring Cloud Alibaba 和 Spring Cloud、Spring Cloud Netfilx 的区别在哪？</h3>
+<h3 id='5'>Q： 5. Spring Cloud Alibaba 和 Spring Cloud、Spring Cloud Netflix 的区别在哪？</h3>
 
 **A：**
 
@@ -89,7 +89,7 @@ Spring Cloud：Spring 官方提供的分布式应用开发的一套共用模式�
 
 Spring Cloud Netfilx：基于 Spring Cloud 编程模型实现的微服务框架，是最早期的微服务框架。近年来，Netfilx 宣布大多数组件停止维护。
 
-Spring Cloud Alibaba：Alibaba 提供的基于 Spring Cloud 编程模型实现的微服务框架，其组件大多使用阿里提供的组件，更适合中国程序员使用。
+Spring Cloud Alibaba：Alibaba 提供的基于 Spring Cloud 编程模型实现的微服务框架，其所有组件都来自于阿里巴巴微服务技术，无论是解决方案完整性、技术成熟度、社区还是文档资料等都对国内开发者非常友好。
 
 ********
 
@@ -109,7 +109,7 @@ Spring Cloud Alibaba：Alibaba 提供的基于 Spring Cloud 编程模型实现�
 
 ********
 
-<h3 id='8'>Q： 8. 如何成为社区 Commiter？</h3>
+<h3 id='8'>Q： 8. 如何成为社区 Committer？</h3>
 
 **A：**
 

@@ -1,7 +1,7 @@
 ---
 title: 静态编译
 keywords: [Spring Cloud Alibaba]
-description: Spring Cloud Alibaba, Roadmap Graalvm.
+description: Spring Cloud Alibaba, Roadmap GraalVM.
 ---
 
 ### 静态编译能力介绍
