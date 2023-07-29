@@ -4,7 +4,7 @@ keywords: [Spring Cloud Alibaba, 维护者]
 description: Spring Cloud Alibaba 维护者名单
 ---
 
-本页面展示了Spring Cloud Alibaba 的开发团队成员，我们一直都在持续扩充中，欢迎加入社区。  
+本页面展示了 Spring Cloud Alibaba 的开发团队成员，我们一直都在持续扩充中，欢迎加入社区。  
 > 注：排名不分先后
 
 ## Steering Committee Member 成员
@@ -35,27 +35,27 @@ description: Spring Cloud Alibaba 维护者名单
 
 
 ## 开发角色
-Spring Cloud Alibaba项目开发者包含Steering Committee Member、Committer、Contributor三种角色，每种角色的标准定义如下。
+Spring Cloud Alibaba 项目开发者包含 Steering Committee Member、Committer、Contributor 三种角色，每种角色的标准定义如下。
 
 ### Steering Committee Member
-Steering Committee 作为Spring Cloud Alibaba项目的技术发展指导委员会，其成员是对Spring Cloud Alibaba项目的演进和发展做出显著贡献的个人，包含以下的标准：
+Steering Committee 作为 Spring Cloud Alibaba 项目的技术发展指导委员会，其成员是对 Spring Cloud Alibaba 项目的演进和发展做出显著贡献的个人，包含以下的标准：
 
 * 完成多个关键模块或者工程的设计与开发，是项目的核心开发人员；
-* 持续的投入和激情，能够积极参与社区、官网、issue、PR等项目相关事项的维护；
-* 在社区中具有有目共睹的影响力，能够代表Spring Cloud Alibaba参加重要的社区会议和活动；
-* 具有培养Committer和Contributor的意识和能力；
-* Steering Committee Member在资深Committer中产生，由Steering Committee所有成员讨论以及投票产生，需要获得总人数的半数票以上才能当选；
+* 持续的投入和激情，能够积极参与社区、官网、Issue、PR 等项目相关事项的维护；
+* 在社区中具有有目共睹的影响力，能够代表 Spring Cloud Alibaba 参加重要的社区会议和活动；
+* 具有培养 Committer 和 Contributor 的意识和能力；
+* Steering Committee Member 在资深 Committer 中产生，由 Steering Committee 所有成员讨论以及投票产生，需要获得总人数的半数票以上才能当选；
 
 ### Committer
-Committer是具有仓库写权限的个人，包含以下的标准：
+Committer 是具有仓库写权限的个人，包含以下的标准：
 
-* 能够在长时间内做持续贡献issue、PR的个人；
-* 对社区做出了重要feature贡献；
-* 参与issue列表的维护、重要feature的讨论、社区周会主持与参与社区周会分享等社区活动；
-* 参加过至少1次的社区季度活跃贡献者计划；
-* 参与code review；
-* Committer由Steering Committee成员提名投票产生，至少获得3票同意才能当选；
+* 能够在长时间内做持续贡献 Issue、PR 的个人；
+* 对社区做出了重要 Feature 贡献；
+* 参与 Issue 列表的维护、重要 Feature 的讨论、社区周会主持与参与社区周会分享等社区活动；
+* 参加过至少 1 次的社区季度活跃贡献者计划；
+* 参与 code review；
+* Committer 由 Steering Committee 成员提名投票产生，至少获得 3 票同意才能当选；
 
 ### Contributor
-Contributor是对项目有贡献的个人，标准为：
-* 提交过PR并被合并；
+Contributor 是对项目有贡献的个人，标准为：
+* 提交过 PR 并被合并；
