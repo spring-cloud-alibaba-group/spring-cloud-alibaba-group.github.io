@@ -8,9 +8,9 @@ custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alib
 
 ## 感谢你为 Spring Cloud Alibaba 贡献！
 
-Spring Cloud Alibaba 从开源建设以来，受到了很多社区同学的关注。社区的每一个 issue ，每一个 PR，都是对整个项目的帮助，都在为建设更好用的 Spring Cloud 添砖加瓦。
+Spring Cloud Alibaba 从开源建设以来，受到了很多社区同学的关注。社区的每一个 Issue ，每一个 PR，都是对整个项目的帮助，都在为建设更好用的 Spring Cloud 添砖加瓦。
 
-我们真心地感谢为这个项目提出过 Issue 和 PR 的同学，特别是这些 contributor: HaojunRen、xiejiashuai、mengxiangrui007 、liaozan
+我们真心地感谢为这个项目提出过 Issue 和 PR 的同学，特别是这些 Contributor: HaojunRen、xiejiashuai、mengxiangrui007 、liaozan
 
 我们希望有更多社区的同学加入进来，一起把项目做好。
 
