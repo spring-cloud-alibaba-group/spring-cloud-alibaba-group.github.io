@@ -6,7 +6,7 @@ description: 周会主持
 
 ## 主持人工作介绍：
 
-社区周会主持人，每次带着过一遍 Spring Cloud Alibaba 社区过去两周的新动态，比如 issues 和 PR 问题。
+社区周会主持人，每次带着过一遍 Spring Cloud Alibaba 社区过去两周的新动态，比如 Issue 和 PR 问题。
 
 ## 周会主持顺序名单：
 

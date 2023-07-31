@@ -6,7 +6,7 @@ description: SCA社区讨论
 
 ## 社区讨论和反馈
 
-欢迎大家在钉钉群交流或者提相关 issue！
+欢迎大家在钉钉群交流或者提相关 Issue！
 
 ### Github Issues
 

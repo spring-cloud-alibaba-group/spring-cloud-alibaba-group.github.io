@@ -28,7 +28,7 @@ const data = {
       },
       {
         text: translate({ id: "homepage.footerDocListText2", message: "快速开始" }),
-        link: "/docs/user-guide/nacos/quick-start",
+        link: "/docs/2022.0.0.0/user-guide/nacos/quick-start",
         target: "",
       },
       {
@@ -73,9 +73,11 @@ const Footer = (props: Props) => {
   return (
     <footer className="footer-container">
       <div className="footer-body">
-        <img src={logo} />
+        <img style={{ marginTop: "4px", maxWidth: "240px", height: "auto"}} src={logo} />
+        <br />
+        <br />
         {/* <p className="docusaurus-power">website powered by docusaurus</p> */}
-        <div className="cols-container">
+        <div className="cols-container"> 
           <div className="col col-12">
             <h3>{data.vision.title}</h3>
             <p>{data.vision.contentFist}</p>

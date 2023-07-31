@@ -1,7 +1,7 @@
 ---
 title: Static compilation
 keywords: [Spring Cloud Alibaba]
-description: Spring Cloud Alibaba, Roadmap Graalvm.
+description: Spring Cloud Alibaba, Roadmap GraalVM.
 ---
 
 ### Introduction to Static Compilation Capability
@@ -56,4 +56,4 @@ The metadata of each module has been submitted to OracleLab's central metadata w
 
 ### Official release time
 
-It is expected that the 2022 official version will be officially released in mid-to-late July, which will provide comprehensive support for static compilation capabilities.
+It is expected that the 2022.0.0.0 GA version will be officially released in mid-to-late July, which will provide comprehensive support for static compilation capabilities.

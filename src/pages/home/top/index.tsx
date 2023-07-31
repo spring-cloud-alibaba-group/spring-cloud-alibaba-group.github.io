@@ -21,7 +21,7 @@ const topData = {
   buttons: [
     {
       text: translate({ id: "homepage.quickstartButton", message: "快速入门" }),
-      link: "/docs/user-guide/nacos/quick-start",
+      link: "/docs/2022.0.0.0/user-guide/nacos/quick-start",
       type: "normal",
     },
     {
