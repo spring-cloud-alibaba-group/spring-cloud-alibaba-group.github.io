@@ -23,7 +23,7 @@ const data = {
     list: [
       {
         text: translate({ id: "homepage.footerDocListText1", message: "概览" }),
-        link: "/docs/overview/what-is-sca",
+        link: "/docs/2022.0.0.0/overview/what-is-sca",
         target: "",
       },
       {
