@@ -195,12 +195,7 @@ const config = {
           {
             label: "MicroServices",
             position: "right",
-            items: [
-              {
-                label: "企业版",
-                href: "https://www.aliyun.com/product/aliware/mse?spm=sca-website.topbar.0.0.0",
-              },
-            ],
+            to: "https://www.aliyun.com/product/aliware/mse?spm=sca-website.topbar.0.0.0",
           },
           {
             label: "Blog",
