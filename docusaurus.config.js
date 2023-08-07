@@ -193,16 +193,11 @@ const config = {
             ],
           },
           {
-            type: "dropdown",
             label: "MicroServices",
             position: "right",
             items: [
               {
-                label: "微服务社区版",
-                href: "https://free.aliyun.com/?searchKey=mse&spm=sca-website-free.topbar.0.0.0",
-              },
-              {
-                label: "微服务企业版",
+                label: "企业版",
                 href: "https://www.aliyun.com/product/aliware/mse?spm=sca-website.topbar.0.0.0",
               },
             ],
