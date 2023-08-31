@@ -23,7 +23,7 @@ spring.application.name=my-service
 spring.cloud.nacos.discovery.server-addr=127.0.0.1:8848
 ```
 
-则 Higress 的 [McpBridge](./mcp-bridge.md) 中亦无需指定命名空间：
+则 Higress 的 McpBridge 中亦无需指定命名空间：
 
 ```yaml
 apiVersion: networking.higress.io/v1
@@ -151,7 +151,7 @@ spring.cloud.zookeeper.discovery.enabled=true
 spring.cloud.zookeeper.discovery.register=true
 ```
 
-则 Higress 的 [McpBridge](./mcp-bridge.md) 中亦无需指定zkServicePath：
+则 Higress 的 McpBridge 中亦无需指定zkServicePath：
 
 ```yaml
 apiVersion: networking.higress.io/v1
@@ -208,7 +208,7 @@ spring.cloud.zookeeper.discovery.register=true
 spring.cloud.zookeeper.discovery.root=my-services-root
 ```
 
-则 Higress 的 [McpBridge](./mcp-bridge.md) 中亦需指定zkServicePath：
+则 Higress 的 McpBridge中亦需指定zkServicePath：
 
 ```yaml
 apiVersion: networking.higress.io/v1
