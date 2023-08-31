@@ -1,5 +1,5 @@
 ---
-title: Spring Cloud Alibaba 应用发布实践
+title: Spring Cloud Alibaba 应用灰度发布实践
 keywords: [Higress, 网关, 灰度发布]
 description: 介绍如何使用 Higress 来完成 Spring Cloud Alibaba 的应用发布
 author: 赵炳堃（秉钧）
