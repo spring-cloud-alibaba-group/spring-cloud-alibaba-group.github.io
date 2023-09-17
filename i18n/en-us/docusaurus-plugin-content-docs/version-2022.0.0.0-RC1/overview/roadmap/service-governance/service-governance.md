@@ -20,7 +20,7 @@ Spring Cloud Alibaba has done some governance-related work before, but it only c
 
     - Support authentication authentication (under the premise of mTLS)
 
-4.  DestinationRule & VirtualService
+4. DestinationRule & VirtualService
 
     - Obtain load-balanced endpoints through EDS-related information, which means that service discovery data can be obtained directly from the control plane, without additional use of registration centers such as Nacos in the cloud-native system
 

@@ -71,14 +71,17 @@ Linux / Unix / Mac operating system, execute the command:
 2. Send a message:
 
 Linux / Unix / Mac operating system, execute the command:
-`shell
+
+    ```shell
     $ sh bin/tools.sh org.apache.rocketmq.example.quickstart.Producer
-    `
+    ```
 
     Windows operating system, execute the command:
+
     ```cmd
     $ .\bin\tools.cmd org.apache.rocketmq.example.quickstart.Producer
     ```
+    
     After sending successfully, it will display: SendResult [sendStatus=SEND_OK, msgId= ...
 
 3. Receive message:
