@@ -5,7 +5,7 @@ description: Spring Cloud Alibaba FAQ.
 custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/master/i18n/zh-cn/docusaurus-plugin-content-docs/current/overview/faq.md
 ---
 
-# FAQ
+## FAQ
 
 <a href="#1" target="_self">1. Spring Cloud Alibaba maintains several branches, what are the corresponding differences?</a>
 <br/>

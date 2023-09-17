@@ -4,7 +4,7 @@ keywords: [Spring Cloud Alibaba]
 description: Traffic Management.
 ---
 
-# Advanced Guide
+## Advanced Guide
 
 This section will introduce some advanced configuration items related to traffic governance.
 

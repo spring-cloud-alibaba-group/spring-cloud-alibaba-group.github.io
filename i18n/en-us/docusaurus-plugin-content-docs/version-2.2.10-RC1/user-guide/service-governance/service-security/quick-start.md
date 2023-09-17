@@ -4,7 +4,7 @@ keywords: [Spring Cloud Alibaba]
 description: Service Security.
 ---
 
-# Quick Start
+## Quick Start
 
 This section demonstrates how to use Istio to publish security governance config to Spring Cloud Alibaba application and use the config to do security governance. The Spring Cloud Alibaba security governance module supports security governance of Spring MVC and Spring WebFlux applications.
 

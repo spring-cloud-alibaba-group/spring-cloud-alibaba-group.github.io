@@ -4,7 +4,7 @@ keywords: [Spring Cloud Alibaba]
 description: Service Security.
 ---
 
-# Overview
+## Overview
 
 In a monolithic architecture, it is simpler to do security protection for a single application because the runtime environment in which it runs is relatively isolated, whereas a microservice architecture gains flexibility by defining distributed features in which the services in the system can be developed and deployed independently in a decentralised manner. However, from a security perspective, microservice architectures provide a wider attack surface for attackers, which makes security governance in microservice systems more complex.
 

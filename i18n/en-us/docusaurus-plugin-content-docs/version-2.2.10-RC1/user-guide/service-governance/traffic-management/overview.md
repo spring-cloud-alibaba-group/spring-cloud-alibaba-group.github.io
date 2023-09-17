@@ -4,7 +4,7 @@ keywords: [Spring Cloud Alibaba]
 description: Traffic Management.
 ---
 
-# Overview
+## Overview
 
 Traffic governance is a network traffic-based management and control method for optimising and guaranteeing the availability and stability of network services. Through traffic governance, network traffic can be restricted, allocated, controlled and monitored to ensure the proper use of network resources and quality of service. Traffic governance techniques include, but are not limited to, load balancing, flow limiting, degradation, fault tolerance and other means, which can effectively solve the problems of high traffic, high concurrency and failure in the network and improve business stability and reliability.
 
