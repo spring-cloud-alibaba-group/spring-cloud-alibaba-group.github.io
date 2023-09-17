@@ -6,7 +6,7 @@ author: Cheng Pu
 date: 2023-03-30
 ---
 
-# Summary
+## Summary
 
 As a next-generation Internet protocol, migration to IPv6 is the general trend in the future. However, due to the large-scale application of the IPv4 protocol in the current Internet, there is no way for users to specify a time and date. From that moment on, all devices on the Internet will use IPv6, which is unrealistic. One-time migration is not only unfeasible at the infrastructure level, but for enterprise users, even if the infrastructure can be prepared, it is unacceptable for enterprise users to shut down at least hundreds or even thousands of application instances for a period of time for protocol stack migration, no matter in terms of risk or cost! Since it cannot be done in one step, gradual IP address migration has become the current mainstream choice. This article will introduce some mainstream gradual IP address migration methods.
 
@@ -63,7 +63,7 @@ The process of implementing smooth IP address migration in a microservice system
 4. After all the microservices in the system support the IPv6 protocol stack, gradually close the IPv4 protocol stack for all application hosts, so as to smoothly complete the migration of the large-scale microservice system from the IPv4 protocol stack to the IPv6 protocol stack.
    Compared with the double registration and double subscription method, the DNS-based method can better solve the redundant pressure on the registration center during the double registration and double subscription process, but the high availability of DNS is also a point that enterprise users need to pay special attention to.
 
-# practice
+## practice
 
 As a widely used microservice framework, Spring Cloud Alibaba has provided a solution for interoperability and coexistence of different protocol stack applications in microservice scenarios in version 2021.0.5.0, so as to help enterprise users realize the protocol stack migration capability of large-scale microservice systems. The community solution is based on the implementation of dual registration and dual subscription. After the application is started, the IPv4 address and IPv6 address of the microservice will be registered in the registration center by default. The IPv4 address will be stored under the IP field in the Nacos service list, and the IPv6 address will be in the metadata field of Nacos. When a service consumer calls a service provider, it will select an appropriate IP address type to initiate a service call according to its own IP protocol stack support. Specific rules:
 

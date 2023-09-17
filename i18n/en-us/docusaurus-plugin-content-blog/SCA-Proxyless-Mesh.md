@@ -6,7 +6,7 @@ author: Cheng Pu
 date: 2023-01-20
 ---
 
-# Summary
+## Summary
 
 After several years of development, Service Mesh is an emerging concept, which has attracted the attention and pursuit of mainstream technology companies from all over the world since its launch. The full name of Proxyless Mesh is Proxyless Service Mesh, which is a new software architecture developed on the basis of Service Mesh in recent years. The ideal of Service Mesh is full, but the reality is very skinny! Although there is no intrusion to the application through a layer of proxy, the increased network proxy overhead poses many challenges to the implementation of many Internet services with high performance requirements. Therefore, Proxyless Mesh, as a compromise between the traditional intrusive microservice framework and Service Mesh, provides an effective solution for a large number of non-Service Mesh applications in the cloud-native era, embracing cloud-native infrastructure, and solving pain points such as traffic management. This article will introduce Spring Cloud Alibaba's exploration on Proxyless Mesh.
 
@@ -44,7 +44,7 @@ To solve the microservice governance needs through the Mesh solution, a control 
 
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/59256332/1673253324947-3effabdf-3956-48cf-a101-5c366a91b2ab.png#clientId=u641e2097-531f-4&from=paste&height=245&id=u670014cb&name=image.png&originHeight=360&originWidth=762&originalType=binary&ratio=1&rotation=0&showTitle=false&size=155552&status=done&style=none&taskId=ud58f82c8-67cb-4fb2-988a-88eb670d8ff&title=&width=517.9971313476562)
 
-#### Preparation
+### Preparation
 
 The Proxyless Mesh solution first needs to prepare a control plane that can dynamically deliver rules to applications. This Spring Cloud Alibaba version 2.2.10-RC1 supports two mainstream control planes currently on the market to better meet various user demands:
 
@@ -63,7 +63,7 @@ As the unified control component of OpenSergo CRD, the OpenSergo control plane (
 1. To install the K8s environment, please refer to the [Installation Tools](https://kubernetes.io/zh-cn/docs/tasks/tools/) section of K8s
 2. To install and enable OpenSergo Control Plane on K8s, please refer to [OpenSergo Control Plane Installation Documentation](https://opensergo.io/zh-cn/docs/quick-start/opensergo-control-plane/) officially provided by OpenSergo
 
-![](https://user-images.githubusercontent.com/9434884/182856237-8ce85f41-1a1a-4a2a-8f58-db042bd4db42.png#height=336&id=MSEWC&originHeight=1362&originWidth=1856&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=&width=458)
+![img](https://user-images.githubusercontent.com/9434884/182856237-8ce85f41-1a1a-4a2a-8f58-db042bd4db42.png#height=336&id=MSEWC&originHeight=1362&originWidth=1856&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=&width=458)
 
 #### Label Routing
 
@@ -71,7 +71,7 @@ As the unified control component of OpenSergo CRD, the OpenSergo control plane (
 
 In the current micro-service architecture, the number of services is very large. In order to better manage these micro-service applications, it may be necessary to label these applications and divide one or more service providers into the same group, so as to restrict traffic to only flow in designated groups and achieve the purpose of traffic isolation. Label routing can be used as the capability basis for scenarios such as blue-green release and grayscale release. It can be applied in the following scenarios:
 
-- **Multi-Version Development Test**
+- ** Multi-Version Development Test **
 
 When multiple versions are developed in parallel, a development environment needs to be prepared for each version. If there are many versions, the cost of the development environment will be very high. The traffic isolation solution can greatly reduce resource costs during multi-version development and testing. Using the full-link traffic isolation mechanism based on label routing, specific traffic can be routed to a designated development environment. For example, if only application B and application D are modified in development environment 1, Tag1 is created for the versions of these two applications in development environment 1, and corresponding routing rules are configured. When the ingress application A calls B, it will determine whether the traffic meets the routing rules. If it is satisfied, route to the V1.1 version of application B in the development environment 1; if not, route to the V1 version of application B in the baseline environment. When application C calls D, it also decides to route to version V1 or version V1.1 of D according to the traffic.
 

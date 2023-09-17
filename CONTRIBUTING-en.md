@@ -7,7 +7,7 @@ Before contributing to this Spring Cloud Alibaba official website documentation 
 Here are a few questions to consider before writing documentation:
 
 - What is the scope of the function, that is, to what extent? \*\*
-- **Which steps are easy to make mistakes for the user of the function module during the use process, should the instructions be pointed out in advance? **
+- ** Which steps are easy to make mistakes for the user of the function module during the use process, should the instructions be pointed out in advance?  **
 
 1. Do not use us, xxx et al. to refer to in formal written documents:
 
@@ -88,7 +88,7 @@ Here are a few questions to consider before writing documentation:
    In the environment, Nacos needs to add the basic configuration corresponding to dataId
    ```
 
-9. **After writing the document, read it at least once by yourself, otherwise there is a high probability that there will be problems! Otherwise, there is a high probability that there is a problem! Otherwise, there is a high probability that there is a problem! **
+9. ** After writing the document, read it at least once by yourself, otherwise there is a high probability that there will be problems! Otherwise, there is a high probability that there is a problem! Otherwise, there is a high probability that there is a problem!  **
 
 ## Project run test
 
