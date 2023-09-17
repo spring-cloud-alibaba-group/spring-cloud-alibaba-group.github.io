@@ -6,22 +6,22 @@ author: 赵炳堃（秉钧）
 date: 2023-08-21
 ---
 
-# 摘要
+## 摘要
 
 Higress 是阿里巴巴开源的一款下一代云原生微服务网关。Higress 可以对接多种注册中心，包括 Nacos/Zookeeper/Eureka 等，能够无缝集成 Spring Cloud 应用，对 Dubbo/Sentinel/OpenSergo 等微服务生态也有着深度的集成。与此同时，Higress 采用 C++ 内核，相比于传统的 Java 网关来说性能更高，更稳定，对比 Spring Cloud Gateway 和 Zuul 来说，性能可以提升至 2-4 倍。另外，Higress 还天然兼容 K8s 的 Ingress/Gateway API 标准，是一款更符合云原生时代标准的微服务网关。
 
-# Higress 无缝对接 Spring Cloud 应用发布实战
+## Higress 无缝对接 Spring Cloud 应用发布实战
 
 在现代软件架构逐渐走向微服务化、云原生化的过程中，应用的更新和迭代的频率变得越来越快，如何在尽可能保证用户体验不受影响的情况下完成应用的迭代发布就显得至关重要。目前业界普遍采用的几种典型的应用发布策略包括蓝绿发布、金丝雀发布、A/B Testing 发布等。接下来本文将介绍如何使用 Higress 来实现 Spring Cloud Alibaba 应用发布的最佳实践。
 
-## 前提条件
+### 前提条件
 
 1. 安装 Higress，并安装 Istio CRD，参考[Higress 安装部署文档](https://higress.io/zh-cn/docs/ops/deploy-by-helm/#%E6%94%AF%E6%8C%81-istio-crd%E5%8F%AF%E9%80%89)。
 2. 安装 Naocs，参考[Nacos 安装部署文档](https://nacos.io/zh-cn/docs/v2/quickstart/quick-start.html)。
 
 Higress 支持将 Nacos，Spring Cloud 应用部署于 K8s 集群内，或者独立于 K8s 进行部署。为了演示方便，本文将 Higress，Nacos，Spring Cloud 应用都部署在本地 K8s 集群。
 
-## 通过 Higress 实现 Spring Cloud 应用的服务发现和路由
+### 通过 Higress 实现 Spring Cloud 应用的服务发现和路由
 
 ### 部署 Spring Cloud Alibaba 应用
 

@@ -12,7 +12,7 @@ After several years of development, Service Mesh is an emerging concept, which h
 
 <!--truncate-->
 
-# Service Mesh
+## Service Mesh
 
 Standing today in 2023, Service Mesh is no longer an emerging concept. Looking back on the development history of the past 6 years, Service Mesh has been concerned and sought after by mainstream technology companies from all over the world since its launch.
 
@@ -26,7 +26,7 @@ As the most popular open source service mesh technology, Istio consists of two p
 
 In the Istio Mesh architecture, its control plane is a process called Istiod, and the network proxy is Envoy. As a unified component of the control plane, Istiod is responsible for docking service registration discovery, routing rule management, certificate management and other capabilities. Envoy is used as a data plane to proxy business traffic through Sidecar. Istio and Envoy complete the transfer of data such as service discovery and routing rules through the xDS protocol interface. Istiod obtains service information by monitoring K8s resources such as Service and Endpoint, and sends these resources to the network agent on the data plane through the xDS protocol. Envoy is a process independent of the application. It runs with the business application Pod in the form of a sidecar (usually in the form of a container). It shares the same host network with the application process, and hijacks the network traffic of the business application by modifying the routing table to provide applications with non-intrusive capabilities such as service authentication and label routing.
 
-# Proxyless Mesh
+## Proxyless Mesh
 
 The full name of Proxyless Mesh is Proxyless Service Mesh, which is a new software architecture developed on the basis of Service Mesh in recent years. The ideal of Service Mesh is full, but the reality is very skinny! Although there is no intrusion to the application through a layer of proxy, the increased network proxy overhead poses many challenges to the implementation of many Internet services with high performance requirements. Therefore, Proxyless Mesh, as a compromise between the traditional intrusive microservice framework and Service Mesh, provides an effective solution for a large number of non-Service Mesh applications in the cloud-native era, embracing cloud-native infrastructure, and solving pain points such as traffic management. <!--truncate-->The difference between Service Mesh and Proxyless Mesh architecture is shown in the following figure:
 
@@ -36,7 +36,7 @@ In the past few years, well-known software open source communities at home and a
 
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1673167810474-02ebacab-109e-40ce-a9c0-b3b8c162176e.png#clientId=uadda20a3-5fed-4&from=paste&height=210&id=ub3a3231c&name=image.png&originHeight=461&originWidth=1040&originalType=binary&ratio=1&rotation=0&showTitle=false&size=124238&status=done&style=none&taskId=uef9fe286-41d7-4104-b2f0-046d4ca7e14&title=&width=472.7272624811853)
 
-# Spring Cloud Alibaba Mesh Solution
+## Spring Cloud Alibaba Mesh Solution
 
 As an intrusive microservice solution, Spring Cloud Alibaba provides users with one-stop microservice solutions in the process of building microservice applications, such as service registration and discovery, current limiting and degradation, distributed transactions and distributed messages, based on Spring Cloud microservice standards. In the past few years, it has been adopted by a large number of small and medium-sized enterprises in China, helping a large number of enterprises to embrace microservices more conveniently.
 However, with the continuous deepening of microservices in enterprise applications, microservices bring many advantages such as system decoupling and high scalability to applications, and at the same time make applications more complex. How to manage microservices well? It has become a new issue that many enterprises gradually begin to pay attention to and pay attention to. The Spring Cloud Alibaba community has also noticed that many users have demands for microservice governance, so they have started exploring in this area since the beginning of 2022. The community believes that compared to Service Mesh, Proxyless Mesh is a more suitable technical solution for small and medium-sized enterprises. Not only will it not have a large performance loss caused by additional Sidecar agents, but more importantly, for enterprises, its implementation cost is very low!
@@ -44,18 +44,18 @@ To solve the microservice governance needs through the Mesh solution, a control 
 
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/59256332/1673253324947-3effabdf-3956-48cf-a101-5c366a91b2ab.png#clientId=u641e2097-531f-4&from=paste&height=245&id=u670014cb&name=image.png&originHeight=360&originWidth=762&originalType=binary&ratio=1&rotation=0&showTitle=false&size=155552&status=done&style=none&taskId=ud58f82c8-67cb-4fb2-988a-88eb670d8ff&title=&width=517.9971313476562)
 
-### Preparation
+#### Preparation
 
 The Proxyless Mesh solution first needs to prepare a control plane that can dynamically deliver rules to applications. This Spring Cloud Alibaba version 2.2.10-RC1 supports two mainstream control planes currently on the market to better meet various user demands:
 
-#### 1. Istio control plane
+##### 1. Istio control plane
 
 In order to use the Istio control plane to issue governance rules, you first need to install the Istio control plane in the K8s environment. You can use the Istio environment for testing provided by the Spring Cloud Alibaba community, or you can try to install an Istio control plane yourself. The process of installing the Istio control plane is as follows:
 
 1. To install the K8s environment, please refer to the [Installation Tools](https://kubernetes.io/zh-cn/docs/tasks/tools/) section of K8s
 2. Install and enable Istio on K8s, please refer to the [Installation](https://istio.io/latest/zh/docs/setup/install/) section of the Istio official document
 
-#### 2. OpenSergo control plane
+##### 2. OpenSergo control plane
 
 OpenSergo is an open and general-purpose microservice governance project covering microservices and upstream and downstream related components. From the perspective of microservices, OpenSergo covers key governance areas such as traffic governance, service fault tolerance, service meta-information governance, and security governance. It provides a series of governance capabilities and standards, ecological adaptation, and best practices, and supports Java, Go, Rust, and other multi-language ecosystems.
 As the unified control component of OpenSergo CRD, the OpenSergo control plane (Control Plane) carries the responsibility of service governance configuration conversion and distribution.
@@ -65,9 +65,9 @@ As the unified control component of OpenSergo CRD, the OpenSergo control plane (
 
 ![](https://user-images.githubusercontent.com/9434884/182856237-8ce85f41-1a1a-4a2a-8f58-db042bd4db42.png#height=336&id=MSEWC&originHeight=1362&originWidth=1856&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=&width=458)
 
-### Label Routing
+#### Label Routing
 
-#### App Background
+##### App Background
 
 In the current micro-service architecture, the number of services is very large. In order to better manage these micro-service applications, it may be necessary to label these applications and divide one or more service providers into the same group, so as to restrict traffic to only flow in designated groups and achieve the purpose of traffic isolation. Label routing can be used as the capability basis for scenarios such as blue-green release and grayscale release. It can be applied in the following scenarios:
 
@@ -91,9 +91,9 @@ There are multiple application versions running online at the same time, and it 
 
 Currently, the tag routing capability provided by Spring Cloud Alibaba Mesh supports tag routing for requests based on request meta-information such as request path, request header, and HTTP request parameters, so that requests sent by applications are sent to upstream services of a specified version according to the rules issued by the Istio control plane.
 
-#### Usage
+##### Usage
 
-##### 1. Import dependencies and configure the application
+###### 1. Import dependencies and configure the application
 
 First, modify the `pom.xml` file, and import the label routing under Spring Cloud Alibaba 2.2.10-RC1 version and the related dependencies of the Istio resource conversion module (it is recommended to use the cloud-native application scaffolding [start.aliyun.com](https://start.aliyun.com) for project construction trial):
 
@@ -172,7 +172,7 @@ If you need to connect to the OpenSergo control plane, you need to add `spring-c
 The following information will be printed on the console, indicating that the application is listening to the configuration delivered by the Istio control plane:
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/59256332/1670827540929-bacb3da6-5c5e-47ec-8ceb-e2ba9047da6b.png#clientId=ub03674c8-c3cf-4&from=paste&height=253&id=FEeSH&name=image.png&originHeight=506&originWidth=2442&originalType=binary&ratio=1&rotation=0&showTitle=false&size=755462&status=done&style=none&taskId=ue6ca5f99-8c2b-41a3-b7fb-47b02395ec5&title=&width=1221)
 
-##### 3. Send label routing rules through the Istio control plane
+###### 3. Send label routing rules through the Istio control plane
 
 Deliver label routing rules through the Istio control plane, first deliver the DestinationRule rule:
 

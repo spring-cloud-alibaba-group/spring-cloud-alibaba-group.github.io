@@ -6,13 +6,13 @@ author: 铖朴
 date: 2023-01-20
 ---
 
-# 摘要
+## 摘要
 
 经过过去几年的发展，Service Mesh 已再是一个新兴的概念，其从一经推出就受到来自全世界的主流技术公司关注和追捧。Proxyless Mesh 全称是 Proxyless Service Mesh，其是近几年在 Service Mesh 基础上发展而来的一种新型软件架构。Service Mesh 理想很丰满，但现实很骨感！通过一层代理虽然做到了对应用无侵入，但增加的网络代理开销对很多性能要求很高的互联网业务落地存在不少挑战。因此 Proxyless Mesh 作为一种在传统侵入式微服务框架与 Service Mesh 之间的折中方案，通过取众家之所长，为大量的非 Service Mesh 应用在云原生时代，拥抱云原生基础设施，解决流量治理等痛点提供了一种有效的解决方案。本文将介绍 Spring Cloud Alibaba 在 Proxyless Mesh 上的探索。
 
 <!--truncate-->
 
-# Service Mesh
+## Service Mesh
 
 站在 2023 年的今天，Service Mesh 早已不是一个新兴的概念， 回顾过去 6 年多的发展历程，Service Mesh 从一经推出就受到来自全世界的主流技术公司关注和追捧。
 
@@ -24,32 +24,32 @@ Istio 作为当前最流行的开源服务网格技术，它由控制平面和�
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1673166074579-f43be3c0-d868-4c14-b33d-1582c1671293.png#clientId=uadda20a3-5fed-4&from=paste&height=307&id=u304b5422&name=image.png&originHeight=675&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=112132&status=done&style=none&taskId=u4d5e51cc-6bcb-4c84-aa17-0286854ca95&title=&width=490.90908026892316)
 在 Istio Mesh 架构中，其控制平面是一个名为 Istiod 的进程，网络代理是 Envoy 。Istiod 作为控制面的统一组件，负责对接服务注册发现、路由规则管理、证书管理等能力，Envoy 则是作为数据面通过 Sidecar 方式代理业务流量，Istio 和 Envoy 之间通过 xDS 协议接口完成服务发现、路由规则等数据的传递。Istiod 通过监听 K8s 资源例如 Service、Endpoint 等，获取服务信息，并将这些资源统一通过 xDS 协议下发给位于数据平面的网络代理。Envoy 则是独立于应用之外的一个进程，以 Sidecar 的方式（一般是以 Container 方式）伴随业务应用 Pod 运行，它与应用进程共用同一个主机网络，通过修改路由表的方式劫持业务应用的网络流量从而达到为应用无侵入地提供如服务鉴权、标签路由等能力。
 
-# Proxyless Mesh
+## Proxyless Mesh
 
 Proxyless Mesh 全称是 Proxyless Service Mesh，其是近几年在 Service Mesh 基础上发展而来的一种新型软件架构。Service Mesh 理想很丰满，但现实很骨感！通过一层代理虽然做到了对应用无侵入，但增加的网络代理开销对很多性能要求很高的互联网业务落地存在不少挑战。因此 Proxyless Mesh 作为一种在传统侵入式微服务框架与 Service Mesh 之间的折中方案，通过取众家之所长，为大量的非 Service Mesh 应用在云原生时代，拥抱云原生基础设施，解决流量治理等痛点提供了一种有效的解决方案。 <!--truncate-->Service Mesh 和 Proxyless Mesh 架构区别如下图所示：
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1673167496757-9dc2f06a-ace3-4782-b145-adeac449ec7a.png#clientId=uadda20a3-5fed-4&from=paste&height=186&id=u496e40ee&name=image.png&originHeight=409&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=84637&status=done&style=none&taskId=ub601935d-93fc-4219-a593-57888c2d40b&title=&width=490.90908026892316)
 过去几年，国内外的知名软件开源社区也都在相关领域进行了大量探索，例如在 2021 年 10 月，gRPC 社区为用户提供如下架构形式[[5]](https://istio.io/v1.12/blog/2021/proxyless-grpc/)，通过对接Istio控制平面，遵循 VirtualService & DestinationRule CRD 规范为 gRPC 应用提供流量治理能力。
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1673167810474-02ebacab-109e-40ce-a9c0-b3b8c162176e.png#clientId=uadda20a3-5fed-4&from=paste&height=210&id=ub3a3231c&name=image.png&originHeight=461&originWidth=1040&originalType=binary&ratio=1&rotation=0&showTitle=false&size=124238&status=done&style=none&taskId=uef9fe286-41d7-4104-b2f0-046d4ca7e14&title=&width=472.7272624811853)
 
-# Spring Cloud Alibaba Mesh 化方案
+## Spring Cloud Alibaba Mesh 化方案
 
 Spring Cloud Alibaba 作为一种侵入式的微服务解决方案，通过基于 Spring Cloud 微服务标准为用户提供了微服务应用构建过程中的如服务注册与发现、限流降级、分布式事务与分布式消息等在内的一站式微服务解决方案。过去几年被国内大量中小企业所采用，帮助大量企业更加方便地拥抱微服务。
 但随着企业应用微服化的不断深入，微服务给应用带来系统解耦、高可扩展性等诸多优势的同时，也让应用变得更加复杂。如何管理好微服务？成为了很多企业逐渐开始关注和重视的一个新的问题。Spring Cloud Alibaba 社区也注意到很多用户有微服务治理方面的诉求，于是从 2022 年初，就开始了在该方面的探索，社区觉得相比于 Service Mesh，Proxyless Mesh 是一种对广大中小企业更合适的技术方案，其不仅不会有额外 Sidecar 代理所带来的较大性能损耗，而且更重要的是对企业来说，其落地成本很低！
 要通过 Mesh 化方案解决微服务治理需求，一个能给应用动态下发规则的控制面不可或缺，社区本着不重复造轮子，拥抱业界主流解决方案的原则，通过支持 xDS 协议不仅为用户提供通过主流的 Istio 控制面来对 Spring Cloud Alibaba 应用进行服务治理以外，用户也可以使用阿里巴巴开源的 OpenSergo 微服务治理控制面所提供的差异化治理能力进行应用治理。相关提供 Mesh 技术方案社区在最近发布的 2.2.10-RC 版本[[6]](https://github.com/alibaba/spring-cloud-alibaba/releases)中进行了提供。做了提供微服治理能力的第一个版本，社区当前已经部分兼容了Istio VirtualService & DestinationRule 的标签路由和服务鉴权能力，用户可以通过 Istio 控制面给应用下发相关规则，对应用进行流量治理。
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/59256332/1673253324947-3effabdf-3956-48cf-a101-5c366a91b2ab.png#clientId=u641e2097-531f-4&from=paste&height=245&id=u670014cb&name=image.png&originHeight=360&originWidth=762&originalType=binary&ratio=1&rotation=0&showTitle=false&size=155552&status=done&style=none&taskId=ud58f82c8-67cb-4fb2-988a-88eb670d8ff&title=&width=517.9971313476562)
 
-### 准备工作
+#### 准备工作
 
 Proxyless Mesh 的方案首先需要准备好一个能给应用动态下发规则的控制面，本次 Spring Cloud Alibaba 2.2.10-RC1 版本支持了 2 种当前市面上的主流控制面来更好的满足各类用户诉求：
 
-#### 1. Istio 控制面
+##### 1. Istio 控制面
 
 为了使用 Istio 控制面下发治理规则，首先需要在 K8s 环境中安装 Istio 控制面，您可以使用 Spring Cloud Alibaba 社区提供的测试用的 Istio 环境，也可以选择自己尝试安装一套 Istio 控制面，安装 Istio 控制面的流程如下：
 
 1. 安装 K8s 环境，请参考 K8s 的[安装工具](https://kubernetes.io/zh-cn/docs/tasks/tools/)小节
 2. 在 K8s 上安装并启用 Istio，请参考 Istio 官方文档的[安装](https://istio.io/latest/zh/docs/setup/install/)小节
 
-#### 2. OpenSergo 控制面
+##### 2. OpenSergo 控制面
 
 OpenSergo 是开放通用的，覆盖微服务及上下游关联组件的微服务治理项目。OpenSergo 从微服务的角度出发，涵盖流量治理、服务容错、服务元信息治理、安全治理等关键治理领域，提供一系列的治理能力与标准、生态适配与最佳实践，支持 Java, Go, Rust 等多语言生态。
 OpenSergo 控制平面 (Control Plane) 作为 OpenSergo CRD 的统一管控组件，承载服务治理配置转换与下发的职责。
@@ -59,9 +59,9 @@ OpenSergo 控制平面 (Control Plane) 作为 OpenSergo CRD 的统一管控组�
 
 ![](https://user-images.githubusercontent.com/9434884/182856237-8ce85f41-1a1a-4a2a-8f58-db042bd4db42.png#height=336&id=MSEWC&originHeight=1362&originWidth=1856&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=&width=458)
 
-### 标签路由
+#### 标签路由
 
-#### 应用背景
+##### 应用背景
 
 在现在的微服务架构中，服务的数量十分庞大，为了更好的管理这些微服务应用，可能需要给这些应用打上标签，并且将一个或多个服务的提供者划分到同一个分组，从而约束流量只在指定分组中流转，实现流量隔离的目的。标签路由可以作为蓝绿发布、灰度发布等场景的能力基础，它可以被应用在以下场景中：
 
@@ -81,9 +81,9 @@ OpenSergo 控制平面 (Control Plane) 作为 OpenSergo CRD 的统一管控组�
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/59256332/1670815281296-8caae5f2-278f-410b-847c-c3751cb741be.png#clientId=ub03674c8-c3cf-4&from=paste&height=527&id=u65a948c4&name=image.png&originHeight=842&originWidth=724&originalType=url&ratio=1&rotation=0&showTitle=false&size=137213&status=done&style=none&taskId=u1351cdf1-5842-4688-92fa-b688bcbf1fc&title=&width=453)
 目前，Spring Cloud Alibaba Mesh 提供的标签路由能力支持根据请求路径、请求头和 HTTP 请求参数等请求元信息对请求做标签路由，让应用发出的请求根据 Istio 控制面下发的规则发送至指定版本的上游服务。
 
-#### 使用方式
+##### 使用方式
 
-##### 1. 导入依赖并配置应用
+###### 1. 导入依赖并配置应用
 
 首先，修改`pom.xml` 文件，导入 Spring Cloud Alibaba 2.2.10-RC1 版本下的标签路由以及 Istio 资源转换模块的相关依赖（推荐通过云原生应用脚手架 [start.aliyun.com](https://start.aliyun.com) 进行项目构建试用）：
 
@@ -158,7 +158,7 @@ spring.cloud.nacos.discovery.metadata.version=v2
 
 如果是需要对接 OpenSergo 控制面的，则需要给消费者应用加上 `spring-cloud-starter-alibaba-governance-routing` 跟 `spring-cloud-starter-opensergo-adapter `相关依赖，并配置 OpenSergo 所需的配置即可。
 
-##### 2. 运行应用程序
+###### 2. 运行应用程序
 
 启动两个生产者应用和一个消费者应用，并将这些应用都注册到本地的 Nacos 注册中心里，消费者在调用生产者时，会根据控制面下发的标签路由规则来调用不同的生产者实例。启动消费者和两个生产者后，可以在 Nacos 注册中心里看到这几个已注册的服务:
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/59256332/1670829548457-b8c4c868-4eba-48df-9977-94a487cf7a16.png#clientId=ub03674c8-c3cf-4&from=paste&height=1014&id=u8f0da6dc&name=image.png&originHeight=2028&originWidth=3574&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1263912&status=done&style=none&taskId=u7ec88d37-d168-486e-b571-607313aa1fa&title=&width=1787)
