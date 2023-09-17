@@ -31,6 +31,6 @@ Spring Cloud Alibaba is a one-stop solution for micro-service development launch
 
 Spring Cloud Alibaba is also the first open source project to enter the Spring community in China. In July 2018, Spring Cloud Alibaba was officially open source and incubated in the Spring Cloud incubator. In July 2019, Spring Cloud officially announced the graduation of Spring Cloud Alibaba and moved the warehouse to Alibaba Github OSS.
 
-# Introduction of Spring Cloud Alibaba's internal application
+## Introduction of Spring Cloud Alibaba's internal application
 
 TBD
