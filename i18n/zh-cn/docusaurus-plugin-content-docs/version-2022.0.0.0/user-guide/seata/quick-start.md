@@ -185,9 +185,9 @@ service.vgroupMapping.storage-service-tx-group=default
 
 可根据 spring-cloud-alibaba-examples/seata-example 下的 `all.sql` 快速操作：
 
-  - 根据选择的事务模式，创建 [事务日志表](https://github.com/seata/seata/tree/develop/script/client)。比如默认为AT模式，需要使用到 undo_log 表，则进入 at/db 下选择对应的数据库脚本执行。
-  - 创建 seata-server db模式所需要的 [状态记录表](https://github.com/seata/seata/tree/develop/script/server/db) ，包括 global_table 、branch_table 、lock_table 、distributed_lock。
-  - 创建 spring-cloud-alibaba-examples/seata-example 示例中所需的数据库表。
+- 根据选择的事务模式，创建 [事务日志表](https://github.com/seata/seata/tree/develop/script/client)。比如默认为AT模式，需要使用到 undo_log 表，则进入 at/db 下选择对应的数据库脚本执行。
+- 创建 seata-server db模式所需要的 [状态记录表](https://github.com/seata/seata/tree/develop/script/server/db) ，包括 global_table 、branch_table 、lock_table 、distributed_lock。
+- 创建 spring-cloud-alibaba-examples/seata-example 示例中所需的数据库表。
 
 ### 启动 Example 示例
 
