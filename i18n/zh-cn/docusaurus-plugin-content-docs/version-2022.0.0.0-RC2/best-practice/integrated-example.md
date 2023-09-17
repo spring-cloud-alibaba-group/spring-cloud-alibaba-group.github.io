@@ -59,15 +59,15 @@ Nacos 是 SCA 微服务模块的服务注册中心和配置中心。整合 Sprin
 
 在本 Example 示例中，SCA 社区提供了两种业务场景：
 
-1.  用户下单购买货物的场景，下单后：
+1.  用户下单购买货物的场景，下单后： 
 
-    1. 先请求库存模块，扣减库存；
+    1. 先请求库存模块，扣减库存； 
 
     2. 扣减账户余额；
 
-    3. 生成订单信息返回响应。
+    3. 生成订单信息返回响应。 
 
-2.  用户为商品进行点赞（模拟 MQ 的生产者和消费者应用场景）返回商品点赞后的详细信息（点赞数等）。
+2.  用户为商品进行点赞（模拟 MQ 的生产者和消费者应用场景）返回商品点赞后的详细信息（点赞数等）。 
 
 ## 项目部署
 
@@ -75,15 +75,15 @@ Nacos 是 SCA 微服务模块的服务注册中心和配置中心。整合 Sprin
 
 在启动服务容器前，请先配置 Host 地址映射，确保服务能够正常启动！
 
-```shell
-# for integrated-example
-127.0.0.1 integrated-mysql
-127.0.0.1 nacos-server
-127.0.0.1 seata-server
-127.0.0.1 rocketmq
-127.0.0.1 gateway-service
-127.0.0.1 integrated-frontend
-```
+    ```shell
+    # for integrated-example
+    127.0.0.1 integrated-mysql
+    127.0.0.1 nacos-server
+    127.0.0.1 seata-server
+    127.0.0.1 rocketmq
+    127.0.0.1 gateway-service
+    127.0.0.1 integrated-frontend
+    ```
 
 ### 服务本地化部署
 
@@ -133,7 +133,7 @@ Nacos 是 SCA 微服务模块的服务注册中心和配置中心。整合 Sprin
 
 Seata 的 db 模式需要额外配置数据库信息以及修改 Seata 服务端的配置文件，且在新版本中配置文件相较于旧版本进行了合并，因此这里为了便于演示方便，采用 Seata 单机的 file 模式启动 Seata Server。
 
-进入到 release 解压后的 seata 目录中，执行如下命令。
+进入到 release 解压后的 seata 目录中，执行如下命令：
 
 ```shell
 #Linux/Mac环境
