@@ -30,3 +30,6 @@ MD036: false
 
 # MD037/no-space-in-emphasis Spaces inside emphasis markers
 MD037: false
+
+# MD046/Two formats of code blocks are allowed: fenced and indented
+MD046: false
