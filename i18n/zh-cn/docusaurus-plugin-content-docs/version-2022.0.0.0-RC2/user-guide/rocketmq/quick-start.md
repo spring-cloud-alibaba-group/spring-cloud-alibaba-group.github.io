@@ -70,15 +70,18 @@ Linux / Unix / Mac 操作系统，执行命令 ：
 
 2. 发送消息：
 
-Linux / Unix / Mac 操作系统，执行命令 ：  
- `shell
+Linux / Unix / Mac 操作系统，执行命令 ：
+
+    ```shell
     $ sh bin/tools.sh org.apache.rocketmq.example.quickstart.Producer
-    `
+    ```
 
     Windows 操作系统，执行命令：
+
     ```cmd
     $ .\bin\tools.cmd org.apache.rocketmq.example.quickstart.Producer
     ```
+
     发送成功后显示：SendResult [sendStatus=SEND_OK, msgId= ...
 
 3. 接收消息：
@@ -254,8 +257,7 @@ public class RocketMQBroadcastConsumer1Application {
 
 消费者 2 创建过程的详细解释可参考上述消费者 1 的创建过程的解释。
 
-1. 相关配置  
-   `application.yml`配置
+1. 相关配置 `application.yml` 配置
 
 ```yaml
 server:

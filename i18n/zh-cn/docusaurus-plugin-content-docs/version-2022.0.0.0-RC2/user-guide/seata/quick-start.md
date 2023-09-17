@@ -12,9 +12,9 @@ description: Seata,Quick Start.
 
 ### 配置数据库
 
-> **NOTE：** MySql 数据库的存储引擎需要为 InnoDB。实际上，Seata 支持不同的应用使用完全不相干的数据库，但是这里为了简单地演示一个原理，所以下面只使用一个数据库。
+> ** NOTE： ** MySql 数据库的存储引擎需要为 InnoDB。实际上，Seata 支持不同的应用使用完全不相干的数据库，但是这里为了简单地演示一个原理，所以下面只使用一个数据库。
 
-#### **配置 UNDO_LOG 表**
+#### ** 配置 UNDO_LOG 表 **
 
 Seata AT 模式需要使用到 undo_log 表。
 
@@ -35,7 +35,7 @@ CREATE TABLE `undo_log` (
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 ```
 
-#### **导入 seata-server db 模式所需要的数据库表**
+#### ** 导入 seata-server db 模式所需要的数据库表 **
 
 在数据库中初始化 [global_table、branch_table、lock_table、distributed_lock](https://github.com/seata/seata/blob/1.5.0/script/server/db/mysql.sql)。
 
@@ -141,7 +141,7 @@ lock_table](https://github.com/seata/seata/blob/1.5.0/script/server/db/mysql.sql
 $ sh seata-server.sh -p 8091 -m file
 ```
 
-> **NOTE：** 如果你修改了 endpoint 且注册中心使用默认 file 类型，那么记得需要在各个示例工程中的 file.conf 文件中，修改 grouplist 的值(当 registry.conf 中 registry.type 或 config.type 为 file 时会读取内部的 file 节点中的文件名，若 type 不为 file 将直接从配置类型的对应元数据的注册配置中心读取数据)，推荐大家使用 nacos 作为配置注册中心。
+> ** NOTE： ** 如果你修改了 endpoint 且注册中心使用默认 file 类型，那么记得需要在各个示例工程中的 file.conf 文件中，修改 grouplist 的值(当 registry.conf 中 registry.type 或 config.type 为 file 时会读取内部的 file 节点中的文件名，若 type 不为 file 将直接从配置类型的对应元数据的注册配置中心读取数据)，推荐大家使用 nacos 作为配置注册中心。
 
 ### Seata Dashboard
 
@@ -152,7 +152,7 @@ $ sh seata-server.sh -p 8091 -m file
 
 ### 创建 Nacos 配置
 
-> **NOTE：**
+> ** NOTE： **
 > 执行此配置的时候，确保本地 Nacos server 启动成功！
 
 创建示例中 Nacos data-id: seata.properties , Group: SEATA_GROUP(seata 1.5.1 默认分组) ,导入 [Nacos 配置](https://github.com/seata/seata/blob/1.5.0/script/config-center/config.txt)。
@@ -204,7 +204,7 @@ service.vgroupMapping.storage-service-tx-group=default
 
 2. 启动 Seata Server。
 
-   > **NOTE：**
+   > ** NOTE： **
    > Spring Boot 和下载 server 两种方式（如果在准备 Seata-Server 准备中已经启动 Seata-Server，则可以跳过此步骤）:
 
 - 运行 spring-cloud-alibaba-examples/seata-example 下的 seata-server， 启动 Seata server。
@@ -219,7 +219,7 @@ service.vgroupMapping.storage-service-tx-group=default
 
 ### 分布式事务功能验证
 
-#### **Xid 信息是否成功传递**
+#### ** Xid 信息是否成功传递 **
 
 在 account-server、order-service 和 storage-service 三个 服务的 Controller 中，第一个执行的逻辑都是输出 RootContext 中的 Xid 信息，如果看到都输出了正确的 Xid 信息，即每次都发生变化，且同一次调用中所有服务的 Xid 都一致。则表明 Seata 的 Xid 的传递和还原是正常的。
 
