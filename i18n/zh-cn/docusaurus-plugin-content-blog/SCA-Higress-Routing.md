@@ -10,7 +10,7 @@ date: 2023-08-31
 
 ## 使用 Nacos 做注册中心
 
-应用配置具体参考[ Nacos Spring Cloud 快速开始](https://sca.aliyun.com/zh-cn/docs/next/user-guide/nacos/quick-start)进行应用配置
+应用配置具体参考 [Nacos-Spring-Cloud-快速开始](https://sca.aliyun.com/zh-cn/docs/next/user-guide/nacos/quick-start) 进行应用配置
 
 ### 不指定命名空间
 
