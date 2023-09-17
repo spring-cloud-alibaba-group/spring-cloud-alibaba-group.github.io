@@ -1,12 +1,14 @@
 # Spring Cloud Alibaba Official Website
 
 ## Run In Local Environment
+
 ### Pre-requirements
+
 > If requirements stated here cannot be meet in local environment, please refer to [Run with Docker](#run-with-docker).
 
 The project source code is built based on docusaurus v2.3.1, so to compile and run this project, it is necessary to ensure the installation of Node.js and other basic environments.
 
-* Node.js version 16.14+
+- Node.js version 16.14+
 
 ### Quick Start
 
@@ -27,31 +29,39 @@ localhost:3000/
 2. `npm run serve`
 
 3. visit with browser
+
 ```shell
 localhost:3000/
 ```
 
 ## Run With Docker
+
 > No extra components needed except docker.
 
 ### Run locally
+
 1. build image
+
 ```shell
 docker build --target development -t docs:dev .
 ```
 
 2. run container
+
 ```shell
 docker run -p 3000:3000 docs:dev
 ```
 
 ### Run in production
+
 1. build image
+
 ```shell
 docker build -t sca-site:latest .
 ```
 
 2. run container
+
 ```shell
 docker run --rm -p 3000:80 sca-site:latest
 ```
@@ -69,7 +79,7 @@ Please note that if you start the site in development mode with `npm run start` 
 
 ### Add new articles for developers
 
-1. Add a new .md file under i18n/en-us/docusaurus-plugin-content-docs/current/developers or i18n/zh-cn/docusaurus-plugin-content-docs/current/developers, the file name should start with _dev.md ends. Note that the suffix _dev is necessary.
+1. Add a new .md file under i18n/en-us/docusaurus-plugin-content-docs/current/developers or i18n/zh-cn/docusaurus-plugin-content-docs/current/developers, the file name should start with \_dev.md ends. Note that the suffix \_dev is necessary.
 2. Update sidebar.js to add a new entry in en-us or zh-cn.
 
 ### Add a new blog
@@ -80,6 +90,7 @@ Please note that if you start the site in development mode with `npm run start` 
 ## SEO
 
 the type is:
+
 ```
 ---
 title: title
@@ -92,10 +103,12 @@ custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alib
 ```
 
 **Notice:**
+
 1. "title" cannot contain ":"
 2. `keywords` must be `Array`
 3. `custom_edit_url` is a link to the documentation in this repo, required.
 
 ## Note the .md file
+
 1. Do not use incorrect html tags, such as `<img>, <br>`, replace it with `<img/> <br/>`;
 2. If you want to display `<xx>`, please replace it with `&lt;xx&gt;`.
