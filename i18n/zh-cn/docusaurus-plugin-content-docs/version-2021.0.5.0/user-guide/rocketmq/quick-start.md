@@ -71,11 +71,13 @@ Linux / Unix / Mac 操作系统，执行命令 ：
 2. 发送消息：
 
 Linux / Unix / Mac 操作系统，执行命令 ：  
- `shell
+
+    ```shell
     $ sh bin/tools.sh org.apache.rocketmq.example.quickstart.Producer
-    `
+    ```
 
     Windows 操作系统，执行命令：
+    
     ```cmd
     $ .\bin\tools.cmd org.apache.rocketmq.example.quickstart.Producer
     ```

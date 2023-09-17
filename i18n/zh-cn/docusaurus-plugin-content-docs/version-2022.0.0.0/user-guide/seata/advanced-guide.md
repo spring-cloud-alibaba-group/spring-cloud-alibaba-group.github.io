@@ -185,6 +185,7 @@ $ update product set name = 'GTS' where name = 'TXC';
 1. 解析 SQL：得到 SQL 的类型（UPDATE），表（product），条件（where name = 'TXC'）等相关的信息。
 
 2. 查询前镜像：根据解析得到的条件信息，生成查询语句，定位数据。
+
    ```java
    $ select id, name, since from product where name = 'TXC';
    ```
