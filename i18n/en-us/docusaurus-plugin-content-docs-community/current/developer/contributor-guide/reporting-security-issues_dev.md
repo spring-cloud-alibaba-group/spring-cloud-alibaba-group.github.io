@@ -5,11 +5,11 @@ description: This is a guide for new contributor who wants to contribute to Spri
 custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/main/i18n/zh-cn/docusaurus-plugin-content-docs/current/developers/contributor-guide/reporting-security-issues_dev.md
 ---
 
-# Reporting Security Issues
+## Reporting Security Issues
 
 The Spring Cloud Alibaba Group takes a rigorous standpoint in annihilating the security issues in its software projects. Spring Cloud Alibaba is highly sensitive and forthcoming to issues pertaining to its features and functionality.
 
-## REPORTING VULNERABILITY
+### REPORTING VULNERABILITY
 
 If you have apprehensions regarding Spring Cloud Alibaba's security or you discover vulnerability or potential threat, don’t
 hesitate to get in touch with the Spring Cloud Alibaba Security Team by dropping a mail at [spring-cloud-alibaba@googlegroups.com]
@@ -17,7 +17,7 @@ hesitate to get in touch with the Spring Cloud Alibaba Security Team by dropping
 
 PLEASE PAY ATTENTION to report the security issue on the security email before disclosing it on public domain.
 
-## VULNERABILITY HANDLING
+### VULNERABILITY HANDLING
 
 An overview of the vulnerability handling process is:
 

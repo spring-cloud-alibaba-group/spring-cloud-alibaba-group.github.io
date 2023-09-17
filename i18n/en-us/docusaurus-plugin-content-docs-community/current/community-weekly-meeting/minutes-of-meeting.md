@@ -50,7 +50,7 @@ Tzu-ming liu, \ _ \ _ xin, zhang qian, Cheng park, hai-feng zhao, Andy, Yuluo, \
 
 ### Conclusion of the meeting
 
-# 1. In view of the [3171] (https://github.com/alibaba/spring-cloud-alibaba/pull/3171), which need to be the current community Seata module for OpenFeign client default Settings don't retry policies to remove, Then, it is clearly explained in the document that if you set this parameter to do not retry a possible impact, the community should not affect the user's original usage while bringing a specific function effect to the user.
+## 1. In view of the [3171] (https://github.com/alibaba/spring-cloud-alibaba/pull/3171), which need to be the current community Seata module for OpenFeign client default Settings don't retry policies to remove, Then, it is clearly explained in the document that if you set this parameter to do not retry a possible impact, the community should not affect the user's original usage while bringing a specific function effect to the user.
 
 ## Meeting 29:20 23/02/16
 
@@ -67,7 +67,7 @@ Shen Chen yi, gofow, puppy | Wang Shengquan (B - 4 f - C082), RuanSheng, Cheng p
 
 1. According to [# 3151] (https://github.com/alibaba/spring-cloud-alibaba/issues/3151), After discussion in the weekly meeting, the community decided to delete the original Seata burial point for Web in the Spring Cloud Alibaba project and only the burial point provided by the Seata client.
 
-# 2. In view of the [3137] (https://github.com/alibaba/spring-cloud-alibaba/issues/3137), After discussion in the weekly meeting, the community decided to use spring-cloud-starter-alibaba-kubernetes-config to name the new module. The naming of the module exists as a special case that violates the naming rules of the new module in the current community.
+## 2. In view of the [3137] (https://github.com/alibaba/spring-cloud-alibaba/issues/3137), After discussion in the weekly meeting, the community decided to use spring-cloud-starter-alibaba-kubernetes-config to name the new module. The naming of the module exists as a special case that violates the naming rules of the new module in the current community.
 
 ## Meeting 28:20 23/02/03
 
@@ -376,7 +376,7 @@ Godtroop, sail boom, wangcheng dress feather, the people, wangjie, RuanSheng, Ya
 
 ### Conclusion of the meeting
 
-# 1. In view of the [2018] (https://github.com/alibaba/spring-cloud-alibaba/pull/2494) are discussed in detail, think it is a false demand, community should not to be realized across a set of service calls, Causes the concept of grouping that the framework is designed for to be broken.
+## 1. In view of the [2018] (https://github.com/alibaba/spring-cloud-alibaba/pull/2494) are discussed in detail, think it is a false demand, community should not to be realized across a set of service calls, Causes the concept of grouping that the framework is designed for to be broken.
 
 2. When submitting issues, external users must pay attention to specifications, and try to provide all content conducive to troubleshooting, including but not limited to framework version, configuration and key code of recurring problems, at one time according to the template, so as to solve the problem faster.
 

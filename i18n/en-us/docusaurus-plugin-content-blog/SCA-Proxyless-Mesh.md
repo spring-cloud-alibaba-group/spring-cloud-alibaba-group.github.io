@@ -48,14 +48,14 @@ To solve the microservice governance needs through the Mesh solution, a control 
 
 The Proxyless Mesh solution first needs to prepare a control plane that can dynamically deliver rules to applications. This Spring Cloud Alibaba version 2.2.10-RC1 supports two mainstream control planes currently on the market to better meet various user demands:
 
-##### 1. Istio control plane
+#### 1. Istio control plane
 
 In order to use the Istio control plane to issue governance rules, you first need to install the Istio control plane in the K8s environment. You can use the Istio environment for testing provided by the Spring Cloud Alibaba community, or you can try to install an Istio control plane yourself. The process of installing the Istio control plane is as follows:
 
 1. To install the K8s environment, please refer to the [Installation Tools](https://kubernetes.io/zh-cn/docs/tasks/tools/) section of K8s
 2. Install and enable Istio on K8s, please refer to the [Installation](https://istio.io/latest/zh/docs/setup/install/) section of the Istio official document
 
-##### 2. OpenSergo control plane
+#### 2. OpenSergo control plane
 
 OpenSergo is an open and general-purpose microservice governance project covering microservices and upstream and downstream related components. From the perspective of microservices, OpenSergo covers key governance areas such as traffic governance, service fault tolerance, service meta-information governance, and security governance. It provides a series of governance capabilities and standards, ecological adaptation, and best practices, and supports Java, Go, Rust, and other multi-language ecosystems.
 As the unified control component of OpenSergo CRD, the OpenSergo control plane (Control Plane) carries the responsibility of service governance configuration conversion and distribution.

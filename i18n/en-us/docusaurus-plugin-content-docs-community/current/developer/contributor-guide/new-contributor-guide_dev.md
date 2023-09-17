@@ -43,7 +43,7 @@ If you are a first-time contributor, you can start with [good first issue](https
 
 After fork out the code, there may be a new commit in the Master branch of the original repository. At this time, in order to avoid the conflict between the submitted PR and the submit in the Master, merge the master branch in a timely manner (master branch corresponds to the two main branches of the current warehouse, 2.2.x and 2021.x, which are maintained at the same time).
 
-- In your local `spring-cloud-alibaba` directory, Perform `git remote add upstream https://github.com/alibaba/spring-cloud-alibaba ` add original warehouse address to the remote in the stream.
+- In your local `spring-cloud-alibaba` directory, Perform `git remote add upstream https://github.com/alibaba/spring-cloud-alibaba` add original warehouse address to the remote in the stream.
 - In your local `spring-cloud-alibaba` directory, do `git fetch upstream` to fetch the remote stream locally.
 - In your local `spring-cloud-alibaba` directory, execute `git checkout master` to switch to the master branch.
 - In your local `spring-cloud-alibaba` directory, execute `git rebase upstream/master` rebase latest code.
