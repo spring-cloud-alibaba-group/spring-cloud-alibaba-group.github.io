@@ -46,34 +46,32 @@ In version 4.9, the maven coordinates are:
 At first glance, it can be seen that the artifact ID has changed. After a little research, you can find:
 In RocketMQ 5.0, in order to unify clients in all languages, a Github repository https://github.com/apache/rocketmq-clients is maintained separately for developing multilingual clients, including Java, Golang, Cpp, Rust and other languages.
 
-
 In the RocketMQ 4.x version, the Java language still uses the client module in the RocketMQ main warehouse as the client.
 That is to say, in RocketMQ 5.0, the Java client has undergone tremendous changes, achieving the purpose of simplifying, lightweight, and unifying with other language functions.
 Then in Spring Cloud Alibaba, we will also consider using the new version of Java Client as the underlying implementation to update the relevant code.
 
 - **Consumer**
 
-     In the new version of Java Client, three Consumer types are provided:
+  In the new version of Java Client, three Consumer types are provided:
 
      <p align="center">
      <img src="https://sca-storage.oss-cn-hangzhou.aliyuncs.com/website/image%20%283%29.png" />
      </p>
 
-     Among them, SimpleConsumer is a newly added consumer interface, which provides more flexible custom configuration.
+  Among them, SimpleConsumer is a newly added consumer interface, which provides more flexible custom configuration.
 
-     We can consider connecting the latest version of Java Client in Spring Cloud Alibaba and supporting the corresponding Consumer type.
-     For details, please refer to: https://rocketmq.apache.org/zh/docs/featureBehavior/06consumertype
+  We can consider connecting the latest version of Java Client in Spring Cloud Alibaba and supporting the corresponding Consumer type.
+  For details, please refer to: https://rocketmq.apache.org/zh/docs/featureBehavior/06consumertype
 
 - **Provider**
 
-     Correspondingly, the interface of Producer has also changed,
+  Correspondingly, the interface of Producer has also changed,
 
      <p align="center">
      <img src="https://sca-storage.oss-cn-hangzhou.aliyuncs.com/website/image%20%284%29.png" />
      </p>
 
-     The implementation of Producer can also be modified according to the latest interface.
-
+  The implementation of Producer can also be modified according to the latest interface.
 
 ### 3. Event and stream processing scene integration
 

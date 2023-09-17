@@ -1,8 +1,8 @@
-import React from 'react';
-import classnames from 'classnames';
-import { throttle, getLink } from '../../utils';
+import React from "react";
+import classnames from "classnames";
+import { throttle, getLink } from "../../utils";
 
-import './index.scss';
+import "./index.scss";
 
 type Props = {
   pageSize: number; // 每页最多显示的条数
@@ -37,11 +37,11 @@ class PageSlider extends React.Component<Props, State> {
         pageWidth: this.container.getBoundingClientRect().width,
       });
     }, 200);
-    window.addEventListener('resize', this.throttleAdjust);
+    window.addEventListener("resize", this.throttleAdjust);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.throttleAdjust);
+    window.removeEventListener("resize", this.throttleAdjust);
   }
 
   changePage = (i) => {
@@ -59,14 +59,16 @@ class PageSlider extends React.Component<Props, State> {
     const splitNum = Math.ceil(len / pageSize);
     /* eslint-disable no-plusplus*/
     for (let i = 0; i < splitNum; i++) {
-      splitGroup.push(Array.from(children).slice(i * pageSize, (i + 1) * pageSize));
+      splitGroup.push(
+        Array.from(children).slice(i * pageSize, (i + 1) * pageSize)
+      );
     }
     return (
       <div
         className="slider-list"
         style={{
           transform: `translateX(-${page * pageWidth}px)`,
-          transition: 'transform 500ms ease',
+          transition: "transform 500ms ease",
           width: splitNum * pageWidth,
         }}
       >
@@ -95,18 +97,18 @@ class PageSlider extends React.Component<Props, State> {
       <div className="slider-control">
         <img
           className={classnames({
-            'slider-control-prev': true,
-            'slider-control-prev-hidden': page === 0,
+            "slider-control-prev": true,
+            "slider-control-prev-hidden": page === 0,
           })}
-          src={getLink('/img/system/prev.png')}
+          src={getLink("/img/system/prev.png")}
           onClick={this.changePage.bind(this, page - 1)}
         />
         <img
           className={classnames({
-            'slider-control-next': true,
-            'slider-control-next-hidden': page === splitNum - 1,
+            "slider-control-next": true,
+            "slider-control-next-hidden": page === splitNum - 1,
           })}
-          src={getLink('/img/system/next.png')}
+          src={getLink("/img/system/next.png")}
           onClick={this.changePage.bind(this, page + 1)}
         />
       </div>

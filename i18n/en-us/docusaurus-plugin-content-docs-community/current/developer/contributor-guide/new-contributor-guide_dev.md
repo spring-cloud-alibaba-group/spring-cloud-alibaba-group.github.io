@@ -5,7 +5,6 @@ description: The purpose of this guide is to provide guidance for newcomers who 
 custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/main/i18n/zh-cn/docusaurus-plugin-content-docs/current/developers/contributor-guide/new-contributor-guide_dev.md
 ---
 
-
 ## Thank you for contributing to Spring Cloud Alibaba!
 
 Since its inception as an open-source project, Spring Cloud Alibaba has received a lot of attention from members of the community. Every issue and PR from the community is helpful and contributes to the development of a better Spring Cloud.
@@ -26,12 +25,11 @@ For more complex changes, we recommend adding a Feature label in the Issue secti
 
 ### Where to start
 
-If you are a first-time contributor, you can start with [good first issue](https://github.com/spring-cloud-incubator/spring-cloud-alibaba/labels/good%20first%20issue)  和 [help wanted](https://github.com/alibaba/spring-cloud-alibaba/labels/help%20wanted) 中认领一个比较简单的任务。
-
+If you are a first-time contributor, you can start with [good first issue](https://github.com/spring-cloud-incubator/spring-cloud-alibaba/labels/good%20first%20issue) 和 [help wanted](https://github.com/alibaba/spring-cloud-alibaba/labels/help%20wanted) 中认领一个比较简单的任务。
 
 ### Fork the repository and Clone it locally
 
-- Click on [the project](https://github.com/alibaba/spring-cloud-alibaba) in the top right corner of the ` Fork ` icon will `alibaba/spring-cloud-alibaba` the Fork to their own space.
+- Click on [the project](https://github.com/alibaba/spring-cloud-alibaba) in the top right corner of the `Fork` icon will `alibaba/spring-cloud-alibaba` the Fork to their own space.
 - To clone the `spring-cloud-alibaba` repository under your own account to your local machine, for example, if your account name is `flystar32`, you can execute the command git clone https://github.com/flystar32/spring-cloud-alibaba.git.
 
 ### Configure Github information
@@ -45,7 +43,7 @@ If you are a first-time contributor, you can start with [good first issue](https
 
 After fork out the code, there may be a new commit in the Master branch of the original repository. At this time, in order to avoid the conflict between the submitted PR and the submit in the Master, merge the master branch in a timely manner (master branch corresponds to the two main branches of the current warehouse, 2.2.x and 2021.x, which are maintained at the same time).
 
-- In your local `spring-cloud-alibaba` directory, Perform `git remote add upstream https://github.com/alibaba/spring-cloud-alibaba ` add original warehouse address to the remote in the stream.
+- In your local `spring-cloud-alibaba` directory, Perform `git remote add upstream https://github.com/alibaba/spring-cloud-alibaba` add original warehouse address to the remote in the stream.
 - In your local `spring-cloud-alibaba` directory, do `git fetch upstream` to fetch the remote stream locally.
 - In your local `spring-cloud-alibaba` directory, execute `git checkout master` to switch to the master branch.
 - In your local `spring-cloud-alibaba` directory, execute `git rebase upstream/master` rebase latest code.

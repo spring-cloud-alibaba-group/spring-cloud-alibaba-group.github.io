@@ -17,7 +17,9 @@ const data = {
       >
         Wanted: who&#39;s using Spring Cloud Alibaba
       </a>{" "}
-      <Translate id="homepage.userDesc2">上提供信息来帮助社区做得更好！</Translate>
+      <Translate id="homepage.userDesc2">
+        上提供信息来帮助社区做得更好！
+      </Translate>
     </span>
   ),
 
@@ -48,8 +50,14 @@ const data = {
     "https://sca-storage.oss-cn-hangzhou.aliyuncs.com/website/project-users-logo/user-icon/wuxiangwangluo.png",
     "https://sca-storage.oss-cn-hangzhou.aliyuncs.com/website/project-users-logo/user-icon/yipingtang.png",
   ],
-  titleBefore: translate({ id: "homepage.userTitleBefore", message: "谁在使用" }),
-  titleAfter: translate({ id: "homepage.userTitleAfter", message: " Spring Cloud Alibaba" }),
+  titleBefore: translate({
+    id: "homepage.userTitleBefore",
+    message: "谁在使用",
+  }),
+  titleAfter: translate({
+    id: "homepage.userTitleAfter",
+    message: " Spring Cloud Alibaba",
+  }),
 };
 
 const User = () => {

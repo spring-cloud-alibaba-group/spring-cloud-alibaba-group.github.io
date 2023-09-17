@@ -4,60 +4,69 @@ keywords: [Spring Cloud Alibaba]
 description: Service Security.
 ---
 
-# 快速开始
+## 快速开始
+
 本节主要演示如何使用 Istio 下发安全治理配置到 Spring Cloud Alibaba (下文简称：SCA)并对应用做安全治理。SCA 安全治理模块同时支持对 Spring MVC 以及 Spring WebFlux 两种常用框架做安全治理。
+
 ## 准备
+
 ### 安装 K8s 环境
+
 请参考 K8s 的[安装工具](https://kubernetes.io/zh-cn/docs/tasks/tools/)小节。
+
 ### 在 K8s 上安装并启用 Istio
+
 请参考 Istio 官方文档的[安装](https://istio.io/latest/zh/docs/setup/install/)小节。
 
 ## 示例
+
 ### 如何接入
+
 在启动示例进行演示之前，先了解一下应用如何接入 Istio 并提供安全治理功能。 注意 本章节只是为了便于理解接入方式，本示例代码中已经完成接入工作，您无需再进行修改。
 
 1. 修改 pom.xml 文件，引入 Istio 规则 Adapter 以及 SCA 安全治理模块:
 
-  ```xml
-  <dependency>
-      <groupId>com.alibaba.cloud</groupId>
-      <artifactId>spring-cloud-starter-alibaba-governance-auth</artifactId>
-  </dependency>
-  <dependency>
-      <groupId>com.alibaba.cloud</groupId>
-      <artifactId>spring-cloud-starter-xds-adapter</artifactId>
-  </dependency>
-  ```
+```xml
+<dependency>
+    <groupId>com.alibaba.cloud</groupId>
+    <artifactId>spring-cloud-starter-alibaba-governance-auth</artifactId>
+</dependency>
+<dependency>
+    <groupId>com.alibaba.cloud</groupId>
+    <artifactId>spring-cloud-starter-xds-adapter</artifactId>
+</dependency>
+```
 
 2. 在应用的 `src/main/resources/application.yml` 配置文件中配置 Istio 相关元数据:
 
-  ```yml
-  server:
-    port: ${SERVER_PORT:80}
-  spring:
-    cloud:
-      governance:
-        auth:
-          enabled: ${ISTIO_AUTH_ENABLE:true}
-      istio:
-        config:
-          enabled: ${ISTIO_CONFIG_ENABLE:true}
-          host: ${ISTIOD_ADDR:127.0.0.1}
-          port: ${ISTIOD_PORT:15010}
-          polling-pool-size: ${POLLING_POOL_SIZE:10}
-          polling-time: ${POLLING_TIMEOUT:10}
-          istiod-token: ${ISTIOD_TOKEN:}
-          log-xds: ${LOG_XDS:true}
-  ```
+```yml
+server:
+  port: ${SERVER_PORT:80}
+spring:
+  cloud:
+    governance:
+      auth:
+        enabled: ${ISTIO_AUTH_ENABLE:true}
+    istio:
+      config:
+        enabled: ${ISTIO_CONFIG_ENABLE:true}
+        host: ${ISTIOD_ADDR:127.0.0.1}
+        port: ${ISTIOD_PORT:15010}
+        polling-pool-size: ${POLLING_POOL_SIZE:10}
+        polling-time: ${POLLING_TIMEOUT:10}
+        istiod-token: ${ISTIOD_TOKEN:}
+        log-xds: ${LOG_XDS:true}
+```
 
 **注：您部署的应用所在的 pod 不需要被 Istio 执行自动注入，因为 SCA 的各个治理模块将会被用来替代 Envoy Proxy 的各种功能。**
 
 ### 效果演示
+
 下面给出几个简单的安全治理规则配置的示例:
 
-#### **IP黑白名单**
+#### **IP 黑白名单**
 
-使用如下命令通过 Istio 下发一条安全治理规则至 demo 应用，这条规则限制了访问该应用的来源IP:
+使用如下命令通过 Istio 下发一条安全治理规则至 demo 应用，这条规则限制了访问该应用的来源 IP:
 
 ```yml
 kubectl apply -f - << EOF
@@ -84,14 +93,14 @@ EOF
 $ curl --location --request GET '${demo_ip}/auth'
 ```
 
-在本例中，若请求的来源IP为 `127.0.0.1` ，则本应用返回:
+在本例中，若请求的来源 IP 为 `127.0.0.1` ，则本应用返回:
 
 ```shell
 Auth failed, please check the request and auth rule
 ```
 
 说明此请求被拒绝。
-若请求的来源IP不为 `127.0.0.1` ，则本应用返回:
+若请求的来源 IP 不为 `127.0.0.1` ，则本应用返回:
 
 ```shell
 received request from ${from_ip}, local addr is ${local_ip}, local host is ${local_host}, request path is/auth
@@ -171,7 +180,7 @@ $ kubectl delete AuthorizationPolicy http-headers-allow -n ${namespace_name}
 received request from ${from_ip}, local addr is ${local_ip}, local host is ${local_host}, request path is/auth
 ```
 
-#### **JWT认证**
+#### **JWT 认证**
 
 使用如下命令通过 Istio 下发一条安全治理规则至 demo 应用，这条规则限制了访问该应用需要携带的 JWT token value:
 
@@ -230,7 +239,3 @@ $ kubectl delete RequestAuthentication jwt-jwks-uri -n ${namespace_name}
 ```shell
 received request from ${from_ip}, local addr is ${local_ip}, local host is ${local_host}, request path is/auth
 ```
-
-
-
-

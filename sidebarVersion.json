@@ -1,10 +1,12 @@
 {
-    "version": [{
-        "type": "category",
-        "label": "Version",
-        "collapsed": false,
-        "items": [
-            "version"  
-        ]
-    }]
+    "version": [
+        {
+            "type": "category",
+            "label": "Version",
+            "collapsed": false,
+            "items": [
+                "version"
+            ]
+        }
+    ]
 }

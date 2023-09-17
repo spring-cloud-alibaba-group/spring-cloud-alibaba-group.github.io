@@ -5,7 +5,6 @@ description: 这篇向导旨在给正在准备向 Spring Cloud Alibaba 提交贡
 custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/main/i18n/zh-cn/docusaurus-plugin-content-docs/current/developers/contributor-guide/new-contributor-guide_dev.md
 ---
 
-
 ## 感谢你为 Spring Cloud Alibaba 贡献！
 
 Spring Cloud Alibaba 从开源建设以来，受到了很多社区同学的关注。社区的每一个 Issue ，每一个 PR，都是对整个项目的帮助，都在为建设更好用的 Spring Cloud 添砖加瓦。
@@ -26,8 +25,7 @@ Spring Cloud Alibaba 从开源建设以来，受到了很多社区同学的关�
 
 ### 从哪里入手？
 
-如果您是初次贡献，可以先从 [good first issue](https://github.com/spring-cloud-incubator/spring-cloud-alibaba/labels/good%20first%20issue)  和 [help wanted](https://github.com/alibaba/spring-cloud-alibaba/labels/help%20wanted) 中认领一个比较简单的任务。
-
+如果您是初次贡献，可以先从 [good first issue](https://github.com/spring-cloud-incubator/spring-cloud-alibaba/labels/good%20first%20issue) 和 [help wanted](https://github.com/alibaba/spring-cloud-alibaba/labels/help%20wanted) 中认领一个比较简单的任务。
 
 ### Fork 仓库，并将其 Clone 到本地
 
@@ -43,7 +41,7 @@ Spring Cloud Alibaba 从开源建设以来，受到了很多社区同学的关�
 
 ### Merge 最新代码
 
-fork 出来的代码后，原仓库 Master 分支可能出现了新的提交，这时候为了避免提交的  PR 和 Master 中的提交出现冲突，需要及时 merge master 分支(master 分支对应当前仓库的 2.2.x 和 2021.x 两个主干分支，同时维护)。
+fork 出来的代码后，原仓库 Master 分支可能出现了新的提交，这时候为了避免提交的 PR 和 Master 中的提交出现冲突，需要及时 merge master 分支(master 分支对应当前仓库的 2.2.x 和 2021.x 两个主干分支，同时维护)。
 
 - 在你本机的 spring-cloud-alibaba 目录下，执行 `git remote add upstream https://github.com/alibaba/spring-cloud-alibaba` 将原始仓库地址添加到 remote stream 中。
 - 在你本机的 spring-cloud-alibaba 目录下，执行 `git fetch upstream` 将 remote stream fetch 到本地。
@@ -60,9 +58,9 @@ Spring cloud Alibaba 作为 Spring Cloud 的实现之一，在代码规范方面
 
 ### Merge 最新代码
 
-- 同样，提交  PR 前，需要 rebase master 分支的代码，具体操作步骤请参考之前的章节。
+- 同样，提交 PR 前，需要 rebase master 分支的代码，具体操作步骤请参考之前的章节。
 - 如果出现冲突，需要先解决冲突。
 
-### 提交PR
+### 提交 PR
 
 提交 PR，根据 `Pull request template` 写明修改点和实现的功能，等待 code review 和 合并，成为 Spring Cloud Alibaba Contributor，为更好用的 Spring Cloud 做出贡献。

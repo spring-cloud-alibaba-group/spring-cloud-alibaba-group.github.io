@@ -2,302 +2,155 @@
 @import '../../../css/reset.scss';
 
 .top-section {
-  height: 100vh;
-  // background-color: #ddebc9;
-  background-image: url('https://img.alicdn.com/imgextra/i1/O1CN01RJxUCt29hqz2quJDJ_!!6000000008100-2-tps-3200-1440.png');
-  background-size: cover;
-
-  .top-body {
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-    max-width: $contentWidth;
-    margin: 0 auto;
-    z-index: 2;
-  }
-
+  height:100vh;/*  background-color:#ddebc9;*/
+  background-image:url('https://img.alicdn.com/imgextra/i1/O1CN01RJxUCt29hqz2quJDJ_!!6000000008100-2-tps-3200-1440.png');background-size:cover;
+  .top-body { position: relative; overflow: hidden; height: 100%; max-width: $contentWidth; margin: 0 auto; z-index: 2; }
   .anmination-img {
-    position: absolute;
-    top: 40%;
-    right: 0;
-    z-index: 1;
-    width: 25%;
-
-    img {
-      width: 100%;
-    }
+    position:absolute;top:40%;right:0;z-index:1;width:25%;
+    img { width: 100%; }
   }
-
   .anmination-img {
-    /* background-color: cyan; */
+    /* background-color:cyan;*/
     /* 第二步：animation-name 指定要绑定到选择器的关键帧的名称，告诉系统需要执行哪个动画 */
-    animation-name: leftTopRight;
-
-    /* -animation-duration	动画指定需要多少秒或毫秒完成，告诉系统动画持续的时长 */
+    animation-name:leftTopRight;/* -animation-duration	动画指定需要多少秒或毫秒完成，告诉系统动画持续的时长 */
     /* 持续动画时间 */
-    animation-duration: 2s;
-
-    /* -animation-timing-function 设置动画将如何完成一个周期，告诉系统动画执行的速度 */
-    animation-timing-function: ease-in-out;
-
-    /* -animation-delay  设置动画在启动前的延迟间隔。 */
-    animation-delay: 0.5s;
-
-    /* -animation-iteration-count	定义动画的播放次数。告诉系统动画需要执行几次 */
+    animation-duration:2s;/* -animation-timing-function 设置动画将如何完成一个周期，告诉系统动画执行的速度 */
+    animation-timing-function:ease-in-out;/* -animation-delay  设置动画在启动前的延迟间隔。 */
+    animation-delay:0.5s;/* -animation-iteration-count	定义动画的播放次数。告诉系统动画需要执行几次 */
     /* 无限次  infinite*/
-    animation-iteration-count: infinite;
-
-    /* -animation-direction	指定是否应该轮流反向播放动画。 */
-    /* 默认的取值, 执行完一次之后回到起点继续执行下一次 */
-    /* 往返动画, 执行完一次之后往回执行下一次 */
-    animation-direction: alternate;
-
-
-    /* -animation-fill-mode	规定当动画不播放时（当动画完成时，或当动画有一个延迟未开始播放时），要应用到元素的样式。 */
+    animation-iteration-count:infinite;/* -animation-direction	指定是否应该轮流反向播放动画。 */
+    /* 默认的取值,执行完一次之后回到起点继续执行下一次 */
+    /* 往返动画,执行完一次之后往回执行下一次 */
+    animation-direction:alternate;/* -animation-fill-mode	规定当动画不播放时（当动画完成时，或当动画有一个延迟未开始播放时），要应用到元素的样式。 */
     /* 让元素结束状态保持动画最后一帧的样式 */
-    animation-fill-mode: forwards;
+    animation-fill-mode:forwards;
   }
-
-
   /* 第一步：新建动画的关键帧 */
   @keyframes leftTopRight {
-    from {
-      margin-left: 0;
-    }
-
-    to {
-      margin-top: 30px;
-    }
+    from { margin-left: 0; }
+    to { margin-top: 30px; }
   }
-
   .vertical-middle {
-    // position: absolute;
-    // left: 0;
-    // top: 50%;
-    // transform: translateY(-50%);
-    // box-sizing: border-box;
-    // width: 50%;
-    // z-index: 5;
-    text-align: center;
-    margin-top: 30vh;
+    /*  position:absolute;*/
+    /*  left:0;*/
+    /*  top:50%;*/
+    /*  transform:translateY(-50%);*/
+    /*  box-sizing:border-box;*/
+    /*  width:50%;*/
+    /*  z-index:5;*/
+    text-align:center;margin-top:30vh;
   }
-
   .product-name {
-    position: relative;
-    display: inline-block;
-
-    h2 {
-      font-family: Avenir-Medium;
-      font-weight: 700;
-      font-size: 46px;
-      word-break: break-word;
-      margin: 0;
-      color: #5381fd;
-    }
+    position:relative;display:inline-block;
+    h2 { font-family: Avenir-Medium; font-weight: 700; font-size: 46px; word-break: break-word; margin: 0; color: #5381fd; }
   }
-
-  .product-title {
-    font-family: Arial-BoldMT;
-    font-size: 60px;
-    color: #69BD44;
-    letter-spacing: 0;
-    z-index: 2;
-  }
-
-  .product-desc {
-    font-family: PingFangSC;
-    font-weight: 600;
-    font-size: 40px;
-    color: #000000;
-  }
-
+  .product-title { font-family: Arial-BoldMT; font-size: 60px; color: #69BD44; letter-spacing: 0; z-index: 2; }
+  .product-desc { font-family: PingFangSC; font-weight: 600; font-size: 40px; color: #000000; }
   .button-area {
-    margin-top: 60px;
-
-    .button {
-      margin-right: 20px;
-      margin-bottom: 10px;
-    }
-
-    .button:last-child {
-      margin-right: 0;
-    }
-
-    @media screen and (max-width: 320px) {
-      .button {
-        margin-right: 1px;
-      }
+    margin-top:60px;
+    .button { margin-right: 20px; margin-bottom: 10px; }
+    .button:last-child { margin-right: 0; }
+    @media screen and (max-width:320px) {
+      .button { margin-right: 1px; }
     }
   }
-
-
-
   .github-buttons {
-    margin-top: 10px;
-
+    margin-top:10px;
     a {
-      margin-right: 20px;
-
-      &:last-child {
-        margin-right: 0;
-      }
-
+      margin-right:20px;
+      &:last-child { margin-right: 0; }
       div {
-        border-radius: 4px 0 0 4px;
-        display: inline-block;
-        height: 24px;
-        line-height: 24px;
-        padding-left: 6px;
-        color: #333;
-        background: #fff;
-        vertical-align: bottom;
-
-        img {
-          width: 16px;
-          height: 16px;
-          vertical-align: middle;
-        }
-
-        .type {
-          font-size: 16px;
-          padding: 0 8px 0 4px;
-          vertical-align: middle;
-          font-family: ArialMT;
-        }
-
-        .line {
-          vertical-align: middle;
-          display: inline-block;
-          box-sizing: border-box;
-          width: 1px;
-          height: 12px;
-          border-left: 1px solid rgba(255, 255, 255, 0.2);
-          font-family: ArialMT;
-        }
+        border-radius:4px 0 0 4px;display:inline-block;height:24px;line-height:24px;padding-left:6px;color:#333;background:#fff;vertical-align:bottom;
+        img { width: 16px; height: 16px; vertical-align: middle; }
+        .type { font-size: 16px; padding: 0 8px 0 4px; vertical-align: middle; font-family: ArialMT; }
+        .line { vertical-align: middle; display: inline-block; box-sizing: border-box; width: 1px; height: 12px; border-left: 1px solid rgba(255,255,255,0.2); font-family: ArialMT; }
       }
-
-      .release-note {
-        border-radius: 4px;
-      }
-
-      .count {
-        border-radius: 0 4px 4px 0;
-        vertical-align: bottom;
-        font-size: 16px;
-        padding: 0 8px;
-        background-color: #f0f0f0;
-      }
+      .release-note { border-radius: 4px; }
+      .count { border-radius: 0 4px 4px 0; vertical-align: bottom; font-size: 16px; padding: 0 8px; background-color: #f0f0f0; }
     }
   }
-
   .version-note {
-    margin: 22px 0 10px;
-
+    margin:22px 0 10px;
     a {
-      text-decoration: none;
-      display: inline-block;
-      font-family: Avenir-Heavy;
-      font-size: 14px;
-      color: #333;
-      background: #a5d0fc;
-      border-radius: 2px;
-      line-height: 24px;
-      padding: 0 6px;
-      margin-right: 10px;
-
-      &:last-child {
-        margin-right: 0;
-      }
+      text-decoration:none;display:inline-block;font-family:Avenir-Heavy;font-size:14px;color:#333;background:#a5d0fc;border-radius:2px;line-height:24px;padding:0 6px;margin-right:10px;
+      &:last-child { margin-right: 0; }
     }
   }
-
-  .release-date {
-    font-family: Avenir-Medium;
-    font-size: 12px;
-    color: #333;
-  }
-
+  .release-date { font-family: Avenir-Medium; font-size: 12px; color: #333; }
   .animation {
-    width: 546px;
-    height: 578px;
-    position: absolute;
-    top: 146px;
-    right: 0;
-
-    img {
-      position: absolute;
-    }
-
-    // .img1 {
-    //   width: 351px;
-    //   height: 156px;
-    //   left: calc(50% - 175px);
-    //   top: 0;
-    //   animation: updown 2s ease-in-out infinite alternate;
-    // }
-    // .img2 {
-    //   width: 457px;
-    //   height: 578px;
-    //   left: 50%;
-    //   transform: translateX(-50%);
-    //   top: 0;
-    //   z-index: 2;
-    // }
-    // .img3 {
-    //   width: 457px;
-    //   height: 578px;
-    //   left: 50%;
-    //   transform: translateX(-50%);
-    //   top: 0;
-    //   z-index: 1;
-    // }
-    // .img4 {
-    //   width: 93px;
-    //   height: 39px;
-    //   left: 0;
-    //   bottom: 88px;
-    //   animation: updown 2s ease-in-out infinite alternate;
-    // }
-    // .img5 {
-    //   width: 93px;
-    //   height: 39px;
-    //   right: 0;
-    //   bottom: 129px;
-    //   animation: updown 2s ease-in-out infinite alternate;
-    // }
-    // .outer-circle {
-    //   opacity: 0.1;
-    //   border: 2px solid #11BAFA;
-    //   width: 512px;
-    //   height: 208px;
-    //   border-radius: 50%;
-    //   position: absolute;
-    //   z-index: 1;
-    //   left: 50%;
-    //   transform: translateX(-50%);
-    //   bottom: 145px;
-    // }
-    // .rotate-circle {
-    //   position: absolute;
-    //   left: calc(50% - 202px);
-    //   top: 126px;
-    //   width: 404px;
-    //   height: 404px;
-    //   transform: rotateX(66deg);
-    //   svg {
-    //     animation: rotate-circle 1.2s linear infinite;
-    //   }
-    // }
+    width:546px;height:578px;position:absolute;top:146px;right:0;
+    img { position: absolute; }
+    /*  .img1{*/
+    /*    width:351px;*/
+    /*    height:156px;*/
+    /*    left:calc(50% - 175px);*/
+    /*    top:0;*/
+    /*    animation:updown 2s ease-in-out infinite alternate;*/
+    /*}
+    */
+    /*  .img2{*/
+    /*    width:457px;*/
+    /*    height:578px;*/
+    /*    left:50%;*/
+    /*    transform:translateX(-50%);*/
+    /*    top:0;*/
+    /*    z-index:2;*/
+    /*}
+    */
+    /*  .img3{*/
+    /*    width:457px;*/
+    /*    height:578px;*/
+    /*    left:50%;*/
+    /*    transform:translateX(-50%);*/
+    /*    top:0;*/
+    /*    z-index:1;*/
+    /*}
+    */
+    /*  .img4{*/
+    /*    width:93px;*/
+    /*    height:39px;*/
+    /*    left:0;*/
+    /*    bottom:88px;*/
+    /*    animation:updown 2s ease-in-out infinite alternate;*/
+    /*}
+    */
+    /*  .img5{*/
+    /*    width:93px;*/
+    /*    height:39px;*/
+    /*    right:0;*/
+    /*    bottom:129px;*/
+    /*    animation:updown 2s ease-in-out infinite alternate;*/
+    /*}
+    */
+    /*  .outer-circle{*/
+    /*    opacity:0.1;*/
+    /*    border:2px solid #11BAFA;*/
+    /*    width:512px;*/
+    /*    height:208px;*/
+    /*    border-radius:50%;*/
+    /*    position:absolute;*/
+    /*    z-index:1;*/
+    /*    left:50%;*/
+    /*    transform:translateX(-50%);*/
+    /*    bottom:145px;*/
+    /*}
+    */
+    /*  .rotate-circle{*/
+    /*    position:absolute;*/
+    /*    left:calc(50% - 202px);*/
+    /*    top:126px;*/
+    /*    width:404px;*/
+    /*    height:404px;*/
+    /*    transform:rotateX(66deg);
+    */
+    /*    svg{*/
+    /*      animation:rotate-circle 1.2s linear infinite;*/
+    /*}*/
+    /*}*/
+    
   }
-
-  @media screen and (max-width: 768px) {
-    .vertical-middle {
-      text-align: center;
-      width: 100%;
-    }
-
-    .animation {
-      display: none;
-    }
+  @media screen and (max-width:768px) {
+    .vertical-middle { text-align: center; width: 100%; }
+    .animation { display: none; }
   }
 }

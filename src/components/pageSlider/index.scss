@@ -1,34 +1,21 @@
 @import '../../css/variables.scss';
 
 .page-slider {
-  overflow: hidden;
+  overflow:hidden;
   .slider-list {
-    overflow: visible;
-    .slider-page {
-      overflow: hidden;
-      display: inline-block;
-      vertical-align: top;
-    }
+    overflow:visible;
+    .slider-page { overflow: hidden; display: inline-block; vertical-align: top; }
   }
   .slider-control {
-    overflow: hidden;
-    img {
-      display: inline-block;
-      width: 52px;
-      height: 52px;
-      cursor: pointer;
-    }
+    overflow:hidden;
+    img { display: inline-block; width: 52px; height: 52px; cursor: pointer; }
     .slider-control-prev {
-      float: left;
-      &-hidden {
-        display: none;
-      }
+      float:left;
+      &-hidden { display: none; }
     }
     .slider-control-next {
-      float: right;
-      &-hidden {
-        display: none;
-      }
+      float:right;
+      &-hidden { display: none; }
     }
   }
 }

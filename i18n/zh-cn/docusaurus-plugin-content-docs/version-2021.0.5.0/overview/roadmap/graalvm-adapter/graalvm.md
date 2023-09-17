@@ -6,7 +6,7 @@ description: Spring Cloud Alibaba, Roadmap GraalVM.
 
 ### 静态编译能力介绍
 
-Spring Boot 3.0 本次带来最大的改动就是 GraalVM 原生镜像的支持，也是官方文档中强调的他们花费时间精力比较多的部分。 GraalVM 技术作为JRE的替代方案，其通过预先编译（Ahead Of Time，AOT）等技术对 Java 应用进行预先编译，让 Spring 在运行应用时掌握更多应用有关的信息，让整个应用启动速度更快。另外，通过编译工具在编译过程中通过消除一些不必要的内容可以让最终的应用更小，占用内存更低。对于一些对启动速度要求非常高的场景，比如 Serverless、FaaS 场景非常友好！ 本次 Spring Boot 3.0 直接将其正式从 Spring Native 迁入到 Spring Boot 中来，也预示着该项技术开始逐渐走向成熟，Spring 生态开始迈入 GraalVM 阶段！
+Spring Boot 3.0 本次带来最大的改动就是 GraalVM 原生镜像的支持，也是官方文档中强调的他们花费时间精力比较多的部分。 GraalVM 技术作为 JRE 的替代方案，其通过预先编译（Ahead Of Time，AOT）等技术对 Java 应用进行预先编译，让 Spring 在运行应用时掌握更多应用有关的信息，让整个应用启动速度更快。另外，通过编译工具在编译过程中通过消除一些不必要的内容可以让最终的应用更小，占用内存更低。对于一些对启动速度要求非常高的场景，比如 Serverless、FaaS 场景非常友好！ 本次 Spring Boot 3.0 直接将其正式从 Spring Native 迁入到 Spring Boot 中来，也预示着该项技术开始逐渐走向成熟，Spring 生态开始迈入 GraalVM 阶段！
 
 跟 JVM 编译部署方式相比，GraalVM 具有以下特点：
 
@@ -24,7 +24,7 @@ Spring Boot 3.0 本次带来最大的改动就是 GraalVM 原生镜像的支持�
 
 ### 背景
 
-以下是社区对目前所支持的服务注册与发现模块相关示例应用在升级为 Spring Boot 3.0 以后，使用 GraalVM 构建原生应用镜像做的在启动速度和运行时占用内容相关的测试（测试过程在 macOS 11.4，2.6 GHz 6-Core Intel Core i7 处理器，16G 内存环境下分别模拟3次取平均值测得）：
+以下是社区对目前所支持的服务注册与发现模块相关示例应用在升级为 Spring Boot 3.0 以后，使用 GraalVM 构建原生应用镜像做的在启动速度和运行时占用内容相关的测试（测试过程在 macOS 11.4，2.6 GHz 6-Core Intel Core i7 处理器，16G 内存环境下分别模拟 3 次取平均值测得）：
 
 <p align="center">
 <img src="https://sca-storage.oss-cn-hangzhou.aliyuncs.com/website/graalvm_performance.jpg" />
@@ -32,7 +32,7 @@ Spring Boot 3.0 本次带来最大的改动就是 GraalVM 原生镜像的支持�
 
 从上述对比可发现，最新支持 Spring Boot 3.0 基于 GraalVM 的 Spring Cloud Alibaba 应用会在启动速度、运行时内存占用和应用包大小方面得到大幅度降低，例如，其中服务注册消费应用启动速度提升了近 10 倍，运行时内存占用比原来降低了近乎 2/3，效果非常明显。这给云原生时代，托管在云上的应用带来了显著优势，让其可以更快地进行弹性扩缩容以及降低企业整体用云成本！
 
-### 适配功能模块 
+### 适配功能模块
 
 - Nacos；
 
@@ -42,7 +42,7 @@ Spring Boot 3.0 本次带来最大的改动就是 GraalVM 原生镜像的支持�
 
 - RocketMQ。
 
-### 适配进度   
+### 适配进度
 
 目前各个模块已经成功通过 Spring 提供的 `RuntimeHintsRegistrar` 的方式添加了 Spring Cloud Alibaba 缺失的 hints 代码类；
 
@@ -54,6 +54,6 @@ Spring Boot 3.0 本次带来最大的改动就是 GraalVM 原生镜像的支持�
 
 - https://github.com/oracle/graalvm-reachability-metadata/issues/260
 
-### 正式发布时间 
+### 正式发布时间
 
-预计7月中下旬正式发布 2022.0.0.0 正式版本，将提供完善的静态编译能力支持。
+预计 7 月中下旬正式发布 2022.0.0.0 正式版本，将提供完善的静态编译能力支持。
