@@ -6,7 +6,7 @@ author: 赵炳堃（秉钧）
 date: 2023-08-31
 ---
 
-# 基于 Higress 网关实现 Spring Cloud 服务发现与路由
+## 基于 Higress 网关实现 Spring Cloud 服务发现与路由
 
 ## 使用 Nacos 做注册中心
 

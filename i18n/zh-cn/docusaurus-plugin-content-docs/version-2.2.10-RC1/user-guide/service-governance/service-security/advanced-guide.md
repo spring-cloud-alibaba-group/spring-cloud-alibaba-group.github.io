@@ -4,7 +4,7 @@ keywords: [Spring Cloud Alibaba]
 description: Service Security.
 ---
 
-# 进阶指南
+## 进阶指南
 
 本节将介绍一些安全治理相关的高级配置项。
 

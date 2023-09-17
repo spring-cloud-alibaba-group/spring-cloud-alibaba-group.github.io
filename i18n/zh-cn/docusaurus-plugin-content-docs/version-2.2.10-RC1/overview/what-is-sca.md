@@ -11,7 +11,7 @@ Spring Cloud Alibaba 致力于提供微服务开发的一站式解决方案。�
 
 此外，[Spring Cloud Alibaba 企业版](https://www.aliyun.com/product/aliware/mse?spm=sca-website.topbar.0.0.0)，包括无侵入服务治理(全链路灰度，无损上下线，离群实例摘除等)，企业级 Nacos 注册配置中心和企业级云原生网关等众多产品。
 
-# Spring Cloud 微服务体系
+## Spring Cloud 微服务体系
 
 Spring Cloud 是分布式微服务架构的一站式解决方案，它提供了一套简单易用的编程模型，使我们能在 Spring Boot 的基础上轻松地实现微服务系统的构建。
 **Spring Cloud 提供以微服务为核心的分布式系统构建标准。**
@@ -23,7 +23,7 @@ Spring Cloud 本身并不是一个开箱即用的框架，它是一套微服务�
 - Spring Cloud Netflix 是 Spring Cloud 的第一代实现，主要由 Eureka、Ribbon、Feign、Hystrix 等组件组成。
 - Spring Cloud Alibaba 是 Spring Cloud 的第二代实现，主要由 Nacos、Sentinel、Seata 等组件组成。
 
-# Spring Cloud Alibaba 定位
+## Spring Cloud Alibaba 定位
 
 ![spring-cloud](../../../../../static/img/overview-doc-img/spring-cloud-alibaba-img.png)
 

@@ -259,7 +259,7 @@ spec:
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/51256826/1687834110563-5f7d397c-a7ba-4fc4-82a9-fa6a5729a2c2.png#clientId=u9b61baf2-4bca-4&from=paste&height=280&id=ue7b2943d&originHeight=280&originWidth=3060&originalType=binary&ratio=1&rotation=0&showTitle=false&size=411876&status=done&style=none&taskId=uef2c54db-359c-4096-bf54-48f2c3eb489&title=&width=3060)
 当新版本验证完毕需要全量上线时，只需要将 demo 路由的 `higress.io/destination` 注解修改为 v2 版本，并删除 demo-ab 路由，这样所有流量就都会访问 v2 版本了。
 
-# 加入 Higress 和 Spring Cloud Aliaba 社区
+## 加入 Higress 和 Spring Cloud Aliaba 社区
 
 Spring Cloud Alibaba 社区交流群：钉钉群号 2415000986
 

@@ -1,7 +1,7 @@
 ---
-title: 在Proxyless Mesh上的探索
+title: 在 Proxyless Mesh 上的探索
 keywords: [Proxyless Mesh, 微服务治理]
-description: 介绍Spring Cloud Alibaba在Proxyless Mesh上的探索
+description: 介绍 Spring Cloud Alibaba 在 Proxyless Mesh 上的探索
 author: 铖朴
 date: 2023-01-20
 ---

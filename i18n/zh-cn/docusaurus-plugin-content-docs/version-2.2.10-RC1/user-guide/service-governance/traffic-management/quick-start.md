@@ -4,7 +4,7 @@ keywords: [Spring Cloud Alibaba]
 description: Traffic Management.
 ---
 
-# 快速开始
+## 快速开始
 
 本节主要演示如何使用 `spring-cloud-starter-alibaba-governance-routing` 模块完成标签路由功能：
 

@@ -4,7 +4,7 @@ keywords: [Spring Cloud Alibaba]
 description: Service Security.
 ---
 
-# 快速开始
+## 快速开始
 
 本节主要演示如何使用 Istio 下发安全治理配置到 Spring Cloud Alibaba (下文简称：SCA)并对应用做安全治理。SCA 安全治理模块同时支持对 Spring MVC 以及 Spring WebFlux 两种常用框架做安全治理。
 
