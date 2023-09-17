@@ -143,8 +143,8 @@ spring:
         polling-time: ${POLLING_TIME:10}
         # Istiod鉴权token(访问Istiod 15012端口时可用)
         istiod-token: ${ISTIOD_TOKEN:}
-      	# 是否打印xds相关日志
-				log-xds: ${LOG_XDS:true}
+           # 是否打印xds相关日志
+                    log-xds: ${LOG_XDS:true}
 ```
 
 在`application.yml`配置文件给生产者应用配置元信息:
@@ -223,9 +223,9 @@ EOF
 
 ```shell
 while true;
-	do curl localhost:18084/istio-label-routing;
-	sleep 0.1;
-	echo "";
+     do curl localhost:18084/istio-label-routing;
+     sleep 0.1;
+     echo "";
 done;
 ```
 
@@ -235,9 +235,9 @@ done;
 
 ```shell
 while true;
-	do curl localhost:18084/istio-label-routing -H "tag: gray";
-	sleep 0.1;
-	echo "";
+     do curl localhost:18084/istio-label-routing -H "tag: gray";
+     sleep 0.1;
+     echo "";
 done;
 ```
 
@@ -362,8 +362,8 @@ spring:
         polling-time: ${POLLING_TIMEOUT:10}
         # Istiod鉴权token(访问Istiod 15012端口时可用)
         istiod-token: ${ISTIOD_TOKEN:}
-      	# 是否打印xds相关日志
-				log-xds: ${LOG_XDS:true}
+           # 是否打印xds相关日志
+                    log-xds: ${LOG_XDS:true}
 ```
 
 ##### 2. 运行应用程序
@@ -399,9 +399,9 @@ EOF
 
 ```shell
 while true;
-	do curl localhost/auth -H "User-Agent: PostmanRuntime/7.29.2";
-	sleep 0.1;
-	echo "";
+     do curl localhost/auth -H "User-Agent: PostmanRuntime/7.29.2";
+     sleep 0.1;
+     echo "";
 done;
 ```
 
@@ -411,9 +411,9 @@ done;
 
 ```shell
 while true;
-	do curl localhost/auth;
-	sleep 0.1;
-	echo "";
+     do curl localhost/auth;
+     sleep 0.1;
+     echo "";
 done;
 ```
 

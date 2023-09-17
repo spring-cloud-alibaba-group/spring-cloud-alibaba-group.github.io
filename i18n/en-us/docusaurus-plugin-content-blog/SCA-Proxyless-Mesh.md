@@ -230,9 +230,9 @@ Send several HTTP requests without request headers to IstioConsumerApplication
 
 ```shell
 while true;
-	do curl localhost:18084/istio-label-routing;
-	sleep 0.1;
-	echo "";
+     do curl localhost:18084/istio-label-routing;
+     sleep 0.1;
+     echo "";
 done;
 ```
 
@@ -242,9 +242,9 @@ Then send an HTTP request with the request header tag as gray and the request pa
 
 ```shell
 while true;
-	do curl localhost:18084/istio-label-routing -H "tag: gray";
-	sleep 0.1;
-	echo "";
+     do curl localhost:18084/istio-label-routing -H "tag: gray";
+     sleep 0.1;
+     echo "";
 done;
 ```
 
@@ -406,9 +406,9 @@ Then send an HTTP request with a User-Agent header to verify that the rule is in
 
 ```shell
 while true;
-	do curl localhost/auth -H "User-Agent: PostmanRuntime/7.29.2";
-	sleep 0.1;
-	echo "";
+     do curl localhost/auth -H "User-Agent: PostmanRuntime/7.29.2";
+     sleep 0.1;
+     echo "";
 done;
 ```
 
@@ -418,9 +418,9 @@ Then send an HTTP request with a User-Agent header to verify that the rule is in
 
 ```shell
 while true;
-	do curl localhost/auth;
-	sleep 0.1;
-	echo "";
+     do curl localhost/auth;
+     sleep 0.1;
+     echo "";
 done;
 ```
 
