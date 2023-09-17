@@ -28,5 +28,5 @@ MD041: false
 # MD036/emphasis used instead of a header
 MD036: false
 
-#MD037/no-space-in-emphasis Spaces inside emphasis markers
+# MD037/no-space-in-emphasis Spaces inside emphasis markers
 MD037: false
