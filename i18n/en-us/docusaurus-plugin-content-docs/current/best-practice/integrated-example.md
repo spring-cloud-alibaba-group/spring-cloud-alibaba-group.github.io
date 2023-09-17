@@ -77,15 +77,15 @@ In this example, the SCA community provides two business scenarios:
 
 Before starting the service container, please configure the Host address mapping to ensure that the service can start normally!
 
-```shell
-# for integrated-example
-127.0.0.1 integrated-mysql
-127.0.0.1 nacos-server
-127.0.0.1 seata-server
-127.0.0.1 rocketmq
-127.0.0.1 gateway-service
-127.0.0.1 integrated-frontend
-```
+   ```shell
+   # for integrated-example
+   127.0.0.1 integrated-mysql
+   127.0.0.1 nacos-server
+   127.0.0.1 seata-server
+   127.0.0.1 rocketmq
+   127.0.0.1 gateway-service
+   127.0.0.1 integrated-frontend
+   ```
 
 ### Service Localization Deployment
 
@@ -110,14 +110,14 @@ For the first scenario, the order, account, and inventory microservices all need
 
    In order to facilitate the demonstration of the example, Nacos is started in the standalone mode, enter the directory after decompressing Nacos, and execute the following command.
 
-   ```shell
-   #Linux/Mac environment
-   sh bin/startup.sh -m standalone
-   #If you are in an Ubuntu environment, execute the above command to start the error message [[The symbol cannot be found, you can execute the following command
-   bash bin/startup.sh -m standalone
-   #WinEnvironment
-   .\bin\startup.cmd -m standalone
-   ```
+      ```shell
+      #Linux/Mac environment
+      sh bin/startup.sh -m standalone
+      #If you are in an Ubuntu environment, execute the above command to start the error message [[The symbol cannot be found, you can execute the following command
+      bash bin/startup.sh -m standalone
+      #WinEnvironment
+      .\bin\startup.cmd -m standalone
+      ```
 
 2. Add configuration
 
