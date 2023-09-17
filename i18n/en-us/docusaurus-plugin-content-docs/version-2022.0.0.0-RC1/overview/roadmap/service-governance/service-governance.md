@@ -10,11 +10,11 @@ Spring Cloud Alibaba has done some governance-related work before, but it only c
 
 ## List of features (TODO)
 
-1.  Support Istio first-part jwt
+1. Support Istio first-part jwt
 
-2.  GRPC version update and adaptation
+2. GRPC version update and adaptation
 
-3.  TLS
+3. TLS
 
     - mTLS/TLS communication (including using ISTIO's own mTLS and user-defined certificates)
 

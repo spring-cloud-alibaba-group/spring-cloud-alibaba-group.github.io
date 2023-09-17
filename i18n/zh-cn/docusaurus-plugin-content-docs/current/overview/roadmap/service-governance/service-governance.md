@@ -10,17 +10,17 @@ description: Spring Cloud Alibaba, Roadmap Service Governance.
 
 ## 功能列表（TODO）
 
-1.  支持 Istio first-part jwt
+1. 支持 Istio first-part jwt
 
-2.  GRPC 版本更新与适配
+2. GRPC 版本更新与适配
 
-3.  TLS
+3. TLS
 
     - mTLS/TLS 通信(包括使用 ISTIO 自带的 mTLS 以及用户自定义的证书)
 
     - 支持身份验证鉴权(mTLS 前提下)
 
-4.  DestinationRule & VirtualService
+4. DestinationRule & VirtualService
 
     - 通过 EDS 的相关信息来获取负载均衡的 endpoints，也就是说服务发现的数据可以直接从控制面获取，无需在云原生这套体系里面额外使用 Nacos 等注册中心
 

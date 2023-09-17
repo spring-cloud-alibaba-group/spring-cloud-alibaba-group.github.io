@@ -10,17 +10,17 @@ Spring Cloud Alibaba has done some governance-related work before, but it only c
 
 ## List of features (TODO)
 
-1.  Support Istio first-part jwt
+1. Support Istio first-part jwt
 
-2.  GRPC version update and adaptation
+2. GRPC version update and adaptation
 
-3.  TLS
+3. TLS
 
     - mTLS/TLS communication (including using ISTIO's own mTLS and user-defined certificates)
 
     - Support authentication authentication (under the premise of mTLS)
 
-4.  DestinationRule & VirtualService
+4. DestinationRule & VirtualService
 
     - Obtain load-balanced endpoints through EDS-related information, which means that service discovery data can be obtained directly from the control plane, without additional use of registration centers such as Nacos in the cloud-native system
 
