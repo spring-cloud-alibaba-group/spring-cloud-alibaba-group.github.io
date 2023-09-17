@@ -209,51 +209,67 @@ $ update product set name = 'GTS' where name = 'TXC';
 | 1   | GTS  | 2014  |
 
 1. 插入回滚日志：把前后镜像数据以及业务 SQL 相关的信息组成一条回滚日志记录，插入到 UNDO_LOG 表中。
-   ```java
+
+   ```json
    {
-   "branchId": 641789253,
-   "undoItems": [{
-   "afterImage": {
-   "rows": [{
-   	"fields": [{
-   		"name": "id",
-   		"type": 4,
-   		"value": 1
-   	}, {
-   		"name": "name",
-   		"type": 12,
-   		"value": "GTS"
-   	}, {
-   		"name": "since",
-   		"type": 12,
-   		"value": "2014"
-   	}]
-   }],
-   "tableName": "product"
-   },
-   "beforeImage": {
-   "rows": [{
-   	"fields": [{
-   		"name": "id",
-   		"type": 4,
-   		"value": 1
-   	}, {
-   		"name": "name",
-   		"type": 12,
-   		"value": "TXC"
-   	}, {
-   		"name": "since",
-   		"type": 12,
-   		"value": "2014"
-   	}]
-   }],
-   "tableName": "product"
-   },
-   "sqlType": "UPDATE"
-   }],
-   "xid": "xid:xxx"
+     "branchId": 641789253,
+     "undoItems": [
+       {
+         "afterImage": {
+           "rows": [
+             {
+               "fields": [
+                 {
+                   "name": "id",
+                   "type": 4,
+                   "value": 1
+                 },
+                 {
+                   "name": "name",
+                   "type": 12,
+                   "value": "GTS"
+                 },
+                 {
+                   "name": "since",
+                   "type": 12,
+                   "value": "2014"
+                 }
+               ]
+             }
+           ],
+           "tableName": "product"
+         },
+         "beforeImage": {
+           "rows": [
+             {
+               "fields": [
+                 {
+                   "name": "id",
+                   "type": 4,
+                   "value": 1
+                 },
+                 {
+                   "name": "name",
+                   "type": 12,
+                   "value": "TXC"
+                 },
+                 {
+                   "name": "since",
+                   "type": 12,
+                   "value": "2014"
+                 }
+               ]
+             }
+           ],
+           "tableName": "product"
+         },
+         "sqlType": "UPDATE"
+       }
+     ],
+     "xid": "xid:xxx"
    }
    ```
+
 2. 提交前，向 TC 注册分支：申请 product 表中，主键值等于 1 的记录的 全局锁 。
 3. 本地事务提交：业务数据的更新和前面步骤中生成的 UNDO LOG 一并提交。
 4. 将本地事务提交的结果上报给 TC。

@@ -211,49 +211,63 @@ $ update product set name = 'GTS' where name = 'TXC';
 
 1. 插入回滚日志：把前后镜像数据以及业务 SQL 相关的信息组成一条回滚日志记录，插入到 UNDO_LOG 表中。
 
-   ```java
+   ```json
    {
-   "branchId": 641789253,
-   "undoItems": [{
-   "afterImage": {
-   "rows": [{
-   	"fields": [{
-   		"name": "id",
-   		"type": 4,
-   		"value": 1
-   	}, {
-   		"name": "name",
-   		"type": 12,
-   		"value": "GTS"
-   	}, {
-   		"name": "since",
-   		"type": 12,
-   		"value": "2014"
-   	}]
-   }],
-   "tableName": "product"
-   },
-   "beforeImage": {
-   "rows": [{
-   	"fields": [{
-   		"name": "id",
-   		"type": 4,
-   		"value": 1
-   	}, {
-   		"name": "name",
-   		"type": 12,
-   		"value": "TXC"
-   	}, {
-   		"name": "since",
-   		"type": 12,
-   		"value": "2014"
-   	}]
-   }],
-   "tableName": "product"
-   },
-   "sqlType": "UPDATE"
-   }],
-   "xid": "xid:xxx"
+     "branchId": 641789253,
+     "undoItems": [
+       {
+         "afterImage": {
+           "rows": [
+             {
+               "fields": [
+                 {
+                   "name": "id",
+                   "type": 4,
+                   "value": 1
+                 },
+                 {
+                   "name": "name",
+                   "type": 12,
+                   "value": "GTS"
+                 },
+                 {
+                   "name": "since",
+                   "type": 12,
+                   "value": "2014"
+                 }
+               ]
+             }
+           ],
+           "tableName": "product"
+         },
+         "beforeImage": {
+           "rows": [
+             {
+               "fields": [
+                 {
+                   "name": "id",
+                   "type": 4,
+                   "value": 1
+                 },
+                 {
+                   "name": "name",
+                   "type": 12,
+                   "value": "TXC"
+                 },
+                 {
+                   "name": "since",
+                   "type": 12,
+                   "value": "2014"
+                 }
+               ]
+             }
+           ],
+           "tableName": "product"
+         },
+         "sqlType": "UPDATE"
+       }
+     ],
+     "xid": "xid:xxx"
    }
    ```
 
