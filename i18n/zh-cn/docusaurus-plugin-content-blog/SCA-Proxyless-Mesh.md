@@ -38,18 +38,18 @@ Spring Cloud Alibaba 作为一种侵入式的微服务解决方案，通过基�
 要通过 Mesh 化方案解决微服务治理需求，一个能给应用动态下发规则的控制面不可或缺，社区本着不重复造轮子，拥抱业界主流解决方案的原则，通过支持 xDS 协议不仅为用户提供通过主流的 Istio 控制面来对 Spring Cloud Alibaba 应用进行服务治理以外，用户也可以使用阿里巴巴开源的 OpenSergo 微服务治理控制面所提供的差异化治理能力进行应用治理。相关提供 Mesh 技术方案社区在最近发布的 2.2.10-RC 版本[[6]](https://github.com/alibaba/spring-cloud-alibaba/releases)中进行了提供。做了提供微服治理能力的第一个版本，社区当前已经部分兼容了Istio VirtualService & DestinationRule 的标签路由和服务鉴权能力，用户可以通过 Istio 控制面给应用下发相关规则，对应用进行流量治理。
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/59256332/1673253324947-3effabdf-3956-48cf-a101-5c366a91b2ab.png#clientId=u641e2097-531f-4&from=paste&height=245&id=u670014cb&name=image.png&originHeight=360&originWidth=762&originalType=binary&ratio=1&rotation=0&showTitle=false&size=155552&status=done&style=none&taskId=ud58f82c8-67cb-4fb2-988a-88eb670d8ff&title=&width=517.9971313476562)
 
-#### 准备工作
+### 准备工作
 
 Proxyless Mesh 的方案首先需要准备好一个能给应用动态下发规则的控制面，本次 Spring Cloud Alibaba 2.2.10-RC1 版本支持了 2 种当前市面上的主流控制面来更好的满足各类用户诉求：
 
-##### 1. Istio 控制面
+#### 1. Istio 控制面
 
 为了使用 Istio 控制面下发治理规则，首先需要在 K8s 环境中安装 Istio 控制面，您可以使用 Spring Cloud Alibaba 社区提供的测试用的 Istio 环境，也可以选择自己尝试安装一套 Istio 控制面，安装 Istio 控制面的流程如下：
 
 1. 安装 K8s 环境，请参考 K8s 的[安装工具](https://kubernetes.io/zh-cn/docs/tasks/tools/)小节
 2. 在 K8s 上安装并启用 Istio，请参考 Istio 官方文档的[安装](https://istio.io/latest/zh/docs/setup/install/)小节
 
-##### 2. OpenSergo 控制面
+#### 2. OpenSergo 控制面
 
 OpenSergo 是开放通用的，覆盖微服务及上下游关联组件的微服务治理项目。OpenSergo 从微服务的角度出发，涵盖流量治理、服务容错、服务元信息治理、安全治理等关键治理领域，提供一系列的治理能力与标准、生态适配与最佳实践，支持 Java, Go, Rust 等多语言生态。
 OpenSergo 控制平面 (Control Plane) 作为 OpenSergo CRD 的统一管控组件，承载服务治理配置转换与下发的职责。
@@ -57,11 +57,11 @@ OpenSergo 控制平面 (Control Plane) 作为 OpenSergo CRD 的统一管控组�
 1. 安装 K8s 环境，请参考 K8s 的[安装工具](https://kubernetes.io/zh-cn/docs/tasks/tools/)小节
 2. 在 K8s 上安装并启用 OpenSergo Control Plane，请参考 OpenSergo 官方提供的 [OpenSergo 控制面安装文档](https://opensergo.io/zh-cn/docs/quick-start/opensergo-control-plane/)
 
-![](https://user-images.githubusercontent.com/9434884/182856237-8ce85f41-1a1a-4a2a-8f58-db042bd4db42.png#height=336&id=MSEWC&originHeight=1362&originWidth=1856&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=&width=458)
+![img](https://user-images.githubusercontent.com/9434884/182856237-8ce85f41-1a1a-4a2a-8f58-db042bd4db42.png#height=336&id=MSEWC&originHeight=1362&originWidth=1856&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=&width=458)
 
-#### 标签路由
+### 标签路由
 
-##### 应用背景
+#### 应用背景
 
 在现在的微服务架构中，服务的数量十分庞大，为了更好的管理这些微服务应用，可能需要给这些应用打上标签，并且将一个或多个服务的提供者划分到同一个分组，从而约束流量只在指定分组中流转，实现流量隔离的目的。标签路由可以作为蓝绿发布、灰度发布等场景的能力基础，它可以被应用在以下场景中：
 
@@ -81,9 +81,9 @@ OpenSergo 控制平面 (Control Plane) 作为 OpenSergo CRD 的统一管控组�
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/59256332/1670815281296-8caae5f2-278f-410b-847c-c3751cb741be.png#clientId=ub03674c8-c3cf-4&from=paste&height=527&id=u65a948c4&name=image.png&originHeight=842&originWidth=724&originalType=url&ratio=1&rotation=0&showTitle=false&size=137213&status=done&style=none&taskId=u1351cdf1-5842-4688-92fa-b688bcbf1fc&title=&width=453)
 目前，Spring Cloud Alibaba Mesh 提供的标签路由能力支持根据请求路径、请求头和 HTTP 请求参数等请求元信息对请求做标签路由，让应用发出的请求根据 Istio 控制面下发的规则发送至指定版本的上游服务。
 
-##### 使用方式
+#### 使用方式
 
-###### 1. 导入依赖并配置应用
+##### 1. 导入依赖并配置应用
 
 首先，修改`pom.xml` 文件，导入 Spring Cloud Alibaba 2.2.10-RC1 版本下的标签路由以及 Istio 资源转换模块的相关依赖（推荐通过云原生应用脚手架 [start.aliyun.com](https://start.aliyun.com) 进行项目构建试用）：
 
@@ -158,14 +158,14 @@ spring.cloud.nacos.discovery.metadata.version=v2
 
 如果是需要对接 OpenSergo 控制面的，则需要给消费者应用加上 `spring-cloud-starter-alibaba-governance-routing` 跟 `spring-cloud-starter-opensergo-adapter `相关依赖，并配置 OpenSergo 所需的配置即可。
 
-###### 2. 运行应用程序
+##### 2. 运行应用程序
 
 启动两个生产者应用和一个消费者应用，并将这些应用都注册到本地的 Nacos 注册中心里，消费者在调用生产者时，会根据控制面下发的标签路由规则来调用不同的生产者实例。启动消费者和两个生产者后，可以在 Nacos 注册中心里看到这几个已注册的服务:
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/59256332/1670829548457-b8c4c868-4eba-48df-9977-94a487cf7a16.png#clientId=ub03674c8-c3cf-4&from=paste&height=1014&id=u8f0da6dc&name=image.png&originHeight=2028&originWidth=3574&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1263912&status=done&style=none&taskId=u7ec88d37-d168-486e-b571-607313aa1fa&title=&width=1787)
 控制台上会打印出以下信息，说明此应用正在监听 Istio 控制面下发的配置：
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/59256332/1670827540929-bacb3da6-5c5e-47ec-8ceb-e2ba9047da6b.png#clientId=ub03674c8-c3cf-4&from=paste&height=253&id=FEeSH&name=image.png&originHeight=506&originWidth=2442&originalType=binary&ratio=1&rotation=0&showTitle=false&size=755462&status=done&style=none&taskId=ue6ca5f99-8c2b-41a3-b7fb-47b02395ec5&title=&width=1221)
 
-##### 3. 通过 Istio 控制面下发标签路由规则
+#### 3. 通过 Istio 控制面下发标签路由规则
 
 通过 Istio 控制面下发标签路由规则，首先下发 DestinationRule 规则：
 
