@@ -22,15 +22,15 @@ description: Sidecar,Quick Start.
 
 2. 启动 Nacos Server；
 
-    下载解压后 我们需要进入到 bin 目录启动 Nacos 服务，一定不要双击启动，双击默认会以集群方式启动，示例只需以单机方式启动即可。
+   下载解压后 我们需要进入到 bin 目录启动 Nacos 服务，一定不要双击启动，双击默认会以集群方式启动，示例只需以单机方式启动即可。
 
-    ```shell
-    $ startup.cmd -m standalone
-    ```
+   ```shell
+   $ startup.cmd -m standalone
+   ```
 
 3. 登录 Nacos。
 
-  在浏览器地址栏中输入 localhost:8848/nacos 可以看到 Nacos 提供的控制台界面 **（用户名和密码都是 nacos/nacos）**。
+在浏览器地址栏中输入 localhost:8848/nacos 可以看到 Nacos 提供的控制台界面 **（用户名和密码都是 nacos/nacos）**。
 
 ### 引入依赖
 
@@ -60,31 +60,31 @@ description: Sidecar,Quick Start.
 > 本示例提供一个 NodeJS 服务。本地环境需要安装 Node.js 以正常启动 Node 服务，体验 spring-cloud-starter-alibaba-sidecar 功能！
 
 ```javascript title="异构微服务代码"
-var http = require('http');
+var http = require("http");
 var url = require("url");
-var path = require('path');
+var path = require("path");
 
 // 创建server
-var server = http.createServer(function(req, res) {
-    // 获得请求的路径
-    var pathname = url.parse(req.url).pathname;
-    res.writeHead(200, { 'Content-Type' : 'application/json; charset=utf-8' });
-    // 访问http://localhost:8060/，将会返回{"index":"欢迎来到首页"}
-    if (pathname === '/') {
-        res.end(JSON.stringify({ "index" : "欢迎来到首页" }));
-    }
-    // 访问http://localhost:8060/health，将会返回{"status":"UP"}
-    else if (pathname === '/health.json') {
-        res.end(JSON.stringify({ "status" : "UP" }));
-    }
-    // 其他情况返回404
-    else {
-        res.end("404");
-    }
+var server = http.createServer(function (req, res) {
+  // 获得请求的路径
+  var pathname = url.parse(req.url).pathname;
+  res.writeHead(200, { "Content-Type": "application/json; charset=utf-8" });
+  // 访问http://localhost:8060/，将会返回{"index":"欢迎来到首页"}
+  if (pathname === "/") {
+    res.end(JSON.stringify({ index: "欢迎来到首页" }));
+  }
+  // 访问http://localhost:8060/health，将会返回{"status":"UP"}
+  else if (pathname === "/health.json") {
+    res.end(JSON.stringify({ status: "UP" }));
+  }
+  // 其他情况返回404
+  else {
+    res.end("404");
+  }
 });
 // 创建监听，并打印日志
-server.listen(8060, function() {
-    console.log('listening on localhost:8060');
+server.listen(8060, function () {
+  console.log("listening on localhost:8060");
 });
 ```
 
@@ -113,8 +113,8 @@ sidecar:
   health-check-url: http://localhost:8060/health.json
 management:
 endpoint:
-    health:
-      show-details: always
+  health:
+    show-details: always
 ```
 
 ### 启动服务并测试

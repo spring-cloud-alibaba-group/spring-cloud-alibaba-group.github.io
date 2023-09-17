@@ -17,12 +17,11 @@ hesitate to get in touch with the Spring Cloud Alibaba Security Team by dropping
 
 PLEASE PAY ATTENTION to report the security issue on the security email before disclosing it on public domain.
 
-
 ## VULNERABILITY HANDLING
 
 An overview of the vulnerability handling process is:
 
-* The reporter reports the vulnerability privately to Apache.
-* The appropriate project's security team works privately with the reporter to resolve the vulnerability.
-* A new release of the Apache product concerned is made that includes the fix.
-* The vulnerability is publically announced.
+- The reporter reports the vulnerability privately to Apache.
+- The appropriate project's security team works privately with the reporter to resolve the vulnerability.
+- A new release of the Apache product concerned is made that includes the fix.
+- The vulnerability is publically announced.

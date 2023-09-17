@@ -31,4 +31,5 @@ body:
     attributes:
       label: Would you like to fix this issue?
       description: You can choose to fix this issue yourself or let other contributors in the community fix it.
-      options: ["Yes! Please assign to me!", "No. Please assign another contributor"]
+      options:
+        ["Yes! Please assign to me!", "No. Please assign another contributor"]

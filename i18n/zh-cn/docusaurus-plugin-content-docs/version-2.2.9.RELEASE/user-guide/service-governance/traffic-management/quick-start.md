@@ -3,9 +3,13 @@ title: 快速开始
 keywords: [Spring Cloud Alibaba]
 description: Traffic Management.
 ---
+
 # 快速开始
+
 本节主要演示如何使用 `spring-cloud-starter-alibaba-governance-routing` 模块完成标签路由功能：
+
 ## 组件支持说明
+
 目前，路由模块只支持了部分组件：
 
 远程调用组件：Spring Cloud OpenFeign
@@ -22,18 +26,18 @@ description: Traffic Management.
 
 1. 首先，修改需要进行路由服务的 pom.xml 文件，引入 `spring-cloud-starter-alibaba-governance-routing` 依赖。
 
-  ```xml
-  <dependency>
-    <groupId>com.alibaba.cloud</groupId>
-    <artifactId>spring-cloud-starter-alibaba-governance-routing</artifactId>
-  </dependency>
-  ```
+```xml
+<dependency>
+  <groupId>com.alibaba.cloud</groupId>
+  <artifactId>spring-cloud-starter-alibaba-governance-routing</artifactId>
+</dependency>
+```
 
-2. 配置当没有路由规则时的负载均衡算法（以随机负载均衡算法为例）如果没有配置，使用 Ribbon 默认的负载均衡算法 ZoneAvoidanceRule 
+2. 配置当没有路由规则时的负载均衡算法（以随机负载均衡算法为例）如果没有配置，使用 Ribbon 默认的负载均衡算法 ZoneAvoidanceRule
 
-  ```
-  spring.cloud.governance.routing.rule=RandomRule
-  ```
+```
+spring.cloud.governance.routing.rule=RandomRule
+```
 
 ### 应用启动
 
@@ -42,6 +46,7 @@ description: Traffic Management.
 ### 效果演示
 
 #### 规则说明
+
 实例中设置的规则如下：
 
 ```java
@@ -85,7 +90,7 @@ public void getDataFromControlPlaneTest() {
 
 代码对应的规则如下：
 
-若同时满足请求参数中含有 `tag=v2` ，请求头中含有 id 且值小于10，uri 为 `/router-test` 则流量全部路由到 v2 版本中，若有一条不满足，则流量路由到 v1 版本中。
+若同时满足请求参数中含有 `tag=v2` ，请求头中含有 id 且值小于 10，uri 为 `/router-test` 则流量全部路由到 v2 版本中，若有一条不满足，则流量路由到 v1 版本中。
 
 规则也支持动态修改，测试动态修改的规则如下：
 
@@ -98,7 +103,7 @@ public void getDataFromControlPlaneTest() {
 	unifiedRouteDataStructure.setTargetService("service-provider");
 	LabelRouteRule labelRouteData = new LabelRouteRule();
 	labelRouteData.setDefaultRouteVersion("v1");
-	
+
 	RouteRule routeRule = new HeaderRule();
 	routeRule.setType("header");
 	routeRule.setCondition("=");
@@ -109,7 +114,7 @@ public void getDataFromControlPlaneTest() {
 	routeRule1.setCondition(">");
 	routeRule1.setKey("id");
 	routeRule1.setValue("10");
-	
+
 	RouteRule routeRule2 = new UrlRule.Path();
 	routeRule2.setType("path");
 	routeRule2.setCondition("=");
@@ -117,7 +122,7 @@ public void getDataFromControlPlaneTest() {
 	routeRules.add(routeRule);
 	routeRules.add(routeRule1);
 	routeRules.add(routeRule2);
-	
+
 	MatchService matchService = new MatchService();
 	matchService.setVersion("v2");
 	matchService.setWeight(50);
@@ -133,7 +138,7 @@ public void getDataFromControlPlaneTest() {
 
 代码对应的规则如下：
 
-若同时满足请求参数中含有 `tag=v2`，请求头中含有 id 且值小于10，uri 为 `/router-test`，则50%流量路由到 v2 版本中，剩下的流量路由到 v1 版本中，若有一条不满足，则流量路由到 v1 版本中。
+若同时满足请求参数中含有 `tag=v2`，请求头中含有 id 且值小于 10，uri 为 `/router-test`，则 50%流量路由到 v2 版本中，剩下的流量路由到 v1 版本中，若有一条不满足，则流量路由到 v1 版本中。
 
 ##### 演示步骤
 
@@ -145,13 +150,13 @@ public void getDataFromControlPlaneTest() {
    ```
 
    访问 http://localhost:18083/router-test?id=11 且请求头设置 tag 值为 v2 满足路由规则，路由到 v2 版本中，v2 版本实例打印返回如下结果：
-   
+
    ```shell
    Route in 30.221.132.228: 18082,version is v2.
    ```
 
 2. 访问 http://localhost:18083/update 模拟动态修改路由规则。
-   访问 http://localhost:18083/router-test 不满足路由规则，路由到 v1 版本中，v1版本实例打印返回如下结果： 
+   访问 http://localhost:18083/router-test 不满足路由规则，路由到 v1 版本中，v1 版本实例打印返回如下结果：
 
    ```shell
    Route in 30.221.132.228: 18081,version is v1.
@@ -159,13 +164,13 @@ public void getDataFromControlPlaneTest() {
 
    访问 http://localhost:18083/router-test?id=11 且请求头设置 tag 值为 v2 满足路由规则，50%
    路由到 v2 版本中，v2 版本实例打印返回如下结果：
-   
+
    ```shell
    Route in 30.221.132.228: 18082,version is v2.
    ```
-   
+
    50% 路由到 v1 版本中，v1 版本实例打印返回如下结果：
-   
+
    ```shell
    Route in 30.221.132.228: 18081,version is v1.
    ```
@@ -173,13 +178,14 @@ public void getDataFromControlPlaneTest() {
 3. 如果不推送规则，走正常路由
 
 ## 集成 Istio
+
 **注意 本章节只是为了便于您理解接入方式，本示例代码中已经完成接入工作，您无需再进行修改。**
 
 ### 安装 K8s 环境
 
 请参考 K8s 的[安装工具](https://kubernetes.io/zh-cn/docs/tasks/tools/)小节。
 
-### 在K8s上安装并启用Istio
+### 在 K8s 上安装并启用 Istio
 
 请参考 Istio 官方文档的[安装](https://istio.io/latest/zh/docs/setup/install/)小节。
 
@@ -192,55 +198,55 @@ public void getDataFromControlPlaneTest() {
 
 1. 首先，修改 pom.xml 文件，引入 `spring-cloud-starter-alibaba-governance-routing` 依赖。同时引入 Spring Cloud Alibaba 的 `spring-cloud-starter-xds-adapter` 模块
 
-  ```xml
-  <dependency>
+```xml
+<dependency>
+  <groupId>com.alibaba.cloud</groupId>
+  <artifactId>spring-cloud-starter-alibaba-governance-routing</artifactId>
+</dependency>
+<dependency>
     <groupId>com.alibaba.cloud</groupId>
-    <artifactId>spring-cloud-starter-alibaba-governance-routing</artifactId>
-  </dependency>
-  <dependency>
-      <groupId>com.alibaba.cloud</groupId>
-      <artifactId>spring-cloud-starter-xds-adapter</artifactId>
-  </dependency>
-  ```
+    <artifactId>spring-cloud-starter-xds-adapter</artifactId>
+</dependency>
+```
 
 2. 在 `src/main/resources/application.yml` 配置文件中配置 Istio 控制面的相关信息:
 
-  ```yml
-  server:
-    port: 18084
-  spring:
-    main:
-      allow-bean-definition-overriding: true
-    application:
-      name: service-consumer
-    cloud:
-      nacos:
-        discovery:
-          server-addr: 127.0.0.1:8848
-          fail-fast: true
-          username: nacos
-          password: nacos
-      governance:
-        auth:
-          # 是否开启鉴权
-          enabled: ${ISTIO_AUTH_ENABLE:false}
-      istio:
-        config:
-          # 是否开启Istio配置转换
-          enabled: ${ISTIO_CONFIG_ENABLE:true}
-          # Istiod ip
-          host: ${ISTIOD_ADDR:127.0.0.1}
-          # Istiod 端口
-          port: ${ISTIOD_PORT:15010}
-          # 轮询Istio线程池大小
-          polling-pool-size: ${POLLING_POOL_SIZE:10}
-          # 轮询Istio时间间隔
-          polling-time: ${POLLING_TIME:10}
-          # Istiod鉴权token(访问Istiod 15012端口时可用)
-          istiod-token: ${ISTIOD_TOKEN:}
-          # 是否打印xds相关日志
-          log-xds: ${LOG_XDS:true}
-  ```
+```yml
+server:
+  port: 18084
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: service-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        fail-fast: true
+        username: nacos
+        password: nacos
+    governance:
+      auth:
+        # 是否开启鉴权
+        enabled: ${ISTIO_AUTH_ENABLE:false}
+    istio:
+      config:
+        # 是否开启Istio配置转换
+        enabled: ${ISTIO_CONFIG_ENABLE:true}
+        # Istiod ip
+        host: ${ISTIOD_ADDR:127.0.0.1}
+        # Istiod 端口
+        port: ${ISTIOD_PORT:15010}
+        # 轮询Istio线程池大小
+        polling-pool-size: ${POLLING_POOL_SIZE:10}
+        # 轮询Istio时间间隔
+        polling-time: ${POLLING_TIME:10}
+        # Istiod鉴权token(访问Istiod 15012端口时可用)
+        istiod-token: ${ISTIOD_TOKEN:}
+        # 是否打印xds相关日志
+        log-xds: ${LOG_XDS:true}
+```
 
 #### 应用启动
 
@@ -341,23 +347,23 @@ $ kubectl delete DestinationRule my-destination-rule
 
 1. 首先，修改 pom.xml 文件，引入 `spring-cloud-starter-alibaba-governance-routing` 依赖。同时引入 Spring Cloud Alibaba 的 `spring-cloud-starter-opensergo-adapter` 模块
 
-  ```xml
-  <dependency>
-    <groupId>com.alibaba.cloud</groupId>
-    <artifactId>spring-cloud-starter-alibaba-governance-routing</artifactId>
-  </dependency>
-  <dependency>
-    <groupId>com.alibaba.cloud</groupId>
-    <artifactId>spring-cloud-starter-opensergo-adapter</artifactId>
-  </dependency>
-  ```
+```xml
+<dependency>
+  <groupId>com.alibaba.cloud</groupId>
+  <artifactId>spring-cloud-starter-alibaba-governance-routing</artifactId>
+</dependency>
+<dependency>
+  <groupId>com.alibaba.cloud</groupId>
+  <artifactId>spring-cloud-starter-opensergo-adapter</artifactId>
+</dependency>
+```
 
 2. 在 application.properties 配置文件中配置 OpenSergo 控制面的相关信息
 
-  ```properties
-  # OpenSergo 控制面 endpoint
-  spring.cloud.opensergo.endpoint=127.0.0.1:10246
-  ```
+```properties
+# OpenSergo 控制面 endpoint
+spring.cloud.opensergo.endpoint=127.0.0.1:10246
+```
 
 #### 应用启动
 

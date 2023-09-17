@@ -1,76 +1,27 @@
 @import '../../../css/variables.scss';
 
 .feature-section {
-  // background: #88d878;
-  background-image: url('https://img.alicdn.com/imgextra/i2/O1CN01SLrZ3V1VBiYmzJ3an_!!6000000002615-2-tps-2000-1000.png');
-
+  /*  background:#88d878;*/
+  background-image:url('https://img.alicdn.com/imgextra/i2/O1CN01SLrZ3V1VBiYmzJ3an_!!6000000002615-2-tps-2000-1000.png');
   .feature-container {
-    box-sizing: border-box;
-    max-width: $contentWidth;
-    margin: 0 auto;
-    position: relative;
-    padding: 80px 40px 40px;
-
-    h3 {
-      font-family: Avenir-Medium;
-      font-weight: 500;
-      font-size: 48px;
-      color: #fff;
-      text-align: center;
-      margin: 0 0 60px;
-    }
-
+    box-sizing:border-box;max-width:$contentWidth;margin:0 auto;position:relative;padding:80px 40px 40px;
+    h3 { font-family: Avenir-Medium; font-weight: 500; font-size: 48px; color: #fff; text-align: center; margin: 0 0 60px; }
     ul {
-      list-style: none;
-      padding: 0;
-      max-width: $contentWidth;
-      margin: 0 auto;
-
+      list-style:none;padding:0;max-width:$contentWidth;margin:0 auto;
       li {
-        vertical-align: top;
-        display: inline-block;
-        margin-bottom: 40px;
-        width: 45%;
-        background-color: #fff;
-        border-radius: 10px;
-        margin-right: 20px;
-        height: 160px;
-
+        vertical-align:top;display:inline-block;margin-bottom:40px;width:45%;background-color:#fff;border-radius:10px;margin-right:20px;height:160px;
         .docsite-icon {
-          vertical-align: top;
-          margin-right: 20px;
-
-          &::before {
-            vertical-align: top;
-          }
+          vertical-align:top;margin-right:20px;
+          &::before { vertical-align: top; }
         }
-
         div {
-          display: inline-block;
-          width: 90%;
-
-          h4 {
-            font-family: PingFangSC;
-            font-weight: 500;
-            font-size: 24px;
-            color: #80DB58;
-            margin: 30px 0 15px 50px;
-          }
-
-          p {
-            font-family: PingFangSC;
-            font-size: 12px;
-            line-height: 18px;
-            color: #333944;
-            margin-left: 50px;
-          }
+          display:inline-block;width:90%;
+          h4 { font-family: PingFangSC; font-weight: 500; font-size: 24px; color: #80DB58; margin: 30px 0 15px 50px; }
+          p { font-family: PingFangSC; font-size: 12px; line-height: 18px; color: #333944; margin-left: 50px; }
         }
       }
-
-      @media screen and (max-width: 768px) {
-        li {
-          width: 100%;
-        }
+      @media screen and (max-width:768px) {
+        li { width: 100%; }
       }
     }
   }

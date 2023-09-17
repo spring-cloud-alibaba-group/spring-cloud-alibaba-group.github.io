@@ -1,6 +1,6 @@
 ---
 title: "Quick Start"
-keywords: [Spring Cloud Alibaba,Seata.]
+keywords: [Spring Cloud Alibaba, Seata.]
 description: Seata, Quick Start.
 ---
 
@@ -33,9 +33,9 @@ The project provides related examples: [Example](https://github.com/alibaba/spri
 
 3. Create a database table, which can be quickly operated according to `all.sql` under `spring-cloud-alibaba-examples/seata-example`:
 
-     - Create [transaction log table](https://github.com/seata/seata/tree/develop/script/client) according to the selected transaction mode. For example, the default is AT mode, and the undo_log table needs to be used, then enter at/db and select the corresponding database script to execute.
-     - Create the [Status Record Table](https://github.com/seata/seata/tree/develop/script/server/db) required for seata-server db mode, including `global_table`, `branch_table`, `lock_table`, `distributed_lock`.
-     - Create the database tables required in the `spring-cloud-alibaba-examples/seata-example` example.
+   - Create [transaction log table](https://github.com/seata/seata/tree/develop/script/client) according to the selected transaction mode. For example, the default is AT mode, and the undo_log table needs to be used, then enter at/db and select the corresponding database script to execute.
+   - Create the [Status Record Table](https://github.com/seata/seata/tree/develop/script/server/db) required for seata-server db mode, including `global_table`, `branch_table`, `lock_table`, `distributed_lock`.
+   - Create the database tables required in the `spring-cloud-alibaba-examples/seata-example` example.
 
 4. Create the Nacos configuration required by `spring-cloud-alibaba-examples/seata-example`.
 
@@ -52,23 +52,23 @@ The project provides related examples: [Example](https://github.com/alibaba/spri
 
 5. Start Seata Server, there are two ways: Spring Boot and download server:
 
-    - Run the seata-server under `spring-cloud-alibaba-examples/seata-example` to start the Seata server.
-    - Start Seata Server according to [seata-server.jar](https://seata.io/zh-cn/docs/ops/deploy-guide-beginner.html) officially provided by the Seata community.
+   - Run the seata-server under `spring-cloud-alibaba-examples/seata-example` to start the Seata server.
+   - Start Seata Server according to [seata-server.jar](https://seata.io/zh-cn/docs/ops/deploy-guide-beginner.html) officially provided by the Seata community.
 
 6. Start the sub-services `account-service`, `order-service`, `storage-service` under the `spring-cloud-alibaba-examples/seata-example` folder locally, and finally start the global transaction control service `business -service`.
 
 7. After starting the example, visit the following URL through the HTTP GET method to verify the scenarios of calling other services through RestTemplate and FeignClient in `business-service`:
 
-    http://127.0.0.1:18081/seata/feign
-    http://127.0.0.1:18081/seata/rest
+   http://127.0.0.1:18081/seata/feign
+   http://127.0.0.1:18081/seata/rest
 
 ### Seata Dashboard
 
 - Seata 1.5.1 supports Seata console local access console address: `http://127.0.0.1:7091`.
 - The ongoing transaction information and global lock information can be observed through the Seata console, and the relevant information is deleted when the transaction is completed.
 
-
 ### How to verify the success of a distributed transaction?
+
 #### Whether the Xid information is transmitted successfully
 
 In the controllers of the three services `account-server`, `order-service` and `storage-service`, the first logic to execute is to output the Xid information in the RootContext, and if you see it, the correct Xid information is output , that is, it changes every time, and the Xids of all services in the same call are consistent. It indicates that the transmission and restoration of Seata's Xid is normal.
@@ -79,10 +79,12 @@ In this example, we simulate a scenario where a user purchases goods. StorageSer
 To demonstrate the example, we used Random in OrderService and AccountService. NextBoolean() randomly throws exceptions, simulating the scenario where exceptions occur randomly when calling services.
 
 If distributed transactions are efficient, then the following equation should be true:
+
 - User's original amount (1000) = user's existing amount + product unit price (2) order quantity product quantity per order (2)
-- Initial Item Quantity (100) = Existing Item Quantity + Order Quantity * Item Quantity per Order (2)
+- Initial Item Quantity (100) = Existing Item Quantity + Order Quantity \* Item Quantity per Order (2)
 
 ### Spring Cloud support points
+
 - A service provider that provides services through Spring MVC can automatically restore the Seata context when it receives an HTTP request that contains Seata information in the header.
 - Support for automatic passing of Seata context when service caller calls via RestTemplate.
 - Support for automatically passing the Seata context when the service caller calls via FeignClient.

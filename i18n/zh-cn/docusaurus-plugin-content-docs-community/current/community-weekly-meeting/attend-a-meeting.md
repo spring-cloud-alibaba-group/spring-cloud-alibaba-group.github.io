@@ -1,6 +1,6 @@
 ---
 title: 参与周会
-keywords: [Spring Cloud Alibaba,Meeting]
+keywords: [Spring Cloud Alibaba, Meeting]
 description: 如何参与周会
 ---
 
@@ -12,26 +12,27 @@ description: 如何参与周会
 有关于会议讨论的任何内容都将会被记录在[周会纪要](./minutes-of-meeting.md)中去，您可以点击查看他们，以了解周会的主要讨论内容！
 :::
 
-**时间：** 
+**时间：**
 
 每隔一周的周四晚上 **20:00~21:00** 举行
 
 **钉钉会议码：**
-    
+
 您可以通过打开钉钉，在会议中输入如下的会议码参与社区周会讨论！
 
-> 会议码：***28309471498***
+> 会议码：**_28309471498_**
 
 **电话接入方式：**
 
 您也可以通过钉钉电话的方式接入社区周会：
 
 - 057128095818
-- 02162681677 
- 
+- 02162681677
+
 更多电话接入方式参见：
+
 - https://meeting.dingtalk.com/dialin/?corpId=dingd8e1123006514592
-    
+
 **钉钉接入方式：**
 
 您也可以通过在浏览器中点击[此连接](https://meeting.dingtalk.com/j/1n50ea96INf)参与周会！

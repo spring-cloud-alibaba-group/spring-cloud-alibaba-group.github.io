@@ -1,6 +1,6 @@
 ---
 title: "Advanced Guide"
-keywords: [Spring Cloud Alibaba,Sidecar,Advanced Guide]
+keywords: [Spring Cloud Alibaba, Sidecar, Advanced Guide]
 description: Sidecar, Advanced Guide.
 ---
 
@@ -38,54 +38,52 @@ Response:
 
 ```json
 {
-    "status": "UP",
-    "components": {
-        "discoveryComposite": {
-            "status": "UP",
-            "components": {
-                "discoveryClient": {
-                    "status": "UP",
-                    "details": {
-                        "services": [
-                            "node-service"
-                        ]
-                    }
-                }
-            }
-        },
-        "diskSpace": {
-            "status": "UP",
-            "details": {
-                "total": 107374178304,
-                "free": 18797641728,
-                "threshold": 10485760,
-                "path": "E:\\open_sources\\spring-cloud-alibaba\\.",
-                "exists": true
-            }
-        },
-        "nacosDiscovery": {
-            "status": "UP"
-        },
-        "ping": {
-            "status": "UP"
-        },
-        "reactiveDiscoveryClients": {
-            "status": "UP",
-            "components": {
-                "Simple Reactive Discovery Client": {
-                    "status": "UP",
-                    "details": {
-                        "services": []
-                    }
-                }
-            }
-        },
-        "refreshScope": {
-            "status": "UP"
-        },
-        "sidecar": {
-            "status": "UP"
+  "status": "UP",
+  "components": {
+    "discoveryComposite": {
+      "status": "UP",
+      "components": {
+        "discoveryClient": {
+          "status": "UP",
+          "details": {
+            "services": ["node-service"]
+          }
         }
+      }
+    },
+    "diskSpace": {
+      "status": "UP",
+      "details": {
+        "total": 107374178304,
+        "free": 18797641728,
+        "threshold": 10485760,
+        "path": "E:\\open_sources\\spring-cloud-alibaba\\.",
+        "exists": true
+      }
+    },
+    "nacosDiscovery": {
+      "status": "UP"
+    },
+    "ping": {
+      "status": "UP"
+    },
+    "reactiveDiscoveryClients": {
+      "status": "UP",
+      "components": {
+        "Simple Reactive Discovery Client": {
+          "status": "UP",
+          "details": {
+            "services": []
+          }
+        }
+      }
+    },
+    "refreshScope": {
+      "status": "UP"
+    },
+    "sidecar": {
+      "status": "UP"
     }
+  }
 }
 ```

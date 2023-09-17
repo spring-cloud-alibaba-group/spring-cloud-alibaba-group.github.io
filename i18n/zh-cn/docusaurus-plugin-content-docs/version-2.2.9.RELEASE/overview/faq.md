@@ -34,7 +34,7 @@ custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alib
 <a href="#9" target="_self">9. 社区有提供相关的学习资料，或者是技术博客吗？</a>
 <br/>
 
-********
+---
 
 <h3 id='1'>Q： 1. Spring Cloud Alibaba 维护了几个分支，对应的区别是什么？</h3>
 
@@ -50,7 +50,7 @@ Spring Cloud Alibaba 目前有三个分支在积极维护，分别是 `2.2.x`，
 
 - [2022.x](https://github.com/alibaba/spring-cloud-alibaba)：集成了 Spring Cloud Alibaba 对于 [GraalVM](https://www.graalvm.org/) 静态编译的支持。
 
-********
+---
 
 <h3 id='2'>Q： 2. 关于组件版本选择，需要去哪参考？</h3>
 
@@ -60,8 +60,7 @@ Spring Cloud Alibaba 目前有三个分支在积极维护，分别是 `2.2.x`，
 
 2. 参考官网的[版本发布说明文档](./version-explain.md)。
 
-********
-
+---
 
 <h3 id='3'>Q： 3. 社区有版本建设路线规划吗？</h3>
 
@@ -69,7 +68,7 @@ Spring Cloud Alibaba 目前有三个分支在积极维护，分别是 `2.2.x`，
 
 社区对各个版本的建设，都有详细的规划设计，具体可参见：[Roadmap](./roadmap/doc/doc.md)
 
-********
+---
 
 <h3 id='4'>Q： 4. 社区有周会讨论吗，怎么参与进来？</h3>
 
@@ -79,7 +78,7 @@ Spring Cloud Alibaba 目前有三个分支在积极维护，分别是 `2.2.x`，
 
 参考[社区](../../../community/community-weekly-meeting/attend-a-meeting)模块。
 
-********
+---
 
 <h3 id='5'>Q： 5. Spring Cloud Alibaba 和 Spring Cloud、Spring Cloud Netflix 的区别在哪？</h3>
 
@@ -91,7 +90,7 @@ Spring Cloud Netflix：基于 Spring Cloud 编程模型实现的微服务框架�
 
 Spring Cloud Alibaba：Alibaba 提供的基于 Spring Cloud 编程模型实现的微服务框架，其所有组件都来自于阿里巴巴微服务技术，无论是解决方案完整性、技术成熟度、社区还是文档资料等都对国内开发者非常友好。
 
-********
+---
 
 <h3 id='6'>Q： 6. 有最佳实践示例吗？</h3>
 
@@ -99,7 +98,7 @@ Spring Cloud Alibaba：Alibaba 提供的基于 Spring Cloud 编程模型实现�
 
 参考 [最佳实践](../best-practice/integrated-example.md)
 
-********
+---
 
 <h3 id='7'>Q： 7. Spring Cloud Alibaba 可以集成新开源的网关 Higress 吗？</h3>
 
@@ -107,7 +106,7 @@ Spring Cloud Alibaba：Alibaba 提供的基于 Spring Cloud 编程模型实现�
 
 可以集成，相关功能正在规划中，具体可参见 [Roadmap](./roadmap/doc/doc.md)：
 
-********
+---
 
 <h3 id='8'>Q： 8. 如何成为社区 Committer？</h3>
 
@@ -119,14 +118,14 @@ Spring Cloud Alibaba：Alibaba 提供的基于 Spring Cloud 编程模型实现�
 
 - Committer 是具有仓库写权限的个人，包含以下的标准：
 
-    - 能够在长时间内做持续贡献 issue、PR 的个人；
-    - 对社区做出了重要 feature 贡献；
-    - 参与 issue 列表的维护、重要 feature 的讨论、社区周会主持与参与社区周会分享等社区活动；
-    - 参加过至少 1 次的社区季度活跃贡献者计划；
-    - 参与 code review；
-    - Committer 由 Steering Committee 成员提名投票产生，至少获得 3 票同意才能当选；
+  - 能够在长时间内做持续贡献 issue、PR 的个人；
+  - 对社区做出了重要 feature 贡献；
+  - 参与 issue 列表的维护、重要 feature 的讨论、社区周会主持与参与社区周会分享等社区活动；
+  - 参加过至少 1 次的社区季度活跃贡献者计划；
+  - 参与 code review；
+  - Committer 由 Steering Committee 成员提名投票产生，至少获得 3 票同意才能当选；
 
-********
+---
 
 <h3 id='9'>Q： 9. 社区有提供相关的学习资料，或者是技术博客吗？</h3>
 
@@ -138,4 +137,4 @@ Spring Cloud Alibaba：Alibaba 提供的基于 Spring Cloud 编程模型实现�
 
 - 相关学习资料正在整理中，不久之后会在官网发布。
 
-********
+---

@@ -30,10 +30,10 @@ jobs:
 
       - name: markdown-link-check
         uses: gaurav-nelson/github-action-markdown-link-check@v1
-        with: 
-          use-quiet-mode: 'yes' 
-          config-file: 'checklink_config.json' 
-          max-depth: 3 
+        with:
+          use-quiet-mode: "yes"
+          config-file: "checklink_config.json"
+          max-depth: 3
 
       - name: Archive Broken Links List
         uses: actions/upload-artifact@v3

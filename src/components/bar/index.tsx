@@ -1,7 +1,7 @@
-import React from 'react';
-import classnames from 'classnames';
-import { getLink } from '../../utils';
-import './index.scss';
+import React from "react";
+import classnames from "classnames";
+import { getLink } from "../../utils";
+import "./index.scss";
 
 type Props = {
   text: string;

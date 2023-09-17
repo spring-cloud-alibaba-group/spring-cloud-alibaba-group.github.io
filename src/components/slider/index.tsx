@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import classnames from 'classnames';
-import { throttle } from '../../utils';
+import React from "react";
+import ReactDOM from "react-dom";
+import classnames from "classnames";
+import { throttle } from "../../utils";
 
-import './index.scss';
+import "./index.scss";
 
 type Props = {
   children: React.ReactElement[];
@@ -33,7 +33,7 @@ class Slider extends React.Component<Props, State> {
         visibleNum: this.getVisibleNum(),
       });
     }, 200);
-    window?.addEventListener?.('resize', this.throttleAdjust);
+    window?.addEventListener?.("resize", this.throttleAdjust);
     // 做重新布局
     /* eslint-disable react/no-did-mount-set-state */
     this.setState({
@@ -42,7 +42,7 @@ class Slider extends React.Component<Props, State> {
   }
 
   componentWillUnmount() {
-    window?.removeEventListener?.('resize', this.throttleAdjust);
+    window?.removeEventListener?.("resize", this.throttleAdjust);
   }
 
   getVisibleNum = () => {
@@ -52,7 +52,8 @@ class Slider extends React.Component<Props, State> {
     const containerWidth = this.container?.getBoundingClientRect().width;
     const childWidth = this.sliderItemChild0?.getBoundingClientRect
       ? this.sliderItemChild0?.getBoundingClientRect().width
-      : ReactDOM.findDOMNode(this.sliderItemChild0)?.getBoundingClientRect().width;
+      : ReactDOM.findDOMNode(this.sliderItemChild0)?.getBoundingClientRect()
+          .width;
     if (containerWidth && childWidth) {
       result = Math.floor(containerWidth / childWidth);
     }
@@ -93,16 +94,21 @@ class Slider extends React.Component<Props, State> {
     const splitNum = Math.ceil(len / visibleNum);
     /* eslint-disable no-plusplus*/
     for (let i = 0; i < splitNum; i++) {
-      splitGroup.push(Array.from(children).slice(i * visibleNum, (i + 1) * visibleNum));
+      splitGroup.push(
+        Array.from(children).slice(i * visibleNum, (i + 1) * visibleNum)
+      );
     }
     return (
       <div
         className="slider-list"
         style={{
           transform: `translateX(-${
-            screenIndex * ((this.container && this.container?.getBoundingClientRect().width) || 0)
+            screenIndex *
+            ((this.container &&
+              this.container?.getBoundingClientRect().width) ||
+              0)
           }px)`,
-          transition: 'transform 500ms ease',
+          transition: "transform 500ms ease",
           width: this.getListWidth(),
         }}
       >
@@ -110,7 +116,12 @@ class Slider extends React.Component<Props, State> {
           return (
             <div
               className="slider-screen"
-              style={{ width: (this.container && this.container?.getBoundingClientRect().width) || 0 }}
+              style={{
+                width:
+                  (this.container &&
+                    this.container?.getBoundingClientRect().width) ||
+                  0,
+              }}
               key={i}
               ref={(node) => {
                 this[`sliderScreen${i}`] = node;
@@ -144,8 +155,8 @@ class Slider extends React.Component<Props, State> {
         <span
           key={i}
           className={classnames({
-            'slider-control-item': true,
-            'slider-control-item-active': i === screenIndex,
+            "slider-control-item": true,
+            "slider-control-item-active": i === screenIndex,
           })}
           onClick={this.changeScreen.bind(this, i)}
         />

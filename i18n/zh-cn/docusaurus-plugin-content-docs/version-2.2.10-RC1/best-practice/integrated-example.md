@@ -4,14 +4,14 @@ keywords: [Spring Cloud Alibaba]
 description: Integrated Example.
 ---
 
-## Spring Cloud Alibaba项目简介
+## Spring Cloud Alibaba 项目简介
 
 Spring Cloud Alibaba（下文简称为 SCA ） 致力于提供微服务开发的一站式解决方案。此项目包含开发分布式应用服务的必需组件，方便开发者通过 Spring Cloud 编程模型轻松使用这些组件来开发分布式应用服务。
 依托 SCA，您只需要添加一些注解和少量配置，就可以将 Spring Cloud 应用接入阿里分布式应用解决方案，通过阿里中间件来迅速搭建分布式应用系统。
 
 ## 项目最佳实践案例介绍
 
-SCA的项目的最佳实践，是整合了SCA相关组件（Nacos，Sentinel，Seata，RocketMQ）的 Example 示例项目。方便用户全面体验 SCA 提供的一站式微服务解决方案。
+SCA 的项目的最佳实践，是整合了 SCA 相关组件（Nacos，Sentinel，Seata，RocketMQ）的 Example 示例项目。方便用户全面体验 SCA 提供的一站式微服务解决方案。
 
     1. Spring Cloud Gateway：网关
     2. Nacos：服务注册和配置中心
@@ -29,11 +29,11 @@ SCA的项目的最佳实践，是整合了SCA相关组件（Nacos，Sentinel，S
 
 1. 其中，用户下单购买货物的场景主要使用 Seata 来进行分布式事务的能力体现。
 
-2. 用户为商品进行点赞的场景，模拟大流量环境下通过 Sentinel 进行限流或是 RocketMQ 进行削峰填谷。在此场景下，SCA社区提供了两种应对大流量的处理方式： 
+2. 用户为商品进行点赞的场景，模拟大流量环境下通过 Sentinel 进行限流或是 RocketMQ 进行削峰填谷。在此场景下，SCA 社区提供了两种应对大流量的处理方式：
 
-    - Sentinel 在网关侧绑定指定网关路由进行服务的熔断降级。 
+   - Sentinel 在网关侧绑定指定网关路由进行服务的熔断降级。
 
-    - RocketMQ 进行流量削峰填谷，在大流量请求下，生产者向 RocketMQ 发送消息，而消费者则通过可配置的消费速率进行拉取消费，减少大流量直接请求数据库增加点赞请求的压力。
+   - RocketMQ 进行流量削峰填谷，在大流量请求下，生产者向 RocketMQ 发送消息，而消费者则通过可配置的消费速率进行拉取消费，减少大流量直接请求数据库增加点赞请求的压力。
 
 ### Spring Cloud Gateway
 
@@ -53,20 +53,21 @@ Nacos 是 SCA 微服务模块的服务注册中心和配置中心。整合 Sprin
 
 ### RocketMQ
 
-用于进行点赞服务流量的削峰填谷。通过将大流量的点赞请求从生产者发送到mq，消费者模块从mq中拉取进行一定频率的消费，不是简单的直接服务熔断限流降级，实现 RocketMQ 针对大流量的削峰填谷能力。
+用于进行点赞服务流量的削峰填谷。通过将大流量的点赞请求从生产者发送到 mq，消费者模块从 mq 中拉取进行一定频率的消费，不是简单的直接服务熔断限流降级，实现 RocketMQ 针对大流量的削峰填谷能力。
 
 ### 应用场景说明
 
 在本 Example 示例中，SCA 社区提供了两种业务场景：
-1.  用户下单购买货物的场景，下单后： 
 
-    1. 先请求库存模块，扣减库存； 
-    
-    2. 扣减账户余额； 
-    
-    3. 生成订单信息返回响应。 
+1.  用户下单购买货物的场景，下单后：
 
-2.  用户为商品进行点赞（模拟MQ的生产者和消费者应用场景）返回商品点赞后的详细信息（点赞数等）。 
+    1. 先请求库存模块，扣减库存；
+
+    2. 扣减账户余额；
+
+    3. 生成订单信息返回响应。
+
+2.  用户为商品进行点赞（模拟 MQ 的生产者和消费者应用场景）返回商品点赞后的详细信息（点赞数等）。
 
 ## 项目部署
 
@@ -105,27 +106,28 @@ Nacos 是 SCA 微服务模块的服务注册中心和配置中心。整合 Sprin
 
 1. 启动 Nacos Server
 
-    为了便于 Example 项目的演示，这里采用 Nacos 的 standalone （单节点）模式启动，进入到 Nacos 解压后的目录下，执行如下命令。
+   为了便于 Example 项目的演示，这里采用 Nacos 的 standalone （单节点）模式启动，进入到 Nacos 解压后的目录下，执行如下命令。
 
-    ``` shell
-    #Linux/Mac环境
-    sh bin/startup.sh -m standalone
-    #如果您是Ubuntu环境，执行上述命令启动报错提示[[符号找不到，可以执行如下的命令
-    bash bin/startup.sh -m standalone
-    #Win环境
-    .\bin\startup.cmd -m standalone
-    ```
+   ```shell
+   #Linux/Mac环境
+   sh bin/startup.sh -m standalone
+   #如果您是Ubuntu环境，执行上述命令启动报错提示[[符号找不到，可以执行如下的命令
+   bash bin/startup.sh -m standalone
+   #Win环境
+   .\bin\startup.cmd -m standalone
+   ```
+
 2. 添加配置
 
-    在批量导入配置之前，请先修改 spring-cloud-alibaba-examples/integrated-example/config-init/config/datasource-config.yaml 中的数据源配置 **(用户名和密码)**。
+   在批量导入配置之前，请先修改 spring-cloud-alibaba-examples/integrated-example/config-init/config/datasource-config.yaml 中的数据源配置 **(用户名和密码)**。
 
-    之后运行 spring-cloud-alibaba-examples/integrated-example/config-init/scripts/nacos-config-quick.sh 脚本来完成所有微服务配置的一键导入。
+   之后运行 spring-cloud-alibaba-examples/integrated-example/config-init/scripts/nacos-config-quick.sh 脚本来完成所有微服务配置的一键导入。
 
-    ```shell
-    # linux
-    sh nacos-config-quick.sh
-    # windows 可以使用 git bash 来完成配置的导入 执行命令同上
-    ```
+   ```shell
+   # linux
+   sh nacos-config-quick.sh
+   # windows 可以使用 git bash 来完成配置的导入 执行命令同上
+   ```
 
 **Seata 配置**
 
@@ -146,21 +148,21 @@ bin\seata-server.bat
 
 1. 启动 NameServer
 
-    ```shell
-    #Linux/Mac环境
-    sh bin/mqnamesrv
-    #Win环境
-    .\bin\mqnamesrv.cmd
-    ```
+   ```shell
+   #Linux/Mac环境
+   sh bin/mqnamesrv
+   #Win环境
+   .\bin\mqnamesrv.cmd
+   ```
 
 2. 启动 Broker
 
-    ```shell
-    #Linux/Mac环境
-    sh bin/mqbroker
-    #Win环境
-    .\bin\mqbroker.cmd -n localhost:9876
-    ```
+   ```shell
+   #Linux/Mac环境
+   sh bin/mqbroker
+   #Win环境
+   .\bin\mqbroker.cmd -n localhost:9876
+   ```
 
 **运行 Example 示例**
 
@@ -173,88 +175,88 @@ bin\seata-server.bat
 
 1. 分布式事务能力
 
-    **场景说明**
+   **场景说明**
 
-    针对分布式事务能力，SCA 社区提供了用户下单购买货物的场景，下单后：
+   针对分布式事务能力，SCA 社区提供了用户下单购买货物的场景，下单后：
 
-    - 先请求库存模块，扣减库存
-    - 扣减账户余额
-    - 生成订单信息返回响应
+   - 先请求库存模块，扣减库存
+   - 扣减账户余额
+   - 生成订单信息返回响应
 
-    **启动测试**
+   **启动测试**
 
-    分别启动 integrated-storage，integrated-account，integrated-order 三个微服务应用。
+   分别启动 integrated-storage，integrated-account，integrated-order 三个微服务应用。
 
-    访问 `http://integrated-frontend:8080/order` 来体验对应场景。
+   访问 `http://integrated-frontend:8080/order` 来体验对应场景。
 
-    直接点击下单按钮提交表单，应用模拟客户端向网关发送了一个创建订单的请求。
+   直接点击下单按钮提交表单，应用模拟客户端向网关发送了一个创建订单的请求。
 
-    - 用户的 userId 为 admin
-    - 用户下单的商品编号为1号
-    - 此次订单购买的商品个数为1个
+   - 用户的 userId 为 admin
+   - 用户下单的商品编号为 1 号
+   - 此次订单购买的商品个数为 1 个
 
-    <div align="center">
-        <img src="https://camo.githubusercontent.com/9448ae62231a5728f61fd0def7f846c745ddfb6bc5ebaea691cf3f8f042a26f3/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363135353431363532342e706e67"/>
-    </div> 
+   <div align="center">
+       <img src="https://camo.githubusercontent.com/9448ae62231a5728f61fd0def7f846c745ddfb6bc5ebaea691cf3f8f042a26f3/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363135353431363532342e706e67"/>
+   </div>
 
-    在本 Example 示例中，为了便于演示，每件商品的单价都为 2。
+   在本 Example 示例中，为了便于演示，每件商品的单价都为 2。
 
-    而在前面的准备工作中，初始化业务数据库表的时候应用新建了一个用户，用户的 userId 为 admin，余额为 3 元；同时新建了一个编号为 1 号的商品，库存为 100 件。
+   而在前面的准备工作中，初始化业务数据库表的时候应用新建了一个用户，用户的 userId 为 admin，余额为 3 元；同时新建了一个编号为 1 号的商品，库存为 100 件。
 
-    因此通过上述的操作，应用会创建一个订单，扣减对应商品编号为 1 号的库存个数（100 - 1 = 99），扣减 admin 用户的余额（3 - 2 = 1）。
+   因此通过上述的操作，应用会创建一个订单，扣减对应商品编号为 1 号的库存个数（100 - 1 = 99），扣减 admin 用户的余额（3 - 2 = 1）。
 
-    <div align="center">
-        <img src="https://camo.githubusercontent.com/029a719f01294cd8d4c2af4608fcd4eef83d2c95b087006791cab2a5b3ced0b1/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363135353432393830312e706e67"/>
-    </div>
+   <div align="center">
+       <img src="https://camo.githubusercontent.com/029a719f01294cd8d4c2af4608fcd4eef83d2c95b087006791cab2a5b3ced0b1/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363135353432393830312e706e67"/>
+   </div>
 
-    如果再次请求相同的接口，同样是先扣减库存（99 - 1 = 98），但是会因为 admin 用户余额不足而抛出异常，并被 Seata 捕获，执行分布式事务二阶段提交，回滚事务。
+   如果再次请求相同的接口，同样是先扣减库存（99 - 1 = 98），但是会因为 admin 用户余额不足而抛出异常，并被 Seata 捕获，执行分布式事务二阶段提交，回滚事务。
 
-    <div align="center">
-        <img src="https://camo.githubusercontent.com/33c136cbeb3dd32ba438dfc4301d96a71da6d06a0ee85de3249085de19e87551/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363135353433363131322e706e67"/>
-    </div>
-    
-    可以看到数据库中库存的记录因为回滚之后仍然为 99 件。
+   <div align="center">
+       <img src="https://camo.githubusercontent.com/33c136cbeb3dd32ba438dfc4301d96a71da6d06a0ee85de3249085de19e87551/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363135353433363131322e706e67"/>
+   </div>
+
+   可以看到数据库中库存的记录因为回滚之后仍然为 99 件。
 
 2. 熔断限流，削峰填谷能力
 
-    **场景说明**
-    
-    针对大流量背景下的服务熔断限流，削峰填谷，SCA 社区提供了用户为商品进行点赞的场景。在此场景下，SCA 社区提供了两种应对大流量的处理方式。
+   **场景说明**
 
-    - Sentinel 在网关侧绑定指定网关路由进行服务的熔断降级。
-    - RocketMQ 进行流量削峰填谷，在大流量请求下，生产者向 RocketMQ 发送消息，而消费者则通过可配置的消费速率进行拉取消费，减少大流量直接请求数据库增加点赞请求的压力。
+   针对大流量背景下的服务熔断限流，削峰填谷，SCA 社区提供了用户为商品进行点赞的场景。在此场景下，SCA 社区提供了两种应对大流量的处理方式。
 
-    **启动测试**
+   - Sentinel 在网关侧绑定指定网关路由进行服务的熔断降级。
+   - RocketMQ 进行流量削峰填谷，在大流量请求下，生产者向 RocketMQ 发送消息，而消费者则通过可配置的消费速率进行拉取消费，减少大流量直接请求数据库增加点赞请求的压力。
 
-    分别启动 integrated-praise-provider 以及 integrated-praise-consumer 模块。
+   **启动测试**
 
-    **Sentinel 服务熔断降级**
+   分别启动 integrated-praise-provider 以及 integrated-praise-consumer 模块。
 
-    访问 `http://integrated-frontend:8080/sentinel` 体验对应场景。
+   **Sentinel 服务熔断降级**
 
-    <div align="center">
-        <img src="https://camo.githubusercontent.com/167540c2a9c937fcc99c29f174a7747128dc318e2badbc2531a4d6eee66bd6e7/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363135353530313239302e706e67"/>
-    </div>
+   访问 `http://integrated-frontend:8080/sentinel` 体验对应场景。
 
-    网关路由点赞服务的限流规则为 5，而在前端通过异步处理模拟了 10 次并发请求。
+   <div align="center">
+       <img src="https://camo.githubusercontent.com/167540c2a9c937fcc99c29f174a7747128dc318e2badbc2531a4d6eee66bd6e7/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363135353530313239302e706e67"/>
+   </div>
 
-    因此可以看到 Sentinel 在 Gateway 侧针对多出的流量进行了服务熔断返回 fallback 给客户端，同时数据库的点赞数进行了更新（+5）。
+   网关路由点赞服务的限流规则为 5，而在前端通过异步处理模拟了 10 次并发请求。
 
-    <div align="center">
-        <img src="https://camo.githubusercontent.com/9115475ee01df4f11c375d842dde9cfd4cb8ec6de0dfa399d9d0a5f63e5a2702/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232303931343135353735353130332e706e67"/>
-    </div>
+   因此可以看到 Sentinel 在 Gateway 侧针对多出的流量进行了服务熔断返回 fallback 给客户端，同时数据库的点赞数进行了更新（+5）。
 
-    **RocketMQ 进行流量削峰填谷**
+   <div align="center">
+       <img src="https://camo.githubusercontent.com/9115475ee01df4f11c375d842dde9cfd4cb8ec6de0dfa399d9d0a5f63e5a2702/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232303931343135353735353130332e706e67"/>
+   </div>
 
-    访问 `http://integrated-frontend:8080/rocketmq` 体验对应场景。
+   **RocketMQ 进行流量削峰填谷**
 
-    由于之前在 Nacos 中配置了 integrated-praise-consumer 消费者模块的消费速率以及间隔，在点击按钮时应用模拟 1000 个点赞请求，针对 1000 个点赞请求，integrated-praise-provider 会将 1000 次请求都向 Broker 投递消息，而在消费者模块中会根据配置的消费速率进行消费，向数据库更新点赞的商品数据，模拟大流量下 RocketMQ 削峰填谷的特性。
+   访问 `http://integrated-frontend:8080/rocketmq` 体验对应场景。
 
-    可以看到数据库中点赞的个数正在动态更新。
+   由于之前在 Nacos 中配置了 integrated-praise-consumer 消费者模块的消费速率以及间隔，在点击按钮时应用模拟 1000 个点赞请求，针对 1000 个点赞请求，integrated-praise-provider 会将 1000 次请求都向 Broker 投递消息，而在消费者模块中会根据配置的消费速率进行消费，向数据库更新点赞的商品数据，模拟大流量下 RocketMQ 削峰填谷的特性。
 
-    <div align="center">
-        <img src="https://camo.githubusercontent.com/869d9c0c343a28435d62f76ef20bcb12d735c7983a737bd6c68fe8f3e678d40d/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363137333630343035392e706e67"/>
-    </div>
+   可以看到数据库中点赞的个数正在动态更新。
+
+   <div align="center">
+       <img src="https://camo.githubusercontent.com/869d9c0c343a28435d62f76ef20bcb12d735c7983a737bd6c68fe8f3e678d40d/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363137333630343035392e706e67"/>
+   </div>
 
 ### Docker Compose 部署
 
@@ -287,7 +289,7 @@ bin\seata-server.bat
 
 在 spring-cloud-alibaba-examples/integrated-example 目录下，执行以下命令 `docker-compose -f ./docker-compose/docker-compose-env.yml down` 来停止正在运行的 example 组件容器。
 
-更多信息请参考：[Spring Cloud Alibaba容器化部署最佳实践 | Docker-Compose 版本](https://github.com/alibaba/spring-cloud-alibaba/blob/2022.x/spring-cloud-alibaba-examples/integrated-example/docs/zh/docker-compose-deploy-zh.md)
+更多信息请参考：[Spring Cloud Alibaba 容器化部署最佳实践 | Docker-Compose 版本](https://github.com/alibaba/spring-cloud-alibaba/blob/2022.x/spring-cloud-alibaba-examples/integrated-example/docs/zh/docker-compose-deploy-zh.md)
 
 ### Kubernetes Helm 部署
 
@@ -295,7 +297,7 @@ bin\seata-server.bat
 
 在这里通过 NodePort 的方式来向外界暴露 Kubernetes 中 Pod 的服务，在启动测试前还需配置好 Kubernetes 集群节点的 ip 映射。
 
-``` shell
+```shell
 # 实际情况请结合您的 K8S 节点的公网 ip 进行调整
 120.24.xxx.xxx integrated-frontend
 120.24.xxx.xxx gateway-service
@@ -329,7 +331,7 @@ helm install integrated-example integrated-example-1.0.0.tgz
 helm uninstall integrated-example
 ```
 
-更多信息请参考：[Spring Cloud Alibaba容器化部署最佳实践 | Kubernetes Helm-Chart 版本](https://github.com/alibaba/spring-cloud-alibaba/blob/2022.x/spring-cloud-alibaba-examples/integrated-example/docs/zh/kubernetes-deployment-zh.md)
+更多信息请参考：[Spring Cloud Alibaba 容器化部署最佳实践 | Kubernetes Helm-Chart 版本](https://github.com/alibaba/spring-cloud-alibaba/blob/2022.x/spring-cloud-alibaba-examples/integrated-example/docs/zh/kubernetes-deployment-zh.md)
 
 ## 其他
 
@@ -338,8 +340,8 @@ helm uninstall integrated-example
 当然各个组件的功能特性不仅仅只包含最佳实践中演示的这些，如果您对 SCA 感兴趣或是想要深入了解 SCA 项目，欢迎阅览各个组件的独立 Example 相关文档。
 
 - Nacos examples
-    - [Nacos config example](https://github.com/alibaba/spring-cloud-alibaba/blob/2022.x/spring-cloud-alibaba-examples/nacos-example/nacos-config-example/readme-zh.md)
-    - [Nacos discovery example](https://github.com/alibaba/spring-cloud-alibaba/blob/2022.x/spring-cloud-alibaba-examples/nacos-example/nacos-discovery-example/readme-zh.md)
+  - [Nacos config example](https://github.com/alibaba/spring-cloud-alibaba/blob/2022.x/spring-cloud-alibaba-examples/nacos-example/nacos-config-example/readme-zh.md)
+  - [Nacos discovery example](https://github.com/alibaba/spring-cloud-alibaba/blob/2022.x/spring-cloud-alibaba-examples/nacos-example/nacos-discovery-example/readme-zh.md)
 - [Sentinel core example](https://github.com/alibaba/spring-cloud-alibaba/blob/2022.x/spring-cloud-alibaba-examples/sentinel-example/sentinel-core-example/readme-zh.md)
 - [Seata example](https://github.com/alibaba/spring-cloud-alibaba/blob/2022.x/spring-cloud-alibaba-examples/seata-example/readme-zh.md)
 - [RocketMQ example](https://github.com/alibaba/spring-cloud-alibaba/blob/2022.x/spring-cloud-alibaba-examples/rocketmq-example/readme-zh.md)

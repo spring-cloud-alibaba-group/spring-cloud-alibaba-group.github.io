@@ -1,9 +1,9 @@
-import React from 'react';
-import classnames from 'classnames';
-import { getLink } from '../../utils';
-import './index.scss';
+import React from "react";
+import classnames from "classnames";
+import { getLink } from "../../utils";
+import "./index.scss";
 
-export type ButtonType = 'primary' | 'normal';
+export type ButtonType = "primary" | "normal";
 type Props = {
   type: ButtonType;
   link: string;
@@ -13,9 +13,9 @@ type Props = {
 };
 
 const defaultProps: Props = {
-  type: 'primary',
-  link: '',
-  target: '_self',
+  type: "primary",
+  link: "",
+  target: "_self",
 };
 const Button = (props = defaultProps) => {
   return (
@@ -24,7 +24,7 @@ const Button = (props = defaultProps) => {
         button: true,
         [`button-${props.type}`]: true,
       })}
-      target={props.target || '_self'}
+      target={props.target || "_self"}
       href={getLink(props.link, props.language)}
     >
       {props.children || null}
