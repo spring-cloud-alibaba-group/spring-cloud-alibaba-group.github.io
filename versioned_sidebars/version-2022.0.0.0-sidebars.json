@@ -1,5 +1,6 @@
 {
-  "docs": [{
+  "docs": [
+    {
       "type": "category",
       "label": "Overview",
       "collapsible": true,
@@ -24,7 +25,8 @@
       "type": "category",
       "label": "User Guide",
       "collapsible": true,
-      "items": [{
+      "items": [
+        {
           "type": "category",
           "label": "Nacos",
           "items": [

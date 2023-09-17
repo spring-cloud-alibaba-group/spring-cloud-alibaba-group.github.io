@@ -6,11 +6,11 @@ author: 赵炳堃（秉钧）
 date: 2023-08-31
 ---
 
-# 基于 Higress 网关实现 Spring Cloud 服务发现与路由
+## 基于 Higress 网关实现 Spring Cloud 服务发现与路由
 
 ## 使用 Nacos 做注册中心
 
-应用配置具体参考[ Nacos Spring Cloud 快速开始](https://sca.aliyun.com/zh-cn/docs/next/user-guide/nacos/quick-start)进行应用配置
+应用配置具体参考 [Nacos-Spring-Cloud-快速开始](https://sca.aliyun.com/zh-cn/docs/next/user-guide/nacos/quick-start) 进行应用配置
 
 ### 不指定命名空间
 
@@ -34,16 +34,16 @@ metadata:
 spec:
   registries:
     # 定义一个名为 my-nacos  的服务来源
-  - name: my-nacos
-    # 注册中心类型是 Nacos 2.x，支持 gRPC 协议
-    type: nacos2
-    # 注册中心的访问地址，可以是域名或者IP
-    domain: 127.0.0.1
-    # 注册中心的访问端口，Nacos 默认都是 8848
-    port: 8848
-    # Nacos 服务分组
-    nacosGroups:
-    - DEFAULT_GROUP
+    - name: my-nacos
+      # 注册中心类型是 Nacos 2.x，支持 gRPC 协议
+      type: nacos2
+      # 注册中心的访问地址，可以是域名或者IP
+      domain: 127.0.0.1
+      # 注册中心的访问端口，Nacos 默认都是 8848
+      port: 8848
+      # Nacos 服务分组
+      nacosGroups:
+        - DEFAULT_GROUP
 ```
 
 配置 Ingress 转发到这个服务（假设 /api 前缀的路由都转发给这个服务）需要做如下配置：
@@ -71,7 +71,7 @@ spec:
 
 注意这里通过注解 `higress.io/destination` 指定路由最终要转发到的目标服务。
 
-对于 Nacos 来源的服务，这里的目标服务格式为：“服务名称.服务分组.命名空间 ID.nacos”，注意这里需要遵循 DNS 域名格式，因此服务分组中的下划线 '_' 被转换成了横杠 '-'。命名空间未指定时，这里默认值为 "public"。
+对于 Nacos 来源的服务，这里的目标服务格式为：“服务名称.服务分组.命名空间 ID.nacos”，注意这里需要遵循 DNS 域名格式，因此服务分组中的下划线 '\_' 被转换成了横杠 '-'。命名空间未指定时，这里默认值为 "public"。
 
 ### 指定命名空间、服务分组等信息
 
@@ -97,18 +97,18 @@ metadata:
 spec:
   registries:
     # 定义一个名为 my-nacos  的服务来源
-  - name: my-nacos
-    # 注册中心类型是 Nacos 2.x，支持 gRPC 协议
-    type: nacos2
-    # 注册中心的访问地址，可以是域名或者IP
-    domain: 127.0.0.1
-    # 注册中心的访问端口，Nacos 默认都是 8848
-    port: 8848
-    # Nacos 命名空间 ID
-    nacosNamespaceId: d8ac64f3-xxxx-xxxx-xxxx-47a814ecf358
-    # Nacos 服务分组
-    nacosGroups:
-    - custom-group
+    - name: my-nacos
+      # 注册中心类型是 Nacos 2.x，支持 gRPC 协议
+      type: nacos2
+      # 注册中心的访问地址，可以是域名或者IP
+      domain: 127.0.0.1
+      # 注册中心的访问端口，Nacos 默认都是 8848
+      port: 8848
+      # Nacos 命名空间 ID
+      nacosNamespaceId: d8ac64f3-xxxx-xxxx-xxxx-47a814ecf358
+      # Nacos 服务分组
+      nacosGroups:
+        - custom-group
 ```
 
 配置 Ingress 转发到这个服务(假设 /api 前缀的路由都转发给这个服务)需要做如下配置：
@@ -133,7 +133,6 @@ spec:
         path: /api
         pathType: Prefix
 ```
-
 
 ## 使用 ZooKeeper 做注册中心
 
@@ -162,13 +161,13 @@ metadata:
 spec:
   registries:
     # 定义一个名为 my-zk  的服务来源
-  - name: my-zk
-    # 注册中心类型是 ZooKeeper
-    type: zookeeper
-    # 注册中心的访问地址，可以是域名或者IP
-    domain: 127.0.0.1
-    # 注册中心的访问端口
-    port: 2181
+    - name: my-zk
+      # 注册中心类型是 ZooKeeper
+      type: zookeeper
+      # 注册中心的访问地址，可以是域名或者IP
+      domain: 127.0.0.1
+      # 注册中心的访问端口
+      port: 2181
 ```
 
 配置 Ingress 转发到这个服务(假设 /api 前缀的路由都转发给这个服务)需要做如下配置：
@@ -193,6 +192,7 @@ spec:
         path: /api
         pathType: Prefix
 ```
+
 注意对于 ZooKeeper 来源的服务，这里的目标服务格式为："服务名称.服务注册根路径.zookeeper"，Spring Cloud 在未指定服务注册根路径的情况下，根路径默认是"services"
 
 ### 指定注册根路径
@@ -219,16 +219,16 @@ metadata:
 spec:
   registries:
     # 定义一个名为 my-zk  的服务来源
-  - name: my-zk
-    # 注册中心类型是 ZooKeeper
-    type: zookeeper
-    # 注册中心的访问地址，可以是域名或者IP
-    domain: 127.0.0.1
-    # 注册中心的访问端口
-    port: 2181
-    # 对应 spring.cloud.zookeeper.discovery.root 配置字段
-    zkServicePath:
-    - my-services-root
+    - name: my-zk
+      # 注册中心类型是 ZooKeeper
+      type: zookeeper
+      # 注册中心的访问地址，可以是域名或者IP
+      domain: 127.0.0.1
+      # 注册中心的访问端口
+      port: 2181
+      # 对应 spring.cloud.zookeeper.discovery.root 配置字段
+      zkServicePath:
+        - my-services-root
 ```
 
 配置 Ingress 转发到这个服务(假设 /api 前缀的路由都转发给这个服务)需要做如下配置：

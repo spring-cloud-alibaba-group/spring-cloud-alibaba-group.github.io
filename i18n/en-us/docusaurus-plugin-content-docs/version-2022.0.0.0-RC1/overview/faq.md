@@ -5,7 +5,7 @@ description: Spring Cloud Alibaba FAQ.
 custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/master/i18n/zh-cn/docusaurus-plugin-content-docs/current/overview/faq.md
 ---
 
-# FAQ
+## FAQ
 
 <a href="#1" target="_self">1. Spring Cloud Alibaba maintains several branches, what are the corresponding differences?</a>
 <br/>
@@ -34,7 +34,7 @@ custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alib
 <a href="#9" target="_self">9. Does the community provide relevant learning materials or technical blogs? </a>
 <br/>
 
-***********
+---
 
 <h3 id='1'>Q: 1. Spring Cloud Alibaba maintains several branches, what are the corresponding differences? </h3>
 
@@ -50,7 +50,7 @@ The version features are as follows:
 
 - [2022.x](https://github.com/alibaba/spring-cloud-alibaba): Integrates Spring Cloud Alibaba's support for static compilation of [GraalVM](https://www.graalvm.org/).
 
-***********
+---
 
 <h3 id='2'>Q: 2. Regarding the selection of component versions, where should I go for reference? </h3>
 
@@ -60,14 +60,15 @@ The version features are as follows:
 
 2. Refer to the [Version Release Document](./version-explain.md) on the official website.
 
-********
+---
+
 <h3 id='3'>Q: 3. Does the community have a roadmap for version construction? </h3>
 
 **A:**
 
 The community has detailed planning and design for the construction of each version. For details, please refer to: [Roadmap](./roadmap/doc/doc.md)
 
-***********
+---
 
 <h3 id='4'>Q: 4. Is there a weekly meeting in the community, and how to get involved? </h3>
 
@@ -77,7 +78,7 @@ The community has detailed planning and design for the construction of each vers
 
 Refer to the [Community](../../../community/community-weekly-meeting/attend-a-meeting) module.
 
-***********
+---
 
 <h3 id='5'>Q: 5. What is the difference between Spring Cloud Alibaba, Spring Cloud, and Spring Cloud Netflix? </h3>
 
@@ -89,7 +90,7 @@ Spring Cloud Netflix: A microservice framework implemented based on the Spring C
 
 Spring Cloud Alibaba: Alibaba provides a microservice framework based on the Spring Cloud programming model. Most of its components use components provided by Ali, which is more suitable for Chinese programmers.
 
-***********
+---
 
 <h3 id='6'>Q: 6. Are there any best practice examples? </h3>
 
@@ -97,7 +98,7 @@ Spring Cloud Alibaba: Alibaba provides a microservice framework based on the Spr
 
 See [Best Practice](../best-practice/integrated-example.md)
 
-***********
+---
 
 <h3 id='7'>Q: 7. Can Spring Cloud Alibaba integrate the new open source gateway Higress? </h3>
 
@@ -105,7 +106,7 @@ See [Best Practice](../best-practice/integrated-example.md)
 
 Can be integrated, related functions are under planning, see [Roadmap](./roadmap/doc/doc.md) for details:
 
-***********
+---
 
 <h3 id='8'>Q: 8. How to become a community Commiter? </h3>
 
@@ -117,14 +118,14 @@ Can be integrated, related functions are under planning, see [Roadmap](./roadmap
 
 - A Committer is an individual with write access to the repository, including the following criteria:
 
-     - Individuals who can make continuous contributions to issues and PRs over a long period of time;
-     - Made important feature contributions to the community;
-     - Participate in community activities such as maintaining the issue list, discussing important features, hosting weekly community meetings, and participating in community weekly meeting sharing;
-     - Participated in the Community Quarterly Active Contributor Program at least 1 time;
-     - Participate in code review;
-     - The Committer is nominated and voted by members of the Steering Committee, and must obtain at least 3 votes to be elected;
+  - Individuals who can make continuous contributions to issues and PRs over a long period of time;
+  - Made important feature contributions to the community;
+  - Participate in community activities such as maintaining the issue list, discussing important features, hosting weekly community meetings, and participating in community weekly meeting sharing;
+  - Participated in the Community Quarterly Active Contributor Program at least 1 time;
+  - Participate in code review;
+  - The Committer is nominated and voted by members of the Steering Committee, and must obtain at least 3 votes to be elected;
 
-***********
+---
 
 <h3 id='9'>Q: 9. Does the community provide relevant learning materials or technical blogs? </h3>
 
@@ -136,4 +137,4 @@ Can be integrated, related functions are under planning, see [Roadmap](./roadmap
 
 - Relevant learning materials are being sorted out and will be released on the official website soon.
 
-***********
+---

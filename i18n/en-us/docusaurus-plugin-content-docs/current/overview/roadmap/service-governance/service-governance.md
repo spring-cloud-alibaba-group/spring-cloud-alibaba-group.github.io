@@ -16,44 +16,44 @@ Spring Cloud Alibaba has done some governance-related work before, but it only c
 
 3. TLS
 
-     - mTLS/TLS communication (including using ISTIO's own mTLS and user-defined certificates)
+    - mTLS/TLS communication (including using ISTIO's own mTLS and user-defined certificates)
 
-     - Support authentication authentication (under the premise of mTLS)
+    - Support authentication authentication (under the premise of mTLS)
 
 4. DestinationRule & VirtualService
 
-     - Obtain load-balanced endpoints through EDS-related information, which means that service discovery data can be obtained directly from the control plane, without additional use of registration centers such as Nacos in the cloud-native system
+    - Obtain load-balanced endpoints through EDS-related information, which means that service discovery data can be obtained directly from the control plane, without additional use of registration centers such as Nacos in the cloud-native system
 
-     - Through the load balancing strategy specified in CDS, combined with spring-cloud-loadbalancer and other components to implement different load balancing strategies for different subsets
+    - Through the load balancing strategy specified in CDS, combined with spring-cloud-loadbalancer and other components to implement different load balancing strategies for different subsets
 
-     - General load balancing strategy
+    - General load balancing strategy
 
-         > RANDOM, PASSTHROUGH, ROUND_ROBIN, LEAST_REQUEST
+      > RANDOM, PASSTHROUGH, ROUND_ROBIN, LEAST_REQUEST
 
-     - consistent hashing
-     - Regional load balancing
+    - consistent hashing
+    - Regional load balancing
 
-     - Configure the connection-related configuration of Feign in Spring Cloud through the connection pool configuration configured in DestinationRule
+    - Configure the connection-related configuration of Feign in Spring Cloud through the connection pool configuration configured in DestinationRule
 
-         > Maximum number of retries
-         > Maximum idle time
-         > http2 related configuration
+      > Maximum number of retries
+      > Maximum idle time
+      > http2 related configuration
 
-     - Through OutlierDetection in DestinationRule, feign's outlier instance removal is realized
+    - Through OutlierDetection in DestinationRule, feign's outlier instance removal is realized
 
-        > Number of consecutive errors
-         > error interval
-         > Minimum enucleation percentage
-         > Maximum enucleation percentage
+      > Number of consecutive errors
+      > error interval
+      > Minimum enucleation percentage
+      > Maximum enucleation percentage
 
-     - Through the request/response header operation in VirtualService, modify the request/response header to access this application
+    - Through the request/response header operation in VirtualService, modify the request/response header to access this application
 
-     - Through the matching rules of HTTP and HTTPS traffic in virtualService, some capabilities of label routing are enhanced
+    - Through the matching rules of HTTP and HTTPS traffic in virtualService, some capabilities of label routing are enhanced
 
-     https://istio.io/latest/zh/docs/reference/config/networking/virtual-service/#HTTPMatchRequest
-     https://istio.io/latest/zh/docs/reference/config/networking/virtual-service/#TLSMatchAttributes
+    https://istio.io/latest/zh/docs/reference/config/networking/virtual-service/#HTTPMatchRequest
+    https://istio.io/latest/zh/docs/reference/config/networking/virtual-service/#TLSMatchAttributes
 
-     For example, do some inversion operations (without headers) support, and route according to some additional labels
+    For example, do some inversion operations (without headers) support, and route according to some additional labels
 
          ○ Return directly through the redirection in VirtualService to realize the service mock
 
@@ -114,6 +114,6 @@ In order to support k8s deployment in the future, mtls authentication + gRPC rep
 
 Since the service governance open source will continue to use the Sentinel console, a "service contract" menu will be added to the Sentinel console to display service contract information.
 
-### other 
+### other
 
 For more information about open source microservice governance, please refer to: https://www.yuque.com/ot01yo/thyzgp/rgzqv3

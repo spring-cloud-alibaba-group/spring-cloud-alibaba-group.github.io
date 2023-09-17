@@ -4,7 +4,7 @@ access: sca
 vars:
   region: cn-hongkong
   oss:
-    bucketName: 'sca-website-cn-hongkong'
+    bucketName: "sca-website-cn-hongkong"
 services:
   portal-www: # 静态资源
     component: oss

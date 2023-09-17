@@ -27,7 +27,7 @@ jobs:
       - name: Update Cache-Control
         uses: doggycool/ossutil-github-action@master
         with:
-          ossArgs: 'set-meta oss://sca-website-cn-hongkong/ Cache-Control:no-cache -rf'
+          ossArgs: "set-meta oss://sca-website-cn-hongkong/ Cache-Control:no-cache -rf"
           accessKey: ${{ secrets.ACCESS_KEYID }}
           accessSecret: ${{ secrets.ACCESS_KEYSECRET }}
           endpoint: oss-cn-hongkong.aliyuncs.com

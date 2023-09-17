@@ -32,14 +32,20 @@ export default function Home(): React.Element {
 
     setEleBg(el.current, true);
     const onScroll = () => {
-      const scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+      const scrollTop =
+        document.documentElement.scrollTop ||
+        window.pageYOffset ||
+        document.body.scrollTop;
       setEleBg(el.current, scrollTop < 60);
     };
     window.addEventListener("scroll", onScroll);
   }, []);
 
   return (
-    <Layout title={"SpringCloudAlibaba"} description="Spring Cloud Alibaba official site">
+    <Layout
+      title={"SpringCloudAlibaba"}
+      description="Spring Cloud Alibaba official site"
+    >
       <div ref={el} className="home-page">
         <Top language={curLang} />
         <Introduction language={curLang} />
@@ -47,11 +53,7 @@ export default function Home(): React.Element {
         <Feature />
         <User />
         {/* <Community /> */}
-        <Footer
-          logo={
-            "img/spring_cloud_alibaba_colorful.png"
-          }
-        />
+        <Footer logo={"img/spring_cloud_alibaba_colorful.png"} />
       </div>
     </Layout>
   );

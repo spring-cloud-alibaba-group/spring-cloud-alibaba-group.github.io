@@ -27,17 +27,26 @@ const data = {
         target: "",
       },
       {
-        text: translate({ id: "homepage.footerDocListText2", message: "快速开始" }),
+        text: translate({
+          id: "homepage.footerDocListText2",
+          message: "快速开始",
+        }),
         link: "/docs/2022.0.0.0/user-guide/nacos/quick-start",
         target: "",
       },
       {
-        text: translate({ id: "homepage.footerDocListText3", message: "报告文档问题" }),
+        text: translate({
+          id: "homepage.footerDocListText3",
+          message: "报告文档问题",
+        }),
         link: "https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/issues/new",
         target: "_blank",
       },
       {
-        text: translate({ id: "homepage.footerDocListText4", message: "在Github上编辑此文档" }),
+        text: translate({
+          id: "homepage.footerDocListText4",
+          message: "在Github上编辑此文档",
+        }),
         link: "https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io",
         target: "_blank",
       },
@@ -47,12 +56,18 @@ const data = {
     title: translate({ id: "homepage.footerResourcesTitle", message: "资源" }),
     list: [
       {
-        text: translate({ id: "homepage.footerResourcesListText2", message: "社区" }),
+        text: translate({
+          id: "homepage.footerResourcesListText2",
+          message: "社区",
+        }),
         link: "/community/community-weekly-meeting/host-of-weekly-meeting",
         target: "",
       },
       {
-        text: translate({ id: "homepage.footerResourcesListText1", message: "博客" }),
+        text: translate({
+          id: "homepage.footerResourcesListText1",
+          message: "博客",
+        }),
         link: "/blog",
         target: "",
       },
@@ -73,11 +88,14 @@ const Footer = (props: Props) => {
   return (
     <footer className="footer-container">
       <div className="footer-body">
-        <img style={{ marginTop: "4px", maxWidth: "240px", height: "auto"}} src={logo} />
+        <img
+          style={{ marginTop: "4px", maxWidth: "240px", height: "auto" }}
+          src={logo}
+        />
         <br />
         <br />
         {/* <p className="docusaurus-power">website powered by docusaurus</p> */}
-        <div className="cols-container"> 
+        <div className="cols-container">
           <div className="col col-12">
             <h3>{data.vision.title}</h3>
             <p>{data.vision.contentFist}</p>
@@ -93,7 +111,10 @@ const Footer = (props: Props) => {
                     </a>
                   )}
                   {d.link?.substr(0, 4) !== "http" && (
-                    <a href={`/${curLang}${d.link}`} target={d.target || "_self"}>
+                    <a
+                      href={`/${curLang}${d.link}`}
+                      target={d.target || "_self"}
+                    >
                       {d.text}
                     </a>
                   )}

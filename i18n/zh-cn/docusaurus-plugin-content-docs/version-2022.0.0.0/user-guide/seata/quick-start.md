@@ -6,7 +6,6 @@ description: Seata,Quick Start.
 
 本项目演示如何使用 spring-cloud-starter-alibaba-seata 完成 Spring Cloud 应用的分布式事务接入。
 
-
 ## 启动 Seata Server
 
 在运行此示例之前，需要先完成如下几步准备工作启动 Seata Server：
@@ -19,7 +18,7 @@ description: Seata,Quick Start.
 
 Seata AT 模式需要使用到 undo_log 表。
 
-``` $sql
+```$sql
 -- 注意此处0.3.0+ 增加唯一索引 ux_undo_log
 CREATE TABLE `undo_log` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
@@ -35,6 +34,7 @@ CREATE TABLE `undo_log` (
   UNIQUE KEY `ux_undo_log` (`xid`,`branch_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 ```
+
 #### **导入 seata-server db 模式所需要的数据库表**
 
 在数据库中初始化 [global_table、branch_table、lock_table、distributed_lock](https://github.com/seata/seata/blob/1.5.0/script/server/db/mysql.sql)。
@@ -119,23 +119,23 @@ INSERT INTO `distributed_lock` (lock_key, lock_value, expire) VALUES ('TxTimeout
 
 1.运行 seata-server 启动 Seata server。
 
-  示例中采用 nacos 作为配置，注册中心 存储模式为：db 采用 mysql。
+示例中采用 nacos 作为配置，注册中心 存储模式为：db 采用 mysql。
 
-2.或点击这个页面 [Seata 官网Github](https://github.com/seata/seata/releases)，下载最新版本的 Seata Server 端。
+2.或点击这个页面 [Seata 官网 Github](https://github.com/seata/seata/releases)，下载最新版本的 Seata Server 端。
 
- 进入解压之后的 bin 目录，执行如下命令来启动, 所有启动参数为可选项。
+进入解压之后的 bin 目录，执行如下命令来启动, 所有启动参数为可选项。
 
-  ```$shell
-  $ sh seata-server.sh -p $LISTEN_PORT -m $MODE(file or db) -h $HOST -e $ENV
-  ```
+```$shell
+$ sh seata-server.sh -p $LISTEN_PORT -m $MODE(file or db) -h $HOST -e $ENV
+```
 
--p seata-server 监听服务端口号。   
--m 存储模式，可选值：file、db。file 用于单点模式，db用于ha模式，当使用db存储模式，需要修改配置中store配置节点的数据库配置，同时在数据库中初始化[global_table、branch_table和 
-lock_table](https://github.com/seata/seata/blob/1.5.0/script/server/db/mysql.sql)。   
--h 用于解决seata-server和业务侧跨网络问题，其配置的host值直接显示到注册中心的服务可用地址host，当跨网络时这里需要配置为公网IP或NATIP，若都在同一局域网则无需配置。  
--e 用于解决多环境配置中心隔离问题。 
- 
-采用如下命令来启动 Seata Server：  
+-p seata-server 监听服务端口号。  
+-m 存储模式，可选值：file、db。file 用于单点模式，db 用于 ha 模式，当使用 db 存储模式，需要修改配置中 store 配置节点的数据库配置，同时在数据库中初始化[global_table、branch_table 和
+lock_table](https://github.com/seata/seata/blob/1.5.0/script/server/db/mysql.sql)。  
+-h 用于解决 seata-server 和业务侧跨网络问题，其配置的 host 值直接显示到注册中心的服务可用地址 host，当跨网络时这里需要配置为公网 IP 或 NATIP，若都在同一局域网则无需配置。  
+-e 用于解决多环境配置中心隔离问题。
+
+采用如下命令来启动 Seata Server：
 
 ```$shell
 $ sh seata-server.sh -p 8091 -m file
@@ -145,26 +145,26 @@ $ sh seata-server.sh -p 8091 -m file
 
 ### Seata Dashboard
 
-- Seata 1.5.1支持Seata控制台本地访问控制台地址：http://127.0.0.1:7091。
-- 通过Seata控制台可以观察到正在执行的事务信息和全局锁信息，并且在事务完成时删除相关信息。
+- Seata 1.5.1 支持 Seata 控制台本地访问控制台地址：http://127.0.0.1:7091。
+- 通过 Seata 控制台可以观察到正在执行的事务信息和全局锁信息，并且在事务完成时删除相关信息。
 
 ## 启动示例 Example
 
 ### 创建 Nacos 配置
 
-> **NOTE：** 
-执行此配置的时候，确保本地 Nacos server 启动成功！
+> **NOTE：**
+> 执行此配置的时候，确保本地 Nacos server 启动成功！
 
 创建示例中 Nacos data-id: seata.properties , Group: SEATA_GROUP(seata 1.5.1 默认分组) ,导入 [Nacos 配置](https://github.com/seata/seata/blob/1.5.0/script/config-center/config.txt)。
 
-  在 seata.properties 中增加示例中需要的如下[事务群组配置](https://seata.io/zh-cn/docs/user/configurations.html)。
+在 seata.properties 中增加示例中需要的如下[事务群组配置](https://seata.io/zh-cn/docs/user/configurations.html)。
 
 ```propertise
 service.vgroupMapping.order-service-tx-group=default
 service.vgroupMapping.account-service-tx-group=default
 service.vgroupMapping.business-service-tx-group=default
 service.vgroupMapping.storage-service-tx-group=default
-``` 
+```
 
 ### 配置业务数据环境
 
@@ -183,31 +183,32 @@ service.vgroupMapping.storage-service-tx-group=default
 
 2. 创建示例应用中所需要的数据库表。
 
-  可根据 spring-cloud-alibaba-examples/seata-example 下的 all.sql 快速操作：
+可根据 spring-cloud-alibaba-examples/seata-example 下的 `all.sql` 快速操作：
 
-    - 根据选择的事务模式，创建 [事务日志表](https://github.com/seata/seata/tree/develop/script/client)。比如默认为AT模式，需要使用到 undo_log 表，则进入 at/db 下选择对应的数据库脚本执行。
-    - 创建 seata-server db模式所需要的 [状态记录表](https://github.com/seata/seata/tree/develop/script/server/db) ，包括 global_table 、branch_table 、lock_table 、distributed_lock。
-    - 创建 spring-cloud-alibaba-examples/seata-example 示例中所需的数据库表。
+- 根据选择的事务模式，创建 [事务日志表](https://github.com/seata/seata/tree/develop/script/client)。比如默认为AT模式，需要使用到 undo_log 表，则进入 at/db 下选择对应的数据库脚本执行。
+- 创建 seata-server db模式所需要的 [状态记录表](https://github.com/seata/seata/tree/develop/script/server/db) ，包括 global_table 、branch_table 、lock_table 、distributed_lock。
+- 创建 spring-cloud-alibaba-examples/seata-example 示例中所需的数据库表。
 
 ### 启动 Example 示例
 
 1. 创建 Spring Boot 项目并引入依赖。
-   
-  ```xml
-  <dependency>
-      <groupId>com.alibaba.cloud</groupId>
-      <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
-  </dependency>
-  ```
-  示例可以参考 [Seata-Example](https://github.com/alibaba/spring-cloud-alibaba/tree/2022.x/spring-cloud-alibaba-examples/seata-example)。
+
+```xml
+<dependency>
+    <groupId>com.alibaba.cloud</groupId>
+    <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
+</dependency>
+```
+
+示例可以参考 [Seata-Example](https://github.com/alibaba/spring-cloud-alibaba/tree/2022.x/spring-cloud-alibaba-examples/seata-example)。
 
 2. 启动 Seata Server。
 
    > **NOTE：**
-   Spring Boot 和下载 server 两种方式（如果在准备 Seata-Server 准备中已经启动 Seata-Server，则可以跳过此步骤）:
+   > Spring Boot 和下载 server 两种方式（如果在准备 Seata-Server 准备中已经启动 Seata-Server，则可以跳过此步骤）:
 
- - 运行 spring-cloud-alibaba-examples/seata-example 下的 seata-server， 启动Seata server。
- - 根据 Seata 社区官方提供的 [seata-server.jar](https://seata.io/zh-cn/docs/ops/deploy-guide-beginner.html) 启动 Seata Server。
+- 运行 spring-cloud-alibaba-examples/seata-example 下的 seata-server， 启动 Seata server。
+- 根据 Seata 社区官方提供的 [seata-server.jar](https://seata.io/zh-cn/docs/ops/deploy-guide-beginner.html) 启动 Seata Server。
 
 3. 在本地启动 spring-cloud-alibaba-examples/seata-example 文件夹下的子服务 account-service ， order-service ， storage-service ，最后启动全局事务控制服务 business-service。
 
@@ -215,7 +216,6 @@ service.vgroupMapping.storage-service-tx-group=default
 
    http://127.0.0.1:18081/seata/feign  
    http://127.0.0.1:18081/seata/rest
-
 
 ### 分布式事务功能验证
 
@@ -231,10 +231,9 @@ service.vgroupMapping.storage-service-tx-group=default
 
 如果分布式事务生效的话， 那么以下等式应该成立:
 
+- 用户原始金额(1000) = 用户现存的金额 + 货物单价 (2) _ 订单数量 _ 每单的货物数量(2)
 
-- 用户原始金额(1000) = 用户现存的金额  +  货物单价 (2) * 订单数量 * 每单的货物数量(2)
-
-- 货物的初始数量(100) = 货物的现存数量 + 订单数量 * 每单的货物数量(2)
+- 货物的初始数量(100) = 货物的现存数量 + 订单数量 \* 每单的货物数量(2)
 
 ## 对 Spring Cloud 支持点
 

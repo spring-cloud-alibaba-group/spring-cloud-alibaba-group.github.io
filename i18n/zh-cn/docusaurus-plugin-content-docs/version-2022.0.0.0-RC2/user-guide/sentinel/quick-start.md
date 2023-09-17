@@ -38,6 +38,4 @@ public class TestController {
 }
 ```
 
-@SentinelResource 注解用来标识资源是否被限流、降级。上述例子上该注解的属性 hello 表示资源名。 @SentinelResource 还提供了其它额外的属性如 blockHandler，blockHandlerClass，fallback 用于表示限流或降级的操作，更多内容可以参考 [Sentinel注解支持](https://github.com/alibaba/Sentinel/wiki/%E6%B3%A8%E8%A7%A3%E6%94%AF%E6%8C%81)。
-
-
+@SentinelResource 注解用来标识资源是否被限流、降级。上述例子上该注解的属性 hello 表示资源名。 @SentinelResource 还提供了其它额外的属性如 blockHandler，blockHandlerClass，fallback 用于表示限流或降级的操作，更多内容可以参考 [Sentinel 注解支持](https://github.com/alibaba/Sentinel/wiki/%E6%B3%A8%E8%A7%A3%E6%94%AF%E6%8C%81)。

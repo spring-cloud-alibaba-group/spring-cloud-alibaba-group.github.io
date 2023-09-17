@@ -1,6 +1,6 @@
 ---
 title: "Quick Start"
-keywords: [Spring Cloud Alibaba,Sidecar]
+keywords: [Spring Cloud Alibaba, Sidecar]
 description: Sidecar, Quick Start.
 ---
 
@@ -22,15 +22,15 @@ Before adding Sidecar, start the Nacos Server.
 
 2. Start the Nacos Server;
 
-    After downloading and decompressing, we need to enter the bin directory to start nacos service. Do not double-click to start NACos service. By default, double-click to start NACos service will be started in cluster mode.
+   After downloading and decompressing, we need to enter the bin directory to start nacos service. Do not double-click to start NACos service. By default, double-click to start NACos service will be started in cluster mode.
 
-    ```shell
-    $ startup.cmd -m standalone
-    ```
+   ```shell
+   $ startup.cmd -m standalone
+   ```
 
 3. Log in to Nacos.
 
-    If we go to the browser and type localhost:8848/nacos, we can see that Nacos provides the console interface username and password are both nacos/nacos.
+   If we go to the browser and type localhost:8848/nacos, we can see that Nacos provides the console interface username and password are both nacos/nacos.
 
 ### Introduce dependencies
 
@@ -60,31 +60,31 @@ Introduce the following dependencies into the Spring Boot project that has been 
 > This example provides a NodeJS service. Node.js needs to be installed in the local environment to start the Node service and experience the Sidecar function!
 
 ```javascript
-var http = require('http');
+var http = require("http");
 var url = require("url");
-var path = require('path');
+var path = require("path");
 
 // create server
-var server = http.createServer(function(req, res) {
-    // Get the path to the request
-    var pathname = url.parse(req.url).pathname;
-    res.writeHead(200, { 'Content-Type' : 'application/json; charset=utf-8' });
-    // Visit http://localhost:8060/ and {"index":" Welcome to Home page "}
-    if (pathname === '/') {
-        res.end(JSON.stringify({ "index" : "Welcome to the home page" }));
-    }
-    // Visit http://localhost:8060/health, will return to {" status ":" UP "}
-    else if (pathname === '/health.json') {
-        res.end(JSON.stringify({ "status" : "UP" }));
-    }
-    // In other cases, 404 is returned
-    else {
-        res.end("404");
-    }
+var server = http.createServer(function (req, res) {
+  // Get the path to the request
+  var pathname = url.parse(req.url).pathname;
+  res.writeHead(200, { "Content-Type": "application/json; charset=utf-8" });
+  // Visit http://localhost:8060/ and {"index":" Welcome to Home page "}
+  if (pathname === "/") {
+    res.end(JSON.stringify({ index: "Welcome to the home page" }));
+  }
+  // Visit http://localhost:8060/health, will return to {" status ":" UP "}
+  else if (pathname === "/health.json") {
+    res.end(JSON.stringify({ status: "UP" }));
+  }
+  // In other cases, 404 is returned
+  else {
+    res.end("404");
+  }
 });
 // Create a listener and print a log
-server.listen(8060, function() {
-    console.log('listening on localhost:8060');
+server.listen(8060, function () {
+  console.log("listening on localhost:8060");
 });
 ```
 
@@ -113,9 +113,10 @@ sidecar:
   health-check-url: http://localhost:8060/health.json
 management:
 endpoint:
-    health:
-      show-details: always
+  health:
+    show-details: always
 ```
+
 ### Start service and test
 
 View heterogeneous services on the Nacos console:

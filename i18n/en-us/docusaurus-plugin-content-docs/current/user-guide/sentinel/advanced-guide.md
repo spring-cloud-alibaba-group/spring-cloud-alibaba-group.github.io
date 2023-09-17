@@ -5,6 +5,7 @@ description: Advanced Guide, Sentinel.
 ---
 
 ## Sentinel Console
+
 Sentinel provides out-of-the-box consoles:
 ![Sentinel Dashboard](https://github.com/alibaba/Sentinel/wiki/image/dashboard.png)
 
@@ -16,12 +17,12 @@ You can download the latest version of the console jar package from the [Release
 
 You can also build Sentinel Console yourself from the latest version of the source code:
 
-* Download [Dashboard](https://github.com/alibaba/Sentinel/tree/master/sentinel-dashboard) project.
-* Package the code into a fat jar with the following command:
+- Download [Dashboard](https://github.com/alibaba/Sentinel/tree/master/sentinel-dashboard) project.
+- Package the code into a fat jar with the following command:
 
-   ```shell
-   $ mvn clean package
-   ```
+  ```shell
+  $ mvn clean package
+  ```
 
 ### Start the console
 
@@ -49,9 +50,11 @@ The spring.cloud.sentinel.transport.port port configuration here will start an H
 For more usage and problems of Sentinel console, please refer to [Sentinel Console](https://github.com/alibaba/Sentinel/wiki/%E6%8E%A7%E5%88%B6%E5%8F%B0).
 
 ## Client support
+
 The Sentinel-related Starter provided by Spring Cloud Alibaba provides adaptation support for mainstream client components such as OpenFeign and RestTemplate in the Spring Cloud ecosystem.
 
 ### OpenFeign
+
 spring-cloud-starter-alibaba-sentinel is adapted to the [OpenFeign](https://github.com/OpenFeign/feign) component. If you want to use it, in addition to introducing the necessary Starter dependencies, you also need to enable sentinel's support for feign in the configuration file: feign.sentinel.enabled=true.
 
 Here is a simple usage example of FeignClient:
@@ -82,8 +85,8 @@ NOTE: The resource name policy definition in the interface corresponding to Feig
 
 The name of the resource corresponding to the method echo in the EchoService interface is GET:http://service-provider/echo/{str}.
 
-
 ### RestTemplate
+
 spring-cloud-starter-alibaba-sentinel supports using Sentinel to protect RestTemplate service calls. When constructing a RestTemplate bean, you need to add the @SentinelRestTemplate annotation.
 
 ```java
@@ -109,6 +112,7 @@ public class ExceptionUtil {
      }
 }
 ```
+
 NOTE: When the application starts, it will check whether the current limiting or downgrading method corresponding to the @SentinelRestTemplate annotation exists, and an exception will be thrown if it does not exist
 
 The current limiting (blockHandler, blockHandlerClass) and downgrading (fallback, fallbackClass) attributes of the @SentinelRestTemplate annotation are not mandatory.
@@ -117,9 +121,9 @@ When the RestTemplate call is broken by Sentinel, it will return the RestTemplat
 
 The resource rules of Sentinel RestTemplate current limiting provide two granularities:
 
-* httpmethod:schema://host:port/path: protocol, host, port and path
+- httpmethod:schema://host:port/path: protocol, host, port and path
 
-* httpmethod:schema://host:port: protocol, host and port
+- httpmethod:schema://host:port: protocol, host and port
 
 NOTE: Take the url https://www.taobao.com/test and use the GET method as an example. The corresponding resource names have two granularities, namely GET:https://www.taobao.com and GET:https://www.taobao.com/test.
 
@@ -215,7 +219,6 @@ The json exposed by Endpoint contains various properties:
 
 Here is an example of json exposed by Endpoint:
 
-
 ```json
 {
   "blockPage": null,
@@ -223,43 +226,47 @@ Here is an example of json exposed by Endpoint:
   "consoleServer": "localhost:8080",
   "coldFactor": "3",
   "rules": {
-    "flowRules": [{
-      "resource": "GET:http://www.taobao.com",
-      "limitApp": "default",
-      "grade": 1,
-      "count": 0.0,
-      "strategy": 0,
-      "refResource": null,
-      "controlBehavior": 0,
-      "warmUpPeriodSec": 10,
-      "maxQueueingTimeMs": 500,
-      "clusterMode": false,
-      "clusterConfig": null
-    }, {
-      "resource": "/test",
-      "limitApp": "default",
-      "grade": 1,
-      "count": 0.0,
-      "strategy": 0,
-      "refResource": null,
-      "controlBehavior": 0,
-      "warmUpPeriodSec": 10,
-      "maxQueueingTimeMs": 500,
-      "clusterMode": false,
-      "clusterConfig": null
-    }, {
-      "resource": "/hello",
-      "limitApp": "default",
-      "grade": 1,
-      "count": 1.0,
-      "strategy": 0,
-      "refResource": null,
-      "controlBehavior": 0,
-      "warmUpPeriodSec": 10,
-      "maxQueueingTimeMs": 500,
-      "clusterMode": false,
-      "clusterConfig": null
-    }]
+    "flowRules": [
+      {
+        "resource": "GET:http://www.taobao.com",
+        "limitApp": "default",
+        "grade": 1,
+        "count": 0.0,
+        "strategy": 0,
+        "refResource": null,
+        "controlBehavior": 0,
+        "warmUpPeriodSec": 10,
+        "maxQueueingTimeMs": 500,
+        "clusterMode": false,
+        "clusterConfig": null
+      },
+      {
+        "resource": "/test",
+        "limitApp": "default",
+        "grade": 1,
+        "count": 0.0,
+        "strategy": 0,
+        "refResource": null,
+        "controlBehavior": 0,
+        "warmUpPeriodSec": 10,
+        "maxQueueingTimeMs": 500,
+        "clusterMode": false,
+        "clusterConfig": null
+      },
+      {
+        "resource": "/hello",
+        "limitApp": "default",
+        "grade": 1,
+        "count": 1.0,
+        "strategy": 0,
+        "refResource": null,
+        "controlBehavior": 0,
+        "warmUpPeriodSec": 10,
+        "maxQueueingTimeMs": 500,
+        "clusterMode": false,
+        "clusterConfig": null
+      }
+    ]
   },
   "metricsFileCharset": "UTF-8",
   "filter": {
@@ -295,39 +302,40 @@ Here is an example of json exposed by Endpoint:
 ```
 
 ## More configuration items
+
 The following table shows that when there is a corresponding bean type in the ApplicationContext of the application, automatic settings will be performed:
 
-|Type of Bean |Operation |Function|
-|---|---|---|
-|UrlCleaner|WebCallbackManager.setUrlCleaner(urlCleaner)|Resource cleaning (resources (for example, all URLs satisfying /foo/:id are grouped under /foo/* resources))|
-|UrlBlockHandler|WebCallbackManager.setUrlBlockHandler(urlBlockHandler)|Custom flow limit processing logic|
-|RequestOriginParser|WebCallbackManager.setRequestOriginParser(requestOriginParser)|Set source information|
+| Type of Bean        | Operation                                                      | Function                                                                                                      |
+| ------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| UrlCleaner          | WebCallbackManager.setUrlCleaner(urlCleaner)                   | Resource cleaning (resources (for example, all URLs satisfying /foo/:id are grouped under /foo/\* resources)) |
+| UrlBlockHandler     | WebCallbackManager.setUrlBlockHandler(urlBlockHandler)         | Custom flow limit processing logic                                                                            |
+| RequestOriginParser | WebCallbackManager.setRequestOriginParser(requestOriginParser) | Set source information                                                                                        |
 
 Spring Cloud Alibaba Sentinel provides these configuration options:
 
-|Configuration Item|key|Default Value|Description|
-|---|---|---|---|
-|project name|spring.application.name or project.name| application | Sentinel project name
-|Automatic configuration|spring.cloud.sentinel.enabled|true|Whether Sentinel is effective|
-|Sentinel initialization|spring.cloud.sentinel.eager|false|Whether to trigger Sentinel initialization in advance|
-|Sentinel Console Interaction Port|spring.cloud.sentinel.transport.port| 8719|The port used by the application to interact with the Sentinel console, the application will locally start a HttpServer occupied by this port|
-|Console address|spring.cloud.sentinel.transport.dashboard| 8719 |Sentinel console address|
-|Heartbeat interval|spring.cloud.sentinel.transport.heartbeat-interval-ms| | Heartbeat interval between application and Sentinel console |
-|Registration IP|spring.cloud.sentinel.transport.client-ip| |The client IP of this configuration will be registered to the Sentinel Server|
-|Filter Loading Order|spring.cloud.sentinel.filter.order| |The loading order of Servlet Filter. The filter will be constructed inside the Starter|
-|url pattern collection |spring.cloud.sentinel.filter.url-patterns| |The data type is an array. Represents the url pattern collection of Servlet Filter|
-|Whether to enable CommonFilter |spring.cloud.sentinel.filter.enabled|true|Enable to instance CommonFilter|
-|metric file character set |spring.cloud.sentinel.metric.charset| |metric file character set |
-|metric single file size |spring.cloud.sentinel.metric.file-single-size| |Sentinel metric single file size|
-|metric total file count|spring.cloud.sentinel.metric.file-total-count| |metric total file count|
-|Log file path|spring.cloud.sentinel.log.dir| |Directory where Sentinel log files are located|
-|Whether to append the log PID|spring.cloud.sentinel.log.switch-pid|false|Whether the Sentinel log file name needs to carry the pid|
-|Redirect URL|spring.cloud.sentinel.servlet.block-page| |Customized redirect URL, when the request is limited, it will automatically redirect to the set URL |
-|Cold start factor|spring.cloud.sentinel.flow.cold-factor|| [Cold start factor](https://github.com/alibaba/Sentinel/wiki/%E9%99%90%E6%B5%81 ---%E5%86%B7%E5%90%AF%E5%8A%A8) |
-|Response mode after fuse |spring.cloud.sentinel.scg.fallback.mode| |Response mode after Spring Cloud Gateway fuse (choose redirect or response)|
-|Redirect URL when it is redirect|spring.cloud.sentinel.scg.fallback.redirect| |Spring Cloud Gateway response mode is the redirect URL corresponding to redirect mode|
-|Response content redirected when it is response|spring.cloud.sentinel.scg.fallback.response-body| |The response mode of Spring Cloud Gateway is the response content corresponding to the response mode|
-|Response code for redirection when it is response|spring.cloud.sentinel.scg.fallback.response-status| 429|The response mode of Spring Cloud Gateway is the response code corresponding to response mode|
-|Content-Type redirected when it is response|spring.cloud.sentinel.scg.fallback.content-type| application/json|Spring Cloud Gateway response mode is the content-type corresponding to response mode|
+| Configuration Item                                | key                                                   | Default Value    | Description                                                                                                                                   |
+| ------------------------------------------------- | ----------------------------------------------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| project name                                      | spring.application.name or project.name               | application      | Sentinel project name                                                                                                                         |
+| Automatic configuration                           | spring.cloud.sentinel.enabled                         | true             | Whether Sentinel is effective                                                                                                                 |
+| Sentinel initialization                           | spring.cloud.sentinel.eager                           | false            | Whether to trigger Sentinel initialization in advance                                                                                         |
+| Sentinel Console Interaction Port                 | spring.cloud.sentinel.transport.port                  | 8719             | The port used by the application to interact with the Sentinel console, the application will locally start a HttpServer occupied by this port |
+| Console address                                   | spring.cloud.sentinel.transport.dashboard             | 8719             | Sentinel console address                                                                                                                      |
+| Heartbeat interval                                | spring.cloud.sentinel.transport.heartbeat-interval-ms |                  | Heartbeat interval between application and Sentinel console                                                                                   |
+| Registration IP                                   | spring.cloud.sentinel.transport.client-ip             |                  | The client IP of this configuration will be registered to the Sentinel Server                                                                 |
+| Filter Loading Order                              | spring.cloud.sentinel.filter.order                    |                  | The loading order of Servlet Filter. The filter will be constructed inside the Starter                                                        |
+| url pattern collection                            | spring.cloud.sentinel.filter.url-patterns             |                  | The data type is an array. Represents the url pattern collection of Servlet Filter                                                            |
+| Whether to enable CommonFilter                    | spring.cloud.sentinel.filter.enabled                  | true             | Enable to instance CommonFilter                                                                                                               |
+| metric file character set                         | spring.cloud.sentinel.metric.charset                  |                  | metric file character set                                                                                                                     |
+| metric single file size                           | spring.cloud.sentinel.metric.file-single-size         |                  | Sentinel metric single file size                                                                                                              |
+| metric total file count                           | spring.cloud.sentinel.metric.file-total-count         |                  | metric total file count                                                                                                                       |
+| Log file path                                     | spring.cloud.sentinel.log.dir                         |                  | Directory where Sentinel log files are located                                                                                                |
+| Whether to append the log PID                     | spring.cloud.sentinel.log.switch-pid                  | false            | Whether the Sentinel log file name needs to carry the pid                                                                                     |
+| Redirect URL                                      | spring.cloud.sentinel.servlet.block-page              |                  | Customized redirect URL, when the request is limited, it will automatically redirect to the set URL                                           |
+| Cold start factor                                 | spring.cloud.sentinel.flow.cold-factor                |                  | [Cold start factor](https://github.com/alibaba/Sentinel/wiki/%E9%99%90%E6%B5%81 ---%E5%86%B7%E5%90%AF%E5%8A%A8)                               |
+| Response mode after fuse                          | spring.cloud.sentinel.scg.fallback.mode               |                  | Response mode after Spring Cloud Gateway fuse (choose redirect or response)                                                                   |
+| Redirect URL when it is redirect                  | spring.cloud.sentinel.scg.fallback.redirect           |                  | Spring Cloud Gateway response mode is the redirect URL corresponding to redirect mode                                                         |
+| Response content redirected when it is response   | spring.cloud.sentinel.scg.fallback.response-body      |                  | The response mode of Spring Cloud Gateway is the response content corresponding to the response mode                                          |
+| Response code for redirection when it is response | spring.cloud.sentinel.scg.fallback.response-status    | 429              | The response mode of Spring Cloud Gateway is the response code corresponding to response mode                                                 |
+| Content-Type redirected when it is response       | spring.cloud.sentinel.scg.fallback.content-type       | application/json | Spring Cloud Gateway response mode is the content-type corresponding to response mode                                                         |
 
 > NOTE: Please note. These configurations will only take effect in the Servlet environment, and neither RestTemplate nor OpenFeign will take effect for these configurations.

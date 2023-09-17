@@ -1,31 +1,8 @@
 @import '../../css/variables.scss';
 
 .button {
-  box-sizing: content-box;
-  display: inline-block;
-  height: 40px;
-  line-height: 40px;
-  min-width: 140px;
-  font-family: Avenir-Medium;
-  font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-  padding: 0;
-  border-radius: 24px;
-  text-decoration: none;
-
-  &-primary {
-    border: 2px solid #5381fd;
-    color: #5381fd;
-  }
-
-  &-normal {
-    border: 2px solid #333;
-    color: #333;
-  }
-
-  &-normal:hover {
-    border: 2px solid #69BD44;
-    color: #69BD44;
-  }
+  box-sizing:content-box;display:inline-block;height:40px;line-height:40px;min-width:140px;font-family:Avenir-Medium;font-weight:700;font-size:16px;text-align:center;padding:0;border-radius:24px;text-decoration:none;
+  &-primary { border: 2px solid #5381fd; color: #5381fd; }
+  &-normal { border: 2px solid #333; color: #333; }
+  &-normal:hover { border: 2px solid #69BD44; color: #69BD44; }
 }

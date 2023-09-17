@@ -1,6 +1,6 @@
 ---
 title: Overview
-keywords: [Spring Cloud Alibaba,Sidecar]
+keywords: [Spring Cloud Alibaba, Sidecar]
 description: Sidecar.Overview
 ---
 
@@ -17,6 +17,7 @@ There are two reasons:
 ## Supported components
 
 Currently supported service discovery components:
+
 - Nacos
 - Consul
 
@@ -26,4 +27,4 @@ Currently supported service discovery components:
 
 - A single widget using Spring Cloud Alibaba Sidecar solves the problem (no more than 200 lines of core code) and introduces a complete Mesh solution, which is a bit like killing eel.
 
-For more information please refer to: [Spring Cloud Alibaba Sidecar  Docs](https://spring-cloud-alibaba-group.github.io/github-pages/hoxton/zh-cn/index.html#_spring_cloud_alibaba_sidecar)
+For more information please refer to: [Spring Cloud Alibaba Sidecar Docs](https://spring-cloud-alibaba-group.github.io/github-pages/hoxton/zh-cn/index.html#_spring_cloud_alibaba_sidecar)

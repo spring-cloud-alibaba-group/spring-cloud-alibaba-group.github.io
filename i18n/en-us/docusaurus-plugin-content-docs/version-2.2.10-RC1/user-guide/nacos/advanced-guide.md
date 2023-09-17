@@ -1,6 +1,6 @@
 ---
 title: "Advanced Guide"
-keywords: [Spring Cloud Alibaba,Nacos]
+keywords: [Spring Cloud Alibaba, Nacos]
 description: Advanced,Nacos,Guide.
 ---
 
@@ -58,8 +58,8 @@ public class ProviderApplication {
 The console output is as follows:
 
 ```markdown
-in develop-env enviroment;  user name :nacos-config-yaml-update; age: 68
-The 2018-11-02 15:34:25. 33014-013 the INFO/Thread - 11 ConfigServletWebServerApplicationContext: Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6f1c29b7:  startup date [Fri Nov 02 15:33:57 CST 2018];  parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@63355449
+in develop-env enviroment; user name :nacos-config-yaml-update; age: 68
+The 2018-11-02 15:34:25. 33014-013 the INFO/Thread - 11 ConfigServletWebServerApplicationContext: Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6f1c29b7: startup date [Fri Nov 02 15:33:57 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@63355449
 ```
 
 If you need to switch to production, just change the ${spring.profiles.active} parameter configuration. As follows:
@@ -80,8 +80,8 @@ configuration content: current.env: develop-env
 Start the test program, and the output is as follows:
 
 ```markdown
-in product-env enviroment;  user name :nacos-config-yaml-update;  age: 68
-The 2018-11-02 15:42:14. 33024-628 the INFO/Thread - 11 ConfigServletWebServerApplicationContext: Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6aa8e115:  startup date [Fri Nov 02 15:42:03 CST 2018];  parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@19bb07ed
+in product-env enviroment; user name :nacos-config-yaml-update; age: 68
+The 2018-11-02 15:42:14. 33024-628 the INFO/Thread - 11 ConfigServletWebServerApplicationContext: Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6aa8e115: startup date [Fri Nov 02 15:42:03 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@19bb07ed
 ```
 
 > Note:
@@ -140,6 +140,7 @@ spring.cloud.nacos.config.extension-configs[2].refresh=true
 ```
 
 You can see:
+
 - through spring.cloud.nacos.config.extension-configs[n].data-id way to support multiple data id configuration.
 
 - through spring.cloud.nacos.config.extension-configs[n].group configuration way custom Data Id group, without explicitly configured, the default is DEFAULT_GROUP.
@@ -185,34 +186,34 @@ Nacos Config currently offers three configuration capabilities to pull relevant 
 
 - C: Automatically generates related Data ids based on internal rules (application name, application name + Profile).
 
-When the three methods are used together, one of their priority relationships is: ***A < B < C***
+When the three methods are used together, one of their priority relationships is: **_A < B < C_**
 
 ### Configuration items
 
 More configuration items for Nacos Config Starter are as follows:
 
-Configuration item|key|Default value|Description
-----|----|-----|-----
-Server address|spring.cloud.nacos.config.server-addr||ip address and port number of the server
-DataId prefix|spring.cloud.nacos.config.prefix|${spring.application.name}|The prefix of the DataId. The default value is the application name
-Group|spring.cloud.nacos.config.group|DEFAULT_GROUP|
-DataId suffix and content file format|spring.cloud.nacos.config.file-extension|properties|The DataId suffix, which is also the configuration content file format, currently supports only properties
-Configure the encoding mode of the content|spring.cloud.nacos.config.encode|UTF-8|Configured coding
-Gets the configured timeout period|spring.cloud.nacos.config.timeout|3000|Unit: ms
-The configured namespace|spring.cloud.nacos.config.namespace||One common scenario is the separation and isolation of different environments, such as resource isolation between the development and test environments and production environments.
-AccessKey|spring.cloud.nacos.config.access-key||
-SecretKey|spring.cloud.nacos.config.secret-key||
-Relative path|spring.cloud.nacos.config.context-path||The relative path of the server API
-Access point|spring.cloud.nacos.config.endpoint||Domain name of a service in a region. Through this domain name, the server address can be dynamically obtained
-Whether to enable listening and automatic refresh|spring.cloud.nacos.config.refresh-enabled|true|
-Cluster service name|spring.cloud.nacos.config.cluster-name||
+| Configuration item                                | key                                       | Default value              | Description                                                                                                                                                                          |
+| ------------------------------------------------- | ----------------------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Server address                                    | spring.cloud.nacos.config.server-addr     |                            | ip address and port number of the server                                                                                                                                             |
+| DataId prefix                                     | spring.cloud.nacos.config.prefix          | ${spring.application.name} | The prefix of the DataId. The default value is the application name                                                                                                                  |
+| Group                                             | spring.cloud.nacos.config.group           | DEFAULT_GROUP              |
+| DataId suffix and content file format             | spring.cloud.nacos.config.file-extension  | properties                 | The DataId suffix, which is also the configuration content file format, currently supports only properties                                                                           |
+| Configure the encoding mode of the content        | spring.cloud.nacos.config.encode          | UTF-8                      | Configured coding                                                                                                                                                                    |
+| Gets the configured timeout period                | spring.cloud.nacos.config.timeout         | 3000                       | Unit: ms                                                                                                                                                                             |
+| The configured namespace                          | spring.cloud.nacos.config.namespace       |                            | One common scenario is the separation and isolation of different environments, such as resource isolation between the development and test environments and production environments. |
+| AccessKey                                         | spring.cloud.nacos.config.access-key      |                            |
+| SecretKey                                         | spring.cloud.nacos.config.secret-key      |                            |
+| Relative path                                     | spring.cloud.nacos.config.context-path    |                            | The relative path of the server API                                                                                                                                                  |
+| Access point                                      | spring.cloud.nacos.config.endpoint        |                            | Domain name of a service in a region. Through this domain name, the server address can be dynamically obtained                                                                       |
+| Whether to enable listening and automatic refresh | spring.cloud.nacos.config.refresh-enabled | true                       |
+| Cluster service name                              | spring.cloud.nacos.config.cluster-name    |                            |
 
 ### Endpoint information
 
 Request http://127.0.0.1:18084/actuator/nacosconfig address, you can see related EndPoint node information:
 
 ```shell
-$ curl http://127.0.0.1:18084/actuator/nacosconfig 
+$ curl http://127.0.0.1:18084/actuator/nacosconfig
 ```
 
 Response:
@@ -291,6 +292,7 @@ In Spring Cloud application startup phase, monitor the WebServerInitializedEvent
 After Spring Cloud Loadbalancer is configured as a load balancing policy, IPv4 and IPv6 addresses of micro-services are registered with the registry by default after the application starts. IPv4 addresses are stored under the IP field in the Nacos service list. IPv6 address In the metadata field of Nacos, the corresponding Key is IPv6. When a service consumer invokes a service provider, it selects the appropriate IP address type to initiate the service invocation based on its own IP address stack support.
 
 Specific rules:
+
 1. If the service consumer supports dual IPv4 and IPv6 address stacks or only supports IPv6 address stacks, the service consumer will use the IPv6 address provided by the service to initiate service invocation. If the IPv6 address invocation fails, the service consumer cannot switch to IPv4 address stacks and initiate retry invocation.
 2. If the service consumer supports only IPv4 single-address stack, the service consumer invokes the service using the IPv4 address provided by the service.
 
@@ -314,27 +316,25 @@ spring.cloud.nacos.discovery.ip-type=IPv6
 
 For more information about the starter configuration items of spring-cloud-starter-alibaba-nacos-discovery, see the following:
 
-
-Configuration item|key|Default value|Description
-----|----|-----|-----
-Server address|spring.cloud.nacos.discovery.server-addr||
-Service name|spring.cloud.nacos.discovery.service|${spring.application.name}|The name of the service registered with Nacos, which defaults to the application name
-Weight|spring.cloud.nacos.discovery.weight|1|The value ranges from 1 to 100. A larger value indicates a larger weight
-Nic name|spring.cloud.nacos.discovery.network-interface||If no IP address is configured, the registered IP address is the IP address of the NIC. If this parameter is not configured, the IP address of the first NIC is used by default
-Registered IP address|spring.cloud.nacos.discovery.ip||Highest priority
-Type of the registered IP address|spring.cloud.nacos.discovery.ip-type|Double-stack address|You can configure the IPv4 and IPv6 two types, if the network card IP address multiple same type, hope to develop a specific network segment address, can use ` spring. Cloud. Inetutils. Preferred - networks ` address configuration screen
-Registered port|spring.cloud.nacos.discovery.port|-1|By default, you do not need to configure this parameter
-namespace|spring.cloud.nacos.discovery.namespace||One of the most common scenarios is the separation and isolation of the registration of different environments, such as the isolation of resources (such as configurations and services) between the development test environment and the production environment.
-AccessKey|spring.cloud.nacos.discovery.access-key||
-SecretKey|spring.cloud.nacos.discovery.secret-key||
-Metadata|spring.cloud.nacos.discovery.metadata||The configuration is in Map format
-Log file name|spring.cloud.nacos.discovery.log-name||
-cluster|spring.cloud.nacos.discovery.cluster-name|DEFAULT|Nacos Cluster name
-Access point|spring.cloud.nacos.discovery.endpoint||Domain name of a service in a region. Through this domain name, the server address can be dynamically obtained
-Whether to integrate LoadBalancer|spring.cloud.loadbalancer.nacos.enabled|false|
-Whether to enable Nacos Watch|spring.cloud.nacos.discovery.watch.enabled|false|You can set it to true to enable watch
-Whether to enable Nacos|spring.cloud.nacos.discovery.enabled|true|Start by default. If set to false, automatic registration with Nacos is disabled
-
+| Configuration item                | key                                            | Default value              | Description                                                                                                                                                                                                                                                       |
+| --------------------------------- | ---------------------------------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Server address                    | spring.cloud.nacos.discovery.server-addr       |                            |
+| Service name                      | spring.cloud.nacos.discovery.service           | ${spring.application.name} | The name of the service registered with Nacos, which defaults to the application name                                                                                                                                                                             |
+| Weight                            | spring.cloud.nacos.discovery.weight            | 1                          | The value ranges from 1 to 100. A larger value indicates a larger weight                                                                                                                                                                                          |
+| Nic name                          | spring.cloud.nacos.discovery.network-interface |                            | If no IP address is configured, the registered IP address is the IP address of the NIC. If this parameter is not configured, the IP address of the first NIC is used by default                                                                                   |
+| Registered IP address             | spring.cloud.nacos.discovery.ip                |                            | Highest priority                                                                                                                                                                                                                                                  |
+| Type of the registered IP address | spring.cloud.nacos.discovery.ip-type           | Double-stack address       | You can configure the IPv4 and IPv6 two types, if the network card IP address multiple same type, hope to develop a specific network segment address, can use `spring. Cloud. Inetutils. Preferred - networks` address configuration screen                       |
+| Registered port                   | spring.cloud.nacos.discovery.port              | -1                         | By default, you do not need to configure this parameter                                                                                                                                                                                                           |
+| namespace                         | spring.cloud.nacos.discovery.namespace         |                            | One of the most common scenarios is the separation and isolation of the registration of different environments, such as the isolation of resources (such as configurations and services) between the development test environment and the production environment. |
+| AccessKey                         | spring.cloud.nacos.discovery.access-key        |                            |
+| SecretKey                         | spring.cloud.nacos.discovery.secret-key        |                            |
+| Metadata                          | spring.cloud.nacos.discovery.metadata          |                            | The configuration is in Map format                                                                                                                                                                                                                                |
+| Log file name                     | spring.cloud.nacos.discovery.log-name          |                            |
+| cluster                           | spring.cloud.nacos.discovery.cluster-name      | DEFAULT                    | Nacos Cluster name                                                                                                                                                                                                                                                |
+| Access point                      | spring.cloud.nacos.discovery.endpoint          |                            | Domain name of a service in a region. Through this domain name, the server address can be dynamically obtained                                                                                                                                                    |
+| Whether to integrate LoadBalancer | spring.cloud.loadbalancer.nacos.enabled        | false                      |
+| Whether to enable Nacos Watch     | spring.cloud.nacos.discovery.watch.enabled     | false                      | You can set it to true to enable watch                                                                                                                                                                                                                            |
+| Whether to enable Nacos           | spring.cloud.nacos.discovery.enabled           | true                       | Start by default. If set to false, automatic registration with Nacos is disabled                                                                                                                                                                                  |
 
 ### Endpoint Information
 

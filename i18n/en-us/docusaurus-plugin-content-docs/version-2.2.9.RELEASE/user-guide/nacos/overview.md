@@ -1,8 +1,9 @@
 ---
 title: Overview
-keywords: [Spring Cloud Alibaba,Nacos]
+keywords: [Spring Cloud Alibaba, Nacos]
 description: Nacos,overivew.
 ---
+
 ## Service registration and discovery
 
 The biggest difference between microservices and traditional monolithic application architectures is the emphasis on the splitting of software modules. Under the monolithic architecture, multiple functional modules of an application system are organized and deployed and run in the same application process. Therefore, the response to a request can be completed directly through method calls between modules. However, in a microservice system, an application system needs to be split according to its functional characteristics and then deployed separately at a certain granularity, in order to achieve high cohesion within the module, low coupling between modules, and high reliability of the entire microservice system. Scalability:
@@ -26,6 +27,7 @@ In addition to monolithic applications, in distributed systems, configuration in
 ![service-config](https://sca-storage.oss-cn-hangzhou.aliyuncs.com/website/docs/en/nacos-service-configuration-center-en.png)
 
 The software architecture using the distributed configuration center is shown in the figure above, which can help solve the following problems in distributed scenarios:
+
 1. Manage application configurations: When there are a large number of applications to manage, manually maintaining configuration files can become very difficult. The distributed configuration center provides a solution for centrally managing and distributing configuration information.
 2. Environment isolation: In different environments such as development, testing, and production, the configuration information of the application is often not used. Using the distributed configuration center, you can easily manage and distribute configuration information in different environments.
 3. Improve program security: Storing configuration information in the code base or application files can lead to security risks because the information can be accidentally leaked or exploited by malicious attackers. Using distributed configuration, configuration information can be encrypted and protected, and access rights can be controlled.

@@ -106,7 +106,11 @@ const Top = ({ language }: { language?: string }) => {
                   </div>
                   <div className="count">{forkCount}</div>
                 </a>
-                <a target="_blank" rel="noopener noreferrer" href={getLink(topData.versionNote.link)}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={getLink(topData.versionNote.link)}
+                >
                   <div className="release-note">
                     <span className="type ">{topData.versionNote.text}</span>
                   </div>

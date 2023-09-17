@@ -7,6 +7,7 @@ description: GraalVM.
 To use GraalVM's static compilation capability, first ensure that your project's Spring Boot version is 3.0.0 or above, and Spring Cloud version is 2022.0.0 or above. Then introduce the required module dependencies of Spring Cloud Alibaba 2022.0.0.0-RC2 into the project.
 
 ## Environment preparation
+
 To build a native image using Native Build Tools, the GraalVM distribution needs to be installed on the machine first. You can download it manually on the Liberica Native Image Kit page, or use a tool like SDKMAN!
 Such a download manager. The demonstration environment in this article is macOS, if it is Windows, you can refer to the corresponding documentation for operation. Execute the following command to install the GraalVM environment:
 
@@ -25,6 +26,7 @@ OpenJDK 64-Bit Server VM GraalVM 22.3.0 (build 17.0.5+8-LTS, mixed mode)
 ```
 
 ## Generate Hints file
+
 Use the following commands to generate the Hints configuration files required for reflection, serialization and dynamic proxies in the application, provided that the `spring-boot-starter-parent` parent module is introduced into the application:
 
 ```bash
@@ -39,10 +41,10 @@ After the application will start, it is necessary to test all the functions of t
 - proxy-config.json: a hint file for Java proxy related content in the application
 - jni-config.json: Java Native Interface (JNI) content hint file in the application
 
-Note: During the generation of the hint file by the RocketMQ application through the above command, there may be incomplete scanning of configuration information, please refer to [related issues](https://github.com/alibaba/spring-cloud-alibaba/issues/3101 ), the Sentinel application may encounter the following problems during the hint file generation process through the above command, please refer to [related issues](https://github.com/alibaba/Sentinel/issues/3012).
-
+Note: During the generation of the hint file by the RocketMQ application through the above command, there may be incomplete scanning of configuration information, please refer to [related issues](https://github.com/alibaba/spring-cloud-alibaba/issues/3101), the Sentinel application may encounter the following problems during the hint file generation process through the above command, please refer to [related issues](https://github.com/alibaba/Sentinel/issues/3012).
 
 ## Build the native application
+
 After all the above steps are ready, use the following command to build the native image:
 
 ```bash
@@ -51,8 +53,8 @@ $ mvn -Pnative native:compile
 
 After successful execution, we can see the generated executable file in the `/target` directory.
 
-
 ## Start the application
+
 It is no different from ordinary executable files, start the application through `target/xxx`, you can observe the output similar to the following:
 
 ```
