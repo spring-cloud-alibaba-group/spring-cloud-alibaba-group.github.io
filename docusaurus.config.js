@@ -150,6 +150,12 @@ const config = {
           trackingID: "G-NP3B57ZGEF",
           anonymizeIP: true,
         },
+        sitemap: {
+          changefreq: 'weekly',           // 页面更新频率
+          priority: 0.5,                  // 该 url 相对网站其他 url 的优先级 value 0.0~1.0
+          ignorePatterns: ['/tags/**'],   // 匹配成功的路径不会出现在站点地图中。 注意你可能要在这里加上 base URL。
+          filename: 'sitemap.xml',        // 创建的站点地图的路径，相对于输出目录。
+        },
       }),
     ],
   ],
