@@ -86,7 +86,7 @@ keywords: [keywords1,keywords2]
 description: some description
 author: author name
 date: 2018-12-29
-custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/main/i18n/en/docusaurus-plugin-content-blog/30-line-wasm.md
+custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/master/i18n/en-us/docusaurus-plugin-content-blog/SCA-2022.0.0.0-version-released.md
 ---
 ```
 
