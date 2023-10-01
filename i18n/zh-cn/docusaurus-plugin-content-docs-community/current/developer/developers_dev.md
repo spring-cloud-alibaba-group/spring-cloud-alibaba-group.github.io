@@ -19,7 +19,6 @@ description: Spring Cloud Alibaba 维护者名单
 | 陈曦   | [theonefx](https://github.com/theonefx)         | Steering Committee Member | chenxilzx1@gmail.com   | 阿里巴巴     |
 | 饶子昊 | [steverao](https://github.com/steverao)         | Steering Committee Member | zihaorao@126.com       | 阿里巴巴     |
 
-
 ## Committer 成员
 
 | 姓名      | Github 账号                                       | 角色      | 联系方式                | 组织                   |
@@ -34,7 +33,6 @@ description: Spring Cloud Alibaba 维护者名单
 | 程兴源    | [complone](https://github.com/kaori-seasons)      | Committer | yuluoxinsheng@gmail.com | ~                      |
 | 阮胜      | [ruansheng8](https://github.com/ruansheng8)       | Committer | chrisruans@gmail.com    | 智业软件股份有限公司   |
 | 刘子明    | [123liuziming](https://github.com/123liuziming)   | Committer | 448918299@qq.com        | 北京大学研究生         |
-
 
 ## 开发角色
 
