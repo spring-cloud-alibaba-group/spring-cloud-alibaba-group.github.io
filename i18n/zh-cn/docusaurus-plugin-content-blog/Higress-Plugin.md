@@ -194,7 +194,7 @@ type TransformerConfig struct {
 
 type TransformRule struct {
   operate string   # 转换操作类型
-  headers []Param  # header 参数 
+  headers []Param  # header 参数
   querys  []Param  # query 参数
   body    []Param  # body 参数
 }
@@ -235,6 +235,4 @@ var _ Transformer = (*responseTransformer)(nil)
 
 ![image](https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/assets/6763318/648393a5-8495-4cf2-af15-9a812f8dd5e8)
 
-
 如果您觉得 Higress 对您有帮助，欢迎前往 Github: [Higress](https://github.com/alibaba/higress)为我们 star⭐️ 一下！期待与您在 Higress 社区相遇 ~
-
