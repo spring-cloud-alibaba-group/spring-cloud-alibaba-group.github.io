@@ -7,6 +7,7 @@ date: 2023-10-27
 ---
 
 ## SCG 修改请求/响应
+
 在 [Spring Cloud Gateway](https://cloud.spring.io/spring-cloud-gateway/reference/html/)(以下简称为 SCG) 中，当我们需要对 HTTP 请求或响应进行修改时，SCG 提供了许多内置的 [GatewayFilter](https://cloud.spring.io/spring-cloud-gateway/reference/html/#gatewayfilter-factories) 来满足我们对这种应用场景的需求，例如 AddRequestHeader,AddRequestParameter, DedupeResponseHeader,MapRequestHeader, ModifyRequestBody 等。
 考虑以下简单用例：
 
@@ -16,6 +17,7 @@ date: 2023-10-27
 - 剔除重复的响应头部 X-Dedupe。
 
 在 SCG 中使用 GatewayFilter 我们可以这样配置：
+
 ```yaml
 # application.yaml:
 
@@ -33,6 +35,7 @@ spring:
             - AddRequestParameter=k1, v1
             - DedupeResponseHeader=X-Dedupe, RETAIN_FIRST
 ```
+
 相信拥有 SCG 使用经验的同学对上述配置一定不陌生，那么本文将重点给出另一种能够满足上述需求并且性能更加优越的解决方案——使用 Higress 云原生网关的 Transformer 插件。
 
 ## Higress 插件与 SCG 性能比较
@@ -86,6 +89,7 @@ higress-gateway              1/1     1            1           1d
 注：为了能够同时完成请求和响应转换的需求，我们需要为 foo 路由再添加一个 Transformer 插件，命名为 transformer-resp，用于处理响应方向。
 
 4. 添加 Transformer 配置并开启该插件：
+
 - 添加请求头部 X-First，值从请求路径中获取，例如从 /response-headers?testKey=testValue 中获取 "response-headers"；
 - 将请求头部 X-First 的值映射给 X-Second；
 - 添加请求查询参数 k1=v1；
