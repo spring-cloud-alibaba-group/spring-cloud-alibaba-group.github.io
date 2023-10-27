@@ -7,7 +7,7 @@ date: 2023-10-27
 ---
 
 ## SCG 修改请求/响应
-在 Spring Cloud Gateway[1](以下简称为 SCG) 中，当我们需要对 HTTP 请求或响应进行修改时，SCG 提供了许多内置的 GatewayFilter[2]来满足我们对这种应用场景的需求，例如 AddRequestHeader,AddRequestParameter, DedupeResponseHeader,MapRequestHeader, ModifyRequestBody 等。
+在 [Spring Cloud Gateway](https://cloud.spring.io/spring-cloud-gateway/reference/html/)(以下简称为 SCG) 中，当我们需要对 HTTP 请求或响应进行修改时，SCG 提供了许多内置的 [GatewayFilter](https://cloud.spring.io/spring-cloud-gateway/reference/html/#gatewayfilter-factories) 来满足我们对这种应用场景的需求，例如 AddRequestHeader,AddRequestParameter, DedupeResponseHeader,MapRequestHeader, ModifyRequestBody 等。
 考虑以下简单用例：
 
 - 添加请求头部 X-First，值从请求路径中获取，例如从 /response-headers?testKey=testValue 中获取 "response-headers"；
@@ -37,8 +37,8 @@ spring:
 
 ## Higress 插件与 SCG 性能比较
 
-我们在同一吞吐量水平（QPS）上，开启/关闭 Higress Transformer 插件[3]和 SCG 相应 GatewayFilters，统计两者在 CPU 和内存资源上的开销。
-经过测试[13]，我们得到的结论是：
+我们在同一吞吐量水平（QPS）上，开启/关闭 [Higress Transformer 插件](https://github.com/alibaba/higress/tree/main/plugins/wasm-go/extensions/transformer)和 SCG 相应 GatewayFilters，统计两者在 CPU 和内存资源上的开销。
+经过[测试](https://gist.github.com/WeixinX/c24f4ded37832dd7e753b2d27470f0fc)，我们得到的结论是：
 
 - 在 Higress 未启用 Transformer 插件，SCG 未启用 GatewayFilters 的条件下，SCG 的 CPU, 内存资源开销分别约为 Higress的 3.30, 4.88倍；
 - 在 Higress 启用 Transformer 插件，SCG 启用相应 GatewayFilters 的条件下，SCG 的 CPU,内存资源开销分别约为 Higress 的 2.98, 3.19倍。
@@ -52,17 +52,17 @@ spring:
 
 ## Higress 简介
 
-Higress[4]是基于阿里内部的 Envoy Gateway 实践沉淀、以开源 Istio + Envoy 为核心构建的下一代云原生网关，实现了流量网关+微服务网关+安全网关三合一的高集成能力，深度集成 Dubbo、Nacos、Sentinel 等微服务技术栈，能够帮助用户极大地降低网关的部署及运维成本且能力不打折；在标准上全面支持 Ingress 与 Gateway API，积极拥抱云原生下的标准 API 规范；同时，Higress Controller 也支持 Nginx Ingress 平滑迁移，帮助用户零成本快速迁移到 Higress。
-Higress 提供了一套 Wasm (WebAssembly) SDK[5]，使得开发者能够轻松使用 C++，Golang，Rust 开发 Wasm 插件增强网关能力。下面将为大家介绍 Higress Transformer 插件的基本功能，最后简单说明 Transformer 插件的核心代码逻辑。
+[Higress](https://higress.io/zh-cn/)是基于阿里内部的 Envoy Gateway 实践沉淀、以开源 Istio + Envoy 为核心构建的下一代云原生网关，实现了流量网关+微服务网关+安全网关三合一的高集成能力，深度集成 Dubbo、Nacos、Sentinel 等微服务技术栈，能够帮助用户极大地降低网关的部署及运维成本且能力不打折；在标准上全面支持 Ingress 与 Gateway API，积极拥抱云原生下的标准 API 规范；同时，Higress Controller 也支持 Nginx Ingress 平滑迁移，帮助用户零成本快速迁移到 Higress。
+Higress 提供了一套 Wasm (WebAssembly) [SDK](https://github.com/alibaba/higress/tree/main/plugins)，使得开发者能够轻松使用 C++，Golang，Rust 开发 Wasm 插件增强网关能力。下面将为大家介绍 Higress Transformer 插件的基本功能，最后简单说明 Transformer 插件的核心代码逻辑。
 
 ![image](https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/assets/6763318/91759ea4-a295-4eb0-9fb6-9104d69ba8e3)
 
 ## Transformer 插件介绍
 
 Higress Transformer 插件可以对请求/响应头部、请求查询参数、请求/响应体参数进行转换，支持的转换操作类型包括删除（remove）、重命名（rename）、更新（replace）、添加（add）、追加（append）、映射（map）和去重（dedupe）。
-接下来我们复现最开始提到的 SCG GatewayFilter 简单用例，来演示如何使用该插件（以下使用 Higress 控制台可以很方便地部署插件，当然也可以使用 K8s YAML Manifests 的方式[12]）：
+接下来我们复现最开始提到的 SCG GatewayFilter 简单用例，来演示如何使用该插件（以下使用 Higress 控制台可以很方便地部署插件，当然也可以使用 [K8s YAML Manifests](https://github.com/higress-group/higress-demo/tree/main/wasm-demo/wasm-demo-go/wasm-plugin-transformer) 的方式）：
 
-1. 首先根据官方文档[6]快速安装 Higress，结果如下：
+1. 首先根据[官方文档](https://higress.io/zh-cn/docs/user/quickstart)快速安装 Higress，结果如下：
 
 ```bash
 $ kubectl -n higress-system get deploy
@@ -74,7 +74,7 @@ higress-controller           1/1     1            1           1d
 higress-gateway              1/1     1            1           1d
 ```
 
-2. 通过 Higress 控制台添加域名（foo.bar.com）、路由配置（foo），将流量转发至后端的 httpbin[7]服务：
+2. 通过 Higress 控制台添加域名（foo.bar.com）、路由配置（foo），将流量转发至后端的 [httpbin](https://httpbin.org/) 服务：
 
 ![image](https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/assets/6763318/30d4667b-8b81-4577-8ea4-39f1cbc1b849)
 ![image](https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/assets/6763318/eba02753-1823-4b26-b7f8-f5b4dd44fb15)
@@ -174,7 +174,7 @@ $ curl -v -H "host: foo.bar.com" \
 
 本节将简单说明 Higress Transformer 插件的核心代码逻辑，希望可以为有兴趣优化该插件或进行二次开发的同学提供一些帮助。
 
-首先该插件代码位于Higress 仓库的 plugins/wasm-go/extensions/transformer 目录下，使用 Higress 提供的 Wasm SDK[5]进行开发（关于如何开发 Wasm 插件详见官方文档[8]）。
+首先该插件代码位于Higress 仓库的 plugins/wasm-go/extensions/transformer 目录下，使用 Higress 提供的 Wasm SDK[5]进行开发（关于如何开发 Wasm 插件详见[官方文档](https://higress.io/zh-cn/docs/user/wasm-go)）。
 
 插件的配置模型 TransformerConfig：
 
@@ -219,7 +219,7 @@ var _ Transformer = (*requestTransformer)(nil)
 var _ Transformer = (*responseTransformer)(nil)
 ```
 
-由于头部（Headers）和查询参数（Querys）都是以 key-value 的形式存在，因此通过 kvHandler 对两者采用统一的处理逻辑；而 Body 由于请求、响应支持不同的 Content-Type，因此分别通过 requestBodyHandler (kvHandler,jsonHandler 组合)和 responseBodyHandler (jsonHandler) 进行处理。综上，在修改该插件逻辑时，主要对kvHandler 和 jsonHandler 进行修改即可，其中 jsonHandler 依赖 GJSON[9]和 SJSON[10]工具库。
+由于头部（Headers）和查询参数（Querys）都是以 key-value 的形式存在，因此通过 kvHandler 对两者采用统一的处理逻辑；而 Body 由于请求、响应支持不同的 Content-Type，因此分别通过 requestBodyHandler (kvHandler,jsonHandler 组合)和 responseBodyHandler (jsonHandler) 进行处理。综上，在修改该插件逻辑时，主要对kvHandler 和 jsonHandler 进行修改即可，其中 jsonHandler 依赖 [GJSON](https://github.com/tidwall/gjson) 和 [SJSON](https://github.com/tidwall/sjson) 工具库。
 
 ![image](https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/assets/6763318/1e993fb1-6674-4cb3-a301-e8ad1d48f422)
 
@@ -232,45 +232,5 @@ var _ Transformer = (*responseTransformer)(nil)
 ![image](https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/assets/6763318/648393a5-8495-4cf2-af15-9a812f8dd5e8)
 
 
-如果您觉得 Higress 对您有帮助，欢迎前往 Github: Higress[11]为我们 star⭐️ 一下！期待与您在 Higress 社区相遇 ~
+如果您觉得 Higress 对您有帮助，欢迎前往 Github: [Higress](https://github.com/alibaba/higress)为我们 star⭐️ 一下！期待与您在 Higress 社区相遇 ~
 
-相关链接：
-
-[1] Spring Cloud Gateway
-https://cloud.spring.io/spring-cloud-gateway/reference/html/
-
-[2] SCG GatewayFilter Factories
-https://cloud.spring.io/spring-cloud-gateway/reference/html/#gatewayfilter-factories
-
-[3] Higress Transformer 插件
-https://github.com/alibaba/higress/tree/main/plugins/wasm-go/extensions/transformer
-
-[4] Higress 官方文档
-https://higress.io/zh-cn/
-
-[5] Higress Wasm SDK
-https://github.com/alibaba/higress/tree/main/plugins
-
-[6] Higress 快速开始
-https://higress.io/zh-cn/docs/user/quickstart
-
-[7] httpbin
-https://httpbin.org/
-
-[8] 开发 Higress Wasm 插件
-https://higress.io/zh-cn/docs/user/wasm-go
-
-[9] GJSON
-https://github.com/tidwall/gjson
-
-[10] SJSON
-https://github.com/tidwall/sjson
-
-[11] Higress 代码仓库
-https://github.com/alibaba/higress
-
-[12] Transformer Demo
-https://github.com/higress-group/higress-demo/tree/main/wasm-demo/wasm-demo-go/wasm-plugin-transformer
-
-[13] 性能对比配置
-https://gist.github.com/WeixinX/c24f4ded37832dd7e753b2d27470f0fc
