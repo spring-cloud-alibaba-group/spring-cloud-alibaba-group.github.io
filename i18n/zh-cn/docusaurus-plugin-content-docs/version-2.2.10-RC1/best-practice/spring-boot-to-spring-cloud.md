@@ -103,8 +103,9 @@ public class ProviderApplication {
 ### 第四步：调整服务调用方式
 
 > **注意！**
+>
 > 1. 为了保证平滑升级，请确保下游应用完成 Spring Cloud 改造并在注册中心注册服务后再进行调用方式改造。
-> 2. RestTemplate/FeignClient 默认发起调用的 `hostname (示例中的service-provider)`是对端 Spring Cloud 应用名。因此，为了保证尽可能少的改造量，改造过程中设置的应用名 `spring.name=service-provider` 最好和之前的命名规范保持一致。比如：
+> 2. RestTemplate/FeignClient 默认发起调用的 `hostname (示例中的service-provider)` 是对端 Spring Cloud 应用名。因此，为了保证尽可能少的改造量，改造过程中设置的应用名 `spring.name=service-provider` 最好和之前的命名规范保持一致。比如：
 >    - 如果之前有自定义域名，则和域名定义保持一致
 >    - 如果之前用的 Kubernetes Service，则和 Service Name 保持一致
 

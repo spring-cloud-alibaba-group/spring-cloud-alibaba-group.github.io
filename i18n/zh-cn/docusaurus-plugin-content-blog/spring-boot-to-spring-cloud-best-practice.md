@@ -206,14 +206,14 @@ public RestTemplate restTemplate() {
 ```java
 @RestController
 public class AController {
-	@Autowired
-	private RestTemplate restTemplate;
-	private static final String SERVICE_PROVIDER_ADDRESS = "http://service-b";
+  @Autowired
+  private RestTemplate restTemplate;
+  private static final String SERVICE_PROVIDER_ADDRESS = "http://service-b";
 
-	@GetMapping("/test")
-	public String callServiceB() {
-		return restTemplate.getForObject(SERVICE_PROVIDER_ADDRESS +"/test-service-b", String.class);
-	}
+  @GetMapping("/test")
+  public String callServiceB() {
+      return restTemplate.getForObject(SERVICE_PROVIDER_ADDRESS +"/test-service-b", String.class);
+  }
 }
 ```
 
