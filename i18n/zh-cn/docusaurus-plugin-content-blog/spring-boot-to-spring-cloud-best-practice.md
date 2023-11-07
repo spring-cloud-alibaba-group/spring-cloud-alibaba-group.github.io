@@ -40,6 +40,7 @@ date: 2023-11-07
 ![spring boot](../../../static/img/best-practice/spring-boot.png)
 
 因此，要完整的运行示例，我们首先需要在本地 `/etc/hosts` 配置域名映射：
+
 ```
 127.0.0.1 service-b.example.com
 127.0.0.1 service-a.example.com
@@ -303,6 +304,7 @@ spring:
 ## 启动与验证
 
 在本地 `/etc/hosts` 配置如下 hostname 映射
+
 ```shell
 127.0.0.1  service.example.com
 ```

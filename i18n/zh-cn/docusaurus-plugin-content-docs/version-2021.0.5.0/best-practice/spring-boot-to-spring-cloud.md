@@ -63,6 +63,7 @@ Spring Cloud 是在 Spring Boot 之上构建的一套微服务生态体系，包
 在应用 `application.yml`或者 `application.properties`文件中增加以下配置项，设置应用名、注册中心地址。
 
 `application.yml`
+
 ```yaml
 spring:
   application:
@@ -76,6 +77,7 @@ spring:
 ```
 
 `application.properties`
+
 ```properties
 #项目名称必填，在注册中心唯一；最好和之前域名规范保持一致，第四步会讲到原因
 spring.application.name=service-provider
@@ -109,6 +111,7 @@ public class ProviderApplication {
 1. **RestTemplate 模式**
 
 为之前的 RestTemplate Bean 添加 `@LoadBlanced` 注解，使得 RestTemplate 接入服务发现与负载均衡：
+
 ```java
 @Bean
 @LoadBalanced
@@ -116,7 +119,9 @@ public RestTemplate restTemplate() {
     return new RestTemplate();
 }
 ```
+
 其它原有 `RestTemplate` 发起调用的代码保持不变，只需调整 hostname 即可，如下所示。
+
 ```java
 @RestController
  public class TestController {
@@ -134,6 +139,7 @@ public RestTemplate restTemplate() {
 2. **FeignClient 模式**
 
 使用 `@FeignClient` 注解将 EchoService 这个接口包装成一个 FeignClient，属性 name 对应对端应用名 `spring.name=service-provider`。
+
 ```java
 //@FeignClient(name = "service-provider", url="http://service.example.com/")
 @FeignClient(name = "service-provider")
@@ -142,7 +148,9 @@ public interface EchoService {
     String echo(@PathVariable("str") String str);
 }
 ```
+
 将 EchoService 作为标准 bean 注入，即可对远端服务发起请求了。
+
 ```java
 @RestController
  public class TestController {
@@ -211,7 +219,9 @@ _升级后 SpringCloud 架构 _👆
 - [spring-cloud-starter-alibaba-nacos-sentinel](https://sca.aliyun.com/zh-cn/docs/next/user-guide/sentinel/quick-start)
 - [spring-cloud-starter-alibaba-nacos-rocketmq](https://sca.aliyun.com/zh-cn/docs/next/user-guide/rocketmq/quick-start)
 - [spring-cloud-starter-alibaba-nacos-seata](https://sca.aliyun.com/zh-cn/docs/next/user-guide/seata/quick-start)
+
 ### Spring Cloud Alibaba 集成的组件版本
+
 每个 Spring Cloud Alibaba 版本及其自身所适配的各组件对应版本如下表所示
 
 | **Spring Cloud Alibaba Version** | **Sentinel Version** | **Nacos Version** | **RocketMQ Version** | **Dubbo Version** | **Seata Version** |
