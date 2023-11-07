@@ -7,7 +7,6 @@ date: 2023-10-27
 ---
 
 ## SCG 修改请求/响应
-
 在 [Spring Cloud Gateway](https://cloud.spring.io/spring-cloud-gateway/reference/html/)(以下简称为 SCG) 中，当我们需要对 HTTP 请求或响应进行修改时，SCG 提供了许多内置的 [GatewayFilter](https://cloud.spring.io/spring-cloud-gateway/reference/html/#gatewayfilter-factories) 来满足我们对这种应用场景的需求，例如 AddRequestHeader,AddRequestParameter, DedupeResponseHeader,MapRequestHeader, ModifyRequestBody 等。
 考虑以下简单用例：
 
