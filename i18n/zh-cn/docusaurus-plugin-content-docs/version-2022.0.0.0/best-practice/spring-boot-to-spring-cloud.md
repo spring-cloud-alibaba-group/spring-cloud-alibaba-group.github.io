@@ -3,11 +3,17 @@ title: Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践
 keywords: ["Spring Boot", "SpringBoot", "Spring Boot 升级为 Spring Cloud"]
 description: Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践.
 ---
+
 Spring Cloud 是在 Spring Boot 之上构建的一套微服务生态体系，包括服务发现、配置中心、限流降级、分布式事务、异步消息等，因此通过增加依赖、注解等简单的四步即可完成 Spring Boot 应用到 Spring Cloud 升级。
+
 ## Spring Boot 应用升级为 Spring Cloud
+
 以下是应用升级 Spring Cloud 的完整步骤。
+
 ### 第一步：添加 Spring Cloud 依赖
+
 首先，为应用添加 `Spring Cloud` 与 `Spring Cloud Alibaba` 依赖。注意根据当前应用 Spring Boot 版本选择合适的 Spring Cloud 版本，具体参见[版本映射表](#d2e0d790)。
+
 ```xml
 <properties>
     <spring-cloud-alibaba.version>2022.0.0.0</spring-cloud-alibaba.version>
@@ -49,8 +55,11 @@ Spring Cloud 是在 Spring Boot 之上构建的一套微服务生态体系，包
     </dependency>
 </dependencies>
 ```
+
 以上我们添加了`服务注册发现`、`OpenFeign` 等依赖。
+
 ### 第二步：添加配置
+
 在应用 `application.yml`或者 `application.properties`文件中增加以下配置项，设置应用名、注册中心地址。
 
 `application.yml`
@@ -70,11 +79,14 @@ spring:
 ```properties
 #项目名称必填，在注册中心唯一；最好和之前域名规范保持一致，第四步会讲到原因
 spring.application.name=service-provider
- #启用 spring cloud nacos discovery
+#启用 spring cloud nacos discovery
 spring.cloud.nacos.discovery.server-addr=127.0.0.1:8848
 ```
+
 ### 第三步：启动类增加注解
+
 启动类增加 `EnableDiscoveryClient` `EnableFeignClients` 注解，启动服务地址自动注册与发现。
+
 ```java
 @SpringBootApplication
 @EnableDiscoveryClient
@@ -85,7 +97,9 @@ public class ProviderApplication {
     }
 }
 ```
+
 ### 第四步：调整服务调用方式
+
 > **注意！**
 > 1. 为了保证平滑升级，请确保下游应用完成 Spring Cloud 改造并在注册中心注册服务后再进行调用方式改造。
 > 2. RestTemplate/FeignClient 默认发起调用的 `hostname (示例中的service-provider)`是对端 Spring Cloud 应用名。因此，为了保证尽可能少的改造量，改造过程中设置的应用名 `spring.name=service-provider` 最好和之前的命名规范保持一致。比如：
@@ -146,13 +160,27 @@ public interface EchoService {
 3. **HtClient、自定义HTTP访问工具等**
 
 对于使用 HttpClient 或者自行封装 http 调用工具的用户，建议统一改造为以上 1、2 两种调用模式之一。
+
 ## 参考资料
+
 ### 完整示例源码
-我们提供了一个 Spring Boot 到 Spring Cloud 升级改造的完整示例，具体请参见 [Github 源码链接](https://github.com/chickenlj/spring-cloud-alibaba/tree/2022.x-boot-to-cloud-example/spring-cloud-alibaba-examples/boot-to-cloud)：
+
+基于 Spring Boot 构建的应用架构变化多样，比如可能是以下一些常用架构的任意一种，但不论哪种架构，升级 Spring Cloud 的大致改造方式都是类似的（都可以转为基于 Nacos 注册中心的地址发现与负载均衡）。
+
+- 基于 DNS 自定义域名，服务间的通过域名调用实现负载均衡
+- 基于 SLB 的中心化流量转发，调用直接转发到 SLB，由 SLB 实现在服务间实现流量转发
+- 基于 Kubernetes Service 微服务体系，依赖 Kubernetes ClusterIP 等实现负载均衡与调用转发
+
+在此，我们以 DNS 自定义域名架构为例，提供了一个 Spring Boot 到 Spring Cloud 升级改造的完整示例，升级前后的应用架构图如下。具体可参见 [Github 源码链接](https://github.com/spring-cloud-alibaba-group/springboot-transfer-to-springcloud)。
+
+![spring boot](../../../../../static/img/best-practice/spring-boot.png)
+_升级前 SpringBoot 架构 👆_
 
 ![spring cloud](../../../../../static/img/best-practice/spring-cloud.png)
+_升级后 SpringCloud 架构 _👆
 
 ### Spring Boot 与 Spring Cloud Alibaba 版本对应关系
+
 请根据您使用的 Spring Boot 版本，选择兼容的 Spring Cloud Alibaba 版本
 
 | **Spring Boot Version** | **Spring Cloud Alibaba Version** | **Spring Cloud Version** |
