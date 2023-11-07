@@ -13,18 +13,19 @@ date: 2023-11-07
 * 本示例完整源码，请参见 [Github 仓库](https://github.com/spring-cloud-alibaba-group/springboot-transfer-to-springcloud)
 * 升级指南、版本选择、注意事项等，请参见[Spring Boot 迁移升级最佳实践](https://sca.aliyun.com/zh-cn/docs/next/best-practice/spring-boot-to-spring-cloud)
 
-## 原始 Spring Boot 应用架构
+1. 原始 Spring Boot 应用架构
 
 在示例中，我们有如下基于 Spring Boot 开发的应用架构：
 
 ![spring boot](../../../static/img/best-practice/spring-boot.png)
 
 我们这里列出来的只是一种示例架构。基于 Spring Boot 构建的应用架构变化多样，比如可能如下一些常用的架构，但不论哪种架构，升级 Spring Cloud 的大致改造方式都是类似的（都可以转为基于 Nacos 注册中心的地址发现与负载均衡）。
+
 * 基于 DNS 自定义域名，服务间的通过域名调用实现负载均衡
 * 基于 SLB 的中心化流量转发，调用直接转发到 SLB，由 SLB 实现在服务间实现流量转发
 * 基于 Kubernetes Service 微服务体系，依赖 Kubernetes ClusterIP 等实现负载均衡与调用转发
 
-## 升级后的 Spring Cloud Alibaba 应用架构
+2. 升级后的 Spring Cloud Alibaba 应用架构
 
 我们将以上示例全部改造为 Spring Cloud 应用，改造后的架构如下：
 
@@ -32,8 +33,7 @@ date: 2023-11-07
 
 新架构基于 Spring Cloud Service Discovery 机制实现地址自动发现与负载均衡，使用 Nacos 作为注册中心。
 
-
-# 示例 Spring Boot 应用
+## 示例 Spring Boot 应用
 
 示例包含 spring-boot-A（service-a） 和 spring-boot-B（service-b）两个应用（微服务），应用之间依赖 dns 域名完成互相调用。
 
@@ -53,17 +53,17 @@ $ curl http://service-a.example.com:18000/test
 Get result from service B.
 ```
 
-# 示例 Spring Cloud 应用
+## 示例 Spring Cloud 应用
 
 ![spring cloud](../../../static/img/best-practice/spring-cloud.png)
 
 接下来，我们分步骤将 Spring Boot A 应用和 Spring Boot B 应用改造为 Spring Cloud 应用。
 
-## 改造应用B
+### 改造应用B
 
 首先将 Spring Boot B 应用进行改造，接入 Spring Cloud Nacos Registry
 
-### 第一步：添加依赖
+#### 第一步：添加依赖
 
 ```xml
 <properties>
@@ -96,7 +96,7 @@ Get result from service B.
 </dependencies>
 ```
 
-### 第二步：完善配置文件
+#### 第二步：完善配置文件
 
 ```yaml
 spring:
@@ -108,7 +108,7 @@ spring:
         server-addr: 127.0.0.1:8848
 ```
 
-### 第三步：启动类注解
+#### 第三步：启动类注解
 
 ```java
 @SpringBootApplication
@@ -120,9 +120,9 @@ public class SpringBootBApplication {
 }
 ```
 
-## 改造应用A
+### 改造应用A
 
-### 第一步：添加依赖
+#### 第一步：添加依赖
 
 ```xml
 <properties>
@@ -166,7 +166,7 @@ public class SpringBootBApplication {
 </dependencies>
 ```
 
-### 第二步：配置文件
+#### 第二步：配置文件
 
 ```yaml
 spring:
@@ -178,7 +178,7 @@ spring:
         server-addr: 127.0.0.1:8848
 ```
 
-### 第三步：启动类注解
+#### 第三步：启动类注解
 
 ```java
 @SpringBootApplication
@@ -191,7 +191,7 @@ public class SpringBootAApplication {
 }
 ```
 
-### 第四步：调整调用方式
+#### 第四步：调整调用方式
 
 改造后的应用我们要使用 Nacos 注册中心来做地址发现，并使用 Loadbalancer 来实现负载均衡。
 
@@ -217,9 +217,9 @@ public class AController {
 }
 ```
 
-## 增加 Gateway 网关
+### 增加 Gateway 网关
 
-### 依赖
+#### 依赖
 
 ```xml
 <properties>
@@ -267,7 +267,7 @@ public class AController {
 </dependencyManagement>
 ```
 
-### 启动类注解
+#### 启动类注解
 
 ```java
 @SpringBootApplication
@@ -279,7 +279,7 @@ public class SpringGatewayApplication {
 }
 ```
 
-### 路由配置
+#### 路由配置
 
 ```yaml
 spring:
@@ -301,7 +301,7 @@ spring:
             - StripPrefix=1
 ```
 
-## 启动与验证
+### 启动与验证
 
 在本地 `/etc/hosts` 配置如下 hostname 映射
 
