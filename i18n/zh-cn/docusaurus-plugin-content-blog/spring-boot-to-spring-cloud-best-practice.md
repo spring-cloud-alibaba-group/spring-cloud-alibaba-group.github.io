@@ -6,7 +6,7 @@ author: 刘军
 date: 2023-11-07
 ---
 
-# Spring Boot 单体应用升级 Spring Cloud 微服务
+## Spring Boot 单体应用升级 Spring Cloud 微服务
 
 通过以下示例，我们完整的演示了一个 Spring Boot 架构的单体应用集群，如何平滑的升级为一个 Spring Cloud 微服务集群，本文章包含源码、讲解、原理说明。
 
