@@ -1,97 +1,102 @@
-# Spring Cloud Alibaba Official Website
+# Spring Cloud Alibaba Website
 
-## Run In Local Environment
+[![CI Status](https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/workflows/sca.aliyun.com%20deploy/badge.svg)](https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/actions)
 
-### Pre-requirements
+## Build the project locally
 
-> If requirements stated here cannot be meet in local environment, please refer to [Run with Docker](#run-with-docker).
+### Environmental preparation
 
-The project source code is built based on docusaurus v2.3.1, so to compile and run this project, it is necessary to ensure the installation of Node.js and other basic environments.
+> If you do not want to install the dependent components locally, refer to the following [How Docker Environments Work](#docker-mode).
+> The project source code is based on docusaurus v2.4.1, so to compile and run this project, you need to ensure that the Node. JS is installed.
 
 - Node.js version 16.14+
 
-### Quick Start
+### Quick start
 
-1. `npm install`
+1.  `npm install`
 
-2. `npm run start`
+2.  `npm run start` (When started in this way, the English page cannot be accessed if access is required to `npm run start-en` start)
 
-3. visit with browser
-
-```shell
-localhost:3000/
-```
-
-### Build and Serve
-
-1. `npm run build`
-
-2. `npm run serve`
-
-3. visit with browser
+3. Browser input
 
 ```shell
-localhost:3000/
+# 中文模式启动
+http://localhost:3000/zh-cn
+# 英文模式启动
+http://localhost:3000/en-us
 ```
 
-## Run With Docker
+### Build and start as a service
 
-> No extra components needed except docker.
+1.  `npm run build`
 
-### Run locally
+2.  `npm run serve`
 
-1. build image
+3. Browser input
+
+```shell
+http://localhost:3000/zh-cn
+```
+
+## Docker mode
+
+Make sure Docker is installed on the local machine.
+
+### Local development
+
+1. Build the mirror
 
 ```shell
 docker build --target development -t docs:dev .
 ```
 
-2. run container
+2. Run the container
 
 ```shell
 docker run -p 3000:3000 docs:dev
 ```
 
-### Run in production
+### Production deployment
 
-1. build image
+1. Build the mirror
 
 ```shell
 docker build -t sca-site:latest .
 ```
 
-2. run container
+2. Run the container
 
 ```shell
 docker run --rm -p 3000:80 sca-site:latest
 ```
 
-## i18n Considerations
+## Note for i18n
 
-Please note that if you start the site in development mode with `npm run start` or `npm run start-en`, the regional language switching feature and local search feature will not work. Please run the program in production mode using the "build and start as service" process to enable locale switching and site search.
+Note that if you are using `npm run start` or `npm run start-en` starting a Web site project in development mode, the regional language conversion feature and the local search feature will not work. Run the site project using `npm run build & npm run server` in production mode to enable locale switching and site-wide search.
 
-## How to write documentation
+## How to write a document
 
 ### Add a new document
 
-1. Add a new .md file under i18n/en-us/docusaurus-plugin-content-docs/current or i18n/zh-cn/docusaurus-plugin-content-docs/current. Corresponding to the Chinese file and the English file, the Chinese and English file names must be consistent.
-2. Update sidebar.js to add a new entry in the en-us or zh-cn directory.
+1. A placeholder file is added at the `docs` `versioned_docs` position corresponding to the folder under the root directory;
+2. Add a new markdown file under `i18n/en-us/docusaurus-plugin-content-docs/version` or `i18n/zh-cn/docusaurus-plugin-content-docs/version`. Corresponding to English and Chinese files, the Chinese and English file names shall be consistent with the `docs` placeholder files;
+3. Add the corresponding entry in the `sidecar.json` file under the `versioned_sidecar` corresponding version.
 
 ### Add new articles for developers
 
-1. Add a new .md file under i18n/en-us/docusaurus-plugin-content-docs/current/developers or i18n/zh-cn/docusaurus-plugin-content-docs/current/developers, the file name should start with \_dev.md ends. Note that the suffix \_dev is necessary.
-2. Update sidebar.js to add a new entry in en-us or zh-cn.
+1. At `i18n/en-us/docusaurus-plugin-content-docs/current/developers` or Add a new markdown file under `i18n/zh-cn/docusaurus-plugin-content-docs/current/developers`. The file name should be *\ End of _ dev. MD. Note the suffix* \ _ dev, which is necessary;
+2. Update the `sidebar.js` to add a new entry in en-us or zh-cn.
 
 ### Add a new blog
 
-1. Add a new .md file under i18n/en-us/docusaurus-plugin-content-blog/current or i18n/zh-cn/docusaurus-plugin-content-blog/current. Corresponding to the Chinese file and the English file, the Chinese and English file names must be consistent.
-2. Requires `SEO` configuration.
+1. Add a new markdown under `i18n/en-us/docusaurus-plugin-content-blog/current` or `i18n/zh-cn/docusaurus-plugin-content-blog/current` paper. Corresponding to English and Chinese, the Chinese and English file names shall be consistent with the placeholder file names;
+2. Add SEO configuration in the file header.
 
 ## SEO
 
-the type is:
+the type is :
 
-```
+```markdwon
 ---
 title: title
 keywords: [keywords1,keywords2]
@@ -102,13 +107,13 @@ custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alib
 ---
 ```
 
-**Notice:**
+**Notice**
 
-1. "title" cannot contain ":"
-2. `keywords` must be `Array`
-3. `custom_edit_url` is a link to the documentation in this repo, required.
+1. `title` cannot contain ":";
+2. `keywords` Must be `Array`;
+3. `custom_edit_url` Is a link to the documentation in the github repository.
 
-## Note the .md file
+## Note the markdown file
 
-1. Do not use incorrect html tags, such as `<img>, <br>`, replace it with `<img/> <br/>`;
-2. If you want to display `<xx>`, please replace it with `&lt;xx&gt;`.
+1. Do not use incorrect HTML tags, such as `<img>， <br>`, replace with `<img/> <br/>`;
+2. Replace with `&lt;xx&gt;` if you want to display `<xx>`.
