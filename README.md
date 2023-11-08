@@ -13,9 +13,9 @@
 
 ### Quick start
 
-1.  `npm install`
+1. `npm install`
 
-2.  `npm run start` (When started in this way, the English page cannot be accessed if access is required to `npm run start-en` start)
+2. `npm run start` (When started in this way, the English page cannot be accessed if access is required to `npm run start-en` start)
 
 3. Browser input
 
@@ -28,9 +28,9 @@ http://localhost:3000/en-us
 
 ### Build and start as a service
 
-1.  `npm run build`
+1. `npm run build`
 
-2.  `npm run serve`
+2. `npm run serve`
 
 3. Browser input
 
