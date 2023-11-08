@@ -33,3 +33,6 @@ MD037: false
 
 # MD046/Two formats of code blocks are allowed: fenced and indented
 MD046: false
+
+# blanks-around-headings、blanks-around-headers
+MD022: false
