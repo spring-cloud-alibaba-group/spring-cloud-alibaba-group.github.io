@@ -100,7 +100,10 @@ const sidebars = {
       type: "category",
       label: "Best practice",
       collapsible: true,
-      items: ["best-practice/integrated-example"],
+      items: [
+        "best-practice/integrated-example",
+        "best-practice/spring-boot-to-spring-cloud"
+      ]
     },
     // todo 后续补充或彻底删除
     // {
