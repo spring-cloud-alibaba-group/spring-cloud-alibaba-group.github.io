@@ -78,7 +78,8 @@
       "label": "Best practice",
       "collapsible": true,
       "items": [
-        "best-practice/integrated-example"
+        "best-practice/integrated-example",
+        "best-practice/spring-boot-to-spring-cloud"
       ]
     }
   ]
