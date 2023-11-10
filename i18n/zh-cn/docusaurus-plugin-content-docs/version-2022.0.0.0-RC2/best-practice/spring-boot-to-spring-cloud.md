@@ -48,7 +48,7 @@ Spring Cloud 是在 Spring Boot 之上构建的一套微服务生态体系，包
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-openfeign</artifactId>
     </dependency>
-  <!-- 服务发现：OpenFeign服务调用 -->
+  <!-- 负载均衡器 -->
     <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-loadbalancer</artifactId>
