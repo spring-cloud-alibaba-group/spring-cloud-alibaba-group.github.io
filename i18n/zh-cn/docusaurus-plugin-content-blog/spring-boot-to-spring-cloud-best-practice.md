@@ -158,7 +158,7 @@ public class SpringBootBApplication {
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-openfeign</artifactId>
     </dependency>
-  <!-- 服务发现：负载均衡 -->
+  <!-- 负载均衡器 -->
     <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-loadbalancer</artifactId>
