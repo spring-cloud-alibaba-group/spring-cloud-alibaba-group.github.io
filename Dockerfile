@@ -6,6 +6,9 @@ FROM node:18 as base
 ENV NPM_CONFIG_LOGLEVEL=warn
 ENV NPM_CONFIG_COLOR=false
 
+# Switch to the node user vs. root
+USER node
+
 # We'll run the app as the `node` user, so put it in their home directory
 WORKDIR /home/node/app
 # Copy the source code over
@@ -17,8 +20,6 @@ FROM base as development
 WORKDIR /home/node/app
 # Install (not ci) with dependencies, and for Linux vs. Linux Musl (which we use for -alpine)
 RUN npm install
-# Switch to the node user vs. root
-USER node
 # Expose port 3000
 EXPOSE 3000
 # Start the app in debug mode so we can attach the debugger
@@ -35,6 +36,6 @@ RUN npm run build
 ## Deploy ######################################################################
 # Use a stable nginx image
 FROM nginx:stable-alpine as deploy
-WORKDIR /home/nodenode/app
+WORKDIR /home/node/app
 # Copy what we've installed/built from production
 COPY --chown=node:node --from=production /home/node/app/build /usr/share/nginx/html/
