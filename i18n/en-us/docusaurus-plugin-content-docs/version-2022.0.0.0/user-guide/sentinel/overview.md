@@ -11,7 +11,7 @@ The mechanism may cause a large number of servers directly or indirectly called 
 
 ### Limiting
 
-Current limiting refers to limiting the access volume of a certain interface of a service in the microservice system, so as to avoid excessive traffic from knocking down the service instance. Generally, by setting the traffic threshold for the service, when the threshold of the limit is reached, some strategies can be adopted to deal with it, such as queuing, returning error messages, etc. to respond to the request to protect the service instance. In a microservice system, current limiting is mainly for service providers.
+Current limiting refers to limiting the access volume of a certain interface of a service in the microservice system, so as to avoid excessive traffic from knocking down the service instance. Generally, by setting the traffic threshold for the service, when the threshold of the limit is reached, some strategies can be adopted to deal with it, such as queuing, returning error messages, etc. to respond to the request to protect the service instance. In microservice systems, flow limiting is mainly aimed at service providers.
 
 ### downgrade
 
