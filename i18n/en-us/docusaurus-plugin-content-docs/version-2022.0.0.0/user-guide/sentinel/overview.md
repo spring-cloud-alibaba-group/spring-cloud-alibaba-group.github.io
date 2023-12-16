@@ -11,11 +11,11 @@ The mechanism may cause a large number of servers directly or indirectly called 
 
 ### Limiting
 
-Current limiting refers to limiting the access volume of a certain interface of a service in the microservice system, so as to avoid excessive traffic from knocking down the service instance. Generally, by setting the traffic threshold for the service, when the threshold of the limit is reached, some strategies can be adopted to deal with it, such as queuing, returning error messages, etc. to respond to the request to protect the service instance. In microservice systems, flow limiting is mainly aimed at service providers.
+Current limiting refers to limiting the access volume of a certain interface of a service in the microservice system, so as to avoid excessive traffic from knocking down the service instance. Generally, by setting the traffic threshold for the service, when the threshold of the limit is reached, some strategies can be adopted to deal with it, such as queuing, returning error messages, etc. to respond to the request to protect the service instance. In microservice systems,  current limiting is mainly for service providers.
 
 ### downgrade
 
-Downgrading refers to downgrading the invocation of a service when an exception occurs in a service or the flow is limited, such as returning a default value, returning a bottom-up data, and so on. In a microservice system, current limiting is mainly for service consumers.
+Downgrading refers to downgrading the invocation of a service when an exception occurs in a service or the flow is limited, such as returning a default value, returning a bottom-up data, and so on. In a microservice system, current limiting targets not only service consumers but also service providers.
 
 ## Sentinel overview
 
