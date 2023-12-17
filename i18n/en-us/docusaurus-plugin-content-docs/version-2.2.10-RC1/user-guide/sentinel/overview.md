@@ -11,11 +11,15 @@ The mechanism may cause a large number of servers directly or indirectly called 
 
 ### Limiting
 
-Current limiting refers to limiting the access volume of a certain interface of a service in the microservice system, so as to avoid excessive traffic from knocking down the service instance. Generally, by setting the traffic threshold for the service, when the threshold of the limit is reached, some strategies can be adopted to deal with it, such as queuing, returning error messages, etc. to respond to the request to protect the service instance. In a microservice system, current limiting is mainly for service providers.
+Current limiting is a policy for service providers that controls access to specific service interfaces or service instances. Its purpose is to protect service providers from excessive request traffic and ensure service stability. Current limiting measures can be implemented at both ends of the service provider or service consumer, by setting traffic thresholds and controlling traffic by queuing, rejecting requests, or returning error messages, thereby protecting services.
 
 ### downgrade
 
-Downgrading refers to downgrading the invocation of a service when an exception occurs in a service or the flow is limited, such as returning a default value, returning a bottom-up data, and so on. In a microservice system, current limiting is mainly for service consumers.
+Downgrade is a response strategy for service consumers. When the service is abnormal or current is limited, the service call is downgraded to ensure that the consumer can work normally under abnormal circumstances. The purpose of downgrading is to transition to a weak dependency state so that the system can provide basic functions or data when the service is unavailable. This strategy can be implemented on the service consumer side to ensure system availability by returning default values, providing alternative data, or simplifying functions.
+
+
+
+Generally speaking, current limiting and degradation are important mechanisms in microservice architecture. Although there may be many ways to implement them, they all focus on protecting service providers and consumers and ensuring stable operation of the system in the face of abnormal situations.  Current limiting focuses on protecting service providers and controlling request traffic; while downgrading focuses on service consumers to ensure that basic functions are provided when services are unavailable or abnormal.
 
 ## Sentinel overview
 
