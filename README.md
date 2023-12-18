@@ -20,9 +20,9 @@
 3. Browser input
 
 ```shell
-# 中文模式启动
+# Chinese mode startup
 http://localhost:3000/zh-cn
-# 英文模式启动
+# English mode starts
 http://localhost:3000/en-us
 ```
 
