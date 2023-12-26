@@ -20,7 +20,7 @@ description: Nacos Quick Start.
 
 Nacos Server 启动成功之后，浏览器地址栏输入 `http://ip:8848/nacos` 查看 Nacos 控制台（默认账号名和密码为 nacos/nacos）：
 
-![nacos-server-start](https://sca-storage.oss-cn-hangzhou.aliyuncs.com/website/docs/zh/nacos/nacos-server-start.png)
+![nacos-server-start](../../../../../../static/img/user/quickstart/nacos/nacos-config-dashboard.png)
 
 关于更多的 Nacos Server 版本，可以从 Nacos 官方 [release](https://github.com/alibaba/nacos/releases) 页面查看。
 
