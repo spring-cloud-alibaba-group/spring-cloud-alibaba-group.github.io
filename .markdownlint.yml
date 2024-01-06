@@ -36,3 +36,9 @@ MD046: false
 
 # blanks-around-headings、blanks-around-headers
 MD022: false
+
+# Trailing spaces
+MD009: false
+
+#  MD005/list-indent Inconsistent indentation for list items
+MD005: false
