@@ -6,23 +6,106 @@ description: Nacos.
 
 This chapter will demonstrate how to use spring-cloud-starter-alibaba-nacos-config and spring-cloud-starter-alibaba-nacos-discovery to complete the configuration management and service discovery of Spring Cloud applications.
 
-## Nacos Server
+## Nacos Server 2.2.x is properly configured and started
 
-### Free Nacos Server On Alibaba Cloud
+In Nacos 2.2.x, functions related to user authentication are added. When starting Nacos Server for the first time, it needs to be configured correctly to avoid the problem of startup failure.
 
-The easiest way to experience the Spring Cloud Alibaba registration and configuration center is to directly access the hosted Nacos Server on Alibaba Cloud, which eliminates the tedious steps of local installation and download. Please refer to how to <a href="https://free.aliyun.com/?searchKey=nacos&spm=sca-quickstart-free.topbar.0.0.0" target="_blank">experience and access Alibaba Cloud hosted free Nacos Server</a> for details.
+### Download Nacos Server
 
-If using the cloud hosted version of Nacos Server, replace `127.0.0.1:8848` with `the cloud hosted Nacos Server address` in the following document.
+> The Nacos serv version used in this example is 2.2.3!
 
-### Start Your Own Nacos Server
+Nacos supports both direct download and source code construction. **Nacos Server version 2.2.3 is recommended for Spring Cloud Alibaba 2022.x.**
 
-For details, refer to the official website of [Nacos](https://nacos.io/zh-cn/).
+1. Direct download: [Nacos Server download page](https://github.com/alibaba/nacos/releases)
+2. Source code construction: Enter Nacos [Github project page](https://github.com/alibaba/nacos), git clone the code to the local compilation and packaging [参考文档](https://nacos.io/zh-cn/docs/quick-start.html).
 
-After Nacos Server is started successfully, enter http://ip:8848/nacos in the browser address bar to view Nacos console (default account name and password are nacos/nacos) :
+### Configure the Nacos Server
 
-![nacos-server-start](https://sca-storage.oss-cn-hangzhou.aliyuncs.com/website/docs/zh/nacos/nacos-server-start.png)
+Open the `\nacos-server-2.2.3\conf\application.properties` configuration file and modify the following configuration items:
 
-For more Nacos Server version, can from [release](https://github.com/alibaba/nacos/releases) page to download the latest version.
+#### Configure the data source
+
+Take the MySQL database as an example here, and use the `nacos-server-2.2.3\conf\mysql-schema.sql` initialization database table file. Modify the following configuration as well
+
+```properties
+#*************** Config Module Related Configurations ***************#
+### If use MySQL as datasource:
+spring.datasource.platform=mysql
+
+### Count of DB:
+db.num=1
+
+### Connect URL of DB:
+db.url.0=jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+db.user.0=root
+db.password.0=root
+
+### Connection pool configuration: hikariCP
+db.pool.config.connectionTimeout=30000
+db.pool.config.validationTimeout=10000
+db.pool.config.maximumPoolSize=20
+db.pool.config.minimumIdle=2
+```
+
+#### Turn on authentication
+
+**Note: If it is not enabled, login failure exception will occur in 2.2.x!**
+
+```properties
+### The auth system to use, currently only 'nacos' and 'ldap' is supported:
+nacos.core.auth.system.type=nacos
+
+### If turn on auth system:
+nacos.core.auth.enabled=true
+```
+
+#### Set the server authentication key
+
+```properties
+nacos.core.auth.server.identity.key=test
+nacos.core.auth.server.identity.value=test
+```
+
+#### Set the default token
+
+```properties
+### The default token (Base64 String):
+nacos.core.auth.plugin.nacos.token.secret.key=SecretKey012345678901234567890123456789012345678901234567890123456789
+```
+
+** When using the Nacos service discovery and configuration function, be sure to configure `username` and `password` attribute, otherwise the user will not be found! **
+
+#### Open API authentication
+
+Authentication is required when using the Open api interface in nacos server 2.2.x: For more details, please refer to: [Nacos api authentication](https://nacos.io/zh-cn/docs/auth.html)
+
+1. Obtain accessToken: Use username and password to log in to the nacos server:
+
+   `curl -X POST '127.0.0.1:8848/nacos/v1/auth/login' -d 'username=nacos&password=nacos'`
+
+   If the username and password are correct, the returned information is as follows:
+
+   `{"accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWNvcyIsImV4cCI6MTYwNTYyOTE2Nn0.2TogGhhr11_vLEjqKko1HJHUJEmsPuCxkur-CfNojDo", "tokenTtl": 18000, "globalAdmin": true}`
+
+2. Use accessToken to request the nacos api interface:
+
+   `curl -X GET '127.0.0.1:8848/nacos/v1/cs/configs?accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWNvcyIsImV4cCI6MTYwNTYyMzkyM30.O-s2yWfDSUZ7Svd3Vs7jy9tsfDNHs1SuebJB4KlNY8Q&dataId=nacos.example.1&group=nacos_group'`
+
+### Start the Nacos Server
+
+1. Start Nacos Server, enter the folder after downloading to the local and decompressing (enter the folder after compiling and packaging by using the source code construction method), then enter its relative folder `nacos/bin`, and execute the following command according to the actual situation of the operating system. [详情参考此文档](https://nacos.io/zh-cn/docs/quick-start.html)。
+
+   1. Linux/Unix/Mac operating system, execute the command
+
+       `sh startup.sh -m standalone`
+
+   2. Windows operating system, executing command
+
+       `cmd startup.cmd`
+
+2. Access Nacos Server Console.
+
+   The browser enters the address http://127.0.0.1:8848/nacos , **The first login needs to bind the nacos user, because the new version adds authentication, and the user name and password need to be configured during application registration and configuration binding.**
 
 ## Nacos configuration center
 
@@ -63,7 +146,7 @@ If you want to use Nacos for configuration management in your project. You need 
 1. Use the CLI
 
    ```shell
-   $ curl -x POST "http://127.0.0.1:8848/nacos/v1/cs/configs? DataId = nacos - config - example. Properties&group = DEFAULT_GROUP & content = spring. Cloud. Nacos. Config. ServerAddr = 127.0.0.1:0 8848% Aspring.cloud.nacos.config.prefix=PREFIX%0Aspring.cloud.nacos.config.group=GROUP%0Aspring.cloud.nacos.config.namespace=N AMESPACE"
+   $ curl -X POST "http://127.0.0.1:8848/nacos/v1/cs/configs?accessToken=XXXXXXXXXXXXXXXXXXXXXXXXXXX&dataId=nacos-config-example.properties&group=DEFAULT_GROUP&content=spring.cloud.nacos.config.serverAddr=127.0.0.1:8848%0Aspring.cloud.nacos.config.prefix=PREFIX%0Aspring.cloud.nacos.config.group=GROUP%0Aspring.cloud.nacos.config.namespace=NAMESPACE"
    ```
 
 2. Console Mode (recommended)
@@ -124,15 +207,21 @@ If you want to use Nacos for configuration management in your project. You need 
    }
    ```
 
-2. Verify the dynamic refresh
+2. Verify dynamic refresh
 
-   Again request http://127.0.0.1:18084/nacos/bean address, you can see applications have access to the latest data from Nacos.
+   Execute the following command in the command line terminal to refresh the Nacos configuration information:
+
+   ```shell
+   $ curl -X POST "http://127.0.0.1:8848/nacos/v1/cs/configs?accessToken=XXXXXXXXXXXXXXXXXXXXXXXXXXXX&dataId=nacos-config-example.properties&group=DEFAULT_GROUP&content=spring.cloud.nacos.config.serveraddr=127.0. 0.1:8848%0Aspring.cloud.nacos.config.prefix=PREFIX%0Aspring.cloud.nacos.config.group=DEFAULT_GROUP%0Aspring.cloud.nacos.config.namespace=NAMESPACE"
+   ```
+
+   Request the http://127.0.0.1:18084/nacos/bean address again. You can see that the application has obtained the latest data from Nacos.
 
    ```shell
    $ curl http://127.0.0.1:18084/nacos/bean
    ```
 
-   Response:
+   Response result:
 
    ```json
    {
