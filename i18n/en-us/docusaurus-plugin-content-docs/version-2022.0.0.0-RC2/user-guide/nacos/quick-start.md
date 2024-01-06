@@ -89,19 +89,19 @@ Authentication is required when using the Open api interface in nacos server 2.2
 
 2. Use accessToken to request the nacos api interface:
 
-   `curl -X GET '127.0.0.1:8848/nacos/v1/cs/configs?accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWNvcyIsImV4cCI6MTYwNTYyMzkyM30.O-s2yWfDSUZ7Svd3Vs7jy9tsfDNHs1SuebJB4KlNY8Q&dataId=nacos.example.1&group=nacos_group'`
+  `curl -X GET '127.0.0.1:8848/nacos/v1/cs/configs?accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWNvcyIsImV4cCI6MTYwNTYyMzkyM30.O-s2yWfDSUZ7Svd3Vs7jy9tsfDNHs1SuebJB4KlNY8Q&dataId=nacos.example.1&group=nacos_group'`
 
 ### Start the Nacos Server
 
-1. Start Nacos Server, enter the folder after downloading to the local and decompressing (enter the folder after compiling and packaging by using the source code construction method), then enter its relative folder `nacos/bin`, and execute the following command according to the actual situation of the operating system. [详情参考此文档](https://nacos.io/zh-cn/docs/quick-start.html)。
+1. Start Nacos Server, enter the folder after downloading to the local and decompressing (enter the folder after compiling and packaging by using the source code construction method), then enter its relative folder `nacos/bin`, and execute the following command according to the actual situation of the operating system. [详情参考此文档](https://nacos.io/zh-cn/docs/quick-start.html).
 
-   1. Linux/Unix/Mac operating system, execute the command
+  1. Linux/Unix/Mac operating system, execute the command
 
-       `sh startup.sh -m standalone`
+   `sh startup.sh -m standalone`
 
-   2. Windows operating system, executing command
+  2. Windows operating system, executing command
 
-       `cmd startup.cmd`
+   `cmd startup.cmd`
 
 2. Access Nacos Server Console.
 
