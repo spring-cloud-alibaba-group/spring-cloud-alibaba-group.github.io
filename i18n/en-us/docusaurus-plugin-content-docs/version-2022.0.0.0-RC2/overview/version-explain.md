@@ -10,6 +10,14 @@ custom_edit_url: https://github.com/higress-group/higress-group.github.io/blob/m
 Due to the large changes between Spring Boot 3.0, Spring Boot 2.7~2.4 and versions below 2.4, the Spring Boot version related to old projects of enterprise customers is still below Spring Boot 2.4. In order to meet the different needs of existing users and new users at the same time, the community With Spring Boot 3.0 and 2.4 as the dividing line, three branch iterations of 2022.x, 2021.x, and 2.2.x are maintained at the same time. If you don't want to upgrade across branches, if you want to use new features, please upgrade to the new version of the corresponding branch.
 In order to avoid dependency conflicts in the related construction process, we suggest that you can create projects through [Cloud Native Application Initializer](https://start.aliyun.com).
 
+### 2023.x branch (pre-release)
+
+> Pre-release branch, relevant updates are being released. For details, refer to: https://github.com/alibaba/spring-cloud-alibaba/issues/3574
+
+| Spring Cloud Alibaba Version | Spring Cloud Version  | Spring Boot Version |
+| ---------------------------- | --------------------- | ------------------- |
+| 2023.0.0.0\*                 | Spring Cloud 2023.x   | 3.2.x               |
+
 ### 2022.x branch
 
 The Spring Cloud Alibaba versions adapted to Spring Boot 3.0, Spring Cloud 2022.x and above are arranged in the following table from newest to old (the latest version is marked with \*): _(Note that the naming method of this branch Spring Cloud Alibaba version has been adjusted. In the future, it will correspond to the Spring Cloud version. The first three digits are the Spring Cloud version, and the last digit is the extended version. For example, the first version of Spring Cloud Alibaba corresponding to the Spring Cloud 2022.0.0 version is: 2022.0.0.0, and the second version for: 2022.0.0.1 and so on)_
@@ -55,7 +63,8 @@ Each Spring Cloud Alibaba version and the corresponding versions of the componen
 
 | Spring Cloud Alibaba Version                              | Sentinel Version | Nacos Version | RocketMQ Version | Dubbo Version | Seata Version    |
 | --------------------------------------------------------- | ---------------- | ------------- | ---------------- | ------------- | ---------------- |
-| 2022.0.0.0                                                | 1.8.6            | 2.2.1         | 4.9.4            | ~             | 1.7.0            |
+| 2022.0.0.0                                                | 1.8.6            | 2.3.0         | 4.9.4            | ~             | 2.0.0            |
+| 2022.0.0.0                                                | 1.8.6            | 2.2.3         | 4.9.4            | ~             | 1.8.0            |
 | 2022.0.0.0-RC2                                            | 1.8.6            | 2.2.1         | 4.9.4            | ~             | 1.7.0-native-rc2 |
 | 2021.0.5.0                                                | 1.8.6            | 2.2.0         | 4.9.4            | ~             | 1.6.1            |
 | 2.2.10-RC1                                                | 1.8.6            | 2.2.0         | 4.9.4            | ~             | 1.6.1            |
