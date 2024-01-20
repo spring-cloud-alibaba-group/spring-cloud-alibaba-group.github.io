@@ -66,7 +66,7 @@ The version features are as follows:
 
 **A:**
 
-The community has detailed planning and design for the construction of each version. For details, please refer to: [Roadmap](./roadmap/doc/doc.md)
+The community has detailed planning and design for the construction of each version. For details, please refer to: [Roadmap](./roadmap/rocketmq-5.0.0/rocketmq-5.0.0.md)
 
 ---
 
