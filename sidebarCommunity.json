@@ -47,7 +47,8 @@
                             "collapsed": false,
                             "items": [
                                 "developer/contributor-guide/new-contributor-guide_dev",
-                                "developer/contributor-guide/reporting-security-issues_dev"
+                                "developer/contributor-guide/reporting-security-issues_dev",
+                                "developer/contributor-guide/file-write-guide_dev"
                             ]
                         }
                     ]
