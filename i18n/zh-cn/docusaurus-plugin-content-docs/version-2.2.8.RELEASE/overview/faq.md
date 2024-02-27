@@ -66,7 +66,7 @@ Spring Cloud Alibaba 目前有三个分支在积极维护，分别是 `2.2.x`，
 
 **A：**
 
-社区对各个版本的建设，都有详细的规划设计，具体可参见：[Roadmap](./roadmap/doc/doc.md)
+社区对各个版本的建设，都有详细的规划设计，具体可参见：[Roadmap](./roadmap/rocketmq-5.0.0/rocketmq-5.0.0.md)
 
 ---
 
