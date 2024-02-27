@@ -26,8 +26,6 @@ const sidebars = {
           label: "Roadmap",
           collapsible: true,
           items: [
-            "overview/roadmap/doc/doc",
-            "overview/roadmap/graalvm-adapter/graalvm",
             "overview/roadmap/rocketmq-5.0.0/rocketmq-5.0.0",
             "overview/roadmap/service-governance/service-governance",
           ],
