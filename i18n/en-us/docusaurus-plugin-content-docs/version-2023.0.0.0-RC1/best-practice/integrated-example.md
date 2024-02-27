@@ -23,7 +23,7 @@ The best practice for SCA projects is the example project that integrates SCA-re
 
 The following figure is a schematic diagram of the SCA best practice project structure:
 
-![Project Structure Diagram](https://sca-storage.oss-cn-hangzhou.aliyuncs.com/sca-example/image.png)
+![Project Structure Diagram](../../../../../static/img/best-practice/1.png)
 
 ## Component Details
 
@@ -198,7 +198,7 @@ First, you need to start the integrated-frontend and integrated-gateway microser
    - The number of products purchased in this order is 1
 
    <div align="center">
-       <img src="https://camo.githubusercontent.com/9448ae62231a5728f61fd0def7f846c745ddfb6bc5ebaea691cf3f8f042a26f3/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363135353431363532342e706e67"/>
+       <img src="../../../../../static/img/best-practice/2.png"/>
    </div>
 
    In this example, for the sake of demonstration, the unit price of each item is 2.
@@ -208,13 +208,13 @@ First, you need to start the integrated-frontend and integrated-gateway microser
    Therefore, through the above operations, the application will create an order, deduct the number of inventory corresponding to item number 1 (100-1=99), and deduct the balance of the admin user (3-2=1).
 
    <div align="center">
-       <img src="https://camo.githubusercontent.com/029a719f01294cd8d4c2af4608fcd4eef83d2c95b087006791cab2a5b3ced0b1/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363135353432393830312e706e67"/>
+       <img src="../../../../../static/img/best-practice/3.png"/>
    </div>
 
    If the same interface is requested again, the inventory is also deducted first (99-1=98), but an exception will be thrown due to insufficient balance of the admin user, which will be caught by Seata, perform a two-phase commit of the distributed transaction, and roll back the transaction.
 
    <div align="center">
-       <img src="https://camo.githubusercontent.com/33c136cbeb3dd32ba438dfc4301d96a71da6d06a0ee85de3249085de19e87551/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363135353433363131322e706e67"/>
+       <img src="../../../../../static/img/best-practice/4.png"/>
    </div>
 
    You can see the record of inventory in the database because it is still 99 pieces after the rollback.
@@ -237,7 +237,7 @@ First, you need to start the integrated-frontend and integrated-gateway microser
    Visit `http://integrated-frontend:8080/sentinel` to experience the corresponding scene.
 
    <div align="center">
-       <img src="https://camo.githubusercontent.com/167540c2a9c937fcc99c29f174a7747128dc318e2badbc2531a4d6eee66bd6e7/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363135353530313239302e706e67"/>
+       <img src="../../../../../static/img/best-practice/5.png"/>
    </div>
 
    The flow-limiting rule of the gateway routing thumbs-up service is 5, and 10 concurrent requests are simulated through asynchronous processing on the front end.
@@ -245,7 +245,7 @@ First, you need to start the integrated-frontend and integrated-gateway microser
    Therefore, it can be seen that Sentinel has performed a service fuse on the Gateway side for the excess traffic and returned a fallback to the client, and at the same time the number of likes in the database has been updated (+5).
 
    <div align="center">
-       <img src="https://camo.githubusercontent.com/9115475ee01df4f11c375d842dde9cfd4cb8ec6de0dfa399d9d0a5f63e5a2702/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232303931343135353735353130332e706e67"/>
+       <img src="../../../../../static/img/best-practice/6.png"/>
    </div>
 
    **RocketMQ performs traffic peak-shaving and valley-filling**
@@ -257,7 +257,7 @@ First, you need to start the integrated-frontend and integrated-gateway microser
    You can see that the number of likes in the database is being dynamically updated.
 
    <div align="center">
-       <img src="https://camo.githubusercontent.com/869d9c0c343a28435d62f76ef20bcb12d735c7983a737bd6c68fe8f3e678d40d/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363137333630343035392e706e67"/>
+       <img src="../../../../../static/img/best-practice/7.png"/>
    </div>
 
 ### Docker Compose deploy
