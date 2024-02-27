@@ -40,7 +40,7 @@ custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alib
 
 **A：**
 
-Spring Cloud Alibaba 目前有三个分支在积极维护，分别是 `2.2.x`，`2021.x`，`2022.x`
+Spring Cloud Alibaba 目前有三个分支在积极维护，分别是 `2.2.x`，`2021.x`，`2022.x`，`2023.x`。
 
 版本特性如下：
 
@@ -49,6 +49,8 @@ Spring Cloud Alibaba 目前有三个分支在积极维护，分别是 `2.2.x`，
 - [2021.x](https://github.com/alibaba/spring-cloud-alibaba/tree/2021.x)：适配了 Spring Cloud 2021.x 系列的版本，集成了 Spring Cloud Alibaba 各个功能组件。
 
 - [2022.x](https://github.com/alibaba/spring-cloud-alibaba)：集成了 Spring Cloud Alibaba 对于 [GraalVM](https://www.graalvm.org/) 静态编译的支持。
+
+- [2023.x](https://github.com/alibaba/spring-cloud-alibaba)：集成了 Spring Cloud Alibaba 对 Spring Boot 3.2.x 和 Spring Cloud 2023.x 的支持，支持 mvc 的虚拟线程。
 
 ---
 
