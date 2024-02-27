@@ -2,7 +2,7 @@
 title: FAQ
 keywords: [Spring Cloud Alibaba]
 description: Spring Cloud Alibaba FAQ.
-custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/master/i18n/zh-cn/docusaurus-plugin-content-docs/current/overview/faq.md
+custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/master/i18n/en-us/docusaurus-plugin-content-docs/current/overview/faq.md
 ---
 
 ## FAQ
@@ -40,7 +40,7 @@ custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alib
 
 **A:**
 
-Spring Cloud Alibaba currently has three branchs actively maintained, namely `2.2.x`, `2021.x`, `2022.x`
+Spring Cloud Alibaba currently has three branchs actively maintained, namely `2.2.x`, `2021.x`, `2022.x`, `2023.x`.
 
 The version features are as follows:
 
@@ -48,7 +48,9 @@ The version features are as follows:
 
 - [2021.x](https://github.com/alibaba/spring-cloud-alibaba/tree/2021.x): It is adapted to the Spring Cloud 2021.x series version and integrates various functional components of Spring Cloud Alibaba.
 
-- [2022.x](https://github.com/alibaba/spring-cloud-alibaba): Integrates Spring Cloud Alibaba's support for static compilation of [GraalVM](https://www.graalvm.org/).
+- [2022.x](https://github.com/alibaba/spring-cloud-alibaba/tree/2022.x): Integrates Spring Cloud Alibaba's support for static compilation of [GraalVM](https://www.graalvm.org/).
+
+- [2023.x](https://github.com/alibaba/spring-cloud-alibaba): Integrated Spring Boot 3.2.x and Spring Cloud 2023.x.
 
 ---
 
@@ -56,9 +58,7 @@ The version features are as follows:
 
 **A:**
 
-1. Refer to the Github warehouse Wiki: [Version Description](https://github.com/alibaba/spring-cloud-alibaba/wiki/%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E);
-
-2. Refer to the [Version Release Document](./version-explain.md) on the official website.
+Refer to the [Version Release Document](./version-explain.md) on the official website.
 
 ---
 
@@ -66,7 +66,7 @@ The version features are as follows:
 
 **A:**
 
-The community has detailed planning and design for the construction of each version. For details, please refer to: [Roadmap](./roadmap/doc/doc.md)
+The community has detailed planning and design for the construction of each version. For details, please refer to: [Roadmap](./roadmap/rocketmq-5.0.0/rocketmq-5.0.0.md)
 
 ---
 
@@ -104,7 +104,7 @@ See [Best Practice](../best-practice/integrated-example.md)
 
 **A:**
 
-Can be integrated, related functions are under planning, see [Roadmap](./roadmap/doc/doc.md) for details:
+Can be integrated, see [SCA-Higress-routing](../../../blog/SCA-Higress-Application-Deployment) for details:
 
 ---
 
