@@ -23,7 +23,7 @@ SCA 的项目的最佳实践，是整合了 SCA 相关组件（Nacos，Sentinel�
 
 下图为 SCA 最佳实践项目结构示意图：
 
-![项目结构示意图](https://sca-storage.oss-cn-hangzhou.aliyuncs.com/sca-example/image.png)
+![项目结构示意图](../../../../../static/img/best-practice/1.png)
 
 ## 组件详细说明
 
@@ -75,15 +75,15 @@ Nacos 是 SCA 微服务模块的服务注册中心和配置中心。整合 Sprin
 
 在启动服务容器前，请先配置 Host 地址映射，确保服务能够正常启动！
 
-    ```shell
-    # for integrated-example
-    127.0.0.1 integrated-mysql
-    127.0.0.1 nacos-server
-    127.0.0.1 seata-server
-    127.0.0.1 rocketmq
-    127.0.0.1 gateway-service
-    127.0.0.1 integrated-frontend
-    ```
+```shell
+# for integrated-example
+127.0.0.1 integrated-mysql
+127.0.0.1 nacos-server
+127.0.0.1 seata-server
+127.0.0.1 rocketmq
+127.0.0.1 gateway-service
+127.0.0.1 integrated-frontend
+```
 
 ### 服务本地化部署
 
@@ -133,7 +133,7 @@ Nacos 是 SCA 微服务模块的服务注册中心和配置中心。整合 Sprin
 
 Seata 的 db 模式需要额外配置数据库信息以及修改 Seata 服务端的配置文件，且在新版本中配置文件相较于旧版本进行了合并，因此这里为了便于演示方便，采用 Seata 单机的 file 模式启动 Seata Server。
 
-进入到 release 解压后的 seata 目录中，执行如下命令：
+进入到 release 解压后的 seata 目录中，执行如下命令。
 
 ```shell
 #Linux/Mac环境
@@ -196,7 +196,7 @@ bin\seata-server.bat
    - 此次订单购买的商品个数为 1 个
 
    <div align="center">
-       <img src="https://camo.githubusercontent.com/9448ae62231a5728f61fd0def7f846c745ddfb6bc5ebaea691cf3f8f042a26f3/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363135353431363532342e706e67"/>
+       <img src="../../../../../static/img/best-practice/2.png"/>
    </div>
 
    在本 Example 示例中，为了便于演示，每件商品的单价都为 2。
@@ -206,13 +206,13 @@ bin\seata-server.bat
    因此通过上述的操作，应用会创建一个订单，扣减对应商品编号为 1 号的库存个数（100 - 1 = 99），扣减 admin 用户的余额（3 - 2 = 1）。
 
    <div align="center">
-       <img src="https://camo.githubusercontent.com/029a719f01294cd8d4c2af4608fcd4eef83d2c95b087006791cab2a5b3ced0b1/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363135353432393830312e706e67"/>
+       <img src="../../../../../static/img/best-practice/3.png"/>
    </div>
 
    如果再次请求相同的接口，同样是先扣减库存（99 - 1 = 98），但是会因为 admin 用户余额不足而抛出异常，并被 Seata 捕获，执行分布式事务二阶段提交，回滚事务。
 
    <div align="center">
-       <img src="https://camo.githubusercontent.com/33c136cbeb3dd32ba438dfc4301d96a71da6d06a0ee85de3249085de19e87551/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363135353433363131322e706e67"/>
+       <img src="../../../../../static/img/best-practice/4.png"/>
    </div>
 
    可以看到数据库中库存的记录因为回滚之后仍然为 99 件。
@@ -235,7 +235,7 @@ bin\seata-server.bat
    访问 `http://integrated-frontend:8080/sentinel` 体验对应场景。
 
    <div align="center">
-       <img src="https://camo.githubusercontent.com/167540c2a9c937fcc99c29f174a7747128dc318e2badbc2531a4d6eee66bd6e7/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363135353530313239302e706e67"/>
+       <img src="../../../../../static/img/best-practice/5.png"/>
    </div>
 
    网关路由点赞服务的限流规则为 5，而在前端通过异步处理模拟了 10 次并发请求。
@@ -243,7 +243,7 @@ bin\seata-server.bat
    因此可以看到 Sentinel 在 Gateway 侧针对多出的流量进行了服务熔断返回 fallback 给客户端，同时数据库的点赞数进行了更新（+5）。
 
    <div align="center">
-       <img src="https://camo.githubusercontent.com/9115475ee01df4f11c375d842dde9cfd4cb8ec6de0dfa399d9d0a5f63e5a2702/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232303931343135353735353130332e706e67"/>
+       <img src="../../../../../static/img/best-practice/6.png"/>
    </div>
 
    **RocketMQ 进行流量削峰填谷**
@@ -255,7 +255,7 @@ bin\seata-server.bat
    可以看到数据库中点赞的个数正在动态更新。
 
    <div align="center">
-       <img src="https://camo.githubusercontent.com/869d9c0c343a28435d62f76ef20bcb12d735c7983a737bd6c68fe8f3e678d40d/68747470733a2f2f6d792d696d672d312e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f696d6167652d32303232313031363137333630343035392e706e67"/>
+       <img src="../../../../../static/img/best-practice/7.png"/>
    </div>
 
 ### Docker Compose 部署

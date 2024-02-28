@@ -40,7 +40,7 @@ custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alib
 
 **A：**
 
-Spring Cloud Alibaba 目前有三个分支在积极维护，分别是 `2.2.x`，`2021.x`，`2022.x`
+Spring Cloud Alibaba 目前有三个分支在积极维护，分别是 `2.2.x`，`2021.x`，`2022.x`，`2023.x`。
 
 版本特性如下：
 
@@ -48,7 +48,9 @@ Spring Cloud Alibaba 目前有三个分支在积极维护，分别是 `2.2.x`，
 
 - [2021.x](https://github.com/alibaba/spring-cloud-alibaba/tree/2021.x)：适配了 Spring Cloud 2021.x 系列的版本，集成了 Spring Cloud Alibaba 各个功能组件。
 
-- [2022.x](https://github.com/alibaba/spring-cloud-alibaba)：集成了 Spring Cloud Alibaba 对于 [GraalVM](https://www.graalvm.org/) 静态编译的支持。
+- [2022.x](https://github.com/alibaba/spring-cloud-alibaba/tree/2022.x)：集成了 Spring Cloud Alibaba 对于 [GraalVM](https://www.graalvm.org/) 静态编译的支持。
+
+- [2023.x](https://github.com/alibaba/spring-cloud-alibaba)：集成了 Spring Boot 3.2.x 和 Spring Cloud 2023.x。
 
 ---
 
@@ -56,9 +58,7 @@ Spring Cloud Alibaba 目前有三个分支在积极维护，分别是 `2.2.x`，
 
 **A：**
 
-1. 参考 Github 仓库 Wiki：[版本说明](https://github.com/alibaba/spring-cloud-alibaba/wiki/%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E)；
-
-2. 参考官网的[版本发布说明文档](./version-explain.md)。
+参考官网的[版本发布说明文档](./version-explain.md)。
 
 ---
 
@@ -104,7 +104,7 @@ Spring Cloud Alibaba：Alibaba 提供的基于 Spring Cloud 编程模型实现�
 
 **A：**
 
-可以集成，相关功能正在规划中，具体可参见 [Roadmap](./roadmap/doc/doc.md)：
+参考相关博文，[基于网关实现 Spring Cloud 服务发现与路由](../../../blog/SCA-Higress-Routing)
 
 ---
 
