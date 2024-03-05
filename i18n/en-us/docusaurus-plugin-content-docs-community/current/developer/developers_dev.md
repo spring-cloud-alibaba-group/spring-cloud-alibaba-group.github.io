@@ -33,6 +33,7 @@ This page shows the development team members of Spring Cloud Alibaba. We are con
 | Xingyuan Cheng | complone      | Committer | yuluoxinsheng@gmail.com | ~                                     |
 | Sheng Ruan     | ruansheng8    | Committer | chrisruans@gmail.com    | ZoeSoft                               |
 | Ziming Liu     | 123liuziming  | Committer | 448918299@qq.com        | Graduate student at Peking University |
+| Shiwen Ji      | yuluo-yx      | Committer | karashouk.pan@gmail.com | ~                                     |
 
 ## Development Role
 

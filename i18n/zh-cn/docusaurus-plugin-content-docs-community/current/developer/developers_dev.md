@@ -21,18 +21,19 @@ description: Spring Cloud Alibaba 维护者名单
 
 ## Committer 成员
 
-| 姓名      | Github 账号                                       | 角色      | 联系方式                | 组织                   |
-|-----------|---------------------------------------------------|-----------|-------------------------|------------------------|
-| 廖春涛    | [chuntaojun](https://github.com/chuntaojun)       | Committer | liaochuntao@live.com    | 腾讯                   |
-| 余黄彬    | [yuhuangbin](https://github.com/yuhuangbin)       | Committer | danielyu96@163.com      | ~                      |
-| 赵奕豪    | [sczyh30](https://github.com/sczyh30)             | Committer | sczyh16@gmail.com       | 阿里巴巴               |
-| 张开兆    | [zkzlx](https://github.com/zkzlx)                 | Committer | kiss_maple@163.com      | 得物                   |
-| 刘梁文    | [DanielLiu1123](https://github.com/DanielLiu1123) | Committer | llw599502537@gmail.com  | 深圳市萌时科技有限公司 |
-| 冷冷      | [lltx](https://github.com/lltx)                   | Committer | wangiegie@gmail.com     | ~                      |
-| echooymxq | [echooymxq](https://github.com/echooymxq)         | Committer | echooy.mxq@gmail.com    | ~                      |
-| 程兴源    | [complone](https://github.com/kaori-seasons)      | Committer | yuluoxinsheng@gmail.com | ~                      |
-| 阮胜      | [ruansheng8](https://github.com/ruansheng8)       | Committer | chrisruans@gmail.com    | 智业软件股份有限公司   |
-| 刘子明    | [123liuziming](https://github.com/123liuziming)   | Committer | 448918299@qq.com        | 北京大学研究生         |
+| 姓名      | Github ID     | 角色      | 联系方式                | 组织                   |
+|-----------|---------------|-----------|-------------------------|------------------------|
+| 廖春涛    | chuntaojun    | Committer | liaochuntao@live.com    | 腾讯                   |
+| 余黄彬    | yuhuangbin    | Committer | danielyu96@163.com      | ~                      |
+| 赵奕豪    | sczyh30       | Committer | sczyh16@gmail.com       | 阿里巴巴               |
+| 张开兆    | zkzlx         | Committer | kiss_maple@163.com      | 得物                   |
+| 刘梁文    | DanielLiu1123 | Committer | llw599502537@gmail.com  | 深圳市萌时科技有限公司 |
+| 冷冷      | lltx          | Committer | wangiegie@gmail.com     | ~                      |
+| echooymxq | echooymxq     | Committer | echooy.mxq@gmail.com    | ~                      |
+| 程兴源    | complone      | Committer | yuluoxinsheng@gmail.com | ~                      |
+| 阮胜      | ruansheng8    | Committer | chrisruans@gmail.com    | 智业软件股份有限公司   |
+| 刘子明    | 123liuziming  | Committer | 448918299@qq.com        | 北京大学研究生         |
+| 姬世文    | yuluo-yx      | Committer | karashouk.pan@gmail.com | ~                      |
 
 ## 开发角色
 
