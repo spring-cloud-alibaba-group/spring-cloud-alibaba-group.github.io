@@ -21,7 +21,7 @@ const topData = {
   buttons: [
     {
       text: translate({ id: "homepage.quickstartButton", message: "快速入门" }),
-      link: "/docs/2022.0.0.0/user-guide/nacos/quick-start",
+      link: "/docs/2023.0.0.0-RC1/user-guide/nacos/quick-start",
       type: "normal",
     },
     {
@@ -32,10 +32,10 @@ const topData = {
     },
   ],
   versionNote: {
-    text: "Release Note of 2022.0.0.0",
-    link: "https://github.com/alibaba/spring-cloud-alibaba/tree/2022.0.0.0",
+    text: "Release Note of 2023.0.0.0-RC1",
+    link: "https://github.com/alibaba/spring-cloud-alibaba/tree/2023.0.0.0-RC1",
   },
-  releaseDate: "Released on March 22, 2023",
+  releaseDate: "Released on Feb 20, 2024",
 };
 
 const Top = ({ language }: { language?: string }) => {
