@@ -73,7 +73,7 @@ const data = {
       },
     ],
   },
-  copyright: "Copyright © 2023 Spring Cloud Alibaba",
+  copyright: `Copyright © ${new Date().getFullYear()} Spring Cloud Alibaba`,
 };
 
 type Props = {
