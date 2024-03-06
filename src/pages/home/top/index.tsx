@@ -35,7 +35,7 @@ const topData = {
     text: "Release Note of 2023.0.0.0-RC1",
     link: "https://github.com/alibaba/spring-cloud-alibaba/tree/2023.0.0.0-RC1",
   },
-  releaseDate: "Released on Feb 20, 2024",
+  releaseDate: "Released on Feb 26, 2024",
 };
 
 const Top = ({ language }: { language?: string }) => {
