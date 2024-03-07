@@ -108,7 +108,8 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: ({locale, version, docPath }) => {
-            return `https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/master/i18n/${locale}/docusaurus-plugin-content-docs/version-${version}/${docPath}`;
+            version = version === "current" ? "current" : "version-" + version
+            return `https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/master/i18n/${locale}/docusaurus-plugin-content-docs/${version}/${docPath}`;
           },
           
           // last version 
