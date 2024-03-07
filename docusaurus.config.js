@@ -107,8 +107,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: ({ docPath, locale }) => {
-            return `https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/main/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`;
+          editUrl: ({locale, version, docPath }) => {
+            return `https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/master/i18n/${locale}/docusaurus-plugin-content-docs/version-${version}/${docPath}`;
           },
           
           // last version 
@@ -134,7 +134,7 @@ const config = {
           blogSidebarTitle: "全部博文",
           blogSidebarCount: "ALL",
           editUrl: ({ blogPath, locale }) => {
-            return `https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/main/i18n/${locale}/docusaurus-plugin-content-blog/${blogPath}`;
+            return `https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/master/i18n/${locale}/docusaurus-plugin-content-blog/${blogPath}`;
           },
         },
         theme: {
