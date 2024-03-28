@@ -1820,10 +1820,10 @@
   resolved "https://registry.npmjs.org/@mdx-js/util/-/util-1.6.22.tgz"
   integrity sha512-H1rQc1ZOHANWBvPcW+JpGwr+juXSxM8Q8YCkm3GhZd8REu1fHR3z99CErO1p9pkcfcxZnMdIZdIsXkOHY0NilA==
 
-"@node-rs/jieba-darwin-x64@1.7.0":
+"@node-rs/jieba-win32-x64-msvc@1.7.0":
   version "1.7.0"
-  resolved "https://registry.npmjs.org/@node-rs/jieba-darwin-x64/-/jieba-darwin-x64-1.7.0.tgz"
-  integrity sha512-FFUSMY4tl0Prpxa1SHy7Yzze2KfV/bZzccpO5nd+a8zCKbiX6gVkJ89FfxSAD2QrXUGkZvJYiPmu5nkZItqRZQ==
+  resolved "https://registry.npmjs.org/@node-rs/jieba-win32-x64-msvc/-/jieba-win32-x64-msvc-1.7.0.tgz"
+  integrity sha512-pJv7nluB6azhsOWvJB86Dyfg/M7n9k49bs9Bwmsylz9uhdZX9QnEShDW934RdmnjPYQ5aPgsSFrY6NXP/aovUA==
 
 "@node-rs/jieba@^1.6.0":
   version "1.7.0"
@@ -4120,11 +4120,6 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
-
-fsevents@~2.3.2:
-  version "2.3.2"
-  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
-  integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
 
 function-bind@^1.1.1:
   version "1.1.1"
