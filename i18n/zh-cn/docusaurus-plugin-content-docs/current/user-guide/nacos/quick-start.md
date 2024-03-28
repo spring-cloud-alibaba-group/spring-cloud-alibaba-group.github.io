@@ -48,7 +48,7 @@ Nacos Server 启动成功之后，浏览器地址栏输入 `http://ip:8848/nacos
          serverAddr: 127.0.0.1:8848 #如果用的云上托管版本，输入可访问的Nacos Server地址即可
      config:
        import:
-         - nacos:nacos-config-example.properties?refresh=true
+         - nacos:nacos-config-example.properties?refreshEnabled=true
    ```
 
 3. 完成上述两步后，应用会从 Nacos Server 中获取相应的配置，并添加在 Spring Environment 的 PropertySources 中。假设我们通过 Nacos 作为配置中心保存应用服务的部分配置，有以下几种方式实现：

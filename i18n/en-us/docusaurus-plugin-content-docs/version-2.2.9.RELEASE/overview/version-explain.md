@@ -2,13 +2,21 @@
 title: "Release Notes"
 keywords: [Spring Cloud Alibaba]
 description: Spring Cloud Alibaba Version.
-custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/main/i18n/zh-cn/docusaurus-plugin-content-docs/current/overview/terminology.md
+custom_edit_url: https://github.com/higress-group/higress-group.github.io/blob/main/i18n/zh-cn/docusaurus-plugin-content-docs/current/overview/terminology.md
 ---
 
 ## Graduation version dependencies (recommended)
 
 Due to the large changes between Spring Boot 3.0, Spring Boot 2.7~2.4 and versions below 2.4, the Spring Boot version related to old projects of enterprise customers is still below Spring Boot 2.4. In order to meet the different needs of existing users and new users at the same time, the community With Spring Boot 3.0 and 2.4 as the dividing line, three branch iterations of 2022.x, 2021.x, and 2.2.x are maintained at the same time. If you don't want to upgrade across branches, if you want to use new features, please upgrade to the new version of the corresponding branch.
 In order to avoid dependency conflicts in the related construction process, we suggest that you can create projects through [Cloud Native Application Initializer](https://start.aliyun.com).
+
+### 2023.x 分支
+
+The Spring Cloud Alibaba versions adapted to Spring Boot 3.2.x, Spring Cloud 2023.x.
+
+| Spring Cloud Alibaba Version | Spring Cloud Version  | Spring Boot Version |
+| ---------------------------- | --------------------- | ------------------- |
+| 2023.0.0.0-RC1\*             | Spring Cloud 2023.0.0 | 3.2.0               |
 
 ### 2022.x branch
 
@@ -26,7 +34,8 @@ Adapted to Spring Boot 2.4, Spring Cloud Alibaba versions of Spring Cloud 2021.x
 
 | Spring Cloud Alibaba Version | Spring Cloud Version  | Spring Boot Version |
 | ---------------------------- | --------------------- | ------------------- |
-| 2021.0.5.0\*                 | Spring Cloud 2021.0.5 | 2.6.13              |
+| 2021.0.6.0\*                 | Spring Cloud 2021.0.5 | 2.6.13              |
+| 2021.0.5.0                   | Spring Cloud 2021.0.5 | 2.6.13              |
 | 2021.0.4.0                   | Spring Cloud 2021.0.4 | 2.6.11              |
 | 2021.0.1.0                   | Spring Cloud 2021.0.1 | 2.6.3               |
 | 2021.1                       | Spring Cloud 2020.0.1 | 2.4.2               |
@@ -37,7 +46,8 @@ Adapted to Spring Boot 2.4, the Spring Cloud Hoxton version and the following Sp
 
 | Spring Cloud Alibaba Version                         | Spring Cloud Version        | Spring Boot Version |
 | ---------------------------------------------------- | --------------------------- | ------------------- |
-| 2.2.10-RC1\*                                         | Spring Cloud Hoxton.SR12    | 2.3.12.RELEASE      |
+| 2.2.10-RC2\*                                         | Spring Cloud Hoxton.SR12    | 2.3.12.RELEASE      |
+| 2.2.10-RC1                                           | Spring Cloud Hoxton.SR12    | 2.3.12.RELEASE      |
 | 2.2.9.RELEASE                                        | Spring Cloud Hoxton.SR12    | 2.3.12.RELEASE      |
 | 2.2.8.RELEASE                                        | Spring Cloud Hoxton.SR12    | 2.3.12.RELEASE      |
 | 2.2.7.RELEASE                                        | Spring Cloud Hoxton.SR12    | 2.3.12.RELEASE      |
@@ -55,6 +65,7 @@ Each Spring Cloud Alibaba version and the corresponding versions of the componen
 
 | Spring Cloud Alibaba Version                              | Sentinel Version | Nacos Version | RocketMQ Version | Dubbo Version | Seata Version    |
 | --------------------------------------------------------- | ---------------- | ------------- | ---------------- | ------------- | ---------------- |
+| 2023.0.0.0-RC1                                            | 1.8.6            | 2.3.0         | 5.1.4            | ~             | 2.0.0            |
 | 2022.0.0.0                                                | 1.8.6            | 2.2.1         | 4.9.4            | ~             | 1.7.0            |
 | 2022.0.0.0-RC2                                            | 1.8.6            | 2.2.1         | 4.9.4            | ~             | 1.7.0-native-rc2 |
 | 2021.0.5.0                                                | 1.8.6            | 2.2.0         | 4.9.4            | ~             | 1.6.1            |

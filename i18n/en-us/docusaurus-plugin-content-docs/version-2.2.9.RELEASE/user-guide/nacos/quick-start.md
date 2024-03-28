@@ -48,7 +48,7 @@ If you want to use Nacos for configuration management in your project. You need 
          serverAddr: 127.0.0.1:8848
      config:
        import:
-         - nacos:nacos-config-example.properties?refresh=true
+         - nacos:nacos-config-example.properties?refreshEnabled=true
    ```
 
 3. After completing the preceding two steps, the application will obtain the corresponding configuration from Nacos Config and add it to PropertySources in the Spring Environment. Suppose we save part of the Nacos configuration through the Nacos configuration center. There are four examples as follows:
