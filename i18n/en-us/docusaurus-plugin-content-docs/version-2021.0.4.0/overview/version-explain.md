@@ -10,7 +10,7 @@ custom_edit_url: https://github.com/higress-group/higress-group.github.io/blob/m
 Due to the large changes between Spring Boot 3.0, Spring Boot 2.7~2.4 and versions below 2.4, the Spring Boot version related to old projects of enterprise customers is still below Spring Boot 2.4. In order to meet the different needs of existing users and new users at the same time, the community With Spring Boot 3.0 and 2.4 as the dividing line, three branch iterations of 2022.x, 2021.x, and 2.2.x are maintained at the same time. If you don't want to upgrade across branches, if you want to use new features, please upgrade to the new version of the corresponding branch.
 In order to avoid dependency conflicts in the related construction process, we suggest that you can create projects through [Cloud Native Application Initializer](https://start.aliyun.com).
 
-### 2023.x 分支
+### 2023.x branch
 
 The Spring Cloud Alibaba versions adapted to Spring Boot 3.2.x, Spring Cloud 2023.x.
 
