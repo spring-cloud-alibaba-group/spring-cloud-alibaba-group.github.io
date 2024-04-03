@@ -371,14 +371,14 @@ This section only covers the Ribbon, RestTemplate, and FeignClient for your unde
    ```java
    @FeignClient(name = "service-provider")
    public interface EchoService {
-       @GetMapping(value = "/echo/{str}")
+       @GetMapping(value = "/echo/\{str\}")
        String echo(@PathVariable("str") String str);
    }
    ```
 
    Wrap the EchoService interface as a FeignClient using the @FeignClient annotation, with the attribute name corresponding to the service name service-provider.
 
-   The @RequestMapping annotation on the echo method maps the echo method to the URL "/echo/{str}", and the @PathVariable annotation maps {str} in the URL path to the echo method parameter str.
+   The @RequestMapping annotation on the echo method maps the echo method to the URL "/echo/\{str\}", and the @PathVariable annotation maps \{str\} in the URL path to the echo method parameter str.
 
 3. Inject both into the Controller:
 

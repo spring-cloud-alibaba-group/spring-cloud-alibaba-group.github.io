@@ -145,7 +145,7 @@ public RestTemplate restTemplate() {
 //@FeignClient(name = "service-provider", url="http://service.example.com/")
 @FeignClient(name = "service-provider")
 public interface EchoService {
-    @GetMapping(value = "/echo/{str}")
+    @GetMapping(value = "/echo/\{str\}")
     String echo(@PathVariable("str") String str);
 }
 ```

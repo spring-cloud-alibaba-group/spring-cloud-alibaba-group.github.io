@@ -62,7 +62,7 @@ spring-cloud-starter-alibaba-sentinel 适配了 [OpenFeign](https://github.com/O
 ```java
 @FeignClient(name = "service-provider", fallback = EchoServiceFallback.class, configuration = FeignConfiguration.class)
 public interface EchoService {
-    @GetMapping(value = "/echo/{str}")
+    @GetMapping(value = "/echo/\{str\}")
     String echo(@PathVariable("str") String str);
 }
 
@@ -83,7 +83,7 @@ class EchoServiceFallback implements EchoService {
 
 NOTE: Feign 对应的接口中的资源名策略定义：httpmethod:protocol://requesturl。@FeignClient 注解中的所有属性，Sentinel 都做了兼容。
 
-EchoService 接口中方法 echo 对应的资源名为 GET:http://service-provider/echo/{str}。
+EchoService 接口中方法 echo 对应的资源名为 GET:http://service-provider/echo/\{str\}。
 
 ### RestTemplate
 

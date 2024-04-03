@@ -12,11 +12,11 @@ description: Advanced, Nacos, Guide.
 
 spring-cloud-starter-alibaba-nacos-config 在加载服务配置时：
 
-不仅仅加载了以 dataId 为 ${spring.application.name}.${file-extension:properties} 为前缀的基础配置，
+不仅仅加载了以 dataId 为 \$\{spring.application.name\}.$\{file-extension:properties\} 为前缀的基础配置，
 
-还加载了 dataId 为 ${spring.application.name}-${profile}.${file-extension:properties} 的基础配置。
+还加载了 dataId 为 \$\{spring.application.name\}-$\{profile\}.$\{file-extension:properties\} 的基础配置。
 
-在日常开发中如果遇到多套环境下的不同配置，可以通过 Spring 提供的 ${spring.profiles.active} 这个配置项选择不同情况下的配置。
+在日常开发中如果遇到多套环境下的不同配置，可以通过 Spring 提供的 \$\{spring.profiles.active\} 这个配置项选择不同情况下的配置。
 
 ```properties
 spring.profiles.active=develop
@@ -58,7 +58,7 @@ in develop-env enviroment; user name :nacos-config-yaml-update; age: 68
 2018-11-02 15:34:25.013 INFO 33014 --- [ Thread-11] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6f1c29b7: startup date [Fri Nov 02 15:33:57 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@63355449
 ```
 
-如果需要切换到生产环境，只需要更改 ${spring.profiles.active} 参数配置即可。如下所示：
+如果需要切换到生产环境，只需要更改 \$\{spring.profiles.active\} 参数配置即可。如下所示：
 
 ```properties
 spring.profiles.active=product
@@ -90,7 +90,7 @@ Nacos 内部有 [Namespace](https://nacos.io/zh-cn/docs/concepts.html) 的概念
 
 > 用于进行租户粒度的配置隔离。不同的命名空间下，可以存在相同的 Group 或 Data ID 的配置。Namespace 的常用场景之一是不同环境的配置的区分隔离，
 > 例如开发测试环境和生产环境的资源（如配置、服务）隔离等。
-> 在没有明确指定 ${spring.cloud.nacos.config.namespace} 配置的情况下， 默认使用的是 Nacos 中 public 命名空间即默认的命名空间。如果需要使用自定义的命名空间，可以通过以下配置来实现：
+> 在没有明确指定 $\{spring.cloud.nacos.config.namespace\} 配置的情况下， 默认使用的是 Nacos 中 public 命名空间即默认的命名空间。如果需要使用自定义的命名空间，可以通过以下配置来实现：
 
 ```properties
 spring.cloud.nacos.config.namespace=YOUR_NAMESPACE_ID
@@ -102,7 +102,7 @@ spring.cloud.nacos.config.namespace=YOUR_NAMESPACE_ID
 
 ### 自定义 Group 的配置
 
-在没有明确指定 ${spring.cloud.nacos.config.group} 配置的情况下， 默认使用的是组 DEFAULT_GROUP 。如果需要自定义 Group，可以通过以下配置来实现：
+在没有明确指定 $\{spring.cloud.nacos.config.group\} 配置的情况下， 默认使用的是组 DEFAULT_GROUP 。如果需要自定义 Group，可以通过以下配置来实现：
 
 ```properties
 spring.cloud.nacos.config.group=YOUR_GROUP_NAME
@@ -189,7 +189,7 @@ To disable this check, set spring.cloud.nacos.config.import-check.enabled=false.
 | 配置项                    | key                                       | 默认值                     | 说明                                                                             |
 | ------------------------- | ----------------------------------------- | -------------------------- | -------------------------------------------------------------------------------- |
 | 服务端地址                | spring.cloud.nacos.config.server-addr     |                            | 服务器 ip 和端口                                                                 |
-| DataId 前缀               | spring.cloud.nacos.config.prefix          | ${spring.application.name} | DataId 的前缀，默认值为应用名称                                                  |
+| DataId 前缀               | spring.cloud.nacos.config.prefix          | \$\{spring.application.name\} | DataId 的前缀，默认值为应用名称                                                  |
 | Group                     | spring.cloud.nacos.config.group           | DEFAULT_GROUP              |
 | DataId 后缀及内容文件格式 | spring.cloud.nacos.config.file-extension  | properties                 | DataId 的后缀，同时也是配置内容的文件格式，目前只支持 properties                 |
 | 配置内容的编码方式        | spring.cloud.nacos.config.encode          | UTF-8                      | 配置的编码                                                                       |

@@ -288,14 +288,14 @@ Nacos 配置管理示例源码参考：[Nacos 配置管理示例](https://github
    ```java
    @FeignClient(name = "service-provider")
    public interface EchoService {
-       @GetMapping(value = "/echo/{str}")
+       @GetMapping(value = "/echo/\{str\}")
        String echo(@PathVariable("str") String str);
    }
    ```
 
    使用 @FeignClient 注解将 EchoService 这个接口包装成一个 FeignClient，属性 name 对应服务名 service-provider。
 
-   echo 方法上的 @GetMapping 注解将 echo 方法与 URL "/echo/{str}" 相对应，@PathVariable 注解将 URL 路径中的 {str} 对应成 echo 方法的参数 str。
+   echo 方法上的 @GetMapping 注解将 echo 方法与 URL "/echo/\{str\}" 相对应，@PathVariable 注解将 URL 路径中的 \{str\} 对应成 echo 方法的参数 str。
 
 3. 将两者注入到 Controller 中：
 

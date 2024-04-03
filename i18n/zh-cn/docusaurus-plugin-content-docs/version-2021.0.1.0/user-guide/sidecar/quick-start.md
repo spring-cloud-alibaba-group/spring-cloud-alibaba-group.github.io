@@ -10,7 +10,7 @@ description: Sidecar,Quick Start.
 
 - 【必须】异构微服务需使用 HTTP 通信。这一点严格来说不算要求，因为 Spring Cloud 本身就是基于 HTTP 的。
 
-- 【可选】如果微服务配置了 sidecar.health-check-url ，则表示开启健康检查，此时，异构微服务需实现健康检查（可以是空实现，只要暴露一个端点，返回类似 {"status": "UP"} 的字符串即可）。
+- 【可选】如果微服务配置了 sidecar.health-check-url ，则表示开启健康检查，此时，异构微服务需实现健康检查（可以是空实现，只要暴露一个端点，返回类似 \{"status": "UP"\} 的字符串即可）。
 
 ## 准备工作
 

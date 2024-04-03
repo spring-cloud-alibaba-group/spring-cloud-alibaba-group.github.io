@@ -62,7 +62,7 @@ Here is a simple usage example of FeignClient:
 ```java
 @FeignClient(name = "service-provider", fallback = EchoServiceFallback.class, configuration = FeignConfiguration.class)
 public interface EchoService {
-     @GetMapping(value = "/echo/{str}")
+     @GetMapping(value = "/echo/\{str\}")
      String echo(@PathVariable("str") String str);
 }
 
@@ -83,7 +83,7 @@ class EchoServiceFallback implements EchoService {
 
 NOTE: The resource name policy definition in the interface corresponding to Feign: httpmethod:protocol://requesturl. All attributes in the @FeignClient annotation are compatible with Sentinel.
 
-The name of the resource corresponding to the method echo in the EchoService interface is GET:http://service-provider/echo/{str}.
+The name of the resource corresponding to the method echo in the EchoService interface is GET:http://service-provider/echo/\{str\}.
 
 ### RestTemplate
 
