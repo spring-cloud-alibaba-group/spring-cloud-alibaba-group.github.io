@@ -10,29 +10,88 @@ date: 2023-04.02
 
 Nacos: v2.3.0
 
-Spring Boot: 3.0.9
+Spring Boot: 3.2.0
 
-Spring Cloud:  2022.0.0
+Spring Cloud:  2023.0.0
 
-Spring Cloud Alibaba Version: 2022.0.0.0
+Spring Cloud Alibaba Version: 2023.0.0.0-RC1
 
 ## 项目编写
 
-github 地址：https://github.com/yuluo-yx/sca-k8s-demo
+github 地址：https://github.com/yuluo-yx/sca-k8s-demo/tree/openfeign
 
 ### 项目结构
 
 ```shell
-├─docker-compose				    # Docker compose 部署文件
-├─kubernetes				        # Kubernetes 部署文件
+├─docker-compose                  # Docker compose 部署文件
+├─kubernetes                      # Kubernetes 部署文件
    └─docker-images
     ├─consumer
     	├─ application-k8s.yaml     # k8s 环境的配置文件
     	├─ app.jar                  # 应用 jar 包
     	└─ Dockerfile               # 打包的 Dockerfile
     └─provider
-├─sca-k8s-service-consumer          # sca 服务消费者模块 
-├─sca-k8s-service-provider          # sca 服务提供者模块
+├─sca-k8s-service-consumer        # sca 服务消费者模块 
+├─sca-k8s-service-provider        # sca 服务提供者模块
+```
+
+父 pom.xml 文件：
+
+```xml
+<modules>
+    <module>sca-k8s-service-provider</module>
+    <module>sca-k8s-service-consumer</module>
+</modules>
+
+<properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring-cloud-alibaba.version>2023.0.0.0-RC1</spring-cloud-alibaba.version>
+    <spring-cloud.version>2023.0.0</spring-cloud.version>
+    <spring-boot.version>3.2.0</spring-boot.version>
+</properties>
+
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <dependency>
+        <groupId>com.alibaba.cloud</groupId>
+        <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+    </dependency>
+</dependencies>
+
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-dependencies</artifactId>
+            <version>${spring-cloud.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+            <version>${spring-cloud-alibaba.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+
+<!--spring boot 打包插件-->
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
 ```
 
 ### provider 模块
@@ -45,18 +104,6 @@ provider pom.xml 文件
   <dependency>
     <groupId>com.alibaba.cloud</groupId>
     <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-    <exclusions>
-      <exclusion>
-        <groupId>com.alibaba.nacos</groupId>
-        <artifactId>nacos-client</artifactId>
-      </exclusion>
-    </exclusions>
-  </dependency>
-
-  <dependency>
-    <groupId>com.alibaba.nacos</groupId>
-    <artifactId>nacos-client</artifactId>
-    <version>${nacos.client}</version>
   </dependency>
 
   <dependency>
@@ -157,18 +204,6 @@ consumer pom.xml 文件
   <dependency>
     <groupId>com.alibaba.cloud</groupId>
     <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-    <exclusions>
-      <exclusion>
-        <groupId>com.alibaba.nacos</groupId>
-        <artifactId>nacos-client</artifactId>
-      </exclusion>
-    </exclusions>
-  </dependency>
-
-  <dependency>
-    <groupId>com.alibaba.nacos</groupId>
-    <artifactId>nacos-client</artifactId>
-    <version>${nacos.client}</version>
   </dependency>
 
   <dependency>
@@ -358,7 +393,7 @@ feign:
 
 准备 k8s 集群，此处为了演示方便，使用 kind 模拟 k8s cluster。
 
-![image-20240225175008463](../../../static/img/blog/SCA-k8s-practice/image-20240225175008463.png)
+![image-20240225175008463](images/image-20240225175008463.png)
 
 ### 部署流程
 
@@ -366,19 +401,19 @@ feign:
 
 执行 `kubectl create -f sca-k8s-demo-mysql.yaml` 创建 nacos 需要的 mysql 服务：
 
-![image-20240225175920425](../../../static/img/blog/SCA-k8s-practice/image-20240225175920425.png)
+![image-20240225175920425](images/image-20240225175920425.png)
 
 创建成功如下所示：
 
-![image-20240225180004647](../../../static/img/blog/SCA-k8s-practice/image-20240225180004647.png)
+![image-20240225180004647](images/image-20240225180004647.png)
 
 执行 `kubectl create -f sca-k8s-demo-nacos.yaml` 创建 nacos 需要的 mysql 服务：
 
-![image-20240225180104329](../../../static/img/blog/SCA-k8s-practice/image-20240225180104329.png)
+![image-20240225180104329](images/image-20240225180104329.png)
 
 创建成功如下所示：
 
-![image-20240225180603568](../../../static/img/blog/SCA-k8s-practice/image-20240225180603568.png)
+![image-20240225180603568](images/image-20240225180603568.png)
 
 > 这里没有使用 ingress 暴露 nacos 服务，使用端口转发的方式将 nacos 暴露出来。
 >
@@ -390,13 +425,13 @@ feign:
 
 浏览器访问 nacos console：
 
-![image-20240225182956824](../../../static/img/blog/SCA-k8s-practice/image-20240225182956824.png)
+![image-20240225182956824](images/image-20240225182956824.png)
 
 #### 打包 Docker Images
 
 修改应用配置文件中的 nacos server 地址为端口转发时使用的虚拟机地址，确保服务成功注册。consumer 和 provider 同时修改。
 
-![image-20240225183636922](../../../static/img/blog/SCA-k8s-practice/image-20240225183636922.png)
+![image-20240225183636922](images/image-20240225183636922.png)
 
 为了使用方便，此处使用阿里云容器镜像服务。执行下述命令之前先使用 `docker login` 命令登陆 docker hub，确保 `push` 镜像成功！
 
@@ -487,32 +522,32 @@ consumer 对比 provider 多了一个 svc 配置，其他相同。之后需要�
 
 之后部署 provider service `ukbectl create -f sca-k8s-demo-provider.yaml`：
 
-![image-20240225210717202](../../../static/img/blog/SCA-k8s-practice/image-20240225210717202.png)
+![image-20240225210717202](images/image-20240225210717202.png)
 
 执行 `kubectl logs sca-k8s-demo-provider-service-xxxx` 查看 pod 日志，发现激活的配置文件为 `k8s`：
 
-![image-20240225210541866](../../../static/img/blog/SCA-k8s-practice/image-20240225210541866.png)
+![image-20240225210541866](images/image-20240225210541866.png)
 
 查看 nacos 控制台，发现 provider 已经注册：
 
-![image-20240225210515801](../../../static/img/blog/SCA-k8s-practice/image-20240225210515801.png)
+![image-20240225210515801](images/image-20240225210515801.png)
 
 尝试访问 provider service 接口服务：
 
 转发 provider service pod：`kubectl port-forward pod-name 8082:8082`
 
-![image-20240228111846689](../../../static/img/blog/SCA-k8s-practice/image-20240228111846689.png)
+![image-20240228111846689](images/image-20240228111846689.png)
 
 consumer 部署方式相同，执行 `kubectl create -f sca-k8s-demo-consumer.yaml` 即可部署。
 
 最终部署所有的 k8s pod 如下图：
 
-![image-20240225210835325](../../../static/img/blog/SCA-k8s-practice/image-20240225210835325.png)
+![image-20240225210835325](images/image-20240225210835325.png)
 
 ### 访问
 
 转发 consumer 服务：`kubectl port-forward --address localhost,192.168.20.129 svc/sca-k8s-demo-consumer-service-svc 8080:8080 `
 
-![image-20240228112917449](../../../static/img/blog/SCA-k8s-practice/image-20240228112917449.png)
+![image-20240228112917449](images/image-20240228112917449.png)
 
 本文章主要介绍如何在 Kubernetes 环境中部署 Spring Cloud Alibaba 应用。在部署的同时，使用 liveness 探针确保 pod 正常启动可对外提供服务，使用 configMap 配置以启动正确的配置文件。
