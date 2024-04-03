@@ -27,9 +27,9 @@ github 地址：https://github.com/yuluo-yx/sca-k8s-demo/tree/openfeign
 ├─kubernetes                      # Kubernetes 部署文件
    └─docker-images
     ├─consumer
-    	├─ application-k8s.yaml     # k8s 环境的配置文件
-    	├─ app.jar                 # 应用 jar 包
-    	└─ Dockerfile               # 打包的 Dockerfile
+     ├─ application-k8s.yaml     # k8s 环境的配置文件
+     ├─ app.jar                 # 应用 jar 包
+     └─ Dockerfile               # 打包的 Dockerfile
     └─provider
 ├─sca-k8s-service-consumer        # sca 服务消费者模块 
 ├─sca-k8s-service-provider        # sca 服务提供者模块
@@ -146,17 +146,17 @@ provider service java 文件
 @Service
 public class ProviderServiceImpl implements ProviderService {
 
-	@Override
-	public String providerA() {
+ @Override
+ public String providerA() {
 
-		return "This response from provider A!";
-	}
+  return "This response from provider A!";
+ }
 
-	@Override
-	public String providerB() {
+ @Override
+ public String providerB() {
 
-		return "This response from provider B!";
-	}
+  return "This response from provider B!";
+ }
 }
 ```
 
@@ -288,20 +288,20 @@ Consumer controller java
 @RequestMapping("/consumer")
 public class ConsumerController {
 
-	@Autowired
-	private ConsumerService consumerService;
+  @Autowired
+ private ConsumerService consumerService;
 
-	@GetMapping("/a")
-	public String consumerA() {
+ @GetMapping("/a")
+ public String consumerA() {
 
-		return consumerService.consumerA();
-	}
+  return consumerService.consumerA();
+ }
 
-	@GetMapping("/b")
-	public String consumerB() {
+ @GetMapping("/b")
+ public String consumerB() {
 
-		return consumerService.consumerB();
-	}
+  return consumerService.consumerB();
+ }
 
 }
 ```
@@ -312,20 +312,20 @@ Consumer service java 文件
 @Service
 public class ConsumerServiceImpl implements ConsumerService {
 
-	@Autowired
-	private K8sFeignClient feignClient;
+ @Autowired
+ private K8sFeignClient feignClient;
 
-	@Override
-	public String consumerA() {
+ @Override
+ public String consumerA() {
 
-		return feignClient.providerA();
-	}
+  return feignClient.providerA();
+ }
 
-	@Override
-	public String consumerB() {
+ @Override
+ public String consumerB() {
 
-		return feignClient.providerB();
-	}
+  return feignClient.providerB();
+ }
 }
 ```
 
@@ -336,14 +336,14 @@ Consumer application 主类 java 文件
 @EnableDiscoveryClient
 @SpringBootApplication
 @LoadBalancerClients({
-		@LoadBalancerClient("sca-k8s-provider")
+  @LoadBalancerClient("sca-k8s-provider")
 })
 public class SCAK8sConsumerApplication {
 
-	public static void main(String[] args) {
+ public static void main(String[] args) {
 
-		SpringApplication.run(SCAK8sConsumerApplication.class, args);
-	}
+  SpringApplication.run(SCAK8sConsumerApplication.class, args);
+ }
 
 }
 ```
@@ -446,10 +446,10 @@ configMap 资源文件：用于设置一些 jvm 调优参数和指定激活的�
 > 通常情况下：应用的配置文件为
 >
 > ```shell
-> application.yml	   # 通用配置项
-> application-dev.yml	   # 开发环境配置
-> application-test.yml	   # 测试环境配置
-> application-prod.yml	   # 生产环境配置
+> application.yml    # 通用配置项
+> application-dev.yml    # 开发环境配置
+> application-test.yml    # 测试环境配置
+> application-prod.yml    # 生产环境配置
 > ```
 >
 > 在此 demo 设置应用配置文件为 k8s，如上文项目结构所示！
@@ -546,7 +546,7 @@ consumer 部署方式相同，执行 `kubectl create -f sca-k8s-demo-consumer.ya
 
 ### 访问
 
-转发 consumer 服务：`kubectl port-forward --address localhost,192.168.20.129 svc/sca-k8s-demo-consumer-service-svc 8080:8080 `
+转发 consumer 服务：`kubectl port-forward --address localhost,192.168.20.129 svc/sca-k8s-demo-consumer-service-svc 8080:8080`
 
 ![image-20240228112917449](images/image-20240228112917449.png)
 
