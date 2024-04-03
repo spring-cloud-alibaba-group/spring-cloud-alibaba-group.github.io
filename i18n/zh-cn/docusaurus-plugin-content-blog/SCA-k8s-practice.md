@@ -5,7 +5,6 @@ description: Spring Cloud Alibaba 在 K8s 环境下的最佳实践，通过使�
 author: 牧生
 date: 2023-04.02
 ---
-# Spring Cloud Alibaba 在 K8s 环境下的最佳实践
 
 ## 环境准备
 
