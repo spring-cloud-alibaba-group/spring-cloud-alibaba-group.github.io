@@ -49,5 +49,5 @@
   "engines": {
     "node": ">=18.0"
   },
-  "repository": "https://github.com/qq635840580/spring-cloud-alibaba-group.github.io.git"
+  "repository": "https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io.git"
 }
