@@ -89,8 +89,11 @@ docker run --rm -p 3000:80 sca-site:latest
 
 ### 添加一个新博客
 
-1. 在 `i18n/en-us/docusaurus-plugin-content-blog/current` 或 `i18n/zh-cn/docusaurus-plugin-content-blog/current` 下添加新的 markdown 文件。对应英文和中文，中英文文件名需要和占位文件名一致；
-2. 在文件头添加 SEO 配置。
+1. 添加 markdown 文件
+    1. 添加占位文件，在 `/blog`；
+    2.在 `i18n/en-us/docusaurus-plugin-content-blog/current` 或 `i18n/zh-cn/docusaurus-plugin-content-blog/current` 下添加新的 markdown 文件。对应英文和中文，中英文文件名需要和占位文件名一致；
+2. 在文件头添加 SEO 配置；
+3. 文档中的图片添加到 `/static/img/blog/xxx` 下，xxx 和 blog 标题一致。
 
 ## SEO
 
