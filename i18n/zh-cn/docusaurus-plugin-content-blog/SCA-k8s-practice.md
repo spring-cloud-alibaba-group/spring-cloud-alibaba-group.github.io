@@ -5,6 +5,7 @@ description: Spring Cloud Alibaba 在 K8s 环境下的最佳实践，通过使�
 author: 牧生
 date: 2023-04.02
 ---
+# Spring Cloud Alibaba 在 K8s 环境下的最佳实践
 
 ## 环境准备
 
@@ -23,13 +24,13 @@ github 地址：https://github.com/yuluo-yx/sca-k8s-demo/tree/openfeign
 ### 项目结构
 
 ```shell
-├─docker-compose                  # Docker compose 部署文件
+├─docker-compose                  # Docker compose 部署文件(这里只是示例，没有任何其他用途)
 ├─kubernetes                      # Kubernetes 部署文件
    └─docker-images
     ├─consumer
-     ├─ application-k8s.yaml     # k8s 环境的配置文件
-     ├─ app.jar                  # 应用 jar 包
-     └─ Dockerfile               # 打包的 Dockerfile
+    	├─ application-k8s.yaml   # k8s 环境的配置文件
+    	├─ app.jar                # 应用 jar 包
+    	└─ Dockerfile             # 打包的 Dockerfile
     └─provider
 ├─sca-k8s-service-consumer        # sca 服务消费者模块 
 ├─sca-k8s-service-provider        # sca 服务提供者模块
@@ -146,17 +147,17 @@ provider service java 文件
 @Service
 public class ProviderServiceImpl implements ProviderService {
 
- @Override
- public String providerA() {
+	@Override
+	public String providerA() {
 
-  return "This response from provider A!";
- }
+		return "This response from provider A!";
+	}
 
- @Override
- public String providerB() {
+	@Override
+	public String providerB() {
 
-  return "This response from provider B!";
- }
+		return "This response from provider B!";
+	}
 }
 ```
 
@@ -181,7 +182,8 @@ spring:
 # actuator 健康检查配置，用于做 kubernetes pod 的 liveness 探针接口使用
 management:
   server:
-    port: 30001
+    # management 类端口全部保持一致 （尽量让业务服务的 K8S Deployment 保持统一，便于维护）
+    port: 30000
   endpoint:
     health:
       probes:
@@ -288,20 +290,20 @@ Consumer controller java
 @RequestMapping("/consumer")
 public class ConsumerController {
 
-  @Autowired
- private ConsumerService consumerService;
+	@Autowired
+	private ConsumerService consumerService;
 
- @GetMapping("/a")
- public String consumerA() {
+	@GetMapping("/a")
+	public String consumerA() {
 
-  return consumerService.consumerA();
- }
+		return consumerService.consumerA();
+	}
 
- @GetMapping("/b")
- public String consumerB() {
+	@GetMapping("/b")
+	public String consumerB() {
 
-  return consumerService.consumerB();
- }
+		return consumerService.consumerB();
+	}
 
 }
 ```
@@ -312,20 +314,20 @@ Consumer service java 文件
 @Service
 public class ConsumerServiceImpl implements ConsumerService {
 
- @Autowired
- private K8sFeignClient feignClient;
+	@Autowired
+	private K8sFeignClient feignClient;
 
- @Override
- public String consumerA() {
+	@Override
+	public String consumerA() {
 
-  return feignClient.providerA();
- }
+		return feignClient.providerA();
+	}
 
- @Override
- public String consumerB() {
+	@Override
+	public String consumerB() {
 
-  return feignClient.providerB();
- }
+		return feignClient.providerB();
+	}
 }
 ```
 
@@ -336,14 +338,14 @@ Consumer application 主类 java 文件
 @EnableDiscoveryClient
 @SpringBootApplication
 @LoadBalancerClients({
-  @LoadBalancerClient("sca-k8s-provider")
+		@LoadBalancerClient("sca-k8s-provider")
 })
 public class SCAK8sConsumerApplication {
 
- public static void main(String[] args) {
+	public static void main(String[] args) {
 
-  SpringApplication.run(SCAK8sConsumerApplication.class, args);
- }
+		SpringApplication.run(SCAK8sConsumerApplication.class, args);
+	}
 
 }
 ```
@@ -366,7 +368,8 @@ spring:
 
 management:
   server:
-    port: 30002
+    # management 类端口全部保持一致 （尽量让业务服务的 K8S Deployment 保持统一，便于维护）
+    port: 30000
   endpoint:
     health:
       probes:
@@ -387,13 +390,25 @@ feign:
 >
 > Docker compose 运行方式参考 `docker-compose` 目录下的 README.md 文件。本节中主要以 k8s 部署方式演示为主。
 >
-> 本地运行需要准备 2.3.0 版本的 nacos。
+> 本地运行需要准备 2.3.0 版本的 nacos  server。
 
 ### 环境准备
 
-准备 k8s 集群，此处为了演示方便，使用 kind 模拟 k8s cluster。
+准备 k8s 集群，此处为了演示方便，使用 kind 模拟 k8s cluster，初始化集群时创建的 pod 如下所示：
 
-![image-20240225175008463](images/image-20240225175008463.png)
+```shell
+root@yuluo-Inspiron-3647:/kubernetes/sca-k8s-best# kubectl get pods -A
+NAMESPACE            NAME                                            READY   STATUS              RESTARTS   AGE
+kube-system          coredns-76f75df574-74qnn                        1/1     Running             0          118s
+kube-system          coredns-76f75df574-q9hq5                        1/1     Running             0          118s
+kube-system          etcd-sca-k8s-control-plane                      1/1     Running             0          2m19s
+kube-system          kindnet-bmsmm                                   1/1     Running             0          118s
+kube-system          kube-apiserver-sca-k8s-control-plane            1/1     Running             0          2m24s
+kube-system          kube-controller-manager-sca-k8s-control-plane   1/1     Running             0          2m19s
+kube-system          kube-proxy-lllzb                                1/1     Running             0          118s
+kube-system          kube-scheduler-sca-k8s-control-plane            1/1     Running             0          2m23s
+local-path-storage   local-path-provisioner-7577fdbbfb-zpwb4         1/1     Running             0          117s
+```
 
 ### 部署流程
 
@@ -401,19 +416,35 @@ feign:
 
 执行 `kubectl create -f sca-k8s-demo-mysql.yaml` 创建 nacos 需要的 mysql 服务：
 
-![image-20240225175920425](images/image-20240225175920425.png)
+```shell
+root@yuluo-Inspiron-3647:/kubernetes/sca-k8s-best# kubectl create -f sca-k8s-demo-mysql.yaml 
+replicationcontroller/sca-k8s-demo-mysql created
+service/sca-k8s-demo-mysql created
+```
 
-创建成功如下所示：
+创建成功使用 `kubectl get pods -A | grep mysql` 查询，如下所示：
 
-![image-20240225180004647](images/image-20240225180004647.png)
+```shell
+root@yuluo-Inspiron-3647:/kubernetes/sca-k8s-best# kubectl get pods -A | grep mysql
+default              sca-k8s-demo-mysql-87wft                       1/1     Running   0           2m5s
+
+```
 
 执行 `kubectl create -f sca-k8s-demo-nacos.yaml` 创建 nacos 需要的 mysql 服务：
 
-![image-20240225180104329](images/image-20240225180104329.png)
+```shell
+root@yuluo-Inspiron-3647:/kubernetes/sca-k8s-best# kubectl create -f sca-k8s-demo-nacos.yaml 
+service/sca-k8s-demo-nacos-standalone created
+configmap/sca-k8s-demo-nacos-cm created
+deployment.apps/sca-k8s-demo-nacos-standalone created
+```
 
 创建成功如下所示：
 
-![image-20240225180603568](images/image-20240225180603568.png)
+```shell
+root@yuluo-Inspiron-3647:/kubernetes/sca-k8s-best# kubectl get pods | grep nacos
+sca-k8s-demo-nacos-standalone-854d8cfc88-rg7pp   1/1     Running   0          2m26s
+```
 
 > 这里没有使用 ingress 暴露 nacos 服务，使用端口转发的方式将 nacos 暴露出来。
 >
@@ -441,18 +472,20 @@ feign:
 
 ##### k8s 部署资源文件解析
 
-configMap 资源文件：用于设置一些 jvm 调优参数和指定激活的配置文件。
+ConfigMap 资源文件：用于设置一些 jvm 调优参数和指定激活的配置文件：
+
+**更最佳的实践做法为：线上的配置不会写在 dockerfile 或者其他构件相关的配置文件中，而是直接维护在 k8s 的 ConfigMap 里面 （通常由运维人员维护，开发者不关注这些具体的参数信息）**
 
 > 通常情况下：应用的配置文件为
 >
 > ```shell
-> application.yml    # 通用配置项
-> application-dev.yml    # 开发环境配置
-> application-test.yml    # 测试环境配置
-> application-prod.yml    # 生产环境配置
+> application.yml			# 通用配置项
+> application-dev.yml		# 开发环境配置
+> application-test.yml	# 测试环境配置
+> application-prod.yml	# 生产环境配置
 > ```
 >
-> 在此 demo 设置应用配置文件为 k8s，如上文项目结构所示！
+> 在此 demo 设置应用配置文件为 **k8s**，如上文项目结构所示！
 
 ```yaml
 apiVersion: v1
@@ -486,7 +519,6 @@ spec:
         - env:
             - name: SPRING_PROFILES_ACTIVE
               valueFrom:
-                # 引用 cm 中的配置
                 configMapKeyRef:
                   name: sca-k8s-demo-spring-profile-cm
                   key: spring-profiles-active
@@ -502,29 +534,38 @@ spec:
           name: sca-k8s-demo-provider-service
           image: registry.cn-hangzhou.aliyuncs.com/yuluo-yx/sca-k8s-demo-provider-service:latest
           ports:
-            - containerPort: 9000
-          # liveness 探针
+            - containerPort: 8082
           livenessProbe:
             httpGet:
               path: /actuator/health/liveness
-              port: 30001
+              # port 尽量保持统一，方便维护
+              port: 30000
               scheme: HTTP
             initialDelaySeconds: 20
             periodSeconds: 10
-
+          readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: 30000
+              scheme: HTTP
+            initialDelaySeconds: 20
+            periodSeconds: 10
 ```
 
 consumer 对比 provider 多了一个 svc 配置，其他相同。之后需要做端口转发，提供外部访问，同样也可以使用 ingress 暴露服务出去。
 
 ##### 部署
 
-修改完成所有配置之后，执行 `kubectl create -f sca-k8s-demo-cm.yaml` 部署 provider 和 consumer 需要的 configMap 资源，
+修改完成所有配置之后，执行 `kubectl create -f sca-k8s-demo-cm.yaml` 部署 provider 和 consumer 需要的 ConfigMap 资源，
 
-之后部署 provider service `ukbectl create -f sca-k8s-demo-provider.yaml`：
+之后部署 provider service `kukbectl create -f sca-k8s-demo-provider.yaml`：
 
-![image-20240225210717202](images/image-20240225210717202.png)
+```shell
+root@yuluo-Inspiron-3647:/kubernetes/sca-k8s-best# kubectl get pods -A | grep provider
+default              sca-k8s-demo-provider-service-7c6579956b-xswjq   1/1     Running   0          9m12s
+```
 
-执行 `kubectl logs sca-k8s-demo-provider-service-xxxx` 查看 pod 日志，发现激活的配置文件为 `k8s`：
+执行 `kubectl logs sca-k8s-demo-provider-service-xxxx` 查看 pod 日志，发现激活的配置文件为 `k8s`，证明 ConfigMap 生效：
 
 ![image-20240225210541866](images/image-20240225210541866.png)
 
@@ -536,18 +577,53 @@ consumer 对比 provider 多了一个 svc 配置，其他相同。之后需要�
 
 转发 provider service pod：`kubectl port-forward pod-name 8082:8082`
 
-![image-20240228111846689](images/image-20240228111846689.png)
+```shell
+root@yuluo-Inspiron-3647:/kubernetes/sca-k8s-best# curl 127.0.0.1:8082/provider/a
+This response from provider A!
+```
 
 consumer 部署方式相同，执行 `kubectl create -f sca-k8s-demo-consumer.yaml` 即可部署。
 
-最终部署所有的 k8s pod 如下图：
+部署之后查看 nacos 注册中心：
 
-![image-20240225210835325](images/image-20240225210835325.png)
+![image-20240403165601573](images/image-20240403165601573.png)
+
+最终部署所有的 k8s 资源如下：
+
+```shell
+root@yuluo-Inspiron-3647:/kubernetes/sca-k8s-best# kubectl get all | grep sca
+pod/sca-k8s-demo-consumer-service-7ffff75969-zmtcw   1/1     Running   0          2m5s
+pod/sca-k8s-demo-mysql-zmstn                         1/1     Running   0          35m
+pod/sca-k8s-demo-nacos-standalone-854d8cfc88-rg7pp   1/1     Running   0          34m
+pod/sca-k8s-demo-provider-service-7c6579956b-xswjq   1/1     Running   0          15m
+replicationcontroller/sca-k8s-demo-mysql   1         1         1       35m
+service/sca-k8s-demo-consumer-service-svc   ClusterIP   10.96.61.65    <none>        8080/TCP                              2m5s
+service/sca-k8s-demo-mysql                  ClusterIP   10.96.37.255   <none>        3306/TCP                              35m
+service/sca-k8s-demo-nacos-standalone       ClusterIP   None           <none>        8848/TCP,9848/TCP,9849/TCP,7848/TCP   34m
+deployment.apps/sca-k8s-demo-consumer-service   0/1     1            0           2m5s
+deployment.apps/sca-k8s-demo-nacos-standalone   1/1     1            1           34m
+deployment.apps/sca-k8s-demo-provider-service   1/1     1            1           15m
+replicaset.apps/sca-k8s-demo-consumer-service-7ffff75969   1         1         0       2m5s
+replicaset.apps/sca-k8s-demo-nacos-standalone-854d8cfc88   1         1         1       34m
+replicaset.apps/sca-k8s-demo-provider-service-7c6579956b   1         1         1       15m
+```
 
 ### 访问
 
 转发 consumer 服务：`kubectl port-forward --address localhost,192.168.20.129 svc/sca-k8s-demo-consumer-service-svc 8080:8080`
 
-![image-20240228112917449](images/image-20240228112917449.png)
+```shell
+root@yuluo-Inspiron-3647:/kubernetes/sca-k8s-best# curl 127.0.0.1:8080/consumer/a
+This response from provider A!
 
-本文章主要介绍如何在 Kubernetes 环境中部署 Spring Cloud Alibaba 应用。在部署的同时，使用 liveness 探针确保 pod 正常启动可对外提供服务，使用 configMap 配置以启动正确的配置文件。
+root@yuluo-Inspiron-3647:/kubernetes/sca-k8s-best# curl 127.0.0.1:8080/consumer/b
+This response from provider B!
+```
+
+## 释放资源
+
+```shell
+kubectl delete -f sca-k8s-demo-*.yaml
+```
+
+本文章主要介绍如何在 Kubernetes 环境中部署 Spring Cloud Alibaba 应用。在部署的同时，使用 liveness 探针确保 pod 正常启动可对外提供服务，使用 ConfigMap 配置使得应用的配置参数更加灵活。
