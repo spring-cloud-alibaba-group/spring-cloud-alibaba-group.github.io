@@ -7,13 +7,13 @@
 ### 环境准备
 
 > 如果不想在本地安装依赖组件，可参考下文 [Docker 环境运行方式](#docker-方式运行)。
-> 项目源码基于 docusaurus v2.4.1 构建，因此要编译运行本项目需确保安装 Node.js 。
+> 项目源码基于 docusaurus v3.1.0 构建，因此要编译运行本项目需确保安装 Node.js 。
 
-- Node.js version 16.14+
+- Node.js version 18.0+
 
 ### 快速启动
 
-1. `npm install`
+1. `npm install` or `npm install -legacy-peer-deps`
 
 2. `npm run start` （以此方式启动时，无法访问 English 页面，如需访问以 `npm run start-en` 启动）
 
