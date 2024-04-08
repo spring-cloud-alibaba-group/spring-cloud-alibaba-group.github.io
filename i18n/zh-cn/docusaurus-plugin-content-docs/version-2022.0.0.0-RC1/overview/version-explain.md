@@ -2,7 +2,6 @@
 title: 版本发布说明
 keywords: [Spring Cloud Alibaba]
 description: Spring Cloud Alibaba Version.
-custom_edit_url: https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/main/i18n/zh-cn/docusaurus-plugin-content-docs/current/overview/terminology.md
 ---
 
 ## 毕业版本依赖关系(推荐使用)
