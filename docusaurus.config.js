@@ -42,8 +42,8 @@ const config = {
     require.resolve("./src/custom-js.ts"),
   ],
   i18n: {
-    defaultLocale: "zh-cn",
-    locales: ["en-us", "zh-cn"],
+    defaultLocale: "default",
+    locales: ["en-us", "zh-cn", "default"],
     localeConfigs: {
       "en-us": {
         label: "En",
