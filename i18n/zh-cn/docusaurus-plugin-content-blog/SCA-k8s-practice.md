@@ -455,13 +455,13 @@ sca-k8s-demo-nacos-standalone-854d8cfc88-rg7pp   1/1     Running   0          2m
 
 浏览器访问 nacos console：
 
-![image-20240225182956824](images/image-20240225182956824.png)
+![image-20240225182956824](../../../static/img/blog/SCA-k8s-practice/image-20240225182956824.png)
 
 #### 打包 Docker Images
 
 修改应用配置文件中的 nacos server 地址为端口转发时使用的虚拟机地址，确保服务成功注册。consumer 和 provider 同时修改。
 
-![image-20240225183636922](images/image-20240225183636922.png)
+![image-20240225183636922](../../../static/img/blog/SCA-k8s-practice/image-20240225183636922.png)
 
 为了使用方便，此处使用阿里云容器镜像服务。执行下述命令之前先使用 `docker login` 命令登陆 docker hub，确保 `push` 镜像成功！
 
@@ -566,11 +566,11 @@ default              sca-k8s-demo-provider-service-7c6579956b-xswjq   1/1     Ru
 
 执行 `kubectl logs sca-k8s-demo-provider-service-xxxx` 查看 pod 日志，发现激活的配置文件为 `k8s`，证明 ConfigMap 生效：
 
-![image-20240225210541866](images/image-20240225210541866.png)
+![image-20240225210541866](../../../static//img/blog/SCA-k8s-practice/image-20240225210541866.png)
 
 查看 nacos 控制台，发现 provider 已经注册：
 
-![image-20240225210515801](images/image-20240225210515801.png)
+![image-20240225210515801](../../../static/img/blog/SCA-k8s-practice/image-20240225210515801.png)
 
 尝试访问 provider service 接口服务：
 
@@ -585,7 +585,7 @@ consumer 部署方式相同，执行 `kubectl create -f sca-k8s-demo-consumer.ya
 
 部署之后查看 nacos 注册中心：
 
-![image-20240403165601573](images/image-20240403165601573.png)
+![image-20240403165601573](../../../static/img/blog/SCA-k8s-practice/image-20240403165601573.png)
 
 最终部署所有的 k8s 资源如下：
 
