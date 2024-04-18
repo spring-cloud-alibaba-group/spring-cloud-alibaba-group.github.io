@@ -331,7 +331,7 @@ For more information about the starter configuration items of spring-cloud-start
 | Access point                      | spring.cloud.nacos.discovery.endpoint          |                            | Domain name of a service in a region. Through this domain name, the server address can be dynamically obtained                                                                                                                                                    |
 | Whether to integrate LoadBalancer | spring.cloud.loadbalancer.nacos.enabled        | false                      |
 | Whether to enable Nacos Watch     | spring.cloud.nacos.discovery.watch.enabled     | false                      | You can set it to true to enable watch                                                                                                                                                                                                                            |
-| Whether to enable Nacos           | spring.cloud.nacos.discovery.enabled           | true                       | Start by default. If set to false, automatic registration with Nacos is disabled                                                                                                                                                                                  |
+| Whether to enable Nacos           | spring.cloud.nacos.discovery.register-enabled           | true                       | Start by default. If set to false, automatic registration with Nacos is disabled                                                                                                                                                                                  |
 
 ### Endpoint Information
 
