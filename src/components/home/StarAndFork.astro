@@ -1,0 +1,35 @@
+---
+import Star from "../icon/Star.astro";
+import Fork from "../icon/Fork.astro";
+import Button from "@components/common/Button.astro";
+import sendFetch from "@/utils/sendFetch";
+import { SITE } from "@utils/config";
+import { LinkButton } from "@serverless-cd/goat-ui"
+
+const relativePath = SITE.githubUrl.split("https://github.com/")[1];
+const data = await sendFetch(`https://api.github.com/repos/${relativePath}`);
+const { stargazers_count: startCount = 0, forks_count: forkCount = 0 } =
+  data || { stargazers_count: 0, forks_count: 0 };
+---
+
+<star-and-fork class="shortcut flex">
+  <LinkButton  
+    href={SITE.githubUrl}    
+    text={startCount}    
+    theme="secondary"    
+    textTheme="neutral"    
+    useIcon="star"
+    classes={{title: "font-medium"}}
+  />
+  <LinkButton
+    href={`${SITE.githubUrl}/fork`}
+    text={forkCount}    
+    theme="primary"    
+    textTheme="base-100"    
+    useIcon="fork"
+    classes={{
+      container:'ml-4',
+      title:'font-medium'
+    }}
+  />
+</star-and-fork>

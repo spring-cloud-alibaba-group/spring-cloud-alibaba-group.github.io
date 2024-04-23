@@ -1,0 +1,16 @@
+---
+title: 2.2 通过 SDK 方式进行服务治理
+keywords: [ SCA ]
+description: 独立SDK模式阿里巴巴通过五彩石项目开始了微服务化的改造，逐步诞生了服务框架，消息队列，数据库分库分表三大中间件。这些中间件都是通过SDK的方式被业务项目直接依赖。在这个阶段，由于基础设施团队对部署、开发模式比较熟悉，业务接入的模式也比较单一。业务方单独对接每个SDK是比较合适的。我们以Jav...
+---
+<a name="aeSKy"></a>
+## 独立SDK模式
+阿里巴巴通过五彩石项目开始了微服务化的改造，逐步诞生了服务框架，消息队列，数据库分库分表三大中间件。这些中间件都是通过SDK的方式被业务项目直接依赖。<br />在这个阶段，由于基础设施团队对部署、开发模式比较熟悉，业务接入的模式也比较单一。业务方单独对接每个SDK是比较合适的。<br />我们以Java应用为例，理论上的依赖应该是这样的：<br />![服务治理架构图_2-2-1 第二章第二节第一张图.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/54319/1648134153506-190bfbff-2080-4a48-aa4f-1bfe35dee22b.png#clientId=u1ec2fce5-e28e-4&from=ui&id=TbqRC&originHeight=1667&originWidth=2668&originalType=binary&ratio=1&rotation=0&showTitle=false&size=54171&status=done&style=none&taskId=u35f574f8-5c66-4dca-93c6-7f736fd59fc&title=)<br />在这个阶段的服务治理，主要依赖于各个SDK提供的能力。比如HSF/Dubbo提供了同可用区优先、标签路由能力；消息队列提供了高可用能力；数据库分库分表提供了读写分离、动态分库能力。
+
+<a name="yTxkh"></a>
+## Fat-SDK模式
+通过单一SDK提供服务治理能力后，各个SDK的提供方需要对提供出去的SDK进行支持，需要及时替换、升级旧版本的SDK，并及时督促SDK使用方进行升级。<br />在这个过程中，总是发现SDK之间会有依赖冲突，常常遇到sdk冲突导致应用无法启动、sdk被第三方包降级导致功能丢失；督促使用者升级也越来越耗费了大量的时间和精力。<br />业务研发同学作为SDK的使用方，需要关注各个SDK提供的新功能、旧版本是否已经不再支持等。业务研发同学的时间和精力越来越多的被中间件组件消耗了。
+
+为了解决这个痛点，2013年诞生了代号 “Pandora” 的项目。Pandora借助类加载器隔离能力，让各个中间件组件能够有自己独立依赖且互不冲突；Pandora也作为一个应用容器，给业务开发同学提供了一整套中间件解决方案。<br />业务同学只需要使用指定版本的Pandora，后续的维护、升级只需要跟着Pandora版本走就可以。<br />中间件维护同学，也只需要提供SDK与Pandora集成，并通过统一的发版周期交付给业务同学，极大地减轻了支持维护成本。
+
+![服务治理架构图_2-2-2 第二章第二节第二张图.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/54319/1648134172932-06e454da-2768-4124-b290-031ae32339b5.png#clientId=u1ec2fce5-e28e-4&from=ui&id=ucc5a6310&originHeight=1667&originWidth=2667&originalType=binary&ratio=1&rotation=0&showTitle=false&size=62351&status=done&style=none&taskId=u6226e9bb-37af-4f43-abd8-1136d239d77&title=)

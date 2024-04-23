@@ -1,0 +1,219 @@
+[
+
+	{
+		"label": "概览",
+		"translations": {
+			"en": "Overview"
+		},
+		"collapsed": false,
+		"items": [{
+				"label": "Spring Cloud Alibaba 是什么",
+				"translations": {
+					"en": "What is Spring Cloud Alibaba"
+				},
+				"link": "docs/overview/what-is-sca"
+			},
+			{
+				"label": "版本发布声明",
+				"translations": {
+					"en": "Release Notes"
+				},
+				"link": "docs/overview/version-explain/"
+			},
+			{
+				"label": "FAQ",
+				"translations": {
+					"en": "FAQ"
+				},
+				"link": "docs/overview/faq/"
+			}
+
+		]
+	},
+	{
+		"label": "用户指南",
+		"translations": {
+			"en": "User Guide"
+		},
+		"collapsed": false,
+		"items": [{
+				"label": "注册配置中心",
+				"translations": {
+					"en": "Registration Configuration Center"
+				},
+				"items": [{
+						"label": "概述",
+						"translations": {
+							"en": "Overview"
+						},
+						"link": "docs/user-guide/nacos/overview/"
+					},
+					{
+						"label": "快速开始",
+						"translations": {
+							"en": "Quick Start"
+						},
+						"link": "docs/user-guide/nacos/quick-start/"
+					},
+					{
+						"label": "进阶指南",
+						"translations": {
+							"en": "Advanced Guide"
+						},
+						"link": "docs/user-guide/nacos/advanced-guide/"
+					}
+				]
+			},
+			{
+				"label": "分布式事务",
+				"translations": {
+					"en": "Distributed Transaction"
+				},
+				"items": [{
+						"label": "概述",
+						"translations": {
+							"en": "Overview"
+						},
+						"link": "docs/user-guide/seata/overview/"
+					},
+					{
+						"label": "快速开始",
+						"translations": {
+							"en": "Quick Start"
+						},
+						"link": "docs/user-guide/seata/quick-start/"
+					},
+					{
+						"label": "进阶指南",
+						"translations": {
+							"en": "Advanced Guide"
+						},
+						"link": "docs/user-guide/seata/advanced-guide/"
+					}
+				]
+			},
+			{
+				"label": "限流降级",
+				"translations": {
+					"en": "Flow Control & Circuit Breaker"
+				},
+				"items": [{
+						"label": "概述",
+						"translations": {
+							"en": "Overview"
+						},
+						"link": "docs/user-guide/sentinel/overview/"
+					},
+					{
+						"label": "快速开始",
+						"translations": {
+							"en": "Quick Start"
+						},
+						"link": "docs/user-guide/sentinel/quick-start/"
+					},
+					{
+						"label": "进阶指南",
+						"translations": {
+							"en": "Advanced Guide"
+						},
+						"link": "docs/user-guide/sentinel/advanced-guide/"
+					}
+				]
+			},
+			{
+				"label": "分布式消息",
+				"translations": {
+					"en": "Distributed Messaging"
+				},
+				"items": [{
+						"label": "概述",
+						"translations": {
+							"en": "Overview"
+						},
+						"link": "docs/user-guide/rocketmq/overview/"
+					},
+					{
+						"label": "快速开始",
+						"translations": {
+							"en": "Quick Start"
+						},
+						"link": "docs/user-guide/rocketmq/quick-start/"
+					},
+					{
+						"label": "进阶指南",
+						"translations": {
+							"en": "Advanced Guide"
+						},
+						"link": "docs/user-guide/rocketmq/advanced-guide/"
+					}
+				]
+			},
+			{
+				"label": "异构服务",
+				"translations": {
+					"en": "Heterogeneous Services"
+				},
+				"items": [{
+						"label": "概述",
+						"translations": {
+							"en": "Overview"
+						},
+						"link": "docs/user-guide/sidecar/overview/"
+					},
+					{
+						"label": "快速开始",
+						"translations": {
+							"en": "Quick Start"
+						},
+						"link": "docs/user-guide/sidecar/quick-start/"
+					},
+					{
+						"label": "进阶指南",
+						"translations": {
+							"en": "Advanced Guide"
+						},
+						"link": "docs/user-guide/sidecar/advanced-guide/"
+					}
+				]
+			},
+			{
+				"label": "静态编译",
+				"translations": {
+					"en": "Native Image"
+				},
+				"items": [{
+						"label": "GraalVM概述",
+						"translations": {
+							"en": "Overview"
+						},
+						"link": "docs/user-guide/graalvm/overview/"
+					},
+					{
+						"label": "快速开始",
+						"translations": {
+							"en": "Quick Start"
+						},
+						"link": "docs/user-guide/graalvm/quick-start/"
+					},
+					{
+						"label": "进阶指南",
+						"translations": {
+							"en": "Advanced Guide"
+						},
+						"link": "docs/user-guide/graalvm/advanced-guide/"
+					}
+				]
+			}
+		]
+	},
+	{
+		"label": "最佳实践",
+		"translations": {
+			"en": "Best Practice"
+		},
+		"autogenerate": {
+			"directory": "best-practice"
+		}
+	}
+
+]

@@ -1,0 +1,54 @@
+---
+
+---
+
+
+<div class="relative" style={{ minHeight:'100px', }}>
+  <div class="w-full">
+    <div class="carousel-item block" style={{ background:"rgb(246, 247, 247)" }}>
+      <a href="/docs/2023/user-guide/ai/overview/" target="_blank">
+      <img 
+        src="https://img.alicdn.com/imgextra/i4/O1CN01U8b43m1QSbBBUjSt0_!!6000000001975-0-tps-2880-1000.jpg"
+        class="w-full" 
+      />
+    </a>
+    </div>
+
+    <div class="carousel-item hidden">
+        <slot name="next"></slot>
+    </div>
+  </div>
+
+  <!-- 添加轮播控制按钮 -->
+  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+    <button id="prev" class="btn btn-circle bg-muted/[0.8]">❮</button> 
+    <button id="next" class="btn btn-circle bg-muted/[0.8]">❯</button>
+  </div>
+</div>
+
+<script>
+  const items = document.querySelectorAll('.carousel-item');
+  let currentItem = 0;
+
+  function showItem(index) {
+    items.forEach((item, idx) => {
+      item.style.display = 'none';
+      if (idx === index) {
+        item.style.display = 'block';
+      };
+    });
+  }
+
+  document.getElementById('next').addEventListener('click', () => {
+    currentItem = (currentItem + 1) % items.length;
+    showItem(currentItem);
+  });
+
+  document.getElementById('prev').addEventListener('click', () => {
+    currentItem = (currentItem - 1 + items.length) % items.length;
+    showItem(currentItem);
+  });
+
+  // 初始化显示第一张图片
+  // showItem(0);
+</script>
