@@ -131,7 +131,7 @@ nacos.core.auth.plugin.nacos.token.secret.key=SecretKey0123456789012345678901234
          serverAddr: 127.0.0.1:8848
      config:
        import:
-         - nacos:nacos-config-example.properties?refresh=true
+         - nacos:nacos-config-example.properties?refreshEnabled=true
    ```
 
 3. 完成上述两步后，应用会从 Nacos Server 中获取相应的配置，并添加在 Spring Environment 的 PropertySources 中。假设我们通过 Nacos 作为配置中心保存应用服务的部分配置，有以下几种方式实现：
