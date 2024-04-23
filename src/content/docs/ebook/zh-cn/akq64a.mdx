@@ -1,0 +1,59 @@
+---
+title: 2.4 通过 Service Mesh 来进行服务治理
+keywords: [ SCA ]
+description: Service Mesh 的出现，为异构微服务体系治理打开了一种全新的思路。2016 年可以说是 service mesh 的元年，Buoyant 公司 CEO William Morgan 率先发布 Linkerd ，成为业界首个 Service Mesh 项目，同年 Lyft 发布 Env...
+---
+Service Mesh 的出现，为异构微服务体系治理打开了一种全新的思路。
+
+- 2016 年可以说是 service mesh 的元年，Buoyant 公司 CEO William Morgan 率先发布 Linkerd ，成为业界首个 Service Mesh 项目，同年 Lyft 发布 Envoy ，成为第二个 service mesh 项目。
+- 2017年，Google、IBM、Lyft 联手发布了 Istio，它与 Linkerd / Envoy 等项目相比，它首次给大家增加了控制平面的概念，提供了强大的流量控制能力。经过多年的发展 Istio，已经逐步成为 控制平面的事实标准。
+- 1.0 版本的问世标志着Istio 进入了可以生产可用的时代，越来越多的企业将服务网格应用于生产中。
+- 1.5 版本开始将原有的多个组件整合为一个单体结构 istiod；同时废弃了被诟病已久的 Mixer 组件，统一为Istiod服务，方便部署和运维。
+
+
+<a name="kOM7C"></a>
+####  Istio 的架构
+
+下图是一个 Istio 的典型架构
+
+![图 2-4-1](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/54319/1648167126495-deeddd9c-0ad1-4fb1-a042-993ce8f3f577.png#clientId=u8629d84e-74bc-4&from=ui&id=uD1Ep&originHeight=1667&originWidth=2667&originalType=binary&ratio=1&rotation=0&showTitle=true&size=63664&status=done&style=none&taskId=u66743ba6-0813-47df-a2df-d89358f4fb9&title=%E5%9B%BE%202-4-1 "图 2-4-1")<br />Istiod 作为控制面的统一组件，负责对接服务注册发现、路由规则管理、证书管理等能力，Envoy Proxy 作为数据面Sidecar代理业务流量，Istio 和Envoy Proxy 之间通过XDS 接口完成服务发现、路由规则等数据的传递，同时Istio 也提供了MCP Over XDS接口对接外部注册中心，如Nacos。
+
+Istio除了支持东西向的流量代理之外，还支持南北流量的代理，通过Istio Ingress Gateway 作为入口的网关，通过Istio Egress Gateway作为出口网关，这样Istio将可以对全域流量进行治理。 <br />![图 2-4-2](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/54319/1648167137794-7a944cd5-7f25-4b54-b7ff-2da6451db9cc.png#clientId=u8629d84e-74bc-4&from=ui&id=o4nCS&originHeight=1667&originWidth=2668&originalType=binary&ratio=1&rotation=0&showTitle=true&size=85446&status=done&style=none&taskId=uae32a6f2-d58a-430e-a3ee-bde10f2f6e0&title=%E5%9B%BE%202-4-2 "图 2-4-2")
+
+在云原生微服务治理中提供了基于ASM Istio的服务治理能力，包含标签路由、服务鉴权、故障注入、金丝雀发布、服务测试、无损上下线等。
+
+![图 2-4-3](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/54319/1648167149596-8e23c5a7-4c43-43fd-8ff0-9370f882b99c.png#clientId=u8629d84e-74bc-4&from=ui&id=u1732d799&originHeight=1667&originWidth=2668&originalType=binary&ratio=1&rotation=0&showTitle=true&size=91926&status=done&style=none&taskId=u57fcaf53-cd38-495c-b82f-453ec347c44&title=%E5%9B%BE%202-4-3 "图 2-4-3")
+
+<a name="Lssgn"></a>
+#### 流量劫持能力
+
+iptables 是 Linux 内核中的防火墙软件 netfilter 的管理工具，位于用户空间，同时也是 netfilter 的一部分。Netfilter 位于内核空间，不仅有网络地址转换的功能，也具备数据包内容修改、以及数据包过滤等防火墙功能。
+
+在kubernetes的方案中，Istio会在开启了Sidecar注入标记的Pod中注入一个Init Container和一个普通容器istio-proxy，Init Container容器会执行一段iptables脚本，根据脚本的参数，将Inbound和OutBound流量都导入到Envoy指定的端口上，Istio-Proxy容器由2个进程组成，Pilot Agent会用来获取Envoy的启动配置，然后创建一个Envoy的进程，同时会对Envoy 进程进行健康检查。<br />![图 2-4-4](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/54319/1648167160370-ebf7869d-5a7a-4e1a-bebb-c6cf9fcffb56.png#clientId=u8629d84e-74bc-4&from=ui&id=u50361e15&originHeight=1667&originWidth=2667&originalType=binary&ratio=1&rotation=0&showTitle=true&size=246945&status=done&style=none&taskId=u10c5770c-7fcf-4d4e-83b4-4bf52e2b315&title=%E5%9B%BE%202-4-4 "图 2-4-4")
+
+
+<a name="kZI7a"></a>
+#### 基于 ebpf 流量劫持能力
+
+由于 eBPF 技术的兴起，在可观测性和网络包的处理上有了不少优秀的实践，像Cilium被大家所熟知， 使用eBPF 的 sockops 和 redir 等能力，可以高效地处理数据包。
+
+使用 iptables 的技术，需要对出入口都拦截，会让原本只需在内核态处理两次的链路，变成四次，造成大量的性能损失，这对一些性能要求高的场景有明显的影响。相比于基于Iptables的流量劫持技术，基于ebpf的技术可以将应用发出的包直接转发到对端的 socket，加速包在内核中的处理流程。
+
+ebpf在做流量劫持的过程，针对出口流量，需要修改连接的目的地址，发送到新的端口，同时要记住之前的目的地址，这样便于Envoy将流量进行转发，针对入口流量也是类似的，只是需要将劫持到的Envoy端口修改为15006端口。
+
+
+<a name="aY8zP"></a>
+#### 流量路由过程
+
+流量路由分为 Inbound 和 Outbound 两个过程，Inbound即为进入Pod的流量，OutBound即为Pod访问出去的流量，以下将描述流量的处理流程
+
+Inbound handler 的作用是将 iptables 拦截到的 downstream 的流量转交给 localhost，与 Pod 内的应用程序容器建立连接，可以通过访问15000的admin接口查看业务Pod 的 Listener 列表，从中可以看到0.0.0.0:15006/TCP 的 Listener（其实际名字是 virtualInbound）监听所有的 Inbound 流量，Inbound handler 的流量被 virtualInbound Listener 转移到 Pod的指定端口的Listener，然后找到对应的Cluster和Endpoint进行转发，这样流量顺利到达业务容器指定的端口。
+
+Outbound handler 的作用是将 iptables 拦截到的本地应用程序发出的流量，经由 sidecar 判断如何路由到 upstream。应用程序容器发出的请求为 Outbound 流量，被 iptables 劫持后转移给 Outbound handler 处理，然后经过 virtualOutbound Listener、服务端对应端口的 Listener，然后通过 Route指定的端口号 找到 upstream 的 cluster，进而通过 EDS 找到 Endpoint 执行路由动作。
+
+<a name="g5KCI"></a>
+#### 基于Envoy Filter的服务治理
+
+Istio通过Sidecar将服务治理的能力进行了标准化和统一化，比如故障注入、金丝雀发布、负载均衡、服务鉴权，同时还提供了可观测的能力，如Metrics、日志。<br />Envoy 是 Istio 中的 Sidecar 官方标配，是一个面向服务架构的高性能网络代理，由 C++ 语言实现，拥有强大的定制化能力。Envoy 是面向服务架构设计的L7代理和通信总线，核心是一个 L3/L4 网络代理。可插入 filter 链机制允许开发人员编写 filter 来执行不同的 TCP 代理任务并将其插入到主体服务中。Envoy 还支持额外的 HTTP L7 filter 层。可以将 HTTP filter 插入执行不同任务的 HTTP 连接管理子系统，可以查看每个Envoy的Config Dump看到Http filter配置，Envoy 根据这些配置决定如何执行对应的流量处理流程。
+
+![图 2-4-5](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/54319/1648167197142-ee219d28-b01c-46cb-804a-48f5b659ed69.png#clientId=u8629d84e-74bc-4&from=ui&id=u83c90e99&originHeight=1667&originWidth=2668&originalType=binary&ratio=1&rotation=0&showTitle=true&size=25335&status=done&style=none&taskId=u82ef7680-dc4f-4dea-992d-a9e6ff89316&title=%E5%9B%BE%202-4-5 "图 2-4-5")<br />Envoy 提供的过滤器包括侦听器过滤器（Listener Filters）、网络过滤器（Network Filters）、HTTP过滤器（HTTP Filters）三种类型，它们共同组成了一个层次化的过滤器链，侦听器过滤器在初始连接阶段访问原始数据并操作 L4 连接的元数据，网络过滤器访问和操作 L4 连接上的原始数据，即TCP数据包，HTTP 过滤器在 L7 上运行，由网络过滤器（即 HTTP 连接管理器，HTTP Connection Manager）创建。这些过滤器用于访问、操作 HTTP 请求和响应。

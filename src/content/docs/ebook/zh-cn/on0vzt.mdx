@@ -1,0 +1,122 @@
+---
+title: 3.3 微服务可观测增强解决方案
+keywords: [ SCA ]
+description: 背景彼得·德鲁克曾经说过：“如果你无法量化它，你就无法管理它。” 可观测性（Observability）是帮助微服务稳健运行的重要一环。“我们的系统是否还是正常的？”，“终端用户的体验是否符合预期？”，“我们如何在系统快要出问题之前主动发现系统的风险？”。如果说监控可以告诉我们系统出问题了，那...
+---
+<a name="fWIR4"></a>
+## 背景
+彼得·德鲁克曾经说过：“如果你无法量化它，你就无法管理它。” 可观测性（Observability）是帮助微服务稳健运行的重要一环。“我们的系统是否还是正常的？”，“终端用户的体验是否符合预期？”，“我们如何在系统快要出问题之前主动发现系统的风险？”。如果说监控可以告诉我们系统出问题了，那么可观测就可以告诉我们系统哪里出问题了，什么原因导致的问题。可观测不但可以判断系统是否正常，还可以在系统出现问题之前，主动发现系统风险。<br />![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/198743/1647311097869-686105f7-ab36-4a3c-8e5d-570ada68f22a.png#clientId=uf2e8f0ae-0e0e-4&from=paste&height=286&id=GKbts&originHeight=572&originWidth=1636&originalType=binary&ratio=1&rotation=0&showTitle=false&size=730240&status=done&style=none&taskId=ufd2a58e9-3a96-4980-83da-359e264f3bc&title=&width=818)<br />从系统的角度来讲，监控以Ops为主，聚焦在发现，确保系统稳定性。可观测性的目标是白盒化，注重Recall+Precision，贯穿Dev/Tester/Ops等环节，通过多种观测手段，确保找到根因，防患于未然。
+
+
+3-3-2 第三章第三节第二张图
+
+可观测性支撑数据大致分为三大类：Metrics，Tracing 和 Logging。以下是社区中常用的一张图：<br />![第三节_3-3-2 第三章第三节第二张图.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/54319/1648210472079-7c514835-d6f5-466f-ac09-06a1d871ae48.png#clientId=u10e14b98-a4e9-4&from=ui&id=u1aa9a458&originHeight=399&originWidth=658&originalType=binary&ratio=1&rotation=0&showTitle=false&size=41625&status=done&style=none&taskId=u1ef50e13-4a30-43d7-899b-f9fdc65c361&title=)<br />3-3-3 第三章第三节第三张图
+
+- **Metrics:** 是一种聚合的度量数值，提供量化的系统内/外部各个维度的指标，一般包括Counter、Gauge、Timer、Histogram等度量指标。
+- **Tracing:** 提供了一个请求从接收到处理完毕整个生命周期的跟踪路径，面向的是请求，可以轻松分析出请求中异常点，通常请求都是在分布式的系统中处理。比如一次请求的范围，也就是从浏览器或者手机端发起的任何一次调用，我们根据轨迹去追踪，经过哪些组件、微服务等，所以也叫做分布式链路追踪。
+- **Logging:** 应用运行过程中产生的事件或者程序执行过程中产生的一些日志，可以给我们提供一些系统运行过程中的精细化信息，例如某个关键变量、事件、访问记录等。
+
+我们可以将指标、追踪和日志数据的进行进一步关联、分析，推导出当前微服务系统所处的状况。
+<a name="TC3XJ"></a>
+# 云原生下微服务应用可观测的挑战
+
+目前，常见的微服务框架包括Spring Cloud和Dubbo等多语言微服务，并具备服务注册发现、服务配置、负载均衡、API网关、分布式微服务等基本能力。其中，服务治理包括无损下线，服务容错，服务路由等能力。可观测性包括应用监控，链路追踪，日志管理，应用诊断等。
+
+![第三节_3-3-3 第三章第三节第三张图.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/54319/1648210486712-ba1e41c0-3edf-4274-aeef-0dc460d5050d.png#clientId=u10e14b98-a4e9-4&from=ui&id=ue644c782&originHeight=331&originWidth=791&originalType=binary&ratio=1&rotation=0&showTitle=false&size=43955&status=done&style=none&taskId=ue1421785-8a30-45f6-92b2-4174c565f47&title=)<br />3-3-4 第三章第三节第四张图
+
+随着云原生到来，微服务架构得到越来越多的应用。由最初以机器为核心的云服务器ECS上云，到以容器为核心的容器化云原生部署；为了更加敏捷，阿里云开始以应用为核心的微服务化。如今，当微服务发展到一定应用规模，阿里云开始围绕业务核心，以提效稳定为目的的服务治理。
+
+![服务治理架构图_1-2-1 第一章第二节第一张图.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/54319/1648210522529-cb9557aa-f9f5-48f4-a21f-ffaac98a948d.png#clientId=u10e14b98-a4e9-4&from=ui&id=ua0f94e8f&originHeight=1668&originWidth=2668&originalType=binary&ratio=1&rotation=0&showTitle=false&size=71968&status=done&style=none&taskId=u1c129abd-556d-4e9b-9a68-402079e94dd&title=)
+
+在云原生下的微服务可观测主要面临三个挑战：
+
+- 发现难
+
+从云服务器ECS 到Kubernetes，微服务架构复杂度提升，观测对象复杂度提升，监测数据覆盖不全。
+
+- 定位难
+
+随着多种治理能力深入，可观测要求高，服务框架复杂度增加，技术门槛提升，数据本身复杂度提升，数据关联性差。
+
+- 协作差
+
+随着组织角色变化，可观测不只是运维工作。<br />![服务治理架构图_1-2-2 第一章第二节第二张图.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/54319/1648210536112-a598d5e0-0df8-4ab9-8d8b-dec78d61bade.png#clientId=u10e14b98-a4e9-4&from=ui&id=uf724f74f&originHeight=1668&originWidth=2668&originalType=binary&ratio=1&rotation=0&showTitle=false&size=112271&status=done&style=none&taskId=ub9511e12-decb-4f4c-b15c-2d01e0b7852&title=)
+
+应用实时监控服务ARMS作为阿里云可观测产品，支持自动检测部分产品问题。目前已经覆盖五十多个故障场景，包括应用变更、大请求、QPS突增等，诊断报告认可率高达80%。<br />![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/198743/1648708005283-46ce7913-cd1a-4858-811b-24a723fb4ea7.png#clientId=u0ea1c03b-931a-4&from=paste&height=270&id=u15315e7c&originHeight=540&originWidth=960&originalType=binary&ratio=1&rotation=0&showTitle=false&size=122351&status=done&style=none&taskId=u5c1b7127-8391-47fc-8247-77f19dacfbe&title=&width=480)<br />3-3-7 第三章第三节第七张图<br />如下图所示，线上7%的应用都在 Dubbo 的 RPC 上耗时，并由于埋点问题，无法定位出根因。![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/198743/1647311293836-960cf96b-ed40-44a5-838f-8c799c4addf5.png#clientId=uf2e8f0ae-0e0e-4&from=paste&height=289&id=uabdb8288&originHeight=578&originWidth=900&originalType=binary&ratio=1&rotation=0&showTitle=false&size=560410&status=done&style=none&taskId=u0ff4c33e-5776-4bcc-91cb-0da95bf039b&title=&width=450)<br />3-3-8 第三章第三节第八张图<br />阿里云在为客户服务过程中，发现了很多问题。
+
+- 服务发现
+
+当前一些监测工具无法实现服务框架服务发现层面的问题诊断，导致遗留了许多服务调用问题难以排查，单看监控使得客户根本无从下手。因此，我们希望通过提供以下方面服务发现监控诊断能力，帮助客户及时排查服务发现领域出现问题导致的应用运行异常。
+
+（1）监控客户端出现no provider问题；<br />（2）微服务应用连接的是哪个注册中心，服务发现链路调用示例图，大块内容有Provider、Consumer、注册中心，点击对应组件可以看到详细相关地址；<br />（3）应用服务是否注册成功；<br />（4）应用最近一次拉下来的地址数量 & 内容；<br />（5）应用与注册中心的心跳是否健康；<br />（6）注册中心状态信息，如CPU、内存等运行硬件状态信息，注册服务数目、订阅服务数以及服务内容等信息。
+
+- 微服务生命周期
+
+微服务启动慢，一个服务器花3分钟，5个服务器花30分钟。
+
+- 调用链路
+
+Consumer 调用超时、Provider 却快速返回。![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/198743/1648435445302-9c59c7c3-9507-483c-acb1-38548357eee9.png#clientId=u078bfd86-fb02-4&from=paste&height=231&id=ub9281466&originHeight=462&originWidth=1600&originalType=binary&ratio=1&rotation=0&showTitle=false&size=380813&status=done&style=none&taskId=u15c41358-3303-4aa1-8512-90aa23986b2&title=&width=800)<br />3-3-9 第三章第三节第九张图
+
+除此之外，还有微服务配置混乱，不好梳理；微服务应用上Kubernets之后，出现线程池满，却找不到原因等一系列问题。
+
+那么，当站在微服务视角思考如何进行体系建设时，我们提出的微服务可观测性增强解决方案。站在传统监测方案之上还能再做哪些事情？
+<a name="f8EBv"></a>
+# 微服务可观测增强包含哪些方面
+<a name="DOZBd"></a>
+## 服务发现
+当前的一些监控工具无法实现服务框架服务发现层面的问题诊断，因此遗留许多服务调用的问题难以排查，单看监控会客户根本无从下手的窘境。因此我们希望通过提供以下方面服务发现监控诊断能力帮助客户及时排查服务发现领域出现问题导致的应用运行异常：<br />1、监控客户端出现no provider问题<br />2、微服务应用连接的是哪个注册中心，服务发现链路调用示例图，大块内容有Provider、Consumer、注册中心，点击对应组件可以看到详细相关地址<br />3、应用服务是否注册成功<br />4、应用最近一次拉下来的地址数量&内容<br />5、应用与注册中心的心跳是否健康<br />6、注册中心状态信息（CPU、内存等运行硬件状态信息，注册服务数目、订阅服务数以及服务内容等信息）
+<a name="GOUxC"></a>
+## 调用链路
+当前市面上的开源以及竞品的探针在RPC层面仅仅埋点在客户端跟服务端的服务调用上，埋点过于简单与粗粒度，无法实现服务框架层面的问题诊断，因此遗留许多服务调用的问题难以排查，单看监控客户根本无从下手。因此我们希望通过增加以下几个维度的监控帮助用户及时了解调用链路状态信息：<br />1、Consumer调用耗时很大，Provider却快速返回 （问题排查）<br />2、上了新的治理功能后，应用性能影响有多大 （性能诊断）<br />3、某条请求调用非常耗时，但是服务端逻辑缺很简单，到底问题出在哪 （问题排查）<br />4、业务传入参数过大/有问题导致序列化/反序列化耗时长（问题排查），如何选择合适的序列化框架？（性能诊断）提供请求超时时间超过10s提醒、响应体超过 2M 报警（事件告警）<br />5、中间件业务逻辑问题，如何一眼看出接入的中间件存在问题？a、增加 AHAS 后请求 rt 增加 b、使用标签路由能力后性能下降 c、使用自研路由能力后性能下降（性能诊断）<br />6、网络异常如何一眼看出来而不是跟服务框架混在一起？（问题排查）<br />7、微服务连接层面的监控，参考 hsf 的 remoting.log，netty的事件/网络心跳/活跃连接数等<br />8、业务参数的监控<br />9、超时/截止时间监控与告警
+
+<a name="gS5q0"></a>
+## 微服务生命周期
+我们希望应用启动过程中，从Spring bean加载、链接池连接的监测、微服务的服务注册、Kubernetes的监测检查就绪；应用下线过程中，服务注册、在途请求的停止、定时任务/MQ等取消、服务停机；例如：Spring bean 初始化异常，卡在哪个bean的加载上，哪个bean初始化耗时特别长。帮助用户分析启动慢的原因，自动给出修复建议。然而，目前整体过程是缺少相关观测能力。
+
+<a name="OJMxn"></a>
+## 微服务治理相关
+无损上下线、主动下线、金丝雀发布、同AZ、标签路由、服务鉴权、离群摘除增加观测性、容量评估、健康度打分等。
+<a name="HFWno"></a>
+# 微服务场景下可观测的探索与实践
+微服务可观测增强解决了什么问题?一句话概括就是：全面增强微服务场景下的可观测能力。
+
+让一线运维人员具备微服务诊断基本能力，可以排查80% 的微服务常见问题，快速进行性能分析诊断。
+
+ARMS 微服务可观测增强方案回答了以下问题
+
+- 为什么服务启动很慢
+
+从Pod创建到应用初始化再到服务注册应用启动，端到端分析出应用启动慢的根因，补齐应用启动生命周期的可观测能力；
+
+- 依赖是否存在隐患
+
+为SpringCloud/Dubbo依赖的Jar包进行分析，定位是否存在Jar包依赖冲突等问题；
+
+- 配置分析
+
+微服务场景下配置分散且冗余，提供应用运行时配置可观测能力以及配置优化的专家经验；
+
+- Dubbo调用链增强
+
+覆盖寻址，序列化，网络等阶段的埋点，一眼看出Dubbo调用的时间都去哪儿了。
+
+为什么服务启动慢？通过从Pod创建到应用初始化再到服务注册应用启动，端到端分析出应用启动慢的根因，补齐应用启动生命周期的可观测能力。<br />![第三节_3-3-5 第三章第三节第五张图.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/54319/1648210565438-2b8745d5-f46f-4213-9fc4-b8dcc0fb7f73.png#clientId=u10e14b98-a4e9-4&from=ui&id=u0087c6d3&originHeight=187&originWidth=743&originalType=binary&ratio=1&rotation=0&showTitle=false&size=18634&status=done&style=none&taskId=u6e54ba47-87fb-4a00-9332-a314a995580&title=)<br />3-3-10 第三章第三节第十张图
+
+通过将整个流程串联，实时观察到每个点的耗时，可观测视图把问题剖析出来。上图是ARMS容器启动分析功能。左边是服务启动，系统将启动过程中的每一块时间拆分出来，从而清晰看到微服务启动慢在了哪一步，增强了其可观测性。<br />![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/198743/1647311769071-d9a1524e-bd96-40a3-bdb3-bb7a073c7705.png#clientId=uf2e8f0ae-0e0e-4&from=paste&height=428&id=MDePj&originHeight=696&originWidth=1302&originalType=binary&ratio=1&rotation=0&showTitle=false&size=166500&status=done&style=none&taskId=uade63da0-7ad1-4a45-9962-08d004743c2&title=&width=800)<br />3-3-11 第三章第三节第十一张图<br />微服务引擎提供了无损上线的能力。控制台动态配置，实时无损上下线可观测视图，完整解决方案无需改一行代码。在微服务启动的全流程进行各种方案的保护与治理：预建连接阶段通过提前异步创建连接保证不会阻塞在连接建立的过程中；服务注册发现阶段通过并行注册与订阅能力进一步提升应用的启动速度；在小流量预热阶段通过调整客户端的负载均衡能力保证新起的实例中流量缓慢增长。<br />![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/198743/1647311807156-80f1efdb-1ede-40b8-940e-3183abdb629e.png#clientId=uf2e8f0ae-0e0e-4&from=paste&height=882&id=FgCgQ&originHeight=1764&originWidth=3356&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1374363&status=done&style=none&taskId=u8ad4f7c4-a0cb-469a-91ee-0166741c070&title=&width=1678)<br />由于微服务配置的覆盖关系较为复杂，需要进行配置分析。<br />![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/198743/1647311849748-8ad14c00-5cf0-4374-bd46-6616faf068a8.png#clientId=uf2e8f0ae-0e0e-4&from=paste&height=384&id=UGCQx&originHeight=768&originWidth=860&originalType=binary&ratio=1&rotation=0&showTitle=false&size=342067&status=done&style=none&taskId=ufc14890b-46b8-45d5-8f74-4ace340350a&title=&width=430)<br />上图为Dubbo官方提供的配置覆盖关系，可以看到其具有一定顺序先后性。很多时候很难判断配置是否配错地方，是否生效，是否被覆盖。微服务场景下配置分散且冗余，我们提供应用运行时配置可观测能力以及配置优化的专家经验。
+
+我们提供了为SpringCloud/Dubbo依赖的Jar包进行分析的能力，帮助定位是否存在Jar包依赖冲突、依赖的Jar是否存在安全、性能风险等问题。<br />![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/198743/1647311940678-26ed4700-314d-4780-b137-866abb023077.png#clientId=uf2e8f0ae-0e0e-4&from=paste&height=167&id=TzK40&originHeight=334&originWidth=962&originalType=binary&ratio=1&rotation=0&showTitle=false&size=140984&status=done&style=none&taskId=u1c293784-2fb0-4f8c-a101-32e1046f8fb&title=&width=481)
+
+一次RPC调用时间到底去哪儿了？一次RPC调用有路由、限流降级、序列化、网络等各个环节。从客户端来讲，需要经过路由、filter、invoker、serialize、remote。从服务端来讲，需要经过serialize、Proxy Invoke、filter、impleme。<br />![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/198743/1647311975653-05568a3a-1e53-4650-bc30-34b66736cf70.png#clientId=uf2e8f0ae-0e0e-4&from=paste&height=443&id=bMZCF&originHeight=886&originWidth=1644&originalType=binary&ratio=1&rotation=0&showTitle=false&size=870052&status=done&style=none&taskId=u5d6efaaf-0200-424d-b756-b6201a2f1a5&title=&width=822)
+
+
+上图是一次RPC调用流程图。其中包括寻址、负载均衡的建立连接时间，打包的序列化时间，解包的返印值反序列化时间，服务端处理时间和等待服务端处理返回的时间。<br />![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/198743/1647314479924-630e7ba3-0b4d-468b-b1ce-b2ab2b6aa4be.png#clientId=ua3afc7c0-7a60-4&from=paste&height=406&id=sLV5y&originHeight=812&originWidth=1346&originalType=binary&ratio=1&rotation=0&showTitle=false&size=355665&status=done&style=none&taskId=u4c764357-8d3b-407f-aa63-4a7cdb0d4df&title=&width=673)
+
+如上则是我们给出的答案，将调用链在RPC框架内进一步细分，一眼看出路由、序列化、网络、代理、服务端处理等耗时的细节。
+
+<a name="TlJy1"></a>
+# 总结
+微服务可观测增强方案站在传统的可观测性方案之上我们进一步从微服务的视角出发，扩展传统可观测覆盖的Tracing、Logging、Metrics等数据，结合微服务专家的诊断经验。
+
+从前端、应用至底层机器，应用实时监控服务ARMS实时监测应用服务的每次运行、每个慢SQL、每个异常。与此同时，提供完整数据大盘监控，展示请求量、响应时间、FullGC次数、慢SQL和异常次数、应用间调用次数与耗时等重要的关键指标，时刻了解应用程序的运行状况，确保向用户提供最优使用体验。<br />ARMS3.0 云原生可观测平台<br />![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/198743/1648709729815-af172143-c07c-4898-b751-356152b78c7b.png#clientId=u3408da83-63d4-4&from=paste&height=298&id=uae56f7cb&originHeight=596&originWidth=1116&originalType=binary&ratio=1&rotation=0&showTitle=false&size=105789&status=done&style=none&taskId=u7bf09478-ab6d-405f-90ad-fc892f33976&title=&width=558)
+

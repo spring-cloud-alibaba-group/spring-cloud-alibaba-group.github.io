@@ -1,0 +1,29 @@
+[
+
+	{
+		"label": "开发者",
+		"translations": {
+			"en": "Developer"
+		},
+		"collapsed": false,
+		"items": [{
+				"label": "开发人员",
+				"translations": {
+					"en": "Development Team"
+				},
+				"link": "docs/developer/developers_dev/"
+			},
+			{
+				"label": "贡献者指南",
+				"translations": {
+					"en": "Contribute Guide"
+				},
+                "autogenerate": {
+                    "directory": "contributor-guide"
+                }
+			}
+
+		]
+	}
+
+]

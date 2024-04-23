@@ -1,0 +1,33 @@
+---
+title: 2.3 通过 Java Agent 方式进行服务治理
+keywords: [ SCA ]
+description: 中间件作为提供方，苦于业务方不能及时升级中间件到最新版。业务方作为使用方，苦于升级成本比较高。JavaAgent技术，能够在运行时动态修改Java字节码，动态的改变Java程序的行为，能够很好的满足这种需求。Java Agent技术在JVM启动的时候，可以通过-javaagent:/path/...
+---
+中间件作为提供方，苦于业务方不能及时升级中间件到最新版。业务方作为使用方，苦于升级成本比较高。<br />JavaAgent技术，能够在运行时动态修改Java字节码，动态的改变Java程序的行为，能够很好的满足这种需求。
+<a name="pLYWu"></a>
+## Java Agent技术
+在JVM启动的时候，可以通过`-javaagent:/path/to/agent.jar`的方式来加载Java Agent。<br />在Java Agent中，实现ClassFileTransformer接口，并调用Instrumentation.addTransformer将Transformer添加到系统中。<br />接下来加载类的时候，或者通过retransformClasses触发类重新加载的时候，Transformer就可以修改类的字节码，比如去除掉某一段代码，在原来的方法前后执行额外逻辑等等。
+
+基于ClassFileTransformer能力，中间件只需要提供一个标准的轻量级SDK，提供简单实现和接口；剩余的比较重的逻辑，就可以写在Java Agent中，通过ClassFileTransformer的方式动态插入到Java代码中。<br />业务方也只需要依赖一个中间件SDK作为接口，由于主要逻辑都在Java Agent中，业务方就避免了频繁升级SDK的成本，专注于业务开发。比如开源的Java应用，业务方只需要依赖一个版本的Apache Dubbo或者Spring Cloud来作为RPC框架，专注于写业务逻辑。在部署的时候，通过JavaAgent技术加载JavaAgent。<br />如果后续中间件提供更多能力，只需要升级Java Agent即可，业务开发人员不用改一行代码。
+<a name="lCEOT"></a>
+## One Java Agent
+中间件分为很多不同的部分，比如RPC、消息、数据库等。中间件内部也需要一些机制来保证JavaAgent中各个中间件的代码能够独立开发、部署，且尽可能做到互不影响。<br />所以阿里云内部将各个中间件的JavaAgent作为插件，组装成一个统一的Java Agent，称为One Java Agent。
+
+- 每个plugin可以由启动参数来单独控制是否开启
+- 各个plugin的启动是并行的，将java agent的启动速度由O(n+m+...)提升至O(n)
+- 各个plugin的类，都由不同的类加载器加载，最大限度隔离了各个plugin
+- 每个plugin的状态都可以上报到服务端，可以通过监控来检测各个plugin是否有问题
+
+![服务治理架构图_2-3-1 第二章第三节第一张图.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/54319/1648134200971-1c4dfa0f-630a-4dd9-b890-94d08f16b16a.png#clientId=ub3a59eb8-4e44-4&from=ui&id=u5aefd06f&originHeight=1667&originWidth=2667&originalType=binary&ratio=1&rotation=0&showTitle=false&size=44067&status=done&style=none&taskId=u7b0df64d-d0ba-4c60-bf45-5d937480b2f&title=)
+
+目前 One Java Agent 项目已经开源： [https://github.com/alibaba/one-java-agent](https://github.com/alibaba/one-java-agent)。
+<a name="YDKpC"></a>
+## 云原生场景下如何自动注入 JavaAgent
+对于 JavaAgent，需要业务容器启动的时候给 Java 命令行添加启动参数`-javaagent:<jarpath>[=<options>]`，这需要重新构建容器镜像。对于大规模的业务统一接入，需要重新构建全部容器镜像。这对于运维来说是及其繁琐的事情。因此我们需要一种方式，能够将自动注入 Java Agent 与生成容器镜像进行解耦。<br />而 Java 提供了 `JAVA_TOOL_OPTIONS`环境变量：在 JVM 启动时，JVM 会读取并应用此环境变量的值，这样我们就可以通过在容器镜像中设置环境变量：`JAVA_TOOL_OPTIONS=-javaagent:/path/to/agent.jar`，从而实现不用修改镜像，就可以加载 JavaAgent 了。<br />在 Kubernetes 环境中，我们可以借助 webhook 能力，来实现自动注入 `JAVA_TOOL_OPTIONS`，从而达到自动开启服务治理的功能。<br />配置 Webhook，然后根据 Pod 或者 Namespace 中的 Labels，来判断是否要挂载 Java Agent。如果需要挂载，则就对 Pod 的声明文件做出如下修改：
+
+- 获取并添加环境变量 JAVA_TOOL_OPTIONS，用于加载 Java Agent
+- 给业务容器添加 Volume，用于存储 Java Agent 的文件内容
+- 给 Pod 添加 Init container，用于在业务容器启动前下载 Java Agent
+
+最终，我们将此功能模块提供为 helm 包，运维人员可以一键安装。如果要接入服务治理，也只需要给对应资源添加 Label 即可接入。
+
