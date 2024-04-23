@@ -36,7 +36,17 @@
 			"en": "User Guide"
 		},
 		"collapsed": false,
-		"items": [{
+		"items": [
+			{
+        		"label": "AI",
+        		"translations": {
+        			"en": "AI"
+        		},
+        		"autogenerate": {
+        			"directory": "user-guide/ai"
+        		}
+        	},
+		    {
 				"label": "注册配置中心",
 				"translations": {
 					"en": "Registration Configuration Center"
@@ -214,16 +224,5 @@
 		"autogenerate": {
 			"directory": "best-practice"
 		}
-	},
-	{
-		"label": "AI",
-		"translations": {
-			"en": "AI"
-		},
-		"autogenerate": {
-			"directory": "user-guide/ai"
-		}
 	}
-
-
 ]
