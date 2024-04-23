@@ -19,6 +19,7 @@ const t = useTranslations(Astro);
     ProductDisplayCardData.map((item, index) => {
       return (
       <div class="solution_content w-[328px] h-[306px] border-t border-success/[0.3] mt-7 px-0 mb-[42px] mr-[12px]">
+        <a class="block" href={item.href}>
         <div class="pt-4 pb-6 px-4 h-[86px]">
           <div class="text-warning text-[18px] leading-[18px] font-medium mb-[12px] flex justify-between">
             <span>{item.title}</span>
@@ -29,6 +30,7 @@ const t = useTranslations(Astro);
           <p class="text-success text-[14px] leading-4">{t(item.body)}</p>
         </div>
         <img class='w-[328px] h-[220px] object-cover rounded-2xl' src={item.cover} alt="" />
+        </a>
       </div>
       );
     })

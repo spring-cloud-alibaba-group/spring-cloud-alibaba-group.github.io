@@ -23,31 +23,31 @@ export const DOCS_BANNER = {
 export const DOCS_ITEM = [
   {
     key: "2023",
-    label: "2023.0.0.0-RC1",
+    label: "2023.0.x",
     target: "_self",
     link: "/docs/2023/overview/what-is-sca/",
     translations: {
-      en: "2023.0.0.0",
+      en: "2023.0.x",
       link: "/en/docs/2023/overview/what-is-sca/",
     }
   },
   {
     key: "2022",
-    label: "2022.0.0.0",
+    label: "2022.0.x",
     target: "_self",
     link: "/docs/2022/overview/what-is-sca/",
     translations: {
-      en: "2022.0.0.0",
+      en: "2022.0.x",
       link: "/en/docs/2022/overview/what-is-sca/",
     }
   },
   {
     key: "2021",
-    label: "2021.0.5.0",
+    label: "2021.0.x",
     target: "_self",
     link: "/docs/2021/overview/what-is-sca/",
     translations: {
-      en: "2021.0.5.0",
+      en: "2021.0.x",
       link: "/en/docs/2021/overview/what-is-sca/",
     }
   },
@@ -57,7 +57,7 @@ export const DOCS_ITEM = [
     target: "_self",
     link: "/docs/2.2.x/overview/what-is-sca/",
     translations: {
-      en: "2023.0.0.0",
+      en: "2.2.x",
       link: "/en/docs/2.2.x/overview/what-is-sca/",
     }
   },
@@ -210,7 +210,7 @@ export const getCommunityLinkList = (t: Function): CommunityLink[] => [
     icon: "basil:document-outline",
   },
   {
-    href: 'https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/main/src/content/docs',
+    href: 'https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/develop-astro-sca/src/content/docs',
     text: t("rightSidebar.github"),
     icon: "ant-design:github-filled",
   },
@@ -387,42 +387,49 @@ export const ProductDisplayCardData = [
     coverPosition: "bottom",
     title: "Nacos",
     body: "home.introduction.card.Nacos.des",
+    href: "docs/2023/user-guide/nacos/quick-start/",
   },
   {
     cover: "https://img.alicdn.com/imgextra/i2/O1CN01l9eXcR1LJN7PxX79e_!!6000000001278-0-tps-1000-1500.jpg",
     coverPosition: "bottom",
     title: "RocketMQ",
     body: "home.introduction.card.RocketMQ.des",
+    href: "docs/2023/user-guide/rocketmq/quick-start/",
   },
   {
     cover: "https://img.alicdn.com/imgextra/i2/O1CN01HzKXZY29J7h0UIGJ5_!!6000000008046-0-tps-1000-1500.jpg",
     coverPosition: "bottom",
     title: "Sentinel",
     body: "home.introduction.card.Sentinel.des",
+    href: "docs/2023/user-guide/sentinel/quick-start/",
   },
   {
     cover: "https://img.alicdn.com/imgextra/i3/O1CN01bJroU81BzNHfeB3jN_!!6000000000016-0-tps-1000-1500.jpg",
     coverPosition: "bottom",
     title: "Seata",
     body: "home.introduction.card.Nacos.des",
+    href: "docs/2023/user-guide/seata/quick-start/",
   },
   {
     cover: "https://img.alicdn.com/imgextra/i2/O1CN01HzKXZY29J7h0UIGJ5_!!6000000008046-0-tps-1000-1500.jpg",
     coverPosition: "bottom",
     title: "Spring AI",
     body: "home.introduction.card.AI.des",
+    href: "docs/2023/user-guide/ai/quick-start/",
   },
   {
     cover: "https://img.alicdn.com/imgextra/i2/O1CN01k1amBw1U0RHtPPlvH_!!6000000002455-0-tps-1000-1500.jpg",
     coverPosition: "bottom",
     title: "Spring Boot",
     body: "home.introduction.card.Boot.des",
+    href: "/learn/spring/",
   },
   {
     cover: "https://img.alicdn.com/imgextra/i3/O1CN01WxXILZ1C0I4pkZUyD_!!6000000000018-0-tps-1000-1500.jpg",
     coverPosition: "bottom",
     title: "Spring Cloud",
     body: "home.introduction.card.Cloud.des",
+    href: "/learn/spring-boot/",
   },
 ];
 

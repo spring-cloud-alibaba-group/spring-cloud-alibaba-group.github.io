@@ -9,46 +9,40 @@ const ifzh = isChinese(Astro);
 ---
 
 <div class="home-introduce-wrapper">
-<Carousel>
-    <home-introduce
-      slot="next"
-      class="introduce flex flex-col justify-center items-center bg-muted/[0.8] "
+    <Carousel
+        useduration="apply"
+        duration={5000}
     >
-      <div class="top-section flex flex-col relative mb-[111px]">
-        <div class="introduce_about pt-6 pb-4 text-warning text-xs mt-[2.375rem]">
-          {t("home.introduce.about")}
-        </div>
-        <div
-          class=`title leading-[5rem] text-neutral mb-8 ${ifzh ? 'text-[3.75rem]' : 'text-[4rem]'}`
+        <a 
+            slot="prev" 
+            href="/docs/2023/user-guide/ai/overview/" 
+            target="_blank"
+            class="block w-full"
+            style={{ background:"rgb(246, 247, 247)" }}
         >
-          {t("home.introduce.title")}
-        </div>
-        <StarAndFork />
-      </div>
-    </home-introduce>
-</Carousel>
-<ProductDisplayCard />
+            <img 
+                class="w-full"
+                src="https://img.alicdn.com/imgextra/i4/O1CN01U8b43m1QSbBBUjSt0_!!6000000001975-0-tps-2880-1000.jpg"
+            />
+        </a>
+
+        <home-introduce
+            slot="next"
+            class="introduce flex flex-col justify-center items-center bg-muted/[0.8]"
+        >
+            <div class="top-section flex flex-col relative mb-[111px]">
+                <div class="introduce_about pt-6 pb-4 text-warning text-xs mt-[2.375rem]">
+                    {t("home.introduce.about")}
+                </div>
+                <div class=`title leading-[5rem] text-neutral mb-8 ${ifzh ? 'text-[3.75rem]' : 'text-[4rem]'}`>
+                    {t("home.introduce.title")}
+                </div>
+                <StarAndFork />
+            </div>
+        </home-introduce>
+    </Carousel>
+    <ProductDisplayCard />
 </div>
-
-
-<!-- <div class="home-introduce-wrapper">
-<home-introduce
-  class="introduce flex flex-col justify-center items-center bg-muted/[0.8] "
->
-  <div class="top-section flex flex-col relative mb-[111px]">
-    <div class="introduce_about pt-6 pb-4 text-warning text-xs mt-[2.375rem]">
-      {t("home.introduce.about")}
-    </div>
-    <div
-      class=`title leading-[5rem] text-neutral mb-8 ${ifzh ? 'text-[3.75rem]' : 'text-[4rem]'}`
-    >
-      {t("home.introduce.title")}
-    </div>
-    <StarAndFork />
-  </div>
-</home-introduce>
-<ProductDisplayCard />
-</div> -->
 
 <style is:global>
   .home-introduce-wrapper {

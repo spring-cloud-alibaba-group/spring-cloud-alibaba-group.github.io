@@ -1,54 +1,100 @@
 ---
+interface Props {
+    useduration?: string;   // 是否启用自动轮播  apply / disabled
+    duration?: number;      // 图片轮播时间 例如: 1000。 （组件默认 5000s）
+}
 
+const {
+    duration=5000,
+    useduration="disabled",
+} = Astro.props as Props;
 ---
 
 
-<div class="relative" style={{ minHeight:'100px', }}>
-  <div class="w-full">
-    <div class="carousel-item block" style={{ background:"rgb(246, 247, 247)" }}>
-      <a href="/docs/2023/user-guide/ai/overview/" target="_blank">
-      <img 
-        src="https://img.alicdn.com/imgextra/i4/O1CN01U8b43m1QSbBBUjSt0_!!6000000001975-0-tps-2880-1000.jpg"
-        class="w-full" 
-      />
-    </a>
+<div 
+    id="carousel-wrapper" 
+    class="relative" 
+    data-duration={duration}
+    data-useduration={useduration}
+>
+    <div class="w-full">
+        <div class="carousel-item block">
+            <slot name="prev"></slot>
+        </div>
+    
+        <div class="carousel-item hidden">
+            <slot name="next"></slot>
+        </div>
     </div>
 
-    <div class="carousel-item hidden">
-        <slot name="next"></slot>
+    <!-- 轮播控制按钮 -->
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <button id="prev" class="btn btn-circle bg-muted/[0.8]">❮</button> 
+        <button id="next" class="btn btn-circle bg-muted/[0.8]">❯</button>
     </div>
-  </div>
-
-  <!-- 添加轮播控制按钮 -->
-  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-    <button id="prev" class="btn btn-circle bg-muted/[0.8]">❮</button> 
-    <button id="next" class="btn btn-circle bg-muted/[0.8]">❯</button>
-  </div>
 </div>
 
 <script>
-  const items = document.querySelectorAll('.carousel-item');
-  let currentItem = 0;
+    // 包裹元素
+    const carouselWrapper = document.getElementById('carousel-wrapper'); 
+    // 利用 html dataset 获取 props 变量参数
+    const duration = carouselWrapper?.dataset?.duration;
+    const useduration = carouselWrapper?.dataset?.useduration;
+    // 所有可执行的轮播项
+    const items = document.querySelectorAll('.carousel-item');
+    const nextBtn = document.getElementById('next');
+    const prevBtn = document.getElementById('prev');
 
-  function showItem(index) {
-    items.forEach((item, idx) => {
-      item.style.display = 'none';
-      if (idx === index) {
-        item.style.display = 'block';
-      };
+    // 轮播切换部分
+    let currentItem = 0;
+    function showItem(index) {
+        items.forEach((item, idx) => {
+            item.style.display = 'none';
+            if (idx === index) {
+                item.style.display = 'block';
+            };
+        });
+    };
+    // 下一项
+    nextBtn.addEventListener('click', () => {
+        currentItem = (currentItem + 1) % items.length;
+        showItem(currentItem);
     });
-  }
+    // 上一项
+    prevBtn.addEventListener('click', () => {
+        currentItem = (currentItem - 1 + items.length) % items.length;
+        showItem(currentItem);
+    });
 
-  document.getElementById('next').addEventListener('click', () => {
-    currentItem = (currentItem + 1) % items.length;
-    showItem(currentItem);
-  });
-
-  document.getElementById('prev').addEventListener('click', () => {
-    currentItem = (currentItem - 1 + items.length) % items.length;
-    showItem(currentItem);
-  });
-
-  // 初始化显示第一张图片
-  // showItem(0);
-</script>
+    // 计时器部分
+    let timer = null;
+    // 切换轮播、利用按钮点击事件
+    function switchPicture() {
+        if(timer) {
+            prevBtn.click();
+            timer = null;
+            timerStart();
+        };
+    };
+    function timerStart() {
+        timer = setTimeout(switchPicture, duration);
+    };
+    // 依据 proos.useduration 判断是否默认开启 循环切换图片
+    if(useduration == 'apply') {
+        // 鼠标划入 停止轮播
+        carouselWrapper.addEventListener('mouseenter',() =>{
+            if(timer) {
+                clearTimeout(timer);
+                timer = null;
+            };
+        });
+        // 鼠标划出 继续轮播
+        carouselWrapper.addEventListener('mouseleave',() =>{
+            if(!timer) {
+                timerStart();
+            };
+        });
+        // 默认开启
+        timerStart();
+    };
+ </script>
