@@ -3,7 +3,7 @@ title: Spring Cloud Alibaba 在 K8s 环境下的最佳实践
 keywords: [Spring Cloud Alibaba, Kubernetes, Container, Cloud Native]
 description: Spring Cloud Alibaba 在 K8s 环境下的最佳实践，通过使用 OpenFeign 组件演示服务调用。
 author: 牧生
-date: 2023-04.02
+date: 2023-04-02
 ---
 
 ## 环境准备
