@@ -328,7 +328,7 @@ spring.cloud.nacos.discovery.ip-type=IPv6
 | 接入点                | spring.cloud.nacos.discovery.endpoint                    |          | 地域的某个服务的入口域名，通过此域名可以动态地拿到服务端地址                                                                                             |
 | 是否集成 LoadBalancer | spring.cloud.loadbalancer.nacos.enabled                  | false    |
 | 是否开启 Nacos Watch  | spring.cloud.nacos.discovery.watch.enabled               | false    | 可以设置成 true 来开启 watch                                                                                                                             |
-| 是否启用 Nacos        | spring.cloud.nacos.discovery.enabled                     | true     | 默认启动，设置为 false 时会关闭自动向 Nacos 注册的功能                                                                                                   |
+| 是否启用 Nacos        | spring.cloud.nacos.discovery.register-enabled                     | true     | 默认启动，设置为 false 时会关闭自动向 Nacos 注册的功能                                                                                                   |
 | 是否启用容错配置      | `spring.cloud.nacos.discovery.failure-tolerance-enabled` | false    | 开启 nacos 服务发现失败容错能力，该功能会在 nacos 获取实例失败时返回上一次获取的实例，可以在 nacos server 网络不稳定时提供容错能力，不会导致请求全部挂掉 |
 
 ### Endpoint 信息
