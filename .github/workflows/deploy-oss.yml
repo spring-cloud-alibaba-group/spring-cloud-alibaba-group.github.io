@@ -1,33 +1,32 @@
-name: sca.aliyun.com deploy
-
+name: Upload to OSS
 on:
+  # Runs on pushes targeting the default branch
   push:
-    branches:
-      - notenabled
+    branches: ["develop-astro-sca"]
+
 jobs:
-  Build-Deploy:
+  upload-to-oss:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - name: Use Node.js 19.x
-        uses: actions/setup-node@v4
-        with:
-          node-version: 19.x
-      - name: Build
-        run: |
-          npm install && npm run build && mkdir deploy-dist && cp -R build/* deploy-dist/
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v4
-        with:
-          node-version: 12.x
-      - run: npm i @serverless-devs/s -g  --registry=https://registry.npmmirror.com
-      - run: s config add --AccountID ${{secrets.ACCOUNT_ID}}  --AccessKeyID ${{secrets.ACCESS_KEYID}} --AccessKeySecret ${{secrets.ACCESS_KEYSECRET}} -a sca -f
-      - name: Deploy
-        run: s deploy --use-local -y
-      - name: Update Cache-Control
-        uses: doggycool/ossutil-github-action@master
-        with:
-          ossArgs: "set-meta oss://sca-website-cn-hongkong/ Cache-Control:no-cache -rf"
-          accessKey: ${{ secrets.ACCESS_KEYID }}
-          accessSecret: ${{ secrets.ACCESS_KEYSECRET }}
-          endpoint: oss-cn-hongkong.aliyuncs.com
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - uses: actions/setup-node@v2
+      with:
+        node-version: 18
+        registry-url: https://registry.npmjs.org/
+    - name: Install And Build
+      run: npm i && npm run build
+    - name: Install ossutil
+      run: |
+        curl -L http://gosspublic.alicdn.com/ossutil/1.7.0/ossutil64 -o /tmp/ossutil64
+        chmod +x /tmp/ossutil64
+        /tmp/ossutil64 config -e https://oss-cn-hangzhou.aliyuncs.com -i ${{ secrets.ALIYUN_ACCESS_KEY_ID }} -k ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }} -L CH
+
+    - name: Upload to OSS
+      run: |
+        /tmp/ossutil64 cp -r -f ./dist/ oss://${{ secrets.OSS_BUCKET }}/
