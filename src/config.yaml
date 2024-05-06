@@ -1,6 +1,6 @@
 site:
   name: Spring Cloud Alibaba
-  site: 'https://hazel-group.github.io/'
+  site: 'https://sca.aliyun.com'
   base: '/'
   trailingSlash: 'always'
   websiteGithubUrl: 'https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/develop-astro-sca'
@@ -64,6 +64,6 @@ ui:
     # 错误。搜索等组件的bgcolor
     error: "#EBEFEF" #moss-02
     # 静音 companiesfeedback中的isLight的背景颜色
-    muted: "#D6EAD8" #green-03
+    muted: "#D3EDD5" #green-03
     # 搜索/语言切换组件的文字颜色
     link: "#DDE4E4" #moss-03

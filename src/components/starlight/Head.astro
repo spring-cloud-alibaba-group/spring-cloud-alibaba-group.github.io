@@ -70,6 +70,10 @@ const headDefaults: z.input<ReturnType<typeof HeadConfigSchema>> = [
         tag: "meta",
         attrs: { name: "baidu-site-verification", content: baiduAnalytics.verification },
     },
+    {
+        tag: "meta",
+        attrs: { name: "google-site-verification", content: 'CkswWpgkls_Ht5kdX4g7bd_SIoW-A_hMma5AEansIvA' },
+    },
 ];
 
 if (description) {

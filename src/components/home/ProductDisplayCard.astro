@@ -1,17 +1,26 @@
 ---
 import { Card } from "@serverless-cd/goat-ui";
+import { isChinese } from "@i18n/util";
 import { useTranslations } from "@i18n/util";
 import { Arrow } from "../icon";
 import { ProductDisplayCardData } from "@/constant";
 import { Arrow } from "../icon";
 const t = useTranslations(Astro);
+const ifzh = isChinese(Astro);
+
 ---
 <div class="flex flex-col justify-center items-center pt-14 solution-wrapper bg-base-100 hidden md:flex">
   <div class="lg:w-[85.125rem] md:w-full mb-[10px]">
   <div
-    class="solution-slogan md:w-[438px] h-[41px] text-success text-[16px] md:text-[20px] leading-4 rounded-[20px] px-5 py-3"
+    class=`solution-slogan h-[41px] text-success text-[16px] md:text-[20px] leading-4 rounded-[20px] px-5 py-3`
+    class:list={[
+      {
+        "w-[438px]": ifzh,
+        "w-[543px]": !ifzh,
+      },
+    ]}
   >
-    Spring Cloud Alibaba 提供的微服务解决方案
+    {t('home.product.introduce.title')}
   </div>
   </div>
   <div class="flex justify-center items-center lg:w-[85.125rem] md:w-full flex-wrap">

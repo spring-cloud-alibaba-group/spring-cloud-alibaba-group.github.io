@@ -115,7 +115,7 @@ const next = articlePosts[0].entries[currentIndex + 1];
 				</div>
 			</div>
 			<div
-				class="right-sidebar-panel w-[25%] fixed h-full hidden 2xl:inline-block xl:inline-block lg:inline-block md:inline-block"
+				class="right-sidebar-panel w-[25%] fixed h-full overflow-y-auto hidden 2xl:inline-block xl:inline-block lg:inline-block md:inline-block"
 			>
 				<TocComponent headings={headings} />
 			</div>
@@ -144,7 +144,7 @@ const next = articlePosts[0].entries[currentIndex + 1];
 		.right-sidebar-panel {
 			flex-direction: column;
 			justify-content: space-between;
-			height: 100%;
+			height: calc(100vh - 3.5rem);
 			padding: 1rem var(--sl-sidebar-pad-x);
 		}
 		.right-sidebar-panel h2 {
