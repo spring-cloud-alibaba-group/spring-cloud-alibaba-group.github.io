@@ -13,11 +13,11 @@ const {
 
 <div 
     id="carousel-wrapper" 
-    class=" relative flex flex-col justify-center items-center bg-muted" 
+    class="relative" 
     data-duration={duration}
     data-useduration={useduration}
 >
-    <div class="md:w-[85.125rem] ">
+    <div class="w-full">
         <div class="carousel-item block">
             <slot name="prev"></slot>
         </div>
@@ -28,19 +28,10 @@ const {
     </div>
 
     <!-- 轮播控制按钮 -->
-    <div class='md:w-[85.125rem] absolute bottom-[20px] md:left-auto left-[20px]' >
-    
-    <div class="w-[112px]  flex justify-between ">
-        <div id="prev" class="cursor-pointer group">
-            <svg class="group-hover:hidden" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="48" height="30" viewBox="0 0 48 30"><g transform="matrix(-1,0,0,1,96,0)"><g><rect x="48" y="0" width="48" height="30" rx="15" fill="#E6F5E7" fill-opacity="1"/></g><g><g><rect x="63" y="3" width="24" height="24" rx="0" fill-opacity="0" stroke-opacity="1" stroke="#060E07" fill="none" stroke-width="0"/></g><g><path d="M84,15.75L60,15.75L60,14.25L84,14.25L84,15.75Z" fill-rule="evenodd" fill="#6B8A88" fill-opacity="1"/></g><g><path d="M85.06066,15L78.53033,8.46967L77.46967,9.53033L82.93934,15L77.46967,20.4697L78.53033,21.5303L85.06066,15Z" fill-rule="evenodd" fill="#6B8A88" fill-opacity="1"/></g></g></g></svg>
-            <svg class="hidden group-hover:block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="48" height="30" viewBox="0 0 48 30"><g transform="matrix(-1,0,0,1,96,0)"><g><rect x="48" y="0" width="48" height="30" rx="15" fill="#E6F5E7" fill-opacity="1"/></g><g><g><rect x="63" y="3" width="24" height="24" rx="0" fill-opacity="0" stroke-opacity="1" stroke="#060E07" fill="none" stroke-width="0"/></g><g><path d="M84,15.75L60,15.75L60,14.25L84,14.25L84,15.75Z" fill-rule="evenodd" fill="#2B3B3A" fill-opacity="1"/></g><g><path d="M85.06066,15L78.53033,8.46967L77.46967,9.53033L82.93934,15L77.46967,20.4697L78.53033,21.5303L85.06066,15Z" fill-rule="evenodd" fill="#2B3B3A" fill-opacity="1"/></g></g></g></svg>
-        </div>
-        <div id="next" class="cursor-pointer ml-[16px] group">
-            <svg class="rotate-180 group-hover:hidden" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="48" height="30" viewBox="0 0 48 30"><g transform="matrix(-1,0,0,1,96,0)"><g><rect x="48" y="0" width="48" height="30" rx="15" fill="#E6F5E7" fill-opacity="1"/></g><g><g><rect x="63" y="3" width="24" height="24" rx="0" fill-opacity="0" stroke-opacity="1" stroke="#060E07" fill="none" stroke-width="0"/></g><g><path d="M84,15.75L60,15.75L60,14.25L84,14.25L84,15.75Z" fill-rule="evenodd" fill="#6B8A88" fill-opacity="1"/></g><g><path d="M85.06066,15L78.53033,8.46967L77.46967,9.53033L82.93934,15L77.46967,20.4697L78.53033,21.5303L85.06066,15Z" fill-rule="evenodd" fill="#6B8A88" fill-opacity="1"/></g></g></g></svg>
-            <svg class="rotate-180 hidden group-hover:block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="48" height="30" viewBox="0 0 48 30"><g transform="matrix(-1,0,0,1,96,0)"><g><rect x="48" y="0" width="48" height="30" rx="15" fill="#E6F5E7" fill-opacity="1"/></g><g><g><rect x="63" y="3" width="24" height="24" rx="0" fill-opacity="0" stroke-opacity="1" stroke="#060E07" fill="none" stroke-width="0"/></g><g><path d="M84,15.75L60,15.75L60,14.25L84,14.25L84,15.75Z" fill-rule="evenodd" fill="#2B3B3A" fill-opacity="1"/></g><g><path d="M85.06066,15L78.53033,8.46967L77.46967,9.53033L82.93934,15L77.46967,20.4697L78.53033,21.5303L85.06066,15Z" fill-rule="evenodd" fill="#2B3B3A" fill-opacity="1"/></g></g></g></svg>
-        </div>
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <button id="prev" class="btn btn-circle bg-muted/[0.8]">❮</button> 
+        <button id="next" class="btn btn-circle bg-muted/[0.8]">❯</button>
     </div>
-</div>
 </div>
 
 <script>
