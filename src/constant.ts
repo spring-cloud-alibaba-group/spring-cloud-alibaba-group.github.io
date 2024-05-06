@@ -407,7 +407,7 @@ export const ProductDisplayCardData = [
     cover: "https://img.alicdn.com/imgextra/i3/O1CN01bJroU81BzNHfeB3jN_!!6000000000016-0-tps-1000-1500.jpg",
     coverPosition: "bottom",
     title: "Seata",
-    body: "home.introduction.card.Nacos.des",
+    body: "home.introduction.card.Seata.des",
     href: "docs/2023/user-guide/seata/quick-start/",
   },
   {
@@ -422,14 +422,14 @@ export const ProductDisplayCardData = [
     coverPosition: "bottom",
     title: "Spring Boot",
     body: "home.introduction.card.Boot.des",
-    href: "/learn/spring/",
+    href: "/learn/spring-boot/",
   },
   {
     cover: "https://img.alicdn.com/imgextra/i3/O1CN01WxXILZ1C0I4pkZUyD_!!6000000000018-0-tps-1000-1500.jpg",
     coverPosition: "bottom",
     title: "Spring Cloud",
     body: "home.introduction.card.Cloud.des",
-    href: "/learn/spring-boot/",
+    href: "/learn/spring-cloud/",
   },
 ];
 
