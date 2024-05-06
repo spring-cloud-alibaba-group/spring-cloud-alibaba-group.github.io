@@ -65,7 +65,9 @@ const route = generateRouteData({
 			}
 		 }, 1000)
 	};
-
+	if(pathname === '/zh-cn') {
+		window.location.pathname = '/'
+	}
 	if(pathname === '/en') {
 		window.location.pathname = '/en/'
 	}
@@ -76,21 +78,24 @@ const route = generateRouteData({
 
 	// 对文档情况进行重定向
 	if (pathname.includes('docs')) {
-		const regexs =/\/docs\/([^/]+)\//;
-		const match = regexs.exec(pathname)
-		if (!match) {
-			const [lang, rest] = pathname.split('/docs');
-			if(lang === '/en') {
-				window.location.pathname = '/en/docs'+ '/latest' + rest
-			} else {
-				window.location.pathname = '/docs'+ '/latest' + rest
-			}
-			
-		} else {
-			 // 埋点上报
-			track404({ type:'docs'})
-		}
+		// const regexs =/\/docs\/([^/]+)\//;
+		// 	const match = regexs.exec(pathname)
+		// 	if (!match) {
+		// 		const [lang, rest] = pathname.split('/docs');
+		// 		if(lang === '/en') {
+		// 			window.location.pathname = '/en/docs'+ '/202' + rest
+		// 		} else {
+		// 			window.location.pathname = '/docs'+ '/latest' + rest
+		// 		}
+				
+		// 	} else {
+		// 		window.location.pathname = '/'
+		// 		 // 埋点上报
+		// 		track404({ type:'docs'})
+		// 	}
+		window.location.pathname = '/docs/2023/overview/what-is-sca/'
 	} else {
+		window.location.pathname = '/'
 		track404({type:'others'});
 	}
 	
