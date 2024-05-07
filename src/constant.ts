@@ -272,25 +272,25 @@ export const i18nMap = {
 
 export const BLOG_CATEGORY = [
   {
+    type: 'all',
+    title: '全部文章',
+    href: '/blog/'
+  },
+  {
     type: 'article',
     title: '技术文章',
-    href: '/blog/article'
+    href: '/blog/article/'
   },
 
   {
     type: 'ecosystem',
     title: '生态文章',
-    href: '/blog/ecosystem'
+    href: '/blog/ecosystem/'
   },
   {
     type: 'case',
     title: '最佳实践',
-    href: '/blog/case'
-  },
-  {
-    type: 'all',
-    title: '全部文章',
-    href: '/blog/all'
+    href: '/blog/case/'
   },
 ];
 
@@ -527,50 +527,46 @@ export const COMMUNITY_MENU_LIST = [
 
 export const LEARN_CARD_LIST= [
   {
-    title: "Spring 教程",
-    description: "零基础学习 Spring Framework 核心概念，包括依赖注入、AOP、REST 等。",
+    title: "commmon.header.spring.tutorial",
+    description: "commmon.header.spring.tutorial.describe",
     href: "/learn/spring/",
   },
   {
-    title: "Spring Boot 教程",
-    description: "快速掌握构建生产级别应用，覆盖自动配置、数据库交互、微服务构建等。",
+    title: "commmon.header.spring.boot.tutorial",
+    description: "commmon.header.spring.boot.tutorial.describe",
     href: "/learn/spring-boot/",
   },
   {
-    title: "Spring Cloud 教程",
-    description: "学习微服务地址发现、配置管理、路由、负载均衡、断路器和分布式消息传递",
+    title: "commmon.header.spring.cloud.alibaba.tutorial",
+    description:  "commmon.header.spring.cloud.alibaba.tutorial.describe",
     href: "/learn/spring-cloud/",
   },
   {
-    title: "微服务治理教程",
-    description: "阿里巴巴等企业实践总结，涵盖灰度发布、限流降级、流量管控等高阶微服务治理能力。",
+    title: "commmon.header.spring.mse.ebook",
+    description: "commmon.header.spring.mse.ebook.describe",
     href: "/docs/ebook/srekog/",
   }
 ];
 
 export const SOLUTIONS_CARD_LIST = [
   {
-    title: "注册配置中心高可用最佳实践",
-    description:
-      "提供 Nacos/ZooKeeper/Eureka 的商业化托管服务。",
+    title: "commmon.header.microservices.engine",
+    description: "commmon.header.microservices.engine.describe",
     href: "https://help.aliyun.com/zh/mse/use-cases/implement-high-availability-capabilities-of-mse-microservices-registry?spm=a2c4g.11186623.0.0.102a27e0juv8vG",
   },
   {
-    title: "云原生网关如何实现安全防护能力",
-    description:
-      "提供符合 K8s Ingress 标准的下一代网关，将流量网关、微服务网关和 WAF 安全网关三合一。",
+    title: "commmon.header.microservices.cloud.native.gateway",
+    description: "commmon.header.microservices.cloud.native.gateway.describe",
     href: "https://developer.aliyun.com/article/1265016?spm=5176.21213303.J_qCOwPWspKEuWcmp8qiZNQ.10.c89e2f3dQa2WtF&scm=20140722.S_community@@%E6%96%87%E7%AB%A0@@1265016._.ID_community@@%E6%96%87%E7%AB%A0@@1265016-RL_%E4%BA%91%E5%8E%9F%E7%94%9F%E7%BD%91%E5%85%B3%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%AE%89%E5%85%A8%E9%98%B2%E6%8A%A4%E8%83%BD%E5%8A%9B-LOC_llm-OR_ser-V_3-RK_rerank-P0_2",
   },
   {
-    title: "全链路灰度与优雅上下线",
-    description:
-      "原生支持 Spring Cloud/Dubbo/Sentinel，提供丰富的流量治理和流量防护功能。",
+    title: "commmon.header.microservices.governance",
+    description: "commmon.header.microservices.governance.describe",
     href: "https://help.aliyun.com/zh/mse/use-cases/implement-an-end-to-end-canary-release-by-using-mse-cloud-native-gateways?spm=a2c4g.11186623.0.i3",
   },
   {
-    title: "应用实时监控",
-    description:
-      "作为云原生可观测平台，ARMS 提供全栈性能监控告警与端到端追踪诊断能力。",
+    title: "commmon.header.microservices.application.service",
+    description: "commmon.header.microservices.application.service.describe",
     href: "https://help.aliyun.com/zh/arms/?spm=5176.8140086.J_5253785160.8.3e87be45mtM0kX",
   },
 ];
