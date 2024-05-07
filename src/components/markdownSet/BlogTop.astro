@@ -7,7 +7,7 @@ import { Button } from "@serverless-cd/goat-ui";
 import { useTranslations } from "@i18n/util";
 const t = useTranslations(Astro);
 
-const { source, title = "", type = "home", category } = Astro.props;
+const { source, title = "", type = "home", category, activeCategory='' } = Astro.props;
 
 // FIXME: fix
 const backIconMap = {
@@ -25,33 +25,20 @@ const backIconMap = {
     <div class="blog_header_title">{title}</div>
     <div class="blog_category_menu">
       {
-        type === "home" &&
-          category &&
-          category.map((category) => {
-            return (
-              <>
-                <BlogButton
-                  variant="secondary"
-                  href={category.href}
-                  text={t(i18nMap[source][category.type])}
-                />
-              </>
-            );
-          })
+        (type === "home" || type === "blog-sub") &&
+        category &&
+            category.map((category) => {
+                return (
+                <>
+                    <BlogButton
+                        href={category.href}
+                        text={t(i18nMap[source][category.type])}
+                        variant={category.type == activeCategory? 'primary':'secondary'}
+                    />
+                </>
+                );
+            })
       }
-      {
-        type !== "home" && (
-          <Button
-            variant="secondary"
-            href={backIconMap[type]}
-            class="rounded-3xl"
-            visibility={false}
-          >
-            <Icon name="left-arrow" class="text-lg align-middle" />
-            <span class="ml-1">BACK</span>
-          </Button>
-        )
-      } 
     </div>
   </BaseContainer>
 </div>

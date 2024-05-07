@@ -4,23 +4,11 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../../consts";
 import { getCollection } from "astro:content";
 import Pagination from "@components/common/Paginate/Pagination.astro";
-import BlogCard from "@components/markdownSet/Card.astro";
 import { BLOG_CATEGORY } from "@/constant";
 import BlogTop from "@components/markdownSet/BlogTop.astro";
-import BaseContainer from "@components/common/BaseContainer.astro";
+import SimpleContainer from '@components/markdownSet/SimpleContainer.astro';
 import { useTranslations } from "@i18n/util";
 const t = useTranslations(Astro);
-interface Post {
-    slug: string;
-    body: string;
-    collection: string;
-    data: {
-        title: string;
-        description: string;
-        date: string;
-        keywords?: any[];
-    };
-}
 
 // 分页数据在page参数中传递
 const { page } = Astro.props;
@@ -47,25 +35,21 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 ---
 
 <BaseLayout title="Nacos Blog">
-    <BlogTop title={t("blog.article.ecosystem.articles")} type="blog-sub" />
-    <div class="flex flex-col items-center gap-20 py-8">
-        <BaseContainer>
-            <ul
-                class="blog-ecosystem grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-6 place-items-stretch"
-            >
-                {
-                    page.data.map((post) => (
-                        <div>
-                            <BlogCard
-                                post={post as Post}
-                                posterWidth="350"
-                                source="blog_ecosystem"
-                            />
-                        </div>
-                    ))
-                }
-            </ul>
-        </BaseContainer>
+    <BlogTop 
+        title={t("blog.article.ecosystem.articles")} 
+        type="blog-sub" 
+        source="blog"
+        type="home"
+        category={BLOG_CATEGORY}
+        activeCategory="ecosystem"
+    />
+    <div 
+        class="flex flex-col items-center gap-20 py-8 lg:p-12 xl:p-20 bg-base-100"
+    >
+        <SimpleContainer 
+            pageList={page.data}
+            allPages={allPages}
+        />
 
         <Pagination restRoute allPages={allPages} page={page} class="mx-auto" />
     </div>
