@@ -39,6 +39,19 @@ const backIconMap = {
                 );
             })
       }
+      {
+        type !== "home" && type !== "blog-sub" && (
+          <Button
+            variant="secondary"
+            href={backIconMap[type]}
+            class="rounded-3xl"
+            visibility={false}
+          >
+            <Icon name="left-arrow" class="text-lg align-middle" />
+            <span class="ml-1">BACK</span>
+          </Button>
+        )
+      }
     </div>
   </BaseContainer>
 </div>
