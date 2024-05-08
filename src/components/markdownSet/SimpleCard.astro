@@ -32,7 +32,7 @@ export type Props = {
 const { post, source, posterWidth, type = "blog",index = 0, class: className = "", useAnchor=false, } = Astro.props;
 ---
 
-<div class={"card h-[332px] p-[24px] bg-gray-01 shadow-none w-full flex " + className}>
+<div class={"card h-[332px] p-[24px] shadow-none w-full flex " + className}>
     <!-- 锚点 -->
     {useAnchor?<a name={post.slug} class={"absolute z-[-100] top-[-4rem]"}></a>:null}
     

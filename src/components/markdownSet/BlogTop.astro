@@ -25,7 +25,7 @@ const backIconMap = {
     <div class="blog_header_title">{title}</div>
     <div class="blog_category_menu">
       {
-        (type === "home" || type === "blog-sub") &&
+        ["home", "blog-sub", "learn-sub"].includes(type) &&
         category &&
             category.map((category) => {
                 return (
@@ -40,7 +40,7 @@ const backIconMap = {
             })
       }
       {
-        type !== "home" && type !== "blog-sub" && (
+        !["home", "blog-sub", "learn-sub"].includes(type) && (
           <Button
             variant="secondary"
             href={backIconMap[type]}

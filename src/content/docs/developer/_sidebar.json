@@ -6,7 +6,8 @@
 			"en": "Developer"
 		},
 		"collapsed": false,
-		"items": [{
+		"items": [
+            {
 				"label": "开发人员",
 				"translations": {
 					"en": "Development Team"
@@ -18,9 +19,29 @@
 				"translations": {
 					"en": "Contribute Guide"
 				},
-                "autogenerate": {
-                    "directory": "contributor-guide"
-                }
+                "items": [
+                    {
+						"label": "文档编写指南",
+						"translations": {
+							"en": "Writing Document"
+						},
+						"link": "docs/developer/contributor-guide/file-write-guide_dev/"
+					},
+                    {
+						"label": "如何贡献",
+						"translations": {
+							"en": "How Contribute"
+						},
+						"link": "docs/developer/contributor-guide/new-contributor-guide_dev/"
+					},
+                    {
+						"label": "如何汇报安全漏洞",
+						"translations": {
+							"en": "How Report"
+						},
+						"link": "docs/developer/contributor-guide/reporting-security-issues_dev/"
+					}
+                ]
 			}
 
 		]

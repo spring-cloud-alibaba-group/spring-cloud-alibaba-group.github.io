@@ -74,9 +74,7 @@ The community has detailed planning and design for the construction of each vers
 
 **A:**
 
-<!-- todo: need to update the connection, can not connect through the relative path -->
-
-Refer to the [Community](../../../community/community-weekly-meeting/attend-a-meeting) module.
+Refer to the [Community](../../../../blog/news/attend-a-meeting.md) module.
 
 ---
 
@@ -112,9 +110,7 @@ Can be integrated, see [SCA-Higress-routing](../../../blog/SCA-Higress-Applicati
 
 **A:**
 
-<!-- todo: need to update the connection, can not connect through the relative path -->
-
-- For community contributions, please refer to [Developer Module](../../../community/developer/contributor-guide/new-contributor-guide_dev), which contains related descriptions.
+- For community contributions, please refer to [Developer Module](../../../../docs/developer/contributor-guide/new-contributor-guide_dev/), which contains related descriptions.
 
 - A Committer is an individual with write access to the repository, including the following criteria:
 
@@ -131,9 +127,7 @@ Can be integrated, see [SCA-Higress-routing](../../../blog/SCA-Higress-Applicati
 
 **A:**
 
-<!-- todo: need to update the connection, can not connect through the relative path -->
-
-- The community currently has [blog module](../../../blog/SCA-Proxyless-Mesh), update some community-related function introductions and explore some cutting-edge technologies;
+- The community currently has [blog module](../../../../blog/sca-proxyless-mesh/), update some community-related function introductions and explore some cutting-edge technologies;
 
 - Relevant learning materials are being sorted out and will be released on the official website soon.
 

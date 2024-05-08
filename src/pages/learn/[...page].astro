@@ -3,56 +3,43 @@ import type { GetStaticPathsOptions } from "astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import Pagination from "@components/common/Paginate/Pagination.astro";
+import { LEARN_CATEGORY } from "@/constant";
 import BlogTop from "@components/markdownSet/BlogTop.astro";
 import { useTranslations } from "@i18n/util";
 import SimpleContainer from '@components/markdownSet/SimpleContainer.astro';
 import { LEARN_CATEGORY } from "@/constant";
 const t = useTranslations(Astro);
-interface Post {
-    slug: string;
-    body: string;
-    collection: string;
-    data: {
-        title: string;
-        description: string;
-        date: string;
-        keywords?: any[];
-    };
-}
 
 // 分页数据在page参数中传递
 const { page } = Astro.props;
 
-const posts = await getCollection("blog");
-
 const allPages = [...Array(page.lastPage).keys()].map((num) => {
-    return `/learn/spring-cloud${num === 0 ? "" : `/${String(num + 1)}`}`;
+    return `/learn${num === 0 ? "" : `/${String(num + 1)}`}`;
 });
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-    const posts = await getCollection("blog");
+    const blogCategories = new Set(LEARN_CATEGORY.map((item) => item.type));
+    const posts = await getCollection("blog", (item) =>
+        blogCategories.has(item.data.category),
+    );
 
     const sortedPosts = posts.sort(
         (a, b) =>
             new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf(),
     );
-
-    const casePosts = sortedPosts.filter((post) => {
-        return post.data.category === "spring-cloud";
-    });
-    return paginate(casePosts, { pageSize: 9 });
+    return paginate(sortedPosts, { pageSize: 9 });
 }
 ---
 
 <BaseLayout title="Nacos Blog">
     <BlogTop 
-        title={t("learn.article.spring-cloud")} 
+        title={t("blog.all.articles")} 
         type="learn-sub" 
         source="learn"
         category={LEARN_CATEGORY}
-        activeCategory="spring-cloud"
+        activeCategory="all"
     />
-    <div 
+    <div
         class="mx-auto flex flex-col items-center gap-20 py-8 lg:p-12 xl:p-20 bg-gray-01"
     >
         <SimpleContainer 
