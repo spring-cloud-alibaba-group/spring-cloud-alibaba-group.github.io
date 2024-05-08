@@ -20,7 +20,7 @@ interface Props {
     allPages?: string[];
 }
 
-const { pageList, allPages = [], class: className = "" } = Astro.props;
+const { pageList, allPages = [], class: className = "", source='blog' } = Astro.props;
 
 // Get word for mdx
 const getExcerpt = (content, length = 200, defaultExcerpt = '') => {
@@ -40,14 +40,17 @@ const getExcerpt = (content, length = 200, defaultExcerpt = '') => {
 
 if(pageList && pageList.length) {
     pageList.forEach(item => {
-        item.excerpt = getExcerpt(item.body, 120, item.data?.description);
+        item.excerpt = getExcerpt(item.body, 300, item.data?.description);
     });
 };
 ---
 
 <BaseContainer class="flex justify-between">
     <div class="max-w-[200px] min-w-[200px] hidden 2xl:block xl:block lg:block">
-        <div class="text-lg text-gray-08 mb-[32px]">文章</div>
+        {pageList && pageList.length? 
+            <div class="text-lg text-gray-08 mb-[32px]">文章</div>
+            :null
+        }
         <div class="text-[16px] text-gray-14">
             {
                 pageList.map(post=>{
@@ -69,9 +72,9 @@ if(pageList && pageList.length) {
             pageList.map((post) => (
                 <SimpleCard 
                     post={post as Post} 
-                    source="blog"
+                    source={source}
                     useAnchor={true}
-                    class={'simple-container-card'}
+                    class="bg-white"
                 />
             ))
         }
@@ -79,9 +82,6 @@ if(pageList && pageList.length) {
 </BaseContainer>
 
 <style>
-    .simple-container-card{
-        background-color: var(--sl-color-bg-sidebar);
-    }
     .pagelist-a{
 		color: rgb(var(--gray));
     }

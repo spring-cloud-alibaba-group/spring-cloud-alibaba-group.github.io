@@ -296,6 +296,11 @@ export const BLOG_CATEGORY = [
 
 export const LEARN_CATEGORY = [
   {
+    type: 'all',
+    title: '全部文章',
+    href: '/learn/'
+  },
+  {
     type: 'spring',
     title: 'Spring',
     href: '/learn/spring/'
@@ -315,11 +320,6 @@ export const LEARN_CATEGORY = [
     type: 'spring-cloud-alibaba',
     title: 'Spring Cloud Alibaba',
     href: '/learn/spring-cloud-alibaba/'
-  },
-  {
-    type: 'all',
-    title: '全部文章',
-    href: '/learn/all/'
   },
 ];
 

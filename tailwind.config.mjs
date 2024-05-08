@@ -20,7 +20,7 @@ export default {
   plugins: [...goatuiPlugins,
   ],
   theme: {
-    colors: colorList,
+		colors: colorList,
     extend: {
       fontFamily: {
 				sans: ["Roboto","SourceHanSans","sans-serif"],

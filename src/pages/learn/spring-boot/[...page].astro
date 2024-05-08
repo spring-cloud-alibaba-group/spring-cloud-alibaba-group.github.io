@@ -3,10 +3,10 @@ import type { GetStaticPathsOptions } from "astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import Pagination from "@components/common/Paginate/Pagination.astro";
-import BlogCard from "@components/markdownSet/Card.astro";
 import BlogTop from "@components/markdownSet/BlogTop.astro";
-import BaseContainer from "@components/common/BaseContainer.astro";
 import { useTranslations } from "@i18n/util";
+import SimpleContainer from '@components/markdownSet/SimpleContainer.astro';
+import { LEARN_CATEGORY } from "@/constant";
 const t = useTranslations(Astro);
 interface Post {
     slug: string;
@@ -45,27 +45,21 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 ---
 
 <BaseLayout title="Nacos Blog">
-    <BlogTop title={t("learn.article.spring-boot")} type="learn-sub" />
-    <div
-        class="flex flex-col items-center gap-20 py-8 lg:p-12 xl:p-20 bg-gray-01"
+    <BlogTop 
+        title={t("learn.article.spring-boot")} 
+        type="learn-sub" 
+        source="learn"
+        category={LEARN_CATEGORY}
+        activeCategory="spring-boot"
+    />
+    <div 
+        class="mx-auto flex flex-col items-center gap-20 py-8 lg:p-12 xl:p-20 bg-gray-01"
     >
-        <BaseContainer>
-            <ul
-                class="blog-case grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-6 place-items-stretch"
-            >
-                {
-                    page.data.map((post) => (
-                        <div>
-                            <BlogCard
-                                post={post as Post}
-                                posterWidth="350"
-                                source="blog_case"
-                            />
-                        </div>
-                    ))
-                }
-            </ul>
-        </BaseContainer>
+        <SimpleContainer 
+            pageList={page.data}
+            allPages={allPages}
+            source="learn"
+        />
 
         <Pagination restRoute allPages={allPages} page={page} class="mx-auto" />
     </div>
