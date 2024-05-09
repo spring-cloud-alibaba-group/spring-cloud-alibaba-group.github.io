@@ -6,7 +6,7 @@ import { ProductPanel } from "./common/ProductPanel";
 
 export const GovernancePanel = ({}) => {
   return (
-    <ProductPanel title="治理面" panelSkewDir={-1}>
+    <ProductPanel title="治理面">
       <Product
         // image={
         //   "https://gw.alicdn.com/imgextra/i4/O1CN012zo8OT21NEJMg5vvT_!!6000000006972-2-tps-216-174.png"
