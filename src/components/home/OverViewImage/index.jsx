@@ -59,8 +59,8 @@ function App({ colors = defaultColorConfig, linkStyle = "text-sm", className = '
       >
         <div class='hidden md:inline-block'>
         <div class="flex justify-around flex-1 items-center">
-          <GovernancePanel />
           <ControlPanel />
+          <GovernancePanel />
         </div>
         <div class="flex justify-around flex-[2]">
           <DataPanel />

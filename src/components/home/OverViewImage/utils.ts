@@ -222,13 +222,13 @@ export const hoverSCAData = {
       apiLink: "https://api.github.com/repos/alibaba/spring-cloud-alibaba",
     },
     官网: {
-      link: "https://spring.io/projects/spring-cloud-alibaba",
+      link: "https://sca.aliyun.com/",
     },
     最新版本: {
-      link: "https://github.com/alibaba/spring-cloud-alibaba/releases/tag/2021.0.4.0",
+      link: "https://sca.aliyun.com/docs/2023/overview/version-explain/",
     },
     快速入门: {
-      link: "https://github.com/alibaba/spring-cloud-alibaba/blob/2021.x/README-zh.md",
+      link: "https://sca.aliyun.com/docs/2023/user-guide/ai/quick-start/",
     },
     快速构建: {
       link: "https://start.aliyun.com/",
@@ -389,6 +389,28 @@ export const hoverOpenkruiseData = {
     },
     快速入门: {
       link: "https://openkruise.io/zh/docs/installation",
+    },
+  },
+}
+
+export const hoveriLogtailData = {
+  title: "一款快速、轻量的可观测数据采集器。",
+  image:
+    "https://img.alicdn.com/imgextra/i4/O1CN01DkZf3V1cAWwyWl3PU_!!6000000003560-2-tps-372-80.png",
+  labels: ["可观测","日志","Metrics"],
+  links: {
+    Github: {
+      link: "https://github.com/alibaba/ilogtail",
+      apiLink: "https://api.github.com/repos/alibaba/ilogtail",
+    },
+    官网: {
+      link: "https://ilogtail.gitbook.io/ilogtail-docs",
+    },
+    最新版本: {
+      link: "https://github.com/alibaba/ilogtail/releases/tag/v1.8.8",
+    },
+    快速入门: {
+      link: "https://ilogtail.gitbook.io/ilogtail-docs/installation/quick-start",
     },
   },
 }
