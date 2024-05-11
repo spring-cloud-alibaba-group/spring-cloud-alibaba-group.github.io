@@ -329,14 +329,9 @@ export const LEARN_CATEGORY = [
 
 export const WUYI_CATEGORY = [
   {
-    type: 'all',
+    type: 'expertConsultation',
     title: '全部文章',
     href: '/wuyi/'
-  },
-  {
-    type: 'expertConsultation',
-    title: '专家问答',
-    href: '/wuyi/expert-consultation/'
   },
 ];
 
