@@ -74,6 +74,28 @@
 					}
 				]
 			},
+            {
+				"label": "分布式定时任务",
+				"translations": {
+					"en": "Scheduling Tasks"
+				},
+                "items":[
+					{
+						"label": "概述",
+						"translations": {
+							"en": "Overview"
+						},
+						"link": "docs/user-guide/schedulerx/overview/"
+					},
+					{
+						"label": "快速开始",
+						"translations": {
+							"en": "Quick Start"
+						},
+						"link": "docs/user-guide/schedulerx/quick-start/"
+					}
+                ]
+            },
 			{
 				"label": "分布式事务",
 				"translations": {

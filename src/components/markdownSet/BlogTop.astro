@@ -12,10 +12,13 @@ const { source, title = "", type = "home", category, activeCategory='' } = Astro
 // FIXME: fix
 const backIconMap = {
   "blog-sub": "/blog",
+  "wuyi-sub": "/wuyi",
   "news-sub": "/news",
   "activity-sub": "/activity/",
   "learn-sub": "/learn/",
 };
+
+const typeArr = ["home", "blog-sub", "learn-sub", "wuyi-sub"];
 ---
 
 <div
@@ -25,7 +28,7 @@ const backIconMap = {
     <div class="blog_header_title">{title}</div>
     <div class="blog_category_menu">
       {
-        ["home", "blog-sub", "learn-sub"].includes(type) &&
+        typeArr.includes(type) &&
         category &&
             category.map((category) => {
                 return (
@@ -40,7 +43,7 @@ const backIconMap = {
             })
       }
       {
-        !["home", "blog-sub", "learn-sub"].includes(type) && (
+        !typeArr.includes(type) && (
           <Button
             variant="secondary"
             href={backIconMap[type]}

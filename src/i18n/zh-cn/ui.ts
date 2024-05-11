@@ -164,6 +164,7 @@ export default {
 	'home.introduction.card.Sentinel.des':'限流降级为应用保驾护航',
 	'home.introduction.card.Seata.des':'分布式事务保证数据一致性',
 	'home.introduction.card.RocketMQ.des':'异步消息削峰填谷',
+	'home.introduction.card.schedulerx.des':'分布式定时任务',
 	
 
 	'cloud.title': 'Spring Cloud Alibaba',
@@ -291,6 +292,7 @@ export default {
 	'learn.article.spring-boot': 'Spring Boot',
 	'learn.article.spring-cloud':'Spring Cloud',
 	'learn.article.spring-cloud-alibaba':'Spring Cloud Alibaba',
+	'wuyi.meet-professor.title': "专家答疑",
 	'page.blog.card.website': 'SCA 博客',
 	'learn.activity.explore':'探索SCA学习板块，了解微服务开发的一站式解决方案。',
 	

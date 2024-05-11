@@ -4,6 +4,7 @@ import { isChinese } from "@i18n/util";
 import cloneDeep from "lodash.clonedeep";
 import dataSource from "@components/common/Header/navbar.ts";
 import { DOCS_ITEM } from "@/constant"
+import Flames from '../icon/Flames.astro';
 const ifzh = isChinese(Astro);
 
 interface Props {
@@ -14,7 +15,18 @@ const { top = "4rem" } = Astro.props;
 
 // 修改 文档 菜单显示逻辑
 const lastIdx = dataSource.length - 1;
-let _dataSource = cloneDeep(dataSource);
+// let _dataSource = cloneDeep(dataSource);
+
+// todo ======= wuyi 上线之后、需要删除以下变量控制,使用  let _dataSource = cloneDeep(dataSource);
+const _url = new URL(Astro.request.url);
+let _dataSource = cloneDeep(dataSource).filter(item=>{
+  if(item.route == '/wuyi/') {
+    return String(_url).includes('wuyi');
+  };
+  
+  return true;
+});
+// todo ========
 
 (() => {
   const pathname = Astro.url.pathname;
@@ -94,6 +106,10 @@ const ifactive = (toggle) => {
           } = toggle;
           // const component = slot && await import(slot);
           const active = ifactive(toggle);
+          const newFlames = {
+            aftericon: route == "/wuyi/"? <Flames /> : "",
+            style: route == "/wuyi/"? "color:red!important;" : "",
+          };
           return (
             <Toggle
               title={ifzh ? label : translations?.en}
@@ -106,6 +122,8 @@ const ifactive = (toggle) => {
               top={top}
               relativePosition = {relativePosition}
               class={`item ${index === lastIdx ? "item-last-child" : ""}`}
+              hotStyle={newFlames.style}
+              hotIcon={newFlames.aftericon}
             ></Toggle>
           );
         })

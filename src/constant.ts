@@ -267,7 +267,11 @@ export const i18nMap = {
     'spring-cloud': 'learn.spring-cloud.title',
     'spring-cloud-alibaba': 'learn.spring-cloud-alibaba.title',
     'all': 'learn.all.title'
-  }
+  },
+  "wuyi": {
+    'all': 'learn.all.title',
+    'expertConsultation': 'wuyi.meet-professor.title',
+  },
 };
 
 export const BLOG_CATEGORY = [
@@ -320,6 +324,14 @@ export const LEARN_CATEGORY = [
     type: 'spring-cloud-alibaba',
     title: 'Spring Cloud Alibaba',
     href: '/learn/spring-cloud-alibaba/'
+  },
+];
+
+export const WUYI_CATEGORY = [
+  {
+    type: 'expertConsultation',
+    title: '全部文章',
+    href: '/wuyi/'
   },
 ];
 
@@ -430,6 +442,13 @@ export const ProductDisplayCardData = [
     title: "Spring Cloud",
     body: "home.introduction.card.Cloud.des",
     href: "/learn/spring-cloud/",
+  },
+  {
+    cover: "https://img.alicdn.com/imgextra/i1/O1CN01bKcEde1xVhBVptyhX_!!6000000006449-2-tps-1312-880.png",
+    coverPosition: "bottom",
+    title: "Spring Scheduling Tasks",
+    body: "home.introduction.card.schedulerx.des",
+    href: "docs/2023/user-guide/schedulerx/quick-start/",
   },
 ];
 
