@@ -36,6 +36,16 @@ export default [
     route: "/blog/",
   },
   {
+    label: "专家答疑",
+    translations: {
+      en: "wuyi",
+    },
+    trigger: "click",
+    target: "_self",
+    route: "/wuyi/",
+    activePath: ["/wuyi"],
+  },
+  {
     label: "学习",
     translations: {
       en: "LEARN",

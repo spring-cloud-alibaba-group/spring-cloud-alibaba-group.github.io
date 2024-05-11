@@ -1,26 +1,14 @@
 ---
 import BaseContainer from '@components/common/BaseContainer.astro';
-import Pagination from "@components/common/Pagination.astro";
 import SimpleCard from "@components/markdownSet/SimpleCard.astro";
-
-interface Post {
-    slug: string;
-    body: string;
-    collection: string;
-    data: {
-        title: string;
-        description: string;
-        date: string;
-        keywords?: any[];
-    };
-};
+import type { Post } from '@/types';
 
 interface Props {
     pageList: Post[];
-    allPages?: string[];
+    source?: string;
 }
 
-const { pageList, allPages = [], class: className = "", source='blog' } = Astro.props;
+const { pageList, source='blog' } = Astro.props as Props;
 
 // Get word for mdx
 const getExcerpt = (content, length = 200, defaultExcerpt = '') => {
@@ -57,7 +45,7 @@ if(pageList && pageList.length) {
                     pageList.map(post=>{
                         return (
                             <a 
-                                class="no-underline font-normal block mb-[24px] pagelist-a"
+                                class="no-underline font-normal block mb-[24px] pagelist-a hover:font-bold duration-100"
                                 href={`#${post.slug}`}
                             >
                                 { post.data.title }

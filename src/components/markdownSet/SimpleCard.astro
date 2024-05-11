@@ -3,7 +3,7 @@ import { Button } from "@serverless-cd/goat-ui";
 import { useTranslations } from "@i18n/util";
 
 function formatDate(dateString) {
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
   const date = new Date(dateString);
   return new Intl.DateTimeFormat('en-US', options).format(date);
 }
@@ -23,18 +23,16 @@ export type Props = {
       keywords?: any[];
     };
   };
-  posterWidth?: string;
-  type?: string;
-  index?: number;
+  class?: string;
   useAnchor?: boolean;
 };
 
-const { post, source, posterWidth, type = "blog",index = 0, class: className = "", useAnchor=false, } = Astro.props;
+const { post, source, class: className = "", useAnchor=false, } = Astro.props;
 ---
 
 <div class={"card h-[332px] p-[24px] shadow-none w-full flex " + className}>
     <!-- 锚点 -->
-    {useAnchor?<a name={post.slug} class={"absolute z-[-100] top-[-4rem]"}></a>:null}
+    {useAnchor?<a id={post.slug} class={"absolute z-[-100] top-[-4rem]"}></a>:null}
     
     <p class="text-gray-07 text-xs font-normal">
         {formatDate(post.data.date)}

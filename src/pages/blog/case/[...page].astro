@@ -3,12 +3,11 @@ import type { GetStaticPathsOptions } from "astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import Pagination from "@components/common/Paginate/Pagination.astro";
-import BlogCard from "@components/markdownSet/Card.astro";
 import BlogTop from "@components/markdownSet/BlogTop.astro";
-import BaseContainer from "@components/common/BaseContainer.astro";
 import { useTranslations } from "@i18n/util";
 import { BLOG_CATEGORY } from "@/constant";
 import SimpleContainer from '@components/markdownSet/SimpleContainer.astro';
+import type { Post } from '@/types';
 const t = useTranslations(Astro);
 
 // 分页数据在page参数中传递
@@ -48,8 +47,7 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
         class="flex flex-col items-center gap-20 py-8 lg:p-12 xl:p-20 bg-error"
     >
         <SimpleContainer 
-            pageList={page.data}
-            allPages={allPages}
+            pageList={page.data as Post[]}
         />
 
         <Pagination restRoute allPages={allPages} page={page} class="mx-auto" />

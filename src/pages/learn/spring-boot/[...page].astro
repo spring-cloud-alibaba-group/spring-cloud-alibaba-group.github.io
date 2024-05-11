@@ -7,23 +7,11 @@ import BlogTop from "@components/markdownSet/BlogTop.astro";
 import { useTranslations } from "@i18n/util";
 import SimpleContainer from '@components/markdownSet/SimpleContainer.astro';
 import { LEARN_CATEGORY } from "@/constant";
+import type { Post } from '@/types';
 const t = useTranslations(Astro);
-interface Post {
-    slug: string;
-    body: string;
-    collection: string;
-    data: {
-        title: string;
-        description: string;
-        date: string;
-        keywords?: any[];
-    };
-}
 
 // 分页数据在page参数中传递
 const { page } = Astro.props;
-
-const posts = await getCollection("blog");
 
 const allPages = [...Array(page.lastPage).keys()].map((num) => {
     return `/learn/spring-boot${num === 0 ? "" : `/${String(num + 1)}`}`;
@@ -56,8 +44,7 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
         class="mx-auto flex flex-col items-center gap-20 py-8 lg:p-12 xl:p-20 bg-error"
     >
         <SimpleContainer 
-            pageList={page.data}
-            allPages={allPages}
+            pageList={page.data as Post[]}
             source="learn"
         />
 
