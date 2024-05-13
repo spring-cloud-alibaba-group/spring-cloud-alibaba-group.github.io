@@ -292,7 +292,7 @@ export default {
 	'learn.article.spring-boot': 'Spring Boot',
 	'learn.article.spring-cloud':'Spring Cloud',
 	'learn.article.spring-cloud-alibaba':'Spring Cloud Alibaba',
-	'wuyi.meet-professor.title': "专家答疑",
+	'wuyi.meet-professor.title': "专家答疑审阅后归档",
 	'page.blog.card.website': 'SCA 博客',
 	'learn.activity.explore':'探索SCA学习板块，了解微服务开发的一站式解决方案。',
 	
