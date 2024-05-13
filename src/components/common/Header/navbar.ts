@@ -58,7 +58,7 @@ export default [
     activePath: ["solutions"],
   },
   {
-    label: "专家答疑审阅后归档",
+    label: "专家答疑",
     translations: {
       en: "wuyi",
     },
