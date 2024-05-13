@@ -108,9 +108,21 @@ export default defineConfig({
 	// TODO: 梳理redirects
 	redirects: {
 		'/zh-cn/': '/',
-		'/zh-cn/[...slug]':'/[...slug]',
+		'/zh-cn/[...slug]': '/[...slug]',
 		'/en-us/': '/en/',
+		'/en-us/[...slug]': '/en/[...slug]',
 		'/[...slug].html': '/[...slug]',
+		'/docs/2022.0.0.0/[...slug]': '/docs/2022/[...slug]',
+		'/docs/next/[...slug]': '/docs/2023/[...slug]',
+		'/docs/2022.0.0.0-RC1/[...slug]': '/docs/2022/[...slug]',
+		'/docs/2022.0.0.0-RC2/[...slug]': '/docs/2022/[...slug]',
+		'/docs/2021.0.5.0/[...slug]': '/docs/2021/[...slug]',
+		'/docs/2021.0.4.0/[...slug]': '/docs/2021/[...slug]',
+		'/docs/2021.0.1.0/[...slug]': '/docs/2021/[...slug]',
+		'/docs/2.2.10-RC1/[...slug]': '/docs/2.2.x/[...slug]',
+		'/docs/2.2.9.RELEASE/[...slug]': '/docs/2.2.x/[...slug]',
+		'/docs/2.2.8.RELEASE/[...slug]': '/docs/2.2.x/[...slug]',
+		'/versions': '/docs/2023/overview/what-is-sca/',
 		'/docs/': '/docs/2023/overview/what-is-sca/',
 	}
 });
