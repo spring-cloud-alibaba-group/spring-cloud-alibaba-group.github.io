@@ -158,3 +158,46 @@ let height,
     }
   }
 </style>
+
+<script>
+    function addCopilot() {
+        const copilotJSScript = document.createElement("script");
+        copilotJSScript.type = "text/javascript";
+        copilotJSScript.src = "https://g.alicdn.com/cm-design/copilot-booter/0.0.23/copilot-booter.js";
+        copilotJSScript.addEventListener("load", function () {
+            if (window.CNPilot) {
+                window.CNPilot.mounted({
+                    CNPilot_OPEN_SOURCE: ["sca.aliyun.com"],
+                    CNPilot_OPEN_SOURCE_API: "https://ai.nacos.io",
+                    CNPilot_OPEN_SOURCE_PRODUCT_NAME: "sca",
+                    showFloatICON: true,
+                    globalStyle: {
+                        top: "64px",
+                    },
+                    entryIconProps: {
+                        "position-type": "updown",
+                        "icon-hover-text": "专家答疑",
+                        "icon-style": {
+                            color: "red", 
+                            background: "white", 
+                            border: "2px solid red", 
+                            borderRadius: "20px"
+                        }
+                    },
+                    headerProps: {
+                    closeIcon: { show: true },
+                    titleText: "AI答疑专家",
+                    },
+                });
+            }
+        });
+        document.body.append(copilotJSScript);
+    };
+
+    addCopilot();
+
+    document.addEventListener("astro:page-load", function () {
+        if (window.CNPilot) window.CNPilot.unmounted();
+        addCopilot();
+    });
+</script>
