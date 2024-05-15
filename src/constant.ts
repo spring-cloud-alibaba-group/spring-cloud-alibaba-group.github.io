@@ -336,18 +336,18 @@ export const WUYI_CATEGORY = [
 ];
 
 export const HEADER_ACTIVITY_CARD = [
-  {
-    "collection": "blog",
-    "slug": "news/ospp-2024",
-    "description": "Spring Cloud Alibaba 编程之夏报名启动！",
-    "imageUrl": "https://img.alicdn.com/imgextra/i2/O1CN01Gh8wq71CApBVywPq3_!!6000000000041-0-tps-800-1000.jpg",
-  },
-  {
-    "collection": "blog",
-    "slug": "news/attend-a-meeting",
-    "description": "参加社区双周会！",
-    "imageUrl": "https://img.alicdn.com/imgextra/i2/O1CN01Gh8wq71CApBVywPq3_!!6000000000041-0-tps-800-1000.jpg",
-  }
+    {
+        "collection": "blog",
+        "slug": "news/ospp-2024",
+        "description": "Spring Cloud Alibaba 编程之夏报名启动！",
+        "imageUrl": "https://img.alicdn.com/imgextra/i2/O1CN01Gh8wq71CApBVywPq3_!!6000000000041-0-tps-800-1000.jpg"
+    },
+    {
+        "collection": "blog",
+        "slug": "news/attend-a-meeting",
+        "description": "参加社区双周会！",
+        "imageUrl": "https://img.alicdn.com/imgextra/i2/O1CN01Gh8wq71CApBVywPq3_!!6000000000041-0-tps-800-1000.jpg"
+    }
 ];
 
 export const HEADER_LEARN_CARD = [
