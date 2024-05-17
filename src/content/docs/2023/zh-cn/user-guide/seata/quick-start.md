@@ -200,7 +200,7 @@ service.vgroupMapping.storage-service-tx-group=default
 </dependency>
 ```
 
-示例可以参考 [Seata-Example](https://github.com/alibaba/spring-cloud-alibaba/tree/2022.x/spring-cloud-alibaba-examples/seata-example)。
+示例可以参考 [Seata-Example](https://github.com/alibaba/spring-cloud-alibaba/tree/2023.x/spring-cloud-alibaba-examples/seata-example/readme-zh.md)。
 
 2. 启动 Seata Server。
 
