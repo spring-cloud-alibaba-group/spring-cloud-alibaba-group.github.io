@@ -26,16 +26,16 @@ Spring Cloud Alibaba AI 目前基于 [Spring AI 0.8.1](https://docs.spring.io/sp
 
 以下是当前官方提供的 Spring Cloud Alibaba AI 应用开发示例，可以点击查看：
 
-- [聊天对话应用](https://github.com/alibaba/spring-cloud-alibaba/tree/2023.x/spring-cloud-alibaba-examples/spring-cloud-ai-example/src/main/java/com/alibaba/cloud/ai/example/tongyi/service/impl/helloworld)
-- [文生图应用](https://github.com/alibaba/spring-cloud-alibaba/tree/2023.x/spring-cloud-alibaba-examples/spring-cloud-ai-example/src/main/java/com/alibaba/cloud/ai/example/tongyi/service/impl/images)
-- [文生语音应用](https://github.com/alibaba/spring-cloud-alibaba/tree/2023.x/spring-cloud-alibaba-examples/spring-cloud-ai-example/src/main/java/com/alibaba/cloud/ai/example/tongyi/service/impl/audio)
-- [模型输出解析OutputParser（实现从 String 到自动 POJO 映射）](https://github.com/alibaba/spring-cloud-alibaba/tree/2023.x/spring-cloud-alibaba-examples/spring-cloud-ai-example/src/main/java/com/alibaba/cloud/ai/example/tongyi/service/impl/output)
-- [使用 Prompt Template](https://github.com/alibaba/spring-cloud-alibaba/tree/2023.x/spring-cloud-alibaba-examples/spring-cloud-ai-example/src/main/java/com/alibaba/cloud/ai/example/tongyi/service/impl/prompttemplate)
-- [让 AI 模型接入外部数据（Prompt Stuff）](https://github.com/alibaba/spring-cloud-alibaba/tree/2023.x/spring-cloud-alibaba-examples/spring-cloud-ai-example/src/main/java/com/alibaba/cloud/ai/example/tongyi/service/impl/stuff)
+- [聊天对话应用](https://github.com/alibaba/spring-cloud-alibaba/tree/2023.x/spring-cloud-alibaba-examples/ai-example/spring-cloud-ai-example/src/main/java/com/alibaba/cloud/ai/example/tongyi/service/impl/helloworld)
+- [文生图应用](https://github.com/alibaba/spring-cloud-alibaba/tree/2023.x/spring-cloud-alibaba-examples/ai-example/spring-cloud-ai-example/src/main/java/com/alibaba/cloud/ai/example/tongyi/service/impl/images)
+- [文生语音应用](https://github.com/alibaba/spring-cloud-alibaba/tree/2023.x/spring-cloud-alibaba-examples/ai-example/spring-cloud-ai-example/src/main/java/com/alibaba/cloud/ai/example/tongyi/service/impl/audio)
+- [模型输出解析OutputParser（实现从 String 到自动 POJO 映射）](https://github.com/alibaba/spring-cloud-alibaba/tree/2023.x/spring-cloud-alibaba-examples/ai-example/spring-cloud-ai-example/src/main/java/com/alibaba/cloud/ai/example/tongyi/service/impl/output)
+- [使用 Prompt Template](https://github.com/alibaba/spring-cloud-alibaba/tree/2023.x/spring-cloud-alibaba-examples/ai-example/spring-cloud-ai-example/src/main/java/com/alibaba/cloud/ai/example/tongyi/service/impl/prompttemplate)
+- [让 AI 模型接入外部数据（Prompt Stuff）](https://github.com/alibaba/spring-cloud-alibaba/tree/2023.x/spring-cloud-alibaba-examples/ai-example/spring-cloud-ai-example/src/main/java/com/alibaba/cloud/ai/example/tongyi/service/impl/stuff)
 
 ## 体验第一个Spring AI应用开发
 
-本项目演示如何使用 `spring-cloud-starter-alibaba-ai` 完成一个在线聊天 AI 应用，底层使用通义千问提供的模型服务。可在此查看 [完整示例源码](https://github.com/alibaba/spring-cloud-alibaba/tree/2023.x/spring-cloud-alibaba-examples/spring-cloud-ai-example/src/main/java/com/alibaba/cloud/ai/example/tongyi/service/impl/helloworld)。
+本项目演示如何使用 `spring-cloud-starter-alibaba-ai` 完成一个在线聊天 AI 应用，底层使用通义千问提供的模型服务。可在此查看 [完整示例源码](https://github.com/alibaba/spring-cloud-alibaba/tree/2023.x/spring-cloud-alibaba-examples/ai-example/spring-cloud-ai-example/src/main/java/com/alibaba/cloud/ai/example/tongyi/service/impl/helloworld)。
 
 ### 开发聊天对话应用
 
