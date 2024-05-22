@@ -2,7 +2,8 @@
 import BaseContainer from '@components/common/BaseContainer.astro';
 import SimpleCard from "@components/markdownSet/SimpleCard.astro";
 import type { Post } from '@/types';
-
+import { useTranslations } from "@i18n/util";
+const t = useTranslations(Astro);
 interface Props {
     pageList: Post[];
     source?: string;
@@ -37,15 +38,17 @@ if(pageList && pageList.length) {
     <div class="max-w-[200px] min-w-[200px] hidden 2xl:block xl:block lg:block relative">
         <div class="sticky top-[100px]">
             {pageList && pageList.length? 
-                <div class="text-lg text-gray-08 mb-[32px]">文章</div>
+                <div class="text-lg text-gray-08 mb-[32px]">
+                    {t("commmon.header.comm.article")}
+                </div>
                 :null
             }
-            <div class="text-[16px] text-gray-14">
+            <div class="text-[16px] text-gray-14 user-config-h-list">
                 {
                     pageList.map(post=>{
                         return (
                             <a 
-                                class="no-underline font-normal block mb-[24px] pagelist-a hover:font-bold duration-100"
+                                class="no-underline font-normal block mb-[24px] pagelist-a hover:font-bold duration-100 break-all"
                                 href={`#${post.slug}`}
                             >
                                 { post.data.title }
@@ -144,5 +147,12 @@ if(pageList && pageList.length) {
         ul li:first-child .title {
             font-size: 1.563em;
         }
+    }
+    .user-config-h-list {
+        max-height: calc(100vh - 180px);
+        overflow: scroll;
+    }
+    .break-all: {
+        word-break: break-all;
     }
 </style>
