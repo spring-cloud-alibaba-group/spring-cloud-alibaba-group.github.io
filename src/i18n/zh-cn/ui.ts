@@ -18,6 +18,7 @@ export default {
 	'commmon.header.comm.ebook': '电子书',
 	'commmon.header.comm.download': '版本下载',
 	'commmon.header.comm.shortcut': '阅读文章',
+	'commmon.header.comm.article': '文章',
 	'commmon.header.comm.leftcut': '服务为中心（例如微服务或云原生）架构的关键。',
 	'commmon.header.comm.rightcut': '一个易于使用的构建云原生应用程序的平台。',
 	'commmon.header.comm.contact': '联系我们',
