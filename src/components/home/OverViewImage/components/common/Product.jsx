@@ -27,8 +27,10 @@ export const Product = ({
     if (!hasFetchedData) {
       setHovering(true);
       const apiLink = hoverContent?.links?.Github?.apiLink;
-      const fetchedData = await sendFetch(apiLink);
-      setData(fetchedData);
+      if(apiLink) {
+        const fetchedData = await sendFetch(apiLink);
+        setData(fetchedData);
+      };
       setHasFetchedData(true); // 更新标志，表示数据已被获取
     }
   };
@@ -52,13 +54,13 @@ export const Product = ({
       style={{
         marginTop: "0 !important",
       }}
+      onMouseLeave={onMouseLeave}
+      onMouseEnter={onMouseEnter}
+      onTouchStart={onMouseEnter}
+      onTouchEnd={onMouseLeave}
     >
       <div
         class="w-16 h-16 "
-        onMouseLeave={onMouseLeave}
-        onMouseEnter={onMouseEnter}
-        onTouchStart={onMouseEnter}
-        onTouchEnd={onMouseLeave}
         ref={triggerRef}
       >
         {image && !logo && (
