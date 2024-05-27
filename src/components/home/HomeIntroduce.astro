@@ -1,8 +1,9 @@
 ---
 import { useTranslations, isChinese } from "@i18n/util";
-import StarAndFork from "./StarAndFork.astro";
+import StarAndForkV2 from "./StarAndForkV2/index.jsx";
 import Carousel from "./Carousel.astro";
 import ProductDisplayCard from "@components/home/ProductDisplayCard.astro";
+import { SITE } from "@utils/config";
 
 const t = useTranslations(Astro);
 const ifzh = isChinese(Astro);
@@ -47,7 +48,7 @@ const ifzh = isChinese(Astro);
                 <div class=`title leading-[5rem] text-neutral mb-8 ${ifzh ? 'text-[3.75rem]' : 'text-[4rem]'}`>
                     {t("home.introduce.title")}
                 </div>
-                <StarAndFork />
+                <StarAndForkV2 SITE={SITE} client:load/>
             </div>
         </home-introduce>
     </Carousel>
