@@ -25,12 +25,13 @@ const StarAndForkV2 = (props) =>{
         <star-and-fork class="shortcut flex">
             <Button 
 				size="large"
-				class="rounded-3xl"
+				class="rounded-3xl text-neutral"
 				href={SITE.githubUrl}  
 				target="_blank"
                 theme="secondary"  
+                iconClass="text-neutral"
 			>
-                <Star />
+                <Star class="text-neutral"/>
                 <span class="text-[0.875rem] leading-4 ml-2 text-neutral">{startCount}</span>
 			</Button>
 
@@ -40,8 +41,9 @@ const StarAndForkV2 = (props) =>{
 				href={`${SITE.githubUrl}/fork`}
 				target="_blank"
 				theme="primary"
+                iconClass="text-base-100"
 			>
-				<Fork theme="light" />
+				<Fork theme="light" class="text-base-100"/>
 				<span class="ml-2 text-base-100">{forkCount}</span>
 			</Button>
         </star-and-fork>
