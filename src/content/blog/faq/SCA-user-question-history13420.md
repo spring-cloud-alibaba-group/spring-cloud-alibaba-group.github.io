@@ -89,7 +89,7 @@ spring.datasource.druid.stat-view-servlet.login-password=admin
 
 ## 参考链接 ：
 
-*专家经验:spring boot 与 alibaba druid的整合 
+*专家经验：spring boot 与 alibaba druid的整合 
 
 
  <font color="#949494">---------------</font> 
