@@ -45,11 +45,11 @@ Spring Cloud Alibaba 是一套微服务解决方案，它为基于 Spring Cloud 
 
 ## 参考链接 ：
 
-*专家经验:Nacos 融合 Spring Cloud，成为注册配置中心 
+*专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
  
- *专家经验:spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
+ *专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
  
- *专家经验:spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
+ *专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
 
 
  <font color="#949494">---------------</font> 

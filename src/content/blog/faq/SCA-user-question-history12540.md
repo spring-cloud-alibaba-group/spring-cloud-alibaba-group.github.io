@@ -37,7 +37,7 @@ keywords: ["spring-cloud-alibaba","springboot","最新版本"]
 
 ## 参考链接 ：
 
-*专家经验:springboot sca 整合redis的具体方法 
+*专家经验：springboot sca 整合redis的具体方法 
 
 
  <font color="#949494">---------------</font> 

@@ -76,9 +76,9 @@ keywords: ["spring-cloud-alibaba","nacos-config","配置"]
 
 ## 参考链接 ：
 
-*专家经验:Nacos 融合 Spring Cloud，成为注册配置中心 
+*专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
  
- *专家经验:spring 怎么读？ 
+ *专家经验：spring 怎么读？ 
 
 
  <font color="#949494">---------------</font> 
