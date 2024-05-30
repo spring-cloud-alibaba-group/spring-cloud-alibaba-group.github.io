@@ -16,6 +16,16 @@ export default [
     activePath: ["/docs"],
   },
   {
+    label: "企业版 SCA",
+    translations: {
+      en: "SCA CLOUD",
+    },
+    trigger: "click",
+    target: "_self",
+    route: "/cloud/",
+    activePath: ["/cloud"],
+  },
+  {
     label: "社区",
     translations: {
       en: "COMMUNITY",
@@ -45,17 +55,6 @@ export default [
     position: "absolute",
     relativePosition: 'page',
     activePath: ["/learn"],
-  },
-  {
-    label: "解决方案",
-    translations: {
-      en: "SOLUTIONS",
-    },
-    trigger: "hover",
-    slot: SolutionsMenu,
-    position: "absolute",
-    relativePosition: 'page',
-    activePath: ["solutions"],
   },
   {
     label: "专家答疑",

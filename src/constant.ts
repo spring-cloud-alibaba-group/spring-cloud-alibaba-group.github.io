@@ -1,4 +1,4 @@
-import type { Customer, Solution, ChooseReason, CommunityLink, ContributeLink } from "@/types"
+import type { Customer, Solution, ChooseReason, CommunityLink, ContributeLink, CloudIntroduceCard } from "@/types"
 import { getEntries } from "astro:content";
 
 // Place any global data in this file.
@@ -587,5 +587,57 @@ export const SOLUTIONS_CARD_LIST = [
     title: "commmon.header.microservices.application.service",
     description: "commmon.header.microservices.application.service.describe",
     href: "https://help.aliyun.com/zh/arms/?spm=5176.8140086.J_5253785160.8.3e87be45mtM0kX",
+  },
+];
+
+// Cloud页面价格版的卡片内容
+export const getCloudIntroduceData = (t: Function): CloudIntroduceCard[] => [
+  {
+    title: t("cloud.introduce.free.pkg"),
+    price: t("cloud.introduce.free.price"),
+    unit: "",
+    priceDesc: t("cloud.introduce.free.feature"),
+    linkName: t("cloud.introduce.free.link"),
+    link: "https://free.aliyun.com/?searchKey=sentinel&spm=sca.cloud.topbar.0.0.0",
+    feature: [
+      t("cloud.introduce.free.discount.1"),
+      t("cloud.introduce.free.discount.2"),
+    ],
+  },
+  {
+    title: t("cloud.introduce.develop.pkg"),
+    price: t("cloud.introduce.develop.price"),
+    priceDesc: t("cloud.introduce.develop.feature"),
+    priceSupply: t("cloud.introduce.develop.price_supply"),
+    unit: "/MONTH",
+    linkName: t("cloud.introduce.develop.link"),
+    link: "https://www.aliyun.com/product/aliware/mse?spm=sca.cloud.topbar.0.0.0",
+    feature: [
+      t("cloud.introduce.develop.discount.1"),
+      t("cloud.introduce.develop.discount.2"),
+    ],
+  },
+  {
+    title: t("cloud.introduce.serverless.pkg"),
+    priceDesc: t("cloud.introduce.serverless.feature"),
+    price: t("cloud.introduce.serverless.price"),
+    priceSupply: t("cloud.introduce.serverless.price_supply"),
+    unit: "/HOUR",
+    linkName: t("cloud.introduce.serverless.link"),
+    link: "https://www.aliyun.com/product/aliware/mse?spm=sca.cloud.topbar.0.0.0",
+    feature: [t("cloud.introduce.serverless.discount.1")],
+  },
+  {
+    title: t("cloud.introduce.regular.pkg"),
+    priceDesc: t("cloud.introduce.regular.feature"),
+    price: t("cloud.introduce.regular.price"),
+    priceSupply: t("cloud.introduce.regular.price_supply"),
+    unit: "/MONTH",
+    linkName: t("cloud.introduce.regular.link"),
+    link: "https://www.aliyun.com/product/aliware/mse?spm=sca.cloud.topbar.0.0.0",
+    feature: [
+      t("cloud.introduce.regular.discount.1"),
+      t("cloud.introduce.regular.discount.2"),
+    ],
   },
 ];
