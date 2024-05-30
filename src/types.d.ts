@@ -65,3 +65,14 @@ export interface Post {
   };
   excerpt?: string;
 };
+
+export interface CloudIntroduceCard {
+    title: UiKeys,
+    priceDesc: UiKeys,
+    price: UiKeys,
+    priceSupply?: UiKeys,
+    unit?: string,
+    linkName: UiKeys,
+    link: string,
+    feature: UiKeys[],
+};
