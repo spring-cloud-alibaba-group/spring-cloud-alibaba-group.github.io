@@ -2,7 +2,7 @@
 id: "question-history-14804"
 title: "spring 微服务 推荐用什么产品？ sca(spring-cloud-alibaba)"
 date: "2024-05-30"
-category: expertConsultation
+category: "expertConsultation"
 description: "在选择Spring Cloud Alibaba用于Spring微服务时，主要考虑以下几点：1. **技术栈整合**：Spring Cloud Alibaba作为Spring Cloud生态的一部分，能够无缝融入Spring Boot和Spring Cloud应用中，对于已经在使用这些技术的团队，可以"
 ---
 

@@ -2,7 +2,7 @@
 id: "question-history-13360"
 title: "Spring Cloud alibaba(SCA)整合 Nacos 详解 sca(spring-cloud-alibaba)"
 date: "2024-05-13"
-category: expertConsultation
+category: "expertConsultation"
 description: "Sca（Spring Cloud Alibaba）整合Nacos主要涉及两个核心功能：配置管理和服务发现。下面将基于提供的知识进行详细解析与步骤说明。### 配置管理 - 使用Nacos Config1. **添加依赖**：在Spring Cloud项目中加入`spring-cloud-starte"
 tags: ["Nacos","整合"]
 keywords: ["Nacos","整合"]

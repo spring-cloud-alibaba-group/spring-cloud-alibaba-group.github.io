@@ -2,7 +2,7 @@
 id: "question-history-14810"
 title: "springcloud 2023.x的rocketmq 配置 sca(spring-cloud-alibaba)"
 date: "2024-05-30"
-category: expertConsultation
+category: "expertConsultation"
 description: "在Spring Cloud Alibaba体系中，针对Spring Cloud 2023.x版本配置RocketMQ，尽管直接的示例可能聚焦于较早版本，但基础配置逻辑和步骤依然适用。以下是根据现有知识整理的配置指南：### 1. 确保环境准备- **安装RocketMQ Server**：如果本地未"
 ---
 

@@ -2,7 +2,7 @@
 id: "question-history-13940"
 title: "springboot集成ai插件的具体做法 sca(spring-cloud-alibaba)"
 date: "2024-05-27"
-category: expertConsultation
+category: "expertConsultation"
 description: "要集成Sca(Spring Cloud Alibaba) SpringBoot项目与AI插件，特别是利用Spring AI和Spring Cloud Alibaba AI，您可以遵循以下步骤：### 分析问题原因根据提供的知识，我们知道Spring Cloud Alibaba AI是专为Spring"
 tags: ["spring-cloud-alibaba","springboot","ai插件","集成"]
 keywords: ["spring-cloud-alibaba","springboot","ai插件","集成"]

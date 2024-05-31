@@ -2,7 +2,7 @@
 id: "question-history-12570"
 title: "springboot脚手架 sca(spring-cloud-alibaba)"
 date: "2024-04-28"
-category: expertConsultation
+category: "expertConsultation"
 description: "在关于`sca(spring-cloud-alibaba)`与`springboot脚手架`的问题时，我们可以依据已有的知识进行分析并给出指导。### 分析问题原因`sca(spring-cloud-alibaba)`是基于Spring Cloud的一套微服务解决方案，提供了包括服务发现、配置中心、"
 tags: ["spring-cloud-alibaba","springboot","脚手架"]
 keywords: ["spring-cloud-alibaba","springboot","脚手架"]

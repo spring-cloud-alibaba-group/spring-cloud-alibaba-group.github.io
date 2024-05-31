@@ -2,7 +2,7 @@
 id: "question-history-12507"
 title: "idea创建springboot项目 sca(spring-cloud-alibaba)"
 date: "2024-05-27"
-category: expertConsultation
+category: "expertConsultation"
 description: "在IntelliJ IDEA中创建一个集成Spring Cloud Alibaba的Spring Boot项目，可以按照以下步骤操作：1. **访问Spring Initializr Alibaba**: 首先，打开浏览器访问[Spring Initializr Alibaba](https://s"
 tags: ["spring-cloud-alibaba","idea","springboot","项目创建"]
 keywords: ["spring-cloud-alibaba","idea","springboot","项目创建"]

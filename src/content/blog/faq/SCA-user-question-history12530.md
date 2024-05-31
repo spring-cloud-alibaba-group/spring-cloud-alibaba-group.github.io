@@ -2,7 +2,7 @@
 id: "question-history-12530"
 title: "springboot 多线程 sca(spring-cloud-alibaba)"
 date: "2024-04-28"
-category: expertConsultation
+category: "expertConsultation"
 description: "在Spring Cloud Alibaba (SCA)与SpringBoot环境下实现多线程功能，主要依赖于Spring Framework内置的多线程支持及Java自身的并发工具类。虽然直接的多线程使用方法在提供的参考资料中未被详细阐述，但我们可以基于Spring Boot和Java的标准实践来指"
 tags: ["spring-cloud-alibaba","springboot","多线程"]
 keywords: ["spring-cloud-alibaba","springboot","多线程"]

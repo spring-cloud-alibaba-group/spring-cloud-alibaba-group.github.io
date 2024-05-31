@@ -2,7 +2,7 @@
 id: "question-history-12501"
 title: "springboot rabbitmq sca(spring-cloud-alibaba)"
 date: "2024-04-28"
-category: expertConsultation
+category: "expertConsultation"
 description: "在Spring Cloud Alibaba (SCA)与Spring Boot集成使用RabbitMQ时，尽管参考内容未直接提供关于RabbitMQ的配置与使用步骤，但我们可以基于Spring Boot的标准实践和SCA的整合能力，指导如何在这样的环境中配置并使用RabbitMQ。以下是一些建议的步"
 tags: ["spring-cloud-alibaba","springboot","rabbitmq"]
 keywords: ["spring-cloud-alibaba","springboot","rabbitmq"]

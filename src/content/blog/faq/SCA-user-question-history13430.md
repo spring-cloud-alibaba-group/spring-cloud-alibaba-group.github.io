@@ -2,7 +2,7 @@
 id: "question-history-13430"
 title: "spring-cloud-starter-alibaba-nacos-config 对应 nacos服务端 版本 sca(spring-cloud-alibaba)"
 date: "2024-05-13"
-category: expertConsultation
+category: "expertConsultation"
 description: "根据提供的知识内容，我们可以确定`spring-cloud-starter-alibaba-nacos-config`对应Nacos服务端版本的关系如下：1. 在Spring Cloud Alibaba 2023.0.1.0版本中，对应的Nacos Version为2.3.2。2. 在其他版本如20"
 tags: ["spring-cloud-alibaba","nacos","版本"]
 keywords: ["spring-cloud-alibaba","nacos","版本"]

@@ -2,7 +2,7 @@
 id: "question-history-13420"
 title: "springboot alibaba druid数据源配置 sca(spring-cloud-alibaba)"
 date: "2024-05-13"
-category: expertConsultation
+category: "expertConsultation"
 description: "在Spring Cloud Alibaba项目中集成Druid数据源时，可以遵循以下步骤进行配置，结合提供的知识内容，这里将给出详细指导：### 1. 添加依赖首先，确保你的Spring Boot项目中包含了Druid数据源的起步依赖。这可以通过在Maven或Gradle构建文件中添加相应的依赖实现"
 tags: ["spring-cloud-alibaba","springboot","alibaba","druid","数据源配置"]
 keywords: ["spring-cloud-alibaba","springboot","alibaba","druid","数据源配置"]

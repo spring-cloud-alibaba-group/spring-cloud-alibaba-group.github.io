@@ -2,7 +2,7 @@
 id: "question-history-14600"
 title: "SpringCloud与Dubbo的比较与适用场景 sca(spring-cloud-alibaba)"
 date: "2024-05-27"
-category: expertConsultation
+category: "expertConsultation"
 description: "在选择Spring Cloud Alibaba与Dubbo时，需根据项目的技术栈、服务治理需求、性能规模以及社区生态等多方面因素综合考虑：1. **技术栈整合：**   - **Spring Cloud Alibaba**与Spring Boot和Spring Cloud生态高度集成，适用于已采用S"
 tags: ["Dubbo","比较","适用场景"]
 keywords: ["Dubbo","比较","适用场景"]

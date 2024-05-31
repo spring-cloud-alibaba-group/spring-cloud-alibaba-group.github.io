@@ -2,7 +2,7 @@
 id: "question-history-12509"
 title: "springboot单元测试 sca(spring-cloud-alibaba)"
 date: "2024-04-28"
-category: expertConsultation
+category: "expertConsultation"
 description: "在Spring Cloud Alibaba项目中进行Spring Boot单元测试时，可以遵循以下步骤：1. **准备工作**：   - 确保你的项目已经集成了Spring Boot Test依赖，这将为你提供丰富的测试工具和注解。   - 引入Spring Cloud Alibaba相关依赖，以确"
 tags: ["spring-cloud-alibaba","springboot","单元测试"]
 keywords: ["spring-cloud-alibaba","springboot","单元测试"]
