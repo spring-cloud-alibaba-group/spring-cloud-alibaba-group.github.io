@@ -63,5 +63,5 @@ AiResponse 由 Generation 对象列表组成，每个对象都保存相应提示
 
 
 
-关于 Spring Cloud Alibaba AI 的具体用法，请参考 [官方源码示例](https://github.com/alibaba/spring-cloud-alibaba/tree/2023.x/spring-cloud-alibaba-examples/spring-cloud-ai-example)。
+关于 Spring Cloud Alibaba AI 的具体用法，请参考 [官方源码示例](https://github.com/alibaba/spring-cloud-alibaba/tree/2023.x/spring-cloud-alibaba-examples/ai-example/spring-cloud-ai-example)。
 

@@ -99,7 +99,7 @@ spring:
 
 #### 聊天对话体验
 
-官方 Example：https://github.com/alibaba/spring-cloud-alibaba/tree/2023.x/spring-cloud-alibaba-examples/spring-cloud-ai-example
+官方 Example：https://github.com/alibaba/spring-cloud-alibaba/tree/2023.x/spring-cloud-alibaba-examples/ai-example/spring-cloud-ai-example
 
 ```java
 public class ChatService {
