@@ -65,7 +65,7 @@ export default {
 	'commmon.footer.actions.edas': 'Cloud Service EDAS',
 	'commmon.actions.download': 'Download',
 
-	'home.title': 'Spring Cloud Alibaba official website | Spring AI Alibaba official website | Springboot | Microservices practical tutorial',
+	'home.title': 'Spring Cloud Alibaba official website | Spring AI + Alibaba TongYi Component | Springboot | Microservices practical tutorial',
 	'home.description': 'Spring Cloud Alibaba provides a one-stop solution for distributed application development. It contains all the components needed to develop distributed applications, making it easy for you to develop applications using the Spring Cloud microservices framework.',
 	'home.introduce.about': 'ABOUT SPRING CLOUD ALIBABA',
 	'home.introduce.title': 'Committed to providing an one-stop solution for microservice development!',
