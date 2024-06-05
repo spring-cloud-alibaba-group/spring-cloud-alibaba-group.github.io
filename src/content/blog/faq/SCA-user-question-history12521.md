@@ -2,17 +2,11 @@
 id: "question-history-12521"
 title: "springboot druid sca(spring-cloud-alibaba)"
 date: "2024-04-28"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) springboot druid"
+category: "expertConsultation"
+description: "在Sca（Spring Cloud Alibaba）与Spring Boot集成时，使用Druid作为数据库连接池是一个常见的需求。根据已有的知识内容，下面是如何在Spring Boot项目中集成Druid的详细步骤：1. **添加Druid依赖**   在你的`pom.xml`文件中，需要添加Dr"
 tags: ["spring-cloud-alibaba","springboot","druid"]
 keywords: ["spring-cloud-alibaba","springboot","druid"]
 ---
-
-## 用户问题 ： 
- springboot druid sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 在Sca（Spring Cloud Alibaba）与Spring Boot集成时，使用Druid作为数据库连接池是一个常见的需求。根据已有的知识内容，下面是如何在Spring Boot项目中集成Druid的详细步骤：
 
@@ -64,22 +58,6 @@ keywords: ["spring-cloud-alibaba","springboot","druid"]
    这样配置后，你可以通过访问`http://localhost:你的端口/druid`来查看Druid提供的监控页面，用以监控数据库连接池的状态。
 
 综上所述，集成Druid到Spring Boot项目中主要涉及添加依赖、配置数据源参数以及（可选地）配置监控功能。这些步骤确保了你的Spring Cloud Alibaba应用能够有效地利用Druid进行数据库访问管理。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：springboot 与测试类(springboot test )的集成方案 
- 
- *专家经验：sca 与 springboot 快速启动 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

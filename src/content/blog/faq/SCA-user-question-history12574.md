@@ -2,17 +2,11 @@
 id: "question-history-12574"
 title: "什么是springboot sca(spring-cloud-alibaba)"
 date: "2024-04-28"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) 什么是springboot"
+category: "expertConsultation"
+description: "Spring Boot 是一种基于 Spring 框架的快速开发框架，它旨在简化新 Spring 应用程序的初始设置和配置过程。在 Spring Cloud Alibaba (SCA) 的上下文中，Spring Boot 的核心优势依然保留，并且与 SCA 的集成使得构建微服务架构变得更加高效和便捷"
 tags: ["spring-cloud-alibaba","springboot","什么是"]
 keywords: ["spring-cloud-alibaba","springboot","什么是"]
 ---
-
-## 用户问题 ： 
- 什么是springboot sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 Spring Boot 是一种基于 Spring 框架的快速开发框架，它旨在简化新 Spring 应用程序的初始设置和配置过程。在 Spring Cloud Alibaba (SCA) 的上下文中，Spring Boot 的核心优势依然保留，并且与 SCA 的集成使得构建微服务架构变得更加高效和便捷。以下是关于 Spring Boot 在 SCA 环境下的概述：
 
@@ -27,24 +21,6 @@ Spring Boot 是一种基于 Spring 框架的快速开发框架，它旨在简化
 5. **测试友好**：Spring Boot 支持开箱即用的测试功能，允许开发者快速编写集成测试和单元测试，确保服务的健壮性。
 
 总结而言，Spring Boot 在 SCA 生态中扮演着基础而关键的角色，它不仅加速了微服务应用的开发进程，还通过其简化配置、自动装配和内嵌容器等特点，使得开发者能更加专注于业务逻辑的实现。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：sca 与 springboot 快速启动 
- 
- *专家经验：springboot 与测试类(springboot test )的集成方案 
- 
- *专家经验：springboot 整合jetty来提供servlet服务 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

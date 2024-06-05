@@ -2,17 +2,11 @@
 id: "question-history-12514"
 title: "springboot filter sca(spring-cloud-alibaba)"
 date: "2024-04-28"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) springboot filter"
+category: "expertConsultation"
+description: "在Spring Cloud Alibaba (Sca) 的 Spring Boot 应用中实现自定义 Filter（过滤器），主要涉及到Web层的请求处理，这与标准Spring Boot应用中的Filter配置方式相似。以下是基于已有知识的详细步骤和解释：### 分析问题原因自定义Filter通常用"
 tags: ["spring-cloud-alibaba","springboot","filter"]
 keywords: ["spring-cloud-alibaba","springboot","filter"]
 ---
-
-## 用户问题 ： 
- springboot filter sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 在Spring Cloud Alibaba (Sca) 的 Spring Boot 应用中实现自定义 Filter（过滤器），主要涉及到Web层的请求处理，这与标准Spring Boot应用中的Filter配置方式相似。以下是基于已有知识的详细步骤和解释：
 
@@ -90,22 +84,6 @@ public class CustomLoggingFilter implements Filter { /* ... */ }
 - **注册Filter的重要性**：通过配置注册Filter确保Spring Boot在启动时能够识别并加载自定义的Filter，而使用@Component和@Order是Spring Boot应用中更推荐的做法，因为它更加面向注解和自动化配置。
 
 以上步骤展示了如何在Sca集成的Spring Boot应用中添加自定义Filter，确保了该Filter能无缝融入现有的微服务架构中，执行特定的请求处理逻辑。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：springboot 与测试类(springboot test )的集成方案 
- 
- *专家经验：sca 与 springboot 快速启动 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

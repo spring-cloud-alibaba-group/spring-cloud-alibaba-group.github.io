@@ -2,17 +2,11 @@
 id: "question-history-12524"
 title: "springboot https sca(spring-cloud-alibaba)"
 date: "2024-04-28"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) springboot https"
+category: "expertConsultation"
+description: "在Spring Cloud Alibaba (SCA)与Spring Boot集成的场景中，要配置HTTPS，我们虽然没有直接的步骤在参考内容中，但可以根据常规的Spring Boot HTTPS配置方法进行指导。以下是配置HTTPS的基本步骤：### 步骤分析与配置说明：1. **生成SSL证书*"
 tags: ["spring-cloud-alibaba","springboot","https"]
 keywords: ["spring-cloud-alibaba","springboot","https"]
 ---
-
-## 用户问题 ： 
- springboot https sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 在Spring Cloud Alibaba (SCA)与Spring Boot集成的场景中，要配置HTTPS，我们虽然没有直接的步骤在参考内容中，但可以根据常规的Spring Boot HTTPS配置方法进行指导。以下是配置HTTPS的基本步骤：
 
@@ -56,22 +50,6 @@ keywords: ["spring-cloud-alibaba","springboot","https"]
 ### 结论：
 
 虽然参考内容没有直接提供关于SCA与Spring Boot集成HTTPS的详细步骤，但基于Spring Boot的标准HTTPS配置流程，您可以按照上述步骤进行配置。请根据实际需求调整配置细节，并确保理解每一步的作用，以便在遇到问题时能够有效调试。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：sca 与 springboot 快速启动 
- 
- *专家经验：springboot 与测试类(springboot test )的集成方案 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

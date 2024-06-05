@@ -2,17 +2,11 @@
 id: "question-history-12511"
 title: "springboot security sca(spring-cloud-alibaba)"
 date: "2024-04-28"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) springboot security"
+category: "expertConsultation"
+description: "在Spring Cloud Alibaba (SCA)与Spring Boot环境中集成Spring Security，主要是为了增强应用的安全性，实现认证与授权等功能。虽然直接关联的知识点未详细提供关于Spring Security的集成步骤，但基于Spring Boot和Spring Secur"
 tags: ["spring-cloud-alibaba","springboot","security"]
 keywords: ["spring-cloud-alibaba","springboot","security"]
 ---
-
-## 用户问题 ： 
- springboot security sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 在Spring Cloud Alibaba (SCA)与Spring Boot环境中集成Spring Security，主要是为了增强应用的安全性，实现认证与授权等功能。虽然直接关联的知识点未详细提供关于Spring Security的集成步骤，但基于Spring Boot和Spring Security的基本知识，我可以为您提供一个概括性的指导流程。请按照以下步骤操作：
 
@@ -102,22 +96,6 @@ keywords: ["spring-cloud-alibaba","springboot","security"]
    ```
 
 以上步骤概述了如何在基于Spring Cloud Alibaba的Spring Boot项目中集成Spring Security，包括依赖添加、基础配置及测试验证。请根据实际需求调整用户认证细节与权限设置。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：sca 与 springboot 快速启动 
- 
- *专家经验：springboot 与测试类(springboot test )的集成方案 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

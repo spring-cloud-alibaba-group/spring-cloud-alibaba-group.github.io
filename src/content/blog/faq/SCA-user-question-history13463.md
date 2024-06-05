@@ -2,17 +2,11 @@
 id: "question-history-13463"
 title: "spring-cloud-starter-alibaba-seata 如何使用 sca(spring-cloud-alibaba)"
 date: "2024-05-14"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) spring-cloud-starter-alibaba-seata 如何使用"
+category: "expertConsultation"
+description: "要在Spring Cloud Alibaba项目中使用`spring-cloud-starter-alibaba-seata`进行分布式事务管理，您可以遵循以下步骤：1. **添加依赖**：   在您的Spring Cloud项目中，确保已经引入了Spring Cloud Alibaba的依赖，并添"
 tags: ["spring-cloud-alibaba","spring-cloud-starter-alibaba-seata","如何使用"]
 keywords: ["spring-cloud-alibaba","spring-cloud-starter-alibaba-seata","如何使用"]
 ---
-
-## 用户问题 ： 
- spring-cloud-starter-alibaba-seata 如何使用 sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 要在Spring Cloud Alibaba项目中使用`spring-cloud-starter-alibaba-seata`进行分布式事务管理，您可以遵循以下步骤：
 
@@ -87,20 +81,6 @@ keywords: ["spring-cloud-alibaba","spring-cloud-starter-alibaba-seata","如何�
    利用Seata Dashboard（从Seata 1.5.1起支持），您可以在本地通过访问`http://127.0.0.1:7091`来监控和管理全局事务的状态和锁信息。
 
 通过以上步骤，您就可以在Spring Cloud Alibaba项目中集成并使用Seata进行分布式事务管理了。请根据实际部署环境调整配置细节。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：基于springboot sca 添加 seata怎么部署配置？ 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

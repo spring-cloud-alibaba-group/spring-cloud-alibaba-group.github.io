@@ -2,17 +2,11 @@
 id: "question-history-12563"
 title: "新建一个springboot项目要具体怎么做？ sca(spring-cloud-alibaba)"
 date: "2024-04-28"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) 新建一个springboot项目要具体怎么做？"
+category: "expertConsultation"
+description: "根据提供的知识内容，以下是新建一个基于Sca（Spring Cloud Alibaba）的Spring Boot项目的具体步骤：1. **项目初始化**   - 访问 [Spring Initializr for Alibaba Cloud](https://start.aliyun.com)，这是"
 tags: ["spring-cloud-alibaba","springboot","新建项目","具体步骤"]
 keywords: ["spring-cloud-alibaba","springboot","新建项目","具体步骤"]
 ---
-
-## 用户问题 ： 
- 新建一个springboot项目要具体怎么做？ sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 根据提供的知识内容，以下是新建一个基于Sca（Spring Cloud Alibaba）的Spring Boot项目的具体步骤：
 
@@ -50,22 +44,6 @@ keywords: ["spring-cloud-alibaba","springboot","新建项目","具体步骤"]
    - 使用Postman或浏览器访问定义的API端点，验证服务是否正常运行。
 
 通过以上步骤，你就成功地新建并启动了一个基于Spring Cloud Alibaba的Spring Boot项目。记得根据实际需求调整配置和添加更多业务功能。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：sca 与 springboot 快速启动 
- 
- *专家经验：springboot 与测试类(springboot test )的集成方案 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

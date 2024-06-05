@@ -2,17 +2,11 @@
 id: "question-history-12542"
 title: "springboot swagger2 sca(spring-cloud-alibaba)"
 date: "2024-04-28"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) springboot swagger2"
+category: "expertConsultation"
+description: "在集成 Swagger2 到 Spring Cloud Alibaba (SCA) 的 Spring Boot 项目中，Swagger2 提供了强大的 API 文档生成和接口测试功能。以下是基于已有知识的步骤指导来实现这一集成：### 分析与准备首先，确保你的 Spring Boot 项目已经成功集"
 tags: ["spring-cloud-alibaba","springboot","swagger2"]
 keywords: ["spring-cloud-alibaba","springboot","swagger2"]
 ---
-
-## 用户问题 ： 
- springboot swagger2 sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 在集成 Swagger2 到 Spring Cloud Alibaba (SCA) 的 Spring Boot 项目中，Swagger2 提供了强大的 API 文档生成和接口测试功能。以下是基于已有知识的步骤指导来实现这一集成：
 
@@ -91,22 +85,6 @@ public class UserController {
 ### 总结
 
 通过以上步骤，你可以在 Spring Cloud Alibaba 的 Spring Boot 项目中成功集成 Swagger2，进而自动生成 API 文档并提供一个交互式的文档界面，便于开发和测试。请确保每个步骤都正确执行，并根据实际情况调整配置。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：springboot 与测试类(springboot test )的集成方案 
- 
- *专家经验：sca 与 springboot 快速启动 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

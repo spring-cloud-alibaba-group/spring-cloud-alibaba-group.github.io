@@ -2,17 +2,11 @@
 id: "question-history-12516"
 title: "springboot 事务 sca(spring-cloud-alibaba)"
 date: "2024-05-16"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) springboot 事务"
+category: "expertConsultation"
+description: "在使用Sca（Spring Cloud Alibaba）与Spring Boot集成时处理事务，通常涉及分布式事务管理，而Seata是Spring Cloud Alibaba推荐的分布式事务解决方案。从您的问题来看，您可能关注的是如何在Spring Boot应用中配置Seata以管理事务。### 原"
 tags: ["spring-cloud-alibaba","springboot","事务"]
 keywords: ["spring-cloud-alibaba","springboot","事务"]
 ---
-
-## 用户问题 ： 
- springboot 事务 sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 在使用Sca（Spring Cloud Alibaba）与Spring Boot集成时处理事务，通常涉及分布式事务管理，而Seata是Spring Cloud Alibaba推荐的分布式事务解决方案。从您的问题来看，您可能关注的是如何在Spring Boot应用中配置Seata以管理事务。
 
@@ -63,24 +57,6 @@ keywords: ["spring-cloud-alibaba","springboot","事务"]
 通过上述步骤，您的Spring Boot应用就能够利用Seata来管理分布式事务了。第一步确保了项目依赖的正确性，第二步配置Seata Server是基础，第三步配置客户端使得应用能与Seata Server通信，最后一步通过注解标记事务方法，使Seata能够在这些方法执行时进行事务协调与管理，从而保证事务的ACID特性在分布式系统中也能得到维持。
 
 更多详细配置和最佳实践，请参考[官方文档](https://seata.io/zh-cn/docs/overview/what-is-seata.html)和[Spring Cloud Alibaba文档](https://github.com/alibaba/spring-cloud-alibaba/tree/master/docs)。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：基于springboot sca 添加 seata怎么部署配置？ 
- 
- *专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
- 
- *专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

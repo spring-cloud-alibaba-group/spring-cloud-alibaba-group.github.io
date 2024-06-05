@@ -2,17 +2,11 @@
 id: "question-history-12565"
 title: "springboot oauth2 sca(spring-cloud-alibaba)"
 date: "2024-04-28"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) springboot oauth2"
+category: "expertConsultation"
+description: "在Spring Cloud Alibaba (SCA)环境中集成Spring Boot与OAuth2涉及到安全认证和授权，虽然直接的教程未在提供的知识中详细阐述，但我们可以基于标准的Spring Boot OAuth2集成方式，结合SCA的实践，给出一个大致的指导思路。以下是整合步骤：### 分析问"
 tags: ["spring-cloud-alibaba","springboot","oauth2"]
 keywords: ["spring-cloud-alibaba","springboot","oauth2"]
 ---
-
-## 用户问题 ： 
- springboot oauth2 sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 在Spring Cloud Alibaba (SCA)环境中集成Spring Boot与OAuth2涉及到安全认证和授权，虽然直接的教程未在提供的知识中详细阐述，但我们可以基于标准的Spring Boot OAuth2集成方式，结合SCA的实践，给出一个大致的指导思路。以下是整合步骤：
 
@@ -57,24 +51,6 @@ OAuth2是一种开放标准，用于访问授权，特别适合于构建服务�
 
 ### 解释
 尽管直接的SAC与OAuth2整合教程未直接提供，上述步骤基于标准的Spring Boot与OAuth2集成实践，并考虑到SCA环境的特殊性，旨在帮助你建立一个安全的微服务认证体系。请根据实际项目需求和Spring Boot、Spring Cloud Alibaba的具体版本调整依赖和配置细节。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：sca 与 springboot 快速启动 
- 
- *专家经验：springboot 与测试类(springboot test )的集成方案 
- 
- *专家经验：springboot 整合jetty来提供servlet服务 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

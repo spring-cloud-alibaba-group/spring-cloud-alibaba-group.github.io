@@ -2,17 +2,11 @@
 id: "question-history-12546"
 title: "springboot redis配置 sca(spring-cloud-alibaba)"
 date: "2024-04-28"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) springboot redis配置"
+category: "expertConsultation"
+description: "在Spring Cloud Alibaba (Sca) 中配置SpringBoot与Redis的步骤如下：1. **添加Redis依赖**   在项目的`pom.xml`文件中，添加Spring Data Redis的起步依赖，以支持Redis操作。   ```xml   dependency   "
 tags: ["spring-cloud-alibaba","springboot","redis","配置"]
 keywords: ["spring-cloud-alibaba","springboot","redis","配置"]
 ---
-
-## 用户问题 ： 
- springboot redis配置 sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 在Spring Cloud Alibaba (Sca) 中配置SpringBoot与Redis的步骤如下：
 
@@ -77,24 +71,6 @@ keywords: ["spring-cloud-alibaba","springboot","redis","配置"]
    ```
 
 通过以上步骤，你就可以在Spring Cloud Alibaba项目中集成并使用Redis作为缓存或其他数据存储方案了。这些配置和代码示例确保了基础的Redis功能能够顺利集成到你的SpringBoot应用中。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：springboot sca 整合redis的具体方法 
- 
- *专家经验：sca 与 springboot 快速启动 
- 
- *专家经验：springboot 与测试类(springboot test )的集成方案 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

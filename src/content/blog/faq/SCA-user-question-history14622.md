@@ -2,17 +2,11 @@
 id: "question-history-14622"
 title: "怎么用spring ai 接入通义千问？ sca(spring-cloud-alibaba)"
 date: "2024-05-27"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) 怎么用spring ai 接入通义千问？"
+category: "expertConsultation"
+description: "要使用Spring Cloud Alibaba接入通义千问，您可以遵循以下详细步骤：1. **获取API-Key**：   - 首先，访问[阿里云百炼页面](https://www.aliyun.com/product/bailian)，登录您的阿里云账号。   - 选择开通“百炼大模型推理”服务，"
 tags: ["spring-cloud-alibaba","spring ai","通义千问"]
 keywords: ["spring-cloud-alibaba","spring ai","通义千问"]
 ---
-
-## 用户问题 ： 
- 怎么用spring ai 接入通义千问？ sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 要使用Spring Cloud Alibaba接入通义千问，您可以遵循以下详细步骤：
 
@@ -90,22 +84,6 @@ keywords: ["spring-cloud-alibaba","spring ai","通义千问"]
      ```
 
 通过以上步骤，您的Spring Cloud Alibaba项目就已经集成了通义千问，能够利用其强大的对话生成能力为您的应用增添AI交互功能。这不仅简化了与不同AI提供商的对接工作，也提高了代码的复用性和可维护性。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：sca ai 调用通义大模型实现聊天交互 
- 
- *专家经验：sca ai (spring cloud alibaba ai）介绍 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

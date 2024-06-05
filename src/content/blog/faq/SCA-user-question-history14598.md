@@ -2,17 +2,11 @@
 id: "question-history-14598"
 title: "比较spring cloud和dubbo，各自的优缺点是什么 sca(spring-cloud-alibaba)"
 date: "2024-05-27"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) 比较spring cloud和dubbo，各自的优缺点是什么"
+category: "expertConsultation"
+description: "在比较Spring Cloud Alibaba与Dubbo时，我们可以从以下几个维度来分析它们各自的优缺点：### Spring Cloud Alibaba**优点:**1. **全面性与集成度高：** Spring Cloud Alibaba为微服务架构提供了一站式的解决方案，包括服务发现、配置管"
 tags: ["spring-cloud-alibaba","spring cloud","dubbo","优缺点"]
 keywords: ["spring-cloud-alibaba","spring cloud","dubbo","优缺点"]
 ---
-
-## 用户问题 ： 
- 比较spring cloud和dubbo，各自的优缺点是什么 sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 在比较Spring Cloud Alibaba与Dubbo时，我们可以从以下几个维度来分析它们各自的优缺点：
 
@@ -40,22 +34,6 @@ keywords: ["spring-cloud-alibaba","spring cloud","dubbo","优缺点"]
 
 ### 总结
 选择Spring Cloud Alibaba还是Dubbo，需根据团队的技术栈、业务需求、性能要求以及未来的发展规划综合考虑。如果团队已深入Spring Boot和Spring Cloud生态，且重视服务治理的全面性，Spring Cloud Alibaba可能是更好的选择。相反，如果对服务调用性能有极高要求，或需要深度服务治理特性，Dubbo则可能更合适。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：Spring Cloud Alibaba和Dubbo选型建议 
- 
- *专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

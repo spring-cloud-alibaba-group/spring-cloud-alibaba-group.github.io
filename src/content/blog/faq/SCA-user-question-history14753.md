@@ -2,15 +2,9 @@
 id: "question-history-14753"
 title: "springboot定时任务怎么做？ sca(spring-cloud-alibaba)"
 date: "2024-05-30"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) springboot定时任务怎么做？"
+category: "expertConsultation"
+description: "在Spring Cloud Alibaba (Sca)环境中，实现Spring Boot定时任务的方法与标准Spring Boot应用中的做法基本一致。以下是详细步骤：1. **启用定时任务**：   首先，在你的配置类中通过添加`@EnableScheduling`注解来启用定时任务功能。这将激活"
 ---
-
-## 用户问题 ： 
- springboot定时任务怎么做？ sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 在Spring Cloud Alibaba (Sca)环境中，实现Spring Boot定时任务的方法与标准Spring Boot应用中的做法基本一致。以下是详细步骤：
 
@@ -51,20 +45,6 @@ description: "sca(spring-cloud-alibaba) springboot定时任务怎么做？"
    - **了解更多关于SchedulerX**: [阿里云SchedulerX](https://www.aliyun.com/aliware/schedulerx)
 
 综上所述，通过在Spring Cloud Alibaba项目中启用定时任务并利用`@Scheduled`注解，你可以方便地集成定时任务功能。而对于更高级的需求，如任务的高可用和持久化，引入阿里云SchedulerX会是一个理想的解决方案。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：springboot 整合定时任务 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

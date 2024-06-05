@@ -2,17 +2,11 @@
 id: "question-history-12536"
 title: "springboot连接数据库 sca(spring-cloud-alibaba)"
 date: "2024-04-28"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) springboot连接数据库"
+category: "expertConsultation"
+description: "在Sca（Spring Cloud Alibaba）与Spring Boot环境中连接数据库，主要涉及配置数据源以及实体、Repository的使用。虽然直接的步骤在提供的知识中未明确给出，但基于Spring Boot的一般实践，以下是连接数据库的通用步骤，这些步骤同样适用于集成在Spring Cl"
 tags: ["spring-cloud-alibaba","springboot","连接数据库"]
 keywords: ["spring-cloud-alibaba","springboot","连接数据库"]
 ---
-
-## 用户问题 ： 
- springboot连接数据库 sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 在Sca（Spring Cloud Alibaba）与Spring Boot环境中连接数据库，主要涉及配置数据源以及实体、Repository的使用。虽然直接的步骤在提供的知识中未明确给出，但基于Spring Boot的一般实践，以下是连接数据库的通用步骤，这些步骤同样适用于集成在Spring Cloud Alibaba生态中：
 
@@ -107,22 +101,6 @@ public class UserService {
 ### 总结
 
 以上步骤概括了在Sca与Spring Boot应用中连接数据库的基本流程。请根据实际的数据库类型和需求调整依赖和配置。记得在开发过程中利用Spring Boot的自动配置特性，这将极大地简化数据库集成的工作。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：sca 与 springboot 快速启动 
- 
- *专家经验：springboot 与测试类(springboot test )的集成方案 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

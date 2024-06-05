@@ -2,17 +2,11 @@
 id: "question-history-13437"
 title: "spring cloud alibaba 五大组件 介绍 sca(spring-cloud-alibaba)"
 date: "2024-05-13"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) spring cloud alibaba 五大组件 介绍"
+category: "expertConsultation"
+description: "Spring Cloud Alibaba 是一套微服务解决方案，它为基于 Spring Cloud 的应用提供了与 Alibaba 生态系统无缝集成的能力。其核心包含五大组件，以下是这些组件的简要介绍：1. **Nacos**（配置中心与服务发现）:   - **功能**: Nacos 提供了服务发"
 tags: ["spring-cloud-alibaba","spring cloud alibaba","五大组件","介绍"]
 keywords: ["spring-cloud-alibaba","spring cloud alibaba","五大组件","介绍"]
 ---
-
-## 用户问题 ： 
- spring cloud alibaba 五大组件 介绍 sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 Spring Cloud Alibaba 是一套微服务解决方案，它为基于 Spring Cloud 的应用提供了与 Alibaba 生态系统无缝集成的能力。其核心包含五大组件，以下是这些组件的简要介绍：
 
@@ -38,24 +32,6 @@ Spring Cloud Alibaba 是一套微服务解决方案，它为基于 Spring Cloud 
    - **集成方式**: 虽然Dubbo本身不直接属于Spring Cloud Alibaba项目，但可以通过 `spring-cloud-alibaba-dubbo` 模块实现与Spring Cloud生态的集成，进行服务治理。
 
 对于版本选择，请参照[官方文档](https://sca.aliyun.com/docs/2023/overview/version-explain/)获取Spring Cloud Alibaba及其依赖组件的最佳版本匹配信息。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
- 
- *专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
- 
- *专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

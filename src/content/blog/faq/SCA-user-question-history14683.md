@@ -2,17 +2,11 @@
 id: "question-history-14683"
 title: "refreshEnabled 默认值 sca(spring-cloud-alibaba)"
 date: "2024-05-29"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) refreshEnabled 默认值"
+category: "expertConsultation"
+description: "在Spring Cloud Alibaba中，`refreshEnabled`属性主要用于控制Nacos Config客户端是否自动刷新配置，默认情况下，这个属性的值是`true`。这意味着，当Nacos Config Server上的配置发生改变时，客户端会自动拉取最新的配置并更新到本地，从而实现"
 tags: ["spring-cloud-alibaba","refreshEnabled","默认值"]
 keywords: ["spring-cloud-alibaba","refreshEnabled","默认值"]
 ---
-
-## 用户问题 ： 
- refreshEnabled 默认值 sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 在Spring Cloud Alibaba中，`refreshEnabled`属性主要用于控制Nacos Config客户端是否自动刷新配置，默认情况下，这个属性的值是`true`。这意味着，当Nacos Config Server上的配置发生改变时，客户端会自动拉取最新的配置并更新到本地，从而实现配置的动态刷新。
 
@@ -20,20 +14,6 @@ keywords: ["spring-cloud-alibaba","refreshEnabled","默认值"]
 
 **总结：**
 - `sca(spring-cloud-alibaba)`中`refreshEnabled`的默认值为`true`，表示配置自动刷新功能默认开启。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

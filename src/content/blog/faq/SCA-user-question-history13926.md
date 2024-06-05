@@ -2,17 +2,11 @@
 id: "question-history-13926"
 title: "为什么要使用spring cloud alibaba ai sca(spring-cloud-alibaba)"
 date: "2024-05-17"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) 为什么要使用spring cloud alibaba ai"
+category: "expertConsultation"
+description: "使用Spring Cloud Alibaba AI主要有以下几个原因：1. **标准化接口与易用性**：Spring Cloud Alibaba AI标准化了不同AI提供者的接口实现，使得开发者能够通过统一的API与多种AI服务交互。这意味着，一旦应用需要从一个AI服务提供商迁移到另一个，比如从Op"
 tags: ["spring-cloud-alibaba","ai","为什么使用","spring cloud alibaba ai"]
 keywords: ["spring-cloud-alibaba","ai","为什么使用","spring cloud alibaba ai"]
 ---
-
-## 用户问题 ： 
- 为什么要使用spring cloud alibaba ai sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 使用Spring Cloud Alibaba AI主要有以下几个原因：
 
@@ -27,22 +21,6 @@ keywords: ["spring-cloud-alibaba","ai","为什么使用","spring cloud alibaba a
 5. **基于阿里云灵积模型服务**：直接对接阿里云的灵积模型服务，该服务基于“模型即服务”(MaaS)理念，提供模型推理、微调训练等多种服务，确保了高性能和稳定性，同时享受阿里云在AI领域的技术积累和资源支持。
 
 综上所述，选择Spring Cloud Alibaba AI不仅能够提升开发效率，降低维护成本，还能确保应用的灵活性和扩展性，是构建基于云的AI应用的理想选择。为了开始使用，开发者需按照提供的步骤在项目中引入依赖、配置API密钥，并通过自动注入的客户端实现具体的AI功能调用，从而快速构建出功能丰富的AI应用。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：sca ai (spring cloud alibaba ai）介绍 
- 
- *专家经验：sca ai 调用通义大模型实现聊天交互 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

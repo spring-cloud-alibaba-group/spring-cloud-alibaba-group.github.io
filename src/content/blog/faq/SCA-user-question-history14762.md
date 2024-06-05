@@ -2,15 +2,9 @@
 id: "question-history-14762"
 title: "springboot服务连接提示unknown user!并且springboot的配置文件中有用户名和密码的配置 sca(spring-cloud-alibaba)"
 date: "2024-05-30"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) springboot服务连接提示unknown user!并且springboot的配置文件中有用户名和密码的配置"
+category: "expertConsultation"
+description: "根据您提供的问题，服务连接提示`unknown user!`且配置文件中已设置了用户名和密码，这通常意味着Spring Boot应用在尝试连接Redis时使用的认证信息不被Redis服务器接受。结合我了解的知识，我们可以分析并解决此问题：### 分析原因：1. **配置错误**：可能是配置文件中的用"
 ---
-
-## 用户问题 ： 
- springboot服务连接提示unknown user!并且springboot的配置文件中有用户名和密码的配置 sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 根据您提供的问题，服务连接提示`unknown user!`且配置文件中已设置了用户名和密码，这通常意味着Spring Boot应用在尝试连接Redis时使用的认证信息不被Redis服务器接受。结合我了解的知识，我们可以分析并解决此问题：
 
@@ -53,22 +47,6 @@ description: "sca(spring-cloud-alibaba) springboot服务连接提示unknown user
 - 明确的配置修改步骤有助于直接针对问题采取行动，避免因配置疏忽引发的连接失败。
 
 以上步骤应当能解决您遇到的问题。如果问题依旧，请检查网络访问权限、防火墙设置或考虑Redis服务器日志以获取更详细的错误信息。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
- 
- *专家经验：springboot sca 整合redis的具体方法 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

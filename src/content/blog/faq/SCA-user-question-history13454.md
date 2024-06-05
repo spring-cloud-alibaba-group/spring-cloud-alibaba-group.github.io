@@ -1,97 +1,63 @@
 ---
 id: "question-history-13454"
 title: "SCA添加seata怎么部署配置？ sca(spring-cloud-alibaba)"
-date: "2024-05-14"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) SCA添加seata怎么部署配置？"
-tags: ["spring-cloud-alibaba","SCA","seata","部署配置"]
-keywords: ["spring-cloud-alibaba","SCA","seata","部署配置"]
+date: "2024-05-21"
+category: "expertConsultation"
+description: "为了在SCA（Spring Cloud Alibaba）项目中添加Seata以实现分布式事务的支持，您需要遵循以下部署配置步骤：### 1. 启动 Seata Server#### 配置数据库及表结构- **创建UNDO_LOG表**：用于AT模式下存储事务回滚信息。```sqlCREATE TAB"
+tags: ["spring-cloud-alibaba","seata","部署配置"]
+keywords: ["spring-cloud-alibaba","seata","部署配置"]
 ---
 
-## 用户问题 ： 
- SCA添加seata怎么部署配置？ sca(spring-cloud-alibaba) 
+为了在SCA（Spring Cloud Alibaba）项目中添加Seata以实现分布式事务的支持，您需要遵循以下部署配置步骤：
 
----------------
-## 专家官方解答 ：
+### 1. 启动 Seata Server
 
-为了在SCA（Spring Cloud Alibaba）项目中添加Seata以支持分布式事务，您可以遵循以下步骤进行部署配置：
+#### 配置数据库及表结构
+- **创建UNDO_LOG表**：用于AT模式下存储事务回滚信息。
+```sql
+CREATE TABLE `undo_log` (
+  ...
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+```
+- **导入Seata Server所需表结构**：包括global_table、branch_table、lock_table、distributed_lock，参考[SQL脚本](https://github.com/seata/seata/blob/1.5.0/script/server/db/mysql.sql)。
 
-1. **添加依赖**：首先，在您的Spring Cloud Alibaba项目的`pom.xml`文件中，加入Seata和Spring Cloud Alibaba Seata starter的依赖。这通常包括`seata-all`以及`spring-cloud-starter-alibaba-seata`。示例如下：
+#### 启动Seata Server应用
+- 使用[Nacos](https://github.com/seata/seata/releases)作为配置中心和注册中心，存储模式可选为`file`或`db`。
+- 通过命令行启动Seata Server，例如：
+```sh
+$ sh seata-server.sh -p 8091 -m file
+```
 
+### 2. 配置Seata客户端
+
+#### 修改Nacos配置
+- 在Nacos中创建配置文件`seata.properties`，Group设为`SEATA_GROUP`，并添加事务群组映射配置，如：
+```properties
+service.vgroupMapping.*-tx-group=default
+```
+
+#### 业务数据环境配置
+- 更新account-service、order-service、storage-service等服务的application.yml，确保数据库连接等配置正确。
+- 创建各服务所需数据库表，包括Seata的事务日志表undo_log（AT模式下）以及其他业务表。
+
+### 3. 引入Seata依赖
+在Spring Boot项目中加入Seata的依赖：
 ```xml
 <dependency>
     <groupId>com.alibaba.cloud</groupId>
     <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
-    <version>最新版本号</version>
-</dependency>
-<dependency>
-    <groupId>io.seata</groupId>
-    <artifactId>seata-all</artifactId>
-    <version>最新版本号</version>
 </dependency>
 ```
-请替换`最新版本号`为当前最新的稳定版本。
 
-2. **配置Seata Server**：
-   - 下载并启动Seata Server。您可以通过访问Seata的GitHub页面获取最新发行版：[Seata GitHub](https://github.com/seata/seata/releases)。
-   - 配置Seata Server的`file.conf`和`registry.conf`文件，选择合适的注册中心（如Nacos、Eureka等）。确保Seata Server能够成功连接到您项目中使用的相同注册中心。
+### 4. 启动示例服务
+- 确保Seata Server已启动。
+- 分别启动account-service、order-service、storage-service以及business-service。
+- 访问示例接口验证服务是否正常工作，如：[http://127.0.0.1:18081/seata/feign](http://127.0.0.1:18081/seata/feign)
 
-3. **配置客户端（Spring Cloud Alibaba项目）**：
-   - 在您的Spring Boot应用的`application.yml`或`application.properties`中，添加Seata的相关配置。这包括Seata的服务地址（指向Seata Server）、事务组名、事务模式等。例如：
-
-```yaml
-spring:
-  cloud:
-    alibaba:
-      seata:
-        enabled: true
-        application-id: your-service-name
-        tx-service-group: your-tx-group-name
-        config:
-          type: nacos
-          nacos:
-            server-addr: nacos服务器地址
-        registry:
-          type: nacos
-          nacos:
-            server-addr: nacos服务器地址
-```
-
-4. **事务管理**：在需要使用分布式事务的Service方法上，使用`@GlobalTransactional`注解来标记该方法作为分布式事务的边界。例如：
-
-```java
-@Service
-public class YourService {
-
-    @GlobalTransactional(name = "yourTxName", rollbackFor = Exception.class)
-    public void yourTransactionalMethod() {
-        // 业务代码
-    }
-}
-```
-
-5. **测试与验证**：启动您的Spring Cloud Alibaba应用以及Seata Server，进行集成测试，确保分布式事务能够正常回滚或提交。
-
-通过以上步骤，您就可以在SCA项目中成功部署和配置Seata以支持分布式事务了。请根据实际环境调整相应的配置项。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：基于springboot sca 添加 seata怎么部署配置？ 
- 
- *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
+以上步骤确保了Seata在SCA项目中得以正确部署并配置，以提供分布式事务支持。通过Seata Server管理全局事务，配合Nacos进行服务注册与配置管理，实现了分布式系统中的事务一致性解决方案。
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
 
 ### 反馈
-如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=13455)给我们反馈。
+如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=13956)给我们反馈。

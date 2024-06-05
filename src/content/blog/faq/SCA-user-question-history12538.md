@@ -2,17 +2,11 @@
 id: "question-history-12538"
 title: "springboot 项目搭建 sca(spring-cloud-alibaba)"
 date: "2024-04-28"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) springboot 项目搭建"
+category: "expertConsultation"
+description: "要搭建一个基于Sca（Spring Cloud Alibaba）的Spring Boot项目，您可以遵循以下详细步骤：1. **创建Spring Boot项目**   - 使用IDE（如IntelliJ IDEA或Eclipse）的内置功能创建一个新的Spring Boot项目，或者访问[Sprin"
 tags: ["spring-cloud-alibaba","springboot","项目搭建"]
 keywords: ["spring-cloud-alibaba","springboot","项目搭建"]
 ---
-
-## 用户问题 ： 
- springboot 项目搭建 sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 要搭建一个基于Sca（Spring Cloud Alibaba）的Spring Boot项目，您可以遵循以下详细步骤：
 
@@ -66,22 +60,6 @@ keywords: ["spring-cloud-alibaba","springboot","项目搭建"]
    - 使用Postman或浏览器访问定义的API端点，验证应用是否正常工作，以及是否能正确与Redis交互（如果进行了集成）。
 
 通过以上步骤，您可以完成一个基础的Spring Cloud Alibaba Spring Boot项目的搭建，并可根据实际需求进一步扩展其功能。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：sca 与 springboot 快速启动 
- 
- *专家经验：springboot sca 整合redis的具体方法 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

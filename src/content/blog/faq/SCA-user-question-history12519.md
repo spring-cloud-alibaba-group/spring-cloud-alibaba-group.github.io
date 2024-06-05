@@ -2,17 +2,11 @@
 id: "question-history-12519"
 title: "springboot jwt sca(spring-cloud-alibaba)"
 date: "2024-04-28"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) springboot jwt"
+category: "expertConsultation"
+description: "在处理关于`sca(spring-cloud-alibaba)`与`springboot`集成JWT（JSON Web Tokens）的问题时，我们可以分步进行分析与实施。虽然提供的参考内容未直接涉及JWT的集成，但我们可以基于Spring Boot的一般实践和Spring Cloud Alibab"
 tags: ["spring-cloud-alibaba","springboot","jwt"]
 keywords: ["spring-cloud-alibaba","springboot","jwt"]
 ---
-
-## 用户问题 ： 
- springboot jwt sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 在处理关于`sca(spring-cloud-alibaba)`与`springboot`集成JWT（JSON Web Tokens）的问题时，我们可以分步进行分析与实施。虽然提供的参考内容未直接涉及JWT的集成，但我们可以基于Spring Boot的一般实践和Spring Cloud Alibaba的特性来指导这一过程。
 
@@ -89,22 +83,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 ### 解释
 
 以上步骤介绍了如何在基于Spring Boot和Spring Cloud Alibaba的应用中集成JWT。尽管直接的参考内容未提供特定于JWT的集成指南，但基于Spring Boot的基础配置和扩展机制，我们可以顺利地将JWT认证机制融入到应用中。通过添加JWT库、创建JWT工具类、实现认证和授权逻辑，以及调整Spring Security配置，可以有效保障应用的安全通信和用户认证流程。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：sca 与 springboot 快速启动 
- 
- *专家经验：springboot 与测试类(springboot test )的集成方案 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

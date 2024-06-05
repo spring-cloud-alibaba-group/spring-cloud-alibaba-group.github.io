@@ -2,15 +2,9 @@
 id: "question-history-14747"
 title: "springcloud alibaba与springboot版本对应关系是怎样的？ sca(spring-cloud-alibaba)"
 date: "2024-05-30"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) springcloud alibaba与springboot版本对应关系是怎样的？"
+category: "expertConsultation"
+description: "根据已有的知识内容，Spring Cloud Alibaba与Spring Boot的版本对应关系如下：1. 确定您当前使用的Spring Boot版本。2. 参照版本对应表，找到与您的Spring Boot版本相匹配的Spring Cloud Alibaba版本及其对应的Spring Cloud版"
 ---
-
-## 用户问题 ： 
- springcloud alibaba与springboot版本对应关系是怎样的？ sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 根据已有的知识内容，Spring Cloud Alibaba与Spring Boot的版本对应关系如下：
 
@@ -24,24 +18,6 @@ description: "sca(spring-cloud-alibaba) springcloud alibaba与springboot版本�
 为了确保获取最准确的版本对应信息和最新的更新，请参考[官方文档](https://sca.aliyun.com/docs/2023/overview/version-explain/)。
 
 在选择版本时，还需要考虑项目的实际需求、组件的兼容性和稳定性，以及社区的支持情况。希望这些信息能帮助您做出合适的选择。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
- 
- *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
- 
- *专家经验：Spring Cloud Alibaba和Dubbo选型建议 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

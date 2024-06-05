@@ -2,17 +2,11 @@
 id: "question-history-14686"
 title: "分布式事务怎么做 sca(spring-cloud-alibaba)"
 date: "2024-05-29"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) 分布式事务怎么做"
+category: "expertConsultation"
+description: "要在Spring Cloud Alibaba（SCA）项目中实现分布式事务处理，主要依赖于Seata框架的集成。根据提供的知识，以下是详细步骤及解释：### 1. 准备Seata Server#### 步骤与解释：- **配置数据库**：首先，确保数据库中已创建undo_log表，这是Seata A"
 tags: ["spring-cloud-alibaba","分布式事务"]
 keywords: ["spring-cloud-alibaba","分布式事务"]
 ---
-
-## 用户问题 ： 
- 分布式事务怎么做 sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 要在Spring Cloud Alibaba（SCA）项目中实现分布式事务处理，主要依赖于Seata框架的集成。根据提供的知识，以下是详细步骤及解释：
 
@@ -45,20 +39,6 @@ keywords: ["spring-cloud-alibaba","分布式事务"]
 
 ### 解释总结：
 通过上述步骤，我们利用Seata实现了Spring Cloud Alibaba项目中的分布式事务管理。Seata通过AT模式自动补偿事务，确保了跨服务调用时的数据一致性。配置环节涉及到了Seata Server的准备、Nacos配置的设置以及业务服务的适配，最后通过示例服务的启动与测试完成整个流程的验证。这样，即便是在分布式系统中，也能像处理本地事务一样管理事务，提高了系统的可靠性和数据的一致性。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：基于springboot sca 添加 seata怎么部署配置？ 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

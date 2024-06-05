@@ -2,17 +2,11 @@
 id: "question-history-13361"
 title: "spring-cloud-starter-alibaba-nacos-config 怎么配置？ sca(spring-cloud-alibaba)"
 date: "2024-05-13"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) spring-cloud-starter-alibaba-nacos-config 怎么配置？"
+category: "expertConsultation"
+description: "为了配置`spring-cloud-starter-alibaba-nacos-config`以实现Nacos作为Spring Cloud应用的配置中心，您可以按照以下步骤操作：1. **添加依赖**：   在您的Spring Boot项目的`pom.xml`文件中，添加`spring-cloud-"
 tags: ["spring-cloud-alibaba","nacos-config","配置"]
 keywords: ["spring-cloud-alibaba","nacos-config","配置"]
 ---
-
-## 用户问题 ： 
- spring-cloud-starter-alibaba-nacos-config 怎么配置？ sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 为了配置`spring-cloud-starter-alibaba-nacos-config`以实现Nacos作为Spring Cloud应用的配置中心，您可以按照以下步骤操作：
 
@@ -69,22 +63,6 @@ keywords: ["spring-cloud-alibaba","nacos-config","配置"]
 完成以上步骤后，您的Spring Cloud应用将会从Nacos服务器获取配置，并且在配置发生变更时能够自动刷新配置，实现动态配置管理。
 
 请注意，实际操作中需替换示例中的`your-application-name`、`your-application-name.properties`等占位符为您的实际应用名和配置文件名。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
- 
- *专家经验：spring 怎么读？ 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

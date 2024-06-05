@@ -2,17 +2,11 @@
 id: "question-history-14713"
 title: "org.springframework.ai:spring-ai-core:jar:0.8.1 was not found in https: maven.aliyun.com repository public during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of aliyunmaven has elapsed or updates are forced sca(spring-cloud-alibaba)"
 date: "2024-05-29"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) org.springframework.ai:spring-ai-core:jar:0.8.1 was not found in https: maven.aliyun.com repository public during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of aliyunmaven has elapsed or updates are forced"
+category: "expertConsultation"
+description: "遇到问题`org.springframework.ai:spring-ai-core:jar:0.8.1 was not found in https://maven.aliyun.com/repository/public...`主要是因为Spring官方未将`spring-ai-core`版本0"
 tags: ["spring-cloud-alibaba","org.springframework.ai","spring-ai-core","0.8.1","maven.aliyun.com","repository","public","previous attempt","failure","cached","local repository","update interval","aliyunmaven","forced"]
 keywords: ["spring-cloud-alibaba","org.springframework.ai","spring-ai-core","0.8.1","maven.aliyun.com","repository","public","previous attempt","failure","cached","local repository","update interval","aliyunmaven","forced"]
 ---
-
-## 用户问题 ： 
- org.springframework.ai:spring-ai-core:jar:0.8.1 was not found in https: maven.aliyun.com repository public during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of aliyunmaven has elapsed or updates are forced sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 遇到问题`org.springframework.ai:spring-ai-core:jar:0.8.1 was not found in https://maven.aliyun.com/repository/public...`主要是因为Spring官方未将`spring-ai-core`版本0.8.1发布到公共的Maven中央仓库中。根据提供的知识内容，可以采取以下步骤解决：
 
@@ -66,22 +60,6 @@ keywords: ["spring-cloud-alibaba","org.springframework.ai","spring-ai-core","0.8
 ### 解释
 
 通过添加Spring的Milestones和Snapshots仓库，您能够访问到那些尚未正式发布但已可供测试和早期采用的库版本。这应该能解决因依赖项未在常规仓库中找到而导致的构建失败问题。务必注意，使用Milestones和Snapshots版本可能会引入不稳定因素，因为它们通常是为测试新功能和修复而设计的，建议仅在开发环境或测试环境中使用。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：无法从maven中央仓下载内容的说明 
- 
- *专家经验：sca ai (spring cloud alibaba ai）介绍 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

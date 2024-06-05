@@ -2,17 +2,11 @@
 id: "question-history-12515"
 title: "springboot打包成jar sca(spring-cloud-alibaba)"
 date: "2024-04-28"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) springboot打包成jar"
+category: "expertConsultation"
+description: "在基于Spring Cloud Alibaba (Sca)的Spring Boot项目中，打包成jar文件是一个标准流程，用于将你的应用部署为一个独立运行的可执行jar包。根据通用的Spring Boot项目打包步骤，以下是针对此问题的详细指导：### 打包步骤1. **确保构建工具有配置**   "
 tags: ["spring-cloud-alibaba","springboot","打包","jar"]
 keywords: ["spring-cloud-alibaba","springboot","打包","jar"]
 ---
-
-## 用户问题 ： 
- springboot打包成jar sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 在基于Spring Cloud Alibaba (Sca)的Spring Boot项目中，打包成jar文件是一个标准流程，用于将你的应用部署为一个独立运行的可执行jar包。根据通用的Spring Boot项目打包步骤，以下是针对此问题的详细指导：
 
@@ -72,22 +66,6 @@ keywords: ["spring-cloud-alibaba","springboot","打包","jar"]
 
 ### 解释
 这些步骤是基于Spring Boot的标准打包流程，适用于包括集成Spring Cloud Alibaba在内的任何Spring Boot项目。通过配置构建工具和使用Spring Boot提供的插件，可以轻松地将应用打包成一个自包含的、可直接运行的jar文件，便于部署和管理。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：sca 与 springboot 快速启动 
- 
- *专家经验：springboot 与测试类(springboot test )的集成方案 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

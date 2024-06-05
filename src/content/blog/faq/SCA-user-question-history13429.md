@@ -2,17 +2,11 @@
 id: "question-history-13429"
 title: "spring-cloud-starter-alibaba-nacos-config 对应 springboot 版本 sca(spring-cloud-alibaba)"
 date: "2024-05-13"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) spring-cloud-starter-alibaba-nacos-config 对应 springboot 版本"
+category: "expertConsultation"
+description: "根据提供的知识内容，我们可以确定`spring-cloud-starter-alibaba-nacos-config`与Spring Boot版本的对应关系是间接给出的，因为它依赖于Spring Cloud Alibaba的整体版本兼容性。为了确定具体版本的对应，我们需要查找Spring Cloud"
 tags: ["spring-cloud-alibaba","nacos-config","springboot","版本对应"]
 keywords: ["spring-cloud-alibaba","nacos-config","springboot","版本对应"]
 ---
-
-## 用户问题 ： 
- spring-cloud-starter-alibaba-nacos-config 对应 springboot 版本 sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 根据提供的知识内容，我们可以确定`spring-cloud-starter-alibaba-nacos-config`与Spring Boot版本的对应关系是间接给出的，因为它依赖于Spring Cloud Alibaba的整体版本兼容性。为了确定具体版本的对应，我们需要查找Spring Cloud Alibaba版本与Spring Boot版本的匹配情况。
 
@@ -31,22 +25,6 @@ keywords: ["spring-cloud-alibaba","nacos-config","springboot","版本对应"]
 例如，如果你的应用基于Spring Boot 2.6.13，根据表格，应选用Spring Cloud Alibaba 2021.0.5.0，因此你应使用与Spring Cloud Alibaba 2021.0.5.0兼容的`spring-cloud-starter-alibaba-nacos-config`版本。
 
 请注意，为了获取最准确的版本信息和兼容性细节，直接访问[官方文档](https://sca.aliyun.com/docs/2023/overview/version-explain/)进行确认总是最佳实践。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
- 
- *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

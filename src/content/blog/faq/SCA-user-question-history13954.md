@@ -2,17 +2,11 @@
 id: "question-history-13954"
 title: "No spring.config.import property has been defined Action: Add a spring.config.import=nacos: property to your configuration. If configuration is not required add spring.config.import=optional:nacos: instead. To disable this check, set spring.cloud.nacos.config.import-check.enabled=false.如何解决 sca(spring-cloud-alibaba)"
 date: "2024-05-21"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) No spring.config.import property has been defined Action: Add a spring.config.import=nacos: property to your configuration. If configuration is not required add spring.config.import=optional:nacos: instead. To disable this check, set spring.cloud.nacos.config.import-check.enabled=false.如何解决"
+category: "expertConsultation"
+description: "根据提供的知识内容，遇到No spring.config.import property has been defined的问题，其原因在于Spring Cloud应用在尝试集成Nacos作为配置中心时，没有正确地在配置文件中定义`spring.config.import=nacos:`属性来导入N"
 tags: ["spring-cloud-alibaba","No spring.config.import property","defined","Action","Add","spring.config.import=nacos:","configuration","optional:nacos:","disable","spring.cloud.nacos.config.import-check.enabled=false"]
 keywords: ["spring-cloud-alibaba","No spring.config.import property","defined","Action","Add","spring.config.import=nacos:","configuration","optional:nacos:","disable","spring.cloud.nacos.config.import-check.enabled=false"]
 ---
-
-## 用户问题 ： 
- No spring.config.import property has been defined Action: Add a spring.config.import=nacos: property to your configuration. If configuration is not required add spring.config.import=optional:nacos: instead. To disable this check, set spring.cloud.nacos.config.import-check.enabled=false.如何解决 sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 根据提供的知识内容，遇到"No spring.config.import property has been defined"的问题，其原因在于Spring Cloud应用在尝试集成Nacos作为配置中心时，没有正确地在配置文件中定义`spring.config.import=nacos:`属性来导入Nacos配置。这通常发生在Spring Cloud 2020.*及之后的版本中，因为这些版本默认不再自动导入bootstrap配置。
 
@@ -73,24 +67,6 @@ keywords: ["spring-cloud-alibaba","No spring.config.import property","defined","
 - 第三步是可选项，仅当你确定不需要检查是否导入了Nacos配置时使用，这可以避免不必要的警告信息。
 
 完成以上步骤后，重启你的应用，它应该能够成功连接到Nacos并加载配置信息了。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：Add a spring.config.import=nacos: property to your configuration.If configuration is not required 处理方法 
- 
- *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
- 
- *专家经验：sca ai (spring cloud alibaba ai）介绍 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

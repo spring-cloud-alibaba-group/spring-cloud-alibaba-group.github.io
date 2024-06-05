@@ -2,17 +2,11 @@
 id: "question-history-14581"
 title: "如何使用higress 替代spring cloud gateway 实现服务发现与路由转发？ sca(spring-cloud-alibaba)"
 date: "2024-05-27"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) 如何使用higress 替代spring cloud gateway 实现服务发现与路由转发？"
+category: "expertConsultation"
+description: "要使用 Higress 替代 Spring Cloud Gateway 实现服务发现与路由转发，针对 Spring Cloud Alibaba 环境，可以遵循以下步骤：1. **配置 Nacos 作为注册中心**:   - 参考 [Nacos-Spring-Cloud 快速开始](https://s"
 tags: ["spring-cloud-alibaba","higress","spring cloud gateway","服务发现","路由转发"]
 keywords: ["spring-cloud-alibaba","higress","spring cloud gateway","服务发现","路由转发"]
 ---
-
-## 用户问题 ： 
- 如何使用higress 替代spring cloud gateway 实现服务发现与路由转发？ sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 要使用 Higress 替代 Spring Cloud Gateway 实现服务发现与路由转发，针对 Spring Cloud Alibaba 环境，可以遵循以下步骤：
 
@@ -66,22 +60,6 @@ keywords: ["spring-cloud-alibaba","higress","spring cloud gateway","服务发现
    - 应用以上配置后，检查 Higress 是否成功识别了 Nacos 注册的服务，并且路由规则是否按预期工作。可以通过访问 Ingress 规定的路径来测试服务是否能够被正确路由。
 
 综上所述，通过配置 Nacos 服务注册、创建合适的 Higress `McpBridge` 资源以及设置正确的 `Ingress` 路由规则，即可实现使用 Higress 替代 Spring Cloud Gateway 来进行服务发现与路由转发。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：基于网关实现 Spring Cloud 服务发现与路由 
- 
- *专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

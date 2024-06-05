@@ -2,17 +2,11 @@
 id: "question-history-12556"
 title: "springboot devtools sca(spring-cloud-alibaba)"
 date: "2024-04-28"
-category: expertConsultation
-description: "sca(spring-cloud-alibaba) springboot devtools"
+category: "expertConsultation"
+description: "在Spring Cloud Alibaba (Sca)项目中使用Spring Boot DevTools可以提升开发时的效率，DevTools为应用提供了自动重启、LiveReload等功能。虽然直接提及Sca与DevTools结合使用的资料有限，但我们可以基于标准Spring Boot中集成Dev"
 tags: ["spring-cloud-alibaba","springboot","devtools"]
 keywords: ["spring-cloud-alibaba","springboot","devtools"]
 ---
-
-## 用户问题 ： 
- springboot devtools sca(spring-cloud-alibaba) 
-
----------------
-## 专家官方解答 ：
 
 在Spring Cloud Alibaba (Sca)项目中使用Spring Boot DevTools可以提升开发时的效率，DevTools为应用提供了自动重启、LiveReload等功能。虽然直接提及Sca与DevTools结合使用的资料有限，但我们可以基于标准Spring Boot中集成DevTools的步骤来指导如何在Sca项目中应用它。以下是根据标准Spring Boot实践整理的步骤：
 
@@ -40,22 +34,6 @@ keywords: ["spring-cloud-alibaba","springboot","devtools"]
    无需特别操作，启动你的Spring Boot应用，DevTools会自动生效。在开发模式下，修改代码并保存后，应用会自动重启（或页面自动刷新，如果启用了LiveReload）。
 
 综上所述，集成Spring Boot DevTools到Sca项目中主要是为了提升开发阶段的迭代速度和便利性，通过简单的依赖添加即可实现这一目标。尽管参考内容未直接提供Sca与DevTools结合的示例，但上述步骤基于Spring Boot的标准实践，同样适用于包含Sca的项目环境。
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*专家经验：sca 与 springboot 快速启动 
- 
- *专家经验：springboot 与测试类(springboot test )的集成方案 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
