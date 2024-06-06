@@ -68,10 +68,8 @@ spring:
   cloud:
     ai:
       tongyi:
-        chat:
-          options:
-            # Replace the following key with a valid API-KEY.
-            api-key: sk-a3d73b1709bf4a178c28ed7c8b3b5axx
+ 	# Replace the following key with a valid API-KEY.
+	api-key: sk-a3d73b1709bf4a178c28ed7c8b3b5axx
 ```
 
 
