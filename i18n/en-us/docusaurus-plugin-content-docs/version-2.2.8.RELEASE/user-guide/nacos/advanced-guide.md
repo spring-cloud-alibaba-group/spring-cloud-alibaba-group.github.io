@@ -12,11 +12,11 @@ This chapter shows the advanced features and advanced usage of spring-cloud-star
 
 spring-cloud-starter-alibaba-nacos-config When loading the service configuration:
 
-Not only is the base configuration prefixed with dataId ${spring.application.name}.${file-extension:properties} loaded,
+Not only is the base configuration prefixed with dataId $\{spring.application.name\}.$\{file-extension:properties\} loaded,
 
-The base configuration with dataId of ${spring.application.name}-${profile}.${file-extension:properties} is also loaded.
+The base configuration with dataId of $\{spring.application.name\}-$\{profile\}.$\{file-extension:properties\} is also loaded.
 
-In daily development, if you encounter different configurations in multiple environments, you can select different configurations through the ${spring.Profiles.active} configuration item provided by spring.
+In daily development, if you encounter different configurations in multiple environments, you can select different configurations through the $\{spring.profiles.active\} configuration item provided by spring.
 
 ```properties
 spring.profiles.active=develop
@@ -62,7 +62,7 @@ in develop-env enviroment; user name :nacos-config-yaml-update; age: 68
 The 2018-11-02 15:34:25. 33014-013 the INFO/Thread - 11 ConfigServletWebServerApplicationContext: Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6f1c29b7: startup date [Fri Nov 02 15:33:57 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@63355449
 ```
 
-If you need to switch to production, just change the ${spring.profiles.active} parameter configuration. As follows:
+If you need to switch to production, just change the $\{spring.profiles.active\} parameter configuration. As follows:
 
 ```properties
 spring.profiles.active=product
@@ -93,7 +93,7 @@ The 2018-11-02 15:42:14. 33024-628 the INFO/Thread - 11 ConfigServletWebServerAp
 Inside Nacos there is the concept of [Namespace](https://nacos.io/zh-cn/docs/concepts.html):
 
 > For tenant granularity configuration isolation. The same Group or Data ID can be configured in different namespaces. A common scenario of Namespace is to separate and isolate configurations of different environments. For example, isolation of resources (such as configurations and services) between the development and test environments and production environments.
-> without explicitly specify ${spring.cloud.nacos.config.namespace} configuration, the default is used on Public nacos this namespace. If you want to use a custom defined namespace, you can use the following configuration:
+> without explicitly specify $\{spring.cloud.nacos.config.namespace\} configuration, the default is used on Public nacos this namespace. If you want to use a custom defined namespace, you can use the following configuration:
 
 ```properties
 spring.cloud.nacos.config.namespace=YOUR_NAMESPACE_ID
@@ -105,7 +105,7 @@ spring.cloud.nacos.config.namespace=YOUR_NAMESPACE_ID
 
 ### User-defined Group configuration
 
-Without explicitly specify ${spring.cloud.nacos.config.group} configuration, use DEFAULT_GROUP by default. To customize your own Group, perform the following configurations:
+Without explicitly specify $\{spring.cloud.nacos.config.group\} configuration, use DEFAULT_GROUP by default. To customize your own Group, perform the following configurations:
 
 ```properties
 spring.cloud.nacos.config.group=YOUR_GROUP_NAME
@@ -195,7 +195,7 @@ More configuration items for Nacos Config Starter are as follows:
 | Configuration item                                | key                                       | Default value              | Description                                                                                                                                                                          |
 | ------------------------------------------------- | ----------------------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Server address                                    | spring.cloud.nacos.config.server-addr     |                            | ip address and port number of the server                                                                                                                                             |
-| DataId prefix                                     | spring.cloud.nacos.config.prefix          | ${spring.application.name} | The prefix of the DataId. The default value is the application name                                                                                                                  |
+| DataId prefix                                     | spring.cloud.nacos.config.prefix          | $\{spring.application.name\} | The prefix of the DataId. The default value is the application name                                                                                                                  |
 | Group                                             | spring.cloud.nacos.config.group           | DEFAULT_GROUP              |
 | DataId suffix and content file format             | spring.cloud.nacos.config.file-extension  | properties                 | The DataId suffix, which is also the configuration content file format, currently supports only properties                                                                           |
 | Configure the encoding mode of the content        | spring.cloud.nacos.config.encode          | UTF-8                      | Configured coding                                                                                                                                                                    |
@@ -319,7 +319,7 @@ For more information about the starter configuration items of spring-cloud-start
 | Configuration item                | key                                            | Default value              | Description                                                                                                                                                                                                                                                       |
 | --------------------------------- | ---------------------------------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Server address                    | spring.cloud.nacos.discovery.server-addr       |                            |
-| Service name                      | spring.cloud.nacos.discovery.service           | ${spring.application.name} | The name of the service registered with Nacos, which defaults to the application name                                                                                                                                                                             |
+| Service name                      | spring.cloud.nacos.discovery.service           | $\{spring.application.name\} | The name of the service registered with Nacos, which defaults to the application name                                                                                                                                                                             |
 | Weight                            | spring.cloud.nacos.discovery.weight            | 1                          | The value ranges from 1 to 100. A larger value indicates a larger weight                                                                                                                                                                                          |
 | Nic name                          | spring.cloud.nacos.discovery.network-interface |                            | If no IP address is configured, the registered IP address is the IP address of the NIC. If this parameter is not configured, the IP address of the first NIC is used by default                                                                                   |
 | Registered IP address             | spring.cloud.nacos.discovery.ip                |                            | Highest priority                                                                                                                                                                                                                                                  |

@@ -7,13 +7,13 @@
 ### 环境准备
 
 > 如果不想在本地安装依赖组件，可参考下文 [Docker 环境运行方式](#docker-方式运行)。
-> 项目源码基于 docusaurus v2.4.1 构建，因此要编译运行本项目需确保安装 Node.js 。
+> 项目源码基于 docusaurus v3.1.0 构建，因此要编译运行本项目需确保安装 Node.js 。
 
-- Node.js version 16.14+
+- Node.js version 18.0+
 
 ### 快速启动
 
-1. `npm install`
+1. `npm install` or `npm install -legacy-peer-deps`
 
 2. `npm run start` （以此方式启动时，无法访问 English 页面，如需访问以 `npm run start-en` 启动）
 
@@ -89,8 +89,11 @@ docker run --rm -p 3000:80 sca-site:latest
 
 ### 添加一个新博客
 
-1. 在 `i18n/en-us/docusaurus-plugin-content-blog/current` 或 `i18n/zh-cn/docusaurus-plugin-content-blog/current` 下添加新的 markdown 文件。对应英文和中文，中英文文件名需要和占位文件名一致；
-2. 在文件头添加 SEO 配置。
+1. 添加 markdown 文件
+    1. 添加占位文件，在 `/blog`；
+    2.在 `i18n/en-us/docusaurus-plugin-content-blog/current` 或 `i18n/zh-cn/docusaurus-plugin-content-blog/current` 下添加新的 markdown 文件。对应英文和中文，中英文文件名需要和占位文件名一致；
+2. 在文件头添加 SEO 配置；
+3. 文档中的图片添加到 `/static/img/blog/xxx` 下，xxx 和 blog 标题一致。
 
 ## SEO
 
