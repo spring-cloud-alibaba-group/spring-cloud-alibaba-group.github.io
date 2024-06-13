@@ -30,29 +30,19 @@ export type Props = {
 const { post, source, class: className = "", useAnchor=false, } = Astro.props;
 ---
 
-<div class={"card h-[332px] p-[24px] shadow-none w-full flex " + className}>
+<a class={"card h-[250px] p-[24px] shadow-none w-full flex " + className} href={`/blog/${post.slug}/?source=${source}`}>
     <!-- 锚点 -->
-    {useAnchor?<a id={post.slug} class={"absolute z-[-100] top-[-4rem]"}></a>:null}
+    {useAnchor?<p id={post.slug} class={"absolute z-[-100] top-[-4rem]"}></p>:null}
     
-    <p class="text-gray-07 text-xs font-normal">
+    <p class="flex-1 text-gray-07 text-xs font-normal">
         {formatDate(post.data.date)}
     </p>
-    <h2 class="card-title text-gray-14 leading-8 line-clamp-2 mb-3 font-normal text-xl mt-3 truncate">
-        {post.data.title}
+    <h2 class="flex-1 card-title text-gray-14 line-clamp-2 font-normal text-2xl truncate">
+      {post.data.title}
     </h2>
-
-    <div class="w-full text-lg leading-8 overflow-hidden mt-[24px] simple-card-desc">
+    <div class="flex-[3_3_0%] w-full text-lg leading-8 overflow-hidden mt-[24px] simple-card-desc">
         {post.excerpt || post.data.description}
     </div>
-    
-    <Button 
-        size="large" 
-        type="card"
-        href={`/blog/${post.slug}/?source=${source}`}
-        class="rounded-3xl text-xs absolute bottom-3 bg-error"
-    >
-        {t('blog.card.read.artile')}
-    </Button>
 </div>
 
 <style>
@@ -79,7 +69,7 @@ const { post, source, class: className = "", useAnchor=false, } = Astro.props;
   }
   .simple-card-desc {
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     color: #848487;
   }
