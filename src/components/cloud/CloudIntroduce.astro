@@ -36,15 +36,21 @@ import { getCloudIntroduceData } from "@/constant";
                   {item?.title}
                 </div>
               </div>
-              <div class="price-content pt-4 border-b border-t border-info h-32">
+              <div class="price-content pt-4 border-b border-t border-info h-36">
                 <span class="price text-[2.75rem] leading-[3rem] font-bold text-link3">
                   {item?.price}
                 </span>
                 <span class="price font-bold text-success">
                   {item?.priceSupply}
                 </span>
-                <div class="description font-sans pt-4 text-xs text-warning line-clamp-2">
-                  {item?.priceDesc}
+                <div class="description pt-1 font-sans text-xs text-warning line-clamp-2">
+                  {item?.priceDesc.map((el,i) => {
+                    return (
+                      <div class="description font-sans pt-1 text-xs text-warning line-clamp-2">
+                        {el}
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
               <div class="pl-2 h-16">
@@ -82,10 +88,10 @@ import { getCloudIntroduceData } from "@/constant";
       background-position: right;
       background-size: 70%;
     }
-    .bottom-package .card-package:nth-child(2) .cloud-button-primary {
+    .bottom-package .card-package:nth-child(1) .cloud-button-primary {
       background-color: theme("colors.muted");
     }
-    .bottom-package .card-package:nth-child(2) .cloud-button-primary:hover {
+    .bottom-package .card-package:nth-child(1) .cloud-button-primary:hover {
       background: linear-gradient(
         226deg,
         theme("colors.accent") -2%,
@@ -108,23 +114,23 @@ import { getCloudIntroduceData } from "@/constant";
         4px 4px 8px rgba(0, 0, 0, 0.1),
         -4px -4px 8px rgba(0, 0, 0, 0.1);
     }
-    .bottom-package .card-package:nth-child(2) {
+    .bottom-package .card-package:nth-child(1) {
       margin-left: 0;
       background-color: theme("colors.base-100");
     }
-    .bottom-package .card-package:nth-child(2) .package .title {
+    .bottom-package .card-package:nth-child(1) .package .title {
       color: theme("colors.neutral");
     }
-    .bottom-package .card-package:nth-child(2) .price-content {
+    .bottom-package .card-package:nth-child(1) .price-content {
       border-color: theme("colors.warning");
     }
-    .bottom-package .card-package:nth-child(2) .price-content .price {
+    .bottom-package .card-package:nth-child(1) .price-content .price {
       color: theme("colors.neutral");
     }
-    .bottom-package .card-package:nth-child(2) .price-content .description {
+    .bottom-package .card-package:nth-child(1) .price-content .description {
       color: theme("colors.neutral");
     }
-    .bottom-package .card-package:nth-child(2) .feature {
+    .bottom-package .card-package:nth-child(1) .feature {
       color: theme("colors.warning");
     }
     .bottom-package .card-package:last-child {
@@ -211,7 +217,7 @@ import { getCloudIntroduceData } from "@/constant";
         flex: 0 0 40%;
         margin: 0 0.5rem 1rem 0.5rem;
       }
-      .bottom-package .card-package:nth-child(2) {
+      .bottom-package .card-package:nth-child(1) {
         margin-left: 0.5rem;
       }
       .bottom-package .card-package:last-child {
