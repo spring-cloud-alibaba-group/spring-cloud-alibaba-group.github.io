@@ -68,7 +68,7 @@ export interface Post {
 
 export interface CloudIntroduceCard {
     title: UiKeys,
-    priceDesc: UiKeys,
+    priceDesc: UiKeys[],
     price: UiKeys,
     priceSupply?: UiKeys,
     unit?: string,
