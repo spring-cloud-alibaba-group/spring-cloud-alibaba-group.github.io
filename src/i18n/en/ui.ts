@@ -1,5 +1,6 @@
 export default {
 	// website
+	'commmon.header.alert.link': 'Know more',
 	'commmon.header.menu.cloud': 'SPRING CLOUD ALIBABA',
 	'commmon.header.menu.comm': 'COMMUNITY',
 	'commmon.header.menu.demo': 'DEMO',
