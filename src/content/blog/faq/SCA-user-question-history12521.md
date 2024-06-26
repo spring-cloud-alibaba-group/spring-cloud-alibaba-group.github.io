@@ -1,6 +1,6 @@
 ---
 id: "question-history-12521"
-title: "springboot druid sca(spring-cloud-alibaba)"
+title: "springboot druid "
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在Sca（Spring Cloud Alibaba）与Spring Boot集成时，使用Druid作为数据库连接池是一个常见的需求。根据已有的知识内容，下面是如何在Spring Boot项目中集成Druid的详细步骤：1. **添加Druid依赖**   在你的`pom.xml`文件中，需要添加Dr"

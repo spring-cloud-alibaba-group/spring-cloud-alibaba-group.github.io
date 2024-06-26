@@ -1,6 +1,6 @@
 ---
 id: "question-history-12554"
-title: "springboot的启动流程 sca(spring-cloud-alibaba)"
+title: "springboot的启动流程 "
 date: "2024-04-28"
 category: "expertConsultation"
 description: "Sca（Spring Cloud Alibaba）与SpringBoot的启动流程可以概括为以下几个关键步骤，依据提供的知识进行分析：1. **创建项目**：首先，通过IDE（如IntelliJ IDEA或Eclipse）或者访问Spring Initializr阿里云版([https://star"

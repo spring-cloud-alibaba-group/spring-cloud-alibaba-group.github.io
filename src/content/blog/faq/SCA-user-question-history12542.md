@@ -1,6 +1,6 @@
 ---
 id: "question-history-12542"
-title: "springboot swagger2 sca(spring-cloud-alibaba)"
+title: "springboot swagger2 "
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在集成 Swagger2 到 Spring Cloud Alibaba (SCA) 的 Spring Boot 项目中，Swagger2 提供了强大的 API 文档生成和接口测试功能。以下是基于已有知识的步骤指导来实现这一集成：### 分析与准备首先，确保你的 Spring Boot 项目已经成功集"

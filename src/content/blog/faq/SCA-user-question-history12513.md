@@ -1,6 +1,6 @@
 ---
 id: "question-history-12513"
-title: "spring和springboot的区别 sca(spring-cloud-alibaba)"
+title: "spring和springboot的区别 "
 date: "2024-04-28"
 category: "expertConsultation"
 description: "Spring和Spring Boot都是Spring家族中的重要成员，但它们之间存在一些核心的区别：1. **Spring框架概述**：   Spring是一个全面的企业级应用程序框架，它倡导IoC（Inverse of Control，控制反转）和AOP（Aspect Oriented Progr"

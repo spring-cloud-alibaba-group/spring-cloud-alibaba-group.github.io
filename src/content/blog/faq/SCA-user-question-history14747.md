@@ -1,6 +1,6 @@
 ---
 id: "question-history-14747"
-title: "springcloud alibaba与springboot版本对应关系是怎样的？ sca(spring-cloud-alibaba)"
+title: "springcloud alibaba与springboot版本对应关系是怎样的？ "
 date: "2024-05-30"
 category: "expertConsultation"
 description: "根据已有的知识内容，Spring Cloud Alibaba与Spring Boot的版本对应关系如下：1. 确定您当前使用的Spring Boot版本。2. 参照版本对应表，找到与您的Spring Boot版本相匹配的Spring Cloud Alibaba版本及其对应的Spring Cloud版"

@@ -1,13 +1,13 @@
 ---
 id: "question-history-14972"
-title: "兼容springboot2.7.x 的 spring-cloud-alibaba-dep sca(spring-cloud-alibaba)"
+title: "兼容springboot2.7.x 的 spring-cloud-alibaba-dep "
 date: "2024-06-05"
 category: "expertConsultation"
 description: "根据已有的知识，我们可以分析确定Spring Cloud Alibaba兼容Spring Boot 2.7.x的版本信息。首先，需要明确Spring Boot 2.7.x系列属于较新的版本，因此我们应该关注Spring Cloud Alibaba较新版本的兼容情况。从提供的表格中，我们可以看到不同版"
 ---
 
 ## 用户问题 ： 
- 兼容springboot2.7.x 的 spring-cloud-alibaba-dependencies版本 sca(spring-cloud-alibaba) 
+ 兼容springboot2.7.x 的 spring-cloud-alibaba-dependencies版本  
 
 ---------------
 ## 专家官方解答 ：

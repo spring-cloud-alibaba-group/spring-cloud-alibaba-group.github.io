@@ -1,6 +1,6 @@
 ---
 id: "question-history-12518"
-title: "springboot依赖 sca(spring-cloud-alibaba)"
+title: "springboot依赖 "
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (Sca)中的Spring Boot项目添加依赖，主要涉及基础依赖、特定功能依赖以及可能的容器更换。以下是根据提供的知识内容整理的具体步骤：### 添加基础Spring Boot与Sca依赖1. **基础Spring Boot依赖配置**     打开项目"

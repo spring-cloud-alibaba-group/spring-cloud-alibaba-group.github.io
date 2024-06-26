@@ -1,6 +1,6 @@
 ---
 id: "question-history-13369"
-title: "spring-cloud-starter-alibaba-nacos-discovery版本对应关系 sca(spring-cloud-alibaba)"
+title: "spring-cloud-starter-alibaba-nacos-discovery版本对应关系 "
 date: "2024-05-13"
 category: "expertConsultation"
 description: "根据提供的知识内容，我们可以整理出Spring Cloud Alibaba（SCA）中`spring-cloud-starter-alibaba-nacos-discovery`版本与Nacos服务发现组件的对应关系。请注意，虽然直接列出的表格未专门标注`spring-cloud-starter-a"

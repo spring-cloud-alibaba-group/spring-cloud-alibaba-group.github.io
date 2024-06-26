@@ -1,6 +1,6 @@
 ---
 id: "question-history-14601"
-title: "Spring Cloud Alibaba 简介 sca(spring-cloud-alibaba)"
+title: "Spring Cloud Alibaba 简介 "
 date: "2024-05-27"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba 是一个全面的微服务解决方案，旨在为Spring Boot和Spring Cloud生态系统提供与阿里巴巴中间件和服务治理能力的深度集成。它基于Spring AI框架，特别是针对Spring AI 0.8.1版本API，实现了对阿里云通义系列大模型的接入，通过"
@@ -9,7 +9,7 @@ keywords: ["spring-cloud-alibaba","Spring Cloud Alibaba","简介"]
 ---
 
 ## 用户问题 ： 
- Spring Cloud Alibaba 简介 sca(spring-cloud-alibaba) 
+ Spring Cloud Alibaba 简介  
 
 ---------------
 ## 专家官方解答 ：

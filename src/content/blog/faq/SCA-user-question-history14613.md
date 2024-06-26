@@ -1,6 +1,6 @@
 ---
 id: "question-history-14613"
-title: "云原生 SpringCloud Alibaba 之 Nacos 注册中心样例实战 sca(spring-cloud-alibaba)"
+title: "云原生 SpringCloud Alibaba 之 Nacos 注册中心样例实战 "
 date: "2024-05-27"
 category: "expertConsultation"
 description: "要进行云原生Spring Cloud Alibaba之Nacos注册中心的样例实战，我们可以按照以下步骤操作：### 1. 环境准备与依赖引入确保你的开发环境已配置好Java和Maven。在你的Spring Boot项目中加入以下依赖：```xml!-- Spring Cloud Alibaba s"

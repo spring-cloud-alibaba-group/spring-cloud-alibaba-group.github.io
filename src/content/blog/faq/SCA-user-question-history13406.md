@@ -1,6 +1,6 @@
 ---
 id: "question-history-13406"
-title: "如何通过Nacos Server 和 spring-cloud-starter-alib sca(spring-cloud-alibaba)"
+title: "如何通过Nacos Server 和 spring-cloud-starter-alib "
 date: "2024-05-13"
 category: "expertConsultation"
 description: "为了通过Nacos Server和`spring-cloud-starter-alibaba-nacos-config`实现配置的动态变更，可以遵循以下步骤操作：1. **添加依赖**：确保你的Spring Cloud项目中包含了`spring-cloud-starter-alibaba-nacos"
@@ -9,7 +9,7 @@ keywords: ["spring-cloud-alibaba","Nacos Server","spring-cloud-starter-alibaba-n
 ---
 
 ## 用户问题 ： 
- 如何通过Nacos Server 和 spring-cloud-starter-alibaba-nacos-config 实现配置的动态变更？ sca(spring-cloud-alibaba) 
+ 如何通过Nacos Server 和 spring-cloud-starter-alibaba-nacos-config 实现配置的动态变更？  
 
 ---------------
 ## 专家官方解答 ：

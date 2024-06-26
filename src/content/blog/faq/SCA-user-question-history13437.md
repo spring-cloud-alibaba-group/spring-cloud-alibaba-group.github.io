@@ -1,6 +1,6 @@
 ---
 id: "question-history-13437"
-title: "spring cloud alibaba 五大组件 介绍 sca(spring-cloud-alibaba)"
+title: "spring cloud alibaba 五大组件 介绍 "
 date: "2024-05-13"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba 是一套微服务解决方案，它为基于 Spring Cloud 的应用提供了与 Alibaba 生态系统无缝集成的能力。其核心包含五大组件，以下是这些组件的简要介绍：1. **Nacos**（配置中心与服务发现）:   - **功能**: Nacos 提供了服务发"

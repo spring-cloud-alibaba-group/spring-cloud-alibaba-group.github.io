@@ -1,6 +1,6 @@
 ---
 id: "question-history-12515"
-title: "springboot打包成jar sca(spring-cloud-alibaba)"
+title: "springboot打包成jar "
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在基于Spring Cloud Alibaba (Sca)的Spring Boot项目中，打包成jar文件是一个标准流程，用于将你的应用部署为一个独立运行的可执行jar包。根据通用的Spring Boot项目打包步骤，以下是针对此问题的详细指导：### 打包步骤1. **确保构建工具有配置**   "

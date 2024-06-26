@@ -1,13 +1,13 @@
 ---
 id: "question-history-14951"
-title: "sca官网怎么进 sca(spring-cloud-alibaba)"
+title: "sca官网怎么进 "
 date: "2024-06-04"
 category: "expertConsultation"
 description: "要进入Spring Cloud Alibaba (SCA)的官网，您可以直接访问以下链接：[Spring Cloud Alibaba官网地址](https://sca.aliyun.com)在这个官网上，您可以获取关于Spring Cloud Alibaba的全面信息，包括但不限于用户文档、学习资料"
 ---
 
 ## 用户问题 ： 
- sca官网怎么进 sca(spring-cloud-alibaba) 
+ sca官网怎么进  
 
 ---------------
 ## 专家官方解答 ：

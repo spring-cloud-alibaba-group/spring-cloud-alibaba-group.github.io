@@ -1,14 +1,14 @@
 ---
 id: "question-history-12519"
-title: "springboot jwt sca(spring-cloud-alibaba)"
+title: "springboot jwt "
 date: "2024-04-28"
 category: "expertConsultation"
-description: "在处理关于`sca(spring-cloud-alibaba)`与`springboot`集成JWT（JSON Web Tokens）的问题时，我们可以分步进行分析与实施。虽然提供的参考内容未直接涉及JWT的集成，但我们可以基于Spring Boot的一般实践和Spring Cloud Alibab"
+description: "在处理关于``与`springboot`集成JWT（JSON Web Tokens）的问题时，我们可以分步进行分析与实施。虽然提供的参考内容未直接涉及JWT的集成，但我们可以基于Spring Boot的一般实践和Spring Cloud Alibab"
 tags: ["spring-cloud-alibaba","springboot","jwt"]
 keywords: ["spring-cloud-alibaba","springboot","jwt"]
 ---
 
-在处理关于`sca(spring-cloud-alibaba)`与`springboot`集成JWT（JSON Web Tokens）的问题时，我们可以分步进行分析与实施。虽然提供的参考内容未直接涉及JWT的集成，但我们可以基于Spring Boot的一般实践和Spring Cloud Alibaba的特性来指导这一过程。
+在处理关于``与`springboot`集成JWT（JSON Web Tokens）的问题时，我们可以分步进行分析与实施。虽然提供的参考内容未直接涉及JWT的集成，但我们可以基于Spring Boot的一般实践和Spring Cloud Alibaba的特性来指导这一过程。
 
 ### 分析原因
 

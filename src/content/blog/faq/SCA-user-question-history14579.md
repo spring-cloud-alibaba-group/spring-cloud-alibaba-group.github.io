@@ -1,6 +1,6 @@
 ---
 id: "question-history-14579"
-title: "spring cloud alibaba 集成higress 的具体步骤 sca(spring-cloud-alibaba)"
+title: "spring cloud alibaba 集成higress 的具体步骤 "
 date: "2024-05-27"
 category: "expertConsultation"
 description: "要集成Spring Cloud Alibaba与Higress，按照以下步骤操作：1. **准备Nacos作为注册中心**：   - 参考[Nacos-Spring-Cloud-快速开始](https://sca.aliyun.com/zh-cn/docs/next/user-guide/nacos"

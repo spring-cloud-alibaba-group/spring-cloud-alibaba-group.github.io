@@ -1,13 +1,13 @@
 ---
 id: "question-history-14809"
-title: "spring cloud stream 整合 阿里云rocketmq sca(spring-cloud-alibaba)"
+title: "spring cloud stream 整合 阿里云rocketmq "
 date: "2024-05-30"
 category: "expertConsultation"
 description: "要整合Spring Cloud Stream与阿里云RocketMQ，您可以遵循以下步骤进行操作，这些建议结合了通用实践与提供的参考资料中的关键信息：1. **环境准备**：   - 确保您已有阿里云RocketMQ服务实例。如果尚未创建，您需要登录阿里云控制台，按照指引创建RocketMQ实例，并"
 ---
 
 ## 用户问题 ： 
- spring cloud stream 整合 阿里云rocketmq sca(spring-cloud-alibaba) 
+ spring cloud stream 整合 阿里云rocketmq  
 
 ---------------
 ## 专家官方解答 ：

@@ -1,6 +1,6 @@
 ---
 id: "question-history-13465"
-title: "spring-cloud-starter-alibaba-seata版本号 sca(spring-cloud-alibaba)"
+title: "spring-cloud-starter-alibaba-seata版本号 "
 date: "2024-05-14"
 category: "expertConsultation"
 description: "根据已有的知识内容，直接获取`spring-cloud-starter-alibaba-seata`的特定版本号信息并不直接存在。但是，我们可以通过理解Spring Cloud Alibaba项目版本与Seata版本的对应关系来间接推断。在Spring Cloud Alibaba的版本对应表中，虽然"

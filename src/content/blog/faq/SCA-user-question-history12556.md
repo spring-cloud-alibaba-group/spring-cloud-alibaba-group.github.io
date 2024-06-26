@@ -1,6 +1,6 @@
 ---
 id: "question-history-12556"
-title: "springboot devtools sca(spring-cloud-alibaba)"
+title: "springboot devtools "
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (Sca)项目中使用Spring Boot DevTools可以提升开发时的效率，DevTools为应用提供了自动重启、LiveReload等功能。虽然直接提及Sca与DevTools结合使用的资料有限，但我们可以基于标准Spring Boot中集成Dev"

@@ -1,6 +1,6 @@
 ---
 id: "question-history-12544"
-title: "springboot junit sca(spring-cloud-alibaba)"
+title: "springboot junit "
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (SCA)项目中使用SpringBoot Test结合JUnit进行单元测试和集成测试的步骤如下：1. **依赖集成**：首先确保你的`pom.xml`或`build.gradle`文件中包含了Spring Boot Test以及JUnit相关的依赖。对于"

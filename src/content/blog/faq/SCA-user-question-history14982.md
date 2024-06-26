@@ -1,13 +1,13 @@
 ---
 id: "question-history-14982"
-title: "先介绍一下SpringCloud Gateway, 再对比下刚才提到的Higress G sca(spring-cloud-alibaba)"
+title: "先介绍一下SpringCloud Gateway, 再对比下刚才提到的Higress G "
 date: "2024-06-05"
 category: "expertConsultation"
 description: "首先，让我们从Spring Cloud Gateway开始介绍。Spring Cloud Gateway作为Spring Cloud生态中的API网关组件，它提供了统一的路由、过滤以及负载均衡等功能，旨在为微服务架构提供一种简单而有效的方式来处理请求的接入层。Spring Cloud Gateway"
 ---
 
 ## 用户问题 ： 
- 先介绍一下SpringCloud Gateway, 再对比下刚才提到的Higress Gateway sca(spring-cloud-alibaba) 
+ 先介绍一下SpringCloud Gateway, 再对比下刚才提到的Higress Gateway  
 
 ---------------
 ## 专家官方解答 ：

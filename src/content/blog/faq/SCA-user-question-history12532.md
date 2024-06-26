@@ -1,6 +1,6 @@
 ---
 id: "question-history-12532"
-title: "springboot 文件下载 sca(spring-cloud-alibaba)"
+title: "springboot 文件下载 "
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在`sca`（Spring Cloud Alibaba）与`springboot`环境中实现文件下载功能，可以遵循标准的Spring Boot实践结合Sca提供的特性。尽管参考内容未直接涵盖文件下载的具体步骤，但我们可以基于Spring Boot的基础功能来设计解决方案。下面是实现文件下载的步骤：#"

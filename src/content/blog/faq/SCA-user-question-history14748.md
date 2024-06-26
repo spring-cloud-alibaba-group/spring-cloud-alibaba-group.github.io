@@ -1,6 +1,6 @@
 ---
 id: "question-history-14748"
-title: "阿里云 springboot地址 是哪个？ sca(spring-cloud-alibaba)"
+title: "阿里云 springboot地址 是哪个？ "
 date: "2024-05-30"
 category: "expertConsultation"
 description: "阿里云 Spring Boot 地址，即快速创建 SCA (Spring Cloud Alibaba) Spring Boot 项目的地址是：[https://start.aliyun.com](https://start.aliyun.com)。通过访问该地址，您可以根据项目需求选择和配置 Spr"

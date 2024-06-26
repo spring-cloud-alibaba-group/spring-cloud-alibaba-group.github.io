@@ -1,6 +1,6 @@
 ---
 id: "question-history-14598"
-title: "比较spring cloud和dubbo，各自的优缺点是什么 sca(spring-cloud-alibaba)"
+title: "比较spring cloud和dubbo，各自的优缺点是什么 "
 date: "2024-05-27"
 category: "expertConsultation"
 description: "在比较Spring Cloud Alibaba与Dubbo时，我们可以从以下几个维度来分析它们各自的优缺点：### Spring Cloud Alibaba**优点:**1. **全面性与集成度高：** Spring Cloud Alibaba为微服务架构提供了一站式的解决方案，包括服务发现、配置管"
