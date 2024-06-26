@@ -1,13 +1,13 @@
 ---
 id: "question-history-15026"
-title: "sidecar 框架 "
+title: "sidecar 框架 sca(spring-cloud-alibaba)"
 date: "2024-06-05"
 category: "expertConsultation"
 description: "在已有的知识内容中，并没有直接提及Sca(Spring Cloud Alibaba) Sidecar框架的具体信息。根据Sca的基本概念及其与微服务生态的融合，Sidecar模式通常指的是在微服务架构中，为服务实例附加一个辅助进程，用来处理服务间通信、监控、安全或其他跨-cutting关注点的功能。"
 ---
 
 ## 用户问题 ： 
- sidecar 框架  
+ sidecar 框架 sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：

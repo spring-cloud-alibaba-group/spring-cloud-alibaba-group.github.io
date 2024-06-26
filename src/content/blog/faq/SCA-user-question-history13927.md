@@ -1,6 +1,6 @@
 ---
 id: "question-history-13927"
-title: "spring cloud alibaba ai 有什么好处？ "
+title: "spring cloud alibaba ai 有什么好处？ sca(spring-cloud-alibaba)"
 date: "2024-05-17"
 category: "expertConsultation"
 description: "使用Spring Cloud Alibaba AI有以下显著好处：1. **标准化接口与易用性**：Spring Cloud Alibaba AI通过提供一套统一的接口，标准化了不同AI服务提供商（如阿里云）的接入方式，使得开发者能够以最低的学习成本和最少的代码改动，轻松地在Spring生态中集成A"

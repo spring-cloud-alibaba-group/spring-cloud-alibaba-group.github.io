@@ -1,14 +1,14 @@
 ---
 id: "question-history-12531"
-title: "springboot菜鸟教程 "
+title: "springboot菜鸟教程 sca(spring-cloud-alibaba)"
 date: "2024-04-28"
 category: "expertConsultation"
-description: "针对您的问题“ springboot菜鸟教程”，以下是基于提供的知识内容为您整理的教程概览及步骤说明：### 1. Spring Boot项目快速启动- **创建项目**：使用IntelliJ IDEA或Eclipse等IDE直接创建Spring B"
+description: "针对您的问题“sca(spring-cloud-alibaba) springboot菜鸟教程”，以下是基于提供的知识内容为您整理的教程概览及步骤说明：### 1. Spring Boot项目快速启动- **创建项目**：使用IntelliJ IDEA或Eclipse等IDE直接创建Spring B"
 tags: ["spring-cloud-alibaba","springboot","菜鸟教程"]
 keywords: ["spring-cloud-alibaba","springboot","菜鸟教程"]
 ---
 
-针对您的问题“ springboot菜鸟教程”，以下是基于提供的知识内容为您整理的教程概览及步骤说明：
+针对您的问题“sca(spring-cloud-alibaba) springboot菜鸟教程”，以下是基于提供的知识内容为您整理的教程概览及步骤说明：
 
 ### 1. Spring Boot项目快速启动
 - **创建项目**：使用IntelliJ IDEA或Eclipse等IDE直接创建Spring Boot项目，或访问[spring Initializr Alibaba](https://start.aliyun.com)生成项目，选择所需的sca Spring Boot依赖。

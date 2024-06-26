@@ -1,6 +1,6 @@
 ---
 id: "question-history-14799"
-title: "spring-cloud.version 2020.0.3  spring-cloud.version  spring-cloud-starter-alibaba-nacos-discovery版本是什么 "
+title: "spring-cloud.version 2020.0.3  spring-cloud.version  spring-cloud-starter-alibaba-nacos-discovery版本是什么 sca(spring-cloud-alibaba)"
 date: "2024-05-30"
 category: "expertConsultation"
 description: "根据提供的知识内容，我们可以分析确定`spring-cloud-starter-alibaba-nacos-discovery`版本与`spring-cloud.version`的关系。在Spring Cloud Alibaba体系中，组件版本通常与Spring Cloud的版本有一定的依赖和兼容性"

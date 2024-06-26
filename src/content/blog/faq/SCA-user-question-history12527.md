@@ -1,6 +1,6 @@
 ---
 id: "question-history-12527"
-title: "springboot scheduler "
+title: "springboot scheduler sca(spring-cloud-alibaba)"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (SCA)与Spring Boot环境下实现Scheduler（计划任务）功能，主要可以通过Spring Boot自带的`@Scheduled`注解来完成。虽然直接提及Spring Cloud Alibaba与定时任务结合的特定内容较少，但我们可以基于标准"

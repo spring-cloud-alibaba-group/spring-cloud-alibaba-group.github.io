@@ -1,18 +1,18 @@
 ---
 id: "question-history-15038"
-title: "spirng cloud alibaba 组件 "
+title: "spirng cloud alibaba 组件 sca(spring-cloud-alibaba)"
 date: "2024-06-05"
 category: "expertConsultation"
-description: "关于您的问题「 spirng cloud alibaba 组件」，根据已有的知识内容，我可以为您概述Spring Cloud Alibaba的关键组件及其功能：1. **Nacos**: 作为服务发现与配置管理工具，Nacos允许您管理微服务的配置和"
+description: "关于您的问题「sca(spring-cloud-alibaba) spirng cloud alibaba 组件」，根据已有的知识内容，我可以为您概述Spring Cloud Alibaba的关键组件及其功能：1. **Nacos**: 作为服务发现与配置管理工具，Nacos允许您管理微服务的配置和"
 ---
 
 ## 用户问题 ： 
- spirng cloud alibaba 组件  
+ spirng cloud alibaba 组件 sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：
 
-关于您的问题「 spirng cloud alibaba 组件」，根据已有的知识内容，我可以为您概述Spring Cloud Alibaba的关键组件及其功能：
+关于您的问题「sca(spring-cloud-alibaba) spirng cloud alibaba 组件」，根据已有的知识内容，我可以为您概述Spring Cloud Alibaba的关键组件及其功能：
 
 1. **Nacos**: 作为服务发现与配置管理工具，Nacos允许您管理微服务的配置和发现服务，支持动态配置更新和健康检查等功能。
 

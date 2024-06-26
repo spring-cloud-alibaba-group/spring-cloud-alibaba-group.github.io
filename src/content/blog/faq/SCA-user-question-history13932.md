@@ -1,6 +1,6 @@
 ---
 id: "question-history-13932"
-title: "springcloud alibaba 主要组件介绍 "
+title: "springcloud alibaba 主要组件介绍 sca(spring-cloud-alibaba)"
 date: "2024-05-20"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba (SCA) 是一个为分布式系统开发提供解决方案的框架，它集成了阿里巴巴开源的多个组件，旨在简化微服务架构中的服务治理、配置管理、限流降级、消息传递等关键功能。以下是SCA的主要组件介绍：1. **Sentinel**: Sentinel 是一个流量控制和熔断"

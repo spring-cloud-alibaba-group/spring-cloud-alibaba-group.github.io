@@ -1,6 +1,6 @@
 ---
 id: "question-history-13356"
-title: "springboot2.7 对应 springcloud alibaba版本是多少？ "
+title: "springboot2.7 对应 springcloud alibaba版本是多少？ sca(spring-cloud-alibaba)"
 date: "2024-05-13"
 category: "expertConsultation"
 description: "根据提供的知识内容，Spring Boot 2.7 版本并没有直接对应的 Spring Cloud Alibaba 版本信息。但是，我们可以通过查看Spring Boot与其他版本的对应关系来推测。通常，Spring Cloud Alibaba的版本选择需要与Spring Boot和Spring C"

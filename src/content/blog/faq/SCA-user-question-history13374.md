@@ -1,6 +1,6 @@
 ---
 id: "question-history-13374"
-title: "spring boot nacos 配置中心整合方法 "
+title: "spring boot nacos 配置中心整合方法 sca(spring-cloud-alibaba)"
 date: "2024-05-13"
 category: "expertConsultation"
 description: "为了整合Sca（Spring Cloud Alibaba）与Spring Boot应用以利用Nacos作为配置中心，您可以遵循以下步骤：1. **添加依赖**：   在您的Spring Boot项目的`pom.xml`文件中，添加Spring Cloud Alibaba的Nacos Config和N"

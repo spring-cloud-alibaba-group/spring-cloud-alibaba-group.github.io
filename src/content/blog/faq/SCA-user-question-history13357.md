@@ -1,6 +1,6 @@
 ---
 id: "question-history-13357"
-title: "Spring Cloud 整合 Nacos 的详细教程是怎样的？ "
+title: "Spring Cloud 整合 Nacos 的详细教程是怎样的？ sca(spring-cloud-alibaba)"
 date: "2024-05-13"
 category: "expertConsultation"
 description: "为了帮助您详细了解如何在Spring Cloud中整合Nacos，我们可以依据已有的知识进行梳理。以下是整合Nacos作为配置中心和服务发现的基本步骤：### 1. 环境准备确保您的开发环境中已安装Java并配置好Maven或Gradle。同时，确保可以访问Nacos Server。您可以从[Nac"

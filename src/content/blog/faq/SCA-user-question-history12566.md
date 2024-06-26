@@ -1,6 +1,6 @@
 ---
 id: "question-history-12566"
-title: "springboot的优点 "
+title: "springboot的优点 sca(spring-cloud-alibaba)"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "Sca（Spring Cloud Alibaba）与SpringBoot结合的优点主要体现在以下几个方面：1. **丰富的微服务生态集成**：Spring Cloud Alibaba为Spring Boot应用提供了丰富的微服务解决方案，包括服务发现（Nacos）、配置中心（Nacos）、分布式事务"

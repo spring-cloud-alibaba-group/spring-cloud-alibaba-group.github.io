@@ -1,6 +1,6 @@
 ---
 id: "question-history-13947"
-title: "springcloudalibaba组件介绍 "
+title: "springcloudalibaba组件介绍 sca(spring-cloud-alibaba)"
 date: "2024-05-21"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba（SCA）是一套微服务解决方案，它为分布式系统开发提供了包括服务发现、配置管理、熔断器、智能路由等在内的多种功能。SCA集成了多个关键组件，以支持微服务架构的各种需求。以下是这些核心组件的简要介绍：1. **Nacos**：Nacos是一个动态配置管理和服务发"

@@ -1,13 +1,13 @@
 ---
 id: "question-history-13928"
-title: "怎么用spring cloud alibaba ai 实现基于大模型的聊天？ "
+title: "怎么用spring cloud alibaba ai 实现基于大模型的聊天？ sca(spring-cloud-alibaba)"
 date: "2024-06-17"
 category: "expertConsultation"
 description: "要使用Spring Cloud Alibaba AI实现基于大模型的聊天功能，您可以遵循以下详细步骤：### 1. 确认技术前提确保您的开发环境满足以下条件：- **JDK版本**：确保使用的JDK版本在JDK 17或以上。### 2. 申请阿里云通义千问API-Key- 访问[阿里云百炼页面](h"
 ---
 
 ## 用户问题 ： 
- 怎么用spring cloud alibaba ai 实现基于大模型的聊天？  
+ 怎么用spring cloud alibaba ai 实现基于大模型的聊天？ sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：

@@ -1,18 +1,18 @@
 ---
 id: "question-history-14963"
-title: "spirng-cloud-starter-alibaba-ai 最新版本 "
+title: "spirng-cloud-starter-alibaba-ai 最新版本 sca(spring-cloud-alibaba)"
 date: "2024-06-05"
 category: "expertConsultation"
-description: "根据我的知识库，关于``中`spirng-cloud-starter-alibaba-ai`的最新版本信息并未直接提及。但是，我可以帮助您理解如何查找这样的信息或者提供一些相关的指导。首先，要查找`spring-cloud-starter-aliba"
+description: "根据我的知识库，关于`sca(spring-cloud-alibaba)`中`spirng-cloud-starter-alibaba-ai`的最新版本信息并未直接提及。但是，我可以帮助您理解如何查找这样的信息或者提供一些相关的指导。首先，要查找`spring-cloud-starter-aliba"
 ---
 
 ## 用户问题 ： 
- spirng-cloud-starter-alibaba-ai 最新版本  
+ spirng-cloud-starter-alibaba-ai 最新版本 sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：
 
-根据我的知识库，关于``中`spirng-cloud-starter-alibaba-ai`的最新版本信息并未直接提及。但是，我可以帮助您理解如何查找这样的信息或者提供一些相关的指导。
+根据我的知识库，关于`sca(spring-cloud-alibaba)`中`spirng-cloud-starter-alibaba-ai`的最新版本信息并未直接提及。但是，我可以帮助您理解如何查找这样的信息或者提供一些相关的指导。
 
 首先，要查找`spring-cloud-starter-alibaba-ai`的最新版本，通常的做法是访问Spring Cloud Alibaba的官方文档或者其GitHub仓库。这一步骤虽然在我的知识内容中没有直接步骤说明，但基于常规的开源项目维护和版本查询实践，这是推荐的做法。
 

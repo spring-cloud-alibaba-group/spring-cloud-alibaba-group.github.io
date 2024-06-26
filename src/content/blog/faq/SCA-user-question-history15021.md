@@ -1,13 +1,13 @@
 ---
 id: "question-history-15021"
-title: "dependency   groupid com.alibaba  groupid    "
+title: "dependency   groupid com.alibaba  groupid    sca(spring-cloud-alibaba)"
 date: "2024-06-05"
 category: "expertConsultation"
 description: "根据你的问题，你似乎想要了解如何在 Spring Cloud Alibaba 项目中使用 Druid 数据源，并且提到了添加 Druid 依赖的代码片段。不过，你的代码片段有误，我将首先纠正依赖的代码片段，然后结合已有知识给你一个完整的指导。### 纠正依赖代码片段正确的 Maven 依赖代码片段应"
 ---
 
 ## 用户问题 ： 
- dependency   groupid com.alibaba  groupid   artifactid druid- druid-spring-boot-starter  
+ dependency   groupid com.alibaba  groupid   artifactid druid- druid-spring-boot-starter sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：

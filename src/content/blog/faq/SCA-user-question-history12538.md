@@ -1,6 +1,6 @@
 ---
 id: "question-history-12538"
-title: "springboot 项目搭建 "
+title: "springboot 项目搭建 sca(spring-cloud-alibaba)"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "要搭建一个基于Sca（Spring Cloud Alibaba）的Spring Boot项目，您可以遵循以下详细步骤：1. **创建Spring Boot项目**   - 使用IDE（如IntelliJ IDEA或Eclipse）的内置功能创建一个新的Spring Boot项目，或者访问[Sprin"

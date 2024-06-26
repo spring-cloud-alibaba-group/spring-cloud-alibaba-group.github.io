@@ -1,13 +1,13 @@
 ---
 id: "question-history-15036"
-title: "springcloud alibaba2023.0.1.0 java版本 "
+title: "springcloud alibaba2023.0.1.0 java版本 sca(spring-cloud-alibaba)"
 date: "2024-06-05"
 category: "expertConsultation"
 description: "根据您的问题，您想了解的是使用Spring Cloud Alibaba 2023.0.1.0版本所需的Java版本。虽然直接的Java版本信息未在提供的知识中明确给出，但我们可以依据通常的Spring Boot与Java版本的兼容性来推测。通常，Spring Boot 3.x 版本（包括3.2.4）"
 ---
 
 ## 用户问题 ： 
- springcloud alibaba2023.0.1.0 java版本  
+ springcloud alibaba2023.0.1.0 java版本 sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：

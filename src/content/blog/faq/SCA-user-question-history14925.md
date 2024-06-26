@@ -1,13 +1,13 @@
 ---
 id: "question-history-14925"
-title: "Springboot3.1.5用那个版本nacos啊？ "
+title: "Springboot3.1.5用那个版本nacos啊？ sca(spring-cloud-alibaba)"
 date: "2024-06-03"
 category: "expertConsultation"
 description: "根据已有的知识信息，直接查找不到Spring Boot 3.1.5对应的Spring Cloud Alibaba及Nacos版本。但是，我们可以根据版本发布的规律进行推理。通常，Spring Cloud Alibaba的版本会与特定范围内的Spring Boot版本保持兼容。从提供的信息中，可以看到"
 ---
 
 ## 用户问题 ： 
- Springboot3.1.5用那个版本nacos啊？  
+ Springboot3.1.5用那个版本nacos啊？ sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：

@@ -1,18 +1,18 @@
 ---
 id: "question-history-14949"
-title: "spring-cloud-alibaba 下载失败 "
+title: "spring-cloud-alibaba 下载失败 sca(spring-cloud-alibaba)"
 date: "2024-06-04"
 category: "expertConsultation"
-description: "在遇到` spring-cloud-alibaba`下载失败的问题时，这通常可能是由于以下几个原因导致的：1. **网络问题**：访问Maven中央仓库或阿里巴巴的Maven仓库可能因为网络不稳定或被限制导致下载失败。2. **依赖版本问题**：指定"
+description: "在遇到`sca(spring-cloud-alibaba) spring-cloud-alibaba`下载失败的问题时，这通常可能是由于以下几个原因导致的：1. **网络问题**：访问Maven中央仓库或阿里巴巴的Maven仓库可能因为网络不稳定或被限制导致下载失败。2. **依赖版本问题**：指定"
 ---
 
 ## 用户问题 ： 
- spring-cloud-alibaba 下载失败  
+ spring-cloud-alibaba 下载失败 sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：
 
-在遇到` spring-cloud-alibaba`下载失败的问题时，这通常可能是由于以下几个原因导致的：
+在遇到`sca(spring-cloud-alibaba) spring-cloud-alibaba`下载失败的问题时，这通常可能是由于以下几个原因导致的：
 
 1. **网络问题**：访问Maven中央仓库或阿里巴巴的Maven仓库可能因为网络不稳定或被限制导致下载失败。
 2. **依赖版本问题**：指定的Spring Cloud Alibaba版本可能不存在或已被移除。

@@ -1,6 +1,6 @@
 ---
 id: "question-history-14755"
-title: "spring boot 的Cannot determine embedded database driver class for database type NONE 产生原因 "
+title: "spring boot 的Cannot determine embedded database driver class for database type NONE 产生原因 sca(spring-cloud-alibaba)"
 date: "2024-05-30"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba项目中遇到`Cannot determine embedded database driver class for database type NONE`错误，其产生原因及解决步骤如下：### 原因分析：1. **未使用DataSource却引入相关依赖**"

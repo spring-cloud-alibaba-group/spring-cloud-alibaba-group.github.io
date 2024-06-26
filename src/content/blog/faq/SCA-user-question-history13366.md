@@ -1,6 +1,6 @@
 ---
 id: "question-history-13366"
-title: "springboot融合nacos成为配置中心教程 "
+title: "springboot融合nacos成为配置中心教程 sca(spring-cloud-alibaba)"
 date: "2024-05-13"
 category: "expertConsultation"
 description: "要将Spring Boot与Nacos融合以实现配置中心功能，您可以遵循以下步骤进行操作，基于提供的知识内容：1. **添加依赖**   首先，在您的Spring Boot项目的`pom.xml`文件中添加Nacos Config和Nacos Discovery相关的Starter依赖。这将允许您的"

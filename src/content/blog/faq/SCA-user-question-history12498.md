@@ -1,6 +1,6 @@
 ---
 id: "question-history-12498"
-title: "springboot 官网 "
+title: "springboot 官网 sca(spring-cloud-alibaba)"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "Sca（Spring Cloud Alibaba）与Spring Boot的官方网站信息并不直接包含在提供的参考内容中，但根据通用知识，我可以指引你找到它们的官方网站：- **Spring Cloud Alibaba官网**: 访问 [https://spring-cloud-alibaba.git"

@@ -1,13 +1,13 @@
 ---
 id: "question-history-15037"
-title: "spring cloud alibaba 五大组件 "
+title: "spring cloud alibaba 五大组件 sca(spring-cloud-alibaba)"
 date: "2024-06-05"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba包含五大核心组件，它们分别是：1. **Sentinel**：这是一款用于流量控制和熔断降级的组件，帮助系统更好地应对流量洪峰，提升系统的稳定性和可靠性。根据知识中的信息，Sentinel在不同版本的Spring Cloud Alibaba中通常与1.8.x系"
 ---
 
 ## 用户问题 ： 
- spring cloud alibaba 五大组件  
+ spring cloud alibaba 五大组件 sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：

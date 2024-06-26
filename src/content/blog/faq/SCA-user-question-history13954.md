@@ -1,6 +1,6 @@
 ---
 id: "question-history-13954"
-title: "No spring.config.import property has been defined Action: Add a spring.config.import=nacos: property to your configuration. If configuration is not required add spring.config.import=optional:nacos: instead. To disable this check, set spring.cloud.nacos.config.import-check.enabled=false.如何解决 "
+title: "No spring.config.import property has been defined Action: Add a spring.config.import=nacos: property to your configuration. If configuration is not required add spring.config.import=optional:nacos: instead. To disable this check, set spring.cloud.nacos.config.import-check.enabled=false.如何解决 sca(spring-cloud-alibaba)"
 date: "2024-05-21"
 category: "expertConsultation"
 description: "根据提供的知识内容，遇到No spring.config.import property has been defined的问题，其原因在于Spring Cloud应用在尝试集成Nacos作为配置中心时，没有正确地在配置文件中定义`spring.config.import=nacos:`属性来导入N"

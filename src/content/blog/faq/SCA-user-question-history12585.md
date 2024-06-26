@@ -1,6 +1,6 @@
 ---
 id: "question-history-12585"
-title: "springboot activemq "
+title: "springboot activemq sca(spring-cloud-alibaba)"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在SCA（Spring Cloud Alibaba）与Spring Boot集成ActiveMQ时，我们主要关注如何在Spring Boot应用中配置并使用ActiveMQ作为消息服务。虽然直接的参考内容未提供，但基于Spring Boot的一般集成方式及Sca的特性，我们可以推导出以下步骤：###"

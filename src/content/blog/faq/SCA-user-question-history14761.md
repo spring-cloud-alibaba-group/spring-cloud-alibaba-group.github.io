@@ -1,12 +1,12 @@
 ---
 id: "question-history-14761"
-title: "spring boot expected single matching bean but found 2 "
+title: "spring boot expected single matching bean but found 2 sca(spring-cloud-alibaba)"
 date: "2024-05-30"
 category: "expertConsultation"
-description: "在``环境中遇到`spring boot expected single matching bean but found 2`的异常，通常是因为Spring Boot在尝试自动配置时找到了多个相同类型的Bean（本例中为`DataSource`）。结"
+description: "在`sca(spring-cloud-alibaba)`环境中遇到`spring boot expected single matching bean but found 2`的异常，通常是因为Spring Boot在尝试自动配置时找到了多个相同类型的Bean（本例中为`DataSource`）。结"
 ---
 
-在``环境中遇到`spring boot expected single matching bean but found 2`的异常，通常是因为Spring Boot在尝试自动配置时找到了多个相同类型的Bean（本例中为`DataSource`）。结合你的场景，这可能发生在集成Nacos或其他数据源配置时。根据提供的知识内容，我们可以分步解析和解决此问题：
+在`sca(spring-cloud-alibaba)`环境中遇到`spring boot expected single matching bean but found 2`的异常，通常是因为Spring Boot在尝试自动配置时找到了多个相同类型的Bean（本例中为`DataSource`）。结合你的场景，这可能发生在集成Nacos或其他数据源配置时。根据提供的知识内容，我们可以分步解析和解决此问题：
 
 ### 原因分析：
 1. **应用需要注入DataSource Bean**：在使用Spring Cloud Alibaba时，通常涉及到数据库操作的服务需要注入一个`DataSource`来连接数据库。
@@ -27,7 +27,7 @@ description: "在``环境中遇到`spring boot expected single matching bean but
 ### 额外提示：
 - 确保理解Nacos Config和Nacos Discovery的使用方法，参考[Nacos Config](https://github.com/spring-cloud-incubator/spring-cloud-alibaba/wiki/Nacos-config) 和 [Nacos Discovery](https://github.com/spring-cloud-incubator/spring-cloud-alibaba/wiki/Nacos-discovery)，特别是如何在Spring Cloud Alibaba项目中正确配置和使用数据源。
 
-以上步骤应能帮助你解决在``项目中遇到的多数据源冲突问题，确保应用能够正常启动并正确使用预期的数据源。
+以上步骤应能帮助你解决在`sca(spring-cloud-alibaba)`项目中遇到的多数据源冲突问题，确保应用能够正常启动并正确使用预期的数据源。
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

@@ -1,6 +1,6 @@
 ---
 id: "question-history-14767"
-title: "spring boot 的事物抽象的具体例子 "
+title: "spring boot 的事物抽象的具体例子 sca(spring-cloud-alibaba)"
 date: "2024-05-30"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba中，Spring Boot应用的事物抽象主要通过Spring Framework自带的事务管理器以及Alibaba提供的Seata来实现分布式事务处理。以下是一个具体的应用场景示例，结合了Spring Boot的声明式事务管理与Seata的分布式事务协调能力"

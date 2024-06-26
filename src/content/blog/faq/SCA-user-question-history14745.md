@@ -1,6 +1,6 @@
 ---
 id: "question-history-14745"
-title: "springboot3.1 集成 spring cloud alibaba 详细步骤 "
+title: "springboot3.1 集成 spring cloud alibaba 详细步骤 sca(spring-cloud-alibaba)"
 date: "2024-05-30"
 category: "expertConsultation"
 description: "为了集成Spring Cloud Alibaba到Spring Boot 3.1项目中，我们可以遵循以下步骤，结合已有的知识进行分析和操作：### 步骤分析与操作指南#### 1. 确认依赖与版本兼容性首先，确保Spring Boot 3.1与Spring Cloud Alibaba的版本兼容。通常"

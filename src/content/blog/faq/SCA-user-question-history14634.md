@@ -1,6 +1,6 @@
 ---
 id: "question-history-14634"
-title: "spring.cloud.nacos.discovery.server-addr 介绍 "
+title: "spring.cloud.nacos.discovery.server-addr 介绍 sca(spring-cloud-alibaba)"
 date: "2024-05-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba体系中，`spring.cloud.nacos.discovery.server-addr` 是一个关键属性，用于配置Nacos作为服务发现组件时的服务地址。这个配置项指定了Nacos服务器的地址和端口，允许Spring Cloud应用发现并注册到指定的Na"

@@ -1,6 +1,6 @@
 ---
 id: "question-history-14762"
-title: "springboot服务连接提示unknown user!并且springboot的配置文件中有用户名和密码的配置 "
+title: "springboot服务连接提示unknown user!并且springboot的配置文件中有用户名和密码的配置 sca(spring-cloud-alibaba)"
 date: "2024-05-30"
 category: "expertConsultation"
 description: "根据您提供的问题，服务连接提示`unknown user!`且配置文件中已设置了用户名和密码，这通常意味着Spring Boot应用在尝试连接Redis时使用的认证信息不被Redis服务器接受。结合我了解的知识，我们可以分析并解决此问题：### 分析原因：1. **配置错误**：可能是配置文件中的用"

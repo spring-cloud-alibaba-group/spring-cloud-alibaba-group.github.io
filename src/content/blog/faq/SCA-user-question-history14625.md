@@ -1,6 +1,6 @@
 ---
 id: "question-history-14625"
-title: "add a spring.config.import=nacos: property to your configuration. "
+title: "add a spring.config.import=nacos: property to your configuration. sca(spring-cloud-alibaba)"
 date: "2024-05-27"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba项目中，若需添加`spring.config.import=nacos:`属性至你的配置以集成Nacos作为配置中心，你可以遵循以下步骤操作：1. **确认Spring Cloud Alibaba版本**: 确保你使用的Spring Cloud Alibab"

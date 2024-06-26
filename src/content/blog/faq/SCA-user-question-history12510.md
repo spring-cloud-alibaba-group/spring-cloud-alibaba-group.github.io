@@ -1,6 +1,6 @@
 ---
 id: "question-history-12510"
-title: "springboot集成redis "
+title: "springboot集成redis sca(spring-cloud-alibaba)"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba（Sca）环境中，Spring Boot集成Redis的过程与标准Spring Boot应用集成Redis的方法基本一致。以下是根据已有知识整理的具体步骤：### 步骤解析及操作指南：#### 1. 添加Redis依赖首先，在项目的`pom.xml`文件中加"
@@ -9,7 +9,7 @@ keywords: ["spring-cloud-alibaba","springboot","集成","redis"]
 ---
 
 ## 用户问题 ： 
- springboot集成redis  
+ springboot集成redis sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：

@@ -1,6 +1,6 @@
 ---
 id: "question-history-14691"
-title: "spring cloud 阿里云地址 "
+title: "spring cloud 阿里云地址 sca(spring-cloud-alibaba)"
 date: "2024-05-29"
 category: "expertConsultation"
 description: "根据已有的知识内容，Spring Cloud Alibaba 是一套基于 Spring Cloud 的 Alibaba 产品的解决方案，它提供了与阿里云服务集成的能力。要获取 Spring Cloud Alibaba 相关的阿里云地址，这通常涉及到几个方面：1. **文档与资源下载地址**：   -"

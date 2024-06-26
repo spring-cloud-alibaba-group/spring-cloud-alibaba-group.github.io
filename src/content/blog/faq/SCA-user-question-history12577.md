@@ -1,6 +1,6 @@
 ---
 id: "question-history-12577"
-title: "springmvc 是什么？ "
+title: "springmvc 是什么？ sca(spring-cloud-alibaba)"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "Spring MVC 是 Spring Cloud Alibaba 中用于处理 web 请求的核心组件之一，它遵循了经典的 Model-View-Controller 设计模式。尽管问题特别提到了 Spring Cloud Alibaba (SCA)，但 Spring MVC 的工作原理在 SCA "

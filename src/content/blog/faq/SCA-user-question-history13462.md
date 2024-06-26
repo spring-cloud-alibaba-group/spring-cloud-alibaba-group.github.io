@@ -1,6 +1,6 @@
 ---
 id: "question-history-13462"
-title: "springcloud-alibaba 2022.0.0.0 对应的seata 服务版本 "
+title: "springcloud-alibaba 2022.0.0.0 对应的seata 服务版本 sca(spring-cloud-alibaba)"
 date: "2024-05-14"
 category: "expertConsultation"
 description: "根据提供的知识内容，Spring Cloud Alibaba 2022.0.0.0对应的Seata服务版本是1.7.0。因此，若您的系统使用的是Spring Cloud Alibaba 2022.0.0.0版本，推荐搭配Seata版本1.7.0以确保最佳的兼容性和功能支持。此信息直接来源于表格中列出"

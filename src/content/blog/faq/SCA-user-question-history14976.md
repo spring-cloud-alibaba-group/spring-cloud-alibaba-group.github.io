@@ -1,13 +1,13 @@
 ---
 id: "question-history-14976"
-title: "如何整合druid数据库连接池 "
+title: "如何整合druid数据库连接池 sca(spring-cloud-alibaba)"
 date: "2024-06-05"
 category: "expertConsultation"
 description: "内容要有条理，分步骤如下：### 分析问题原因根据您的问题，您想了解如何在使用Spring Cloud Alibaba框架的项目中整合Druid数据库连接池。从已知的参考资料中，我们可以找到与Druid整合相关的步骤（第1篇参考内容），以及Spring Cloud Alibaba框架的一些基本信息和"
 ---
 
 ## 用户问题 ： 
- 如何整合druid数据库连接池  
+ 如何整合druid数据库连接池 sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：

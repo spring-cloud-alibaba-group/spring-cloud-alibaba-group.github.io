@@ -1,13 +1,13 @@
 ---
 id: "question-history-14805"
-title: "seata是spring cloud alibaba的组件吗？ "
+title: "seata是spring cloud alibaba的组件吗？ sca(spring-cloud-alibaba)"
 date: "2024-05-30"
 category: "expertConsultation"
 description: "是的，Seata 是 Spring Cloud Alibaba 的组件之一。根据提供的知识内容，在**Spring Cloud Alibaba**的介绍中明确提到了**Seata**，它是用于提供分布式事务支持的组件。这表明Seata是Spring Cloud Alibaba微服务解决方案中的一个组"
 ---
 
 ## 用户问题 ： 
- seata是spring cloud alibaba的组件吗？  
+ seata是spring cloud alibaba的组件吗？ sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：

@@ -1,6 +1,6 @@
 ---
 id: "question-history-13429"
-title: "spring-cloud-starter-alibaba-nacos-config 对应 springboot 版本 "
+title: "spring-cloud-starter-alibaba-nacos-config 对应 springboot 版本 sca(spring-cloud-alibaba)"
 date: "2024-05-13"
 category: "expertConsultation"
 description: "根据提供的知识内容，我们可以确定`spring-cloud-starter-alibaba-nacos-config`与Spring Boot版本的对应关系是间接给出的，因为它依赖于Spring Cloud Alibaba的整体版本兼容性。为了确定具体版本的对应，我们需要查找Spring Cloud"

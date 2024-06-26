@@ -1,13 +1,13 @@
 ---
 id: "question-history-14980"
-title: "如何参与SCA开发 "
+title: "如何参与SCA开发 sca(spring-cloud-alibaba)"
 date: "2024-06-05"
 category: "expertConsultation"
 description: "要参与SCA（Spring Cloud Alibaba）的开发，可以遵循以下步骤：1. **了解项目与社区**：   首先，深入理解Spring Cloud Alibaba项目及其在微服务架构中的作用。访问[SCA官方文档](https://spring-cloud-alibaba-group.gi"
 ---
 
 ## 用户问题 ： 
- 如何参与SCA开发  
+ 如何参与SCA开发 sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：

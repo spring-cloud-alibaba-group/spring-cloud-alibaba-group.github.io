@@ -1,6 +1,6 @@
 ---
 id: "question-history-14574"
-title: "spring cloud alibaba 是怎么实现的？原理是什么？ "
+title: "spring cloud alibaba 是怎么实现的？原理是什么？ sca(spring-cloud-alibaba)"
 date: "2024-05-23"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba 的实现原理主要围绕着微服务架构中的一些核心功能展开，包括但不限于服务发现、配置管理、负载均衡、熔断器等。以下是基于提供的知识内容，对 Spring Cloud Alibaba 实现方式及原理的分析：### 1. 服务发现与注册 - Nacos Discove"

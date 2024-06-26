@@ -1,6 +1,6 @@
 ---
 id: "question-history-12547"
-title: "springboot kafka整合 "
+title: "springboot kafka整合 sca(spring-cloud-alibaba)"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在整合Sca（Spring Cloud Alibaba）与SpringBoot应用时，加入Kafka的支持主要涉及到配置与代码实现两个方面。虽然直接提供的参考内容未详述Kafka整合步骤，但基于Spring Boot与Sca的基本使用逻辑，我们可以推导出整合Kafka的基本流程。以下是根据Sprin"

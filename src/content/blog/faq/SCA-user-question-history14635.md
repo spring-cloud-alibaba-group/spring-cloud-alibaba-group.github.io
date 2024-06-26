@@ -1,6 +1,6 @@
 ---
 id: "question-history-14635"
-title: "spring-cloud-alibaba-dependencies "
+title: "spring-cloud-alibaba-dependencies sca(spring-cloud-alibaba)"
 date: "2024-05-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba项目中，`spring-cloud-alibaba-dependencies`是一个关键的依赖管理模块，它帮助我们集中管理Spring Cloud Alibaba体系内各组件的版本依赖。根据提供的知识内容，我们可以了解到不同版本的Spring Cloud A"

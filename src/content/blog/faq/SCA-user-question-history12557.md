@@ -1,6 +1,6 @@
 ---
 id: "question-history-12557"
-title: "搭建springboot项目的具体方法是怎样的？ "
+title: "搭建springboot项目的具体方法是怎样的？ sca(spring-cloud-alibaba)"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在sca（Spring Cloud Alibaba）中搭建Spring Boot项目的具体方法如下：1. **创建项目**：   - 使用IDE（如IntelliJ IDEA或Eclipse）内置功能创建Spring Boot项目，或者访问[spring Initializr阿里云版](https:"

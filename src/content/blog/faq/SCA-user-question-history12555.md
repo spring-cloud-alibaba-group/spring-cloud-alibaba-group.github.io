@@ -1,6 +1,6 @@
 ---
 id: "question-history-12555"
-title: "springboot入门 "
+title: "springboot入门 sca(spring-cloud-alibaba)"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "要入门Sca（Spring Cloud Alibaba）与Springboot，可以遵循以下步骤：1. **创建Spring Boot项目**   - 使用IntelliJ IDEA或Eclipse等IDE时，直接创建Spring Boot项目。若使用其他IDE，访问[Spring Initiali"

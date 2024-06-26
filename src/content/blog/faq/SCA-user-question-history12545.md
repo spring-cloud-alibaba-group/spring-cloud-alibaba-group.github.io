@@ -1,6 +1,6 @@
 ---
 id: "question-history-12545"
-title: "springboot jsp "
+title: "springboot jsp sca(spring-cloud-alibaba)"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在处理关于Sca(Spring Cloud Alibaba) SpringBoot JSP的问题时，我们首先明确Spring Boot默认并不直接支持JSP作为视图技术，因为它主要推荐使用Thymeleaf、FreeMarker等模板引擎。但若要在Spring Boot项目中集成JSP，需要进行一些"

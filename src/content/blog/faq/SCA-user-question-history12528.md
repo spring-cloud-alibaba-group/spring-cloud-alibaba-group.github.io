@@ -1,6 +1,6 @@
 ---
 id: "question-history-12528"
-title: "springboot配置文件 "
+title: "springboot配置文件 sca(spring-cloud-alibaba)"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (Sca)中的Spring Boot应用，配置文件主要负责管理应用程序的各种设置，包括但不限于数据库连接、缓存（如Redis）、服务端口等。针对您的问题，我们将重点讨论如何在Spring Boot项目中配置与Sca相关的设置以及通用的配置文件管理。### "

@@ -1,6 +1,6 @@
 ---
 id: "question-history-12574"
-title: "什么是springboot "
+title: "什么是springboot sca(spring-cloud-alibaba)"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "Spring Boot 是一种基于 Spring 框架的快速开发框架，它旨在简化新 Spring 应用程序的初始设置和配置过程。在 Spring Cloud Alibaba (SCA) 的上下文中，Spring Boot 的核心优势依然保留，并且与 SCA 的集成使得构建微服务架构变得更加高效和便捷"

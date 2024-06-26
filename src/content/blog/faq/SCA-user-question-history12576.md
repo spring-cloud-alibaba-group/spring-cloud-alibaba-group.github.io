@@ -1,6 +1,6 @@
 ---
 id: "question-history-12576"
-title: "springboot undertow "
+title: "springboot undertow sca(spring-cloud-alibaba)"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (SCA)与Spring Boot集成的场景下，若想使用Undertow作为默认的Web服务器替代Tomcat，您可以按照以下步骤操作：1. **修改Spring Boot依赖**: 默认情况下，Spring Boot项目使用Tomcat作为Web容器。要"

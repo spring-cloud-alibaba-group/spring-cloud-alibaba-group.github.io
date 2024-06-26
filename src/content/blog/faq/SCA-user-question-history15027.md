@@ -1,13 +1,13 @@
 ---
 id: "question-history-15027"
-title: "spring-cloud-alibaba-dependencies最新版本 "
+title: "spring-cloud-alibaba-dependencies最新版本 sca(spring-cloud-alibaba)"
 date: "2024-06-05"
 category: "expertConsultation"
 description: "根据我的知识库，可以直接提供关于`spring-cloud-alibaba-dependencies`的最新版本信息。在Spring Cloud Alibaba的版本体系中，`spring-cloud-alibaba-dependencies`作为BOM（Bill of Materials）帮助管理"
 ---
 
 ## 用户问题 ： 
- spring-cloud-alibaba-dependencies最新版本  
+ spring-cloud-alibaba-dependencies最新版本 sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：

@@ -1,13 +1,13 @@
 ---
 id: "question-history-14962"
-title: "spring-cloud-starter-alibaba-nacos-config 最新 "
+title: "spring-cloud-starter-alibaba-nacos-config 最新 sca(spring-cloud-alibaba)"
 date: "2024-06-05"
 category: "expertConsultation"
 description: "根据提供的知识内容，为了确定`spring-cloud-starter-alibaba-nacos-config`的最新版本，我们需要先确认你打算使用的Spring Cloud Alibaba版本以及对应的Spring Boot版本。由于直接查询特定starter的最新版本信息不在给定的知识范围内，"
 ---
 
 ## 用户问题 ： 
- spring-cloud-starter-alibaba-nacos-config 最新的版本  
+ spring-cloud-starter-alibaba-nacos-config 最新的版本 sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：

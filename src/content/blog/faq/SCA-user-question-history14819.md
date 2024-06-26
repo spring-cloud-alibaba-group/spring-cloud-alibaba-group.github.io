@@ -1,6 +1,6 @@
 ---
 id: "question-history-14819"
-title: "springboot项目启动读取不到resource文件夹下的bootstrap.yml "
+title: "springboot项目启动读取不到resource文件夹下的bootstrap.yml sca(spring-cloud-alibaba)"
 date: "2024-05-31"
 category: "expertConsultation"
 description: "针对你的问题，根据已有的知识，我们来逐步分析并提供解决方案：1. **检查bootstrap.yml文件位置**：确保`bootstrap.yml`文件放置在正确的目录下，即`src/main/resources`目录内。这是Spring Boot默认加载配置文件的位置。2. **验证YAML格式*"

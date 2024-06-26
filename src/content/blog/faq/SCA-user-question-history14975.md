@@ -1,13 +1,13 @@
 ---
 id: "question-history-14975"
-title: "spring-cloud-alibaba 2.2.5.release 兼容的boot版本 "
+title: "spring-cloud-alibaba 2.2.5.release 兼容的boot版本 sca(spring-cloud-alibaba)"
 date: "2024-06-05"
 category: "expertConsultation"
 description: "根据已有的知识内容，我没有直接找到关于Spring Cloud Alibaba 2.2.5.RELEASE兼容的Spring Boot版本的具体信息。为了更准确地您的问题，我需要查询或确认额外的资料。不过，通常Spring Cloud Alibaba的版本与特定范围内的Spring Boot版本兼容"
 ---
 
 ## 用户问题 ： 
- spring-cloud-alibaba 2.2.5.release 兼容的boot版本  
+ spring-cloud-alibaba 2.2.5.release 兼容的boot版本 sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：

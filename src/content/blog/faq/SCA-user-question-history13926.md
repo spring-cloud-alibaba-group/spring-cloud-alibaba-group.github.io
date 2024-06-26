@@ -1,6 +1,6 @@
 ---
 id: "question-history-13926"
-title: "为什么要使用spring cloud alibaba ai "
+title: "为什么要使用spring cloud alibaba ai sca(spring-cloud-alibaba)"
 date: "2024-05-17"
 category: "expertConsultation"
 description: "使用Spring Cloud Alibaba AI主要有以下几个原因：1. **标准化接口与易用性**：Spring Cloud Alibaba AI标准化了不同AI提供者的接口实现，使得开发者能够通过统一的API与多种AI服务交互。这意味着，一旦应用需要从一个AI服务提供商迁移到另一个，比如从Op"

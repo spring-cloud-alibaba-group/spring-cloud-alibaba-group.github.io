@@ -1,6 +1,6 @@
 ---
 id: "question-history-13922"
-title: "sca ai 是什么 "
+title: "sca ai 是什么 sca(spring-cloud-alibaba)"
 date: "2024-05-17"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba AI（简称Sca AI）是专为Spring Cloud体系设计的人工智能应用框架实现。它基于Spring AI项目，旨在简化和标准化不同AI服务提供商（如阿里云）的接入过程。通过Sca AI，开发者能够利用Spring生态系统的原则和便利性，轻松地将AI能力"

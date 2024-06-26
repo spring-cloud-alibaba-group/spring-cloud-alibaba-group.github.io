@@ -1,13 +1,13 @@
 ---
 id: "question-history-14977"
-title: "springboot2.7.18对应 springcloud alibaba 版本 "
+title: "springboot2.7.18对应 springcloud alibaba 版本 sca(spring-cloud-alibaba)"
 date: "2024-06-05"
 category: "expertConsultation"
 description: "根据已有的知识内容，我们没有直接获取到Spring Boot 2.7.18版本对应Spring Cloud Alibaba的确切版本信息。为了提供最准确的版本匹配建议，通常需要查阅Spring Cloud Alibaba的官方文档或发布说明，因为版本兼容性可能会随着新版本的发布而有所更新。但是，根据"
 ---
 
 ## 用户问题 ： 
- springboot2.7.18对应 springcloud alibaba 版本  
+ springboot2.7.18对应 springcloud alibaba 版本 sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：

@@ -1,6 +1,6 @@
 ---
 id: "question-history-14690"
-title: "Spring Ai 是什么 "
+title: "Spring Ai 是什么 sca(spring-cloud-alibaba)"
 date: "2024-05-29"
 category: "expertConsultation"
 description: "Spring AI 是一个面向AI工程的应用框架，它旨在将Spring生态系统的核心设计原则，例如可移植性和模块化，扩展至人工智能领域。该框架通过推广使用POJOs（Plain Old Java Objects）作为构建AI应用的基础单元，简化了AI解决方案的开发过程。其核心优势在于标准化不同AI服"
@@ -9,7 +9,7 @@ keywords: ["spring-cloud-alibaba","Spring Ai"]
 ---
 
 ## 用户问题 ： 
- Spring Ai 是什么  
+ Spring Ai 是什么 sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：

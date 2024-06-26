@@ -1,6 +1,6 @@
 ---
 id: "question-history-12539"
-title: "springboot log4j "
+title: "springboot log4j sca(spring-cloud-alibaba)"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (SCA)与Spring Boot集成时，配置Log4j作为日志框架虽然不如Logback常见（Spring Boot默认推荐Logback），但依然是可行的。基于您的需求，这里提供一个简化的指导流程，帮助您在Spring Boot项目中集成Log4j。由"

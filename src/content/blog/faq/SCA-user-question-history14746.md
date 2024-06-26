@@ -1,6 +1,6 @@
 ---
 id: "question-history-14746"
-title: "spring cloud alibaba 组件匹配关系是怎样的？ "
+title: "spring cloud alibaba 组件匹配关系是怎样的？ sca(spring-cloud-alibaba)"
 date: "2024-05-30"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba组件与其匹配的子组件版本关系如下：1. **Sentinel**: 主要用于流量控制和熔断降级，常见的匹配版本有1.8.6（与多个SCA版本兼容）。2. **Nacos**: 作为服务发现与配置管理的核心组件，常见版本有2.3.2、2.3.0、2.2.1、2."

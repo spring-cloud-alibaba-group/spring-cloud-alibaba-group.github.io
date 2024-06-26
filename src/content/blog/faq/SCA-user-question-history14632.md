@@ -1,6 +1,6 @@
 ---
 id: "question-history-14632"
-title: "springcloudalibaba组件有哪些 "
+title: "springcloudalibaba组件有哪些 sca(spring-cloud-alibaba)"
 date: "2024-05-28"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba是一套微服务解决方案，它包含了多个核心组件，以支持微服务架构的各种需求。根据提供的知识，Spring Cloud Alibaba的主要组件包括：1. **Sentinel**：这是一款轻量级的流量控制和熔断降级库，用于保护服务免受雪崩效应的影响，通过设置阈值来"

@@ -1,6 +1,6 @@
 ---
 id: "question-history-12575"
-title: "springboot开启事务 "
+title: "springboot开启事务 sca(spring-cloud-alibaba)"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (SCA)与SpringBoot环境下开启事务，主要是利用Spring Framework提供的事务管理功能。虽然直接的参考内容未明确提及事务开启步骤，但基于SpringBoot和Spring Data的一般实践，可以遵循以下逻辑进行配置与使用：### 分"

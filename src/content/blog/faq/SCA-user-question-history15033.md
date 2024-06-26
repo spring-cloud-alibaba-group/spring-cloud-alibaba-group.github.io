@@ -1,13 +1,13 @@
 ---
 id: "question-history-15033"
-title: "基于spring cloud alibaba 的阿里微服务架构介绍 "
+title: "基于spring cloud alibaba 的阿里微服务架构介绍 sca(spring-cloud-alibaba)"
 date: "2024-06-05"
 category: "expertConsultation"
 description: "基于Spring Cloud Alibaba的阿里微服务架构介绍如下：1. **技术概述**   - **Spring Cloud Alibaba** 是一套全面的微服务解决方案，旨在为Spring Cloud生态用户提供微服务开发所需的组件和服务。它集成了诸如Nacos（服务发现与配置管理）、Se"
 ---
 
 ## 用户问题 ： 
- 基于spring cloud alibaba 的阿里微服务架构介绍  
+ 基于spring cloud alibaba 的阿里微服务架构介绍 sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：

@@ -1,6 +1,6 @@
 ---
 id: "question-history-12569"
-title: "springboot项目结构 "
+title: "springboot项目结构 sca(spring-cloud-alibaba)"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在构建一个基于Spring Cloud Alibaba (Sca)的Spring Boot项目时，项目结构遵循标准的Spring Boot项目布局，并融入了Sca组件以增强微服务功能。虽然直接的项目结构细节未在提供的知识中详尽展示，我们可以根据Spring Boot和Sca的标准实践概述一个典型的项"

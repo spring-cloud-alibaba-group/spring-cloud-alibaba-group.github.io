@@ -1,6 +1,6 @@
 ---
 id: "question-history-13944"
-title: "spring cloud alibaba组件有哪些？ "
+title: "spring cloud alibaba组件有哪些？ sca(spring-cloud-alibaba)"
 date: "2024-05-21"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba包含以下主要组件：1. **Sentinel**：流量控制和熔断降级组件，用于实现微服务之间的稳定性和可靠性保护。2. **Nacos**：一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。3. **RocketMQ**：阿里巴巴开源的分布式消息"

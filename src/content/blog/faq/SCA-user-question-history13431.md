@@ -1,6 +1,6 @@
 ---
 id: "question-history-13431"
-title: "spring-cloud-starter-alibaba-nacos-discovery 最新版本 "
+title: "spring-cloud-starter-alibaba-nacos-discovery 最新版本 sca(spring-cloud-alibaba)"
 date: "2024-05-13"
 category: "expertConsultation"
 description: "根据提供的知识内容，我们可以确定`spring-cloud-starter-alibaba-nacos-discovery`的版本依赖于Spring Cloud Alibaba的版本。为了找到`spring-cloud-starter-alibaba-nacos-discovery`的最新版本，我们"

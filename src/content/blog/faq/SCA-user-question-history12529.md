@@ -1,6 +1,6 @@
 ---
 id: "question-history-12529"
-title: "springboot整合es "
+title: "springboot整合es sca(spring-cloud-alibaba)"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在spring cloud alibaba (sCA)环境中整合Elasticsearch (ES)主要用于实现微服务架构中的数据搜索和分析功能。虽然直接的相关整合步骤在提供的知识中未明确给出，但我们可以基于Spring Boot整合ES的一般步骤，结合Sca的实践，给出一个概括性的指导方案。以下是"

@@ -1,13 +1,13 @@
 ---
 id: "question-history-14978"
-title: "sca如何集成higress "
+title: "sca如何集成higress sca(spring-cloud-alibaba)"
 date: "2024-06-05"
 category: "expertConsultation"
 description: "为了集成 Higress 网关与 Spring Cloud Alibaba，我们可以遵循以下步骤，这些步骤主要依据提供的参考资料中的指导：### 步骤分析与准备1. **确保 Spring Cloud 应用配置正确**   - 根据你的需求，首先确保你的 Spring Cloud 应用已经配置好 N"
 ---
 
 ## 用户问题 ： 
- sca如何集成higress  
+ sca如何集成higress sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：

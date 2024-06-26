@@ -1,6 +1,6 @@
 ---
 id: "question-history-14606"
-title: "基于sca的微服务调用组件Feign实战样例 "
+title: "基于sca的微服务调用组件Feign实战样例 sca(spring-cloud-alibaba)"
 date: "2024-05-27"
 category: "expertConsultation"
 description: "基于Spring Cloud Alibaba（SCA）的微服务调用组件Feign实战样例涉及如何使用Feign进行服务间通信。虽然直接的Feign配置与版本对应关系不在提供的知识内容中，但我们可以根据SCA的常规实践指导来构建一个简化的实战样例。以下是如何在Spring Cloud Alibaba项"
@@ -9,7 +9,7 @@ keywords: ["spring-cloud-alibaba","Feign","微服务","调用","组件","实战�
 ---
 
 ## 用户问题 ： 
- 基于sca的微服务调用组件Feign实战样例  
+ 基于sca的微服务调用组件Feign实战样例 sca(spring-cloud-alibaba) 
 
 ---------------
 ## 专家官方解答 ：
