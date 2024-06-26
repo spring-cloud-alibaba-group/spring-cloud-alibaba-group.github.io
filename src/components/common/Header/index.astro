@@ -5,6 +5,7 @@ import { LanguageToggle } from "@serverless-cd/goat-ui"
 import MobileNavbar from "@components/common/MobileNavbar.astro";
 import SearchComp from "./searchComp/index.astro";
 import { SITE } from "@utils/config";
+import Alert from "./Alert.astro";
 
 interface Props {
   align?: "home" | "docs";
@@ -35,6 +36,7 @@ let height,
 ---
 
 <span class="header-wrapper">
+  <Alert />
   <my-layout
     style={`position: ${position}; height: ${height}`}
     class="w-full backdrop-blur-md top-0 z-[10] bg-base-100 flex justify-center"

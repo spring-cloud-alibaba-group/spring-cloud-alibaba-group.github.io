@@ -1,6 +1,7 @@
 import { SITE } from "@utils/config"
 export default {
 	// website
+	'commmon.header.alert.link': '点此了解',
 	'commmon.header.menu.cloud': '企业版 SCA',
 	'commmon.header.menu.comm': '社区',
 	'commmon.header.menu.demo': '控制台样例',
