@@ -1,6 +1,6 @@
 ---
 id: "question-history-12506"
-title: "springboot thymeleaf sca(spring-cloud-alibaba)"
+title: "springboot thymeleaf "
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (Sca) 中使用Spring Boot集成Thymeleaf模板引擎的过程与标准Spring Boot应用中的集成方式相似。虽然提供的参考内容未直接涉及Thymeleaf的集成步骤，但我们可以依据Spring Boot通用的集成流程来指导你如何操作。以下"
@@ -9,7 +9,7 @@ keywords: ["spring-cloud-alibaba","springboot","thymeleaf"]
 ---
 
 ## 用户问题 ： 
- springboot thymeleaf sca(spring-cloud-alibaba) 
+ springboot thymeleaf  
 
 ---------------
 ## 专家官方解答 ：

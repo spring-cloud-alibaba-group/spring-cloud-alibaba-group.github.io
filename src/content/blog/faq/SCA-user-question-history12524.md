@@ -1,6 +1,6 @@
 ---
 id: "question-history-12524"
-title: "springboot https sca(spring-cloud-alibaba)"
+title: "springboot https "
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (SCA)与Spring Boot集成的场景中，要配置HTTPS，我们虽然没有直接的步骤在参考内容中，但可以根据常规的Spring Boot HTTPS配置方法进行指导。以下是配置HTTPS的基本步骤：### 步骤分析与配置说明：1. **生成SSL证书*"

@@ -1,6 +1,6 @@
 ---
 id: "question-history-14772"
-title: "INF0 receive config info: unknown#racos2-0.nacos2-headless.default.svc.cluster.local:8848#171702068 sca(spring-cloud-alibaba)"
+title: "INF0 receive config info: unknown#racos2-0.nacos2-headless.default.svc.cluster.local:8848#171702068 "
 date: "2024-05-30"
 category: "expertConsultation"
 description: "根据你提供的错误信息 INF0 receive config info: unknown#racos2-0.nacos2-headless.default.svc.cluster.local:8848#171702068，可以看出是在尝试从Nacos服务器接收配置信息时遇到了问题。结合我们的知识库，"

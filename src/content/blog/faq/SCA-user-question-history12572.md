@@ -1,6 +1,6 @@
 ---
 id: "question-history-12572"
-title: "springboot启动指定配置文件 sca(spring-cloud-alibaba)"
+title: "springboot启动指定配置文件 "
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba项目中，若要启动时指定配置文件，您可以通过以下步骤操作：1. **准备配置文件**：首先，确保您的项目中有需要被指定的配置文件。这些文件通常命名为`application-profile.yml`或`application-profile.propertie"

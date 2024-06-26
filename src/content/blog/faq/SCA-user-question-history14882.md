@@ -1,13 +1,13 @@
 ---
 id: "question-history-14882"
-title: "spring cloud 整合nacos sca(spring-cloud-alibaba)"
+title: "spring cloud 整合nacos "
 date: "2024-06-02"
 category: "expertConsultation"
 description: "要将Spring Cloud与Nacos整合，实现配置管理和服务注册发现，您可以遵循以下步骤：1. **添加依赖**：首先，在您的Spring Cloud项目中添加Spring Cloud Alibaba的Nacos相关依赖。这通常包括`spring-cloud-starter-alibaba-na"
 ---
 
 ## 用户问题 ： 
- spring cloud 整合nacos sca(spring-cloud-alibaba) 
+ spring cloud 整合nacos  
 
 ---------------
 ## 专家官方解答 ：

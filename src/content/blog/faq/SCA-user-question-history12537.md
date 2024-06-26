@@ -1,6 +1,6 @@
 ---
 id: "question-history-12537"
-title: "springboot中文文档 sca(spring-cloud-alibaba)"
+title: "springboot中文文档 "
 date: "2024-04-28"
 category: "expertConsultation"
 description: "Sca（Spring Cloud Alibaba）与SpringBoot的集成和使用在中文文档中主要涉及以下几个方面：### 1. SpringBoot整合Redis- **依赖添加**：在`pom.xml`中加入Spring Data Redis的起步依赖。- **配置连接**：在`applica"

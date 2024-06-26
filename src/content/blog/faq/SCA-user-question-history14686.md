@@ -1,6 +1,6 @@
 ---
 id: "question-history-14686"
-title: "分布式事务怎么做 sca(spring-cloud-alibaba)"
+title: "分布式事务怎么做 "
 date: "2024-05-29"
 category: "expertConsultation"
 description: "要在Spring Cloud Alibaba（SCA）项目中实现分布式事务处理，主要依赖于Seata框架的集成。根据提供的知识，以下是详细步骤及解释：### 1. 准备Seata Server#### 步骤与解释：- **配置数据库**：首先，确保数据库中已创建undo_log表，这是Seata A"

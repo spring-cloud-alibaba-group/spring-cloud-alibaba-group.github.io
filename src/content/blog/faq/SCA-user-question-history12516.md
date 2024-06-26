@@ -1,6 +1,6 @@
 ---
 id: "question-history-12516"
-title: "springboot 事务 sca(spring-cloud-alibaba)"
+title: "springboot 事务 "
 date: "2024-05-16"
 category: "expertConsultation"
 description: "在使用Sca（Spring Cloud Alibaba）与Spring Boot集成时处理事务，通常涉及分布式事务管理，而Seata是Spring Cloud Alibaba推荐的分布式事务解决方案。从您的问题来看，您可能关注的是如何在Spring Boot应用中配置Seata以管理事务。### 原"

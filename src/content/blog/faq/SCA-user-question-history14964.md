@@ -1,13 +1,13 @@
 ---
 id: "question-history-14964"
-title: "spring boot 3.1.2 对应的 spring cloud 版本 spring sca(spring-cloud-alibaba)"
+title: "spring boot 3.1.2 对应的 spring cloud 版本 spring "
 date: "2024-06-05"
 category: "expertConsultation"
 description: "根据已有的知识信息，我们没有直接找到Spring Boot 3.1.2对应的Spring Cloud及Spring Cloud Alibaba的确切版本。但是，我们可以根据版本发布的规律来进行推理。1. **分析问题原因**：   - 目前的知识内容提供到了Spring Boot 3.2.4与Spr"
 ---
 
 ## 用户问题 ： 
- spring boot 3.1.2 对应的 spring cloud 版本 spring-cloud-alibaba 版本 sca(spring-cloud-alibaba) 
+ spring boot 3.1.2 对应的 spring cloud 版本 spring-cloud-alibaba 版本  
 
 ---------------
 ## 专家官方解答 ：

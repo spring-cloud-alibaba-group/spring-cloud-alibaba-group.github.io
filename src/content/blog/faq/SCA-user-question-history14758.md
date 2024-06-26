@@ -1,12 +1,12 @@
 ---
 id: "question-history-14758"
-title: "springboot 占位符不生效 sca(spring-cloud-alibaba)"
+title: "springboot 占位符不生效 "
 date: "2024-05-30"
 category: "expertConsultation"
-description: "在`sca(spring-cloud-alibaba)`环境下，若遇到`springboot`占位符不生效的问题，我们可以依据以下步骤分析并解决：1. **检查占位符配置格式**：确保你的占位符配置遵循正确的格式，如`$variableName`，并且对于默认值的设定使用`$variableName"
+description: "在``环境下，若遇到`springboot`占位符不生效的问题，我们可以依据以下步骤分析并解决：1. **检查占位符配置格式**：确保你的占位符配置遵循正确的格式，如`$variableName`，并且对于默认值的设定使用`$variableName"
 ---
 
-在`sca(spring-cloud-alibaba)`环境下，若遇到`springboot`占位符不生效的问题，我们可以依据以下步骤分析并解决：
+在``环境下，若遇到`springboot`占位符不生效的问题，我们可以依据以下步骤分析并解决：
 
 1. **检查占位符配置格式**：确保你的占位符配置遵循正确的格式，如`${variableName}`，并且对于默认值的设定使用`${variableName:defaultValue}`。注意，属性名称应遵循kebab-case风格，以确保与Spring Boot的relaxed binding兼容。
 

@@ -1,6 +1,6 @@
 ---
 id: "question-history-13367"
-title: "springboot整合nacos配置中心教程 sca(spring-cloud-alibaba)"
+title: "springboot整合nacos配置中心教程 "
 date: "2024-05-13"
 category: "expertConsultation"
 description: "整合Sca（Spring Cloud Alibaba）与SpringBoot应用至Nacos配置中心的教程可以按以下步骤进行：### 1. 添加依赖在你的SpringBoot项目的`pom.xml`文件中，添加Nacos Config和Nacos Discovery的Starter依赖。这将帮助你实"

@@ -1,6 +1,6 @@
 ---
 id: "question-history-14685"
-title: "Spring Cloud Alibaba版本对应 sca(spring-cloud-alibaba)"
+title: "Spring Cloud Alibaba版本对应 "
 date: "2024-05-29"
 category: "expertConsultation"
 description: "根据已有的知识，以下是Spring Cloud Alibaba（SCA）与Spring Cloud及其子组件版本对应关系的概览：### Spring Boot与Spring Cloud Alibaba及Spring Cloud版本对应：- **Spring Boot 3.2.4**：推荐使用**Sp"

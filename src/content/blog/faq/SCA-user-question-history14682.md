@@ -1,6 +1,6 @@
 ---
 id: "question-history-14682"
-title: "我的nacos是2.3.0版本的 我的springboot是2.4.2版本的 那么我的cloud依赖应该是多少版本 sca(spring-cloud-alibaba)"
+title: "我的nacos是2.3.0版本的 我的springboot是2.4.2版本的 那么我的cloud依赖应该是多少版本 "
 date: "2024-05-29"
 category: "expertConsultation"
 description: "根据你提供的信息，Nacos版本为2.3.0，Spring Boot版本为2.4.2。根据我了解的知识中的版本对应关系，我们可以这样分析：1. 查找Spring Boot 2.4.2对应的Spring Cloud Alibaba版本：在第2篇参考内容中，可以看到Spring Boot 2.4.2与S"

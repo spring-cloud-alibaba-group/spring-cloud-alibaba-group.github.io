@@ -1,14 +1,14 @@
 ---
 id: "question-history-12558"
-title: "docker部署springboot项目是怎样的？ sca(spring-cloud-alibaba)"
+title: "docker部署springboot项目是怎样的？ "
 date: "2024-04-28"
 category: "expertConsultation"
-description: "在 sca(spring-cloud-alibaba) 环境下，使用 Docker 部署 Spring Boot 项目涉及以下几个关键步骤。虽然提供的知识内容未直接涵盖 Docker 部署的具体步骤，但我们可以基于通用的 Docker 部署实践，结合 Spring Boot 项目的特点，给出指导：#"
+description: "在  环境下，使用 Docker 部署 Spring Boot 项目涉及以下几个关键步骤。虽然提供的知识内容未直接涵盖 Docker 部署的具体步骤，但我们可以基于通用的 Docker 部署实践，结合 Spring Boot 项目的特点，给出指导：#"
 tags: ["spring-cloud-alibaba","docker","springboot","部署","项目"]
 keywords: ["spring-cloud-alibaba","docker","springboot","部署","项目"]
 ---
 
-在 sca(spring-cloud-alibaba) 环境下，使用 Docker 部署 Spring Boot 项目涉及以下几个关键步骤。虽然提供的知识内容未直接涵盖 Docker 部署的具体步骤，但我们可以基于通用的 Docker 部署实践，结合 Spring Boot 项目的特点，给出指导：
+在  环境下，使用 Docker 部署 Spring Boot 项目涉及以下几个关键步骤。虽然提供的知识内容未直接涵盖 Docker 部署的具体步骤，但我们可以基于通用的 Docker 部署实践，结合 Spring Boot 项目的特点，给出指导：
 
 ### 1. 创建 Dockerfile
 

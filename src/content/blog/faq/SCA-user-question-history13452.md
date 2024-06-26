@@ -1,6 +1,6 @@
 ---
 id: "question-history-13452"
-title: "创建springboot项目 ，包含sca所有组件 sca(spring-cloud-alibaba)"
+title: "创建springboot项目 ，包含sca所有组件 "
 date: "2024-05-14"
 category: "expertConsultation"
 description: "创建一个Spring Boot项目并集成Spring Cloud Alibaba的所有组件，可以遵循以下步骤：### 1. 确定Spring Boot版本首先，确定你想要使用的Spring Boot版本。根据你的需求和兼容性考虑，参考[官方文档](https://sca.aliyun.com/doc"

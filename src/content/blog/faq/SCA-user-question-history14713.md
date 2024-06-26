@@ -1,6 +1,6 @@
 ---
 id: "question-history-14713"
-title: "org.springframework.ai:spring-ai-core:jar:0.8.1 was not found in https: maven.aliyun.com repository public during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of aliyunmaven has elapsed or updates are forced sca(spring-cloud-alibaba)"
+title: "org.springframework.ai:spring-ai-core:jar:0.8.1 was not found in https: maven.aliyun.com repository public during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of aliyunmaven has elapsed or updates are forced "
 date: "2024-05-29"
 category: "expertConsultation"
 description: "遇到问题`org.springframework.ai:spring-ai-core:jar:0.8.1 was not found in https://maven.aliyun.com/repository/public...`主要是因为Spring官方未将`spring-ai-core`版本0"

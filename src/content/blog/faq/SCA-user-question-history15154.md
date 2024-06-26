@@ -1,13 +1,13 @@
 ---
 id: "question-history-15154"
-title: "sca 与openfeign 样例 sca(spring-cloud-alibaba)"
+title: "sca 与openfeign 样例 "
 date: "2024-06-07"
 category: "expertConsultation"
 description: "在已有的知识内容中，并没有直接提供关于Spring Cloud Alibaba (SCA)与OpenFeign结合的具体样例。但是，我可以基于Spring Cloud和Spring Cloud Alibaba的基本使用原则，指导你如何在项目中整合OpenFeign。### 分析原因Spring Cl"
 ---
 
 ## 用户问题 ： 
- sca 与openfeign 样例 sca(spring-cloud-alibaba) 
+ sca 与openfeign 样例  
 
 ---------------
 ## 专家官方解答 ：

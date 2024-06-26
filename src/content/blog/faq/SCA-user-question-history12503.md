@@ -1,6 +1,6 @@
 ---
 id: "question-history-12503"
-title: "springboot整合redis sca(spring-cloud-alibaba)"
+title: "springboot整合redis "
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (SCA)环境中整合Spring Boot与Redis的过程与标准Spring Boot整合Redis的方法基本一致。以下是根据提供的知识内容整理的具体步骤：### 步骤分析与整合过程：#### 1. 添加Redis依赖首先，在项目的`pom.xml`文件"
@@ -9,7 +9,7 @@ keywords: ["spring-cloud-alibaba","springboot","redis"]
 ---
 
 ## 用户问题 ： 
- springboot整合redis sca(spring-cloud-alibaba) 
+ springboot整合redis  
 
 ---------------
 ## 专家官方解答 ：

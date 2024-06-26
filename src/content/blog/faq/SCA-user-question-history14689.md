@@ -1,6 +1,6 @@
 ---
 id: "question-history-14689"
-title: "gateway版本 sca(spring-cloud-alibaba)"
+title: "gateway版本 "
 date: "2024-05-29"
 category: "expertConsultation"
 description: "根据已有的知识内容，我们可以确定Spring Cloud Alibaba项目包含对Spring Cloud Gateway的支持，但具体到请求的Spring Cloud Alibaba Gateway的版本信息，知识中并未直接提供详细版本号。不过，我们可以通过以下步骤来推断或查找相应的版本信息：1."

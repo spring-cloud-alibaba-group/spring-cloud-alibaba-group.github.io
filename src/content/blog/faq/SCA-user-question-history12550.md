@@ -1,6 +1,6 @@
 ---
 id: "question-history-12550"
-title: "springboot配置redis sca(spring-cloud-alibaba)"
+title: "springboot配置redis "
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (Sca)中配置Redis与标准Spring Boot应用配置Redis的过程是相同的。以下是基于提供的知识内容，整理的具体步骤来指导如何在Sca的Spring Boot项目中配置并使用Redis：### 步骤分析与配置指南#### 1. 添加Redis依"
@@ -9,7 +9,7 @@ keywords: ["spring-cloud-alibaba","springboot","redis","配置"]
 ---
 
 ## 用户问题 ： 
- springboot配置redis sca(spring-cloud-alibaba) 
+ springboot配置redis  
 
 ---------------
 ## 专家官方解答 ：

@@ -1,6 +1,6 @@
 ---
 id: "question-history-12565"
-title: "springboot oauth2 sca(spring-cloud-alibaba)"
+title: "springboot oauth2 "
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (SCA)环境中集成Spring Boot与OAuth2涉及到安全认证和授权，虽然直接的教程未在提供的知识中详细阐述，但我们可以基于标准的Spring Boot OAuth2集成方式，结合SCA的实践，给出一个大致的指导思路。以下是整合步骤：### 分析问"

@@ -1,13 +1,13 @@
 ---
 id: "question-history-14958"
-title: "最新springboot 对应的springcloud alibaba版本 sca(spring-cloud-alibaba)"
+title: "最新springboot 对应的springcloud alibaba版本 "
 date: "2024-06-05"
 category: "expertConsultation"
 description: "根据最新的知识信息，Spring Boot最新版本对应Spring Cloud Alibaba的版本如下：- **Spring Boot 3.2.4** 对应 **Spring Cloud Alibaba 2023.0.1** 和 **Spring Cloud 2023.0.1.0**  为了确保您"
 ---
 
 ## 用户问题 ： 
- 最新springboot 对应的springcloud alibaba版本 sca(spring-cloud-alibaba) 
+ 最新springboot 对应的springcloud alibaba版本  
 
 ---------------
 ## 专家官方解答 ：

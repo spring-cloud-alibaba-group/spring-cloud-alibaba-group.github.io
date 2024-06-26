@@ -1,13 +1,13 @@
 ---
 id: "question-history-14803"
-title: "alibaba 开源 微服务 应用 框架 介绍 sca(spring-cloud-alibaba)"
+title: "alibaba 开源 微服务 应用 框架 介绍 "
 date: "2024-05-30"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba是阿里巴巴开源的一套微服务应用框架，它为基于Spring Boot与Spring Cloud的应用程序提供了全面的微服务解决方案。以下是关于Spring Cloud Alibaba的详细介绍：### Spring Cloud Alibaba简介- **定位与优"
 ---
 
 ## 用户问题 ： 
- alibaba 开源 微服务 应用 框架 介绍 sca(spring-cloud-alibaba) 
+ alibaba 开源 微服务 应用 框架 介绍  
 
 ---------------
 ## 专家官方解答 ：

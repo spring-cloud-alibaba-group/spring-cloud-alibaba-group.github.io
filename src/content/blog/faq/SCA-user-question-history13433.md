@@ -1,6 +1,6 @@
 ---
 id: "question-history-13433"
-title: "springcloud alibaba 五大组件 介绍 sca(spring-cloud-alibaba)"
+title: "springcloud alibaba 五大组件 介绍 "
 date: "2024-05-13"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba 是一套基于 Spring Cloud 的微服务解决方案，它为分布式系统开发提供了包括服务限流降级（Sentinel）、服务注册与发现（Nacos）、配置管理（Nacos）、分布式事务（Seata）和消息驱动能力（RocketMQ）在内的多种组件支持。这五大组"

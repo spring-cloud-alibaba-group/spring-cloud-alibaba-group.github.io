@@ -1,13 +1,13 @@
 ---
 id: "question-history-15035"
-title: "springboot 引入 springai sca(spring-cloud-alibaba)"
+title: "springboot 引入 springai "
 date: "2024-06-17"
 category: "expertConsultation"
 description: "为了在Spring Boot项目中引入Spring AI并使用Spring Cloud Alibaba AI，您可以遵循以下步骤：### 分析问题原因根据您的需求，您希望了解如何在Spring Boot应用中集成Spring AI，并特别关注如何与Spring Cloud Alibaba AI配合使"
 ---
 
 ## 用户问题 ： 
- springboot 引入 springai sca(spring-cloud-alibaba) 
+ springboot 引入 springai  
 
 ---------------
 ## 专家官方解答 ：

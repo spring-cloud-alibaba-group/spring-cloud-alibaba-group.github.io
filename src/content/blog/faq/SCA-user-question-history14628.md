@@ -1,6 +1,6 @@
 ---
 id: "question-history-14628"
-title: "阿里云springboot地址 sca(spring-cloud-alibaba)"
+title: "阿里云springboot地址 "
 date: "2024-05-27"
 category: "expertConsultation"
 description: "阿里云提供的Spring Boot项目快速启动地址是：[https://start.aliyun.com](https://start.aliyun.com)。在这个平台上，您可以快速生成包含Spring Cloud Alibaba (SCA)依赖配置的Spring Boot项目。通过选择合适的Sp"

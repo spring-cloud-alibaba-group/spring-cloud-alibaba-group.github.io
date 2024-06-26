@@ -1,6 +1,6 @@
 ---
 id: "question-history-13921"
-title: "spring cloud alibaba ai 是什么 sca(spring-cloud-alibaba)"
+title: "spring cloud alibaba ai 是什么 "
 date: "2024-05-17"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba AI是基于Spring AI框架针对阿里云服务定制的一个实现。它旨在简化AI应用的开发过程，特别是对于那些希望利用阿里云提供的强大AI服务能力的开发者而言。Spring Cloud Alibaba AI使得开发者能够方便地接入阿里云的灵积模型服务，该服务基于"

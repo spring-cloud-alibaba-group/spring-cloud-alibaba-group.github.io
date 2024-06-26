@@ -1,6 +1,6 @@
 ---
 id: "question-history-14616"
-title: "通俗易懂的对比SpringCloud和SpringCloud Alibaba sca(spring-cloud-alibaba)"
+title: "通俗易懂的对比SpringCloud和SpringCloud Alibaba "
 date: "2024-05-27"
 category: "expertConsultation"
 description: "Spring Cloud和Spring Cloud Alibaba都是构建微服务架构的热门框架，它们各有特色，适用于不同场景和技术需求。下面将从几个维度进行通俗易懂的对比：### 1. 技术栈整合- **Spring Cloud**：作为Spring生态系统的一部分，自然与Spring Boot框架"

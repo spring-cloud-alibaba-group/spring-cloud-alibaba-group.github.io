@@ -1,6 +1,6 @@
 ---
 id: "question-history-14769"
-title: "Springboot2.7.1 应该用SpringCloud那个版本 sca(spring-cloud-alibaba)"
+title: "Springboot2.7.1 应该用SpringCloud那个版本 "
 date: "2024-05-30"
 category: "expertConsultation"
 description: "根据已知知识，Spring Boot 2.7.1 版本并未直接列出对应的 Spring Cloud 及 Spring Cloud Alibaba 版本。但我们可以参考相近版本进行推测：- Spring Boot 2.7.1 接近于 2.7.x 系列，而最接近的列出版本为 Spring Boot 2."
