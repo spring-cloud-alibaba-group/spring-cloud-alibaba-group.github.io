@@ -1,13 +1,13 @@
 ---
 id: "question-history-15023"
-title: "springcloud alibaba与springboot版本对应 sca(spring-cloud-alibaba)"
+title: "springcloud alibaba与springboot版本对应 "
 date: "2024-06-05"
 category: "expertConsultation"
 description: "根据已有的知识内容，我可以帮助您确定Spring Cloud Alibaba（SCA）与Spring Boot之间的版本对应关系，以及SCA与其集成的各个组件（如Nacos、Sentinel等）的版本对应情况。### Spring Boot与Spring Cloud Alibaba版本对应1. **"
 ---
 
 ## 用户问题 ： 
- springcloud alibaba与springboot版本对应 sca(spring-cloud-alibaba) 
+ springcloud alibaba与springboot版本对应  
 
 ---------------
 ## 专家官方解答 ：

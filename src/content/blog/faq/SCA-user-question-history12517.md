@@ -1,12 +1,18 @@
 ---
 id: "question-history-12517"
-title: "springboot 面试题 sca(spring-cloud-alibaba)"
+title: "springboot 面试题"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "针对sca（Spring Cloud Alibaba）与Spring Boot相关的面试题，我们可以从以下几个方面进行准备：1. **理解Spring Cloud Alibaba的核心组件及其作用**   - 了解Nacos作为服务发现与配置中心的应用。   - RocketMQ作为消息队列的使用场"
 tags: ["spring-cloud-alibaba","springboot","面试题"]
 keywords: ["spring-cloud-alibaba","springboot","面试题"]
 ---
+
+## 用户问题 ： 
+ springboot 面试题  
+
+---------------
+## 专家官方解答 ：
 
 针对sca（Spring Cloud Alibaba）与Spring Boot相关的面试题，我们可以从以下几个方面进行准备：
 
@@ -38,9 +44,27 @@ keywords: ["spring-cloud-alibaba","springboot","面试题"]
 - **案例分享**：准备一两个实际项目中应用这些技术点的案例，能有效提升面试表现。
 
 以上是根据提供的知识内容整理的面试准备方向和建议，希望能帮助你在面试中展现出扎实的技术功底和实践经验。
+
+
+<font color="#949494">---------------</font> 
+
+
+## 参考链接 ：
+
+*专家经验：springboot sca 整合redis的具体方法 
+ 
+ *专家经验：sca 与 springboot 快速启动 
+ 
+ *专家经验：springboot 整合jetty来提供servlet服务 
+
+
+ <font color="#949494">---------------</font> 
+ 
+
+
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=12610)给我们反馈。

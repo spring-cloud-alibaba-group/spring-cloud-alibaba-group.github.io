@@ -1,10 +1,16 @@
 ---
 id: "question-history-14811"
-title: "spring-cloud-starter-stream-rocketmq 整合配置 sca(spring-cloud-alibaba)"
+title: "spring-cloud-starter-stream-rocketmq 整合配置"
 date: "2024-05-30"
 category: "expertConsultation"
 description: "要整合 Spring Cloud Alibaba 项目与 `spring-cloud-starter-stream-rocketmq`，实现RocketMQ的消息通信功能，可以遵循以下步骤：### 确保环境准备1. **安装RocketMQ Server**     确保已有RocketMQ服务器运"
 ---
+
+## 用户问题 ： 
+ spring-cloud-starter-stream-rocketmq 整合配置  
+
+---------------
+## 专家官方解答 ：
 
 要整合 Spring Cloud Alibaba 项目与 `spring-cloud-starter-stream-rocketmq`，实现RocketMQ的消息通信功能，可以遵循以下步骤：
 
@@ -94,9 +100,25 @@ description: "要整合 Spring Cloud Alibaba 项目与 `spring-cloud-starter-str
   确认Spring Cloud Alibaba与RocketMQ的版本兼容，避免因版本不匹配导致的问题。
 
 以上步骤结合了提供的知识内容，实现了Spring Cloud Alibaba项目中集成RocketMQ进行消息通信的基本配置与使用。
+
+
+<font color="#949494">---------------</font> 
+
+
+## 参考链接 ：
+
+*专家经验：sca环境下 RocketMQ 基本使用 
+ 
+ *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+
+
+ <font color="#949494">---------------</font> 
+ 
+
+
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=14815)给我们反馈。

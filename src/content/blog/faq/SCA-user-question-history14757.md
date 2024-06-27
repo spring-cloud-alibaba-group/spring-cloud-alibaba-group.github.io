@@ -1,10 +1,16 @@
 ---
 id: "question-history-14757"
-title: "spring boot 应用启动流程原理 sca(spring-cloud-alibaba)"
+title: "spring boot 应用启动流程原理"
 date: "2024-05-30"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba下的Spring Boot应用启动流程原理主要遵循标准Spring Boot应用的启动机制，但会集成Alibaba提供的微服务组件，增强服务发现、配置管理、分布式事务处理等功能。基于已有的知识，我们可以概述其启动流程如下：### 1. **打包为Fat Jar"
 ---
+
+## 用户问题 ： 
+ spring boot 应用启动流程原理  
+
+---------------
+## 专家官方解答 ：
 
 Spring Cloud Alibaba下的Spring Boot应用启动流程原理主要遵循标准Spring Boot应用的启动机制，但会集成Alibaba提供的微服务组件，增强服务发现、配置管理、分布式事务处理等功能。基于已有的知识，我们可以概述其启动流程如下：
 
@@ -30,9 +36,23 @@ Spring Cloud Alibaba下的Spring Boot应用启动流程原理主要遵循标准S
 
 ### 总结
 Spring Cloud Alibaba环境下Spring Boot应用的启动，在遵循标准Spring Boot启动流程基础上，额外集成了Alibaba微服务生态的功能模块。这一过程涉及Fat Jar的创建、特定ClassLoader的使用及Spring Cloud Alibaba组件的自动配置与初始化，最终实现了一个具备微服务特性的应用启动过程。
+
+
+<font color="#949494">---------------</font> 
+
+
+## 参考链接 ：
+
+*专家经验：Spring boot 应用启动的原理介绍 
+
+
+ <font color="#949494">---------------</font> 
+ 
+
+
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=14759)给我们反馈。

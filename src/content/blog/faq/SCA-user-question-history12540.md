@@ -1,6 +1,6 @@
 ---
 id: "question-history-12540"
-title: "springboot最新版本 sca(spring-cloud-alibaba)"
+title: "springboot最新版本"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在处理关于sca（Spring Cloud Alibaba）与Spring Boot最新版本的整合问题时，我们可以遵循以下逻辑进行分析与解答：1. **确认需求与环境**：   首先，你需要明确希望了解的是Spring Cloud Alibaba和Spring Boot的哪个具体版本的整合方法，因为"
@@ -9,7 +9,7 @@ keywords: ["spring-cloud-alibaba","springboot","最新版本"]
 ---
 
 ## 用户问题 ： 
- springboot最新版本 sca(spring-cloud-alibaba) 
+ springboot最新版本  
 
 ---------------
 ## 专家官方解答 ：

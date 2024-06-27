@@ -1,12 +1,18 @@
 ---
 id: "question-history-12566"
-title: "springboot的优点 sca(spring-cloud-alibaba)"
+title: "springboot的优点"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "Sca（Spring Cloud Alibaba）与SpringBoot结合的优点主要体现在以下几个方面：1. **丰富的微服务生态集成**：Spring Cloud Alibaba为Spring Boot应用提供了丰富的微服务解决方案，包括服务发现（Nacos）、配置中心（Nacos）、分布式事务"
 tags: ["spring-cloud-alibaba","springboot","优点"]
 keywords: ["spring-cloud-alibaba","springboot","优点"]
 ---
+
+## 用户问题 ： 
+ springboot的优点  
+
+---------------
+## 专家官方解答 ：
 
 Sca（Spring Cloud Alibaba）与SpringBoot结合的优点主要体现在以下几个方面：
 
@@ -23,9 +29,27 @@ Sca（Spring Cloud Alibaba）与SpringBoot结合的优点主要体现在以下�
 6. **社区与文档支持**：Spring Boot和Spring Cloud Alibaba都有活跃的社区和详尽的文档支持，降低了学习曲线，便于开发者快速上手和解决问题。
 
 综上所述，Sca与SpringBoot的结合，不仅简化了微服务架构的实施，还提升了系统的稳定性和性能，同时提供了良好的开发与运维体验，是构建云原生应用的理想选择。
+
+
+<font color="#949494">---------------</font> 
+
+
+## 参考链接 ：
+
+*专家经验：springboot sca 整合redis的具体方法 
+ 
+ *专家经验：sca 与 springboot 快速启动 
+ 
+ *专家经验：springboot 与测试类(springboot test )的集成方案 
+
+
+ <font color="#949494">---------------</font> 
+ 
+
+
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=12659)给我们反馈。

@@ -1,12 +1,18 @@
 ---
 id: "question-history-12555"
-title: "springboot入门 sca(spring-cloud-alibaba)"
+title: "springboot入门"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "要入门Sca（Spring Cloud Alibaba）与Springboot，可以遵循以下步骤：1. **创建Spring Boot项目**   - 使用IntelliJ IDEA或Eclipse等IDE时，直接创建Spring Boot项目。若使用其他IDE，访问[Spring Initiali"
 tags: ["spring-cloud-alibaba","springboot","入门"]
 keywords: ["spring-cloud-alibaba","springboot","入门"]
 ---
+
+## 用户问题 ： 
+ springboot入门  
+
+---------------
+## 专家官方解答 ：
 
 要入门Sca（Spring Cloud Alibaba）与Springboot，可以遵循以下步骤：
 
@@ -49,9 +55,25 @@ keywords: ["spring-cloud-alibaba","springboot","入门"]
    - Spring Cloud Alibaba提供了丰富组件，如Seata分布式事务、Sentinel流量控制、RocketMQ消息队列等，可根据实际需求逐步学习并集成这些组件到项目中，加深对微服务架构的理解与应用。
 
 通过以上步骤，你可以快速上手Sca与Springboot的集成与基础开发，为深入学习与实际项目开发打下坚实基础。
+
+
+<font color="#949494">---------------</font> 
+
+
+## 参考链接 ：
+
+*专家经验：sca 与 springboot 快速启动 
+ 
+ *专家经验：springboot 与测试类(springboot test )的集成方案 
+
+
+ <font color="#949494">---------------</font> 
+ 
+
+
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=12648)给我们反馈。

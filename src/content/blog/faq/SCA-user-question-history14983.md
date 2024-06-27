@@ -1,13 +1,13 @@
 ---
 id: "question-history-14983"
-title: "介绍一下在一个微服务系统中网关的作用, 指出AlibabaCloud是如何使用网关的 sca(spring-cloud-alibaba)"
+title: "介绍一下在一个微服务系统中网关的作用, 指出AlibabaCloud是如何使用网关的"
 date: "2024-06-05"
 category: "expertConsultation"
 description: "在一个微服务系统中，网关扮演着至关重要的角色，它作为系统的入口，负责请求的路由、负载均衡、安全控制、协议转换以及流量塑形等功能。具体来说，网关的作用包括：1. **统一接入**：为微服务架构提供统一的API入口，使得客户端不必直接与各个微服务交互，降低了系统的复杂性。2. **路由转发**：根据请求"
 ---
 
 ## 用户问题 ： 
- 介绍一下在一个微服务系统中网关的作用, 指出AlibabaCloud是如何使用网关的 sca(spring-cloud-alibaba) 
+ 介绍一下在一个微服务系统中网关的作用, 指出AlibabaCloud是如何使用网关的  
 
 ---------------
 ## 专家官方解答 ：
@@ -54,7 +54,7 @@ description: "在一个微服务系统中，网关扮演着至关重要的角色
 
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=15088)给我们反馈。

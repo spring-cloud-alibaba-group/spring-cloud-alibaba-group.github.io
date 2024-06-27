@@ -1,18 +1,18 @@
 ---
 id: "question-history-15034"
-title: "spring alibaba cloud组件介绍 sca(spring-cloud-alibaba)"
+title: "spring alibaba cloud组件介绍 "
 date: "2024-06-05"
 category: "expertConsultation"
-description: "###  sca(spring-cloud-alibaba) spring alibaba cloud组件介绍Spring Cloud Alibaba 是一套为微服务架构设计的开发套件，它基于Spring Cloud生态，专为中国市场优化，提供了丰富的组件以支持微服务的构建与治理。以下是几个核心组件"
+description: "###   spring alibaba cloud组件介绍Spring Cloud Alibaba 是一套为微服务架构设计的开发套件，它基于Spring Cloud生态，专为中国市场优化，提供了丰富的组件以支持微服务的构建与治理。以下是几个核心组件"
 ---
 
 ## 用户问题 ： 
- spring alibaba cloud组件介绍 sca(spring-cloud-alibaba) 
+ spring alibaba cloud组件介绍  
 
 ---------------
 ## 专家官方解答 ：
 
-###  sca(spring-cloud-alibaba) spring alibaba cloud组件介绍
+###   spring alibaba cloud组件介绍
 
 Spring Cloud Alibaba 是一套为微服务架构设计的开发套件，它基于Spring Cloud生态，专为中国市场优化，提供了丰富的组件以支持微服务的构建与治理。以下是几个核心组件的简要介绍：
 

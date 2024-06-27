@@ -1,13 +1,13 @@
 ---
 id: "question-history-14974"
-title: "spring-boot-starter-parent和spring-cloud-star sca(spring-cloud-alibaba)"
+title: "spring-boot-starter-parent和spring-cloud-star"
 date: "2024-06-05"
 category: "expertConsultation"
 description: "根据已有的知识，我们可以分析出Spring Boot Starter Parent与Spring Cloud Starter Alibaba Nacos Config之间的版本对应关系依赖于两个关键因素：Spring Boot的版本以及Spring Cloud Alibaba的版本。具体来说：1. "
 ---
 
 ## 用户问题 ： 
- spring-boot-starter-parent和spring-cloud-starter-alibaba-nacos-config版本对应关系是怎样的？ sca(spring-cloud-alibaba) 
+ spring-boot-starter-parent和spring-cloud-starter-alibaba-nacos-config版本对应关系是怎样的？  
 
 ---------------
 ## 专家官方解答 ：
@@ -45,7 +45,7 @@ description: "根据已有的知识，我们可以分析出Spring Boot Starter P
 
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=15079)给我们反馈。

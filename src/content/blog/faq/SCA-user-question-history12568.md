@@ -1,12 +1,18 @@
 ---
 id: "question-history-12568"
-title: "idea创建springboot sca(spring-cloud-alibaba)"
+title: "idea创建springboot"
 date: "2024-05-27"
 category: "expertConsultation"
 description: "在IntelliJ IDEA中使用Spring Cloud Alibaba创建Spring Boot项目的步骤如下：1. **访问Spring Initializr for Alibaba**: 首先，访问阿里云提供的Spring Boot项目初始化工具 [https://start.aliyun."
 tags: ["spring-cloud-alibaba","idea","springboot"]
 keywords: ["spring-cloud-alibaba","idea","springboot"]
 ---
+
+## 用户问题 ： 
+ idea创建springboot  
+
+---------------
+## 专家官方解答 ：
 
 在IntelliJ IDEA中使用Spring Cloud Alibaba创建Spring Boot项目的步骤如下：
 
@@ -46,9 +52,27 @@ keywords: ["spring-cloud-alibaba","idea","springboot"]
 8. **运行应用**: 右键点击主类或在主类中直接运行`main`方法，启动Spring Boot应用。默认情况下，应用会在`http://localhost:8080`启动，如果服务注册到Nacos成功，你也可以在Nacos控制台查看到服务列表。
 
 以上步骤将帮助你在IntelliJ IDEA中快速创建并启动一个集成Spring Cloud Alibaba的Spring Boot项目。
+
+
+<font color="#949494">---------------</font> 
+
+
+## 参考链接 ：
+
+*专家经验：sca 与 springboot 快速启动 
+ 
+ *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+ 
+ *专家经验：Spring Cloud Alibaba和Dubbo选型建议 
+
+
+ <font color="#949494">---------------</font> 
+ 
+
+
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=14592)给我们反馈。

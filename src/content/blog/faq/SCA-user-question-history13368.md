@@ -1,12 +1,18 @@
 ---
 id: "question-history-13368"
-title: "spring-cloud-alibaba整合nacos配置中心教程 sca(spring-cloud-alibaba)"
+title: "spring-cloud-alibaba整合nacos配置中心教程"
 date: "2024-05-13"
 category: "expertConsultation"
 description: "要整合Spring Cloud Alibaba与Nacos配置中心，您可以遵循以下步骤进行设置：1. **添加依赖**：   在您的Spring Boot项目中，需要添加Spring Cloud Alibaba的起步依赖，特别是`spring-cloud-starter-alibaba-nacos-"
 tags: ["spring-cloud-alibaba","nacos","配置中心","教程"]
 keywords: ["spring-cloud-alibaba","nacos","配置中心","教程"]
 ---
+
+## 用户问题 ： 
+ spring-cloud-alibaba整合nacos配置中心教程  
+
+---------------
+## 专家官方解答 ：
 
 要整合Spring Cloud Alibaba与Nacos配置中心，您可以遵循以下步骤进行设置：
 
@@ -60,9 +66,27 @@ keywords: ["spring-cloud-alibaba","nacos","配置中心","教程"]
 - [Nacos Discovery](https://github.com/spring-cloud-incubator/spring-cloud-alibaba/wiki/Nacos-discovery)
 
 以上步骤指导您完成Spring Cloud Alibaba与Nacos配置中心的基本整合。根据具体需求，您可能还需要配置更多的细节，比如配置文件的命名规则、配置刷新策略等。
+
+
+<font color="#949494">---------------</font> 
+
+
+## 参考链接 ：
+
+*专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+ 
+ *专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
+ 
+ *专家经验：spring 怎么读？ 
+
+
+ <font color="#949494">---------------</font> 
+ 
+
+
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=13372)给我们反馈。

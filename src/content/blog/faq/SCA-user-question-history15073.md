@@ -1,13 +1,13 @@
 ---
 id: "question-history-15073"
-title: "alibaba微服务 叫啥 sca(spring-cloud-alibaba)"
+title: "alibaba微服务 叫啥 "
 date: "2024-06-05"
 category: "expertConsultation"
 description: "Alibaba微服务体系被称为Spring Cloud Alibaba。它是阿里巴巴提供的一个服务于Java Spring生态的微服务解决方案，旨在帮助开发者构建分布式系统，提供了包括服务发现(Nacos)、配置管理(Nacos Config)、分布式事务(Seata)等在内的全方位微服务治理能力。"
 ---
 
 ## 用户问题 ： 
- alibaba微服务 叫啥 sca(spring-cloud-alibaba) 
+ alibaba微服务 叫啥  
 
 ---------------
 ## 专家官方解答 ：

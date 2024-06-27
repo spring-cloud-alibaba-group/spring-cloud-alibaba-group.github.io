@@ -1,12 +1,18 @@
 ---
 id: "question-history-13454"
-title: "SCA添加seata怎么部署配置？ sca(spring-cloud-alibaba)"
+title: "SCA添加seata怎么部署配置？"
 date: "2024-05-21"
 category: "expertConsultation"
 description: "为了在SCA（Spring Cloud Alibaba）项目中添加Seata以实现分布式事务的支持，您需要遵循以下部署配置步骤：### 1. 启动 Seata Server#### 配置数据库及表结构- **创建UNDO_LOG表**：用于AT模式下存储事务回滚信息。```sqlCREATE TAB"
 tags: ["spring-cloud-alibaba","seata","部署配置"]
 keywords: ["spring-cloud-alibaba","seata","部署配置"]
 ---
+
+## 用户问题 ： 
+ SCA添加seata怎么部署配置？  
+
+---------------
+## 专家官方解答 ：
 
 为了在SCA（Spring Cloud Alibaba）项目中添加Seata以实现分布式事务的支持，您需要遵循以下部署配置步骤：
 
@@ -55,9 +61,25 @@ service.vgroupMapping.*-tx-group=default
 - 访问示例接口验证服务是否正常工作，如：[http://127.0.0.1:18081/seata/feign](http://127.0.0.1:18081/seata/feign)
 
 以上步骤确保了Seata在SCA项目中得以正确部署并配置，以提供分布式事务支持。通过Seata Server管理全局事务，配合Nacos进行服务注册与配置管理，实现了分布式系统中的事务一致性解决方案。
+
+
+<font color="#949494">---------------</font> 
+
+
+## 参考链接 ：
+
+*专家经验：基于springboot sca 添加 seata怎么部署配置？ 
+ 
+ *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+
+
+ <font color="#949494">---------------</font> 
+ 
+
+
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=13956)给我们反馈。

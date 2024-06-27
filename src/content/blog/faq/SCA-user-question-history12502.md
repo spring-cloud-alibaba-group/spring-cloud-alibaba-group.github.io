@@ -1,6 +1,6 @@
 ---
 id: "question-history-12502"
-title: "springboot kafka sca(spring-cloud-alibaba)"
+title: "springboot kafka"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在使用Spring Cloud Alibaba (Sca)与Spring Boot集成Kafka时，我们首先回顾一下基础的集成流程，再结合Sca的特性进行说明。虽然提供的参考内容没有直接涵盖Sca与Kafka的集成细节，但我们可以基于常规的Spring Boot与Kafka集成方式，以及Sca对微服"
@@ -9,7 +9,7 @@ keywords: ["spring-cloud-alibaba","springboot","kafka"]
 ---
 
 ## 用户问题 ： 
- springboot kafka sca(spring-cloud-alibaba) 
+ springboot kafka  
 
 ---------------
 ## 专家官方解答 ：

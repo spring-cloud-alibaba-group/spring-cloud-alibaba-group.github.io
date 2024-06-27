@@ -1,13 +1,13 @@
 ---
 id: "question-history-14977"
-title: "springboot2.7.18对应 springcloud alibaba 版本 sca(spring-cloud-alibaba)"
+title: "springboot2.7.18对应 springcloud alibaba 版本"
 date: "2024-06-05"
 category: "expertConsultation"
 description: "根据已有的知识内容，我们没有直接获取到Spring Boot 2.7.18版本对应Spring Cloud Alibaba的确切版本信息。为了提供最准确的版本匹配建议，通常需要查阅Spring Cloud Alibaba的官方文档或发布说明，因为版本兼容性可能会随着新版本的发布而有所更新。但是，根据"
 ---
 
 ## 用户问题 ： 
- springboot2.7.18对应 springcloud alibaba 版本 sca(spring-cloud-alibaba) 
+ springboot2.7.18对应 springcloud alibaba 版本  
 
 ---------------
 ## 专家官方解答 ：
@@ -35,7 +35,7 @@ description: "根据已有的知识内容，我们没有直接获取到Spring Bo
 
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=15082)给我们反馈。

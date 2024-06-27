@@ -1,12 +1,18 @@
 ---
 id: "question-history-14687"
-title: "spring.cloud.nacos.discovery.server-addr sca(spring-cloud-alibaba)"
+title: "spring.cloud.nacos.discovery.server-addr"
 date: "2024-05-29"
 category: "expertConsultation"
 description: "在使用Spring Cloud Alibaba时，`spring.cloud.nacos.discovery.server-addr`配置项是非常关键的，它用于指定Nacos服务器的地址，以便于服务发现功能能够正常工作。根据已有的知识，我们可以这样理解和配置它：1. **配置作用理解：**   - "
 tags: ["spring-cloud-alibaba","nacos","discovery","server-addr","配置","问题"]
 keywords: ["spring-cloud-alibaba","nacos","discovery","server-addr","配置","问题"]
 ---
+
+## 用户问题 ： 
+ spring.cloud.nacos.discovery.server-addr  
+
+---------------
+## 专家官方解答 ：
 
 在使用Spring Cloud Alibaba时，`spring.cloud.nacos.discovery.server-addr`配置项是非常关键的，它用于指定Nacos服务器的地址，以便于服务发现功能能够正常工作。根据已有的知识，我们可以这样理解和配置它：
 
@@ -37,9 +43,25 @@ keywords: ["spring-cloud-alibaba","nacos","discovery","server-addr","配置","�
    - 此配置适用于集成Spring Cloud Alibaba的项目，利用Nacos提供的服务注册与发现机制，简化了微服务架构中的服务管理和通信复杂性。
 
 综上所述，通过正确配置`spring.cloud.nacos.discovery.server-addr`，可以顺利集成Nacos到Spring Cloud Alibaba项目中，实现服务的注册与发现功能。
+
+
+<font color="#949494">---------------</font> 
+
+
+## 参考链接 ：
+
+*专家经验：Spring Cloud Alibaba和Dubbo选型建议 
+ 
+ *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+
+
+ <font color="#949494">---------------</font> 
+ 
+
+
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=14737)给我们反馈。

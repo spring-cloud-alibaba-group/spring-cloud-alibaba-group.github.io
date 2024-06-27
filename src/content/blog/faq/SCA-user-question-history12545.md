@@ -1,12 +1,18 @@
 ---
 id: "question-history-12545"
-title: "springboot jsp sca(spring-cloud-alibaba)"
+title: "springboot jsp"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在处理关于Sca(Spring Cloud Alibaba) SpringBoot JSP的问题时，我们首先明确Spring Boot默认并不直接支持JSP作为视图技术，因为它主要推荐使用Thymeleaf、FreeMarker等模板引擎。但若要在Spring Boot项目中集成JSP，需要进行一些"
 tags: ["spring-cloud-alibaba","springboot","jsp"]
 keywords: ["spring-cloud-alibaba","springboot","jsp"]
 ---
+
+## 用户问题 ： 
+ springboot jsp  
+
+---------------
+## 专家官方解答 ：
 
 在处理关于"Sca(Spring Cloud Alibaba) SpringBoot JSP"的问题时，我们首先明确Spring Boot默认并不直接支持JSP作为视图技术，因为它主要推荐使用Thymeleaf、FreeMarker等模板引擎。但若要在Spring Boot项目中集成JSP，需要进行一些额外的配置。虽然提供的知识内容没有直接涉及这一主题，我们可以基于Spring Boot的一般做法和理解来指导如何在Sca项目中集成JSP。
 
@@ -77,9 +83,27 @@ public class HomeController {
 
 ### 总结
 尽管直接的知识点未覆盖JSP集成，但基于Spring Boot的基本实践，以上步骤应能指导你在Sca项目中成功集成并使用JSP。请记得，使用JSP在Spring Boot中相对非标准，可能遇到一些与现代模板引擎不同的行为或限制。
+
+
+<font color="#949494">---------------</font> 
+
+
+## 参考链接 ：
+
+*专家经验：springboot 与测试类(springboot test )的集成方案 
+ 
+ *专家经验：springboot sca 整合redis的具体方法 
+ 
+ *专家经验：sca 与 springboot 快速启动 
+
+
+ <font color="#949494">---------------</font> 
+ 
+
+
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=12638)给我们反馈。
