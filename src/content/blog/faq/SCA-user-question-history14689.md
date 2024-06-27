@@ -1,12 +1,18 @@
 ---
 id: "question-history-14689"
-title: "gateway版本 sca(spring-cloud-alibaba)"
+title: "gateway版本"
 date: "2024-05-29"
 category: "expertConsultation"
 description: "根据已有的知识内容，我们可以确定Spring Cloud Alibaba项目包含对Spring Cloud Gateway的支持，但具体到请求的Spring Cloud Alibaba Gateway的版本信息，知识中并未直接提供详细版本号。不过，我们可以通过以下步骤来推断或查找相应的版本信息：1."
 tags: ["spring-cloud-alibaba","gateway","版本"]
 keywords: ["spring-cloud-alibaba","gateway","版本"]
 ---
+
+## 用户问题 ： 
+ gateway版本  
+
+---------------
+## 专家官方解答 ：
 
 根据已有的知识内容，我们可以确定Spring Cloud Alibaba项目包含对Spring Cloud Gateway的支持，但具体到请求的Spring Cloud Alibaba Gateway的版本信息，知识中并未直接提供详细版本号。不过，我们可以通过以下步骤来推断或查找相应的版本信息：
 
@@ -17,9 +23,25 @@ keywords: ["spring-cloud-alibaba","gateway","版本"]
 3. **访问官方文档**：如果需要更精确的Spring Cloud Gateway在Spring Cloud Alibaba中的版本信息，可以直接访问[Spring Cloud Alibaba官方文档](https://sca.aliyun.com/docs/2023/overview/version-explain/)。文档中可能会有更详细的版本说明，包括特定版本的新功能介绍、改进和已知问题等，这有助于了解当前推荐或支持的Spring Cloud Gateway版本。
 
 综上所述，虽然无法直接提供确切的Spring Cloud Alibaba Gateway版本号，但通过确定你的Spring Boot版本并参考官方版本对应表和文档，你可以找到合适的Spring Cloud Alibaba版本，进而了解对应的Spring Cloud Gateway版本信息。
+
+
+<font color="#949494">---------------</font> 
+
+
+## 参考链接 ：
+
+*专家经验：基于网关实现 Spring Cloud 服务发现与路由 
+ 
+ *专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
+
+
+ <font color="#949494">---------------</font> 
+ 
+
+
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=14739)给我们反馈。

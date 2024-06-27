@@ -1,13 +1,13 @@
 ---
 id: "question-history-14962"
-title: "spring-cloud-starter-alibaba-nacos-config 最新 sca(spring-cloud-alibaba)"
+title: "spring-cloud-starter-alibaba-nacos-config 最新"
 date: "2024-06-05"
 category: "expertConsultation"
 description: "根据提供的知识内容，为了确定`spring-cloud-starter-alibaba-nacos-config`的最新版本，我们需要先确认你打算使用的Spring Cloud Alibaba版本以及对应的Spring Boot版本。由于直接查询特定starter的最新版本信息不在给定的知识范围内，"
 ---
 
 ## 用户问题 ： 
- spring-cloud-starter-alibaba-nacos-config 最新的版本 sca(spring-cloud-alibaba) 
+ spring-cloud-starter-alibaba-nacos-config 最新的版本  
 
 ---------------
 ## 专家官方解答 ：
@@ -53,7 +53,7 @@ description: "根据提供的知识内容，为了确定`spring-cloud-starter-al
 
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=14970)给我们反馈。

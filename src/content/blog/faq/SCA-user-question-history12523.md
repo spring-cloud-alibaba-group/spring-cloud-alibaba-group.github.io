@@ -1,12 +1,18 @@
 ---
 id: "question-history-12523"
-title: "springboot netty sca(spring-cloud-alibaba)"
+title: "springboot netty"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba环境中整合Spring Boot与Netty来提供WebSocket服务的步骤如下：1. **添加Netty依赖**：   首先，在你的Spring Boot项目的`pom.xml`文件中加入Netty的依赖。确保使用的是最新稳定版本的Netty库，例如： "
 tags: ["spring-cloud-alibaba","springboot","netty"]
 keywords: ["spring-cloud-alibaba","springboot","netty"]
 ---
+
+## 用户问题 ： 
+ springboot netty  
+
+---------------
+## 专家官方解答 ：
 
 在Spring Cloud Alibaba环境中整合Spring Boot与Netty来提供WebSocket服务的步骤如下：
 
@@ -51,9 +57,23 @@ keywords: ["spring-cloud-alibaba","springboot","netty"]
    ```
 
 综上所述，通过这些步骤，你可以在基于Spring Cloud Alibaba的Spring Boot应用中整合Netty，从而提供WebSocket服务。这包括了依赖管理、服务器配置、消息处理器实现以及服务启动的全过程。请确保根据实际的业务场景调整处理器逻辑，并密切关注Netty与Spring Boot版本的兼容性。
+
+
+<font color="#949494">---------------</font> 
+
+
+## 参考链接 ：
+
+*专家经验：springboot整合netty 来提供web socket服务 
+
+
+ <font color="#949494">---------------</font> 
+ 
+
+
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=12616)给我们反馈。

@@ -1,10 +1,16 @@
 ---
 id: "question-history-14812"
-title: "rocketmq消费者前置处理 sca(spring-cloud-alibaba)"
+title: "rocketmq消费者前置处理"
 date: "2024-05-30"
 category: "expertConsultation"
 description: "在Spring Cloud AlibabaRocketMQ消费者端实现前置处理，通常是指在消息被正式业务逻辑处理之前，执行一些预处理操作，比如日志记录、消息验签、消息转换等。根据已有的知识，可以通过以下步骤来实现这一需求：### 分析与策略尽管直接的知识点中并未明确提及消费者前置处理的具体配置或实现"
 ---
+
+## 用户问题 ： 
+ rocketmq消费者前置处理  
+
+---------------
+## 专家官方解答 ：
 
 在Spring Cloud AlibabaRocketMQ消费者端实现前置处理，通常是指在消息被正式业务逻辑处理之前，执行一些预处理操作，比如日志记录、消息验签、消息转换等。根据已有的知识，可以通过以下步骤来实现这一需求：
 
@@ -47,9 +53,23 @@ public class MessagePreProcessor implements MessageHandler {
 ### 注意
 
 由于直接的配置示例未提供如何插入自定义处理逻辑到消息消费流程中的具体代码，以上方案是一种通用指导思路。实际应用时，可能需要查阅最新的Spring Cloud Stream和RocketMQ集成文档，以获取最合适的实践方法。
+
+
+<font color="#949494">---------------</font> 
+
+
+## 参考链接 ：
+
+*专家经验：sca环境下 RocketMQ 基本使用 
+
+
+ <font color="#949494">---------------</font> 
+ 
+
+
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=14816)给我们反馈。

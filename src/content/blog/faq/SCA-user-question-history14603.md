@@ -1,6 +1,6 @@
 ---
 id: "question-history-14603"
-title: "详细说明spring cloud和Spring Cloud Alibaba的联系和区别 sca(spring-cloud-alibaba)"
+title: "详细说明spring cloud和Spring Cloud Alibaba的联系和区别"
 date: "2024-05-27"
 category: "expertConsultation"
 description: "Spring Cloud和Spring Cloud Alibaba之间存在紧密的联系与显著的区别：**联系：**1. **Spring Cloud生态集成：** Spring Cloud Alibaba是Spring Cloud生态的一个重要扩展，它为Spring Cloud框架增添了针对阿里巴巴中"
@@ -9,7 +9,7 @@ keywords: ["spring-cloud-alibaba","spring cloud","Spring Cloud Alibaba","联系"
 ---
 
 ## 用户问题 ： 
- 详细说明spring cloud和Spring Cloud Alibaba的联系和区别 sca(spring-cloud-alibaba) 
+ 详细说明spring cloud和Spring Cloud Alibaba的联系和区别  
 
 ---------------
 ## 专家官方解答 ：

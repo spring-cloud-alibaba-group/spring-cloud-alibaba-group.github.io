@@ -1,12 +1,18 @@
 ---
 id: "question-history-14616"
-title: "通俗易懂的对比SpringCloud和SpringCloud Alibaba sca(spring-cloud-alibaba)"
+title: "通俗易懂的对比SpringCloud和SpringCloud Alibaba"
 date: "2024-05-27"
 category: "expertConsultation"
 description: "Spring Cloud和Spring Cloud Alibaba都是构建微服务架构的热门框架，它们各有特色，适用于不同场景和技术需求。下面将从几个维度进行通俗易懂的对比：### 1. 技术栈整合- **Spring Cloud**：作为Spring生态系统的一部分，自然与Spring Boot框架"
 tags: ["SpringCloud Alibaba","对比"]
 keywords: ["SpringCloud Alibaba","对比"]
 ---
+
+## 用户问题 ： 
+ 通俗易懂的对比SpringCloud和SpringCloud Alibaba  
+
+---------------
+## 专家官方解答 ：
 
 Spring Cloud和Spring Cloud Alibaba都是构建微服务架构的热门框架，它们各有特色，适用于不同场景和技术需求。下面将从几个维度进行通俗易懂的对比：
 
@@ -36,9 +42,25 @@ Spring Cloud和Spring Cloud Alibaba都是构建微服务架构的热门框架，
 - 项目的国际化程度以及是否依赖特定云服务商的服务。
 
 两者都能满足微服务架构的基本需求，但在特定场景下各有所长，需根据实际需求权衡选择。对于想要深入了解版本对应关系的，可以查阅[官方文档](https://sca.aliyun.com/docs/2023/overview/version-explain/)以获取最新信息。
+
+
+<font color="#949494">---------------</font> 
+
+
+## 参考链接 ：
+
+*专家经验：Spring Cloud Alibaba和Dubbo选型建议 
+ 
+ *专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
+
+
+ <font color="#949494">---------------</font> 
+ 
+
+
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=14617)给我们反馈。

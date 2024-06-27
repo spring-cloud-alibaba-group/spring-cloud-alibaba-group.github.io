@@ -1,12 +1,18 @@
 ---
 id: "question-history-12518"
-title: "springboot依赖 sca(spring-cloud-alibaba)"
+title: "springboot依赖"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (Sca)中的Spring Boot项目添加依赖，主要涉及基础依赖、特定功能依赖以及可能的容器更换。以下是根据提供的知识内容整理的具体步骤：### 添加基础Spring Boot与Sca依赖1. **基础Spring Boot依赖配置**     打开项目"
 tags: ["spring-cloud-alibaba","springboot","依赖"]
 keywords: ["spring-cloud-alibaba","springboot","依赖"]
 ---
+
+## 用户问题 ： 
+ springboot依赖  
+
+---------------
+## 专家官方解答 ：
 
 在Spring Cloud Alibaba (Sca)中的Spring Boot项目添加依赖，主要涉及基础依赖、特定功能依赖以及可能的容器更换。以下是根据提供的知识内容整理的具体步骤：
 
@@ -62,9 +68,27 @@ keywords: ["spring-cloud-alibaba","springboot","依赖"]
 ### 总结
 
 通过上述步骤，你可以在Spring Cloud Alibaba项目中正确地添加和配置Spring Boot依赖，包括但不限于基础Web服务支持、Redis集成，以及选择性地替换应用服务器为Jetty。这些配置和依赖的添加为构建健壮的微服务架构提供了基础。
+
+
+<font color="#949494">---------------</font> 
+
+
+## 参考链接 ：
+
+*专家经验：springboot sca 整合redis的具体方法 
+ 
+ *专家经验：sca 与 springboot 快速启动 
+ 
+ *专家经验：springboot 整合jetty来提供servlet服务 
+
+
+ <font color="#949494">---------------</font> 
+ 
+
+
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=12611)给我们反馈。

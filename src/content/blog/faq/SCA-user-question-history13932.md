@@ -1,12 +1,18 @@
 ---
 id: "question-history-13932"
-title: "springcloud alibaba 主要组件介绍 sca(spring-cloud-alibaba)"
+title: "springcloud alibaba 主要组件介绍"
 date: "2024-05-20"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba (SCA) 是一个为分布式系统开发提供解决方案的框架，它集成了阿里巴巴开源的多个组件，旨在简化微服务架构中的服务治理、配置管理、限流降级、消息传递等关键功能。以下是SCA的主要组件介绍：1. **Sentinel**: Sentinel 是一个流量控制和熔断"
 tags: ["spring-cloud-alibaba","springcloud","alibaba","主要组件介绍"]
 keywords: ["spring-cloud-alibaba","springcloud","alibaba","主要组件介绍"]
 ---
+
+## 用户问题 ： 
+ springcloud alibaba 主要组件介绍  
+
+---------------
+## 专家官方解答 ：
 
 Spring Cloud Alibaba (SCA) 是一个为分布式系统开发提供解决方案的框架，它集成了阿里巴巴开源的多个组件，旨在简化微服务架构中的服务治理、配置管理、限流降级、消息传递等关键功能。以下是SCA的主要组件介绍：
 
@@ -23,9 +29,27 @@ Spring Cloud Alibaba (SCA) 是一个为分布式系统开发提供解决方案�
 此外，**Spring Cloud Alibaba AI** 是SCA的最新扩展，它基于Spring AI框架，旨在简化AI服务的集成和使用。通过提供标准化的API，使得开发者能够轻松接入并利用阿里云的通义大模型系列，进行对话、文生图、文生语音等功能的开发，同时支持模型输出解析、Prompt模板和外部数据接入，降低了AI技术在业务中的应用门槛。
 
 综上所述，Spring Cloud Alibaba及其组件为构建云原生微服务架构提供了全面且强大的支撑，覆盖了从服务治理、配置管理到消息传递、事务处理乃至AI服务接入的各个方面，助力企业快速构建稳定、高效、智能的分布式系统。
+
+
+<font color="#949494">---------------</font> 
+
+
+## 参考链接 ：
+
+*专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
+ 
+ *专家经验：sca ai (spring cloud alibaba ai）介绍 
+ 
+ *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+
+
+ <font color="#949494">---------------</font> 
+ 
+
+
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=13933)给我们反馈。

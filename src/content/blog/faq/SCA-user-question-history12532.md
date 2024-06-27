@@ -1,12 +1,18 @@
 ---
 id: "question-history-12532"
-title: "springboot 文件下载 sca(spring-cloud-alibaba)"
+title: "springboot 文件下载"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在`sca`（Spring Cloud Alibaba）与`springboot`环境中实现文件下载功能，可以遵循标准的Spring Boot实践结合Sca提供的特性。尽管参考内容未直接涵盖文件下载的具体步骤，但我们可以基于Spring Boot的基础功能来设计解决方案。下面是实现文件下载的步骤：#"
 tags: ["spring-cloud-alibaba","springboot","文件下载"]
 keywords: ["spring-cloud-alibaba","springboot","文件下载"]
 ---
+
+## 用户问题 ： 
+ springboot 文件下载  
+
+---------------
+## 专家官方解答 ：
 
 在`sca`（Spring Cloud Alibaba）与`springboot`环境中实现文件下载功能，可以遵循标准的Spring Boot实践结合Sca提供的特性。尽管参考内容未直接涵盖文件下载的具体步骤，但我们可以基于Spring Boot的基础功能来设计解决方案。下面是实现文件下载的步骤：
 
@@ -65,9 +71,27 @@ public class FileDownloadController {
 - 此方法适用于任何类型的文件下载，只需正确提供文件路径和名称即可。
 
 这样，你就完成了在Spring Cloud Alibaba与Spring Boot项目中实现文件下载的基本配置。
+
+
+<font color="#949494">---------------</font> 
+
+
+## 参考链接 ：
+
+*专家经验：sca 与 springboot 快速启动 
+ 
+ *专家经验：springboot 整合jetty来提供servlet服务 
+ 
+ *专家经验：springboot 与测试类(springboot test )的集成方案 
+
+
+ <font color="#949494">---------------</font> 
+ 
+
+
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=12625)给我们反馈。

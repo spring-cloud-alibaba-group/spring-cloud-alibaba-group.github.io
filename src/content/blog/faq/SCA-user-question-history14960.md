@@ -1,13 +1,13 @@
 ---
 id: "question-history-14960"
-title: "spring-boot 2.6.7版本对应的springcloudalibaba版本 sca(spring-cloud-alibaba)"
+title: "spring-boot 2.6.7版本对应的springcloudalibaba版本"
 date: "2024-06-05"
 category: "expertConsultation"
 description: "根据已知知识，对于Spring Boot 2.6.7版本，我们可以通过查找最接近的版本来确定对应的Spring Cloud Alibaba版本。在提供的表格中，Spring Boot 2.6.7最接近的版本是2.6.11和2.6.3。由于直接匹配的版本不存在，我们通常会选择比指定版本稍高的条目以确保"
 ---
 
 ## 用户问题 ： 
- spring-boot 2.6.7版本对应的springcloudalibaba版本 sca(spring-cloud-alibaba) 
+ spring-boot 2.6.7版本对应的springcloudalibaba版本  
 
 ---------------
 ## 专家官方解答 ：

@@ -1,18 +1,18 @@
 ---
 id: "question-history-15020"
-title: "The spring.config.import property is missing sca(spring-cloud-alibaba)"
+title: "The spring.config.import property is missing "
 date: "2024-06-05"
 category: "expertConsultation"
-description: "根据您的问题，您似乎在询问关于`sca(spring-cloud-alibaba)`中`spring.config.import`属性缺少`nacos:`入口的问题。依据提供的知识内容，我们可以这样分析和解答：### 问题原因分析在Spring Cloud Alibaba项目中，如果您遇到提示`sp"
+description: "根据您的问题，您似乎在询问关于``中`spring.config.import`属性缺少`nacos:`入口的问题。依据提供的知识内容，我们可以这样分析和解答：### 问题原因分析在Spring Cloud Alibaba项目中，如果您遇到提示`sp"
 ---
 
 ## 用户问题 ： 
- The spring.config.import property is missing a nacos: entry sca(spring-cloud-alibaba) 
+ The spring.config.import property is missing a nacos: entry  
 
 ---------------
 ## 专家官方解答 ：
 
-根据您的问题，您似乎在询问关于`sca(spring-cloud-alibaba)`中`spring.config.import`属性缺少`nacos:`入口的问题。依据提供的知识内容，我们可以这样分析和解答：
+根据您的问题，您似乎在询问关于``中`spring.config.import`属性缺少`nacos:`入口的问题。依据提供的知识内容，我们可以这样分析和解答：
 
 ### 问题原因分析
 在Spring Cloud Alibaba项目中，如果您遇到提示`spring.config.import`属性缺少`nacos:`入口的错误，这通常意味着您的应用程序在尝试使用Nacos作为配置中心时，没有正确配置以从Nacos服务器导入配置。在Spring Cloud 2020.* 版本之后，默认不再自动加载`bootstrap.properties`或`bootstrap.yml`，这可能导致原本在这些文件中配置的Nacos相关设置失效。

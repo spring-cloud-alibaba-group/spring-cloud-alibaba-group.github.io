@@ -1,12 +1,18 @@
 ---
 id: "question-history-14635"
-title: "spring-cloud-alibaba-dependencies sca(spring-cloud-alibaba)"
+title: "spring-cloud-alibaba-dependencies"
 date: "2024-05-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba项目中，`spring-cloud-alibaba-dependencies`是一个关键的依赖管理模块，它帮助我们集中管理Spring Cloud Alibaba体系内各组件的版本依赖。根据提供的知识内容，我们可以了解到不同版本的Spring Cloud A"
 tags: ["spring-cloud-alibaba","spring-cloud-alibaba-dependencies"]
 keywords: ["spring-cloud-alibaba","spring-cloud-alibaba-dependencies"]
 ---
+
+## 用户问题 ： 
+ spring-cloud-alibaba-dependencies  
+
+---------------
+## 专家官方解答 ：
 
 在Spring Cloud Alibaba项目中，`spring-cloud-alibaba-dependencies`是一个关键的依赖管理模块，它帮助我们集中管理Spring Cloud Alibaba体系内各组件的版本依赖。根据提供的知识内容，我们可以了解到不同版本的Spring Cloud Alibaba与之对应的组件版本信息，这对于正确配置项目的依赖至关重要。
 
@@ -51,9 +57,27 @@ keywords: ["spring-cloud-alibaba","spring-cloud-alibaba-dependencies"]
 2. 在`dependencies`部分声明具体使用的Spring Cloud Alibaba组件，无需指定版本号。
 
 这样配置可以确保项目的依赖管理清晰且版本兼容，避免因手动指定不兼容版本而导致的构建或运行时错误。
+
+
+<font color="#949494">---------------</font> 
+
+
+## 参考链接 ：
+
+*专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+ 
+ *专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
+ 
+ *专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
+
+
+ <font color="#949494">---------------</font> 
+ 
+
+
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=14641)给我们反馈。

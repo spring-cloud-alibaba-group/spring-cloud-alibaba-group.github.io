@@ -1,12 +1,18 @@
 ---
 id: "question-history-12575"
-title: "springboot开启事务 sca(spring-cloud-alibaba)"
+title: "springboot开启事务"
 date: "2024-04-28"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (SCA)与SpringBoot环境下开启事务，主要是利用Spring Framework提供的事务管理功能。虽然直接的参考内容未明确提及事务开启步骤，但基于SpringBoot和Spring Data的一般实践，可以遵循以下逻辑进行配置与使用：### 分"
 tags: ["spring-cloud-alibaba","springboot","事务"]
 keywords: ["spring-cloud-alibaba","springboot","事务"]
 ---
+
+## 用户问题 ： 
+ springboot开启事务  
+
+---------------
+## 专家官方解答 ：
 
 在Spring Cloud Alibaba (SCA)与SpringBoot环境下开启事务，主要是利用Spring Framework提供的事务管理功能。虽然直接的参考内容未明确提及事务开启步骤，但基于SpringBoot和Spring Data的一般实践，可以遵循以下逻辑进行配置与使用：
 
@@ -69,9 +75,25 @@ public class YourService {
 请注意，根据实际的业务需求和数据库类型，事务的传播行为、隔离级别等高级设置可能需要进一步定制，这些可以通过`@Transactional`注解的属性来调整。
 
 以上步骤适用于大多数基于Spring Boot与Spring Cloud Alibaba的应用场景，以实现基本的事务管理功能。
+
+
+<font color="#949494">---------------</font> 
+
+
+## 参考链接 ：
+
+*专家经验：sca 与 springboot 快速启动 
+ 
+ *专家经验：springboot 与测试类(springboot test )的集成方案 
+
+
+ <font color="#949494">---------------</font> 
+ 
+
+
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=12668)给我们反馈。
