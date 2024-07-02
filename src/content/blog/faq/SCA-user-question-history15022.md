@@ -1,6 +1,6 @@
 ---
 id: "question-history-15022"
-title: "阿里的spring地址 "
+title: "阿里的spring地址"
 date: "2024-06-05"
 category: "expertConsultation"
 description: "根据我的知识库，可以直接您的问题。Sca（Spring Cloud Alibaba）的官网地址是：[https://sca.aliyun.com](https://sca.aliyun.com)。在这个官网上，您可以找到关于Spring Cloud Alibaba的详细文档、学习资源以及用户指南，还"
