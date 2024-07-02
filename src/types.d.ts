@@ -76,3 +76,9 @@ export interface CloudIntroduceCard {
     link: string,
     feature: UiKeys[],
 };
+
+export interface StarAndForkT {
+  stargazers_count?: number;
+  forks_count?: number;
+  SITE?: any
+};

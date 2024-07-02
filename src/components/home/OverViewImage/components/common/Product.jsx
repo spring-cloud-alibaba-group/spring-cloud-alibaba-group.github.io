@@ -26,11 +26,6 @@ export const Product = ({
     // 只第一次请求一次
     if (!hasFetchedData) {
       setHovering(true);
-      const apiLink = hoverContent?.links?.Github?.apiLink;
-      if(apiLink) {
-        const fetchedData = await sendFetch(apiLink);
-        setData(fetchedData);
-      };
       setHasFetchedData(true); // 更新标志，表示数据已被获取
     }
   };
@@ -126,7 +121,7 @@ export const Product = ({
           onMouseLeave={() => setHovering(false)}
           ref={popupRef}
         >
-          <PopupContent {...hoverContent} direction={direction} data={data} />
+          <PopupContent {...hoverContent} direction={direction} data={data} isHovering={isHovering}/>
         </div>
       )}
     </div>

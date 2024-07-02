@@ -286,6 +286,8 @@ export default {
 	'page.blog.news.community.cooperation':'Community Cooperation',
 	'page.limiting.prompt': 'The current download channel is too crowded, please try again later...',
 	"themeSelect.accessibleLabel": "Select theme",
+	'wuyi.blog.title': 'Examples of experts answering questions',
+	'wuyi.meet-professor.article': "Article",
 	'learn.article.spring':'Spring',
 	'learn.article.spring-boot':'Spring Boot',
 	'learn.article.spring-cloud':'Spring Cloud',

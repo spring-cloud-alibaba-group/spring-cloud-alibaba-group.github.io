@@ -3,7 +3,7 @@ import Jump from './Jump';
 const Button = (props) =>{
     const {
         href,
-        theme = "normal",
+        type = "normal",
         size = "medium",
         visibility = true,
         target = "_self",
@@ -19,9 +19,9 @@ const Button = (props) =>{
                 group
                 btn transition-shadow ease-in-out duration-200
                 flex items-center justify-center text-sm rounded-3xl no-underline 
-                button-${theme || 'normal'} 
-                bg-${theme || 'normal'} 
-                link-button-bg-${theme}
+                button-${type || 'normal'} 
+                bg-${type || 'normal'} 
+                link-button-bg-${type}
                 ${size === 'small' ? 'xp-small h-small' : ''} 
                 ${size === 'medium' ? 'xp-medium h-medium' : ''} 
                 ${size === 'large' ? 'xp-large h-large' : ''} 

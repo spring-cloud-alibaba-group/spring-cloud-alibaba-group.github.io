@@ -43,23 +43,44 @@ const {
 
   // 检查localStorage中的状态，看是否需要显示提示条。
   function initAlertBar() {
-    try {
-      const alertBar = document.querySelector(".alert-bar");
-      const closeButton = document.querySelector(".close-button");
-      const isClosed = window.alertBarClosed || false;
-      const pageFrame = document.querySelector('.sidebar-pane');
+    const displayAlert = [
+      "/",
+      "/en/",
+      "/cloud/",
+      "/en/cloud/",
+      "/news/",
+      "/en/news/",
+      "/activity",
+      "/en/activity",
+      "/blog/",
+      "/en/blog/",
+      "/download/nacos-server/",
+      "/en/download/nacos-server/",
+      "/wuyi/",
+      "/en/wuyi/"
+    ]
+    if(!displayAlert.includes(location.pathname)){
+      // 如果为文档/博客详情等不期望展示提示条，则隐藏提示条。
+      document.querySelector(".alert-bar") && (document.querySelector(".alert-bar").style.display = "none")
+    } else {
+      try {
+        const alertBar = document.querySelector(".alert-bar");
+        const closeButton = document.querySelector(".close-button");
+        const isClosed = window.alertBarClosed || false;
+        const pageFrame = document.querySelector('.sidebar-pane');
 
-      if (isClosed === true) {
-        alertBar.style.display = "none";
-        pageFrame.classList.remove('alert-bar-exist')
-      } else {
-        closeButton.addEventListener("click", function () {
-          handleAlertClose(closeButton,pageFrame);
-        });
-        pageFrame.classList.add('alert-bar-exist')
+        if (isClosed === true) {
+          alertBar.style.display = "none";
+          pageFrame.classList.remove('alert-bar-exist')
+        } else {
+          closeButton.addEventListener("click", function () {
+            handleAlertClose(closeButton,pageFrame);
+          });
+          pageFrame.classList.add('alert-bar-exist')
+        }
+      } catch (e) {
+        console.log(e);
       }
-    } catch (e) {
-      console.log(e);
     }
   }
 

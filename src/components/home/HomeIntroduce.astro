@@ -4,9 +4,14 @@ import StarAndForkV2 from "./StarAndForkV2/index.jsx";
 import Carousel from "./Carousel.astro";
 import ProductDisplayCard from "@components/home/ProductDisplayCard.astro";
 import { SITE } from "@utils/config";
+import sendFetch from "@/utils/sendFetch";
+import type { StarAndForkT } from 'src/types';
 
 const t = useTranslations(Astro);
 const ifzh = isChinese(Astro);
+
+// 服务端构建预先获取star数和fork数作为兜底
+const { stargazers_count=0, forks_count=0 }:StarAndForkT = await sendFetch("https://api.github.com/repos/alibaba/nacos");
 ---
 
 <div class="home-introduce-wrapper">
@@ -48,7 +53,7 @@ const ifzh = isChinese(Astro);
                 <div class=`title leading-[5rem] text-neutral mb-8 ${ifzh ? 'text-[3.75rem]' : 'text-[4rem]'}`>
                     {t("home.introduce.title")}
                 </div>
-                <StarAndForkV2 SITE={SITE} client:load/>
+                <StarAndForkV2 client:load SITE={SITE} stargazers_count={stargazers_count} forks_count={forks_count} />
             </div>
         </home-introduce>
     </Carousel>

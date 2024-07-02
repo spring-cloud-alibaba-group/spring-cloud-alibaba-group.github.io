@@ -1,6 +1,7 @@
 ---
 import { Button } from "@serverless-cd/goat-ui";
-import { useTranslations } from "@i18n/util";
+import { useTranslations, isChinese } from "@i18n/util";
+const ifzh = isChinese(Astro);
 
 function formatDate(dateString) {
   const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -30,7 +31,7 @@ export type Props = {
 const { post, source, class: className = "", useAnchor=false, } = Astro.props;
 ---
 
-<a class={"card h-[250px] p-[24px] shadow-none w-full flex " + className} href={`/blog/${post.slug}/?source=${source}`}>
+<a class={"card h-[250px] p-[24px] shadow-none w-full flex " + className}href={`${ifzh ? '' : '/en'}/blog/${post.slug}/?source=${source}`}>
     <!-- 锚点 -->
     {useAnchor?<p id={post.slug} class={"absolute z-[-100] top-[-4rem]"}></p>:null}
     
