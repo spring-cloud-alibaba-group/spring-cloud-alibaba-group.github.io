@@ -8,7 +8,7 @@ import type { StarAndForkT } from 'src/types';
 
 const StarAndForkV2 = (props: StarAndForkT) => {
 	const { SITE } = props;
-	const { swrData={}, fetchData } = useCustomSWR("https://git-proxy-test-git-proxy-ieeqhwptvv.cn-hongkong.fcapp.run/api/alibaba/nacos");
+	const { swrData={}, fetchData } = useCustomSWR("https://git-proxy-test-git-proxy-ieeqhwptvv.cn-hongkong.fcapp.run/api/alibaba/spring-cloud-alibaba");
 	const [startCount, setStartCount] = useState(props.stargazers_count || 0);
 	const [forkCount, setForkCount] = useState(props.forks_count || 0);
 
