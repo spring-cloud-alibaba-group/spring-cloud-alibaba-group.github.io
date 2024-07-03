@@ -57,9 +57,9 @@ export default [
     activePath: ["/learn"],
   },
   {
-    label: "专家答疑",
+    label: "答疑样例",
     translations: {
-      en: "wuyi",
+      en: "FAQ",
     },
     trigger: "click",
     target: "_self",

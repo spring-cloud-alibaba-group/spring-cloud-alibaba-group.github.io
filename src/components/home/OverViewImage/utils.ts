@@ -1,31 +1,3 @@
-// import SentinelImage from "./assets/sentinel.png";
-
-export const hoverContentMockData = {
-  title: "云原生xxxx",
-  image:
-    "https://gw.alicdn.com/imgextra/i3/O1CN01dI5UtV1iMnEY2sB3r_!!6000000004399-2-tps-216-154.png",
-  labels: ["Spring", "Java", "MQ"],
-  links: {
-    Github: {
-      link: "https://github.com/apache/rocketmq",
-      stars: 20407,
-      forks: 11383,
-    },
-    官网: {
-      link: "https://rocketmq.apache.org/",
-    },
-    最新版本: {
-      link: "https://rocketmq.apache.org/docs/quick-start/",
-    },
-    快速入门: {
-      link: "https://rocketmq.apache.org/docs/quick-start/",
-    },
-    快速构建: {
-      link: "https://rocketmq.apache.org/docs/quick-start/",
-    },
-  },
-};
-
 export const hoverSentinelData = {
   title: "Sentinel是⼀款面向分布式、多语言异构化服务架构的流量治理组件。",
   image:
@@ -34,7 +6,7 @@ export const hoverSentinelData = {
   links: {
     Github: {
       link: "https://github.com/alibaba/Sentinel",
-      apiLink:"https://api.github.com/repos/alibaba/sentinel",
+      apiLink:"https://git-proxy-test-git-proxy-ieeqhwptvv.cn-hongkong.fcapp.run/api/alibaba/sentinel",
     },
     官网: {
       link: "https://sentinelguard.io/",
@@ -59,7 +31,7 @@ export const hoverChaosBladeData = {
   links: {
     Github: {
       link: "https://github.com/chaosblade-io/chaosblade",
-      apiLink:"https://api.github.com/repos/chaosblade-io/chaosblade",
+      apiLink:"https://git-proxy-test-git-proxy-ieeqhwptvv.cn-hongkong.fcapp.run/api/chaosblade-io/chaosblade",
     },
     官网: {
       link: "https://chaosblade.io/",
@@ -81,7 +53,7 @@ export const hoverAppActiveData = {
   links: {
     Github: {
       link: "https://github.com/alibaba/Appactive",
-      apiLink:"https://api.github.com/repos/alibaba/Appactive",
+      apiLink:"https://git-proxy-test-git-proxy-ieeqhwptvv.cn-hongkong.fcapp.run/api/alibaba/Appactive",
     },
     官网: {
       link: "https://doc.appactive.io/",
@@ -103,7 +75,7 @@ export const hoverNacosData = {
   links: {
     Github: {
       link: "https://github.com/alibaba/nacos",
-      apiLink: "https://api.github.com/repos/alibaba/nacos",
+      apiLink: "https://git-proxy-test-git-proxy-ieeqhwptvv.cn-hongkong.fcapp.run/api/alibaba/nacos",
     },
     官网: {
       link: "https://nacos.io/",
@@ -128,7 +100,7 @@ export const hoverOpenSergoData = {
   links: {
     Github: {
       link: "https://github.com/opensergo/opensergo-specification",
-      apiLink: "https://api.github.com/repos/opensergo/opensergo-specification",
+      apiLink: "https://git-proxy-test-git-proxy-ieeqhwptvv.cn-hongkong.fcapp.run/api/opensergo/opensergo-specification",
     },
     官网: {
       link: "https://opensergo.io/",
@@ -150,7 +122,7 @@ export const hoverHigressData = {
   links: {
     Github: {
       link: "https://github.com/alibaba/higress",
-      apiLink: "https://api.github.com/repos/alibaba/higress",
+      apiLink: "https://git-proxy-test-git-proxy-ieeqhwptvv.cn-hongkong.fcapp.run/api/alibaba/higress",
     },
     官网: {
       link: "https://higress.io/",
@@ -172,7 +144,7 @@ export const hoverRocketMQData = {
   links: {
     Github: {
       link: "https://github.com/apache/rocketmq",
-      apiLink: "https://api.github.com/repos/apache/rocketmq",
+      apiLink: "https://git-proxy-test-git-proxy-ieeqhwptvv.cn-hongkong.fcapp.run/api/apache/rocketmq",
     },
     官网: {
       link: "https://rocketmq.apache.org/",
@@ -197,7 +169,7 @@ export const hoverDubboData = {
   links: {
     Github: {
       link: "https://github.com/apache/dubbo",
-      apiLink: "https://api.github.com/repos/alibaba/dubbo",
+      apiLink: "https://git-proxy-test-git-proxy-ieeqhwptvv.cn-hongkong.fcapp.run/api/alibaba/dubbo",
     },
     官网: {
       link: "https://dubbo.apache.org/",
@@ -219,7 +191,7 @@ export const hoverSCAData = {
   links: {
     Github: {
       link: "https://github.com/alibaba/spring-cloud-alibaba",
-      apiLink: "https://api.github.com/repos/alibaba/spring-cloud-alibaba",
+      apiLink: "https://git-proxy-test-git-proxy-ieeqhwptvv.cn-hongkong.fcapp.run/api/alibaba/spring-cloud-alibaba",
     },
     官网: {
       link: "https://sca.aliyun.com/",
@@ -244,7 +216,7 @@ export const hoverSeataData = {
   links: {
     Github: {
       link: "https://github.com/seata/seata",
-      apiLink: "https://api.github.com/repos/seata/seata",
+      apiLink: "https://git-proxy-test-git-proxy-ieeqhwptvv.cn-hongkong.fcapp.run/api/seata/seata",
     },
     官网: {
       link: "https://seata.io/",
@@ -269,7 +241,7 @@ export const hoverKubeVelaData = {
   links: {
     Github: {
       link: "https://github.com/kubevela/kubevela",
-      apiLink: "https://api.github.com/repos/kubevela/kubevela",
+      apiLink: "https://git-proxy-test-git-proxy-ieeqhwptvv.cn-hongkong.fcapp.run/api/kubevela/kubevela",
     },
     官网: {
       link: "https://kubevela.io/",
@@ -291,7 +263,7 @@ export const hoverKubernetesData = {
   links: {
     Github: {
       link: "https://github.com/kubernetes/kubernetes",
-      apiLink: "https://api.github.com/repos/kubernetes/kubernetes",
+      apiLink: "https://git-proxy-test-git-proxy-ieeqhwptvv.cn-hongkong.fcapp.run/api/kubernetes/kubernetes",
     },
     官网: {
       link: "https://kubernetes.io/",
@@ -313,7 +285,7 @@ export const hoverSkyWalkingData = {
   links: {
     Github: {
       link: "https://github.com/apache/skywalking",
-      apiLink: "https://api.github.com/repos/apache/skywalking",
+      apiLink: "https://git-proxy-test-git-proxy-ieeqhwptvv.cn-hongkong.fcapp.run/api/apache/skywalking",
     },
     官网: {
       link: "https://skywalking.apache.org/",
@@ -335,7 +307,7 @@ export const hoverPrometheusData = {
   links: {
     Github: {
       link: "https://github.com/prometheus/prometheus",
-      apiLink: "https://api.github.com/repos/prometheus/prometheus",
+      apiLink: "https://git-proxy-test-git-proxy-ieeqhwptvv.cn-hongkong.fcapp.run/api/prometheus/prometheus",
     },
     官网: {
       link: "https://prometheus.io/",
@@ -357,7 +329,7 @@ export const hoverOpenTelemetryData = {
   links: {
     Github: {
       link: "https://github.com/open-telemetry",
-      apiLink: "https://api.github.com/repos/open-telemetry/opentelemetry-collector",
+      apiLink: "https://git-proxy-test-git-proxy-ieeqhwptvv.cn-hongkong.fcapp.run/api/open-telemetry/opentelemetry-collector",
     },
     官网: {
       link: "https://opentelemetry.io",
@@ -379,7 +351,7 @@ export const hoverOpenkruiseData = {
   links: {
     Github: {
       link: "https://github.com/openkruise/kruise ",
-      apiLink: "https://api.github.com/repos/openkruise/kruise",
+      apiLink: "https://git-proxy-test-git-proxy-ieeqhwptvv.cn-hongkong.fcapp.run/api/openkruise/kruise",
     },
     官网: {
       link: "https://openkruise.io",
@@ -401,7 +373,7 @@ export const hoveriLogtailData = {
   links: {
     Github: {
       link: "https://github.com/alibaba/ilogtail",
-      apiLink: "https://api.github.com/repos/alibaba/ilogtail",
+      apiLink: "https://git-proxy-test-git-proxy-ieeqhwptvv.cn-hongkong.fcapp.run/api/alibaba/ilogtail",
     },
     官网: {
       link: "https://ilogtail.gitbook.io/ilogtail-docs",
