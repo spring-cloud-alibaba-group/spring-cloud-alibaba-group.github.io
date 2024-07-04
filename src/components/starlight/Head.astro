@@ -36,7 +36,7 @@ const headDefaults: z.input<ReturnType<typeof HeadConfigSchema>> = [
     },
     {
         tag: "title",
-        content: `${data.title} ${config.titleDelimiter} ${config.title}`,
+        content: `${data.title} - ${config.title}`,
     },
     { tag: "link", attrs: { rel: "canonical", href: canonical?.href } },
     {

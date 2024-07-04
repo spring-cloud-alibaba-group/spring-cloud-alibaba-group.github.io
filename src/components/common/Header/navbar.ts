@@ -63,7 +63,7 @@ export default [
     },
     trigger: "click",
     target: "_self",
-    route: "/wuyi/",
-    activePath: ["/wuyi"],
+    route: "/faq/",
+    activePath: ["/faq"],
   },
 ];

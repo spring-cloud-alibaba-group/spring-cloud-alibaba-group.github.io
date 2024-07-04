@@ -14,7 +14,7 @@ const t = useTranslations(Astro);
 const { page } = Astro.props;
 
 const allPages = [...Array(page.lastPage).keys()].map((num) => {
-    return `/blog${num === 0 ? "" : `/${String(num + 1)}`}`;
+    return `/blog${num === 0 ? "" : `/${String(num + 1)}/`}`;
 });
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {

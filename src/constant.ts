@@ -339,7 +339,7 @@ export const WUYI_CATEGORY = [
   {
     type: 'expertConsultation',
     title: '全部文章',
-    href: '/wuyi/'
+    href: '/faq/'
   },
 ];
 
@@ -360,8 +360,8 @@ export const HEADER_ACTIVITY_CARD = [
 
 export const HEADER_LEARN_CARD = [
   {
-    collection: "blog",
-    slug: "learning/spring-boot/core",
+    collection: "learn",
+    slug: "spring-boot/core",
     description: "最全面的 Spring 中文系列教程，从这里开启你的 Spring 应用开发之旅！",
     imageUrl:
       "https://img.alicdn.com/imgextra/i1/O1CN01xDVfHk1El7oBMjL3p_!!6000000000391-2-tps-1083-721.png",
