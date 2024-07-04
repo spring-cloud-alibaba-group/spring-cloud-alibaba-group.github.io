@@ -6,8 +6,8 @@ import { getEntries } from "astro:content";
 
 // 吊顶提示文案
 export const TOPBAR = {
-    "text": "7月26日（周五）开源沙龙首个 AI 原生应用架构专场 | 上海站 ，欢迎报名！",
-    "mobileText": "7月26日（周五）开源沙龙首个AI原生应用架构专场 | 上海站 ，欢迎报名！",
+    "text": "8月2日（周五）开源沙龙首个 AI 原生应用架构专场 | 上海站 ，欢迎报名！",
+    "mobileText": "8月2日（周五）开源沙龙首个AI原生应用架构专场 | 上海站 ，欢迎报名！",
     "link": "https://summit.aliyun.com/cloudnative2024_developer_shanghai?spm=5176.20960838.0.0.7802305eyqMQf8",
     "target": "_blank",
     "display": true
@@ -339,7 +339,7 @@ export const WUYI_CATEGORY = [
   {
     type: 'expertConsultation',
     title: '全部文章',
-    href: '/wuyi/'
+    href: '/faq/'
   },
 ];
 
@@ -360,8 +360,8 @@ export const HEADER_ACTIVITY_CARD = [
 
 export const HEADER_LEARN_CARD = [
   {
-    collection: "blog",
-    slug: "learning/spring-boot/core",
+    collection: "learn",
+    slug: "spring-boot/core",
     description: "最全面的 Spring 中文系列教程，从这里开启你的 Spring 应用开发之旅！",
     imageUrl:
       "https://img.alicdn.com/imgextra/i1/O1CN01xDVfHk1El7oBMjL3p_!!6000000000391-2-tps-1083-721.png",

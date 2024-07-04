@@ -18,7 +18,7 @@ const allPages = [...Array(page.lastPage).keys()].map((num) => {
 });
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-    const posts = await getCollection("blog");
+    const posts = await getCollection("learn");
 
     const sortedPosts = posts.sort(
         (a, b) =>

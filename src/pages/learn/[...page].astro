@@ -19,7 +19,7 @@ const allPages = [...Array(page.lastPage).keys()].map((num) => {
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
     const blogCategories = new Set(LEARN_CATEGORY.map((item) => item.type));
-    const posts = await getCollection("blog", (item) =>
+    const posts = await getCollection("learn", (item) =>
         blogCategories.has(item.data.category),
     );
 
