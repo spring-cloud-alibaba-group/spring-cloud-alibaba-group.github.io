@@ -639,3 +639,307 @@ export const getCloudIntroduceData = (t: Function): CloudIntroduceCard[] => [
     feature: [t("cloud.introduce.company.discount.1")],
   },
 ];
+
+// 版本功能对比
+export const versionDataSource = [
+  { title: "易用性", data:[
+      {
+          name: {
+              title: 'Java 和 Go Agent',
+          },
+          free: {
+              checked: false,
+              des: ''
+          },
+          speciality: {
+              checked: true,
+              des: '无需修改代码，即可接入'
+          },
+          enterprise: {
+              checked: true,
+              des: '无需修改代码，即可接入'
+          },
+      },
+      {
+          name: {
+              title: 'Java 和 Go SDK',
+          },
+          free: {
+              checked: false,
+              des: ''
+          },
+          speciality: {
+              checked: true,
+              des: ''
+          },
+          enterprise: {
+              checked: true,
+              des: ''
+          },
+      },
+      {
+          name: {
+              title: '自动化运维',
+          },
+          free: {
+              checked: false,
+              des: ''
+          },
+          speciality: {
+              checked: true,
+              des: '无需自行维护 SDK、控制台，只需关注业务'
+          },
+          enterprise: {
+              checked: true,
+              des: '无需自行维护 SDK、控制台，只需关注业务',
+          },
+      },
+      {
+          name: {
+              title: '可观测',
+          },
+          free: {
+              checked: false,
+              des: ''
+          },
+          speciality: {
+              checked: true,
+              des: '应用、节点、接口颗粒度的观测大盘'
+          },
+          enterprise: {
+              checked: true,
+              des: '应用、节点、接口颗粒度的观测大盘'
+          },
+      },
+  ] },
+  { title: "应用开发测试", data: [
+      {
+          name: {
+              title: '服务契约',
+          },
+          free: {
+              checked: false,
+              des: ''
+          },
+          speciality: {
+              checked: true,
+              des: '',
+          },
+          enterprise: {
+              checked: true,
+              des: ''
+          },
+      },
+      {
+          name: {
+              title: '服务测试',
+              des: ''
+          },
+          free: {
+              checked: false,
+              des: ''
+          },
+          speciality: {
+              checked: true,
+              des: ''
+          },
+          enterprise: {
+              checked: true,
+              des: ''
+          },
+      },
+      {
+          name: {
+              title: '标签路由',
+          },
+          free: {
+              checked: false,
+              des: ''
+          },
+          speciality: {
+              checked: true,
+              des: ''
+          },
+          enterprise: {
+              checked: true,
+              des: ''
+          },
+      },
+  ] },
+  { title: "应用变更", data: [
+      {
+          name: {
+              title: '无损上线',
+          },
+          free: {
+              checked: false,
+              des: ''
+          },
+          speciality: {
+              checked: true,
+              des: ''
+          },
+          enterprise: {
+              checked: true,
+              des: ''
+          },
+      },
+      {
+          name: {
+              title: '无损下线',
+          },
+          free: {
+              checked: false,
+              des: ''
+          },
+          speciality: {
+              checked: true,
+              des: ''
+          },
+          enterprise: {
+              checked: true,
+              des: ''
+          },
+      },
+      {
+          name: {
+              title: '多可区容灾',
+          },
+          free: {
+              checked: false,
+              des: ''
+          },
+          speciality: {
+              checked: true,
+              des: ''
+          },
+          enterprise: {
+              checked: true,
+              des: ''
+          },
+      },
+      {
+          name: {
+              title: '全链路灰度',
+          },
+          free: {
+              checked: false,
+              des: ''
+          },
+          speciality: {
+              checked: true,
+              des: ''
+          },
+          enterprise: {
+              checked: true,
+              des: ''
+          },
+      },
+  ] },
+  { title: "应用运行", data: [
+      {
+          name: {
+              title: '流量防护',
+          },
+          free: {
+              checked: false,
+              des: '',
+          },
+          speciality: {
+              checked: false,
+              des: '',
+          },
+          enterprise: {
+              checked: true,
+              des: '支持分钟、小时级别的流控'
+          },
+      },
+      {
+          name: {
+              title: '网关防护',
+          },
+          free: {
+              checked: false,
+              des: '',
+          },
+          speciality:{
+              checked: false,
+              des: '',
+          },
+          enterprise: {
+              checked: true,
+              des: '集群、路由级别流量防护',
+          },
+      },
+      {
+        name: {
+            title: '离群实例摘除',
+        },
+        free: {
+            checked: false,
+            des: '',
+        },
+        speciality: {
+            checked: false,
+            des: '',
+        },
+        enterprise: {
+            checked: true,
+            des: ''
+        },
+    },
+    {
+      name: {
+          title: '熔断降级',
+      },
+      free: {
+          checked: false,
+          des: '',
+      },
+      speciality: {
+          checked: false,
+          des: '',
+      },
+      enterprise: {
+          checked: true,
+          des: ''
+      },
+  },
+  ] },
+  { title: "安全性", data: [
+      {
+          name: {
+              title: 'TLS 全链路加密',
+          },
+          free: {
+              checked: false,
+              des: ''
+          },
+          speciality: {
+              checked: false,
+              des: ''
+          },
+          enterprise: {
+              checked: true,
+              des: ''
+          },
+      },
+      {
+          name: {
+              title: '服务调用时的认证鉴权',
+          },
+          free: {
+              checked: false,
+              des: ''
+          },
+          speciality: {
+              checked: false,
+              des: ''
+          },
+          enterprise: {
+              checked: true,
+              des: ''
+          },
+      },
+  ] },
+]
