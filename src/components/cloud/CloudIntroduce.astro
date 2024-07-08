@@ -3,7 +3,7 @@ import { useTranslations } from "@i18n/util";
 const t = useTranslations(Astro);
 import BaseContainer from "@components/common/BaseContainer.astro";
 import { Button } from "@serverless-cd/goat-ui";
-import { getCloudIntroduceData } from "@/constant";
+import { getCloudPostpaidData, getCloudResourcePackData } from "@/constant";
 ---
 
 <span class="cloud-introduce-div">
@@ -25,57 +25,129 @@ import { getCloudIntroduceData } from "@/constant";
         >
       </div>
     </BaseContainer>
-
-    <BaseContainer class="bottom-package flex justify-center mt-[2.9375rem]">
-      {
-        getCloudIntroduceData(t).map((item, index) => {
-          return (
-            <div class="card-package cursor-pointer bg-muted border-[.0313rem] hover:border border-text-neutral rounded-2xl flex-1 text-center p-8 ">
-              <div class="package h-16">
-                <div class="title text-warning text-2xl font-sans font-medium">
-                  {item?.title}
-                </div>
-              </div>
-              <div class="price-content pt-4 border-b border-t border-info h-36">
-                <span class="price text-[2.75rem] leading-[3rem] font-bold text-link3">
-                  {item?.price}
-                </span>
-                <span class="price font-bold text-success">
-                  {item?.priceSupply}
-                </span>
-                <div class="description pt-1 font-sans text-xs text-warning line-clamp-2">
-                  {item?.priceDesc.map((el,i) => {
-                    return (
-                      <div class="description font-sans pt-1 text-xs text-warning line-clamp-2">
-                        {el}
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-              <div class="pl-2 h-16">
-                {item?.feature?.map((el, i) => {
-                  return (
-                    <div class="feature text-left text-xs text-neutral/[0.8] mt-4 line-clamp-2">
-                      {el}
+    <div role="tablist" class="tabs tabs-boxed bg-muted mt-4">
+      <input
+        type="radio"
+        name="my_tabs_2"
+        role="tab"
+        class="tab"
+        aria-label="后付费"
+        checked="checked"
+      />
+      <div role="tabpanel" class="tab-content">
+        <BaseContainer class="bottom-package flex justify-center mt-8">
+          {
+            getCloudPostpaidData(t).map((item, index) => {
+              return (
+                <div class="card-package cursor-pointer bg-muted border-[.0313rem] hover:border border-text-neutral rounded-2xl flex-1 text-center p-8 ">
+                  <div class="package h-16">
+                    <div class="title text-warning text-2xl font-sans font-medium">
+                      {item?.title}
                     </div>
-                  );
-                })}
-              </div>
-              <div class="subscribe text-center mt-6 mb-2">
-                <Button
-                  class="rounded-full w-full cloud-button-primary"
-                  theme="accent"
-                  href={item?.link}
-                  target="_blank"
-                  text={item?.linkName}
-                />
-              </div>
-            </div>
-          );
-        })
-      }
-    </BaseContainer>
+                  </div>
+                  <div class="price-content pt-4 border-b border-t border-info h-32">
+                    <span class="price text-[2.75rem] leading-[3rem] font-bold text-link3">
+                      {item?.price}
+                    </span>
+                    <span class="price font-bold text-success">
+                      {item?.priceSupply}
+                    </span>
+                    <div class="description pt-1 font-sans text-xs text-warning line-clamp-2">
+                      {item?.priceDesc.map((el, i) => {
+                        return (
+                          <div class="description font-sans pt-1 text-xs text-warning line-clamp-2">
+                            {el}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                  <div class="pl-2 h-20">
+                    {item?.feature?.map((el, i) => {
+                      return (
+                        <div class="feature text-left text-xs text-neutral/[0.8] mt-4 line-clamp-2">
+                          {el}
+                        </div>
+                      );
+                    })}
+                  </div>
+                  <div class="subscribe text-center mt-6 mb-2">
+                    <Button
+                      class="rounded-full w-full cloud-button-primary"
+                      theme="accent"
+                      href={item?.link}
+                      target="_blank"
+                      text={item?.linkName}
+                    />
+                  </div>
+                </div>
+              );
+            })
+          }
+        </BaseContainer>
+      </div>
+
+      <input
+        type="radio"
+        name="my_tabs_2"
+        role="tab"
+        class="tab"
+        aria-label="资源包"
+      />
+      <div role="tabpanel" class="tab-content">
+        <BaseContainer class="bottom-package flex justify-center mt-8">
+          {
+            getCloudResourcePackData(t).map((item, index) => {
+              return (
+                <div class="card-package cursor-pointer bg-muted border-[.0313rem] hover:border border-text-neutral rounded-2xl flex-1 text-center p-8 ">
+                  <div class="package h-16">
+                    <div class="title text-warning text-2xl font-sans font-medium">
+                      {item?.title}
+                    </div>
+                  </div>
+                  <div class="price-content pt-4 border-b border-t border-info h-32">
+                    <span class="price text-[2.75rem] leading-[3rem] font-bold text-link3">
+                      {item?.price}
+                    </span>
+                    <span class="price font-bold text-success">
+                      {item?.priceSupply}
+                    </span>
+                    <div class="description pt-1 font-sans text-xs text-warning line-clamp-2">
+                      {item?.priceDesc.map((el, i) => {
+                        return (
+                          <div class="description font-sans pt-1 text-xs text-warning line-clamp-2">
+                            {el}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                  <div class="pl-2 h-20">
+                    {item?.feature?.map((el, i) => {
+                      return (
+                        <div class="feature text-left text-xs text-neutral/[0.8] mt-2 line-clamp-2">
+                          {el}
+                        </div>
+                      );
+                    })}
+                  </div>
+                  <div class="subscribe text-center mt-6 mb-2">
+                    <Button
+                      class="rounded-full w-full cloud-button-primary"
+                      theme="accent"
+                      href={item?.link}
+                      target="_blank"
+                      text={item?.linkName}
+                    />
+                  </div>
+                </div>
+              );
+            })
+          }
+        </BaseContainer>
+      </div>
+    </div>
+
   </cloud-introduce>
 </span>
 
@@ -153,6 +225,16 @@ import { getCloudIntroduceData } from "@/constant";
       color: theme("colors.neutral");
       background-color: theme("colors.secondary");
     }
+    .tab-content {
+      width: 1392px;
+      padding-left: 16px;
+    }
+
+    .tab:is(input[type="radio"]) {
+      width: 80px;
+      border-radius: 20px;
+      left: 616px;
+    }
     /* 小于50rem  小于 800px */
     @media (max-width: 50rem) {
       .cloud-introduce {
@@ -187,8 +269,8 @@ import { getCloudIntroduceData } from "@/constant";
 
       /* 手机端卡片样式单独设置 */
       .price-content .price {
-        font-size: 1.875rem; /* 30px */
-        line-height: 2.25rem; /* 36px */
+        font-size: 1rem; /* 30px */
+        line-height: 1rem; /* 36px */
       }
       .subscribe {
         margin-bottom: 0;
@@ -198,6 +280,12 @@ import { getCloudIntroduceData } from "@/constant";
         min-height: 2rem;
         padding-left: 0.75rem;
         padding-right: 0.75rem;
+      }
+      .tab-content {
+        width: 100%;
+      }
+      .tab:is(input[type="radio"]) {
+        left: 0px;
       }
     }
 
@@ -222,6 +310,12 @@ import { getCloudIntroduceData } from "@/constant";
       }
       .bottom-package .card-package:last-child {
         margin-right: 0.5rem;
+      }
+      .tab-content {
+        width: 100%;
+      }
+      .tab:is(input[type="radio"]) {
+        left: 100px;
       }
     }
   }

@@ -1,4 +1,5 @@
-table,
+.tableplugin{
+  table,
   td {
     border-collapse: collapse;
   }
@@ -54,3 +55,4 @@ table,
       width: fit-content;
     }
   }
+}

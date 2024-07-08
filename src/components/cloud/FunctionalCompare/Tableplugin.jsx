@@ -10,7 +10,7 @@ const Tableplugin = (props) => {
   const totalRows = dataSource.length;
 
   return (
-    <div class="overflow-x-auto rounded-2xl mb-6">
+    <div class="tableplugin overflow-x-auto rounded-2xl mb-6">
       {
         isHead && (
           <table class='w-full'>
