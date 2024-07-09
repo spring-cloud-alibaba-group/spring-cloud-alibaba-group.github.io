@@ -598,8 +598,8 @@ export const SOLUTIONS_CARD_LIST = [
   },
 ];
 
-// Cloud页面价格版的卡片内容
-export const getCloudIntroduceData = (t: Function): CloudIntroduceCard[] => [
+// Cloud页面价格 后付费的卡片内容
+export const getCloudPostpaidData = (t: Function): CloudIntroduceCard[] => [
   {
     title: t("cloud.introduce.free.pkg"),
     price: t("cloud.introduce.free.price"),
@@ -609,7 +609,6 @@ export const getCloudIntroduceData = (t: Function): CloudIntroduceCard[] => [
     link: "https://free.aliyun.com/?searchKey=spring%20cloud&spm=sca.cloud.topbar.0.0.0",
     feature: [
       t("cloud.introduce.free.discount.1"),
-      t("cloud.introduce.free.discount.2"),
     ],
   },
   {
@@ -628,8 +627,6 @@ export const getCloudIntroduceData = (t: Function): CloudIntroduceCard[] => [
     title: t("cloud.introduce.company.pkg"),
     priceDesc: [
       t("cloud.introduce.company.feature.1"),
-      t("cloud.introduce.company.feature.2"),
-      t("cloud.introduce.company.feature.3")
     ],
     price: t("cloud.introduce.company.price"),
     priceSupply: t("cloud.introduce.company.price_supply"),
@@ -639,3 +636,365 @@ export const getCloudIntroduceData = (t: Function): CloudIntroduceCard[] => [
     feature: [t("cloud.introduce.company.discount.1")],
   },
 ];
+
+// Cloud页面价格 资源包的卡片内容
+
+export const getCloudResourcePackData = (t: Function) => [
+  {
+    title: t("cloud.introduce.free.pkg"),
+    price: t("cloud.introduce.free.price"),
+    unit: "",
+    priceDesc: [t("cloud.introduce.free.feature")],
+    linkName: t("cloud.introduce.free.link"),
+    link: "https://free.aliyun.com/?searchKey=spring%20cloud&spm=sca.cloud.topbar.0.0.0",
+    feature: [
+      t("cloud.introduce.free.discount.1"),
+    ],
+  },
+  {
+    title: t("cloud.introduce.regular.pkg"),
+    priceDesc: [t("cloud.introduce.regular.feature")],
+    price:'¥189',
+    priceSupply: t('cloud.introduce.regular.supply.month'),
+    priceDes:t('cloud.introduce.price.des'),
+    unit: "/MONTH",
+    linkName: t("cloud.introduce.regular.link"),
+    link: "https://www.aliyun.com/product/aliware/mse?spm=sca.cloud.topbar.0.0.0",
+    feature: [
+      t("cloud.introduce.regular.discount.1"),
+      t("cloud.introduce.regular.discount.2"),
+      t("cloud.introduce.regular.discount.3"),
+    ],
+  },
+  {
+    title: t("cloud.introduce.company.pkg"),
+    priceDesc: [
+      t("cloud.introduce.company.feature.1"),
+    ],
+    price: '¥595',
+    priceSupply: t('cloud.introduce.regular.supply.month'),
+    priceDes:t('cloud.introduce.price.des'),
+    unit: "/HOUR",
+    linkName: t("cloud.introduce.company.link"),
+    link: "https://www.aliyun.com/product/aliware/mse?spm=sca.cloud.topbar.0.0.0",
+    feature: [
+      t("cloud.introduce.company.discount.1"),
+      t("cloud.introduce.company.discount.2"),
+      t("cloud.introduce.company.discount.3"),
+    ],
+  },
+];
+
+// 版本功能对比
+export const versionDataSource = [
+  {
+    title: "易用性", data: [
+      {
+        name: {
+          title: 'Java 和 Go Agent',
+        },
+        free: {
+          checked: false,
+          des: ''
+        },
+        speciality: {
+          checked: true,
+          des: '无需修改代码，即可接入'
+        },
+        enterprise: {
+          checked: true,
+          des: '无需修改代码，即可接入'
+        },
+      },
+      {
+        name: {
+          title: 'Java 和 Go SDK',
+        },
+        free: {
+          checked: false,
+          des: ''
+        },
+        speciality: {
+          checked: true,
+          des: ''
+        },
+        enterprise: {
+          checked: true,
+          des: ''
+        },
+      },
+      {
+        name: {
+          title: '自动化运维',
+        },
+        free: {
+          checked: false,
+          des: ''
+        },
+        speciality: {
+          checked: true,
+          des: '无需自行维护 SDK、控制台，只需关注业务'
+        },
+        enterprise: {
+          checked: true,
+          des: '无需自行维护 SDK、控制台，只需关注业务',
+        },
+      },
+      {
+        name: {
+          title: '可观测',
+        },
+        free: {
+          checked: false,
+          des: ''
+        },
+        speciality: {
+          checked: true,
+          des: '应用、节点、接口颗粒度的观测大盘'
+        },
+        enterprise: {
+          checked: true,
+          des: '应用、节点、接口颗粒度的观测大盘'
+        },
+      },
+    ]
+  },
+  {
+    title: "应用开发测试", data: [
+      {
+        name: {
+          title: '服务契约',
+        },
+        free: {
+          checked: false,
+          des: ''
+        },
+        speciality: {
+          checked: true,
+          des: '',
+        },
+        enterprise: {
+          checked: true,
+          des: ''
+        },
+      },
+      {
+        name: {
+          title: '服务测试',
+          des: ''
+        },
+        free: {
+          checked: false,
+          des: ''
+        },
+        speciality: {
+          checked: true,
+          des: ''
+        },
+        enterprise: {
+          checked: true,
+          des: ''
+        },
+      },
+      {
+        name: {
+          title: '标签路由',
+        },
+        free: {
+          checked: false,
+          des: ''
+        },
+        speciality: {
+          checked: true,
+          des: ''
+        },
+        enterprise: {
+          checked: true,
+          des: ''
+        },
+      },
+    ]
+  },
+  {
+    title: "应用变更", data: [
+      {
+        name: {
+          title: '无损上线',
+        },
+        free: {
+          checked: false,
+          des: ''
+        },
+        speciality: {
+          checked: true,
+          des: ''
+        },
+        enterprise: {
+          checked: true,
+          des: ''
+        },
+      },
+      {
+        name: {
+          title: '无损下线',
+        },
+        free: {
+          checked: false,
+          des: ''
+        },
+        speciality: {
+          checked: true,
+          des: ''
+        },
+        enterprise: {
+          checked: true,
+          des: ''
+        },
+      },
+      {
+        name: {
+          title: '多可区容灾',
+        },
+        free: {
+          checked: false,
+          des: ''
+        },
+        speciality: {
+          checked: true,
+          des: ''
+        },
+        enterprise: {
+          checked: true,
+          des: ''
+        },
+      },
+      {
+        name: {
+          title: '全链路灰度',
+        },
+        free: {
+          checked: false,
+          des: ''
+        },
+        speciality: {
+          checked: true,
+          des: ''
+        },
+        enterprise: {
+          checked: true,
+          des: ''
+        },
+      },
+    ]
+  },
+  {
+    title: "应用运行", data: [
+      {
+        name: {
+          title: '流量防护',
+        },
+        free: {
+          checked: false,
+          des: '',
+        },
+        speciality: {
+          checked: false,
+          des: '',
+        },
+        enterprise: {
+          checked: true,
+          des: '支持分钟、小时级别的流控'
+        },
+      },
+      {
+        name: {
+          title: '网关防护',
+        },
+        free: {
+          checked: false,
+          des: '',
+        },
+        speciality: {
+          checked: false,
+          des: '',
+        },
+        enterprise: {
+          checked: true,
+          des: '集群、路由级别流量防护',
+        },
+      },
+      {
+        name: {
+          title: '离群实例摘除',
+        },
+        free: {
+          checked: false,
+          des: '',
+        },
+        speciality: {
+          checked: false,
+          des: '',
+        },
+        enterprise: {
+          checked: true,
+          des: ''
+        },
+      },
+      {
+        name: {
+          title: '熔断降级',
+        },
+        free: {
+          checked: false,
+          des: '',
+        },
+        speciality: {
+          checked: false,
+          des: '',
+        },
+        enterprise: {
+          checked: true,
+          des: ''
+        },
+      },
+    ]
+  },
+  {
+    title: "安全性", data: [
+      {
+        name: {
+          title: 'TLS 全链路加密',
+        },
+        free: {
+          checked: false,
+          des: ''
+        },
+        speciality: {
+          checked: false,
+          des: ''
+        },
+        enterprise: {
+          checked: true,
+          des: ''
+        },
+      },
+      {
+        name: {
+          title: '服务调用时的认证鉴权',
+        },
+        free: {
+          checked: false,
+          des: ''
+        },
+        speciality: {
+          checked: false,
+          des: ''
+        },
+        enterprise: {
+          checked: true,
+          des: ''
+        },
+      },
+    ]
+  },
+]
