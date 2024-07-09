@@ -112,6 +112,9 @@ import { getCloudPostpaidData, getCloudResourcePackData } from "@/constant";
                     <span class="price font-bold text-success">
                       {item?.priceSupply}
                     </span>
+                    <p class="font-sans text-xs text-warning">
+                      {item?.priceDes}
+                    </p>
                     <div class="description pt-1 font-sans text-xs text-warning line-clamp-2">
                       {item?.priceDesc.map((el, i) => {
                         return (
@@ -160,6 +163,23 @@ import { getCloudPostpaidData, getCloudResourcePackData } from "@/constant";
       background-position: right;
       background-size: 70%;
     }
+    .tabs {
+      position: relative;
+      margin-top: 4px;
+    }
+
+    .tabs::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 616px;
+      width: 168px;
+      height: 40px;
+      background-color: theme("colors.error");
+      pointer-events: none;
+      border-radius: 20px;
+    }
+
     .bottom-package .card-package:nth-child(1) .cloud-button-primary {
       background-color: theme("colors.muted");
     }
@@ -287,6 +307,10 @@ import { getCloudPostpaidData, getCloudResourcePackData } from "@/constant";
       .tab:is(input[type="radio"]) {
         left: 0px;
       }
+      .tabs::before {
+        position: absolute;
+        left:0;
+      }
     }
 
     /* 大于50rem 小于 72rem  800px < width < 1152 */
@@ -316,6 +340,10 @@ import { getCloudPostpaidData, getCloudResourcePackData } from "@/constant";
       }
       .tab:is(input[type="radio"]) {
         left: 100px;
+      }
+      .tabs::before {
+        position: absolute;
+        left:100px;
       }
     }
   }

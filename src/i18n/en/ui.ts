@@ -174,7 +174,7 @@ export default {
 	'cloud.introduce.free.pkg': 'Freetier',
 	'cloud.introduce.free.desc': '',
 	'cloud.introduce.free.price': 'Free',
-	'cloud.introduce.free.feature': 'A team with strong development and operation capabilities and complete middleware.',
+	'cloud.introduce.free.feature': 'Suitable for teams with strong development and operation capabilities and complete middleware',
 	'cloud.introduce.free.discount.1': "High threshold for stability improvement",
 	'cloud.introduce.free.discount.2': "* All features are available for unlimited free use within a 1-month period.",
 	'cloud.introduce.free.link': 'START TRAIL',
@@ -205,6 +205,7 @@ export default {
 	'cloud.introduce.regular.discount.3':'2. Resource package renewal, saving 18 yuan compared to post payment',
 	'cloud.introduce.company.discount.2':'1. Enjoy a 30% discount on first-time purchase of resource packs, saving 305 yuan compared to post payment',
 	'cloud.introduce.company.discount.3':'2. Resource package renewal, saving 50 yuan compared to post payment',
+	'cloud.introduce.price.des':'*Equivalent to 7200 instances ✖️  Starting from hour',
 
 
 	'cloud.feedback.about': 'OUR CUSTOMERS',
