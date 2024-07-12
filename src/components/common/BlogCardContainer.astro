@@ -31,7 +31,7 @@ const { blogDescrip, blogImgs, posts, categoryMap, blankUrl } = blogData;
             href={
               blankUrl && blankUrl[index]? 
               blankUrl[index] :
-              `/${item.collection}/${item.slug}/?source=${categoryMap[item.data.category]}`
+              `/${item.collection}/${item.slug}/?source=${categoryMap[item.data.category]}/`
             }
             target={blankUrl && blankUrl[index]? "_blank" : "_self"}
             text={t("commmon.header.comm.shortcut")}
