@@ -14,7 +14,7 @@ const t = useTranslations(Astro);
 const { page } = Astro.props;
 
 const allPages = [...Array(page.lastPage).keys()].map((num) => {
-    return `/faq${num === 0 ? "" : `/${String(num + 1)}`}`;
+    return `/faq${num === 0 ? "/" : `/${String(num + 1)}/`}`;
 });
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
@@ -29,11 +29,12 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
     );
     return paginate(sortedPosts, { pageSize: 20 });
 }
+const title_after = page.currentPage > 1? '_' + page.currentPage:'';
 ---
 
-<BaseLayout title={t("wuyi.blog.title")}>
+<BaseLayout title={t("wuyi.blog.title") + title_after}>
     <BlogTop
-        title={t("blog.all.articles")}
+        title={t("blog.all.expert.qalist")}
         type="wuyi-sub"
         source="wuyi"
         category={WUYI_CATEGORY}

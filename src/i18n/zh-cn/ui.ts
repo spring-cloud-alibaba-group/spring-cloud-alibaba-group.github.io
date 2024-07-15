@@ -284,6 +284,7 @@ export default {
 	'blog.activity.release.statement':'发布声明',
 	'blog.activity.explore':'探索Nacos 博客，了解服务发现和配置管理的最新资讯、教程和技术分析。',
 	'blog.all.articles':'全部文章',
+	'blog.all.expert.qalist':'专家答疑列表',
 	'blog.article.technical':'技术文章',
 	'blog.article.release.time':'发布时间',
 	'blog.article.case.best.practices':'最佳实践',
