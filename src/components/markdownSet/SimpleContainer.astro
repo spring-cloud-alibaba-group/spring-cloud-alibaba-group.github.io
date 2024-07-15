@@ -49,20 +49,22 @@ if (pageList && pageList.length) {
                     </div>
                 ) : null
             }
-            <div class="text-[16px] text-gray-14 user-config-h-list">
+            <ul class="text-[16px] text-gray-14 user-config-h-list">
                 {
                     pageList.map((post) => {
                         return (
-                            <a
-                                class="no-underline font-normal block mb-[24px] pagelist-a hover:font-bold duration-100 break-all"
-                                href={`#${post.slug}`}
-                            >
-                                {post.data.title}
-                            </a>
+                            <li>
+                                <a
+                                    class="no-underline font-normal block mb-[24px] pagelist-a hover:font-bold duration-100 text-left break-words"
+                                    href={`#${post.slug}`}
+                                >
+                                    {post.data.title}
+                                </a>
+                            </li>
                         );
                     })
                 }
-            </div>
+            </ul>
         </div>
     </div>
 
@@ -93,12 +95,8 @@ if (pageList && pageList.length) {
         ul {
             display: flex;
             flex-wrap: wrap;
-            gap: 2rem;
             list-style-type: none;
             padding: 0;
-        }
-        ul li {
-            width: calc(50% - 1rem);
         }
         ul li * {
             text-decoration: none;
