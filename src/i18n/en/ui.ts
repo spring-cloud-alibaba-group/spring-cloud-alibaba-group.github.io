@@ -44,7 +44,7 @@ export default {
 	'commmon.ebook.complete.get':'Get the complete e-book',
 	'commmon.ebook.enjoy.read':'Enjoy the reading experience to the fullest',
 	'commmon.markdown.subheading.page':'This Page',
-	'commmon.base.layout.keywords':'Dynamic service discovery, configuration management, service management',
+	'commmon.base.layout.keywords':'Spring Cloud Alibaba official website, Spring AI + Alibaba Tongyi Component,Springboot, Dynamic service discovery, configuration management, service management',
 	'commmon.base.page.previousLink':'Prev',
 	'commmon.base.page.nextLink':'Next',
 
@@ -66,7 +66,7 @@ export default {
 	'commmon.footer.actions.edas': 'Cloud Service EDAS',
 	'commmon.actions.download': 'Download',
 
-	'home.title': 'Spring Cloud Alibaba official website | Spring AI + Alibaba TongYi Component | Springboot | Microservices practical tutorial',
+	'home.title': 'Spring Cloud Alibaba official website _ Springboot _ Microservices practical tutorial - Alibaba Cloud',
 	'home.description': 'Spring Cloud Alibaba provides a one-stop solution for distributed application development. It contains all the components needed to develop distributed applications, making it easy for you to develop applications using the Spring Cloud microservices framework.',
 	'home.introduce.about': 'ABOUT SPRING CLOUD ALIBABA',
 	'home.introduce.title': 'Committed to providing an one-stop solution for microservice development!',

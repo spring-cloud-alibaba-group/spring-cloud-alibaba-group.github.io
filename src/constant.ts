@@ -101,7 +101,7 @@ export const COMPANY_CUSTOMERS: Customer[] = [
     name: "cloud.feedback.soul.name",
     theme: "gray",
     logo: "https://img.alicdn.com/imgextra/i2/O1CN01GZhEqR1bY3dY5SOuY_!!6000000003476-2-tps-160-130.png",
-    href: "https://code.alibaba-inc.com/goat/astro-nacos",
+    href: "https://developer.aliyun.com/article/1174616",
     description: "cloud.feedback.soul.description",
   },
   {
@@ -122,14 +122,14 @@ export const COMPANY_CUSTOMERS: Customer[] = [
     name: "cloud.feedback.ykc.name",
     theme: "gray",
     logo: "https://img.alicdn.com/imgextra/i1/O1CN01LWMfwx1Ggf9VGmXBF_!!6000000000652-2-tps-160-130.png",
-    href: "https://developer.aliyun.com/article/1172572?groupCode=mse",
+    href: "https://developer.aliyun.com/article/1172572",
     description: "cloud.feedback.ykc.description",
   },
   {
     name: "cloud.feedback.bosideng.name",
     theme: "dark",
     logo: "https://img.alicdn.com/imgextra/i2/O1CN01d7EDXs1HLsnXSTgGG_!!6000000000742-2-tps-160-130.png",
-    href: "https://developer.aliyun.com/article/1147221?groupCode=mse",
+    href: "https://developer.aliyun.com/article/1147221",
     description: "cloud.feedback.bosideng.description",
   },
   {
@@ -188,7 +188,7 @@ export const SOLUTION_LIST: Solution[] = [
   },
   {
     checked: false,
-    src: "https://developer.aliyun.com/article/1265016?spm=5176.21213303.J_qCOwPWspKEuWcmp8qiZNQ.10.c89e2f3dQa2WtF&scm=20140722.S_community@@%E6%96%87%E7%AB%A0@@1265016._.ID_community@@%E6%96%87%E7%AB%A0@@1265016-RL_%E4%BA%91%E5%8E%9F%E7%94%9F%E7%BD%91%E5%85%B3%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%AE%89%E5%85%A8%E9%98%B2%E6%8A%A4%E8%83%BD%E5%8A%9B-LOC_llm-OR_ser-V_3-RK_rerank-P0_2",
+    src: "https://developer.aliyun.com/article/1265016",
     title: "home.solutions.card.3",
     keyword: [
       "home.solutions.card.keyword.three_in_one",
@@ -199,7 +199,7 @@ export const SOLUTION_LIST: Solution[] = [
   },
   {
     checked: false,
-    src: "https://help.aliyun.com/zh/mse/use-cases/implement-graceful-start-and-shutdown-of-microservice-applications-by-using-mse/?spm=a2c4g.11186623.0.0.385116bftBJhAY",
+    src: "https://help.aliyun.com/zh/mse/use-cases/implement-graceful-start-and-shutdown-of-microservice-applications-by-using-mse",
     title: "home.solutions.card.4",
     keyword: [
       "home.solutions.card.keyword.lossless",

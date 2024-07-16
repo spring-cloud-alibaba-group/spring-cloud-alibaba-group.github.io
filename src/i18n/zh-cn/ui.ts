@@ -47,7 +47,7 @@ export default {
 	'commmon.ebook.complete.get':'获取完整版电子书',
 	'commmon.ebook.enjoy.read':'尽享阅读体验',
 	'commmon.markdown.subheading.page':'本页',
-	'commmon.base.layout.keywords':'动态服务发现,配置管理,服务管理',
+	'commmon.base.layout.keywords':'Spring Cloud Alibaba官网,Spring AI + 阿里通义组件,Springboot,微服务实践教程,动态服务发现,配置管理,服务管理',
 	'commmon.base.page.previousLink':'上一篇',
 	'commmon.base.page.nextLink':'下一篇',
 	
@@ -68,7 +68,7 @@ export default {
 	'commmon.footer.actions.edas': '云服务 EDAS',
 	'commmon.actions.download': '下载',
 
-	'home.title': 'Spring Cloud Alibaba官网 | Spring AI + 阿里通义组件 | Springboot | 微服务实践教程',
+	'home.title': 'Spring Cloud Alibaba官网_基于Springboot的微服务教程-阿里云',
 	'home.description': 'Spring Cloud Alibaba 为分布式应用开发提供一站式解决方案。它包含开发分布式应用程序所需的所有组件，使您可以轻松地使用 Spring Cloud 微服务框架开发应用程序。',
 	
 	'home.introduce.about': `关于 ${SITE.name}`,
