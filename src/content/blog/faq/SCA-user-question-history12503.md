@@ -85,11 +85,11 @@ public class RedisService {
 
 ## 参考链接 ：
 
-*专家经验：springboot sca 整合redis的具体方法 
+* 专家经验：springboot sca 整合redis的具体方法 
  
- *专家经验：springboot 整合定时任务 
+ * 专家经验：springboot 整合定时任务 
  
- *专家经验：springboot 整合jetty来提供servlet服务 
+ * 专家经验：springboot 整合jetty来提供servlet服务 
 
 
  <font color="#949494">---------------</font> 

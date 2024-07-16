@@ -82,11 +82,11 @@ description: "为了集成 Higress 网关与 Spring Cloud Alibaba，我们可以
 
 ## 参考链接 ：
 
-*专家经验：基于网关实现 Spring Cloud 服务发现与路由 
+* 专家经验：基于网关实现 Spring Cloud 服务发现与路由 
  
- *专家经验：Spring Cloud Alibaba和Dubbo选型建议 
+ * 专家经验：Spring Cloud Alibaba和Dubbo选型建议 
  
- *专家经验：sca官网介绍 
+ * 专家经验：sca官网介绍 
 
 
  <font color="#949494">---------------</font> 

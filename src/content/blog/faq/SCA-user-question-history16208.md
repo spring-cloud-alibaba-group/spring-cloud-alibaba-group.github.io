@@ -31,9 +31,9 @@ description: "根据提供的信息，Spring Cloud Alibaba Version 2023.0.1.0 �
 
 ## 参考链接 ：
 
-*专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
+* 专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
  
- *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+ * 专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
 
 
  <font color="#949494">---------------</font> 

@@ -41,7 +41,7 @@ keywords: ["spring-cloud-alibaba","springboot","启动","指定","配置文件"]
 
 ## 参考链接 ：
 
-*专家经验：sca 与 springboot 快速启动 
+* 专家经验：sca 与 springboot 快速启动 
 
 
  <font color="#949494">---------------</font> 

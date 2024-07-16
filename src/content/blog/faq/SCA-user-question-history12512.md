@@ -105,9 +105,9 @@ MQTT是一种轻量级的消息协议，常用于物联网（IoT）场景或需�
 
 ## 参考链接 ：
 
-*专家经验：springboot 与测试类(springboot test )的集成方案 
+* 专家经验：springboot 与测试类(springboot test )的集成方案 
  
- *专家经验：sca 与 springboot 快速启动 
+ * 专家经验：sca 与 springboot 快速启动 
 
 
  <font color="#949494">---------------</font> 

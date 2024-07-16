@@ -43,7 +43,7 @@ Spring Cloud Alibaba环境下Spring Boot应用的启动，在遵循标准Spring 
 
 ## 参考链接 ：
 
-*专家经验：Spring boot 应用启动的原理介绍 
+* 专家经验：Spring boot 应用启动的原理介绍 
 
 
  <font color="#949494">---------------</font> 

@@ -80,9 +80,9 @@ keywords: ["spring-cloud-alibaba","springboot","mysql","连接"]
 
 ## 参考链接 ：
 
-*专家经验：sca 与 springboot 快速启动 
+* 专家经验：sca 与 springboot 快速启动 
  
- *专家经验：springboot 与测试类(springboot test )的集成方案 
+ * 专家经验：springboot 与测试类(springboot test )的集成方案 
 
 
  <font color="#949494">---------------</font> 

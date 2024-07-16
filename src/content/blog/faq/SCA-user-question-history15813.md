@@ -38,7 +38,7 @@ description: "根据已有的知识内容，您可以按照以下详细步骤快
 
 ## 参考链接 ：
 
-*专家经验：sca 与 springboot 快速启动 
+* 专家经验：sca 与 springboot 快速启动 
 
 
  <font color="#949494">---------------</font> 

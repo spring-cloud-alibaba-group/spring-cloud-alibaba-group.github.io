@@ -73,9 +73,9 @@ keywords: ["spring-cloud-alibaba","org.springframework.ai","spring-ai-core","0.8
 
 ## 参考链接 ：
 
-*专家经验：无法从maven中央仓下载内容的说明 
+* 专家经验：无法从maven中央仓下载内容的说明 
  
- *专家经验：sca ai (spring cloud alibaba ai）介绍 
+ * 专家经验：sca ai (spring cloud alibaba ai）介绍 
 
 
  <font color="#949494">---------------</font> 

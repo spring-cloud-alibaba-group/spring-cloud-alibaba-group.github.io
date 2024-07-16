@@ -70,11 +70,11 @@ description: "根据提供的知识内容，针对问题`sca(spring-cloud-alibab
 
 ## 参考链接 ：
 
-*专家经验：org springframework ai chat model ChatModel 找不到 
+* 专家经验：org springframework ai chat model ChatModel 找不到 
  
- *专家经验：sca ai (spring cloud alibaba ai）介绍 
+ * 专家经验：sca ai (spring cloud alibaba ai）介绍 
  
- *专家经验：无法从maven中央仓下载内容的说明 
+ * 专家经验：无法从maven中央仓下载内容的说明 
 
 
  <font color="#949494">---------------</font> 

@@ -68,9 +68,9 @@ service.vgroupMapping.*-tx-group=default
 
 ## 参考链接 ：
 
-*专家经验：基于springboot sca 添加 seata怎么部署配置？ 
+* 专家经验：基于springboot sca 添加 seata怎么部署配置？ 
  
- *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+ * 专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
 
 
  <font color="#949494">---------------</font> 

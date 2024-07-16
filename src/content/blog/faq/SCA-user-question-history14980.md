@@ -50,9 +50,9 @@ description: "要参与SCA（Spring Cloud Alibaba）的开发，可以遵循以�
 
 ## 参考链接 ：
 
-*专家经验：sca环境下 RocketMQ 基本使用 
+* 专家经验：sca环境下 RocketMQ 基本使用 
  
- *专家经验：sca官网介绍 
+ * 专家经验：sca官网介绍 
 
 
  <font color="#949494">---------------</font> 

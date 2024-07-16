@@ -49,7 +49,7 @@ description: "要接入本地运行的千问2模型到sca（spring-cloud-alibaba
 
 ## 参考链接 ：
 
-*专家经验：spring ai如何支持本地部署的千问2 
+* 专家经验：spring ai如何支持本地部署的千问2 
 
 
  <font color="#949494">---------------</font> 

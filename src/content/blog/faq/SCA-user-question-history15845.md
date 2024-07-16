@@ -88,7 +88,7 @@ description: "根据你提供的问题「sca(spring-cloud-alibaba) 程序包org.
 
 ## 参考链接 ：
 
-*专家经验：org.springframework.ai.chat.model.ChatModel 找不到 
+* 专家经验：org springframework ai chat model ChatModel 找不到 
 
 
  <font color="#949494">---------------</font> 

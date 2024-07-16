@@ -68,7 +68,7 @@ spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSou
 
 ## 参考链接 ：
 
-*专家经验：怎样排查 Cannot determine embedded database driver class for database type NONE 
+* 专家经验：怎样排查 Cannot determine embedded database driver class for database type NONE 
 
 
  <font color="#949494">---------------</font> 

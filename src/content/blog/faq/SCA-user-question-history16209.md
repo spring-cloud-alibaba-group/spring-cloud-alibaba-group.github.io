@@ -85,11 +85,11 @@ description: "在使用Spring Cloud Alibaba时遇到`AbstractTongYiServiceImpl`�
 
 ## 参考链接 ：
 
-*专家经验：关于AbstractTongYiServiceImpl的说明 
+* 专家经验：关于AbstractTongYiServiceImpl的说明 
  
- *专家经验：sca ai (spring cloud alibaba ai）介绍 
+ * 专家经验：sca ai (spring cloud alibaba ai）介绍 
  
- *专家经验：org springframework ai chat model ChatModel 找不到 
+ * 专家经验：org springframework ai chat model ChatModel 找不到 
 
 
  <font color="#949494">---------------</font> 

@@ -58,7 +58,7 @@ description: "在Spring Cloud Alibaba (Sca)环境中，实现Spring Boot定时�
 
 ## 参考链接 ：
 
-*专家经验：springboot 整合定时任务 
+* 专家经验：springboot 整合定时任务 
 
 
  <font color="#949494">---------------</font> 

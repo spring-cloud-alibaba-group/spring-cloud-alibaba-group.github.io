@@ -26,11 +26,11 @@ description: "根据提供的知识内容，Spring Cloud Alibaba AI 是支持多
 
 ## 参考链接 ：
 
-*专家经验：spring ai alibaba 是否支持其他模型比如open ai？ 
+* 专家经验：spring ai alibaba 是否支持其他模型比如open ai？ 
  
- *专家经验：sca ai (spring cloud alibaba ai）介绍 
+ * 专家经验：sca ai (spring cloud alibaba ai）介绍 
  
- *专家经验：Spring Cloud Alibaba和Dubbo选型建议 
+ * 专家经验：Spring Cloud Alibaba和Dubbo选型建议 
 
 
  <font color="#949494">---------------</font> 

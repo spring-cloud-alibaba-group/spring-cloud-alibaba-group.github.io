@@ -44,7 +44,7 @@ description: "根据您想了解的`com.alibaba.cloud.ai.tongyi.audio.transcript
 
 ## 参考链接 ：
 
-*专家经验：sca ai (spring cloud alibaba ai）介绍 
+* 专家经验：sca ai (spring cloud alibaba ai）介绍 
 
 
  <font color="#949494">---------------</font> 

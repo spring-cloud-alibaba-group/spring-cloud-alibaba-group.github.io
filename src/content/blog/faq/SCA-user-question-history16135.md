@@ -20,9 +20,9 @@ description: "我目前了解到的信息可能不足以支持你的问题，因
 
 ## 参考链接 ：
 
-*专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
+* 专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
  
- *专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
+ * 专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
 
 
  <font color="#949494">---------------</font> 

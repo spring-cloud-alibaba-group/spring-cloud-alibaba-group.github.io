@@ -37,9 +37,9 @@ description: "在Spring Cloud Alibaba环境中，Feign调用时通过服务名�
 
 ## 参考链接 ：
 
-*专家经验：Spring Cloud Alibaba和Dubbo选型建议 
+* 专家经验：Spring Cloud Alibaba和Dubbo选型建议 
  
- *专家经验：基于网关实现 Spring Cloud 服务发现与路由 
+ * 专家经验：基于网关实现 Spring Cloud 服务发现与路由 
 
 
  <font color="#949494">---------------</font> 

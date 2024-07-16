@@ -55,7 +55,7 @@ description: "在Spring Cloud Alibaba环境中，Spring Boot应用程序的生�
 
 ## 参考链接 ：
 
-*专家经验：Spring Boot 核心特性 
+* 专家经验：Spring Boot 核心特性 
 
 
  <font color="#949494">---------------</font> 

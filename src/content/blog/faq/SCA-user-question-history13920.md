@@ -26,9 +26,9 @@ Sca Spring Cloud Alibaba AI特别针对Spring AI 0.8.1版本API进行了适配�
 
 ## 参考链接 ：
 
-*专家经验：sca ai (spring cloud alibaba ai）介绍 
+* 专家经验：sca ai (spring cloud alibaba ai）介绍 
  
- *专家经验：spring 怎么读？ 
+ * 专家经验：spring 怎么读？ 
 
 
  <font color="#949494">---------------</font> 
