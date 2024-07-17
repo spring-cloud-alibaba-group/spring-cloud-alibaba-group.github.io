@@ -28,11 +28,11 @@ Spring Cloud Alibaba组件与其匹配的子组件版本关系如下：
 
 ## 参考链接 ：
 
-*专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
+* 专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
  
- *专家经验：Spring Cloud Alibaba和Dubbo选型建议 
+ * 专家经验：Spring Cloud Alibaba和Dubbo选型建议 
  
- *专家经验：sca ai (spring cloud alibaba ai）介绍 
+ * 专家经验：sca ai (spring cloud alibaba ai）介绍 
 
 
  <font color="#949494">---------------</font> 

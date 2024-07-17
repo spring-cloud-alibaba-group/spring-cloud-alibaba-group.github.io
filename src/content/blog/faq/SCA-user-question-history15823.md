@@ -26,11 +26,11 @@ description: "根据已有的知识内容，Spring Cloud Alibaba 直接对接知
 
 ## 参考链接 ：
 
-*专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
+* 专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
  
- *专家经验：Spring Cloud Alibaba和Dubbo选型建议 
+ * 专家经验：Spring Cloud Alibaba和Dubbo选型建议 
  
- *专家经验：sca ai (spring cloud alibaba ai）介绍 
+ * 专家经验：sca ai (spring cloud alibaba ai）介绍 
 
 
  <font color="#949494">---------------</font> 

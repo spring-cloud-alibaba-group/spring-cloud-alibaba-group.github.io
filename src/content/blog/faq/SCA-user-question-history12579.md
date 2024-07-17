@@ -57,7 +57,7 @@ Spring MVC 在 Spring Cloud Alibaba (SCA) 环境中使用的注解与标准Sprin
 
 ## 参考链接 ：
 
-*专家经验：spring mvc 的主要工作流程是怎样的？ 
+* 专家经验：spring mvc 的主要工作流程是怎样的？ 
 
 
  <font color="#949494">---------------</font> 

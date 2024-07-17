@@ -28,11 +28,11 @@ Spring Cloud Alibaba AI是基于Spring AI框架针对阿里云服务定制的一
 
 ## 参考链接 ：
 
-*专家经验：sca ai (spring cloud alibaba ai）介绍 
+* 专家经验：sca ai (spring cloud alibaba ai）介绍 
  
- *专家经验：spring 怎么读？ 
+ * 专家经验：spring 怎么读？ 
  
- *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+ * 专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
 
 
  <font color="#949494">---------------</font> 

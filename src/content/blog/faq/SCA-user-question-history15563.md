@@ -52,9 +52,9 @@ description: "根据你的描述，你遇到了在使用Spring Cloud Alibaba AI�
 
 ## 参考链接 ：
 
-*专家经验：sca ai (spring cloud alibaba ai）介绍 
+* 专家经验：sca ai (spring cloud alibaba ai）介绍 
  
- *专家经验：sca官网介绍 
+ * 专家经验：sca官网介绍 
 
 
  <font color="#949494">---------------</font> 

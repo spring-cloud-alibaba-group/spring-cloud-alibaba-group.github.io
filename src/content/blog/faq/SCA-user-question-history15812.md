@@ -27,11 +27,11 @@ Spring Cloud Alibaba AI 支持接入包括但不限于以下大模型：
 
 ## 参考链接 ：
 
-*专家经验：sca ai (spring cloud alibaba ai）介绍 
+* 专家经验：sca ai (spring cloud alibaba ai）介绍 
  
- *专家经验：spring ai alibaba 是否支持其他模型比如open ai？ 
+ * 专家经验：spring ai alibaba 是否支持其他模型比如open ai？ 
  
- *专家经验：sca ai 调用通义大模型实现聊天交互 
+ * 专家经验：sca ai 调用通义大模型实现聊天交互 
 
 
  <font color="#949494">---------------</font> 

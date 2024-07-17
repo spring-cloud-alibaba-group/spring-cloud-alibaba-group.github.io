@@ -41,9 +41,9 @@ description: "在`sca(spring-cloud-alibaba)`环境中遇到`spring boot expected
 
 ## 参考链接 ：
 
-*专家经验：spring boot expected single matching bean but found 2的异常 
+* 专家经验：spring boot expected single matching bean but found 2的异常 
  
- *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+ * 专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
 
 
  <font color="#949494">---------------</font> 

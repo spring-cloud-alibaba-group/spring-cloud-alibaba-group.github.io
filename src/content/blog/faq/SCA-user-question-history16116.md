@@ -38,11 +38,11 @@ description: "根据提供的知识内容，我可以您的问题。****1. **私
 
 ## 参考链接 ：
 
-*专家经验：spring ai alibaba 是否支持其他模型比如open ai？ 
+* 专家经验：spring ai alibaba 是否支持其他模型比如open ai？ 
  
- *专家经验：spring ai如何支持本地部署的千问2 
+ * 专家经验：spring ai如何支持本地部署的千问2 
  
- *专家经验：sca ai (spring cloud alibaba ai）介绍 
+ * 专家经验：sca ai (spring cloud alibaba ai）介绍 
 
 
  <font color="#949494">---------------</font> 

@@ -31,11 +31,11 @@ description: "根据已有的知识内容，Spring Cloud Alibaba与Spring Boot�
 
 ## 参考链接 ：
 
-*专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
+* 专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
  
- *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+ * 专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
  
- *专家经验：Spring Cloud Alibaba和Dubbo选型建议 
+ * 专家经验：Spring Cloud Alibaba和Dubbo选型建议 
 
 
  <font color="#949494">---------------</font> 

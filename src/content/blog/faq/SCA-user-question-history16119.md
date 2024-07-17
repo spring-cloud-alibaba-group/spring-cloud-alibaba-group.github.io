@@ -26,11 +26,11 @@ description: "要查看关于Sca(spring-cloud-alibaba)下千问2的API文档，�
 
 ## 参考链接 ：
 
-*专家经验：通义千问的API说明 
+* 专家经验：通义千问的API说明 
  
- *专家经验：sca官网介绍 
+ * 专家经验：sca官网介绍 
  
- *专家经验：spring ai如何支持本地部署的千问2 
+ * 专家经验：spring ai如何支持本地部署的千问2 
 
 
  <font color="#949494">---------------</font> 

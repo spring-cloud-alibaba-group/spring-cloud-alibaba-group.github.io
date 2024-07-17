@@ -43,7 +43,7 @@ keywords: ["spring-cloud-alibaba","springboot","junit"]
 
 ## 参考链接 ：
 
-*专家经验：springboot 与测试类(springboot test )的集成方案 
+* 专家经验：springboot 与测试类(springboot test )的集成方案 
 
 
  <font color="#949494">---------------</font> 

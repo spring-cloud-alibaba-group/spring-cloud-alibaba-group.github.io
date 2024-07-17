@@ -36,7 +36,7 @@ description: "根据您的问题，您想了解的是使用Spring Cloud Alibaba 
 
 ## 参考链接 ：
 
-*专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
+* 专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
 
 
  <font color="#949494">---------------</font> 

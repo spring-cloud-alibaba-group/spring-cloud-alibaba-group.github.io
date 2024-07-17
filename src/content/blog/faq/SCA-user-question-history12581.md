@@ -52,7 +52,7 @@ keywords: ["spring-cloud-alibaba","微服务架构","springcloud"]
 
 ## 参考链接 ：
 
-*专家经验：springboot整合netty 来提供web socket服务 
+* 专家经验：springboot整合netty 来提供web socket服务 
 
 
  <font color="#949494">---------------</font> 

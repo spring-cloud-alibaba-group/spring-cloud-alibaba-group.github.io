@@ -39,7 +39,7 @@ description: "根据您提供的问题，您想了解的是关于`com.alibaba.cl
 
 ## 参考链接 ：
 
-*专家经验：sca ai (spring cloud alibaba ai）介绍 
+* 专家经验：sca ai (spring cloud alibaba ai）介绍 
 
 
  <font color="#949494">---------------</font> 

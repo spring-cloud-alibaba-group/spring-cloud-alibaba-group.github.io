@@ -24,9 +24,9 @@ description: "要进入Spring Cloud Alibaba (SCA)的官网，您可以直接访�
 
 ## 参考链接 ：
 
-*专家经验：sca官网介绍 
+* 专家经验：sca官网介绍 
  
- *专家经验：sca环境下 RocketMQ 基本使用 
+ * 专家经验：sca环境下 RocketMQ 基本使用 
 
 
  <font color="#949494">---------------</font> 

@@ -26,11 +26,11 @@ description: "根据我的知识库，可以直接您的问题。Sca（Spring Cl
 
 ## 参考链接 ：
 
-*专家经验：sca官网介绍 
+* 专家经验：sca官网介绍 
  
- *专家经验：sca ai (spring cloud alibaba ai）介绍 
+ * 专家经验：sca ai (spring cloud alibaba ai）介绍 
  
- *专家经验：Spring Cloud Alibaba和Dubbo选型建议 
+ * 专家经验：Spring Cloud Alibaba和Dubbo选型建议 
 
 
  <font color="#949494">---------------</font> 

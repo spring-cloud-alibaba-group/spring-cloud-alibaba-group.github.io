@@ -52,11 +52,11 @@ Spring Cloud Alibaba 通过与 Nacos、Seata 等组件的深度融合，为微�
 
 ## 参考链接 ：
 
-*专家经验：Spring Cloud Alibaba和Dubbo选型建议 
+* 专家经验：Spring Cloud Alibaba和Dubbo选型建议 
  
- *专家经验：spring 怎么读？ 
+ * 专家经验：spring 怎么读？ 
  
- *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+ * 专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
 
 
  <font color="#949494">---------------</font> 

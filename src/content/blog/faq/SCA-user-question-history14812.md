@@ -60,7 +60,7 @@ public class MessagePreProcessor implements MessageHandler {
 
 ## 参考链接 ：
 
-*专家经验：sca环境下 RocketMQ 基本使用 
+* 专家经验：sca环境下 RocketMQ 基本使用 
 
 
  <font color="#949494">---------------</font> 

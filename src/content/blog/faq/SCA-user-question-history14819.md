@@ -46,11 +46,11 @@ description: "针对你的问题，根据已有的知识，我们来逐步分析
 
 ## 参考链接 ：
 
-*专家经验：springboot项目启动读取不到resource文件夹下的bootstrap.yml 
+* 专家经验：springboot项目启动读取不到resource文件夹下的bootstrap.yml 
  
- *专家经验：sca 与 springboot 快速启动 
+ * 专家经验：sca 与 springboot 快速启动 
  
- *专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
+ * 专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
 
 
  <font color="#949494">---------------</font> 

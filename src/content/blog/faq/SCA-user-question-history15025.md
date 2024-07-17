@@ -22,11 +22,11 @@ description: "根据已有的知识内容，我们无法直接获取到Spring Cl
 
 ## 参考链接 ：
 
-*专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
+* 专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
  
- *专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
+ * 专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
  
- *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+ * 专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
 
 
  <font color="#949494">---------------</font> 

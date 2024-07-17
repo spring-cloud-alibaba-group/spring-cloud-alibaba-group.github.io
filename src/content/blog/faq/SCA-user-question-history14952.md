@@ -30,9 +30,9 @@ Spring Cloud Alibaba(SCA)官网不仅提供了访问入口[官网地址](https:/
 
 ## 参考链接 ：
 
-*专家经验：sca官网介绍 
+* 专家经验：sca官网介绍 
  
- *专家经验：sca ai (spring cloud alibaba ai）介绍 
+ * 专家经验：sca ai (spring cloud alibaba ai）介绍 
 
 
  <font color="#949494">---------------</font> 

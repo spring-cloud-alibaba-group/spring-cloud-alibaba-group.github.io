@@ -32,7 +32,7 @@ description: "根据您的问题，您想了解如何创建一个Spring Cloud Al
 
 ## 参考链接 ：
 
-*专家经验：sca 与 springboot 快速启动 
+* 专家经验：sca 与 springboot 快速启动 
 
 
  <font color="#949494">---------------</font> 

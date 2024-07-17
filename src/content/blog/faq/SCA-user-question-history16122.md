@@ -44,9 +44,9 @@ description: "根据已有的知识内容，我们可以分析您遇到的问题
 
 ## 参考链接 ：
 
-*专家经验：无法从maven中央仓下载内容的说明 
+* 专家经验：无法从maven中央仓下载内容的说明 
  
- *专家经验：Spring Cloud Alibaba和Dubbo选型建议 
+ * 专家经验：Spring Cloud Alibaba和Dubbo选型建议 
 
 
  <font color="#949494">---------------</font> 

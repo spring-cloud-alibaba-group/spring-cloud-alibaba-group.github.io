@@ -26,11 +26,11 @@ Spring Cloud Alibaba (SCA) 是一套微服务解决方案，它为分布式系�
 
 ## 参考链接 ：
 
-*专家经验：springboot sca 整合redis的具体方法 
+* 专家经验：springboot sca 整合redis的具体方法 
  
- *专家经验：sca 与 springboot 快速启动 
+ * 专家经验：sca 与 springboot 快速启动 
  
- *专家经验：springboot 整合定时任务 
+ * 专家经验：springboot 整合定时任务 
 
 
  <font color="#949494">---------------</font> 
