@@ -6,6 +6,7 @@ import MobileNavbar from "@components/common/MobileNavbar.astro";
 import SearchComp from "./searchComp/index.astro";
 import { SITE } from "@utils/config";
 import Alert from "./Alert.astro";
+import Search from "./Search.astro";
 
 interface Props {
   align?: "home" | "docs";
@@ -64,81 +65,11 @@ let height,
           lang={lang.toLowerCase()}
           theme="error"
         />
-        <div>
-          <div class="search-container bg-error rounded-[32px] pl-3">
-            <svg
-              class="icon search-svg"
-              viewBox="0 0 1024 1024"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              p-id="2373"
-              width="16"
-              height="16"
-            >
-              <path
-                d="M966.4 924.8l-230.4-227.2c60.8-67.2 96-156.8 96-256 0-217.6-176-390.4-390.4-390.4-217.6 0-390.4 176-390.4 390.4 0 217.6 176 390.4 390.4 390.4 99.2 0 188.8-35.2 256-96l230.4 227.2c9.6 9.6 28.8 9.6 38.4 0C979.2 950.4 979.2 934.4 966.4 924.8zM102.4 441.6c0-185.6 150.4-339.2 339.2-339.2s339.2 150.4 339.2 339.2c0 89.6-35.2 172.8-92.8 233.6-3.2 0-3.2 3.2-6.4 3.2-3.2 3.2-3.2 3.2-3.2 6.4-60.8 57.6-144 92.8-233.6 92.8C256 780.8 102.4 627.2 102.4 441.6z"
-                p-id="2374"></path>
-            </svg>
-            <input
-              id="search"
-              type="text"
-              placeholder="Search"
-              class="bg-error"
-              autocomplete="off"
-            />
-            <!-- 清除按钮 -->
-            <button id="clearSearch" class="clear-button">×</button>
-          </div>
-          <div id="results"></div>
-        </div>
+        <Search />
       </div>
     </div>
   </my-layout>
 </span>
-
-<script is:inline>
-  document.querySelector("#search")?.addEventListener("input", async (e) => {
-    const searchInput = e.target;
-    const clearButton = document.querySelector("#clearSearch");
-
-    // 是否显示清除按钮
-    if (searchInput.value.length > 0) {
-      clearButton.classList.add("visible");
-    } else {
-      clearButton.classList.remove("visible");
-    }
-
-    if (searchInput.dataset.loaded !== "true") {
-      searchInput.dataset.loaded = "true";
-      window.pagefind = await import(
-        "https://sca.aliyun.com/pagefind/pagefind.js"
-      );
-    }
-    const search = await window.pagefind.search(searchInput.value);
-    document.querySelector("#results").innerHTML = "";
-    for (const result of search.results) {
-      const data = await result.data();
-      document.querySelector("#results").innerHTML += `
-        <a href="${data.url}">
-          <h3 class='bg-neutral pl-3 text-link'>${data.meta.title}</h3>
-          <p class='px-3 py-4'>${data.excerpt}</p>
-        </a>`;
-    }
-  });
-
-  // 监听清除按钮点击事件
-  document.querySelector("#clearSearch").addEventListener("click", () => {
-    const searchInput = document.querySelector("#search");
-    const clearButton = document.querySelector("#clearSearch");
-    const resultsContainer = document.querySelector("#results");
-
-    searchInput.value = "";
-    clearButton.classList.remove("visible");
-
-    // 清空#results元素内容
-    resultsContainer.innerHTML = "";
-  });
-</script>
 
 <script>
   // animation
@@ -200,67 +131,6 @@ let height,
     .left-content .mobile-navbar {
       display: none;
     }
-    .search-container {
-      position: relative;
-      display: inline-block;
-      width: 100%;
-    }
-    .search-container input {
-      padding-left: 18px;
-      height: 32px;
-      padding-top: 6px;
-      padding-bottom: 6px;
-      border: none;
-      outline: none;
-      width: calc(100% - 32px);
-    }
-    .search-icon {
-      position: absolute;
-      left: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 20px;
-      height: 20px;
-      pointer-events: none;
-    }
-    .clear-button {
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      display: none; /* 默认情况下隐藏 */
-    }
-
-    .clear-button.visible {
-      display: block; /* 当输入框有内容时显示 */
-    }
-    #results {
-      position: absolute;
-      top: 100%;
-      right: 40px;
-      width: 500px;
-      background-color: white;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      z-index: 100;
-      overflow-y: auto;
-      max-height: 700px;
-    }
-
-    #results a {
-      display: block;
-      text-decoration: none;
-      color: #333;
-    }
-
-    #results a:hover {
-      background-color: #f1f1f1;
-    }
 
     @media (max-width: 85.125rem) {
       /* 在这里编写屏幕宽度小于85.125rem的CSS样式 */
@@ -294,20 +164,6 @@ let height,
           width: 1.5rem;
           height: 1.5rem;
         }
-      }
-      .search-container {
-        margin-left:6px;
-      }
-      .search-svg {
-        padding-top:5px;
-      }
-      .search-container input {
-        padding-left: 0px;
-        padding-top: 0px;
-      }
-      #results {
-        right: 20px;
-        width: 80%;
       }
     }
   }
