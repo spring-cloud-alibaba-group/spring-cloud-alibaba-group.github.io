@@ -38,7 +38,7 @@ Spring MVC 是 Spring Cloud Alibaba 中用于处理 web 请求的核心组件之
 
 ## 参考链接 ：
 
-*专家经验：spring mvc 的主要工作流程是怎样的？ 
+* 专家经验：spring mvc 的主要工作流程是怎样的？ 
 
 
  <font color="#949494">---------------</font> 

@@ -41,11 +41,11 @@ description: "基于Spring Cloud Alibaba的阿里微服务架构介绍如下：1
 
 ## 参考链接 ：
 
-*专家经验：Spring Cloud Alibaba和Dubbo选型建议 
+* 专家经验：Spring Cloud Alibaba和Dubbo选型建议 
  
- *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+ * 专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
  
- *专家经验：sca官网介绍 
+ * 专家经验：sca官网介绍 
 
 
  <font color="#949494">---------------</font> 

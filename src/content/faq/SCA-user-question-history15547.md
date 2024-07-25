@@ -51,11 +51,11 @@ description: "为了帮助您快速上手Spring Cloud Alibaba，我们可以按�
 
 ## 参考链接 ：
 
-*专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+* 专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
  
- *专家经验：Spring Cloud Alibaba和Dubbo选型建议 
+ * 专家经验：Spring Cloud Alibaba和Dubbo选型建议 
  
- *专家经验：sca ai (spring cloud alibaba ai）介绍 
+ * 专家经验：sca ai (spring cloud alibaba ai）介绍 
 
 
  <font color="#949494">---------------</font> 

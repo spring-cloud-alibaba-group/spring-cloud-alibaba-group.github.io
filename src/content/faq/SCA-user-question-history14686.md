@@ -52,7 +52,7 @@ keywords: ["spring-cloud-alibaba","分布式事务"]
 
 ## 参考链接 ：
 
-*专家经验：基于springboot sca 添加 seata怎么部署配置？ 
+* 专家经验：基于springboot sca 添加 seata怎么部署配置？ 
 
 
  <font color="#949494">---------------</font> 

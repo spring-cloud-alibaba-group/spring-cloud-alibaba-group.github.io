@@ -63,9 +63,9 @@ description: "在使用Spring Cloud Alibaba时，如果你希望某些配置优�
 
 ## 参考链接 ：
 
-*专家经验：sca环境下 RocketMQ 基本使用 
+* 专家经验：sca环境下 RocketMQ 基本使用 
  
- *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+ * 专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
 
 
  <font color="#949494">---------------</font> 

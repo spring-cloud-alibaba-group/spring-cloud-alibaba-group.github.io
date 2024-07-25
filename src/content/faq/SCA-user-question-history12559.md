@@ -29,7 +29,7 @@ description: "根据已有的知识，spring cloud alibaba的官网地址是http
 
 ## 参考链接 ：
 
-*专家经验：sca官网介绍 
+* 专家经验：sca官网介绍 
 
 
  <font color="#949494">---------------</font> 

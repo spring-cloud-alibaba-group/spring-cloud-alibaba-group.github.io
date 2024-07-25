@@ -34,11 +34,11 @@ Spring Boot 是一种基于 Spring 框架的快速开发框架，它旨在简化
 
 ## 参考链接 ：
 
-*专家经验：sca 与 springboot 快速启动 
+* 专家经验：sca 与 springboot 快速启动 
  
- *专家经验：springboot 与测试类(springboot test )的集成方案 
+ * 专家经验：springboot 与测试类(springboot test )的集成方案 
  
- *专家经验：springboot 整合jetty来提供servlet服务 
+ * 专家经验：springboot 整合jetty来提供servlet服务 
 
 
  <font color="#949494">---------------</font> 

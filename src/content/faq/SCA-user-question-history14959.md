@@ -63,7 +63,7 @@ description: "要接入Sca（Spring Cloud Alibaba）中的阿里巴巴分布式�
 
 ## 参考链接 ：
 
-*专家经验：基于springboot sca 添加 seata怎么部署配置？ 
+* 专家经验：基于springboot sca 添加 seata怎么部署配置？ 
 
 
  <font color="#949494">---------------</font> 

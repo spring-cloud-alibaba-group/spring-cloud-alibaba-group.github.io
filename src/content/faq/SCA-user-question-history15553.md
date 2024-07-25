@@ -95,9 +95,9 @@ public class YourApplication {
 
 ## 参考链接 ：
 
-*专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+* 专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
  
- *专家经验：sca环境下 RocketMQ 基本使用 
+ * 专家经验：sca环境下 RocketMQ 基本使用 
 
 
  <font color="#949494">---------------</font> 

@@ -34,7 +34,7 @@ description: "首先，让我们从Spring Cloud Gateway开始介绍。Spring Clo
 
 ## 参考链接 ：
 
-*专家经验：基于网关实现 Spring Cloud 服务发现与路由 
+* 专家经验：基于网关实现 Spring Cloud 服务发现与路由 
 
 
  <font color="#949494">---------------</font> 

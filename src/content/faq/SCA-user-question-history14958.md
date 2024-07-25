@@ -26,9 +26,9 @@ description: "根据最新的知识信息，Spring Boot最新版本对应Spring 
 
 ## 参考链接 ：
 
-*专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
+* 专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
  
- *专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
+ * 专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
 
 
  <font color="#949494">---------------</font> 

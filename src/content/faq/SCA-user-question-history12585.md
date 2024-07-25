@@ -86,9 +86,9 @@ ActiveMQ是一个成熟的消息中间件，常用于解耦系统组件、异步
 
 ## 参考链接 ：
 
-*专家经验：sca 与 springboot 快速启动 
+* 专家经验：sca 与 springboot 快速启动 
  
- *专家经验：springboot 与测试类(springboot test )的集成方案 
+ * 专家经验：springboot 与测试类(springboot test )的集成方案 
 
 
  <font color="#949494">---------------</font> 
