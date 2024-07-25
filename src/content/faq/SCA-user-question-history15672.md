@@ -48,11 +48,11 @@ description: "根据您的问题，您似乎在询问有关`spring-ai-openai-spr
 
 ## 参考链接 ：
 
-*专家经验：sca ai (spring cloud alibaba ai）介绍 
+* 专家经验：sca ai (spring cloud alibaba ai）介绍 
  
- *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+ * 专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
  
- *专家经验：Spring Boot 核心特性 
+ * 专家经验：Spring Boot 核心特性 
 
 
  <font color="#949494">---------------</font> 

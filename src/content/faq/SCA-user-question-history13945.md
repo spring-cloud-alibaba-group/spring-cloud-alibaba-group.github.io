@@ -32,11 +32,11 @@ Spring Cloud Alibaba是一套微服务解决方案，它为分布式系统开发
 
 ## 参考链接 ：
 
-*专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
+* 专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
  
- *专家经验：Spring Boot 核心特性 
+ * 专家经验：Spring Boot 核心特性 
  
- *专家经验：sca ai (spring cloud alibaba ai）介绍 
+ * 专家经验：sca ai (spring cloud alibaba ai）介绍 
 
 
  <font color="#949494">---------------</font> 

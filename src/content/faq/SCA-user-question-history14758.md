@@ -34,11 +34,11 @@ description: "在`sca(spring-cloud-alibaba)`环境下，若遇到`springboot`占
 
 ## 参考链接 ：
 
-*专家经验：Spring boot 占位符无法注入原因梳理 
+* 专家经验：Spring boot 占位符无法注入原因梳理 
  
- *专家经验：Spring Boot 核心特性 
+ * 专家经验：Spring Boot 核心特性 
  
- *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+ * 专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
 
 
  <font color="#949494">---------------</font> 

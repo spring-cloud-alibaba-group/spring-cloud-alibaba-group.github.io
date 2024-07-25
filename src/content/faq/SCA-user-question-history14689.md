@@ -30,9 +30,9 @@ keywords: ["spring-cloud-alibaba","gateway","版本"]
 
 ## 参考链接 ：
 
-*专家经验：基于网关实现 Spring Cloud 服务发现与路由 
+* 专家经验：基于网关实现 Spring Cloud 服务发现与路由 
  
- *专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
+ * 专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
 
 
  <font color="#949494">---------------</font> 

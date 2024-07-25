@@ -35,11 +35,11 @@ description: "根据提供的知识内容，关于`sca(spring-cloud-alibaba)`中
 
 ## 参考链接 ：
 
-*专家经验：function calling 支持的说明 
+* 专家经验：function calling 支持的说明 
  
- *专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+ * 专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
  
- *专家经验：sca ai (spring cloud alibaba ai）介绍 
+ * 专家经验：sca ai (spring cloud alibaba ai）介绍 
 
 
  <font color="#949494">---------------</font> 

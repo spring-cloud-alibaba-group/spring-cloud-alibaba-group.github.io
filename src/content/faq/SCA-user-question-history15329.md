@@ -84,9 +84,9 @@ spring.cloud.ai.tongyi.chat.options.api-key=sk-a3d73b1709bf4a178c28ed7c8b3b5axx
 
 ## 参考链接 ：
 
-*专家经验：sca ai 调用通义大模型实现聊天交互 
+* 专家经验：sca ai 调用通义大模型实现聊天交互 
  
- *专家经验：sca ai (spring cloud alibaba ai）介绍 
+ * 专家经验：sca ai (spring cloud alibaba ai）介绍 
 
 
  <font color="#949494">---------------</font> 

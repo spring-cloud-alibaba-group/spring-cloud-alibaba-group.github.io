@@ -20,7 +20,7 @@ description: "阿里云 Spring Boot 地址，即快速创建 SCA (Spring Cloud A
 
 ## 参考链接 ：
 
-*专家经验：sca 与 springboot 快速启动 
+* 专家经验：sca 与 springboot 快速启动 
 
 
  <font color="#949494">---------------</font> 

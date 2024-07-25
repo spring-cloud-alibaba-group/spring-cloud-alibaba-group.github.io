@@ -60,11 +60,11 @@ description: "根据您提供的信息，您在项目中引入了`spring-cloud-s
 
 ## 参考链接 ：
 
-*专家经验：sca ai (spring cloud alibaba ai）介绍 
+* 专家经验：sca ai (spring cloud alibaba ai）介绍 
  
- *专家经验：sca官网介绍 
+ * 专家经验：sca官网介绍 
  
- *专家经验：无法从maven中央仓下载内容的说明 
+ * 专家经验：无法从maven中央仓下载内容的说明 
 
 
  <font color="#949494">---------------</font> 
