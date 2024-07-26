@@ -31,6 +31,8 @@
 </div>
 
 <script is:inline>
+
+function initSearchComp() {
   document.querySelector("#search")?.addEventListener("input", async (e) => {
     const searchInput = e.target;
     const clearButton = document.querySelector("#clearSearch");
@@ -50,13 +52,17 @@
     }
     const search = await window.pagefind.search(searchInput.value);
     document.querySelector("#results").innerHTML = "";
+    const resultSet = new Set()
     for (const result of search.results) {
       const data = await result.data();
-      document.querySelector("#results").innerHTML += `
+      if (!resultSet.has(data.url)) {
+        resultSet.add(data.url)
+        document.querySelector("#results").innerHTML += `
         <a href="${data.url}" class='no-underline text-neutral'>
           <h3 class='bg-neutral pl-3 text-link'>${data.meta.title}</h3>
           <p class='px-3 py-4'>${data.excerpt}</p>
         </a>`;
+      }
     }
   });
 
@@ -72,6 +78,14 @@
     // 清空#results元素内容
     resultsContainer.innerHTML = "";
   });
+}
+
+// // 当页面加载时，调用initAlertBar函数。
+window.addEventListener("DOMContentLoaded", initSearchComp);
+
+// 监听astro页面切换事件：在新页面替换旧页面后立即触发的事件
+document.addEventListener("astro:after-swap", initSearchComp);
+
 </script>
 <style>
   .search-pagefind{
@@ -124,7 +138,7 @@
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       z-index: 100;
       overflow-y: auto;
-      max-height: 700px;
+      max-height: 80vh;
     }
 
     #results a {
