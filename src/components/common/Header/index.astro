@@ -6,7 +6,6 @@ import MobileNavbar from "@components/common/MobileNavbar.astro";
 import SearchComp from "./searchComp/index.astro";
 import { SITE } from "@utils/config";
 import Alert from "./Alert.astro";
-import Search from "./Search.astro";
 
 interface Props {
   align?: "home" | "docs";
@@ -65,7 +64,7 @@ let height,
           lang={lang.toLowerCase()}
           theme="error"
         />
-        <Search />
+        <SearchComp />
       </div>
     </div>
   </my-layout>
