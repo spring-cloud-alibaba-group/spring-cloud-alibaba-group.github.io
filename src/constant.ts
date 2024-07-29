@@ -524,6 +524,21 @@ export const COMMUNITY_MENU_LIST = [
           en: "Contributors",
         },
       },
+      {
+        label: '贡献者指南',
+        target: "_blank",
+        link: '/docs/developer/contributor-guide/new-contributor-guide_dev/',
+        translations: {
+          en: "Contributor Guides",
+        },
+      },
+      // {
+      //   // href: `/${lang}/v2/contribution/contributing`,
+      //   href: '/docs/developer/contributor-guide/new-contributor-guide_dev/',
+      //   text: t("rightSidebar.contributorGuides"),
+      //   depth: 2,
+      //   icon: "tabler:book",
+      // },
     ],
   },
   {
