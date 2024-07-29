@@ -56,14 +56,14 @@ export default [
     relativePosition: 'page',
     activePath: ["/learn"],
   },
-  {
-    label: "答疑样例",
-    translations: {
-      en: "FAQ",
-    },
-    trigger: "click",
-    target: "_self",
-    route: "/faq/",
-    activePath: ["/faq"],
-  },
+  // {
+  //   label: "答疑样例",
+  //   translations: {
+  //     en: "FAQ",
+  //   },
+  //   trigger: "click",
+  //   target: "_self",
+  //   route: "/faq/",
+  //   activePath: ["/faq"],
+  // },
 ];
