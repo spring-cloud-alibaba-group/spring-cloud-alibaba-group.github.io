@@ -72,9 +72,9 @@ public class MyTongYiServiceImpl extends AbstractTongYiServiceImpl {
 
 ## 参考链接 ：
 
-*专家经验：sca ai 调用通义大模型实现聊天交互 
+* 专家经验：sca ai 调用通义大模型实现聊天交互 
  
- *专家经验：sca ai (spring cloud alibaba ai）介绍 
+ * 专家经验：sca ai (spring cloud alibaba ai）介绍 
 
 
  <font color="#949494">---------------</font> 

@@ -51,11 +51,11 @@ keywords: ["spring-cloud-alibaba","springboot","面试题"]
 
 ## 参考链接 ：
 
-*专家经验：springboot sca 整合redis的具体方法 
+* 专家经验：springboot sca 整合redis的具体方法 
  
- *专家经验：sca 与 springboot 快速启动 
+ * 专家经验：sca 与 springboot 快速启动 
  
- *专家经验：springboot 整合jetty来提供servlet服务 
+ * 专家经验：springboot 整合jetty来提供servlet服务 
 
 
  <font color="#949494">---------------</font> 

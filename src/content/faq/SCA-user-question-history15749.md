@@ -77,9 +77,9 @@ description: "要支持Spring Cloud Alibaba AI中的通义配置参数，您可�
 
 ## 参考链接 ：
 
-*专家经验：sca ai 调用通义大模型实现聊天交互 
+* 专家经验：sca ai 调用通义大模型实现聊天交互 
  
- *专家经验：sca ai (spring cloud alibaba ai）介绍 
+ * 专家经验：sca ai (spring cloud alibaba ai）介绍 
 
 
  <font color="#949494">---------------</font> 

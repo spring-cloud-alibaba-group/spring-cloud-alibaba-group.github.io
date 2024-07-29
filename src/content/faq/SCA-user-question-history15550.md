@@ -72,11 +72,11 @@ public ResponseEntity<String> securedEndpoint(@RequestHeader("X-API-Key") String
 
 ## 参考链接 ：
 
-*专家经验：sca官网介绍 
+* 专家经验：sca官网介绍 
  
- *专家经验：Spring Cloud Alibaba和Dubbo选型建议 
+ * 专家经验：Spring Cloud Alibaba和Dubbo选型建议 
  
- *专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
+ * 专家经验：spring cloud alibaba(SCA)与 下层集成实现的各个组件的版本对应关系 
 
 
  <font color="#949494">---------------</font> 

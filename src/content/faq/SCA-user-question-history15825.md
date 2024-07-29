@@ -42,7 +42,7 @@ description: "根据我掌握的知识，`AbstractTongYiServiceImpl`找不到的
 
 ## 参考链接 ：
 
-*专家经验：关于AbstractTongYiServiceImpl的说明 
+* 专家经验：关于AbstractTongYiServiceImpl的说明 
 
 
  <font color="#949494">---------------</font> 

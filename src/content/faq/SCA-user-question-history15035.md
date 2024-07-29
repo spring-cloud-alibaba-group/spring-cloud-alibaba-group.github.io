@@ -55,7 +55,7 @@ description: "为了在Spring Boot项目中引入Spring AI并使用Spring Cloud 
 
 ## 参考链接 ：
 
-*专家经验：sca ai (spring cloud alibaba ai）介绍 
+* 专家经验：sca ai (spring cloud alibaba ai）介绍 
 
 
  <font color="#949494">---------------</font> 

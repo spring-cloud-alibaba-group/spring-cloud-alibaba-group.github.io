@@ -49,9 +49,9 @@ Spring Cloud和Spring Cloud Alibaba都是构建微服务架构的热门框架，
 
 ## 参考链接 ：
 
-*专家经验：Spring Cloud Alibaba和Dubbo选型建议 
+* 专家经验：Spring Cloud Alibaba和Dubbo选型建议 
  
- *专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
+ * 专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
 
 
  <font color="#949494">---------------</font> 

@@ -30,9 +30,9 @@ description: "根据您的问题，您想了解的是sca(spring-cloud-alibaba)�
 
 ## 参考链接 ：
 
-*专家经验：通义千问的API说明 
+* 专家经验：通义千问的API说明 
  
- *专家经验：sca官网介绍 
+ * 专家经验：sca官网介绍 
 
 
  <font color="#949494">---------------</font> 

@@ -36,7 +36,7 @@ description: "根据您提供的信息，问题似乎是关于`org.springframewo
 
 ## 参考链接 ：
 
-*专家经验：sca ai (spring cloud alibaba ai）介绍 
+* 专家经验：sca ai (spring cloud alibaba ai）介绍 
 
 
  <font color="#949494">---------------</font> 

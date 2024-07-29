@@ -1,7 +1,8 @@
 import { twMerge } from "tailwind-merge";
 import React from "react";
-import { useContext } from "preact/hooks";
+import { useContext, useState, useEffect } from "preact/hooks";
 import { AppContext } from "../../context";
+import { isSafari } from "@/utils/util";
 
 export const Panel = ({
   className = "",
@@ -13,6 +14,16 @@ export const Panel = ({
   panelSkewDir = 1, //面板倾斜方向
   panelStyle = {},
 }) => {
+
+  const [isSafariBrowser, setIsSafariBrowser] = useState(true);
+
+
+  useEffect(() => {
+    // 判断是否为safari浏览器
+    setIsSafariBrowser(isSafari());
+  }, []);
+
+
   const appContext = useContext(AppContext);
   return (
     <div
@@ -30,7 +41,8 @@ export const Panel = ({
           )}
           style={{
             transformStyle: "preserve-3d",
-            transform: `perspective(2000px) rotateX(30deg) skewX(${
+            // safari浏览器会影响所有z-index的效果
+            transform: `perspective(2000px) translateZ ${isSafariBrowser && "rotateX(30deg)"}skewX(${
               panelSkewDir > 0 ? "6" : "-6"
             }deg)`,
             background: appContext.colors.panelColor,

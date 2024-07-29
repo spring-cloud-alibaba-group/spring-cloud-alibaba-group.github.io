@@ -69,9 +69,9 @@ description: "要将Spring Cloud与Nacos整合，实现配置管理和服务注�
 
 ## 参考链接 ：
 
-*专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
+* 专家经验：Nacos 融合 Spring Cloud，成为注册配置中心 
  
- *专家经验：Spring Cloud Alibaba和Dubbo选型建议 
+ * 专家经验：Spring Cloud Alibaba和Dubbo选型建议 
 
 
  <font color="#949494">---------------</font> 

@@ -54,7 +54,7 @@ description: "根据提供的知识内容，Sca(spring-cloud-alibaba) Spring AI�
 
 ## 参考链接 ：
 
-*专家经验：sca ai 支持的通义千问参数 
+* 专家经验：sca ai 支持的通义千问参数 
 
 
  <font color="#949494">---------------</font> 

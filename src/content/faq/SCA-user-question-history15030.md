@@ -48,11 +48,11 @@ description: "在Spring Cloud Alibaba中，分布式事务主要是通过Seata�
 
 ## 参考链接 ：
 
-*专家经验：Spring Cloud Alibaba和Dubbo选型建议 
+* 专家经验：Spring Cloud Alibaba和Dubbo选型建议 
  
- *专家经验：sca官网介绍 
+ * 专家经验：sca官网介绍 
  
- *专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
+ * 专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
 
 
  <font color="#949494">---------------</font> 
