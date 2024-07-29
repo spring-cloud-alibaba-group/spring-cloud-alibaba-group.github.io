@@ -14,9 +14,9 @@ export const TOPBAR = {
 }
 // TODO: 配置algolia
 export const ALGOLIA = {
-  appId: '1QV814950M',
-  apiKey: '7445da3dec050d45d29f3fe93ed45af3',
-  indexName: 'nacos'
+  appId: 'S5T5EPDFWK',
+  apiKey: 'f79c0543654b1070280af9f513bff8ee',
+  indexName: 'sca-aliyun'
 }
 
 // 文档根据版本区分的提示banner
