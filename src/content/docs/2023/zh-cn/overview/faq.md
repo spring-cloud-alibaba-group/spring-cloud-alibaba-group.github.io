@@ -102,7 +102,7 @@ Spring Cloud Alibaba：Alibaba 提供的基于 Spring Cloud 编程模型实现�
 
 **A：**
 
-参考相关博文，[基于网关实现 Spring Cloud 服务发现与路由](../../../blog/SCA-Higress-Routing)
+参考相关博文，[基于网关实现 Spring Cloud 服务发现与路由](../../../../blog/sca-higress-routing/)
 
 ---
 
