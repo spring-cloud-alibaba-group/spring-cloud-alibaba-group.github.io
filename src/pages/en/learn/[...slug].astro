@@ -13,12 +13,7 @@ import Pagination from "@astrojs/starlight/components/Pagination.astro";
 const t = useTranslations(Astro);
 
 export async function getStaticPaths() {
-	const posts = await getCollection("faq");
-	const introPost = await getCollection(
-		"blog",
-		(item) => item.slug === "wuyi-intro",
-	);
-	posts.unshift(...introPost);
+	const posts = await getCollection("learn");
 	return posts.map((post) => ({
 		params: { slug: post.slug },
 		props: post,
@@ -26,26 +21,29 @@ export async function getStaticPaths() {
 }
 
 const blogArticle = {
+	article: "blog.article.technical",
+	case: "blog.article.case.best.practices",
+	ecosystem: "blog.article.ecosystem.articles",
+	announcement: "blog.activity.community.announcement",
+	release: "blog.activity.release.statement",
+	committer: "page.blog.news.personnel.promotion",
+	cooperate: "page.blog.news.community.cooperation",
+	"activity-preview": "blog.activity.preview.event",
+	"activity-detail": "blog.activity.detail.event",
 	expertConsultation: "wuyi.meet-professor.title",
 };
 
-type Props = CollectionEntry<"faq">;
+type Props = CollectionEntry<"learn">;
 
 const post = Astro.props;
 
 const { Content, headings } = await post.render();
 
-const posts = await getCollection("faq");
-
-const introPost = await getCollection(
-	"blog",
-	(item) => item.slug === "wuyi-intro",
-);
+const posts = await getCollection("learn");
 
 const sortedPosts = posts.sort(
 	(a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf(),
 );
-sortedPosts.unshift(...introPost);
 
 const articlePosts = [
 	{
@@ -65,14 +63,12 @@ sortedPosts.forEach((item) => {
 		articlePosts[0].entries.push({
 			type: "link",
 			label: item.data.title,
-			href: `/faq/${item.slug}/`,
+			href: `/learn/${item.slug}/`,
 			isCurrent: post.id === item.id,
 			attrs: {},
 		});
 	}
 });
-
-sortedPosts.push(introPost);
 
 const prev = articlePosts[0].entries[currentIndex - 1];
 const next = articlePosts[0].entries[currentIndex + 1];
@@ -104,7 +100,7 @@ const description = post?.data?.description || "";
 				<BlogPost {...post.data}>
 					<Content />
 				</BlogPost>
-				<nav class="pb-6">
+				<div class="pb-6">
 					{
 						(prev || next) && (
 							<Pagination
@@ -123,7 +119,7 @@ const description = post?.data?.description || "";
 							/>
 						)
 					}
-				</nav>
+				</div>
 			</div>
 			<div
 				class="right-sidebar-panel w-[18%] fixed h-full hidden 2xl:inline-block xl:inline-block"
@@ -152,7 +148,7 @@ const description = post?.data?.description || "";
 				if (source && source !== "undefined") {
 					newPathname = `/${source}/`;
 				} else {
-					newPathname = "/blog/";
+					newPathname = "/learn/";
 				}
 				const newUrl = `${newPathname}?${params.toString()}`;
 

@@ -10,7 +10,7 @@ export const TOPBAR = {
     "mobileText": "欢迎报名8月2日上海首个AI原生应用架构开源沙龙！",
     "link": "https://summit.aliyun.com/cloudnative2024_developer_shanghai?spm=5176.20960838.0.0.7802305eyqMQf8",
     "target": "_blank",
-    "display": true
+    "display": false
 }
 // TODO: 配置algolia
 export const ALGOLIA = {
@@ -522,6 +522,14 @@ export const COMMUNITY_MENU_LIST = [
         link: 'https://github.com/alibaba/spring-cloud-alibaba/graphs/contributors',
         translations: {
           en: "Contributors",
+        },
+      },
+      {
+        label: '贡献者指南',
+        target: "_blank",
+        link: '/docs/developer/contributor-guide/new-contributor-guide_dev/',
+        translations: {
+          en: "Contributor Guides",
         },
       },
     ],

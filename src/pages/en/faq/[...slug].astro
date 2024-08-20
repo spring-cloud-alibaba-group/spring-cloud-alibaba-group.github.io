@@ -104,7 +104,7 @@ const description = post?.data?.description || "";
 				<BlogPost {...post.data}>
 					<Content />
 				</BlogPost>
-				<nav class="pb-6">
+				<div class="pb-6">
 					{
 						(prev || next) && (
 							<Pagination
@@ -123,7 +123,7 @@ const description = post?.data?.description || "";
 							/>
 						)
 					}
-				</nav>
+				</div>
 			</div>
 			<div
 				class="right-sidebar-panel w-[18%] fixed h-full hidden 2xl:inline-block xl:inline-block"
