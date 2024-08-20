@@ -47,12 +47,12 @@ const { stargazers_count=0, forks_count=0 }:StarAndForkT = await sendFetch("http
             class="introduce flex flex-col justify-center items-center  min-h-[366px]"
         >
             <div class="top-section flex flex-col relative mb-[111px]">
-                <div class="introduce_about pt-6 pb-4 text-warning text-xs mt-[2.375rem]">
+                <h1 class="font-light introduce_about pt-6 pb-4 text-warning text-xs mt-[2.375rem]">
                     {t("home.introduce.about")}
-                </div>
-                <div class=`title leading-[5rem] text-neutral mb-8 ${ifzh ? 'text-[3.75rem]' : 'text-[4rem]'}`>
+                </h1>
+                <p class=`title leading-[5rem] text-neutral mb-8 ${ifzh ? 'text-[3.75rem]' : 'text-[4rem]'}`>
                     {t("home.introduce.title")}
-                </div>
+                </p>
                 <StarAndForkV2 client:load SITE={SITE} stargazers_count={stargazers_count} forks_count={forks_count} />
             </div>
         </home-introduce>

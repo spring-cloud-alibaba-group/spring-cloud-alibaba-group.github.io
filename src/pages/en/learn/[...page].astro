@@ -29,6 +29,7 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
     );
     return paginate(sortedPosts, { pageSize: 9 });
 }
+const title_after = page.currentPage > 1? '_' + page.currentPage:'';
 ---
 
 <BaseLayout title="SCA Learn">
