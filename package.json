@@ -20,7 +20,7 @@
     "@iconify-json/ant-design": "^1.1.15",
     "@iconify-json/basil": "^1.1.5",
     "@iconify-json/tabler": "^1.1.108",
-    "@serverless-cd/goat-ui": "^0.0.29-beta.4",
+    "@serverless-cd/goat-ui": "^0.0.30",
     "astro": "4.9.1",
     "astro-compress": "^2.2.11",
     "date-fns": "^3.4.0",
