@@ -31,7 +31,7 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 }
 ---
 
-<BaseLayout title="SCA Blog">
+<BaseLayout title={t("blog.all.articles")} channel={t("commmon.header.comm.blog")}>
     <div class="bg-base-100">
         <BlogTop 
             title={t("blog.all.articles")} 

@@ -8,7 +8,7 @@ import { getEntries } from "astro:content";
 export const TOPBAR = {
     "text": "8月2日（周五）开源沙龙首个 AI 原生应用架构专场 | 上海站 ，欢迎报名！",
     "mobileText": "欢迎报名8月2日上海首个AI原生应用架构开源沙龙！",
-    "link": "https://summit.aliyun.com/cloudnative2024_developer_shanghai?spm=5176.20960838.0.0.7802305eyqMQf8",
+    "link": "https://summit.aliyun.com/cloudnative2024_developer_shanghai",
     "target": "_blank",
     "display": false
 }
@@ -587,22 +587,22 @@ export const SOLUTIONS_CARD_LIST = [
   {
     title: "commmon.header.microservices.engine",
     description: "commmon.header.microservices.engine.describe",
-    href: "https://help.aliyun.com/zh/mse/use-cases/implement-high-availability-capabilities-of-mse-microservices-registry?spm=a2c4g.11186623.0.0.102a27e0juv8vG",
+    href: "https://help.aliyun.com/zh/mse/use-cases/implement-high-availability-capabilities-of-mse-microservices-registry",
   },
   {
     title: "commmon.header.microservices.cloud.native.gateway",
     description: "commmon.header.microservices.cloud.native.gateway.describe",
-    href: "https://developer.aliyun.com/article/1265016?spm=5176.21213303.J_qCOwPWspKEuWcmp8qiZNQ.10.c89e2f3dQa2WtF&scm=20140722.S_community@@%E6%96%87%E7%AB%A0@@1265016._.ID_community@@%E6%96%87%E7%AB%A0@@1265016-RL_%E4%BA%91%E5%8E%9F%E7%94%9F%E7%BD%91%E5%85%B3%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%AE%89%E5%85%A8%E9%98%B2%E6%8A%A4%E8%83%BD%E5%8A%9B-LOC_llm-OR_ser-V_3-RK_rerank-P0_2",
+    href: "https://developer.aliyun.com/article/1265016",
   },
   {
     title: "commmon.header.microservices.governance",
     description: "commmon.header.microservices.governance.describe",
-    href: "https://help.aliyun.com/zh/mse/use-cases/implement-an-end-to-end-canary-release-by-using-mse-cloud-native-gateways?spm=a2c4g.11186623.0.i3",
+    href: "https://help.aliyun.com/zh/mse/use-cases/implement-an-end-to-end-canary-release-by-using-mse-cloud-native-gateways",
   },
   {
     title: "commmon.header.microservices.application.service",
     description: "commmon.header.microservices.application.service.describe",
-    href: "https://help.aliyun.com/zh/arms/?spm=5176.8140086.J_5253785160.8.3e87be45mtM0kX",
+    href: "https://help.aliyun.com/zh/arms/",
   },
 ];
 

@@ -32,7 +32,7 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 }
 ---
 
-<BaseLayout title="SCA Learn">
+<BaseLayout title={t("learn.article.spring")} channel={t("commmon.header.comm.learn")}>
     <BlogTop 
         title={t("learn.article.spring")} 
         type="learn-sub" 

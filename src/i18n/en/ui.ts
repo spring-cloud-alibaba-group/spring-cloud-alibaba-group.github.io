@@ -21,6 +21,8 @@ export default {
 	'commmon.header.comm.rightcut': 'An easy-to-use platform for building cloud native applications',
 	'commmon.header.comm.contact': 'CONTACT US',
 	'commmon.header.common.translator': 'EN',
+	'commmon.header.title.alibaba.cloud': 'Alibaba Cloud',
+	'commmon.header.title.official.website': 'Official Website',
 	'commmon.header.contact.git': 'GitHub',
 	'commmon.header.contact.ding': 'DingDing',
 	'commmon.header.contact.mail': 'E-mail',

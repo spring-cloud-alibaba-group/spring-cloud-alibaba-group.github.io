@@ -24,6 +24,8 @@ export default {
 	'commmon.header.comm.rightcut': '一个易于使用的构建云原生应用程序的平台。',
 	'commmon.header.comm.contact': '联系我们',
 	'commmon.header.common.translator': '中文',
+	'commmon.header.title.alibaba.cloud': '阿里云',
+	'commmon.header.title.official.website': '官网',
 	'commmon.header.contact.git': 'GitHub',
 	'commmon.header.contact.ding': '钉钉',
 	'commmon.header.contact.mail': '电子邮箱',	
