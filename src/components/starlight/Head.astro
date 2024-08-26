@@ -9,6 +9,8 @@ import type { Props } from "@starlight/props";
 import get from 'lodash.get';
 import { ANALYTICS } from "@utils/config";
 import { ViewTransitions } from "astro:transitions";
+import { useTranslations } from "@i18n/util";
+const t = useTranslations(Astro);
 
 const {googleAnalytics,baiduAnalytics,aesAnalytics,clarityAlalytics} = ANALYTICS.vendors;
 
@@ -36,7 +38,7 @@ const headDefaults: z.input<ReturnType<typeof HeadConfigSchema>> = [
     },
     {
         tag: "title",
-        content: `${data.title} - ${config.title}`,
+        content: `${data.title}-${t("commmon.header.title.alibaba.cloud")}${config.title}${t("commmon.header.title.official.website")}`,
     },
     { tag: "link", attrs: { rel: "canonical", href: canonical?.href } },
     {

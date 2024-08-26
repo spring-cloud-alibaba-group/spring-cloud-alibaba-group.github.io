@@ -34,7 +34,7 @@ export default defineConfig({
 	},
 	integrations: [
 		starlight({
-			title: SITE.name + '官网',
+			title: SITE.name,
 			favicon: '/sca-icon.svg',
 			expressiveCode: {
 				themes: ['github-dark'], //TODO: 待调研
