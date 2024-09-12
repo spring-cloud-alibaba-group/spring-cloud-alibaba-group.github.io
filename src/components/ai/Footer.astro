@@ -6,7 +6,7 @@ const t = useTranslations(Astro);
 ---
 
 <footer-layout
-  class="home-footer w-full bg-secondary flex flex-col items-center py-10 mt-[7.5rem] px-[1rem]"
+  class="home-footer w-full bg-secondary flex flex-col items-center py-10 pt-[5rem]"
 >
   <slot name="after-footer" />
   <div
@@ -132,7 +132,7 @@ const t = useTranslations(Astro);
   </div>
 
   <div
-    class="w-[85.125rem] self-center divider divider-vertical bg-muted mt-10 mb-0 h-[0.05rem]"
+    class="w-[90rem] self-center divider divider-vertical bg-muted mt-10 mb-0 h-[0.05rem]"
   >
   </div>
   <!-- TODO: 底部水印 -->
@@ -156,7 +156,7 @@ const t = useTranslations(Astro);
       color: inherit; /* 继承父元素的颜色 */
     }
     .footer-top {
-      width: 85.125rem;
+      width: 90rem;
     }
     @media (min-width: 50rem) and (max-width: 86rem) {
       .home-footer {
