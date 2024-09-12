@@ -19,8 +19,9 @@ export type Props = {
   lang?: string;
   keywords?: string[] | string;
   align?: "home" | "docs";
+  showheader?: boolean;
 };
-const { title, description, keywords, align = "home", channel = "" } = Astro.props;
+const { title, description, keywords, align = "home", channel = "", showheader = true } = Astro.props;
 const headEntry = {
   data: {
     description: description,
@@ -57,7 +58,7 @@ Astro.props.lang = lang;
     />
   </head>
   <body data-spm="29160081">
-    <HomeHeader align={align} lang={Astro.props.lang} {...Astro.props} />
+    {showheader? <HomeHeader align={align} lang={Astro.props.lang} {...Astro.props} />:null}
     <slot />
   </body>
 </html>

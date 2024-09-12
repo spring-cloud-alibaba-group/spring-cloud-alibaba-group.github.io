@@ -94,6 +94,24 @@ export const CHOOSE_REASON_LIST: ChooseReason[] = [
     description: "home.website.edge.4.description",
   },
 ]
+// 核心特性
+export const CORE_FEATURE_LIST: ChooseReason[] = [
+  {
+    title: "home.website.ai.1.title",
+    svgKey: "aibox",
+    description: "home.website.ai.1.description",
+  },
+  {
+    title: "home.website.ai.2.title",
+    svgKey: "aibook",
+    description: "home.website.ai.2.description",
+  },
+  {
+    title: "home.website.ai.3.title",
+    svgKey: "aicen",
+    description: "home.website.ai.3.description",
+  }
+];
 
 // 合作客户反馈
 export const COMPANY_CUSTOMERS: Customer[] = [
