@@ -32,23 +32,35 @@ const t = useTranslations(Astro);
         />
         
         <div class="inline-block group relative ml-[1rem]">
-          <div
-            class={`
-                group inline-block border-none button-secondary bg-secondary
-                btn transition-shadow ease-in-out duration-200
-                flex items-center justify-center text-sm rounded-3xl no-underline 
-                link-button-bg-secondary xp-large h-large
-                rounded-3xl mr-4 text-neutral w-[9rem] font-light
-            `}
-          >
-            DING
-            <div class="absolute bottom-0 left-0 opacity-0 w-0 h-0 group-hover:opacity-100 group-hover:bottom-[3rem] group-hover:w-[22rem] group-hover:h-[21rem]">
-              <img 
-                class="w-full h-full"
-                alt="ding"
-                src="https://img.alicdn.com/imgextra/i2/O1CN01qZY6WJ25tz9FzTxMi_!!6000000007585-2-tps-426-406.png"
-              />
+          <div class="hidden lg:block xl:block">
+            <div
+              class={`
+                  group inline-block border-none button-secondary bg-secondary
+                  btn transition-shadow ease-in-out duration-200
+                  flex items-center justify-center text-sm rounded-3xl no-underline 
+                  link-button-bg-secondary xp-large h-large
+                  rounded-3xl mr-4 text-neutral w-[9rem] font-light
+              `}
+            >
+              DING
+              <div class="absolute bottom-0 left-0 opacity-0 w-0 h-0 group-hover:opacity-100 group-hover:bottom-[3rem] group-hover:w-[22rem] group-hover:h-[21rem]">
+                <img 
+                  class="w-full h-full"
+                  alt="ding"
+                  src="https://img.alicdn.com/imgextra/i2/O1CN01qZY6WJ25tz9FzTxMi_!!6000000007585-2-tps-426-406.png"
+                />
+              </div>
             </div>
+          </div>
+          
+          <div class="block lg:hidden xl:hidden">
+            <LinkButton  
+              class="md:hidden"
+              href={"https://img.alicdn.com/imgextra/i4/O1CN01ar15Ju1wDXuIxjk4s_!!6000000006274-2-tps-864-856.png"}
+              text="DING"    
+              theme="secondary"    
+              textTheme="neutral" 
+            />
           </div>
         </div>
        </div>
