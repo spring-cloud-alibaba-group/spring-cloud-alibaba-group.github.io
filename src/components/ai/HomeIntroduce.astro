@@ -8,11 +8,9 @@ import { SITE } from "@utils/config";
 const t = useTranslations(Astro);
 ---
 
-<div>
-  <div class="max-w-[90rem] min-h-[500px] mx-auto relative">
-    <ai-home-introduce
-      class="block md:w-full h-full bg-muted flex"
-    >
+<div class="bg-secondary ai-introduce">
+  <div class="max-w-[90rem] min-h-[500px] mx-auto relative home-ailink">
+    <ai-home-introduce class="block md:w-full h-full flex">
       <div class="absolute pl-[2.5rem]">
         <h1 class="cursor-pointer xl:pt-[8.625rem] lg:pt-[6.625rem] md:pt-[10rem] pt-[7.625rem] xl:text-[4.5rem] lg:text-[4rem] md:text-[3.5rem] sm:text-[3rem] text-[2rem] text-neutral">
           Spring AI Alibaba
@@ -24,7 +22,7 @@ const t = useTranslations(Astro);
           <Button 
             size="large"
 				    class="rounded-3xl mr-4 text-base-100 w-[9rem]"
-            href={`${SITE.githubUrl}/fork`}
+            href="/ai/get-started/"
             target="_blank"
             type="primary"
             iconClass="text-base-100"
@@ -45,16 +43,6 @@ const t = useTranslations(Astro);
           </Button>
         </div>
       </div>
-
-      <img
-        class="cursor-pointer w-full md:h-[500px] flex hidden lg:inline-block"
-        src="https://img.alicdn.com/imgextra/i3/O1CN01MLx4AB1MAxV8Z6pGh_!!6000000001395-0-tps-5760-2000.jpg"
-      />
-    
-      <img 
-        class="cursor-pointer min-h-[500px] max-h-[800px] w-full lg:hidden"
-        src="https://img.alicdn.com/imgextra/i4/O1CN01EH1c9x1Xw62QgLKke_!!6000000002987-0-tps-3120-2928.jpg"
-      />
     </ai-home-introduce>
   </div>
 </div>
@@ -77,3 +65,36 @@ const t = useTranslations(Astro);
 
   customElements.define("ai-home-introduce", AiHomeIntroduce);
 </script>
+
+<style is:global>
+.ai-introduce {
+  .home-ailink {
+      background: url('https://img.alicdn.com/imgextra/i3/O1CN01MLx4AB1MAxV8Z6pGh_!!6000000001395-0-tps-5760-2000.jpg') no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+  }
+
+  @media (max-width: 50rem) {
+    .home-ailink {
+      /* background-position: -15rem 0!important; */
+      background: url('https://img.alicdn.com/imgextra/i4/O1CN01EH1c9x1Xw62QgLKke_!!6000000002987-0-tps-3120-2928.jpg') no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+      min-height: 500px;
+    }
+  }
+  @media (min-width: 50rem) and (max-width: 65rem) {
+    .home-ailink {
+      background: url('https://img.alicdn.com/imgextra/i4/O1CN01EH1c9x1Xw62QgLKke_!!6000000002987-0-tps-3120-2928.jpg') no-repeat;
+      background-size: cover;
+      background-position: 0 -5rem;
+      min-height: 500px;
+    }
+  }
+  @media (min-width: 65rem) and (max-width: 80rem) {
+    .home-ailink {
+      background-position: -5rem 0;
+    }
+  }
+}
+</style>

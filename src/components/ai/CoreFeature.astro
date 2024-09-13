@@ -7,8 +7,8 @@ import { Aibox, Aibook, Aicen } from "../icon";
 const t = useTranslations(Astro);
 ---
 
-<div>
-  <div class="mx-auto choose-reason-ai-wrapper mt-[7.5rem]">
+<div class="bg-secondary">
+  <div class="mx-auto choose-reason-ai-wrapper pt-[5rem] max-w-[90rem]">
     <Headline
       tagline={t("home.website.core.features")}
       title={t("home.website.ai.title")}
@@ -16,7 +16,7 @@ const t = useTranslations(Astro);
       taglineTheme="info"
     />
 
-    <ul class="p-0 flex flex-wrap justify-center mt-[6.25rem]">
+    <ul class="p-0 flex flex-wrap justify-center mt-[5rem]">
       {
           CORE_FEATURE_LIST.map((reason) => {
             const { title, svgKey, description } = reason;
@@ -56,9 +56,9 @@ const t = useTranslations(Astro);
 <style is:global>
   .choose-reason-ai-wrapper {
     .card-item-wrapper {
-      max-width: 21rem;
       margin-right: 1rem;
       overflow: none;
+      flex: 1;
     }
     .card-item-bg {
       background: linear-gradient(56deg, #9DD7A2 47%, #A5C6E6 100%, rgba(143, 168, 166, 0.47) 100%);
@@ -69,19 +69,17 @@ const t = useTranslations(Astro);
       margin-right: 0;
     }
 
-
-
     @media (max-width: 65rem) {
       .card-item-wrapper {
         max-width: 100%;
         width: 100%;
         margin: 0 1rem 1rem;
+        flex: 0 1 auto;
       }
       .card-item-wrapper:last-of-type {
         margin-right: 1rem;
       }
     }
-
 
     .card-item-icon {
       background: theme("colors.primary");
