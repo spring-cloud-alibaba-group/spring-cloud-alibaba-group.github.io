@@ -13,11 +13,11 @@ const {
 
 <div 
     id="carousel-wrapper" 
-    class=" relative flex flex-col justify-center items-center bg-muted" 
+    class="max-w-[90rem] mx-auto relative flex flex-col justify-center items-center bg-base-100" 
     data-duration={duration}
     data-useduration={useduration}
 >
-    <div class="md:w-[85.125rem] ">
+    <div class="lg:max-w-[90rem] w-full">
         <div class="carousel-item block">
             <slot name="prev"></slot>
         </div>
@@ -28,7 +28,7 @@ const {
     </div>
 
     <!-- 轮播控制按钮 -->
-    <div class='md:w-[85.125rem] absolute bottom-[20px] md:left-auto left-[20px]' >
+    <div class='max-w-[85.125rem] absolute bottom-[20px] left-[2.5rem]' >
     
     <div class="w-[112px]  flex justify-between ">
         <div id="prev" class="cursor-pointer group">
