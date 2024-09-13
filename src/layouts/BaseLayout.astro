@@ -17,7 +17,7 @@ export type Props = {
   channel?: string;
   description?: string;
   lang?: string;
-  keywords?: string[] | string;
+  keywords?: string | (string | number)[];
   align?: "home" | "docs";
   showheader?: boolean;
 };
@@ -25,7 +25,7 @@ const { title, description, keywords, align = "home", channel = "", showheader =
 const headEntry = {
   data: {
     description: description,
-    keywords: keywords || t("commmon.base.layout.keywords"),
+    keywords: (keywords && keywords.length > 0) ? keywords : t("commmon.base.layout.keywords"),
     title: `${title}${channel? "_":""}${channel}`,
     head: [],
   },
