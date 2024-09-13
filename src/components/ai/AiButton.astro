@@ -1,0 +1,33 @@
+---
+import { useTranslations } from "@i18n/util";
+import Button from "@components/home/StarAndForkV2/Button.jsx";
+import Video from "@components/home/StarAndForkV2/Video.jsx";
+import { SITE } from "@utils/config";
+
+const t = useTranslations(Astro);
+---
+
+<div class="flex">
+  <Button 
+    size="large"
+    class="rounded-3xl mr-4 text-base-100 w-[9rem]"
+    href="/ai/get-started/"
+    target="_blank"
+    type="primary"
+    iconClass="text-base-100"
+  >
+    <Video theme="light" class="text-base-100"/>
+    {t('commmon.footer.actions.start')}
+  </Button>
+
+  <Button 
+    size="large"
+    class="rounded-3xl mr-4 text-neutral w-[9rem]"
+    href={SITE.githubUrl} 
+    target="_blank"
+    type="secondary"  
+    iconClass="text-neutral"
+  >
+    GITHUB
+  </Button>
+</div>
