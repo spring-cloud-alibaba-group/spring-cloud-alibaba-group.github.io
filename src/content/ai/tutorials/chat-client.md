@@ -75,10 +75,12 @@ AI 模型的响应是一种由[ChatResponse](https://docs.spring.io/spring-ai/re
 
 下面的代码段显示了通过调用 `chatResponse()` 返回 `ChatResponse` 的示例，相比于调用 `content()` 方法，这里在调用 `call()` 方法之后调用 `chatResponse()`。
 
+```java
     ChatResponse chatResponse = chatClient.prompt()
         .user("Tell me a joke")
         .call()
         .chatResponse();
+````
 
 ### 返回实体类（Entity）
 
@@ -93,10 +95,12 @@ AI 模型的响应是一种由[ChatResponse](https://docs.spring.io/spring-ai/re
 
 您可以使用该 `entity` 方法轻松地将 AI 模型的输出映射到 ActorFilms 类型，如下所示：
 
+```java
     ActorFilms actorFilms = chatClient.prompt()
         .user("Generate the filmography for a random actor.")
         .call()
         .entity(ActorFilms.class);
+```
 
 `entity` 还有一种带有参数的重载方法 `entity(ParameterizedTypeReference<T> type)`，可让您指定如泛型 List 等类型：
 
@@ -140,11 +144,13 @@ AI 模型的响应是一种由[ChatResponse](https://docs.spring.io/spring-ai/re
 *   `Flux<ChatResponse> chatResponse()`：返回对象的 Flux `ChatResponse`，其中包含有关响应的附加元数据。
 
 ## 定制 ChatClient 默认值
+
 在前面 ChatClient 的初步体验中，我们使用 `ChatClient.Builder.build()` 快速创建了一个 ChatClient 实例，**开发者还可以通过修改 `ChatClient.Builder` 定制 ChatClient 实例**。
 
 注意，**创建 ChatClient 时指定的配置将作为与模型交互时的默认参数，这样可以避免每次调用都重复设置**。
 
 ### 设置默认 System Message
+
 在以下示例中，我们为 ChatClient 设置了一个默认的 system message（以海盗风格回答所有问题），这样，当 ChatClient 与模型交互时都会自动携带这条 system message，用户只需要指定 user message 即可。
 
 ```java
