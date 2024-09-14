@@ -42,10 +42,10 @@ const { stargazers_count=0, forks_count=0 }:StarAndForkT = await sendFetch("http
 
         <home-introduce
             slot="next"
-            class="introduce flex flex-col justify-center items-center  min-h-[31.25rem] h-[31.25rem]"
+            class="introduce flex flex-col justify-center items-center h-full min-h-[31.25rem]"
         >
-            <div class="top-section flex flex-col relative mb-[111px]">
-                <h1 class="font-light introduce_about pt-6 pb-4 text-warning text-xs mt-[2.375rem]">
+            <div class="top-section flex flex-col relative">
+                <h1 class="font-light introduce_about pt-6 pb-4 text-warning text-xs">
                     {t("home.introduce.about")}
                 </h1>
                 <p class=`title leading-[5rem] text-neutral mb-8 ${ifzh ? 'lg:text-[3.75rem] text-[2.75rem]' : 'text-[4rem]'}`>
