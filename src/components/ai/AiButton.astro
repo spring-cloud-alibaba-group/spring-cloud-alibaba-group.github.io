@@ -2,7 +2,6 @@
 import { useTranslations } from "@i18n/util";
 import Button from "@components/home/StarAndForkV2/Button.jsx";
 import Video from "@components/home/StarAndForkV2/Video.jsx";
-import { SITE } from "@utils/config";
 
 const t = useTranslations(Astro);
 ---
@@ -23,7 +22,7 @@ const t = useTranslations(Astro);
   <Button 
     size="large"
     class="rounded-3xl mr-4 text-neutral w-[9rem]"
-    href={SITE.githubUrl} 
+    href="https://github.com/alibaba/spring-ai-alibaba"
     target="_blank"
     type="secondary"  
     iconClass="text-neutral"
