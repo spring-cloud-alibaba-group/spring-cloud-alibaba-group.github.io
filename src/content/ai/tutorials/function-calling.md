@@ -60,7 +60,11 @@ Response 2:
 
 其中，函数定义如下：
 ```java
-
+@Bean
+@Description("Get the weather in location") // function description
+public Function<MockWeatherService.Request, MockWeatherService.Response> weatherFunction1() {
+	return new MockWeatherService();
+}
 ```
 
 正如你所看到的，当 LLM 可以访问工具时，它可以在合适的情况下决定调用其中一个工具，这是一个非常强大的功能。在这个简单的示例中，我们给 LLM 提供了基本的数学工具，但想象一下，如果我们给它提供了，比如说，googleSearch 和 sendEmail 工具，并且有一个查询像是“我的朋友想了解 AI 领域的最新新闻。将简短的总结发送到 friend@email.com”，那么它可以使用 googleSearch 工具查找最新新闻，然后总结这些信息并通过 sendEmail 工具将总结发送到指定的邮箱。
@@ -129,6 +133,66 @@ public record Request(String location, Unit unit) {}
 ```
 
 最佳做法是使用信息注释请求对象，以便该函数生成的 JSON 模式尽可能具有描述性，以帮助 AI 模型选择要调用的正确函数。
+
+如果已经有定义的@Service，那么可以通过以下方式来通过function call来调用已有的service的方法。
+```java
+// 1. 已存在的MockOrderService
+@Service
+public class MockOrderService {
+    public Response getOrder(Request request) {
+        String productName = "尤尼克斯羽毛球拍";
+        return new Response(String.format("%s的订单编号为%s, 购买的商品为: %s", request.userId, request.orderId, productName));
+    }
+
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public record Request(
+            //这里的JsonProperty将转换为function的parameters信息, 包括参数名称和参数描述等
+            /*
+             {
+                "orderId": {
+                    "type": "string",
+                    "description": "订单编号, 比如1001***"
+                    },
+                "userId": {
+                    "type": "string",
+                    "description": "用户编号, 比如2001***"
+                }
+            }
+            */
+            @JsonProperty(required = true, value = "orderId") @JsonPropertyDescription("订单编号, 比如1001***") String orderId,
+            @JsonProperty(required = true, value = "userId") @JsonPropertyDescription("用户编号, 比如2001***") String userId) {
+    }
+
+    public record Response(String description) {
+    }
+}
+
+//2. 将MockOrderService的getOrder注册为function call的bean
+@Configuration
+public class FunctionCallConfiguration {
+    @Bean
+    @Description("根据用户编号和订单编号查询订单信息")  //function的描述
+    public Function<MockOrderService.Request, MockOrderService.Response> getOrderFunction(MockOrderService mockOrderService) {
+        return mockOrderService::getOrder;
+    }
+}
+
+//3. 调用function call
+DashScopeChatModel dashscopeChatModel = ...;
+ChatClient chatClient = ChatClient.builder(dashscopeChatModel)
+        .defaultFunctions("getOrderFunction")
+        .build();
+
+ChatResponse response = chatClient
+        .prompt()
+        .user("帮我一下订单, 用户编号为1001, 订单编号为2001")
+        .call()
+        .chatResponse();
+
+String content = response.getResult().getOutput().getContent();
+logger.info("content: {}", content);
+
+```
 
 > 还有一种函数注册方式是使用 `FunctionCallbackWrapper`，具体请查看示例仓库中的源码。
 

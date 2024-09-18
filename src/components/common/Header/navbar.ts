@@ -57,13 +57,13 @@ export default [
     activePath: ["/learn"],
   },
   {
-    label: "答疑样例",
+    label: "Spring AI Alibaba",
     translations: {
-      en: "FAQ",
+      en: "Spring AI Alibaba",
     },
     trigger: "click",
     target: "_self",
-    route: "/faq/wuyi-intro/",
-    activePath: ["/faq/wuyi-intro/"],
+    route: "/ai/",
+    activePath: ["/ai/"],
   },
 ];

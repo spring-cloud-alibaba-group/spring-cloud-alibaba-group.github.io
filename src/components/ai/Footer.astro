@@ -25,7 +25,7 @@ const t = useTranslations(Astro);
       </p>
       <div class="flex">
         <LinkButton  
-          href={SITE.githubUrl}
+          href="https://github.com/alibaba/spring-ai-alibaba"
           text="GitHub"    
           theme="secondary"    
           textTheme="neutral" 
@@ -85,7 +85,7 @@ const t = useTranslations(Astro);
           </li>
           <li>
             <a
-              href="/docs/2023/user-guide/nacos/quick-start//"
+              href="/ai/get-started/"
               class="text-[.875rem] font-medium leading-5 tracking-normal mb-4 no-underline"
             >
               {t("commmon.footer.actions.start")}
@@ -93,7 +93,8 @@ const t = useTranslations(Astro);
           </li>
           <li>
             <a
-              href="/docs/developer/contributor-guide/new-contributor-guide_dev/"
+              href="https://github.com/alibaba/spring-ai-alibaba"
+              target="_blank"
               class="text-[.875rem] font-medium leading-5 tracking-normal mb-4 no-underline"
             >
               {t("commmon.footer.actions.guide")}
@@ -108,14 +109,6 @@ const t = useTranslations(Astro);
           {t("commmon.footer.resource")}
         </p>
         <ul class="list-none w-full h-4 ps-0 text-warning">
-          <li>
-            <a
-              href="/docs/ebook/srekog/"
-              class="text-[.875rem] font-medium leading-5 tracking-normal mb-4 no-underline"
-            >
-              {t("commmon.footer.actions.comm")}
-            </a>
-          </li>
           <li>
             <!-- TODO: 企业版链接 -->
             <a
