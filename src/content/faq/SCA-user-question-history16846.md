@@ -4,6 +4,8 @@ title: "Spring Boot 中的 starter 到底是什么  能不能讲讲原理"
 date: "2024-09-09"
 category: "expertConsultation"
 description: "在您的问题之前，让我们首先明确一下Spring Boot中的Starter概念，然后再结合Sca(Spring Cloud Alibaba)的上下文进行解析。### Spring Boot Starter 原理简述Spring Boot的一个核心设计理念是“约定优于配置”，Starter正是这一理念"
+tags: ["Spring","Boot","starter","自动配置","原理","依赖管理","微服务"]
+keywords: ["Spring","Boot","starter","自动配置","原理","依赖管理","微服务"]
 ---
 
 ## 用户问题 ： 
@@ -57,7 +59,12 @@ Sca(Spring Cloud Alibaba)中的Starter是实现快速集成阿里云微服务技
 
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>,使用方法：
+用法1： 在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。
+用法2： 点击[专家答疑页](https://answer.opensource.alibaba.com/docs/intro)（针对部分网站不支持插件嵌入的情况）
+### 另：
 
+
+有其他开源产品的使用问题？[点击访问阿里AI专家答疑服务](https://answer.opensource.alibaba.com/docs/intro)。
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=16865)给我们反馈。

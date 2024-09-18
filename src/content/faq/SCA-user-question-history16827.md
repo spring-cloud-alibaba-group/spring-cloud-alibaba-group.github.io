@@ -4,6 +4,8 @@ title: "springboot每个web请求是一个线程吗？"
 date: "2024-09-09"
 category: "expertConsultation"
 description: "根据我了解的知识，Spring Cloud Alibaba 是一个为微服务开发提供一站式解决方案的框架，它建立在Spring Cloud之上，旨在简化分布式应用的构建过程。然而，关于您的问题——Spring Boot每个web请求是否是一个线程？，这实际上涉及到的是Spring Boot及Servl"
+tags: ["spring-cloud-alibaba","springboot","web","请求","线程"]
+keywords: ["spring-cloud-alibaba","springboot","web","请求","线程"]
 ---
 
 ## 用户问题 ： 
@@ -39,7 +41,12 @@ description: "根据我了解的知识，Spring Cloud Alibaba 是一个为微服
 
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>,使用方法：
+用法1： 在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。
+用法2： 点击[专家答疑页](https://answer.opensource.alibaba.com/docs/intro)（针对部分网站不支持插件嵌入的情况）
+### 另：
 
+
+有其他开源产品的使用问题？[点击访问阿里AI专家答疑服务](https://answer.opensource.alibaba.com/docs/intro)。
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=16861)给我们反馈。

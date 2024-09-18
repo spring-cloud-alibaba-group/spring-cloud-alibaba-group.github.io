@@ -4,6 +4,8 @@ title: "spring boot 和微服务的关系"
 date: "2024-09-09"
 category: "expertConsultation"
 description: "Spring Boot 和微服务的关系可以从以下几个方面理解：1. **基础与框架**：首先，Spring Boot 是一个简化 Spring 应用开发的框架，它通过提供“约定优于配置”的原则、内嵌式服务器、自动配置等功能，极大地加快了单个应用程序的开发速度。而微服务是一种架构风格，它提倡将大型复杂"
+tags: ["sca","spring-cloud-alibaba","spring","boot","微服务","关系"]
+keywords: ["sca","spring-cloud-alibaba","spring","boot","微服务","关系"]
 ---
 
 ## 用户问题 ： 
@@ -51,7 +53,12 @@ Spring Boot 和微服务的关系可以从以下几个方面理解：
 
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>,使用方法：
+用法1： 在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。
+用法2： 点击[专家答疑页](https://answer.opensource.alibaba.com/docs/intro)（针对部分网站不支持插件嵌入的情况）
+### 另：
 
+
+有其他开源产品的使用问题？[点击访问阿里AI专家答疑服务](https://answer.opensource.alibaba.com/docs/intro)。
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=16858)给我们反馈。

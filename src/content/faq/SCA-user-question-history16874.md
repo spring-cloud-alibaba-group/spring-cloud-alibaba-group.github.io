@@ -4,6 +4,8 @@ title: "请问 Spring 事务的默认隔离级别是那个级别，谢谢？"
 date: "2024-09-09"
 category: "expertConsultation"
 description: "根据提供的我了解的知识, 显然没有直接涵盖关于Spring事务默认隔离级别的信息。但是，作为一个熟悉Spring框架的助手，我可以解答您的问题。Spring事务的默认隔离级别是 **ISOLATION_DEFAULT**，这实际上委托给了底层数据库的默认隔离级别，大多数情况下，默认隔离级别为 **R"
+tags: ["Spring","事务","默认","隔离","级别"]
+keywords: ["Spring","事务","默认","隔离","级别"]
 ---
 
 ## 用户问题 ： 
@@ -33,7 +35,12 @@ Spring事务的默认隔离级别是 **ISOLATION_DEFAULT**，这实际上委托�
 
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>,使用方法：
+用法1： 在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。
+用法2： 点击[专家答疑页](https://answer.opensource.alibaba.com/docs/intro)（针对部分网站不支持插件嵌入的情况）
+### 另：
 
+
+有其他开源产品的使用问题？[点击访问阿里AI专家答疑服务](https://answer.opensource.alibaba.com/docs/intro)。
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=16884)给我们反馈。

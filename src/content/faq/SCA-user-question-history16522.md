@@ -4,6 +4,8 @@ title: "Spring Cloud Alibaba AI支持私有化部署的通义千问吗"
 date: "2024-08-08"
 category: "expertConsultation"
 description: "内容如下：根据提供的知识内容，我们可以明确您的问题：**是的，Spring Cloud Alibaba AI 支持私有化部署的通义千问。**以下是分析及建议步骤：1. **依托知识分析问题原因：**   - 在知识内容中提到，Spring AI本身是一套开放的接口，允许用户自定义实现以调用本地模型。"
+tags: ["Spring","Cloud","Alibaba","通义千问","私有化","部署","AI"]
+keywords: ["Spring","Cloud","Alibaba","通义千问","私有化","部署","AI"]
 ---
 
 ## 用户问题 ： 
@@ -57,7 +59,12 @@ description: "内容如下：根据提供的知识内容，我们可以明确您
 
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>,使用方法：
+用法1： 在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。
+用法2： 点击[专家答疑页](https://answer.opensource.alibaba.com/docs/intro)（针对部分网站不支持插件嵌入的情况）
+### 另：
 
+
+有其他开源产品的使用问题？[点击访问阿里AI专家答疑服务](https://answer.opensource.alibaba.com/docs/intro)。
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=16529)给我们反馈。
