@@ -1,9 +1,6 @@
 ---
 import { useTranslations } from "@i18n/util";
-import Button from "@components/home/StarAndForkV2/Button.jsx";
-import Video from "@components/home/StarAndForkV2/Video.jsx";
-import { SITE } from "@utils/config";
-
+import AiButton from "@components/ai/AiButton.astro";
 
 const t = useTranslations(Astro);
 ---
@@ -18,30 +15,7 @@ const t = useTranslations(Astro);
         <p class=`cursor-pointer leading-[5rem] text-neutral mb-8 xl:text-[2rem] lg:text-[2rem] md:text-[2rem] sm:text-[1.5rem] text-[1rem]`>
             {t('home.website.ai.quickly.develop')}
         </p>
-        <div class="flex">
-          <Button 
-            size="large"
-				    class="rounded-3xl mr-4 text-base-100 w-[9rem]"
-            href="/ai/get-started/"
-            target="_blank"
-            type="primary"
-            iconClass="text-base-100"
-          >
-            <Video theme="light" class="text-base-100"/>
-            {t('commmon.footer.actions.start')}
-          </Button>
-
-          <Button 
-            size="large"
-				    class="rounded-3xl mr-4 text-neutral w-[9rem]"
-            href="https://github.com/alibaba/spring-ai-alibaba"
-            target="_blank"
-            type="secondary"  
-            iconClass="text-neutral"
-          >
-            GITHUB
-          </Button>
-        </div>
+        <AiButton />
       </div>
     </ai-home-introduce>
   </div>
