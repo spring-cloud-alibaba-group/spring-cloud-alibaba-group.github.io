@@ -148,6 +148,8 @@ public interface PromptTemplateActions extends PromptTemplateStringActions {
 
 ## 使用示例
 
+完整示例源码请参见 [prompt-example](https://github.com/alibaba/spring-ai-alibaba/tree/main/spring-ai-alibaba-examples/prompt-example)。
+
 ```java
 PromptTemplate promptTemplate = new PromptTemplate("Tell me a {adjective} joke about {topic}");
 
