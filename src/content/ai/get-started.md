@@ -12,7 +12,7 @@ Spring AI Alibaba 实现了与阿里云通义模型的完整适配，接下来�
 
 	```shell
 	git clone --depth=1 https://github.com/alibaba/spring-ai-alibaba.git
-	cd spring-ai-alibaba/spring-ai-alibaba-examples/helloworld
+	cd spring-ai-alibaba/spring-ai-alibaba-examples/helloworld-example
 	```
 
 2. 运行项目

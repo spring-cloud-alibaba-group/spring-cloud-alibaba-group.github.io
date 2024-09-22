@@ -4,6 +4,8 @@ title: "Could not find artifact org.springframework."
 date: "2024-06-14"
 category: "expertConsultation"
 description: "根据你的问题描述，你在尝试获取`org.springframework.ai:spring-ai-core:jar:0.8.1`依赖时遇到了找不到该组件的问题，并且你已经尝试了使用`-U`标志强制更新快照，但问题依旧存在。根据这些信息，我们可以分析并提供相应的建议。### 原因分析根据提供的知识内容"
+tags: ["sca","spring-cloud-alibaba","artifact","spring-ai-core","081","alimaven","maven"]
+keywords: ["sca","spring-cloud-alibaba","artifact","spring-ai-core","081","alimaven","maven"]
 ---
 
 ## 用户问题 ： 
@@ -72,7 +74,12 @@ description: "根据你的问题描述，你在尝试获取`org.springframework.
 
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>,使用方法：
+用法1： 在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。
+用法2： 点击[专家答疑页](https://answer.opensource.alibaba.com/docs/intro)（针对部分网站不支持插件嵌入的情况）
+### 另：
 
+
+有其他开源产品的使用问题？[点击访问阿里AI专家答疑服务](https://answer.opensource.alibaba.com/docs/intro)。
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=15342)给我们反馈。

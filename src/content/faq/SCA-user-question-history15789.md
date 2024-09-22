@@ -4,6 +4,8 @@ title: "spring ai alibaba 是否支持其他模型比如open ai？"
 date: "2024-06-20"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba 的 Spring AI 实际上是支持其他模型的，比如OpenAI。根据提供的知识内容，在Spring AI体系中，核心价值在于写一次代码就能支持所有模型。它通过接口的标准化设计，使得开发者能够轻松地在不同AI提供商之间切换，只要这些提供商的服务能够通过配置进"
+tags: ["spring-cloud-alibaba","spring","ai","alibaba","open","ai","模型"]
+keywords: ["spring-cloud-alibaba","spring","ai","alibaba","open","ai","模型"]
 ---
 
 ## 用户问题 ： 
@@ -53,7 +55,12 @@ Spring Cloud Alibaba 的 Spring AI 实际上是支持其他模型的，比如Ope
 
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>,使用方法：
+用法1： 在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。
+用法2： 点击[专家答疑页](https://answer.opensource.alibaba.com/docs/intro)（针对部分网站不支持插件嵌入的情况）
+### 另：
 
+
+有其他开源产品的使用问题？[点击访问阿里AI专家答疑服务](https://answer.opensource.alibaba.com/docs/intro)。
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=15790)给我们反馈。

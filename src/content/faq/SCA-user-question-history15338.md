@@ -4,6 +4,8 @@ title: "springboot 2.7.1 最适配那个版本的spring cloud alibab"
 date: "2024-09-11"
 category: "expertConsultation"
 description: "根据 我了解的知识 提供的信息，对于 Spring Boot 2.7.1，最适配的 Spring Cloud Alibaba 版本应该在 2021.x 分支中寻找，因为这个分支适配了 Spring Boot 2.4 及其以上版本，而 Spring Boot 2.7.1 属于这个范围内。在 2021."
+tags: ["spring-cloud-alibaba","springboot","271","版本"]
+keywords: ["spring-cloud-alibaba","springboot","271","版本"]
 ---
 
 ## 用户问题 ： 
@@ -41,7 +43,12 @@ description: "根据 我了解的知识 提供的信息，对于 Spring Boot 2.7
 
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>,使用方法：
+用法1： 在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。
+用法2： 点击[专家答疑页](https://answer.opensource.alibaba.com/docs/intro)（针对部分网站不支持插件嵌入的情况）
+### 另：
 
+
+有其他开源产品的使用问题？[点击访问阿里AI专家答疑服务](https://answer.opensource.alibaba.com/docs/intro)。
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=17078)给我们反馈。

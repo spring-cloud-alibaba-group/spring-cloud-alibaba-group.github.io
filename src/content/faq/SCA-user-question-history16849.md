@@ -4,6 +4,8 @@ title: "spring能否使用@value注入static final静态常量？"
 date: "2024-09-09"
 category: "expertConsultation"
 description: "在Java中，使用`@Value`注解从属性文件中注入值时，它通常用于实例字段，无法直接用于为静态final字段注入值，因为Spring的依赖注入发生在Bean实例化之后，而静态字段在类加载时就需要初始化完成，这早于Spring容器初始化的时间点。因此，按照标准做法，Spring框架不支持直接使用`"
+tags: ["sca","spring-cloud-alibaba","@value","注入","static","final","静态"]
+keywords: ["sca","spring-cloud-alibaba","@value","注入","static","final","静态"]
 ---
 
 ## 用户问题 ： 
@@ -59,7 +61,12 @@ public class AppConfig {
 
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>,使用方法：
+用法1： 在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。
+用法2： 点击[专家答疑页](https://answer.opensource.alibaba.com/docs/intro)（针对部分网站不支持插件嵌入的情况）
+### 另：
 
+
+有其他开源产品的使用问题？[点击访问阿里AI专家答疑服务](https://answer.opensource.alibaba.com/docs/intro)。
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=16868)给我们反馈。

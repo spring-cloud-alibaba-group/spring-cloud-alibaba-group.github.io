@@ -4,6 +4,8 @@ title: "nacos 2.2.3 对应的spring cloud alibaba依赖版本"
 date: "2024-07-18"
 category: "expertConsultation"
 description: "根据提供的知识内容，我们可以找到Nacos 2.2.3对应的Spring Cloud Alibaba依赖版本。查阅表格信息： **Spring Cloud Alibaba Version**  **Nacos Version**  ---  ---  2.2.9.RELEASE  2.1.0  2."
+tags: ["sca","spring-cloud-alibaba","nacos","223","版本","对应","依赖"]
+keywords: ["sca","spring-cloud-alibaba","nacos","223","版本","对应","依赖"]
 ---
 
 ## 用户问题 ： 
@@ -45,7 +47,12 @@ description: "根据提供的知识内容，我们可以找到Nacos 2.2.3对应�
 
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>,使用方法：
+用法1： 在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。
+用法2： 点击[专家答疑页](https://answer.opensource.alibaba.com/docs/intro)（针对部分网站不支持插件嵌入的情况）
+### 另：
 
+
+有其他开源产品的使用问题？[点击访问阿里AI专家答疑服务](https://answer.opensource.alibaba.com/docs/intro)。
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=16272)给我们反馈。

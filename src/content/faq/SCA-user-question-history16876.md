@@ -4,6 +4,8 @@ title: "vue如何和springboot整合  比如用post请求的话，具体点"
 date: "2024-09-09"
 category: "expertConsultation"
 description: "在整合Spring Cloud Alibaba的Spring Boot后端应用与Vue前端框架时，主要涉及前后端分离的架构设计，通过API接口进行交互。这里虽然没有直接的参考内容讲述Vue与Spring Boot的整合，但可以根据通用的前后端分离实践来指导。以下是基于RESTful API设计的Po"
+tags: ["spring-cloud-alibaba","vue","springboot","整合","post","请求"]
+keywords: ["spring-cloud-alibaba","vue","springboot","整合","post","请求"]
 ---
 
 ## 用户问题 ： 
@@ -120,7 +122,12 @@ description: "在整合Spring Cloud Alibaba的Spring Boot后端应用与Vue前�
 
 ## <font color="#FF0000">答疑服务说明：</font> 
 
-本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
+本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>,使用方法：
+用法1： 在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。
+用法2： 点击[专家答疑页](https://answer.opensource.alibaba.com/docs/intro)（针对部分网站不支持插件嵌入的情况）
+### 另：
 
+
+有其他开源产品的使用问题？[点击访问阿里AI专家答疑服务](https://answer.opensource.alibaba.com/docs/intro)。
 ### 反馈
 如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=16895)给我们反馈。
