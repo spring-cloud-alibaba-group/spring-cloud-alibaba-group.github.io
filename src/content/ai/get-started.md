@@ -25,10 +25,10 @@ Spring AI Alibaba 实现了与阿里云通义模型的完整适配，接下来�
 	启动示例应用：
 
 	```shell
-	./mvnw compile exec:java -Dexec.mainClass="com.alibaba.cloud.ai.example.helloworld.HelloworldExampleApplication"
+	./mvnw compile exec:java -Dexec.mainClass="com.alibaba.cloud.ai.example.helloworld.HelloWorldExampleApplication"
 	```
 
-	访问 `http://localhost:8080/chat?input=Tell me a joke`，向通义模型提问并得到回答。
+	访问 `http://localhost:8080/ai/chat?input=给我讲一个笑话吧`，向通义模型提问并得到回答。
 
 ## 示例开发指南
 以上示例本质上就是一个普通的 Spring Boot 应用，我们来通过源码解析看一下具体的开发流程。
@@ -45,12 +45,28 @@ Spring AI Alibaba 实现了与阿里云通义模型的完整适配，接下来�
 	</dependency>
 	```
 
+    > 注意：由于 spring-ai 相关依赖包还没有发布到中央仓库，如出现 spring-ai-core 等相关依赖解析问题，请在您项目的 pom.xml 依赖中加入如下仓库配置。
+    >
+    > ```xml
+    > <repositories>
+    > 	<repository>
+    > 		<id>spring-milestones</id>
+    > 		<name>Spring Milestones</name>
+    > 		<url>https://repo.spring.io/milestone</url>
+    > 		<snapshots>
+    > 			<enabled>false</enabled>
+    > 		</snapshots>
+    > 	</repository>
+    > </repositories>
+    > ```
+
 2. 注入 ChatClient
 
 	接下来，在普通 Controller Bean 中注入 `ChatClient` 实例，这样你的 Bean 就具备与 AI 大模型智能对话的能力了。
 
 	```java
 	@RestController
+    @RequestMapping("/ai")
 	public class ChatController {
 
 		private final ChatClient chatClient;
@@ -99,3 +115,4 @@ Spring AI Alibaba 实现了与阿里云通义模型的完整适配，接下来�
 ### 高级示例
 * [使用 RAG 开发 Q&A 答疑助手](./practices/rag)
 * [具备连续对话能力的聊天机器人](./practices/memory)
+*
