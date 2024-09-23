@@ -7,8 +7,8 @@ const t = useTranslations(Astro);
 const ifzh = isChinese(Astro);
 
 ---
-<div class="flex flex-col justify-center items-center pt-14 solution-wrapper bg-base-100 hidden md:flex">
-  <div class="lg:w-[85.125rem] md:w-full mb-[10px]">
+<div class="flex flex-col justify-center items-center pt-14 solution-wrapper bg-base-100 hidden md:flex max-w-[85.125rem] mx-auto">
+  <div class="w-full mb-[10px]">
     <h2
       class=`font-light solution-slogan h-[41px] text-success text-[16px] md:text-[20px] leading-4 rounded-[20px] px-5 py-3`
       class:list={[
@@ -21,7 +21,7 @@ const ifzh = isChinese(Astro);
       {t('home.product.introduce.title')}
     </h2>
   </div>
-  <ul class="p-0 flex justify-center items-center lg:w-[85.125rem] md:w-full flex-wrap">
+  <ul class="p-0 flex justify-center items-center w-full flex-wrap">
   {
     ProductDisplayCardData.map((item, index) => {
       return (

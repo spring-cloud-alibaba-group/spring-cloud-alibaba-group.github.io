@@ -76,7 +76,8 @@ const { stargazers_count=0, forks_count=0 }:StarAndForkT = await sendFetch("http
       color: theme("colors.neutral");
     }
     .top-section {
-      width: 85.125rem;
+      max-width: 85.125rem;
+      width: 100%;
       overflow: hidden;
     }
     .top-section .notes .pc-version-intro {
@@ -144,6 +145,7 @@ const { stargazers_count=0, forks_count=0 }:StarAndForkT = await sendFetch("http
       background: url('https://img.alicdn.com/imgextra/i2/O1CN019ckV3m1s2m7zNXIpc_!!6000000005709-0-tps-5760-2000.jpg') no-repeat;
       background-size: cover;
       background-position: 0 0;
+      padding: 0 2rem;
     }
     
     @media (min-width: 40rem) and (max-width: 50rem) { 
