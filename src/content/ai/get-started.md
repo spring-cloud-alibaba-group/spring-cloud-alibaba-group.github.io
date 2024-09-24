@@ -99,7 +99,7 @@ Spring AI Alibaba 实现了与阿里云通义模型的完整适配，接下来�
 				"Generate the names of 5 famous pirates.",
 				DashScopeChatOptions.builder()
 					.withModel("qwen-plus")
-					.withTemperature(0.4)
+					.withTemperature(0.4F)
 				.build()
 			));
 		```
