@@ -41,7 +41,7 @@ Spring AI Alibaba 实现了与阿里云通义模型的完整适配，接下来�
 	<dependency>
 		<groupId>com.alibaba.cloud.ai</groupId>
 		<artifactId>spring-ai-alibaba-starter</artifactId>
-		<version>1.0.0-m2</version>
+		<version>1.0.0-M2</version>
 	</dependency>
 	```
 
@@ -68,13 +68,13 @@ Spring AI Alibaba 实现了与阿里云通义模型的完整适配，接下来�
 	@RestController
     @RequestMapping("/ai")
 	public class ChatController {
-
+	
 		private final ChatClient chatClient;
-
+	
 		public ChatController(ChatClient.Builder builder) {
 			this.chatClient = builder.build();
 		}
-
+	
 		@GetMapping("/chat")
 		public String chat(String input) {
 			return this.chatClient.prompt()
