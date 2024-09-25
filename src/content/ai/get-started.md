@@ -7,6 +7,9 @@ description: "Spring AI 与通义千问集成，使用 Spring AI 开发 Java AI 
 Spring AI Alibaba 实现了与阿里云通义模型的完整适配，接下来，我们将学习如何使用 spring ai alibaba 开发一个基于通义模型服务的智能聊天应用。
 
 ## 快速体验示例
+
+> 注意：因为 Spring AI Alibaba 基于 Spring Boot 3.x 开发，因此本地 JDK 版本要求为 17 及以上。
+
 1. 下载项目
 	运行以下命令下载源码，进入 helloworld 示例目录：
 
