@@ -10,7 +10,7 @@ export const TOPBAR = {
     "mobileText": "云栖回顾 | 2024 云栖大会微服务和网关相关演讲材料",
     "link": "https://developer.aliyun.com/ebook/8379",
     "target": "_blank",
-    "display": false
+    "display": true
 }
 // TODO: 配置algolia
 export const ALGOLIA = {
