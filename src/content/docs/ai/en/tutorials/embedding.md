@@ -123,14 +123,15 @@ Spring AI Alibaba已经集成了`阿里云百炼平台`，接下来介绍基于�
 Spring AI 为 DashScope Embedding Model提供了 Spring Boot 的自动配置。要启用此功能，请将以下依赖项添加到您项目的 Maven`pom.xml`文件中：
 ```xml
 <dependency>
-    <groupId>org.springframework.ai</groupId>
-    <artifactId>spring-ai-dashscope-spring-boot-starter</artifactId>
+    <groupId>com.alibaba.cloud.ai</groupId>
+    <artifactId>spring-ai-alibaba-starter</artifactId>
+    <version>1.0.0-M2.1</version>
 </dependency>
 ```
 或者添加到您的Gradle`build.gradle`文件中：
 ```gradle
 dependencies {
-    implementation 'org.springframework.ai:spring-ai-dashscope-spring-boot-starter'
+    implementation 'com.alibaba.cloud.ai:spring-ai-alibaba-starter:1.0.0-M2.1'
 }
 ```
 #### Embedding Properties
@@ -184,34 +185,3 @@ public class EmbeddingController {
 }
 ```
 
-### Manual Configuration
-如果您不希望使用 Spring Boot 的 Auto-configuration，可以在应用程序中手动配置`DashScopeEmbeddingModel`。为此，请将`spring.ai.dashscope`依赖项添加到您项目的 Maven`pom.xml`文件中：
-```xml
-<dependency>
-    <groupId>org.springframework.ai</groupId>
-    <artifactId>spring-ai-dashscope</artifactId>
-</dependency>
-```
-
-或者添加到您的Gradle`build.gradle`文件中：
-```gradle
-dependencies {
-    implementation 'org.springframework.ai:spring-ai-dashscope'
-}
-```
-
-```note
-spring-ai-dashcope 依赖项还提供了对 DashScopeChatModel 的访问。有关 DashScopeChatModel 的更多信息，请参考 DashScope Chat Client部分。
-```
-
-接下来，创建一个`DashScopeEmbeddingModel`实例，并使用它计算两个输入文本之间的相似性：
-```java
-var dashScopeApi = new DashScopeApi(System.getenv("DASHSCOPE_API_KEY"));
-var embeddingModel = new DashScopeEmbeddingModel(dashScopeApi, MetadataMode.EMBED,
-        DashScopeEmbeddingOptions.builder()
-                .withModel("text-embedding-v2")
-                .build());
-
-EmbeddingResponse embeddingResponse = embeddingModel
-        .embedForResponse(List.of("Hello World", "World is big and salvation is near"));
-```
