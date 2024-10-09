@@ -1,11 +1,11 @@
 ---
 id: "question-history-15818"
 title: "function call有没有示例"
-date: "2024-06-21"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，关于`sca(spring-cloud-alibaba)`中`function call`的示例，当前的知识信息没有直接提供具体的示例代码或调用方式。不过，从第一篇参考内容中我们可以得知，Spring AI框架是支持函数调用的，并且提到`spring cloud alibaba "
-tags: ["sca","spring-cloud-alibaba","function","call","示例","无","直接"]
-keywords: ["sca","spring-cloud-alibaba","function","call","示例","无","直接"]
+tags: ["sca","spring-cloud-alibaba","function","call","示例"]
+keywords: ["sca","spring-cloud-alibaba","function","call","示例"]
 ---
 
 ## 用户问题 ： 
@@ -16,7 +16,7 @@ keywords: ["sca","spring-cloud-alibaba","function","call","示例","无","直接
 
 根据提供的知识内容，关于`sca(spring-cloud-alibaba)`中`function call`的示例，当前的知识信息没有直接提供具体的示例代码或调用方式。不过，从第一篇参考内容中我们可以得知，Spring AI框架是支持函数调用的，并且提到`spring cloud alibaba ai`正在抓紧支持这一功能，暗示未来将会支持函数调用。
 
-对于您的问题：“sca(spring-cloud-alibaba) function call有没有示例？”基于现有知识，我的是：目前知识库中并未直接包含`sca(spring-cloud-alibaba)`关于function call的具体示例。但是考虑到Spring Cloud Alibaba项目的一贯实践，通常会遵循Spring框架的约定和最佳实践，因此，当该功能支持时，调用方式可能会类似于Spring框架中的服务调用模式，可能涉及到使用`@FeignClient`进行声明式HTTP客户端调用，或者通过Spring Cloud的其他服务发现和负载均衡机制来实现远程服务调用。
+对于您的问题：“sca(spring-cloud-alibaba) function call有没有示例？”基于现有知识，我的回答是：目前知识库中并未直接包含`sca(spring-cloud-alibaba)`关于function call的具体示例。但是考虑到Spring Cloud Alibaba项目的一贯实践，通常会遵循Spring框架的约定和最佳实践，因此，当该功能支持时，调用方式可能会类似于Spring框架中的服务调用模式，可能涉及到使用`@FeignClient`进行声明式HTTP客户端调用，或者通过Spring Cloud的其他服务发现和负载均衡机制来实现远程服务调用。
 
 由于缺乏直接示例，如果您需要了解更具体的操作方法或等待官方支持的更新，建议直接关注Spring Cloud Alibaba的官方文档和更新公告，以获取最新的支持信息和示例代码。
 

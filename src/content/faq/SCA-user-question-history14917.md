@@ -1,11 +1,11 @@
 ---
 id: "question-history-14917"
 title: "spring-cloud阿里巴巴ai包用哪个版本？"
-date: "2024-06-03"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，Spring Cloud Alibaba AI包的推荐版本为2023.0.1.0。为了在项目中集成并使用该版本的AI功能，您可以遵循以下步骤：1. **添加依赖**: 在项目的`pom.xml`文件中，确保添加了Spring Cloud Alibaba依赖管理部分，并指定版本为2"
-tags: ["spring-cloud","alibaba","版本","选择"]
-keywords: ["spring-cloud","alibaba","版本","选择"]
+tags: ["sca","spring-cloud","alibaba","ai","包","版本"]
+keywords: ["sca","spring-cloud","alibaba","ai","包","版本"]
 ---
 
 ## 用户问题 ： 
@@ -73,7 +73,7 @@ spring.cloud.ai.tongyi.chat.options.api-key=sk-a3d73b1709bf4a178c28ed7c8b3b5axx
 
 * 专家经验：spring cloud 、Spring Boot 与 Spring Cloud Alibaba (SCA)版本对应关系 
  
- * 专家经验：sca ai 调用通义大模型实现聊天交互 
+ * 专家经验：spring ai alibaba 使用说明 
 
 
  <font color="#949494">---------------</font> 

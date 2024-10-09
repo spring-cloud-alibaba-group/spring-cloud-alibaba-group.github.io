@@ -1,11 +1,11 @@
 ---
 id: "question-history-17029"
 title: "springcloud 版本对照列表"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，以下是Spring Cloud Alibaba（SCA）不同版本与主要组件（包括Nacos、Sentinel等）版本对应关系的列表：1. **Spring Cloud Alibaba 2023.0.1.0**   - Nacos Version: 2.3.2   - Sentin"
-tags: ["sca","spring-cloud-alibaba","版本","对照","列表"]
-keywords: ["sca","spring-cloud-alibaba","版本","对照","列表"]
+tags: ["sca","spring-cloud-alibaba","springcloud","版本","对照","列表"]
+keywords: ["sca","spring-cloud-alibaba","springcloud","版本","对照","列表"]
 ---
 
 ## 用户问题 ： 

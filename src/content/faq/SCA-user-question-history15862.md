@@ -1,11 +1,11 @@
 ---
 id: "question-history-15862"
 title: "Spring Cloud Alibaba（SCA）支持并集成了哪些数据和技术组件？"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba (SCA) 支持并集成了以下关键数据和技术组件：1. **Nacos**：作为服务发现和服务配置管理的组件，Nacos 提供了注册中心的功能，允许服务实例在其中注册与发现，同时也支持配置的集中管理和推送。2. **Sentinel**：这是一个流量控制和熔断"
-tags: ["Spring","Cloud","Alibaba","SCA","数据","技术","组件"]
-keywords: ["Spring","Cloud","Alibaba","SCA","数据","技术","组件"]
+tags: ["Spring","Cloud","Alibaba","SCA","支持","集成","数据"]
+keywords: ["Spring","Cloud","Alibaba","SCA","支持","集成","数据"]
 ---
 
 ## 用户问题 ： 

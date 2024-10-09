@@ -1,11 +1,11 @@
 ---
 id: "question-history-16853"
 title: "SpringBoot @async注解是什么意思？怎么用"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Boot中，`@Async`注解是用于异步处理方法的一种机制。当一个方法被`@Async`注解时，意味着该方法将在独立的线程中执行，从而不会阻塞调用它的主线程。这对于执行耗时操作（如发送邮件、大数据处理等）非常有用，可以提升应用的整体响应性。### 如何使用`@Async`1. **"
-tags: ["SpringBoot","@async","注解","多线程","异步编程"]
-keywords: ["SpringBoot","@async","注解","多线程","异步编程"]
+tags: ["sca","spring-boot","@async","注解","用途","解释","示例"]
+keywords: ["sca","spring-boot","@async","注解","用途","解释","示例"]
 ---
 
 ## 用户问题 ： 

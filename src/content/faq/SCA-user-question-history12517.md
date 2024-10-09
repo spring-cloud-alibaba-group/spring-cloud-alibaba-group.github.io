@@ -1,7 +1,7 @@
 ---
 id: "question-history-12517"
 title: "springboot 面试题"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "针对sca（Spring Cloud Alibaba）与Spring Boot相关的面试题，我们可以从以下几个方面进行准备：1. **理解Spring Cloud Alibaba的核心组件及其作用**   - 了解Nacos作为服务发现与配置中心的应用。   - RocketMQ作为消息队列的使用场"
 tags: ["sca","spring-cloud-alibaba","springboot","面试题"]

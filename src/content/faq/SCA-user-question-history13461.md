@@ -1,11 +1,11 @@
 ---
 id: "question-history-13461"
 title: "seata dashboard 怎么查看？"
-date: "2024-05-14"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要查看Seata Dashboard以监控Sca（Spring Cloud Alibaba）中的Seata分布式事务，您可以遵循以下步骤：1. **确保Seata服务已启动：**   首先，确保您的Seata服务已经在运行状态。Seata服务器需要被正确部署并配置，通常它会监听在某个端口上，如默认配"
-tags: ["sca","spring-cloud-alibaba","seata","dashboard","查看"]
-keywords: ["sca","spring-cloud-alibaba","seata","dashboard","查看"]
+tags: ["sca","spring-cloud-alibaba","seata","dashboard","查看","整合","使用教程"]
+keywords: ["sca","spring-cloud-alibaba","seata","dashboard","查看","整合","使用教程"]
 ---
 
 ## 用户问题 ： 

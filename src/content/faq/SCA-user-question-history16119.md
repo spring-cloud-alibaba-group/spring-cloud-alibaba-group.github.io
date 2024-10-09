@@ -1,11 +1,11 @@
 ---
 id: "question-history-16119"
 title: "千问2的api文档在哪里可以看到？"
-date: "2024-07-05"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要查看关于Sca(spring-cloud-alibaba)下千问2的API文档，你可以直接参考以下资源：1. **通义千问本身的API文档**：由于Sca可以通过spring cloud alibaba ai来调用通义千问的服务，你应当直接查阅通义千问的官方API文档。这可以在[通义千问API]("
-tags: ["sca","spring-cloud-alibaba","api","文档","查看","千问2"]
-keywords: ["sca","spring-cloud-alibaba","api","文档","查看","千问2"]
+tags: ["sca","spring-cloud-alibaba","千问2","api文档","在哪里","可以","看到"]
+keywords: ["sca","spring-cloud-alibaba","千问2","api文档","在哪里","可以","看到"]
 ---
 
 ## 用户问题 ： 

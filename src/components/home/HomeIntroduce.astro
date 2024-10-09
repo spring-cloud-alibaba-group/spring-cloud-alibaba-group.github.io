@@ -27,9 +27,9 @@ const { stargazers_count=0, forks_count=0 }:StarAndForkT = await sendFetch("http
               class="block w-full"
           >
             <div class="w-full min-h-[31.25rem] px-[2.5rem]">
-              <h1 class="cursor-pointer xl:pt-[5.625rem] lg:pt-[5.625rem] md:pt-[6rem] pt-[5.625rem] xl:text-[4.5rem] lg:text-[4rem] md:text-[4rem] sm:text-[3rem] text-[2rem] text-neutral">
+              <p class="cursor-pointer font-bold xl:pt-[5.625rem] lg:pt-[5.625rem] md:pt-[6rem] pt-[5.625rem] xl:text-[4.5rem] lg:text-[4rem] md:text-[4rem] sm:text-[3rem] text-[2rem] text-neutral">
                 Spring AI Alibaba
-              </h1>
+              </p>
               <p class="cursor-pointer leading-[5rem] text-neutral mb-8 xl:text-[2rem] lg:text-[2rem] md:text-[2rem] sm:text-[1.5rem] text-[1rem]">
                 {t('home.website.ai.quickly.develop')}
               </p>
@@ -76,7 +76,8 @@ const { stargazers_count=0, forks_count=0 }:StarAndForkT = await sendFetch("http
       color: theme("colors.neutral");
     }
     .top-section {
-      width: 85.125rem;
+      max-width: 85.125rem;
+      width: 100%;
       overflow: hidden;
     }
     .top-section .notes .pc-version-intro {
@@ -144,6 +145,7 @@ const { stargazers_count=0, forks_count=0 }:StarAndForkT = await sendFetch("http
       background: url('https://img.alicdn.com/imgextra/i2/O1CN019ckV3m1s2m7zNXIpc_!!6000000005709-0-tps-5760-2000.jpg') no-repeat;
       background-size: cover;
       background-position: 0 0;
+      padding: 0 2rem;
     }
     
     @media (min-width: 40rem) and (max-width: 50rem) { 

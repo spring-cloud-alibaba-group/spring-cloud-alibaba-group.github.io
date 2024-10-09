@@ -1,11 +1,11 @@
 ---
 id: "question-history-16209"
 title: "在使用Spring Cloud Alibaba并且遇到了`AbstractTongYiS"
-date: "2024-07-15"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在使用Spring Cloud Alibaba时遇到`AbstractTongYiServiceImpl`类找不到的问题，根据已有知识，这是由于该类属于原始AI demo的一部分，并非Spring Cloud Alibaba AI库的标准组成部分。因此，直接继承`AbstractTongYiServ"
-tags: ["Spring","Cloud","Alibaba","AbstractTongYiServiceImpl","问题","解决","方法"]
-keywords: ["Spring","Cloud","Alibaba","AbstractTongYiServiceImpl","问题","解决","方法"]
+tags: ["sca","spring-cloud-alibaba","AbstractTongYiServiceImpl","类找不到","解决方法","Spring","Cloud"]
+keywords: ["sca","spring-cloud-alibaba","AbstractTongYiServiceImpl","类找不到","解决方法","Spring","Cloud"]
 ---
 
 ## 用户问题 ： 

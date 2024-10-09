@@ -1,11 +1,11 @@
 ---
 id: "question-history-17035"
 title: "springcloud 脚手架"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的问题，您似乎在寻找关于如何使用Spring Cloud Alibaba作为Spring Cloud的脚手架来搭建和配置项目的指导。虽然直接的“脚手架”搭建步骤未在提供的知识中明确列出，但我们可以依据Spring Cloud Alibaba的版本对应关系，为您提供一个基于Spring Boot"
-tags: ["sca","spring-cloud-alibaba","springcloud","脚手架"]
-keywords: ["sca","spring-cloud-alibaba","springcloud","脚手架"]
+tags: ["sca","spring-cloud-alibaba","springcloud","脚手架","架构","云服务","分布式"]
+keywords: ["sca","spring-cloud-alibaba","springcloud","脚手架","架构","云服务","分布式"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-16843"
 title: "spring单例bean是线程安全的吗？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，关于问题“sca(spring-cloud-alibaba) spring单例bean是否线程安全的”，实际上这个问题与Spring Cloud Alibaba的直接功能介绍并不相关，但我们可以基于Spring Framework的基础知识来解答。在Spring框架中，Bean默"
-tags: ["spring","单例","bean","线程","安全","sca","spring-cloud-alibaba"]
-keywords: ["spring","单例","bean","线程","安全","sca","spring-cloud-alibaba"]
+tags: ["sca","spring-cloud-alibaba","spring","单例bean","线程安全"]
+keywords: ["sca","spring-cloud-alibaba","spring","单例bean","线程安全"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-13465"
 title: "spring-cloud-starter-alibaba-seata版本号"
-date: "2024-09-12"
+date: "2024-09-26"
 category: "expertConsultation"
-description: "根据提供的知识内容，我们可以找到Spring Cloud Alibaba（SCA）与Seata版本对应的表格信息。为了关于`spring-cloud-starter-alibaba-seata`的版本号问题，我们直接参照表格中Seata列的版本信息。对于不同版本的Spring Cloud Aliba"
-tags: ["spring","cloud","alibaba","seata","版本号"]
-keywords: ["spring","cloud","alibaba","seata","版本号"]
+description: "根据提供的知识内容，我们可以找到Spring Cloud Alibaba（SCA）与Seata版本对应的表格信息。为了回答关于`spring-cloud-starter-alibaba-seata`的版本号问题，我们直接参照表格中Seata列的版本信息。对于不同版本的Spring Cloud Ali"
+tags: ["sca","spring-cloud-alibaba","seata","版本号","starter","cloud"]
+keywords: ["sca","spring-cloud-alibaba","seata","版本号","starter","cloud"]
 ---
 
 ## 用户问题 ： 
@@ -14,7 +14,7 @@ keywords: ["spring","cloud","alibaba","seata","版本号"]
 ---------------
 ## 专家官方解答 ：
 
-根据提供的知识内容，我们可以找到Spring Cloud Alibaba（SCA）与Seata版本对应的表格信息。为了关于`spring-cloud-starter-alibaba-seata`的版本号问题，我们直接参照表格中Seata列的版本信息。
+根据提供的知识内容，我们可以找到Spring Cloud Alibaba（SCA）与Seata版本对应的表格信息。为了回答关于`spring-cloud-starter-alibaba-seata`的版本号问题，我们直接参照表格中Seata列的版本信息。
 
 对于不同版本的Spring Cloud Alibaba，其推荐使用的Seata版本如下：
 

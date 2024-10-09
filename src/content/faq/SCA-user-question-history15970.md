@@ -1,11 +1,11 @@
 ---
 id: "question-history-15970"
 title: "spring cloud alibaba 如何融合springboot 使用nacos "
-date: "2024-07-01"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要将Spring Cloud Alibaba融合到Spring Boot项目中使用Nacos Config模块进行客户端配置，您可以遵循以下步骤操作：1. **添加依赖：**   首先，确保您的Spring Boot项目中添加了Spring Cloud Alibaba的起步依赖，这将自动引入Naco"
-tags: ["spring","cloud","alibaba","nacos","config","客户端","融合"]
-keywords: ["spring","cloud","alibaba","nacos","config","客户端","融合"]
+tags: ["sca","spring-cloud-alibaba","spring-boot","nacos-config","客户端","融合","配置"]
+keywords: ["sca","spring-cloud-alibaba","spring-boot","nacos-config","客户端","融合","配置"]
 ---
 
 ## 用户问题 ： 

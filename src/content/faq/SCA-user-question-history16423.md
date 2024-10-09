@@ -1,11 +1,11 @@
 ---
 id: "question-history-16423"
 title: "spring ai 0.8.0下载不下来"
-date: "2024-08-01"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据我所了解的知识，您遇到的问题`scа(spring-cloud-alibaba) spring ai 0.8.0下载不下来`，其原因很可能与Maven中央仓库未包含spring-ai相关包有关。具体到spring-ai 0.8.0版本，尽管直接提及的是0.8.1版本的问题，但相似的情况可能适用。"
-tags: ["sca","spring-cloud-alibaba","spring","ai","080","下载","不下来"]
-keywords: ["sca","spring-cloud-alibaba","spring","ai","080","下载","不下来"]
+tags: ["sca","spring-cloud-alibaba","spring","ai","版本","080","下载"]
+keywords: ["sca","spring-cloud-alibaba","spring","ai","版本","080","下载"]
 ---
 
 ## 用户问题 ： 

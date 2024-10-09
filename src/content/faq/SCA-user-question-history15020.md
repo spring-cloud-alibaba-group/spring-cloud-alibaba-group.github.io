@@ -1,11 +1,11 @@
 ---
 id: "question-history-15020"
 title: "The spring.config.import property is missing"
-date: "2024-06-05"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的问题，您似乎在询问关于`sca(spring-cloud-alibaba)`中`spring.config.import`属性缺少`nacos:`入口的问题。依据提供的知识内容，我们可以这样分析和解答：### 问题原因分析在Spring Cloud Alibaba项目中，如果您遇到提示`sp"
-tags: ["spring-cloud-alibaba","nacos","config","import","missing","entry"]
-keywords: ["spring-cloud-alibaba","nacos","config","import","missing","entry"]
+tags: ["spring-cloud-alibaba","springconfigimport","nacos","entry","missing"]
+keywords: ["spring-cloud-alibaba","springconfigimport","nacos","entry","missing"]
 ---
 
 ## 用户问题 ： 

@@ -1,7 +1,7 @@
 ---
 id: "question-history-17031"
 title: "springcloud 最新版本"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，Spring Cloud Alibaba（SCA）的最新版本是`2023.0.1.0`。此版本与各个子组件的对应版本关系如下：- Sentinel: `1.8.6`- Nacos: `2.3.2`- RocketMQ: `5.1.4`- Dubbo: `2.0.0`- Seata"
 tags: ["sca","spring-cloud-alibaba","springcloud","最新版本"]

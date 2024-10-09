@@ -1,11 +1,11 @@
 ---
 id: "question-history-16826"
 title: "springboot是怎么获得resources路径的？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Boot应用中获取`resources`路径通常并不直接通过硬编码方式访问，因为Spring Boot为资源访问提供了更加优雅和灵活的机制。虽然`我了解的知识`中没有直接提及如何获取`resources`路径，但基于Spring Boot的工作原理，我可以为您提供以下指导：### 原"
-tags: ["spring-cloud-alibaba","springboot","resources","路径","获取","方法"]
-keywords: ["spring-cloud-alibaba","springboot","resources","路径","获取","方法"]
+tags: ["sca","spring-cloud-alibaba","springboot","resources","路径","获取","方法"]
+keywords: ["sca","spring-cloud-alibaba","springboot","resources","路径","获取","方法"]
 ---
 
 ## 用户问题 ： 

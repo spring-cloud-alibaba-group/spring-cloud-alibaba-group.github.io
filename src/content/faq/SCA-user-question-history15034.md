@@ -1,11 +1,11 @@
 ---
 id: "question-history-15034"
 title: "spring alibaba cloud组件介绍"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
-description: "### Sca(spring-cloud-alibaba) Spring Alibaba Cloud组件介绍#### 分析问题原因您想了解的是关于Sca（Spring Cloud Alibaba）中与AI相关的组件介绍，特别是如何利用这些组件来增强云应用的功能。根据已有的知识内容，我们可以聚焦于Sp"
-tags: ["spring","cloud","alibaba","sca","云组件","介绍"]
-keywords: ["spring","cloud","alibaba","sca","云组件","介绍"]
+description: "### 回答：Sca(spring-cloud-alibaba) Spring Alibaba Cloud组件介绍#### 分析问题原因您想了解的是关于Sca（Spring Cloud Alibaba）中与AI相关的组件介绍，特别是如何利用这些组件来增强云应用的功能。根据已有的知识内容，我们可以聚焦"
+tags: ["sca","spring","alibaba","cloud","组件","介绍"]
+keywords: ["sca","spring","alibaba","cloud","组件","介绍"]
 ---
 
 ## 用户问题 ： 
@@ -14,7 +14,7 @@ keywords: ["spring","cloud","alibaba","sca","云组件","介绍"]
 ---------------
 ## 专家官方解答 ：
 
-### Sca(spring-cloud-alibaba) Spring Alibaba Cloud组件介绍
+### 回答：Sca(spring-cloud-alibaba) Spring Alibaba Cloud组件介绍
 
 #### 分析问题原因
 您想了解的是关于Sca（Spring Cloud Alibaba）中与AI相关的组件介绍，特别是如何利用这些组件来增强云应用的功能。根据已有的知识内容，我们可以聚焦于Spring Cloud Alibaba AI这一特定实现，它是Spring AI框架在阿里云基础设施上的一个落地应用，旨在简化AI服务的集成与使用。

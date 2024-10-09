@@ -1,11 +1,11 @@
 ---
 id: "question-history-14755"
 title: "spring boot 的Cannot determine embedded datab"
-date: "2024-05-30"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba项目中遇到`Cannot determine embedded database driver class for database type NONE`错误，其产生原因及解决步骤如下：### 原因分析：1. **未使用DataSource却引入相关依赖**"
-tags: ["spring-boot","sca","Cannot","determine","embedded","database","driver"]
-keywords: ["spring-boot","sca","Cannot","determine","embedded","database","driver"]
+tags: ["sca","spring-boot","Cannot-determine","embedded-database-driver-class","database-type","NONE","产生原因"]
+keywords: ["sca","spring-boot","Cannot-determine","embedded-database-driver-class","database-type","NONE","产生原因"]
 ---
 
 ## 用户问题 ： 

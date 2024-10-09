@@ -1,11 +1,11 @@
 ---
 id: "question-history-16121"
 title: "nacos注册服务在网页里找不到对应服务"
-date: "2024-07-05"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您提供的问题和现有知识，我将尝试分析并解答您的疑问。**问题**: sca(spring-cloud-alibaba) nacos注册服务在网页里找不到对应服务。**分析原因**:1. **配置错误**: 可能是Nacos客户端配置不正确，比如`spring.cloud.nacos.discov"
-tags: ["sca","nacos","注册","服务","网页","找不到","对应"]
-keywords: ["sca","nacos","注册","服务","网页","找不到","对应"]
+tags: ["sca","nacos","注册服务","网页","找不到","对应","服务"]
+keywords: ["sca","nacos","注册服务","网页","找不到","对应","服务"]
 ---
 
 ## 用户问题 ： 

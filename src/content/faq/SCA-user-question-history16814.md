@@ -1,11 +1,11 @@
 ---
 id: "question-history-16814"
 title: "Spring   SpringBoot 怎么集成 thymeleaf？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "虽然在提供的`知识: Spring Cloud Alibaba 是什么`内容中没有直接涉及到如何在Spring/SpringBoot中集成Thymeleaf模板引擎的具体步骤，但我们可以根据Spring Boot的基本集成实践来指导您完成这一过程。Thymeleaf是一个现代的服务器端Java模板引"
-tags: ["Spring","Cloud","Alibaba","Thymeleaf","集成","方法"]
-keywords: ["Spring","Cloud","Alibaba","Thymeleaf","集成","方法"]
+tags: ["sca","spring-cloud-alibaba","Spring","Boot","集成","thymeleaf"]
+keywords: ["sca","spring-cloud-alibaba","Spring","Boot","集成","thymeleaf"]
 ---
 
 ## 用户问题 ： 

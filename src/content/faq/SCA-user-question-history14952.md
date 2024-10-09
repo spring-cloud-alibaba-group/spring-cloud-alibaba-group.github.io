@@ -1,11 +1,11 @@
 ---
 id: "question-history-14952"
 title: "sca官网功能介绍"
-date: "2024-06-04"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba(SCA)官网不仅提供了访问入口[官网地址](https://sca.aliyun.com)，还在其平台上整合了丰富的资源与功能，具体介绍如下：1. **文档与学习资料**：SCA官网包含了Spring Cloud Alibaba、Spring Boot以及S"
-tags: ["spring","cloud","alibaba","功能","介绍","官网"]
-keywords: ["spring","cloud","alibaba","功能","介绍","官网"]
+tags: ["sca","spring-cloud-alibaba","官网","功能","介绍"]
+keywords: ["sca","spring-cloud-alibaba","官网","功能","介绍"]
 ---
 
 ## 用户问题 ： 

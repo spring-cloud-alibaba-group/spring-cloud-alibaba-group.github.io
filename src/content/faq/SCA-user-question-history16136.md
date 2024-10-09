@@ -1,11 +1,11 @@
 ---
 id: "question-history-16136"
 title: "提示找不到org.springframework.ai.chat.ChatClient，"
-date: "2024-07-05"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据你提供的问题和现有知识，这里是对问题的分析与解答：**问题分析：**你在使用`sca(spring-cloud-alibaba)`时遇到了`org.springframework.ai.chat.ChatClient`找不到的错误，即使已经引入了相关依赖。根据知识内容，这可能是由于依赖版本不匹配"
-tags: ["sca","spring-cloud-alibaba","ChatClient","依赖","引入","问题","找不到"]
-keywords: ["sca","spring-cloud-alibaba","ChatClient","依赖","引入","问题","找不到"]
+tags: ["sca","spring-cloud-alibaba","依赖问题","orgspringframeworkaichat","ChatClient","引入提示找不到"]
+keywords: ["sca","spring-cloud-alibaba","依赖问题","orgspringframeworkaichat","ChatClient","引入提示找不到"]
 ---
 
 ## 用户问题 ： 

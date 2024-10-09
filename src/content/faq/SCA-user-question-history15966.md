@@ -1,11 +1,11 @@
 ---
 id: "question-history-15966"
 title: "千问2的api文档在哪里可以看到"
-date: "2024-07-01"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的问题，您想了解的是sca(spring-cloud-alibaba)中关于千问2的API文档查看位置。根据提供的知识内容：1. **分析问题原因**：您可能是在寻找与spring-cloud-alibaba集成的通义千问（千问2可能是指代通义千问的一个版本或者变体）API文档，以便于在Jav"
-tags: ["sca","spring-cloud-alibaba","千问","2","api","文档","查看"]
-keywords: ["sca","spring-cloud-alibaba","千问","2","api","文档","查看"]
+tags: ["sca","spring-cloud-alibaba","千问2","api文档","在哪里","查看"]
+keywords: ["sca","spring-cloud-alibaba","千问2","api文档","在哪里","查看"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-15817"
 title: "申请开发key"
-date: "2024-06-21"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要申请Sca (Spring Cloud Alibaba)项目中使用的通义千问开发key，您可以按照以下步骤操作：1. **确保环境要求**：首先，请确认您的开发环境已满足要求，即JDK版本需在JDK 17或以上。2. **访问阿里云百炼页面**：打开[阿里云百炼页面](https://www.al"
-tags: ["spring-cloud-alibaba","申请","开发","key"]
-keywords: ["spring-cloud-alibaba","申请","开发","key"]
+tags: ["sca","spring-cloud-alibaba","开发","key","申请"]
+keywords: ["sca","spring-cloud-alibaba","开发","key","申请"]
 ---
 
 ## 用户问题 ： 
@@ -51,7 +51,7 @@ keywords: ["spring-cloud-alibaba","申请","开发","key"]
 
 ## 参考链接 ：
 
-* 专家经验：sca ai 调用通义大模型实现聊天交互 
+* 专家经验：spring ai alibaba 使用说明 
 
 
  <font color="#949494">---------------</font> 

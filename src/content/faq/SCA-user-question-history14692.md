@@ -1,7 +1,7 @@
 ---
 id: "question-history-14692"
 title: "add a spring.config.import=nacos: property t"
-date: "2024-05-29"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba项目中，若遇到需要将Nacos配置中心集成并解决`spring.config.import=nacos:`属性配置的问题，可以遵循以下步骤进行操作：1. **确认Spring Cloud Alibaba版本**: 确保你的Spring Cloud Aliba"
 tags: ["sca","spring-cloud-alibaba","nacos","springconfigimport"]

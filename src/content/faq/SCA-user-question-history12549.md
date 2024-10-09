@@ -1,7 +1,7 @@
 ---
 id: "question-history-12549"
 title: "springboot原理"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在探讨Spring Cloud Alibaba (Sca) 中Spring Boot的原理时，我们首先理解Spring Boot本身作为一个快速开发框架的核心特性，然后结合Spring Cloud Alibaba对微服务架构的支持进行分析。### Spring Boot原理概览1. **自动配置（A"
 tags: ["sca","spring-cloud-alibaba","springboot","原理"]

@@ -1,11 +1,11 @@
 ---
 id: "question-history-16821"
 title: "spring-data-jpa 怎么使用？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的问题，您想了解如何在 Spring Cloud Alibaba 项目中使用 Spring Data JPA。不过，提供的知识内容主要聚焦于 Spring Cloud Alibaba 的概述、定位以及与 Spring Cloud 生态的关系，并未直接涵盖 Spring Data JPA 的使用"
-tags: ["spring-cloud-alibaba","spring-data-jpa","使用","方法"]
-keywords: ["spring-cloud-alibaba","spring-data-jpa","使用","方法"]
+tags: ["sca","spring-cloud-alibaba","spring-data-jpa","使用","教程","示例","集成"]
+keywords: ["sca","spring-cloud-alibaba","spring-data-jpa","使用","教程","示例","集成"]
 ---
 
 ## 用户问题 ： 

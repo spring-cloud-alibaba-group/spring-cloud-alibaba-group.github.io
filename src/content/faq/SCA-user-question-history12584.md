@@ -1,11 +1,11 @@
 ---
 id: "question-history-12584"
 title: "spring 整合 jetty"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (SCA)环境中整合Jetty作为Spring Boot应用的Servlet容器，遵循以下步骤进行操作：1. **排除默认Tomcat并添加Jetty依赖**   - 首先，在`pom.xml`文件中排除Spring Boot默认集成的Tomcat服务器，"
-tags: ["sca","spring-cloud-alibaba","spring","jetty","整合","使用"]
-keywords: ["sca","spring-cloud-alibaba","spring","jetty","整合","使用"]
+tags: ["sca","spring-cloud-alibaba","spring","jetty","整合"]
+keywords: ["sca","spring-cloud-alibaba","spring","jetty","整合"]
 ---
 
 ## 用户问题 ： 

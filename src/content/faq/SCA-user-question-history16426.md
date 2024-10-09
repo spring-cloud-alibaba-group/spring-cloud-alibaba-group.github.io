@@ -1,7 +1,7 @@
 ---
 id: "question-history-16426"
 title: "nacos 2.2.6的maven依赖"
-date: "2024-08-01"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据已有的知识，我们知道Spring Cloud Alibaba 2.2.6版本适配了Spring Cloud Hoxton.SR9，并且增强了Nacos支持服务注册的快速失败配置。为了帮助您添加Spring Cloud Alibaba 2.2.6中Nacos 2.2.6的Maven依赖，您可以参考"
 tags: ["sca","spring-cloud-alibaba","nacos","226","maven","依赖"]

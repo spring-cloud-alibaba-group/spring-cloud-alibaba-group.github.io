@@ -1,11 +1,11 @@
 ---
 id: "question-history-15751"
 title: "spring ai支持哪些通义千问的参数？"
-date: "2024-06-19"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，Sca(spring-cloud-alibaba) Spring AI支持的通义千问参数包括以下多个方面：1. **model**: 指定用于对话的通义千问模型名，如`qwen-turbo`、`qwen-plus`等，决定了模型的特性和能力。2. **messages**: 定义"
-tags: ["spring-cloud-alibaba","spring","ai","通义千问","参数","支持"]
-keywords: ["spring-cloud-alibaba","spring","ai","通义千问","参数","支持"]
+tags: ["sca","spring-cloud-alibaba","spring","ai","通义千问","参数","支持"]
+keywords: ["sca","spring-cloud-alibaba","spring","ai","通义千问","参数","支持"]
 ---
 
 ## 用户问题 ： 

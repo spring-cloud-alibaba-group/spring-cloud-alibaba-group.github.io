@@ -1,11 +1,11 @@
 ---
 id: "question-history-16823"
 title: "为什么要用spring security？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在讨论为什么在Spring Cloud Alibaba项目中使用Spring Security时，我们首先需要理解Spring Security的核心作用及其如何与微服务架构相辅相成。### Spring Security的作用Spring Security是一个强大的、高度可定制的身份验证和访问控"
-tags: ["spring-cloud-alibaba","spring","security","使用","原因","说明","解析"]
-keywords: ["spring-cloud-alibaba","spring","security","使用","原因","说明","解析"]
+tags: ["sca","spring-cloud-alibaba","spring","security","为什么","使用","安全"]
+keywords: ["sca","spring-cloud-alibaba","spring","security","为什么","使用","安全"]
 ---
 
 ## 用户问题 ： 

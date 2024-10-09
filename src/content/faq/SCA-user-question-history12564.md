@@ -1,7 +1,7 @@
 ---
 id: "question-history-12564"
 title: "docker部署springboot项目"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在SCA（Spring Cloud Alibaba）中部署Spring Boot项目到Docker容器，可以遵循以下步骤进行：### 1. 准备Docker环境确保你的开发环境中已安装并正确配置了Docker。这包括Docker Desktop（对于Windows和macOS用户）或Docker E"
 tags: ["sca","spring-cloud-alibaba","docker","springboot","部署","项目"]

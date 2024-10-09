@@ -1,11 +1,11 @@
 ---
 id: "question-history-16886"
 title: "如何用SpringBoot拦截器实现登录认证？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "虽然直接在我了解的知识中没有找到关于如何使用Spring Boot拦截器实现Sca(Spring Cloud Alibaba)登录认证的具体步骤，但我们可以基于Spring Boot和Spring Security的一般实践来指导你如何实现这一功能。以下是根据通用做法整理的步骤，这同样适用于集成Sp"
-tags: ["spring-cloud-alibaba","SpringBoot","拦截器","登录","认证","实现","方法"]
-keywords: ["spring-cloud-alibaba","SpringBoot","拦截器","登录","认证","实现","方法"]
+tags: ["sca","spring-cloud-alibaba","SpringBoot","拦截器","登录","认证","实现"]
+keywords: ["sca","spring-cloud-alibaba","SpringBoot","拦截器","登录","认证","实现"]
 ---
 
 ## 用户问题 ： 

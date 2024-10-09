@@ -1,11 +1,11 @@
 ---
 id: "question-history-16891"
 title: "SpringBoot 项目中怎么实现接口限流？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在SpringBoot项目中实现接口限流，主要是为了应对高并发场景下系统可能遭遇的资源耗尽、用户体验下降乃至服务崩溃的风险。通过采用流量控制组件，比如Sentinel，可以有效地对入口流量进行精细化管理，保障系统的稳定性和可靠性。以下是根据提供的知识内容，实现接口限流的详细步骤与解释：### 分析问"
-tags: ["SpringCloud","Alibaba","SpringBoot","接口","限流","实现","方法"]
-keywords: ["SpringCloud","Alibaba","SpringBoot","接口","限流","实现","方法"]
+tags: ["sca","spring-cloud-alibaba","SpringBoot","接口限流","实现","项目","方法"]
+keywords: ["sca","spring-cloud-alibaba","SpringBoot","接口限流","实现","项目","方法"]
 ---
 
 ## 用户问题 ： 

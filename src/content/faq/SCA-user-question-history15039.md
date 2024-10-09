@@ -1,11 +1,11 @@
 ---
 id: "question-history-15039"
 title: "spring cloud alibaba版本选择"
-date: "2024-06-05"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "为了帮助您选择合适的Spring Cloud Alibaba版本，请按照以下步骤操作：1. **确定您的Spring Boot版本**：首先，您需要明确自己项目中使用的Spring Boot版本。这是因为Spring Cloud Alibaba的版本选择依赖于您的Spring Boot版本。2. *"
-tags: ["spring","cloud","alibaba","版本","选择"]
-keywords: ["spring","cloud","alibaba","版本","选择"]
+tags: ["sca","spring","cloud","alibaba","版本","选择"]
+keywords: ["sca","spring","cloud","alibaba","版本","选择"]
 ---
 
 ## 用户问题 ： 

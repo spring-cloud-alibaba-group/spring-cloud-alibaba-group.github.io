@@ -1,11 +1,11 @@
 ---
 id: "question-history-16904"
 title: "SpringBoot 如何集成ElasticSearch？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Boot中集成Elasticsearch涉及到配置、依赖管理和实际操作Elasticsearch客户端等方面。尽管直接的集成步骤在提供的参考资料中没有详细阐述，我们可以基于Spring Boot和Spring Cloud Alibaba的一般集成经验来指导如何进行。以下是基于这些背景"
-tags: ["SpringCloud","Alibaba","SpringBoot","ElasticSearch","集成","方法"]
-keywords: ["SpringCloud","Alibaba","SpringBoot","ElasticSearch","集成","方法"]
+tags: ["sca","spring-cloud-alibaba","SpringBoot","集成","ElasticSearch"]
+keywords: ["sca","spring-cloud-alibaba","SpringBoot","集成","ElasticSearch"]
 ---
 
 ## 用户问题 ： 

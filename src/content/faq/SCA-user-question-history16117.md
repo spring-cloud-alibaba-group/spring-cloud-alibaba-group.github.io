@@ -1,11 +1,11 @@
 ---
 id: "question-history-16117"
 title: "怎么接入本地运行的千问2模型？"
-date: "2024-07-05"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要接入本地运行的千问2模型到SCA（Spring Cloud Alibaba）中，我们可以遵循以下步骤进行操作，基于提供的知识内容：### 分析问题原因- 用户希望在使用Spring Cloud Alibaba框架的应用中集成本地部署的千问2模型，以实现自定义的AI功能，而非依赖云端服务。### 解"
-tags: ["sca","spring-cloud-alibaba","接入","本地","运行","千问2","模型"]
-keywords: ["sca","spring-cloud-alibaba","接入","本地","运行","千问2","模型"]
+tags: ["sca","spring-cloud-alibaba","接入","本地运行","千问2","模型"]
+keywords: ["sca","spring-cloud-alibaba","接入","本地运行","千问2","模型"]
 ---
 
 ## 用户问题 ： 

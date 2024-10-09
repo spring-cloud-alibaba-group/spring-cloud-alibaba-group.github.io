@@ -1,11 +1,11 @@
 ---
 id: "question-history-14979"
 title: "如何入门SCA"
-date: "2024-06-05"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "为了帮助您入门Spring Cloud Alibaba (SCA)，我们可以根据已有知识进行以下步骤分析与建议：### 入门原因分析根据您的问题，您希望了解如何开始学习和使用Spring Cloud Alibaba。根据提供的知识，我们知道Spring Cloud Alibaba是一个全面的微服务解"
-tags: ["spring-cloud-alibaba","入门","指南","教程","示例","例子","实践"]
-keywords: ["spring-cloud-alibaba","入门","指南","教程","示例","例子","实践"]
+tags: ["sca","spring-cloud-alibaba","入门教程"]
+keywords: ["sca","spring-cloud-alibaba","入门教程"]
 ---
 
 ## 用户问题 ： 

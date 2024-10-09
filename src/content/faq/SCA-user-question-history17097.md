@@ -1,11 +1,11 @@
 ---
 id: "question-history-17097"
 title: "spring cloud seata配置"
-date: "2024-09-12"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Sca（Spring Cloud Alibaba）中配置Spring Cloud Seata主要是为了实现分布式事务管理。根据提供的知识内容，以下是配置Seata以配合Spring Cloud Alibaba使用的简明步骤及解析：### Seata 配置概览Seata 提供了多种运行模式，其中“f"
-tags: ["spring","cloud","alibaba","seata","配置"]
-keywords: ["spring","cloud","alibaba","seata","配置"]
+tags: ["sca","spring-cloud-alibaba","spring","cloud","seata","配置"]
+keywords: ["sca","spring-cloud-alibaba","spring","cloud","seata","配置"]
 ---
 
 ## 用户问题 ： 

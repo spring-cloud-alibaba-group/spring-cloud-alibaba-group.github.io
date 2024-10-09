@@ -1,11 +1,11 @@
 ---
 id: "question-history-15861"
 title: "如何在Spring Cloud Alibaba项目中整合RocketMQ"
-date: "2024-06-25"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba项目中整合RocketMQ，您可以遵循以下步骤进行操作：### 步骤分析与操作指导#### 1. **确保RocketMQ Server已就绪**   - 首先，确保您的RocketMQ服务器已经安装并且运行正常。如果您尚未安装，可以访问[RocketMQ官"
-tags: ["Spring","Cloud","Alibaba","RocketMQ","整合","方法","项目"]
-keywords: ["Spring","Cloud","Alibaba","RocketMQ","整合","方法","项目"]
+tags: ["sca","spring-cloud-alibaba","整合","RocketMQ","Spring","Cloud","项目"]
+keywords: ["sca","spring-cloud-alibaba","整合","RocketMQ","Spring","Cloud","项目"]
 ---
 
 ## 用户问题 ： 

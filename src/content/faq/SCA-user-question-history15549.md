@@ -1,11 +1,11 @@
 ---
 id: "question-history-15549"
 title: "在项目中引入了`spring-cloud-starter-alibaba-ai`依赖后仍"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您提供的信息，您在项目中引入了`spring-cloud-starter-alibaba-ai`依赖后遇到了编译错误，表现为有几个类无法导入。为了解决这个问题，我们可以按照以下步骤尝试：### 步骤分析：1. **确认依赖是否正确添加**     首先，请检查您的`pom.xml`（如果是Mav"
-tags: ["spring-cloud-alibaba","编译错误","类无法导入","项目","引入","依赖","编译问题"]
-keywords: ["spring-cloud-alibaba","编译错误","类无法导入","项目","引入","依赖","编译问题"]
+tags: ["sca","spring-cloud-alibaba","spring-cloud-starter-alibaba-ai","依赖","编译错误","类无法导入"]
+keywords: ["sca","spring-cloud-alibaba","spring-cloud-starter-alibaba-ai","依赖","编译错误","类无法导入"]
 ---
 
 ## 用户问题 ： 

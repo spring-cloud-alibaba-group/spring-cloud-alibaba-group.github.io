@@ -1,11 +1,11 @@
 ---
 id: "question-history-16856"
 title: "Springboot 如何整合 ehcache 使用？详细点"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Boot项目中整合EhCache，并且特别关注其在Spring Cloud Alibaba环境下的应用，可以遵循以下详细步骤进行操作：### 1. 添加依赖首先，确保在`pom.xml`文件中正确添加了EhCache以及Spring Boot Cache Starter的依赖，以便于"
-tags: ["spring-cloud-alibaba","Springboot","ehcache","整合","使用","详细","方法"]
-keywords: ["spring-cloud-alibaba","Springboot","ehcache","整合","使用","详细","方法"]
+tags: ["sca","springboot","整合","ehcache","使用","详细教程"]
+keywords: ["sca","springboot","整合","ehcache","使用","详细教程"]
 ---
 
 ## 用户问题 ： 

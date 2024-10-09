@@ -1,7 +1,7 @@
 ---
 id: "question-history-12548"
 title: "springboot session"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba（SCA）与SpringBoot环境中管理Session，通常涉及利用Spring Session或者与Redis等外部存储集成以实现Session的分布式存储。虽然直接的指导未在提供的参考内容中详细说明，但我们可以基于现有知识和常规实践，构建一个概括性的指"
 tags: ["sca","spring-cloud-alibaba","springboot","session"]

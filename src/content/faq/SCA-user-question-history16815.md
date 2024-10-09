@@ -1,11 +1,11 @@
 ---
 id: "question-history-16815"
 title: "Spring cloud netflix是不是被spring Cloud alibaba"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据我了解的知识，Spring Cloud Netflix 与 Spring Cloud Alibaba 并非简单的淘汰关系。Spring Cloud Netflix 是早期为微服务架构提供的一系列组件，如 Eureka（服务发现）、Hystrix（熔断器）、Zuul（API 网关）等，这些组件在微"
-tags: ["sca","spring-cloud-alibaba","淘汰","Spring","cloud","netflix"]
-keywords: ["sca","spring-cloud-alibaba","淘汰","Spring","cloud","netflix"]
+tags: ["sca","spring-cloud-alibaba","spring-cloud-netflix","淘汰","对比","使用","更新"]
+keywords: ["sca","spring-cloud-alibaba","spring-cloud-netflix","淘汰","对比","使用","更新"]
 ---
 
 ## 用户问题 ： 

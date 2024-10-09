@@ -1,11 +1,11 @@
 ---
 id: "question-history-16246"
 title: "AbstractTongYiServiceImpl 依赖包中没有这个类 USER : S"
-date: "2024-07-18"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您提供的信息以及我了解的知识中的相关内容，这里是对您的问题的详细解答：1. **问题原因分析**：   您在使用Spring Cloud Alibaba AI的示例代码时，尝试引入`AbstractTongYiServiceImpl`类却发现找不到这个类。根据我了解的知识中提及的内容，`Abst"
-tags: ["Spring","Cloud","Alibaba","AbstractTongYiServiceImpl","类","依赖","Maven"]
-keywords: ["Spring","Cloud","Alibaba","AbstractTongYiServiceImpl","类","依赖","Maven"]
+tags: ["Spring","Cloud","Alibaba","AbstractTongYiServiceImpl","依赖","找不到","类"]
+keywords: ["Spring","Cloud","Alibaba","AbstractTongYiServiceImpl","依赖","找不到","类"]
 ---
 
 ## 用户问题 ： 

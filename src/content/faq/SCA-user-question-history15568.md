@@ -1,11 +1,11 @@
 ---
 id: "question-history-15568"
 title: "spring cloud alibaba 五大组件集成样例"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Sca(Spring Cloud Alibaba) 的五大组件集成样例展示了一个综合性的微服务架构解决方案，该方案覆盖了从服务发现、配置管理、流量控制、分布式事务处理到消息队列等多个关键领域。下面我将依据提供的知识，分析这五大组件如何协同工作，并概述如何基于这些组件搭建一个微服务应用。### 1. "
-tags: ["spring","cloud","alibaba","组件","集成","样例"]
-keywords: ["spring","cloud","alibaba","组件","集成","样例"]
+tags: ["sca","spring-cloud-alibaba","spring","cloud","alibaba","五大组件","集成"]
+keywords: ["sca","spring-cloud-alibaba","spring","cloud","alibaba","五大组件","集成"]
 ---
 
 ## 用户问题 ： 

@@ -1,9 +1,9 @@
 ---
 id: "question-history-13946"
 title: "springcloud alibaba组件介绍"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
-description: "关于您的问题，sca(spring-cloud-alibaba) springcloud alibaba组件介绍, 我们可以从以下几个方面进行详细说明：### 1. **Spring Cloud Alibaba简介**Spring Cloud Alibaba是阿里巴巴开源的一套微服务解决方案，它为J"
+description: "回答：关于您的问题，sca(spring-cloud-alibaba) springcloud alibaba组件介绍, 我们可以从以下几个方面进行详细说明：### 1. **Spring Cloud Alibaba简介**Spring Cloud Alibaba是阿里巴巴开源的一套微服务解决方案，"
 tags: ["sca","spring-cloud-alibaba","springcloud","alibaba","组件","介绍"]
 keywords: ["sca","spring-cloud-alibaba","springcloud","alibaba","组件","介绍"]
 ---
@@ -14,7 +14,7 @@ keywords: ["sca","spring-cloud-alibaba","springcloud","alibaba","组件","介绍
 ---------------
 ## 专家官方解答 ：
 
-关于您的问题，{{{sca(spring-cloud-alibaba) springcloud alibaba组件介绍}}}, 我们可以从以下几个方面进行详细说明：
+回答：关于您的问题，{{{sca(spring-cloud-alibaba) springcloud alibaba组件介绍}}}, 我们可以从以下几个方面进行详细说明：
 
 ### 1. **Spring Cloud Alibaba简介**
 

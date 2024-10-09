@@ -1,11 +1,11 @@
 ---
 id: "question-history-15957"
 title: "could not find artifact org.springframework."
-date: "2024-06-27"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据你的问题，你在尝试获取 `org.springframework.ai:spring-ai-core:pom:0.8.1` 依赖时遇到了找不到该artifact的问题。根据我的知识库，这个问题的主要原因在于Spring AI的0.8.1版本可能没有被发布到Maven Central仓库。但是，有"
-tags: ["sca","spring-cloud-alibaba","artifact","spring-ai-core","pom","081"]
-keywords: ["sca","spring-cloud-alibaba","artifact","spring-ai-core","pom","081"]
+tags: ["sca","spring-cloud-alibaba","artifact","orgspringframeworkai","spring-ai-core","pom","081"]
+keywords: ["sca","spring-cloud-alibaba","artifact","orgspringframeworkai","spring-ai-core","pom","081"]
 ---
 
 ## 用户问题 ： 

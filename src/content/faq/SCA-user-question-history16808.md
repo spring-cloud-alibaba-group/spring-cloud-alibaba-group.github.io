@@ -1,11 +1,11 @@
 ---
 id: "question-history-16808"
 title: "spring boot与spring mvc的区别是什么？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "您的问题似乎是关于Spring Boot与Spring MVC的区别，而您提供的知识内容主要集中在Spring Boot与Spring Cloud、以及Spring Cloud Alibaba的对比上。尽管如此，我可以根据Spring技术体系的基本理解来帮助您区分Spring Boot和Spring"
-tags: ["sca","spring-cloud-alibaba","spring","boot","spring","mvc","区别"]
-keywords: ["sca","spring-cloud-alibaba","spring","boot","spring","mvc","区别"]
+tags: ["sca","spring-cloud-alibaba","spring-boot","spring-mvc","区别","什么","是"]
+keywords: ["sca","spring-cloud-alibaba","spring-boot","spring-mvc","区别","什么","是"]
 ---
 
 ## 用户问题 ： 
@@ -35,7 +35,7 @@ Spring Boot则是为了简化Spring应用的创建、配置和部署过程而生
    - **Spring Boot**：是一个全面的解决方案，可以快速构建包括Web应用在内的各类应用程序，并且天然支持微服务架构。
 
 ### 结论
-尽管您的知识内容并未直接Spring Boot与Spring MVC的区别，但根据Spring技术生态的理解，我们可以明确，Spring Boot和Spring MVC在功能上有重叠，但Spring Boot的定位更高一层，它是包含并超越Spring MVC的一个快速开发框架，旨在提供一个完整的、生产级别的Spring应用快速构建解决方案。
+尽管您的知识内容并未直接回答Spring Boot与Spring MVC的区别，但根据Spring技术生态的理解，我们可以明确，Spring Boot和Spring MVC在功能上有重叠，但Spring Boot的定位更高一层，它是包含并超越Spring MVC的一个快速开发框架，旨在提供一个完整的、生产级别的Spring应用快速构建解决方案。
 
 如果您希望了解更多关于Spring Cloud Alibaba如何与Spring Boot协同工作以构建微服务架构的信息，可以参考[Spring Cloud Alibaba官方文档](https://github.com/spring-cloud-alibaba-group/spring-cloud-alibaba-group.github.io/blob/main/i18n/zh-cn/docusaurus-plugin-content-docs/current/overview/roadmap.md)。
 

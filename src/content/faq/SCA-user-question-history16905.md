@@ -1,11 +1,11 @@
 ---
 id: "question-history-16905"
 title: "springboot的 @CrossOrigin 怎么用"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba项目中，`@CrossOrigin`注解的使用方式与标准的Spring Boot应用中并无差异，它是Spring Framework的一部分，用于处理跨域请求。尽管这个问题并不直接关联到Spring Cloud Alibaba的特有功能，但基于您提到的知识点"
-tags: ["sca","spring-cloud-alibaba","springboot","CrossOrigin","使用","方法"]
-keywords: ["sca","spring-cloud-alibaba","springboot","CrossOrigin","使用","方法"]
+tags: ["sca","spring-cloud-alibaba","springboot","@CrossOrigin","使用","方法","教程"]
+keywords: ["sca","spring-cloud-alibaba","springboot","@CrossOrigin","使用","方法","教程"]
 ---
 
 ## 用户问题 ： 

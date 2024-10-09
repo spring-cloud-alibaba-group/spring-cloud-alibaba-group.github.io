@@ -1,11 +1,11 @@
 ---
 id: "question-history-16247"
 title: "dubbo相对于其他调用服务技术上有什么优势"
-date: "2024-07-18"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Dubbo相对于其他服务调用技术，主要在以下几个方面展现出其技术优势：1. **高性能与低延迟**：Dubbo采用高效的RPC通信协议，支持多种序列化方式，能够确保服务间通信的高性能与低延迟。这对于追求极致响应速度和吞吐量的应用场景尤为重要。2. **服务治理能力**：Dubbo原生支持服务注册与发"
-tags: ["spring-cloud-alibaba","dubbo","优势","调用","服务","技术","相对"]
-keywords: ["spring-cloud-alibaba","dubbo","优势","调用","服务","技术","相对"]
+tags: ["sca","spring-cloud-alibaba","dubbo","优势","调用服务","技术","对比"]
+keywords: ["sca","spring-cloud-alibaba","dubbo","优势","调用服务","技术","对比"]
 ---
 
 ## 用户问题 ： 

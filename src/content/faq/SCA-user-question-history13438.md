@@ -1,11 +1,11 @@
 ---
 id: "question-history-13438"
 title: "springcloudalibaba五大组件介绍"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的问题，您想了解Spring Cloud Alibaba（SCA）的五大组件介绍。实际上，Spring Cloud Alibaba包含的组件远不止五个，但通常讨论时会聚焦于一些核心组件。以下是对这些核心组件的简要介绍，结合了您提及的需求以及提供的知识内容：### SCA核心组件介绍：1. **"
-tags: ["sca","spring-cloud-alibaba","组件","介绍"]
-keywords: ["sca","spring-cloud-alibaba","组件","介绍"]
+tags: ["sca","spring-cloud-alibaba","springcloudalibaba","五大组件","介绍"]
+keywords: ["sca","spring-cloud-alibaba","springcloudalibaba","五大组件","介绍"]
 ---
 
 ## 用户问题 ： 

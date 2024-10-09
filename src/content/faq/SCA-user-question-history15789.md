@@ -1,11 +1,11 @@
 ---
 id: "question-history-15789"
 title: "spring ai alibaba 是否支持其他模型比如open ai？"
-date: "2024-06-20"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba 的 Spring AI 实际上是支持其他模型的，比如OpenAI。根据提供的知识内容，在Spring AI体系中，核心价值在于写一次代码就能支持所有模型。它通过接口的标准化设计，使得开发者能够轻松地在不同AI提供商之间切换，只要这些提供商的服务能够通过配置进"
-tags: ["spring-cloud-alibaba","spring","ai","alibaba","open","ai","模型"]
-keywords: ["spring-cloud-alibaba","spring","ai","alibaba","open","ai","模型"]
+tags: ["sca","spring-cloud-alibaba","spring","ai","alibaba","open","ai"]
+keywords: ["sca","spring-cloud-alibaba","spring","ai","alibaba","open","ai"]
 ---
 
 ## 用户问题 ： 
@@ -46,7 +46,7 @@ Spring Cloud Alibaba 的 Spring AI 实际上是支持其他模型的，比如Ope
  
  * 专家经验：sca ai (spring cloud alibaba ai）介绍 
  
- * 专家经验：sca ai 调用通义大模型实现聊天交互 
+ * 专家经验：spring ai alibaba 使用说明 
 
 
  <font color="#949494">---------------</font> 

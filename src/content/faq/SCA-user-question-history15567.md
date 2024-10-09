@@ -1,11 +1,11 @@
 ---
 id: "question-history-15567"
 title: "Spring Cloud Alibaba有哪些主要组件？"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba 主要包含以下核心组件：1. **Nacos**：作为注册中心和服务发现组件，提供了服务注册与发现、配置管理等功能，支持健康检查、动态配置更新等高级特性，是微服务架构中的关键基础设施。2. **Sentinel**：这是一款轻量级的流量控制和熔断降级库，用于实"
-tags: ["Spring","Cloud","Alibaba","主要","组件","包括","Nacos"]
-keywords: ["Spring","Cloud","Alibaba","主要","组件","包括","Nacos"]
+tags: ["Spring","Cloud","Alibaba","主要组件包括服务发现","Nacos、配置中心","Config","Server、分布式事务"]
+keywords: ["Spring","Cloud","Alibaba","主要组件包括服务发现","Nacos、配置中心","Config","Server、分布式事务"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-15032"
 title: "spring cloud alibaba微服务架构介绍"
-date: "2024-06-05"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba 是一个全面的微服务解决方案，旨在为基于Java Spring Boot和Spring Cloud的应用程序提供一系列微服务架构下的组件支持。它集成了如Nacos（用于服务发现与配置管理）、Seata（分布式事务处理）、消息队列等中间件，以及Ribbon、Fe"
-tags: ["spring","cloud","alibaba","微","服务","架构","介绍"]
-keywords: ["spring","cloud","alibaba","微","服务","架构","介绍"]
+tags: ["sca","spring","cloud","alibaba","微服务","架构","介绍"]
+keywords: ["sca","spring","cloud","alibaba","微服务","架构","介绍"]
 ---
 
 ## 用户问题 ： 

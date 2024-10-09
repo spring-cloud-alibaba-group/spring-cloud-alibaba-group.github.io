@@ -1,11 +1,11 @@
 ---
 id: "question-history-16906"
 title: "springboot＋mybatis＋log4j2如何输出SQL日志文件？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的问题，虽然Spring Cloud Alibaba的FAQ没有直接涵盖关于如何在Spring Boot + Mybatis + Log4j2环境下配置SQL日志输出到文件的信息，但我们可以基于通用的配置知识来指导您完成这个任务。请按照以下步骤操作：### 分析问题原因在Spring Boot"
-tags: ["spring-cloud-alibaba","springboot","mybatis","log4j2","SQL","日志","输出"]
-keywords: ["spring-cloud-alibaba","springboot","mybatis","log4j2","SQL","日志","输出"]
+tags: ["sca","springboot","mybatis","log4j2","输出","SQL","日志文件"]
+keywords: ["sca","springboot","mybatis","log4j2","输出","SQL","日志文件"]
 ---
 
 ## 用户问题 ： 

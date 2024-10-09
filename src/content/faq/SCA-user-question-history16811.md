@@ -1,11 +1,11 @@
 ---
 id: "question-history-16811"
 title: "Kubernetes 的istio可以完全替代 Spring Cloud 吗？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Sca(spring-cloud-alibaba) Kubernetes 的Istio与Spring Cloud并不是简单的替代关系，它们分别针对微服务架构的不同层面提供了各自的解决方案。接下来我将基于提供的知识内容分析这个问题。### 分析原因1. **服务治理能力**：Spring Cloud "
-tags: ["sca","spring-cloud-alibaba","Kubernetes","istio","替代","Spring","Cloud"]
-keywords: ["sca","spring-cloud-alibaba","Kubernetes","istio","替代","Spring","Cloud"]
+tags: ["sca","spring-cloud-alibaba","kubernetes","istio","替代","spring-cloud","兼容性"]
+keywords: ["sca","spring-cloud-alibaba","kubernetes","istio","替代","spring-cloud","兼容性"]
 ---
 
 ## 用户问题 ： 

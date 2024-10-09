@@ -1,11 +1,11 @@
 ---
 id: "question-history-15565"
 title: "Spring Cloud Alibaba 支持替换其默认网关为 Spring Cloud"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba 本身不直接绑定特定的网关组件作为默认网关，而是与Spring Cloud生态中的各种组件高度集成。这意呀着您可以根据项目需求选择使用Spring Cloud官方推荐的网关，比如Spring Cloud Gateway或者Zuul。这些网关能够与Spring "
-tags: ["Spring","Cloud","Alibaba","替换","默认","网关","Spring"]
-keywords: ["Spring","Cloud","Alibaba","替换","默认","网关","Spring"]
+tags: ["spring-cloud-alibaba","网关","替换","默认","官方","推荐","支持"]
+keywords: ["spring-cloud-alibaba","网关","替换","默认","官方","推荐","支持"]
 ---
 
 ## 用户问题 ： 

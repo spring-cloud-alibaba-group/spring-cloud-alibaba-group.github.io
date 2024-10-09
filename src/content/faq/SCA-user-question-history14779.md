@@ -1,11 +1,11 @@
 ---
 id: "question-history-14779"
 title: "Nacos命名空间管理接口未授权访问"
-date: "2024-05-30"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在分析问题“sca(spring-cloud-alibaba) Nacos命名空间管理接口未授权访问”时，我们可以从已知的知识中获取线索。Nacos作为Spring Cloud Alibaba中的重要组件，负责服务发现与配置管理。未授权访问的问题通常涉及到权限管理和安全配置不当。### 原因分析：1"
-tags: ["Nacos","命名空间","管理接口","未授权","访问","sca","spring-cloud-alibaba"]
-keywords: ["Nacos","命名空间","管理接口","未授权","访问","sca","spring-cloud-alibaba"]
+tags: ["sca","Nacos","命名空间","未授权","访问","接口","管理"]
+keywords: ["sca","Nacos","命名空间","未授权","访问","接口","管理"]
 ---
 
 ## 用户问题 ： 

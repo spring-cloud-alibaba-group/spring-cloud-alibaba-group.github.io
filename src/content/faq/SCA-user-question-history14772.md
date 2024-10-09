@@ -1,11 +1,11 @@
 ---
 id: "question-history-14772"
 title: "INF0 receive config info: unknown#racos2-0.n"
-date: "2024-05-30"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据你提供的错误信息 INF0 receive config info: unknown#racos2-0.nacos2-headless.default.svc.cluster.local:8848#171702068，可以看出是在尝试从Nacos服务器接收配置信息时遇到了问题。结合我们的知识库，"
-tags: ["spring-cloud-alibaba","receive","config","unknown","nacos-headless","default","svc"]
-keywords: ["spring-cloud-alibaba","receive","config","unknown","nacos-headless","default","svc"]
+tags: ["sca","spring-cloud-alibaba","INF0","receive","config","unknown","nacos2"]
+keywords: ["sca","spring-cloud-alibaba","INF0","receive","config","unknown","nacos2"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-15822"
 title: "org.springframework.ai.chat.model 不存在"
-date: "2024-06-21"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您提供的信息，问题似乎是关于`org.springframework.ai.chat.model`包或类不存在的错误。首先，让我们依托现有知识分析这一情况：1. **分析问题原因**：根据Spring Cloud Alibaba AI的介绍，它是一个建立在Spring AI框架之上的实现，旨在简"
-tags: ["spring","cloud","alibaba","不存在","模型","chat"]
-keywords: ["spring","cloud","alibaba","不存在","模型","chat"]
+tags: ["sca","spring-cloud-alibaba","orgspringframeworkaichatmodel","不存在"]
+keywords: ["sca","spring-cloud-alibaba","orgspringframeworkaichatmodel","不存在"]
 ---
 
 ## 用户问题 ： 

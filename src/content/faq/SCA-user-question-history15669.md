@@ -1,11 +1,11 @@
 ---
 id: "question-history-15669"
 title: "spring-cloud-starter-alibaba-sentinel 2021.0"
-date: "2024-06-18"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，我们可以得知Spring Cloud Alibaba（SCA）版本`2021.0.4.0`所对应的Sentinel版本为`1.8.5`。因此，当你使用`spring-cloud-starter-alibaba-sentinel`版本为`2021.0.4.0`时，配套的Sentin"
-tags: ["spring","cloud","alibaba","sentinel","2021040"]
-keywords: ["spring","cloud","alibaba","sentinel","2021040"]
+tags: ["sca","spring-cloud","alibaba","sentinel","starter","2021040","cloud-starter"]
+keywords: ["sca","spring-cloud","alibaba","sentinel","starter","2021040","cloud-starter"]
 ---
 
 ## 用户问题 ： 

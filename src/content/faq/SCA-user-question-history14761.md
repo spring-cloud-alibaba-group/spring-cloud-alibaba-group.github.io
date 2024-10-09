@@ -1,11 +1,11 @@
 ---
 id: "question-history-14761"
 title: "spring boot expected single matching bean bu"
-date: "2024-05-30"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在`sca(spring-cloud-alibaba)`环境中遇到`spring boot expected single matching bean but found 2`的异常，通常是因为Spring Boot在尝试自动配置时找到了多个相同类型的Bean（本例中为`DataSource`）。结"
-tags: ["sca","spring-boot","bean-matching-error"]
-keywords: ["sca","spring-boot","bean-matching-error"]
+tags: ["sca","spring-cloud-alibaba","spring-boot","expected-bean","matching-bean","found-2"]
+keywords: ["sca","spring-cloud-alibaba","spring-boot","expected-bean","matching-bean","found-2"]
 ---
 
 ## 用户问题 ： 

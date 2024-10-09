@@ -1,11 +1,11 @@
 ---
 id: "question-history-16241"
 title: "不用dubbo 的情况下 如何基于spring cloud 进行服务之间的调用？"
-date: "2024-07-18"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba体系中，即使不使用Dubbo，也可以通过Spring Cloud原生的组件来实现服务之间的调用。根据我了解的知识，我们可以分析如下：### 分析问题原因Spring Cloud Alibaba虽然本身不直接提供服务调用框架，但它完全融入了Spring Clo"
-tags: ["spring","cloud","alibaba","服务","调用"]
-keywords: ["spring","cloud","alibaba","服务","调用"]
+tags: ["sca","spring-cloud-alibaba","dubbo","spring","cloud","服务","调用"]
+keywords: ["sca","spring-cloud-alibaba","dubbo","spring","cloud","服务","调用"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-15569"
 title: "在哪可以创建一个spring cloud alibaba项目"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要创建一个Spring Cloud Alibaba项目，您可以按照以下步骤操作：### 步骤分析与依据根据提供的知识内容，我们知道Spring Cloud Alibaba是一个成熟的微服务解决方案，它提供了包括服务发现（Nacos）、配置管理（Nacos Config）等功能。为了创建一个项目，我们"
-tags: ["spring","cloud","alibaba","创建","项目"]
-keywords: ["spring","cloud","alibaba","创建","项目"]
+tags: ["sca","spring-cloud-alibaba","创建","项目"]
+keywords: ["sca","spring-cloud-alibaba","创建","项目"]
 ---
 
 ## 用户问题 ： 

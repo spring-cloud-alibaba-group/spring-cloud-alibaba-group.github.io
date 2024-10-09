@@ -1,11 +1,11 @@
 ---
 id: "question-history-14713"
 title: "org.springframework.ai:spring-ai-core:jar:0."
-date: "2024-05-29"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "遇到问题`org.springframework.ai:spring-ai-core:jar:0.8.1 was not found in https://maven.aliyun.com/repository/public...`主要是因为Spring官方未将`spring-ai-core`版本0"
-tags: ["sca","spring-cloud-alibaba","spring-ai-core","081","mavenaliyuncom","local","repository"]
-keywords: ["sca","spring-cloud-alibaba","spring-ai-core","081","mavenaliyuncom","local","repository"]
+tags: ["sca","spring-cloud-alibaba","orgspringframeworkai","spring-ai-core","081","mavenaliyuncom","repository"]
+keywords: ["sca","spring-cloud-alibaba","orgspringframeworkai","spring-ai-core","081","mavenaliyuncom","repository"]
 ---
 
 ## 用户问题 ： 

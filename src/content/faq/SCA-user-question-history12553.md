@@ -1,7 +1,7 @@
 ---
 id: "question-history-12553"
 title: "springboot下载"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，以下是关于如何下载Sca（Spring Cloud Alibaba）与Spring Boot相关资源的详细步骤：1. **访问Spring Boot项目初始化工具**：   首先，打开网页浏览器，访问Spring Boot项目初始化工具——阿里云提供的Spring Initial"
 tags: ["sca","spring-cloud-alibaba","springboot","下载"]

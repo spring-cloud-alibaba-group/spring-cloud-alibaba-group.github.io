@@ -1,11 +1,11 @@
 ---
 id: "question-history-17032"
 title: "springcloud与springboot版本对照"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的需求，这里是Spring Cloud Alibaba（SCA）与Spring Boot和Spring Cloud版本的对照信息：1. **确定您的Spring Boot版本**：首先，请确认您当前项目中使用的Spring Boot具体版本号，这是选择兼容Spring Cloud Alibab"
-tags: ["sca","spring-cloud-alibaba","版本","对照","springcloud","springboot"]
-keywords: ["sca","spring-cloud-alibaba","版本","对照","springcloud","springboot"]
+tags: ["sca","spring-cloud-alibaba","springcloud","springboot","版本","对照"]
+keywords: ["sca","spring-cloud-alibaba","springcloud","springboot","版本","对照"]
 ---
 
 ## 用户问题 ： 

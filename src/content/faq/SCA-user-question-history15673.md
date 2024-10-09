@@ -1,11 +1,11 @@
 ---
 id: "question-history-15673"
 title: "Spring Cloud Alibaba项目中整合Druid连接池"
-date: "2024-06-18"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba项目中整合Druid连接池的步骤如下：### 依托知识分析原因根据提供的知识内容，我们知道Druid是阿里巴巴开源的高性能数据库连接池，适用于需要监控和强大功能的场景。Spring Cloud Alibaba作为一套微服务解决方案，自然能够与Druid这样的"
-tags: ["Spring","Cloud","Alibaba","Druid","整合","连接池"]
-keywords: ["Spring","Cloud","Alibaba","Druid","整合","连接池"]
+tags: ["sca","spring-cloud-alibaba","整合","Druid","连接池","Spring","Cloud"]
+keywords: ["sca","spring-cloud-alibaba","整合","Druid","连接池","Spring","Cloud"]
 ---
 
 ## 用户问题 ： 

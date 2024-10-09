@@ -1,11 +1,11 @@
 ---
 id: "question-history-15560"
 title: "spring cloud alibaba 2023版本跟dubbo3集成样例有吗"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据已有的知识信息，直接提供关于Spring Cloud Alibaba 2023版本与Dubbo3集成的具体样例可能不够充分，但可以提供一些指导方向。首先，让我们确认几个关键点以更好地帮助您：1. **您希望了解的是Spring Cloud Alibaba哪个具体版本（如2023.0.1.0）与D"
-tags: ["spring","cloud","alibaba","2023","dubbo3","集成","样例"]
-keywords: ["spring","cloud","alibaba","2023","dubbo3","集成","样例"]
+tags: ["sca","spring","cloud","alibaba","2023","版本","dubbo3"]
+keywords: ["sca","spring","cloud","alibaba","2023","版本","dubbo3"]
 ---
 
 ## 用户问题 ： 
@@ -38,7 +38,7 @@ keywords: ["spring","cloud","alibaba","2023","dubbo3","集成","样例"]
 - 查阅Dubbo3的官方文档（https://dubbo.apache.org/en-us/docs/3.0/user/quick-start.html）和Spring Cloud Alibaba文档（https://github.com/alibaba/spring-cloud-alibaba/blob/master/README.md）获取详细配置和特性说明。
 - 集成过程中可能会遇到的问题，比如版本冲突、配置不当等，应当对照官方文档调整。
 
-如果您能提供更多具体信息或直接上述前置问题，我将能提供更加针对性的指导和帮助。
+如果您能提供更多具体信息或直接回答上述前置问题，我将能提供更加针对性的指导和帮助。
 
 
 <font color="#949494">---------------</font> 

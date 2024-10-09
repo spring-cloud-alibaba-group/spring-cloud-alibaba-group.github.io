@@ -1,11 +1,11 @@
 ---
 id: "question-history-14937"
 title: "springcloud alibaba 可以使用eureka代替nacos吗"
-date: "2024-06-03"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba体系中，Nacos 作为默认的服务发现与配置管理组件，为微服务架构提供了强大支持。关于是否可以使用 Eureka 代替 Nacos 的问题，我们可以从以下几个方面进行分析：1. **服务发现功能替换：**   - **Eureka** 是 Netflix 开"
-tags: ["spring-cloud-alibaba","eureka","nacos","替代","使用"]
-keywords: ["spring-cloud-alibaba","eureka","nacos","替代","使用"]
+tags: ["sca","spring-cloud-alibaba","springcloud","alibaba","eureka","nacos","替代"]
+keywords: ["sca","spring-cloud-alibaba","springcloud","alibaba","eureka","nacos","替代"]
 ---
 
 ## 用户问题 ： 

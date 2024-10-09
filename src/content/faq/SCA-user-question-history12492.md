@@ -1,11 +1,11 @@
 ---
 id: "question-history-12492"
 title: "springboot 整合定时任务"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (SCA)环境下的Spring Boot应用中整合定时任务，遵循以下步骤进行：1. **启用定时任务支持**   - 在你的配置类中，添加`@EnableScheduling`注解以启用定时任务功能。这会激活Spring对定时任务的调度支持。   ```j"
-tags: ["sca","spring-cloud-alibaba","springboot","定时任务","整合"]
-keywords: ["sca","spring-cloud-alibaba","springboot","定时任务","整合"]
+tags: ["sca","spring-cloud-alibaba","springboot","定时任务"]
+keywords: ["sca","spring-cloud-alibaba","springboot","定时任务"]
 ---
 
 ## 用户问题 ： 

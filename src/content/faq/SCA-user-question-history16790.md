@@ -1,7 +1,7 @@
 ---
 id: "question-history-16790"
 title: "使用通义千问时怎么配置指定使用某个模型"
-date: "2024-09-06"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "当使用Spring Cloud Alibaba集成通义千问时，若需配置指定使用某个模型，您可以遵循以下步骤操作：1. **确认模型可用性**：   在决定配置前，首先确保您想要使用的模型是通义千问支持的，并且已经在阿里云的服务列表中启用。这一步虽然不在直接操作流程内，但对选择合适的模型至关重要。2."
 tags: ["sca","spring-cloud-alibaba","通义千问","配置","指定","模型","使用"]
@@ -58,7 +58,7 @@ keywords: ["sca","spring-cloud-alibaba","通义千问","配置","指定","模型
 
 ## 参考链接 ：
 
-* 专家经验：sca ai 调用通义大模型实现聊天交互 
+* 专家经验：spring ai alibaba 使用说明 
 
 
  <font color="#949494">---------------</font> 

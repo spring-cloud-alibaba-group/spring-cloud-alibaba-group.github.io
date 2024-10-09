@@ -1,11 +1,11 @@
 ---
 id: "question-history-14604"
 title: "SpringCloud Alibaba框架都包含有啥？"
-date: "2024-05-27"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba框架包含以下核心组件：1. **Nacos**：提供服务发现和服务配置管理功能。Nacos允许您在分布式环境中动态地管理配置和服务实例，支持健康检查、服务权重调整等高级特性。[[Nacos Config](https://github.com/spring-c"
-tags: ["SpringCloud","Alibaba","框架","包含","组件","功能","介绍"]
-keywords: ["SpringCloud","Alibaba","框架","包含","组件","功能","介绍"]
+tags: ["SpringCloud","Alibaba","框架","包含","服务治理","分布式","高可用"]
+keywords: ["SpringCloud","Alibaba","框架","包含","服务治理","分布式","高可用"]
 ---
 
 ## 用户问题 ： 

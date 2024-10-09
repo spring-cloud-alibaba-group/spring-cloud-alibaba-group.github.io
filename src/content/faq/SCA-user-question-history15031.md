@@ -1,11 +1,11 @@
 ---
 id: "question-history-15031"
 title: "spring cloud alibaba相同配置使用本地配置"
-date: "2024-06-05"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在使用Spring Cloud Alibaba时，如果你希望某些配置优先使用本地配置而非Nacos服务器上的配置，你可以通过以下步骤操作：### 原因分析根据提供的知识内容，我们知道Spring Cloud Alibaba允许我们利用Nacos作为配置中心和服务发现组件。默认情况下，应用程序会从Na"
-tags: ["sca","spring","cloud","alibaba","本地","配置","使用"]
-keywords: ["sca","spring","cloud","alibaba","本地","配置","使用"]
+tags: ["sca","spring-cloud-alibaba","云原生","配置管理","本地配置","同步","使用教程"]
+keywords: ["sca","spring-cloud-alibaba","云原生","配置管理","本地配置","同步","使用教程"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-12531"
 title: "springboot菜鸟教程"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "针对您的问题“sca(spring-cloud-alibaba) springboot菜鸟教程”，以下是基于提供的知识内容为您整理的教程概览及步骤说明：### 1. Spring Boot项目快速启动- **创建项目**：使用IntelliJ IDEA或Eclipse等IDE直接创建Spring B"
-tags: ["sca","spring-cloud-alibaba","springboot","菜鸟","教程"]
-keywords: ["sca","spring-cloud-alibaba","springboot","菜鸟","教程"]
+tags: ["sca","spring-cloud-alibaba","springboot","菜鸟教程"]
+keywords: ["sca","spring-cloud-alibaba","springboot","菜鸟教程"]
 ---
 
 ## 用户问题 ： 

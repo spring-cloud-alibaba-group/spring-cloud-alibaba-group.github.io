@@ -1,11 +1,11 @@
 ---
 id: "question-history-13464"
 title: "spring cloud alibaba 配置seata"
-date: "2024-05-14"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "为了在Spring Cloud Alibaba项目中配置Seata，您可以遵循以下步骤进行部署和配置：1. **依赖添加**:   在您的Spring Cloud项目中，需要添加Seata的依赖。根据Spring Cloud Alibaba版本选择合适的Seata版本。根据知识中的信息，例如，如果您"
-tags: ["sca","spring-cloud-alibaba","seata","配置"]
-keywords: ["sca","spring-cloud-alibaba","seata","配置"]
+tags: ["sca","spring-cloud-alibaba","spring","cloud","alibaba","seata","配置"]
+keywords: ["sca","spring-cloud-alibaba","spring","cloud","alibaba","seata","配置"]
 ---
 
 ## 用户问题 ： 

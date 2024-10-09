@@ -26,6 +26,11 @@ const keywords = Array.isArray(originKeywords)
     ? originKeywords.join(",")
     : originKeywords;
 
+let titleContent = data.title;
+if(canonical?.pathname !== '/') {
+    titleContent = `${data.title}-${t("commmon.header.title.alibaba.cloud")}${config.title}${t("commmon.header.title.official.website")}`;
+};
+
 const headDefaults: z.input<ReturnType<typeof HeadConfigSchema>> = [
     { tag: "meta", attrs: { name: "aplus-core", content: "aplus.js" } },
     { tag: "meta", attrs: { charset: "utf-8" } },
@@ -38,7 +43,7 @@ const headDefaults: z.input<ReturnType<typeof HeadConfigSchema>> = [
     },
     {
         tag: "title",
-        content: `${data.title}-${t("commmon.header.title.alibaba.cloud")}${config.title}${t("commmon.header.title.official.website")}`,
+        content: titleContent,
     },
     { tag: "link", attrs: { rel: "canonical", href: canonical?.href } },
     {

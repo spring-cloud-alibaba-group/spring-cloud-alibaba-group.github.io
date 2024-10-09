@@ -1,11 +1,11 @@
 ---
 id: "question-history-13466"
 title: "spring cloud-alibaba seata 使用"
-date: "2024-05-14"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要使用Spring Cloud Alibaba中的Seata进行分布式事务管理，可以遵循以下步骤进行配置和部署：1. **确认版本兼容性**：根据提供的版本对应关系表（[官方文档](https://sca.aliyun.com/docs/2023/overview/version-explain/)"
-tags: ["sca","spring-cloud-alibaba","seata","使用"]
-keywords: ["sca","spring-cloud-alibaba","seata","使用"]
+tags: ["sca","spring-cloud-alibaba","seata","使用","分布式","服务","熔断"]
+keywords: ["sca","spring-cloud-alibaba","seata","使用","分布式","服务","熔断"]
 ---
 
 ## 用户问题 ： 

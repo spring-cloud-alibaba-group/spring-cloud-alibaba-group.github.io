@@ -1,11 +1,11 @@
 ---
 id: "question-history-14799"
 title: "spring-cloud.version 2020.0.3  spring-cloud."
-date: "2024-09-12"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，我们了解到如何将Spring Boot应用升级到Spring Cloud并使用Spring Cloud Alibaba组件，特别是关于如何引入Nacos作为服务发现组件。但是，直接查询特定版本的`spring-cloud-starter-alibaba-nacos-discove"
-tags: ["spring-cloud-alibaba","nacos","discovery","版本","202003"]
-keywords: ["spring-cloud-alibaba","nacos","discovery","版本","202003"]
+tags: ["sca","spring-cloud-alibaba","spring-cloudversion","202003","spring-cloud-starter-alibaba-nacos-discovery","版本"]
+keywords: ["sca","spring-cloud-alibaba","spring-cloudversion","202003","spring-cloud-starter-alibaba-nacos-discovery","版本"]
 ---
 
 ## 用户问题 ： 
@@ -37,7 +37,7 @@ keywords: ["spring-cloud-alibaba","nacos","discovery","版本","202003"]
 
 ## 参考链接 ：
 
-* 专家经验：sca(spring-cloud-alibaba) Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
+* 专家经验：Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
 
 
  <font color="#949494">---------------</font> 

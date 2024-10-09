@@ -1,11 +1,11 @@
 ---
 id: "question-history-16242"
 title: "spring cloud 这个调用性能和 dubbo 对比有什么区别"
-date: "2024-07-18"
+date: "2024-09-26"
 category: "expertConsultation"
-description: "在关于Spring Cloud Alibaba（SCA）与Dubbo在服务调用性能上的对比前，我们先来回顾一下两者的定位与特点，这有助于我们理解它们性能差异的根源。### 技术栈与服务调用- **Spring Cloud Alibaba**：它并不直接提供服务调用框架，而是通过与Spring Clo"
-tags: ["spring-cloud-alibaba","spring","cloud","dubbo","调用","性能","对比"]
-keywords: ["spring-cloud-alibaba","spring","cloud","dubbo","调用","性能","对比"]
+description: "在回答关于Spring Cloud Alibaba（SCA）与Dubbo在服务调用性能上的对比前，我们先来回顾一下两者的定位与特点，这有助于我们理解它们性能差异的根源。### 技术栈与服务调用- **Spring Cloud Alibaba**：它并不直接提供服务调用框架，而是通过与Spring C"
+tags: ["sca","spring-cloud-alibaba","spring-cloud","dubbo","性能","对比","区别"]
+keywords: ["sca","spring-cloud-alibaba","spring-cloud","dubbo","性能","对比","区别"]
 ---
 
 ## 用户问题 ： 
@@ -14,7 +14,7 @@ keywords: ["spring-cloud-alibaba","spring","cloud","dubbo","调用","性能","�
 ---------------
 ## 专家官方解答 ：
 
-在关于Spring Cloud Alibaba（SCA）与Dubbo在服务调用性能上的对比前，我们先来回顾一下两者的定位与特点，这有助于我们理解它们性能差异的根源。
+在回答关于Spring Cloud Alibaba（SCA）与Dubbo在服务调用性能上的对比前，我们先来回顾一下两者的定位与特点，这有助于我们理解它们性能差异的根源。
 
 ### 技术栈与服务调用
 

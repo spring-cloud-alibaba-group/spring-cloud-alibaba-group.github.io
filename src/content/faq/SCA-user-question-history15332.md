@@ -1,11 +1,11 @@
 ---
 id: "question-history-15332"
 title: "Could not find artifact org.springframework."
-date: "2024-06-14"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据你的问题描述，你在尝试获取`org.springframework.ai:spring-ai-core:jar:0.8.1`依赖时遇到了找不到该组件的问题，并且你已经尝试了使用`-U`标志强制更新快照，但问题依旧存在。根据这些信息，我们可以分析并提供相应的建议。### 原因分析根据提供的知识内容"
-tags: ["sca","spring-cloud-alibaba","artifact","spring-ai-core","081","alimaven","maven"]
-keywords: ["sca","spring-cloud-alibaba","artifact","spring-ai-core","081","alimaven","maven"]
+tags: ["sca","spring-cloud-alibaba","artifact","orgspringframeworkai","spring-ai-core","jar","081"]
+keywords: ["sca","spring-cloud-alibaba","artifact","orgspringframeworkai","spring-ai-core","jar","081"]
 ---
 
 ## 用户问题 ： 
@@ -65,7 +65,7 @@ keywords: ["sca","spring-cloud-alibaba","artifact","spring-ai-core","081","alima
 
 * 专家经验：无法从maven中央仓下载内容的说明 
  
- * 专家经验：sca ai 调用通义大模型实现聊天交互 
+ * 专家经验：spring ai alibaba 使用说明 
 
 
  <font color="#949494">---------------</font> 

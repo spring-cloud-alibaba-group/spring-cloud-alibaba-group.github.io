@@ -1,7 +1,7 @@
 ---
 id: "question-history-17033"
 title: "springcloud 版本列表"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，以下是Spring Cloud Alibaba（SCA）的部分版本列表：1. **2023.0.1.0**   - Sentinel: 1.8.6   - Nacos: 2.3.2   - RocketMQ: 5.1.4   - Dubbo: 2.0.0   - Seata: （"
 tags: ["sca","spring-cloud-alibaba","springcloud","版本","列表"]
@@ -51,11 +51,11 @@ keywords: ["sca","spring-cloud-alibaba","springcloud","版本","列表"]
    - Dubbo: 不适用或信息未提供
    - Seata: 1.6.1
 
-... （此处省略了部分版本以保持的简洁性）
+... （此处省略了部分版本以保持回答的简洁性）
 
 请注意，上述列表并不完全，仅展示了部分关键版本以供参考。对于具体项目选择，建议根据实际需求和兼容性测试结果来决定使用哪个版本的Spring Cloud Alibaba及其组件。此外，随着技术的更新迭代，建议查看Spring Cloud Alibaba的官方文档或发布说明以获取最新版本信息及详细版本兼容性指导。
 
-此基于提供的知识内容，未直接引用外部链接，因为问题本身不需额外的外部资源来解答。如果有更详细的需求或者想要了解其他特定版本的详细信息，请指定版本或提出更具体的问题。
+此回答基于提供的知识内容，未直接引用外部链接，因为问题本身不需额外的外部资源来解答。如果有更详细的需求或者想要了解其他特定版本的详细信息，请指定版本或提出更具体的问题。
 
 
 <font color="#949494">---------------</font> 

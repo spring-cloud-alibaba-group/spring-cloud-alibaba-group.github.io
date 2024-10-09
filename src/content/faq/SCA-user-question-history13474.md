@@ -1,7 +1,7 @@
 ---
 id: "question-history-13474"
 title: "spring-cloud-alibaba 2021.1 支持的seata版本"
-date: "2024-05-14"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，Spring Cloud Alibaba 2021.1 对应的 Seata 版本是 1.4.2。因此，如果您正在使用 Spring Cloud Alibaba 2021.1 版本，应搭配 Seata 1.4.2 版本来进行部署和配置。此信息依据的是官方文档中关于版本对应关系的说明"
 tags: ["sca","spring-cloud-alibaba","20211","seata","版本","支持"]
@@ -16,7 +16,7 @@ keywords: ["sca","spring-cloud-alibaba","20211","seata","版本","支持"]
 
 根据提供的知识内容，Spring Cloud Alibaba 2021.1 对应的 Seata 版本是 1.4.2。因此，如果您正在使用 Spring Cloud Alibaba 2021.1 版本，应搭配 Seata 1.4.2 版本来进行部署和配置。
 
-此信息依据的是官方文档中关于版本对应关系的说明，具体配置和部署细节虽未在简短中展开，但您可以参考[官方文档](https://sca.aliyun.com/docs/2023/overview/version-explain/)以获取最详细的指导和最佳实践。
+此信息依据的是官方文档中关于版本对应关系的说明，具体配置和部署细节虽未在简短回答中展开，但您可以参考[官方文档](https://sca.aliyun.com/docs/2023/overview/version-explain/)以获取最详细的指导和最佳实践。
 
 
 <font color="#949494">---------------</font> 

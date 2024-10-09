@@ -1,7 +1,7 @@
 ---
 id: "question-history-12560"
 title: "springboot多线程"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在处理`sca(spring-cloud-alibaba)`与`springboot`环境下的多线程应用时，尽管直接的多线程使用方法与标准Spring Boot应用相似，但考虑到微服务架构和Spring Cloud Alibaba特性，有一些特定的最佳实践和注意事项需要考虑：1. **理解Sprin"
 tags: ["sca","spring-cloud-alibaba","springboot","多线程"]

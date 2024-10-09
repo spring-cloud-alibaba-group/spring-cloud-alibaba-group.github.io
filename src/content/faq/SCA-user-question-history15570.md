@@ -1,11 +1,11 @@
 ---
 id: "question-history-15570"
 title: "如何在Spring Cloud Alibaba项目中整合Druid连接池"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba项目中整合Druid连接池的步骤如下：1. **添加依赖**   首先，你需要在你的Spring Boot项目中加入Druid-Spring-Boot-Starter的依赖。这可以通过Maven或Gradle来完成。以下是依赖配置示例：      Maven"
-tags: ["Spring","Cloud","Alibaba","Druid","整合","连接池"]
-keywords: ["Spring","Cloud","Alibaba","Druid","整合","连接池"]
+tags: ["sca","spring-cloud-alibaba","整合","Druid","连接池","Spring","Cloud"]
+keywords: ["sca","spring-cloud-alibaba","整合","Druid","连接池","Spring","Cloud"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-16932"
 title: "spring-cloud-starter-alibaba-nacos-discovery"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的问题，您想了解的是`sca(spring-cloud-alibaba)`中`spring-cloud-starter-alibaba-nacos-discovery`与`Spring Boot`版本的对照信息。依据提供的知识内容，我们可以直接查阅Spring Boot与Spring Clou"
-tags: ["spring-cloud-alibaba","nacos-discovery","spring-boot","版本","对照"]
-keywords: ["spring-cloud-alibaba","nacos-discovery","spring-boot","版本","对照"]
+tags: ["sca","spring-cloud-alibaba","nacos-discovery","spring-boot","版本","对照"]
+keywords: ["sca","spring-cloud-alibaba","nacos-discovery","spring-boot","版本","对照"]
 ---
 
 ## 用户问题 ： 
@@ -34,7 +34,7 @@ keywords: ["spring-cloud-alibaba","nacos-discovery","spring-boot","版本","对�
 
 ## 参考链接 ：
 
-* 专家经验：sca(spring-cloud-alibaba) Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
+* 专家经验：Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
 
 
  <font color="#949494">---------------</font> 

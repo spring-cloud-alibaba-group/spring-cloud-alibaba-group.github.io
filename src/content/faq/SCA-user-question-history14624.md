@@ -1,7 +1,7 @@
 ---
 id: "question-history-14624"
 title: "add a spring.config.import=nacos: property t"
-date: "2024-05-27"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在使用Spring Cloud Alibaba集成Nacos作为配置中心时，若遇到需要动态添加`spring.config.import=nacos:`属性到配置中，且在配置不是必须时希望使用`optional:`前缀，或者想要禁用此检查的情况，可以根据以下步骤操作：1. **分析问题原因**：  "
 tags: ["spring-cloud-alibaba","nacos","springconfigimport","configuration","optional","disable","springcloudnacosconfigimport-checkenabled"]

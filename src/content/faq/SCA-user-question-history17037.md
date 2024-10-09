@@ -1,11 +1,11 @@
 ---
 id: "question-history-17037"
 title: "spring cloud 2023.0.1 对应springboot哪个版本？"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，Spring Cloud 2023.0.1 对应的 Spring Boot 版本是 3.2.4。这意味着如果您想要使用 Spring Cloud 2023.0.1 版本，应当选择 Spring Boot 3.2.4 版本来确保两者之间的兼容性。简单来说，要使用指定的 Spring"
-tags: ["sca","spring-cloud-alibaba","spring","cloud","202301","springboot","版本"]
-keywords: ["sca","spring-cloud-alibaba","spring","cloud","202301","springboot","版本"]
+tags: ["sca","spring-cloud-alibaba","spring-cloud","202301","springboot","版本","对应"]
+keywords: ["sca","spring-cloud-alibaba","spring-cloud","202301","springboot","版本","对应"]
 ---
 
 ## 用户问题 ： 

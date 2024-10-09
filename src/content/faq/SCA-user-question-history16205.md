@@ -1,11 +1,11 @@
 ---
 id: "question-history-16205"
 title: "Spring Cloud Alibaba和Dubbo选型建议"
-date: "2024-07-15"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在选择Spring Cloud Alibaba和Dubbo时，应综合考虑以下几个因素：1. **技术栈整合**：考虑到您的技术栈偏好和现有项目的集成需求。Spring Cloud Alibaba与Spring Boot和Spring Cloud生态高度集成，如果您团队已熟悉Spring技术栈，采用S"
-tags: ["Spring","Cloud","Alibaba","Dubbo","选型","建议","sca"]
-keywords: ["Spring","Cloud","Alibaba","Dubbo","选型","建议","sca"]
+tags: ["Spring","Cloud","Alibaba","Dubbo","选型","建议"]
+keywords: ["Spring","Cloud","Alibaba","Dubbo","选型","建议"]
 ---
 
 ## 用户问题 ： 

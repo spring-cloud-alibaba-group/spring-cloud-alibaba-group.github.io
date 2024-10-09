@@ -1,11 +1,11 @@
 ---
 id: "question-history-16240"
 title: "springboot 2.7.17 适配那个版本的cloud"
-date: "2024-09-12"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据我了解的知识中的信息，Spring Boot 2.7.x 应当适配 Spring Cloud 2021.x 分支。但是具体到 Spring Boot 2.7.17，虽然直接匹配的版本没有明确列出，我们可以根据适配规则推测。由于 2.7.x 系列属于 Spring Boot 2.4 之后的版本，它"
-tags: ["spring-cloud-alibaba","springboot","2717","版本","适配"]
-keywords: ["spring-cloud-alibaba","springboot","2717","版本","适配"]
+tags: ["sca","spring-boot","2717","适配","版本","cloud-alibaba"]
+keywords: ["sca","spring-boot","2717","适配","版本","cloud-alibaba"]
 ---
 
 ## 用户问题 ： 

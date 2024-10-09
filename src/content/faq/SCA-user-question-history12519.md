@@ -1,7 +1,7 @@
 ---
 id: "question-history-12519"
 title: "springboot jwt"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在处理关于`sca(spring-cloud-alibaba)`与`springboot`集成JWT（JSON Web Tokens）的问题时，我们可以分步进行分析与实施。虽然提供的参考内容未直接涉及JWT的集成，但我们可以基于Spring Boot的一般实践和Spring Cloud Alibab"
 tags: ["sca","spring-cloud-alibaba","springboot","jwt"]

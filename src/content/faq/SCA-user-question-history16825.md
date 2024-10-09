@@ -1,11 +1,11 @@
 ---
 id: "question-history-16825"
 title: "详细解释 spring中IOC和AOP？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的问题，您想了解的是Spring框架中的IOC（Inverse of Control，控制反转）和AOP（Aspect Oriented Programming，面向切面编程）的概念，这虽然不是直接关于Spring Cloud Alibaba的内容，但作为使用Spring Cloud Alib"
-tags: ["spring","cloud","alibaba","IOC","AOP","详细","解释"]
-keywords: ["spring","cloud","alibaba","IOC","AOP","详细","解释"]
+tags: ["sca","spring-cloud-alibaba","IOC","AOP","解释","详细","spring中"]
+keywords: ["sca","spring-cloud-alibaba","IOC","AOP","解释","详细","spring中"]
 ---
 
 ## 用户问题 ： 

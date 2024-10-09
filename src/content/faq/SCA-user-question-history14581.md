@@ -1,7 +1,7 @@
 ---
 id: "question-history-14581"
 title: "如何使用higress 替代spring cloud gateway 实现服务发现与路由"
-date: "2024-05-27"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要使用 Higress 替代 Spring Cloud Gateway 实现服务发现与路由转发，针对 Spring Cloud Alibaba 环境，可以遵循以下步骤：1. **配置 Nacos 作为注册中心**:   - 参考 [Nacos-Spring-Cloud 快速开始](https://s"
 tags: ["sca","spring-cloud-alibaba","higress","spring","cloud","gateway","服务发现"]

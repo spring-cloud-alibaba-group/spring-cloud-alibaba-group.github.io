@@ -1,11 +1,11 @@
 ---
 id: "question-history-15331"
 title: "配置 Spring Cloud Gateway 使用 Nacos，但不使用Higress"
-date: "2024-06-14"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要配置Spring Cloud Gateway使用Nacos作为配置中心和服务发现，但不使用Higress网关，您可以按照以下步骤操作：### 步骤分析与依据根据提供的知识内容，我们可以看到Nacos与Spring Cloud的融合主要涉及两个方面：**配置管理**和**服务注册与发现**。虽然示例"
-tags: ["Spring","Cloud","Alibaba","Nacos","Gateway","配置","使用"]
-keywords: ["Spring","Cloud","Alibaba","Nacos","Gateway","配置","使用"]
+tags: ["sca","spring-cloud-alibaba","配置","Spring","Cloud","Gateway","Nacos"]
+keywords: ["sca","spring-cloud-alibaba","配置","Spring","Cloud","Gateway","Nacos"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-16852"
 title: "Spring是怎么解决Bean之间的循环依赖的？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring框架解决Bean之间的循环依赖问题主要依赖于其容器的即时（懒）初始化、依赖注入的实现机制以及三级缓存策略。虽然Spring Cloud Alibaba主要关注微服务架构层面的解决方案，如服务发现、配置管理、流量控制等，但理解Spring如何处理循环依赖对于使用Spring Cloud A"
-tags: ["Spring","解决","Bean","循环","依赖","sca","spring-cloud-alibaba"]
-keywords: ["Spring","解决","Bean","循环","依赖","sca","spring-cloud-alibaba"]
+tags: ["spring-cloud-alibaba","spring","循环依赖","解决方法","Bean","互相注入","Spring框架"]
+keywords: ["spring-cloud-alibaba","spring","循环依赖","解决方法","Bean","互相注入","Spring框架"]
 ---
 
 ## 用户问题 ： 

@@ -1,7 +1,7 @@
 ---
 id: "question-history-12533"
 title: "springboot admin"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (SCA)环境中使用Spring Boot Admin进行应用性能监控与管理，虽然直接的知识内容未提供详尽步骤，但可以根据SBA的基本集成方式结合Spring Boot应用的一般实践来指导你如何进行。以下是基于通用做法的建议步骤：1. **添加依赖**: "
 tags: ["sca","spring-cloud-alibaba","springboot","admin","性能","监控","管理"]

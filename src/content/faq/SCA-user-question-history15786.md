@@ -1,11 +1,11 @@
 ---
 id: "question-history-15786"
 title: "阿里云通义千问 api-key如何申请"
-date: "2024-06-20"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要申请阿里云通义千问的api-key，请按照以下步骤操作：1. **确保环境要求**：首先，确认你的开发环境已安装JDK17或以上版本，这是使用Spring Cloud Alibaba集成通义千问的前提条件。2. **访问阿里云百炼页面**：打开[阿里云百炼页面](https://www.aliyu"
-tags: ["spring-cloud-alibaba","阿里云","通义千问","api-key","申请","方法"]
-keywords: ["spring-cloud-alibaba","阿里云","通义千问","api-key","申请","方法"]
+tags: ["sca","spring-cloud-alibaba","阿里云","通义千问","api-key","申请"]
+keywords: ["sca","spring-cloud-alibaba","阿里云","通义千问","api-key","申请"]
 ---
 
 ## 用户问题 ： 
@@ -51,7 +51,7 @@ keywords: ["spring-cloud-alibaba","阿里云","通义千问","api-key","申请",
 
 ## 参考链接 ：
 
-* 专家经验：sca ai 调用通义大模型实现聊天交互 
+* 专家经验：spring ai alibaba 使用说明 
 
 
  <font color="#949494">---------------</font> 

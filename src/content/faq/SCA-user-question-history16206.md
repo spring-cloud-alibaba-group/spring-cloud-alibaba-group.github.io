@@ -1,11 +1,11 @@
 ---
 id: "question-history-16206"
 title: "Spring Boot 应用程序生命周期和相关的应用程序事件"
-date: "2024-07-15"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba环境中，Spring Boot应用程序的生命周期与一系列关键的事件紧密相关，这些事件标志着应用程序从启动到关闭的各个阶段。根据提供的知识内容，我们可以详细梳理Spring Boot应用的生命周期及相关的应用程序事件，具体如下：### 应用程序生命周期与事件序"
-tags: ["sca","spring-cloud-alibaba","Spring","Boot","应用程序","生命周期","事件"]
-keywords: ["sca","spring-cloud-alibaba","Spring","Boot","应用程序","生命周期","事件"]
+tags: ["sca","spring-boot","生命周期","应用程序","事件","alibaba","cloud"]
+keywords: ["sca","spring-boot","生命周期","应用程序","事件","alibaba","cloud"]
 ---
 
 ## 用户问题 ： 

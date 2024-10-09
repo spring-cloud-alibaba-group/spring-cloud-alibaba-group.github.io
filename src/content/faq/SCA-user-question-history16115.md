@@ -1,11 +1,11 @@
 ---
 id: "question-history-16115"
 title: "Consider defining a bean of type 'org.spring"
-date: "2024-07-05"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据你提供的异常信息`Consider defining a bean of type 'org.springframework.ai.chat.model.ChatModel' in your configuration.`，这个异常通常意味着Spring在运行时无法找到类型为`org.sprin"
-tags: ["spring-cloud-alibaba","ChatModel","配置","bean","定义","异常"]
-keywords: ["spring-cloud-alibaba","ChatModel","配置","bean","定义","异常"]
+tags: ["sca","spring-cloud-alibaba","bean","orgspringframeworkaichatmodelChatModel","配置","异常","情况"]
+keywords: ["sca","spring-cloud-alibaba","bean","orgspringframeworkaichatmodelChatModel","配置","异常","情况"]
 ---
 
 ## 用户问题 ： 

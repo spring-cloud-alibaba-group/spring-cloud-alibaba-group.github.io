@@ -1,11 +1,11 @@
 ---
 id: "question-history-15556"
 title: "Spring Cloud GateWay 是微服务模块的网关，整合 Nacos，实现动态"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Gateway 整合 Nacos 实现动态路由配置的过程，主要涉及以下几个步骤：### 1. **准备环境与依赖**确保你的项目中已集成了 Spring Cloud Gateway 作为微服务的网关组件，并添加了对 Nacos 服务发现的支持。这通常意味着在你的 `pom."
-tags: ["Spring","Cloud","GateWay","Nacos","动态路由","微服务","网关"]
-keywords: ["Spring","Cloud","GateWay","Nacos","动态路由","微服务","网关"]
+tags: ["sca","spring-cloud-alibaba","gateway","microservice","nacos","dynamic","routing"]
+keywords: ["sca","spring-cloud-alibaba","gateway","microservice","nacos","dynamic","routing"]
 ---
 
 ## 用户问题 ： 

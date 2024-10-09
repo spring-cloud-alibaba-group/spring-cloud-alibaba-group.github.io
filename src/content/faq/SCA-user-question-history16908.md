@@ -1,11 +1,11 @@
 ---
 id: "question-history-16908"
 title: "Springboot @Schedule 详解，怎么用？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba项目中使用Spring Boot的`@Scheduled`注解来实现定时任务功能，其基本原理和标准Spring Boot应用相同，但得益于Spring Cloud Alibaba生态的丰富性，可以更好地融入微服务架构中。以下是基于您的问题和提供的知识内容，对"
-tags: ["spring-cloud-alibaba","Springboot","@Schedule","详解","使用"]
-keywords: ["spring-cloud-alibaba","Springboot","@Schedule","详解","使用"]
+tags: ["sca","spring-cloud-alibaba","Springboot","Schedule","详解","使用"]
+keywords: ["sca","spring-cloud-alibaba","Springboot","Schedule","详解","使用"]
 ---
 
 ## 用户问题 ： 

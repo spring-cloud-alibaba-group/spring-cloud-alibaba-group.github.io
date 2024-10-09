@@ -1,11 +1,11 @@
 ---
 id: "question-history-16817"
 title: "spring 的依赖注入有什么优势？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba 对于Spring的依赖注入机制并无直接的改变或增强，因为它主要关注的是将阿里巴巴的微服务组件与Spring Cloud生态集成，提供诸如服务发现、配置管理、熔断降级等功能。但是，通过使用Spring Cloud Alibaba，您可以间接地利用Spring框"
-tags: ["sca","spring-cloud-alibaba","依赖","注入","优势"]
-keywords: ["sca","spring-cloud-alibaba","依赖","注入","优势"]
+tags: ["sca","spring-cloud-alibaba","spring","依赖注入","优势"]
+keywords: ["sca","spring-cloud-alibaba","spring","依赖注入","优势"]
 ---
 
 ## 用户问题 ： 

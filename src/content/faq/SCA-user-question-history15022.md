@@ -1,11 +1,11 @@
 ---
 id: "question-history-15022"
 title: "阿里的spring地址"
-date: "2024-06-05"
+date: "2024-09-26"
 category: "expertConsultation"
-description: "根据我的知识库，可以直接您的问题。Sca（Spring Cloud Alibaba）的官网地址是：[https://sca.aliyun.com](https://sca.aliyun.com)。在这个官网上，您可以找到关于Spring Cloud Alibaba的详细文档、学习资源以及用户指南，还"
-tags: ["sca","spring-cloud-alibaba","阿里","地址"]
-keywords: ["sca","spring-cloud-alibaba","阿里","地址"]
+description: "根据我的知识库，可以直接回答您的问题。Sca（Spring Cloud Alibaba）的官网地址是：[https://sca.aliyun.com](https://sca.aliyun.com)。在这个官网上，您可以找到关于Spring Cloud Alibaba的详细文档、学习资源以及用户指南"
+tags: ["sca","spring-cloud-alibaba","阿里巴巴","spring","云服务","框架","地址"]
+keywords: ["sca","spring-cloud-alibaba","阿里巴巴","spring","云服务","框架","地址"]
 ---
 
 ## 用户问题 ： 
@@ -14,7 +14,7 @@ keywords: ["sca","spring-cloud-alibaba","阿里","地址"]
 ---------------
 ## 专家官方解答 ：
 
-根据我的知识库，可以直接您的问题。Sca（Spring Cloud Alibaba）的官网地址是：[https://sca.aliyun.com](https://sca.aliyun.com)。在这个官网上，您可以找到关于Spring Cloud Alibaba的详细文档、学习资源以及用户指南，还包括了Spring Boot、Spring AI Alibaba等相关内容，并且提供了无疑答疑模块来帮助您解决Spring或Spring Cloud Alibaba相关的问题。
+根据我的知识库，可以直接回答您的问题。Sca（Spring Cloud Alibaba）的官网地址是：[https://sca.aliyun.com](https://sca.aliyun.com)。在这个官网上，您可以找到关于Spring Cloud Alibaba的详细文档、学习资源以及用户指南，还包括了Spring Boot、Spring AI Alibaba等相关内容，并且提供了无疑答疑模块来帮助您解决Spring或Spring Cloud Alibaba相关的问题。
 
 此外，如果您对Spring Cloud Alibaba AI有兴趣，这是其基于Spring AI 0.8.1版本完成的通义系列大模型接入的介绍，具体可参考阿里云的[灵积模型服务](https://help.aliyun.com/zh/dashscope/)，该服务支持包括对话、文生图、文生语音等功能的开发。
 

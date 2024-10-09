@@ -1,11 +1,11 @@
 ---
 id: "question-history-15559"
 title: "导入依赖时报错Cannot resolve org.springframework.ai"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的问题，您在尝试导入`sca(spring-cloud-alibaba)`依赖时遇到了`Cannot resolve org.springframework.ai:spring-ai-core:0.8.1`的错误。根据提供的知识内容，这个问题的主要原因在于Spring官方并未将`spring-"
-tags: ["spring-cloud-alibaba","依赖报错","Cannot","resolve"]
-keywords: ["spring-cloud-alibaba","依赖报错","Cannot","resolve"]
+tags: ["sca","spring-cloud-alibaba","依赖","报错","Cannot","resolve","orgspringframeworkai"]
+keywords: ["sca","spring-cloud-alibaba","依赖","报错","Cannot","resolve","orgspringframeworkai"]
 ---
 
 ## 用户问题 ： 

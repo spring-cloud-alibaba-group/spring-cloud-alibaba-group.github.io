@@ -1,11 +1,11 @@
 ---
 id: "question-history-15553"
 title: "spring cloud alibaba如何初始化一个简单的项目"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要初始化一个简单的Spring Cloud Alibaba项目，您可以遵循以下步骤：### 1. 确定项目基础- **选择IDE**：首先，确保您有一个适合Java开发的IDE，如IntelliJ IDEA或Eclipse。- **新建Spring Boot项目**：在IDE中创建一个新的Sprin"
-tags: ["spring","cloud","alibaba","初始化","简单","项目"]
-keywords: ["spring","cloud","alibaba","初始化","简单","项目"]
+tags: ["sca","spring-cloud-alibaba","初始化","简单","项目"]
+keywords: ["sca","spring-cloud-alibaba","初始化","简单","项目"]
 ---
 
 ## 用户问题 ： 

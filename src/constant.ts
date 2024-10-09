@@ -6,11 +6,11 @@ import { getEntries } from "astro:content";
 
 // 吊顶提示文案
 export const TOPBAR = {
-    "text": "8月2日（周五）开源沙龙首个 AI 原生应用架构专场 | 上海站 ，欢迎报名！",
-    "mobileText": "欢迎报名8月2日上海首个AI原生应用架构开源沙龙！",
-    "link": "https://summit.aliyun.com/cloudnative2024_developer_shanghai",
+    "text": "云栖回顾 | 2024 云栖大会微服务和网关相关演讲材料",
+    "mobileText": "云栖回顾 | 2024 云栖大会微服务和网关相关演讲材料",
+    "link": "https://developer.aliyun.com/ebook/8379",
     "target": "_blank",
-    "display": false
+    "display": true
 }
 // TODO: 配置algolia
 export const ALGOLIA = {

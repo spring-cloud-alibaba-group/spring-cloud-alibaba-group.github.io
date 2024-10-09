@@ -1,11 +1,11 @@
 ---
 id: "question-history-15671"
 title: "在哪可以创建一个springcloudalibaba项目"
-date: "2024-06-18"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的问题，您想了解如何创建一个Spring Cloud Alibaba (SCA)项目。根据提供的知识内容，您可以按照以下详细步骤操作：1. **访问Spring Initializr for Alibaba**: 首先，打开网页浏览器并访问 [https://start.aliyun.com]"
-tags: ["sca","spring-cloud-alibaba","创建","项目"]
-keywords: ["sca","spring-cloud-alibaba","创建","项目"]
+tags: ["sca","spring-cloud-alibaba","创建","springcloudalibaba","项目"]
+keywords: ["sca","spring-cloud-alibaba","创建","springcloudalibaba","项目"]
 ---
 
 ## 用户问题 ： 

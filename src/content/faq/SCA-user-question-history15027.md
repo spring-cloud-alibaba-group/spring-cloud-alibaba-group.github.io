@@ -1,11 +1,11 @@
 ---
 id: "question-history-15027"
 title: "spring-cloud-alibaba-dependencies最新版本"
-date: "2024-06-05"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据我的知识库，可以直接提供关于`spring-cloud-alibaba-dependencies`的最新版本信息。在Spring Cloud Alibaba的版本体系中，`spring-cloud-alibaba-dependencies`作为BOM（Bill of Materials）帮助管理"
-tags: ["spring","cloud","alibaba","dependencies","最新","版本"]
-keywords: ["spring","cloud","alibaba","dependencies","最新","版本"]
+tags: ["sca","spring-cloud-alibaba","dependencies","最新版本"]
+keywords: ["sca","spring-cloud-alibaba","dependencies","最新版本"]
 ---
 
 ## 用户问题 ： 
@@ -18,7 +18,7 @@ keywords: ["spring","cloud","alibaba","dependencies","最新","版本"]
 
 根据提供的信息，Spring Cloud Alibaba的最新版本为`2023.0.1.0`。因此，`spring-cloud-alibaba-dependencies`的最新版本也应当是针对此版本的。为了确保这一点并获取最精确的版本号及其它详情，建议直接访问官方文档提供的链接：[官方文档](https://sca.aliyun.com/docs/2023/overview/version-explain/)，那里会有最新的版本说明以及如何引入依赖的指导。
 
-总结如下：
+总结回答如下：
 
 1. **获取最新版本信息**：根据知识库，`spring-cloud-alibaba-dependencies`的最新提及版本对应于Spring Cloud Alibaba `2023.0.1.0`。
 2. **查阅官方文档**：为了获取确切的`spring-cloud-alibaba-dependencies`最新版本号及其使用方法，请直接访问[官方文档](https://sca.aliyun.com/docs/2023/overview/version-explain/)，这是获取最新和最准确信息的最佳途径。

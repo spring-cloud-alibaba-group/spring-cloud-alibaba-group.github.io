@@ -1,11 +1,11 @@
 ---
 id: "question-history-15323"
 title: "怎么用spring ai 实现与通义 聊天交互？"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要使用Spring Cloud Alibaba实现与通义的聊天交互，您可以遵循以下详细步骤：1. **确保技术栈兼容性**：   确保您的项目环境满足Java Development Kit (JDK)版本要求，即JDK17或更高版本。2. **获取通义千问的API密钥**：   - 访问[阿里云百"
-tags: ["spring-cloud-alibaba","spring","ai","通义","聊天","交互","实现"]
-keywords: ["spring-cloud-alibaba","spring","ai","通义","聊天","交互","实现"]
+tags: ["sca","spring-cloud-alibaba","spring","ai","通义","聊天","交互"]
+keywords: ["sca","spring-cloud-alibaba","spring","ai","通义","聊天","交互"]
 ---
 
 ## 用户问题 ： 
@@ -77,7 +77,7 @@ keywords: ["spring-cloud-alibaba","spring","ai","通义","聊天","交互","实�
 
 ## 参考链接 ：
 
-* 专家经验：sca ai 调用通义大模型实现聊天交互 
+* 专家经验：spring ai alibaba 使用说明 
  
  * 专家经验：sca ai (spring cloud alibaba ai）介绍 
 

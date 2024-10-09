@@ -1,11 +1,11 @@
 ---
 id: "question-history-16846"
 title: "Spring Boot 中的 starter 到底是什么  能不能讲讲原理"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
-description: "在您的问题之前，让我们首先明确一下Spring Boot中的Starter概念，然后再结合Sca(Spring Cloud Alibaba)的上下文进行解析。### Spring Boot Starter 原理简述Spring Boot的一个核心设计理念是“约定优于配置”，Starter正是这一理念"
-tags: ["Spring","Boot","starter","自动配置","原理","依赖管理","微服务"]
-keywords: ["Spring","Boot","starter","自动配置","原理","依赖管理","微服务"]
+description: "在回答您的问题之前，让我们首先明确一下Spring Boot中的Starter概念，然后再结合Sca(Spring Cloud Alibaba)的上下文进行解析。### Spring Boot Starter 原理简述Spring Boot的一个核心设计理念是“约定优于配置”，Starter正是这一"
+tags: ["sca","spring-cloud-alibaba","spring-boot","starter","原理","讲解"]
+keywords: ["sca","spring-cloud-alibaba","spring-boot","starter","原理","讲解"]
 ---
 
 ## 用户问题 ： 
@@ -14,7 +14,7 @@ keywords: ["Spring","Boot","starter","自动配置","原理","依赖管理","微
 ---------------
 ## 专家官方解答 ：
 
-在您的问题之前，让我们首先明确一下Spring Boot中的Starter概念，然后再结合Sca(Spring Cloud Alibaba)的上下文进行解析。
+在回答您的问题之前，让我们首先明确一下Spring Boot中的Starter概念，然后再结合Sca(Spring Cloud Alibaba)的上下文进行解析。
 
 ### Spring Boot Starter 原理简述
 
@@ -50,7 +50,7 @@ Sca(Spring Cloud Alibaba)中的Starter是实现快速集成阿里云微服务技
 
 ## 参考链接 ：
 
-* 专家经验：sca(spring-cloud-alibaba) Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
+* 专家经验：Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
 
 
  <font color="#949494">---------------</font> 

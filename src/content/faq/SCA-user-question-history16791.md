@@ -1,11 +1,11 @@
 ---
 id: "question-history-16791"
 title: "spring cloud alibaba 整合spring-authorization-"
-date: "2024-09-06"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您提供的问题，您遇到的是在尝试整合 Spring Cloud Alibaba 与 Spring Authorization Server 时，遇到了“unsupported_grant_type”的报错。尽管直接的知识内容没有覆盖这个特定的整合问题和错误，我们可以基于对这两个技术栈的基本理解来分"
-tags: ["spring","cloud","alibaba","authorization","server","错误","解决"]
-keywords: ["spring","cloud","alibaba","authorization","server","错误","解决"]
+tags: ["sca","spring","cloud","alibaba","integration","spring-authorization-server","error"]
+keywords: ["sca","spring","cloud","alibaba","integration","spring-authorization-server","error"]
 ---
 
 ## 用户问题 ： 

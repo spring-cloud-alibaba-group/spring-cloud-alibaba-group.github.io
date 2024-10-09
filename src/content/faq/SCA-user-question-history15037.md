@@ -1,11 +1,11 @@
 ---
 id: "question-history-15037"
 title: "spring cloud alibaba 五大组件"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Sca(Spring Cloud Alibaba) 是一套基于 Spring Cloud 的微服务解决方案，它为分布式系统开发提供了包括服务发现与配置管理在内的多种功能。特别地，Spring Cloud Alibaba 包含五大核心组件，这些组件是构建微服务架构的关键部分，下面我将详细介绍这五大组件"
-tags: ["spring","cloud","alibaba","sca","组件"]
-keywords: ["spring","cloud","alibaba","sca","组件"]
+tags: ["sca","spring","cloud","alibaba","五大","组件"]
+keywords: ["sca","spring","cloud","alibaba","五大","组件"]
 ---
 
 ## 用户问题 ： 
@@ -44,7 +44,7 @@ Sca(Spring Cloud Alibaba) 是一套基于 Spring Cloud 的微服务解决方案�
 
 ## 参考链接 ：
 
-* 专家经验：sca(spring-cloud-alibaba) Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
+* 专家经验：Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
 
 
  <font color="#949494">---------------</font> 

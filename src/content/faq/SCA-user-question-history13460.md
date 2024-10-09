@@ -1,11 +1,11 @@
 ---
 id: "question-history-13460"
 title: "spring-cloud-starter-alibaba-seata 版本在哪看？"
-date: "2024-09-12"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要查看 `spring-cloud-starter-alibaba-seata` 版本，可以直接参考 Spring Cloud Alibaba 的官方文档或版本对应关系表。根据提供的知识内容，我们可以找到该组件版本对应的信息：在表格 **Spring Cloud Alibaba 集成的组件版本** "
-tags: ["spring","cloud","alibaba","seata","版本","查看"]
-keywords: ["spring","cloud","alibaba","seata","版本","查看"]
+tags: ["sca","spring-cloud-alibaba","seata","版本","查看"]
+keywords: ["sca","spring-cloud-alibaba","seata","版本","查看"]
 ---
 
 ## 用户问题 ： 
@@ -33,7 +33,7 @@ keywords: ["spring","cloud","alibaba","seata","版本","查看"]
 
 ## 参考链接 ：
 
-* 专家经验：sca(spring-cloud-alibaba) Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
+* 专家经验：Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
 
 
  <font color="#949494">---------------</font> 

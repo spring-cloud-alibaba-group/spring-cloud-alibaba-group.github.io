@@ -1,11 +1,11 @@
 ---
 id: "question-history-12567"
 title: "springboot项目打包"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在 sca(spring-cloud-alibaba) springboot 项目中进行打包，通常是为了部署到服务器或构建 Docker 镜像等目的。基于已有的知识，这里为您提供打包 springboot 项目的详细步骤，尽管直接提及打包的细节较少，但我们可以依据通用的 Maven 或 Gradle"
-tags: ["sca","spring-cloud-alibaba","springboot","打包","项目"]
-keywords: ["sca","spring-cloud-alibaba","springboot","打包","项目"]
+tags: ["sca","spring-cloud-alibaba","springboot","打包"]
+keywords: ["sca","spring-cloud-alibaba","springboot","打包"]
 ---
 
 ## 用户问题 ： 

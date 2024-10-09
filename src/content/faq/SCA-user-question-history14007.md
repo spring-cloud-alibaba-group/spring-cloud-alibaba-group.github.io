@@ -1,7 +1,7 @@
 ---
 id: "question-history-14007"
 title: "Springboot 下 整合Dubbo Nacos实现微服务调用的详细方法"
-date: "2024-05-22"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要使用Spring Boot整合Dubbo和Nacos实现微服务调用，可以遵循以下详细步骤：### 环境准备与依赖添加1. **创建Spring Boot项目**   - 使用Spring Initializr创建一个新的Spring Boot项目，选择合适的Spring Boot版本，确保与Dub"
 tags: ["sca","spring-cloud-alibaba","Springboot","Dubbo","Nacos","微服务调用","详细方法"]

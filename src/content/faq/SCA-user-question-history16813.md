@@ -1,11 +1,11 @@
 ---
 id: "question-history-16813"
 title: "如何理解 Spring 当中的 Bean？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring框架中，Bean是一个非常核心的概念，它是Spring IoC（Inverse of Control，控制反转）容器管理的对象。理解Spring中的Bean，我们可以从以下几个方面进行剖析：### Bean的基本概念1. **对象实例化**：在Spring中，Bean实质上是对Java"
-tags: ["Spring","Bean","理解","sca","spring-cloud-alibaba"]
-keywords: ["Spring","Bean","理解","sca","spring-cloud-alibaba"]
+tags: ["sca","spring-cloud-alibaba","Spring","Bean","理解"]
+keywords: ["sca","spring-cloud-alibaba","Spring","Bean","理解"]
 ---
 
 ## 用户问题 ： 

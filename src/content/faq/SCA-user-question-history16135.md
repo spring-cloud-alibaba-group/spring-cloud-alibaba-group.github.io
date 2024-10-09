@@ -1,11 +1,11 @@
 ---
 id: "question-history-16135"
 title: "spring-cloud-starter-gateway兼容的版本？"
-date: "2024-09-12"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，我们并没有直接找到关于`spring-cloud-starter-gateway`兼容特定版本的Spring Cloud Alibaba的信息。然而，通常情况下，Spring Cloud Gateway的兼容性与其对应的Spring Cloud版本紧密相关。为了确定`spring"
-tags: ["spring","cloud","alibaba","gateway","兼容","版本"]
-keywords: ["spring","cloud","alibaba","gateway","兼容","版本"]
+tags: ["sca","spring-cloud-alibaba","gateway","兼容","版本","询问"]
+keywords: ["sca","spring-cloud-alibaba","gateway","兼容","版本","询问"]
 ---
 
 ## 用户问题 ： 

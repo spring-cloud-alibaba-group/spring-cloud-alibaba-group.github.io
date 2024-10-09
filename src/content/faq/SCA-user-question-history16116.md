@@ -1,11 +1,11 @@
 ---
 id: "question-history-16116"
 title: "spring-cloud-ai可以私有化部署吗，部署后是不是还得把大模型进行本地部署？"
-date: "2024-07-05"
+date: "2024-09-26"
 category: "expertConsultation"
-description: "根据提供的知识内容，我可以您的问题。****1. **私有化部署Spring Cloud AI：**   Spring AI本身是一套开放的接口框架，这意味着您可以对其进行修改以适应私有化部署的需求。如果您希望在私有环境中部署Spring Cloud Alibaba AI，您可以通过自定义实现Spr"
-tags: ["spring-cloud-alibaba","私有化部署","大模型","本地部署","spring-cloud-ai"]
-keywords: ["spring-cloud-alibaba","私有化部署","大模型","本地部署","spring-cloud-ai"]
+description: "根据提供的知识内容，我可以回答您的问题。**回答：**1. **私有化部署Spring Cloud AI：**   Spring AI本身是一套开放的接口框架，这意味着您可以对其进行修改以适应私有化部署的需求。如果您希望在私有环境中部署Spring Cloud Alibaba AI，您可以通过自定义"
+tags: ["sca","spring-cloud-ai","私有化部署","大模型","本地部署"]
+keywords: ["sca","spring-cloud-ai","私有化部署","大模型","本地部署"]
 ---
 
 ## 用户问题 ： 
@@ -14,9 +14,9 @@ keywords: ["spring-cloud-alibaba","私有化部署","大模型","本地部署","
 ---------------
 ## 专家官方解答 ：
 
-根据提供的知识内容，我可以您的问题。
+根据提供的知识内容，我可以回答您的问题。
 
-****
+**回答：**
 
 1. **私有化部署Spring Cloud AI：**
    Spring AI本身是一套开放的接口框架，这意味着您可以对其进行修改以适应私有化部署的需求。如果您希望在私有环境中部署Spring Cloud Alibaba AI，您可以通过自定义实现Spring AI Starter的方式来集成本地模型。这包括调用您在本地部署的模型，比如千问2或其他模型的接口，以实现模型服务的私有化部署。

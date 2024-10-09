@@ -1,9 +1,9 @@
 ---
 id: "question-history-16810"
 title: "javaweb、spring、springmvc和springboot有什么区别，都是做"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
-description: "在您的问题之前，让我们先明确一下每个技术框架的基本概念和用途，再探讨它们之间的区别。### JavaWebJavaWeb 是使用Java语言开发Web应用程序的技术体系。它基于Java Servlet、JavaServer Pages(JSP)、JavaBeans等技术，允许开发者创建动态网页和we"
+description: "在回答您的问题之前，让我们先明确一下每个技术框架的基本概念和用途，再探讨它们之间的区别。### JavaWebJavaWeb 是使用Java语言开发Web应用程序的技术体系。它基于Java Servlet、JavaServer Pages(JSP)、JavaBeans等技术，允许开发者创建动态网页和"
 tags: ["sca","spring-cloud-alibaba","javaweb","spring","springmvc","springboot","区别"]
 keywords: ["sca","spring-cloud-alibaba","javaweb","spring","springmvc","springboot","区别"]
 ---
@@ -14,7 +14,7 @@ keywords: ["sca","spring-cloud-alibaba","javaweb","spring","springmvc","springbo
 ---------------
 ## 专家官方解答 ：
 
-在您的问题之前，让我们先明确一下每个技术框架的基本概念和用途，再探讨它们之间的区别。
+在回答您的问题之前，让我们先明确一下每个技术框架的基本概念和用途，再探讨它们之间的区别。
 
 ### JavaWeb
 JavaWeb 是使用Java语言开发Web应用程序的技术体系。它基于Java Servlet、JavaServer Pages(JSP)、JavaBeans等技术，允许开发者创建动态网页和web服务。JavaWeb为构建企业级应用提供了坚实的基础，强调可重用的组件和服务。

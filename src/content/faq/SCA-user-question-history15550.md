@@ -1,11 +1,11 @@
 ---
 id: "question-history-15550"
 title: "如何实现在Spring Cloud Alibaba项目中使用Spring Securit"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba项目中使用Spring Security时，若要仅保留鉴权功能而剔除认证功能，这实际上意味着我们希望Spring Security不对用户进行登录验证，但仍然根据用户的角色或权限来控制对资源的访问。尽管标准的Spring Security配置通常结合认证与鉴"
-tags: ["Spring","Cloud","Alibaba","Spring","Security","鉴权","认证"]
-keywords: ["Spring","Cloud","Alibaba","Spring","Security","鉴权","认证"]
+tags: ["sca","spring-cloud-alibaba","Spring-Security","鉴权","功能","剔除","认证"]
+keywords: ["sca","spring-cloud-alibaba","Spring-Security","鉴权","功能","剔除","认证"]
 ---
 
 ## 用户问题 ： 

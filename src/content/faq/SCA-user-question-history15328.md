@@ -1,11 +1,11 @@
 ---
 id: "question-history-15328"
 title: "springai 使用通义千问的具体步骤和方法"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的问题，您想了解如何在Spring Cloud Alibaba项目中使用通义千问。以下是详细步骤和方法，依托于提供的知识内容：### 步骤分析与实施：1. **确保Java环境**：   首先，请确认您的开发环境中的JDK版本是否在JDK 17或以上。这是运行Spring Cloud Alib"
-tags: ["sca","spring-cloud-alibaba","springai","通义千问","","方法","使用"]
-keywords: ["sca","spring-cloud-alibaba","springai","通义千问","","方法","使用"]
+tags: ["sca","spring-cloud-alibaba","springai","通义千问","","方法"]
+keywords: ["sca","spring-cloud-alibaba","springai","通义千问","","方法"]
 ---
 
 ## 用户问题 ： 
@@ -83,7 +83,7 @@ keywords: ["sca","spring-cloud-alibaba","springai","通义千问","","方法","�
 
 ## 参考链接 ：
 
-* 专家经验：sca ai 调用通义大模型实现聊天交互 
+* 专家经验：spring ai alibaba 使用说明 
 
 
  <font color="#949494">---------------</font> 

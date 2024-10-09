@@ -1,11 +1,11 @@
 ---
 id: "question-history-14817"
 title: "spring cloud alibaba rocketMQ 5.0 整合具体配置"
-date: "2024-05-30"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要整合Spring Cloud Alibaba RocketMQ 5.0，你需要遵循以下步骤进行具体配置：1. **确保RocketMQ Server已部署**     首先，请确认你的RocketMQ服务器已经正确安装并运行。如果尚未安装，可以访问[RocketMQ官方文档](https://ro"
-tags: ["spring","cloud","alibaba","rocketMQ","50","整合","配置"]
-keywords: ["spring","cloud","alibaba","rocketMQ","50","整合","配置"]
+tags: ["sca","spring","cloud","alibaba","rocketMQ","整合","配置"]
+keywords: ["sca","spring","cloud","alibaba","rocketMQ","整合","配置"]
 ---
 
 ## 用户问题 ： 

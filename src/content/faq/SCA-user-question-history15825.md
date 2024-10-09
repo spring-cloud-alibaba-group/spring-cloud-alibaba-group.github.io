@@ -1,7 +1,7 @@
 ---
 id: "question-history-15825"
 title: "AbstractTongYiServiceImpl 不存在"
-date: "2024-06-21"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据我掌握的知识，`AbstractTongYiServiceImpl`找不到的问题可能是由于它存在于一个特定的AI Demo项目中，而您当前可能并不在该Demo项目的环境中。在Spring Cloud Alibaba（sca）框架下，实际上并不直接依赖于`AbstractTongYiService"
 tags: ["sca","spring-cloud-alibaba","AbstractTongYiServiceImpl","不存在"]

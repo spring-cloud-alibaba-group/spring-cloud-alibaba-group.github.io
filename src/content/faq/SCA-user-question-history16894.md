@@ -1,11 +1,11 @@
 ---
 id: "question-history-16894"
 title: "springboot 自动装配的原理是什么？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
-description: "在您的问题之前，让我们先明确一下Spring Boot自动装配的通用概念，这有助于我们更好地理解Spring Cloud Alibaba在这一机制上的应用。Spring Boot的自动装配原理主要依赖于其核心注解`@SpringBootApplication`以及一系列的`@Configuratio"
-tags: ["spring-cloud-alibaba","springboot","自动","装配","原理"]
-keywords: ["spring-cloud-alibaba","springboot","自动","装配","原理"]
+description: "在回答您的问题之前，让我们先明确一下Spring Boot自动装配的通用概念，这有助于我们更好地理解Spring Cloud Alibaba在这一机制上的应用。Spring Boot的自动装配原理主要依赖于其核心注解`@SpringBootApplication`以及一系列的`@Configurat"
+tags: ["sca","spring-cloud-alibaba","springboot","自动装配","原理"]
+keywords: ["sca","spring-cloud-alibaba","springboot","自动装配","原理"]
 ---
 
 ## 用户问题 ： 
@@ -14,7 +14,7 @@ keywords: ["spring-cloud-alibaba","springboot","自动","装配","原理"]
 ---------------
 ## 专家官方解答 ：
 
-在您的问题之前，让我们先明确一下Spring Boot自动装配的通用概念，这有助于我们更好地理解Spring Cloud Alibaba在这一机制上的应用。
+在回答您的问题之前，让我们先明确一下Spring Boot自动装配的通用概念，这有助于我们更好地理解Spring Cloud Alibaba在这一机制上的应用。
 
 Spring Boot的自动装配原理主要依赖于其核心注解`@SpringBootApplication`以及一系列的`@Configuration`类。当应用启动时，Spring Boot会通过以下步骤实现自动配置：
 

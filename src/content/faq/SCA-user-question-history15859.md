@@ -1,11 +1,11 @@
 ---
 id: "question-history-15859"
 title: "使用 Spring Cloud Alibaba（SCA）的 Gateway 组件时，在尝"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，虽然没有直接提及关于`Error creating bean with name 'httpClientProperties'`这个具体错误的处理方法，但我们可以基于Spring Cloud Alibaba及其组件的工作原理和最佳实践来分析问题原因并尝试提出解决思路。### 分析"
-tags: ["Spring","Cloud","Alibaba","Gateway","热更新配置","错误","处理"]
-keywords: ["Spring","Cloud","Alibaba","Gateway","热更新配置","错误","处理"]
+tags: ["sca","spring-cloud-alibaba","gateway","热更新配置","Error","bean","httpClientProperties"]
+keywords: ["sca","spring-cloud-alibaba","gateway","热更新配置","Error","bean","httpClientProperties"]
 ---
 
 ## 用户问题 ： 

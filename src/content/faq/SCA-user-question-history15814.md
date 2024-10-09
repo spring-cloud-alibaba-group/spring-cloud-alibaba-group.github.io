@@ -1,11 +1,11 @@
 ---
 id: "question-history-15814"
 title: "spring cloud alibaba 和 springboot 的版本要求对照表"
-date: "2024-06-21"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据已有的知识内容，我可以为您提供Spring Cloud Alibaba与Spring Boot版本要求的对照表，以及Spring Cloud Alibaba下各主要组件（如Nacos、Sentinel等）的版本对应信息。### Spring Boot与Spring Cloud Alibaba版本"
-tags: ["spring","cloud","alibaba","version","requirement","comparison","table"]
-keywords: ["spring","cloud","alibaba","version","requirement","comparison","table"]
+tags: ["sca","spring-cloud-alibaba","spring","cloud","alibaba","springboot","版本要求"]
+keywords: ["sca","spring-cloud-alibaba","spring","cloud","alibaba","springboot","版本要求"]
 ---
 
 ## 用户问题 ： 

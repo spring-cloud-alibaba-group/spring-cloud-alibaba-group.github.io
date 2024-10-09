@@ -1,11 +1,11 @@
 ---
 id: "question-history-13948"
 title: "spring cloud alibaba组件"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba组件主要关注于提供微服务开发的全方位支持，它是Spring Cloud生态中的第二代实现，旨在通过集成阿里巴巴的中间件技术，帮助开发者更加高效地构建分布式应用系统。以下是Spring Cloud Alibaba中几个核心组件的简要介绍：1. **Nacos**"
-tags: ["spring","cloud","alibaba","组件","sca"]
-keywords: ["spring","cloud","alibaba","组件","sca"]
+tags: ["sca","spring","cloud","alibaba","组件"]
+keywords: ["sca","spring","cloud","alibaba","组件"]
 ---
 
 ## 用户问题 ： 

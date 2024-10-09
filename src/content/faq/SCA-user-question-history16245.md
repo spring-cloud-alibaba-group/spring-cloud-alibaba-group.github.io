@@ -1,11 +1,11 @@
 ---
 id: "question-history-16245"
 title: "Seata 适用什么业务场景呢？"
-date: "2024-07-18"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Seata 是一款高性能的分布式事务解决方案，特别适用于Spring Cloud Alibaba（简称SCA）微服务架构下的业务场景。根据已有的知识，我们可以分析出Seata主要适用于以下业务场景：1. **分布式事务处理**：在微服务架构中，一个业务操作往往会涉及到多个服务的调用，这便构成了分布式"
-tags: ["sca","Seata","业务","场景","spring-cloud-alibaba","分布式","事务"]
-keywords: ["sca","Seata","业务","场景","spring-cloud-alibaba","分布式","事务"]
+tags: ["sca","spring-cloud-alibaba","Seata","业务场景","适用"]
+keywords: ["sca","spring-cloud-alibaba","Seata","业务场景","适用"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-13361"
 title: "spring-cloud-starter-alibaba-nacos-config 怎么"
-date: "2024-05-13"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "为了配置`spring-cloud-starter-alibaba-nacos-config`以实现Nacos作为Spring Cloud应用的配置中心，您可以按照以下步骤操作：1. **添加依赖**：   在您的Spring Boot项目的`pom.xml`文件中，添加`spring-cloud-"
-tags: ["sca","spring-cloud-alibaba","nacos-config","配置"]
-keywords: ["sca","spring-cloud-alibaba","nacos-config","配置"]
+tags: ["sca","spring-cloud-alibaba","nacos-config","配置","使用","方法","教程"]
+keywords: ["sca","spring-cloud-alibaba","nacos-config","配置","使用","方法","教程"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-16120"
 title: "怎么对接本地运行的千问模型？"
-date: "2024-07-05"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要对接本地运行的千问模型至SCA（Spring Cloud Alibaba），您可以遵循以下步骤：1. **理解需求背景**：   根据您的需求，您希望在使用Spring Cloud Alibaba框架的应用中，集成并调用本地部署的千问模型，以实现特定的AI功能。2. **修改Spring AI S"
-tags: ["sca","spring-cloud-alibaba","对接","本地","运行","千问","模型"]
-keywords: ["sca","spring-cloud-alibaba","对接","本地","运行","千问","模型"]
+tags: ["sca","spring-cloud-alibaba","对接","本地运行","千问模型"]
+keywords: ["sca","spring-cloud-alibaba","对接","本地运行","千问模型"]
 ---
 
 ## 用户问题 ： 

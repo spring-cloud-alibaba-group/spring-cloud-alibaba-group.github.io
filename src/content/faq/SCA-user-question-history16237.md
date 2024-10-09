@@ -1,11 +1,11 @@
 ---
 id: "question-history-16237"
 title: "nacos开启身份认证后，服务没办法注册"
-date: "2024-07-18"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的问题，您提到的是SCA（Spring Cloud Alibaba）环境下Nacos配置了身份认证后，服务无法注册的问题。虽然直接的解决步骤在提供的知识中没有明确提及，但我可以根据Nacos和Spring Cloud Alibaba的一般原理来分析原因并给出一般性的指导。### 分析问题原因："
-tags: ["nacos","身份认证","服务","注册","spring-cloud-alibaba","sca","问题"]
-keywords: ["nacos","身份认证","服务","注册","spring-cloud-alibaba","sca","问题"]
+tags: ["sca","nacos","身份认证","服务","注册","失败","开启"]
+keywords: ["sca","nacos","身份认证","服务","注册","失败","开启"]
 ---
 
 ## 用户问题 ： 

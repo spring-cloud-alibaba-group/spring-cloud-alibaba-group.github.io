@@ -1,11 +1,11 @@
 ---
 id: "question-history-16873"
 title: "springboot3最低jdk是多少？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据已有的我了解的知识, 我们没有直接获取到关于Spring Cloud Alibaba搭配Spring Boot 3最低要求的JDK版本信息。但是，考虑到Spring Boot 3.x本身的要求，我们可以进行合理推断。Spring Boot 3.x版本需要Java 17或更高版本。因此，即使在没有"
-tags: ["spring-cloud-alibaba","springboot3","最低","jdk","版本","要求"]
-keywords: ["spring-cloud-alibaba","springboot3","最低","jdk","版本","要求"]
+tags: ["sca","spring-cloud-alibaba","springboot3","jdk","最低","版本","要求"]
+keywords: ["sca","spring-cloud-alibaba","springboot3","jdk","最低","版本","要求"]
 ---
 
 ## 用户问题 ： 
@@ -18,7 +18,7 @@ keywords: ["spring-cloud-alibaba","springboot3","最低","jdk","版本","要求"
 
 Spring Boot 3.x版本需要Java 17或更高版本。因此，即使在没有直接提及Spring Cloud Alibaba对JDK版本要求的情况下，为了运行Spring Boot 3应用，您应该使用Java 17作为最低版本。这符合Spring Boot官方的升级公告和推荐实践。
 
-**总结：**
+**回答总结：**
 1. **分析原因：** 由于Spring Cloud Alibaba是构建在Spring Boot之上的，其最低JDK版本要求间接依赖于Spring Boot的版本需求。
 2. **具体步骤：** 虽然直接信息未提供，但依据Spring Boot 3.x的官方要求，应使用Java 17作为运行环境的最低标准。
 3. **解释：** 由于Spring Boot 3.x明确指出支持从Java 17开始的版本，以此确保兼容性和利用最新语言特性，故推荐使用Java 17或更高版本来运行包含Spring Cloud Alibaba的Spring Boot 3应用。

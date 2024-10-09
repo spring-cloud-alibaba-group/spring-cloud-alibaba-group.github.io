@@ -1,11 +1,11 @@
 ---
 id: "question-history-16822"
 title: "为什么说Java程序员必须掌握Spring Boot ？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Java程序员必须掌握Spring Boot的原因可以从以下几个方面理解，依托于提供的知识内容：1. **行业趋势与广泛应用**：   Spring Boot作为Spring Cloud Alibaba的基础框架之一，是现代微服务架构中不可或缺的一部分。随着微服务架构的普及，Spring Boot以"
-tags: ["Spring","Cloud","Alibaba","Java","程序员","必须","掌握"]
-keywords: ["Spring","Cloud","Alibaba","Java","程序员","必须","掌握"]
+tags: ["sca","spring-cloud-alibaba","Java程序员","必须","掌握","Spring","Boot"]
+keywords: ["sca","spring-cloud-alibaba","Java程序员","必须","掌握","Spring","Boot"]
 ---
 
 ## 用户问题 ： 

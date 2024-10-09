@@ -1,7 +1,7 @@
 ---
 id: "question-history-12546"
 title: "springboot redis配置"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (Sca) 中配置SpringBoot与Redis的步骤如下：1. **添加Redis依赖**   在项目的`pom.xml`文件中，添加Spring Data Redis的起步依赖，以支持Redis操作。   ```xml   dependency   "
 tags: ["sca","spring-cloud-alibaba","springboot","redis","配置"]

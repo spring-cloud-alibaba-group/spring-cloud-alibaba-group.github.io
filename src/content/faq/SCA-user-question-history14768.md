@@ -1,11 +1,11 @@
 ---
 id: "question-history-14768"
 title: "nacos2.2.4兼容的spring boot版本有哪些"
-date: "2024-05-30"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的信息，要找到与 Nacos 2.2.4 兼容的 Spring Boot 版本，我们首先需要查看 Spring Cloud Alibaba 版本与 Nacos 版本的对应关系。从给定的知识中，我们可以看到以下相关条目：- 在 Spring Cloud Alibaba Version 2.2."
-tags: ["spring","cloud","alibaba","nacos","224","compatible","versions"]
-keywords: ["spring","cloud","alibaba","nacos","224","compatible","versions"]
+tags: ["sca","nacos224","spring-cloud-alibaba","兼容","spring-boot","版本"]
+keywords: ["sca","nacos224","spring-cloud-alibaba","兼容","spring-boot","版本"]
 ---
 
 ## 用户问题 ： 

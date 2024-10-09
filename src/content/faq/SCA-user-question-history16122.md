@@ -1,11 +1,11 @@
 ---
 id: "question-history-16122"
 title: "为什么引入sentinel依赖时找不到依赖项？配置后仍然提示找不到依赖项 'com.al"
-date: "2024-07-05"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据已有的知识内容，我们可以分析您遇到的问题：在尝试引入Spring Cloud Alibaba的Sentinel依赖时，遇到了找不到依赖项的情况，即使配置了额外的repository信息之后仍然提示找不到 `'com.alibaba.cloud:spring-cloud-starter-aliba"
-tags: ["spring-cloud-alibaba","sentinel","依赖","无法","找到","配置","提示"]
-keywords: ["spring-cloud-alibaba","sentinel","依赖","无法","找到","配置","提示"]
+tags: ["sca","spring-cloud-alibaba","sentinel","依赖","问题","配置","寻找失败"]
+keywords: ["sca","spring-cloud-alibaba","sentinel","依赖","问题","配置","寻找失败"]
 ---
 
 ## 用户问题 ： 

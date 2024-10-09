@@ -1,11 +1,11 @@
 ---
 id: "question-history-16422"
 title: "nacos如何将配置信息加载到spring上下文中的"
-date: "2024-08-01"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba中，Nacos用于配置管理时，配置信息被加载到Spring上下文中的过程主要依赖于`spring-cloud-starter-alibaba-nacos-config`模块。以下是如何将Nacos配置信息加载到Spring上下文中的详细步骤，依据的是Naco"
-tags: ["sca","spring-cloud-alibaba","nacos","配置","信息","加载","spring"]
-keywords: ["sca","spring-cloud-alibaba","nacos","配置","信息","加载","spring"]
+tags: ["sca","spring-cloud-alibaba","nacos","配置信息","加载","spring","上下文"]
+keywords: ["sca","spring-cloud-alibaba","nacos","配置信息","加载","spring","上下文"]
 ---
 
 ## 用户问题 ： 

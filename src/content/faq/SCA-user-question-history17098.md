@@ -1,11 +1,11 @@
 ---
 id: "question-history-17098"
 title: "spring cloud spring cloud alibab 对照"
-date: "2024-09-12"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud、Spring Cloud Netflix 与 Spring Cloud Alibaba 是针对微服务架构的不同实现和扩展，它们之间存在一定的差异性：1. **Spring Cloud**: 这是 Spring 官方推出的一套用于开发分布式系统和服务治理的框架。它不是一个具体"
-tags: ["sca","spring","cloud","alibaba","对照"]
-keywords: ["sca","spring","cloud","alibaba","对照"]
+tags: ["sca","spring-cloud-alibaba","spring","cloud","alibaba","对照","整合"]
+keywords: ["sca","spring-cloud-alibaba","spring","cloud","alibaba","对照","整合"]
 ---
 
 ## 用户问题 ： 

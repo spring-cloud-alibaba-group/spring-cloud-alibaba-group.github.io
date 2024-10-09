@@ -1,7 +1,7 @@
 ---
 id: "question-history-17034"
 title: "spring cloud 脚手架"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的问题，您似乎在寻找关于 sca（Spring Cloud Alibaba）中 Spring Cloud 脚手架的相关信息。下面我将依据提供的知识进行解答：### 分析问题原因您可能想要了解如何开始一个使用 Spring Cloud Alibaba 的项目，或者需要知道如何搭建一个具备微服务特"
 tags: ["sca","spring-cloud-alibaba","spring","cloud","脚手架"]
@@ -48,7 +48,7 @@ keywords: ["sca","spring-cloud-alibaba","spring","cloud","脚手架"]
 
 ## 参考链接 ：
 
-* 专家经验：sca(spring-cloud-alibaba) Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
+* 专家经验：Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
 
 
  <font color="#949494">---------------</font> 

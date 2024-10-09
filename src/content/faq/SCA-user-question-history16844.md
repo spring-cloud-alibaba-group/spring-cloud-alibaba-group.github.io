@@ -1,7 +1,7 @@
 ---
 id: "question-history-16844"
 title: "springboot 自动配置的原理是什么？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Boot的自动配置原理主要依赖于其提供的Spring Boot Auto-Configuration机制。这一机制的运作可以分为以下几个关键步骤：1. **条件匹配（Condition Matching）**：   Spring Boot在启动时会扫描`spring-boot-auto"
 tags: ["sca","spring-cloud-alibaba","springboot","自动配置","原理"]

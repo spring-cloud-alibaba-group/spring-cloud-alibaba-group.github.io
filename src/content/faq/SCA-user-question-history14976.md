@@ -1,11 +1,11 @@
 ---
 id: "question-history-14976"
 title: "如何整合druid数据库连接池"
-date: "2024-06-05"
+date: "2024-09-26"
 category: "expertConsultation"
-description: "内容要有条理，分步骤如下：### 分析问题原因根据您的问题，您想了解如何在使用Spring Cloud Alibaba框架的项目中整合Druid数据库连接池。从已知的参考资料中，我们可以找到与Druid整合相关的步骤（第1篇参考内容），以及Spring Cloud Alibaba框架的一些基本信息和"
-tags: ["sca","spring-cloud-alibaba","druid","数据库","连接池","整合"]
-keywords: ["sca","spring-cloud-alibaba","druid","数据库","连接池","整合"]
+description: "回答内容要有条理，分步骤如下：### 分析问题原因根据您的问题，您想了解如何在使用Spring Cloud Alibaba框架的项目中整合Druid数据库连接池。从已知的参考资料中，我们可以找到与Druid整合相关的步骤（第1篇参考内容），以及Spring Cloud Alibaba框架的一些基本信"
+tags: ["sca","spring-cloud-alibaba","整合","druid","数据库","连接池"]
+keywords: ["sca","spring-cloud-alibaba","整合","druid","数据库","连接池"]
 ---
 
 ## 用户问题 ： 
@@ -14,7 +14,7 @@ keywords: ["sca","spring-cloud-alibaba","druid","数据库","连接池","整合"
 ---------------
 ## 专家官方解答 ：
 
-内容要有条理，分步骤如下：
+回答内容要有条理，分步骤如下：
 
 ### 分析问题原因
 

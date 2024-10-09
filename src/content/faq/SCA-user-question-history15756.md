@@ -1,11 +1,11 @@
 ---
 id: "question-history-15756"
 title: "spring ai 怎么适配 阿里大模型"
-date: "2024-06-20"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba AI 为了适配阿里大模型，主要是通过以下步骤进行的，这些步骤已经在提供的知识内容中有详细阐述：1. **确保技术栈兼容性**：首先确认你的项目技术环境，特别是JDK版本需在JDK 17及以上，以保证与Spring Cloud Alibaba AI的兼容性。2"
-tags: ["spring-cloud-alibaba","spring","ai","阿里","大模型","适配","怎么"]
-keywords: ["spring-cloud-alibaba","spring","ai","阿里","大模型","适配","怎么"]
+tags: ["sca","spring-cloud-alibaba","spring","ai","适配","阿里","大模型"]
+keywords: ["sca","spring-cloud-alibaba","spring","ai","适配","阿里","大模型"]
 ---
 
 ## 用户问题 ： 
@@ -43,7 +43,7 @@ Spring Cloud Alibaba AI 为了适配阿里大模型，主要是通过以下步�
 
 * 专家经验：sca ai (spring cloud alibaba ai）介绍 
  
- * 专家经验：sca ai 调用通义大模型实现聊天交互 
+ * 专家经验：spring ai alibaba 使用说明 
 
 
  <font color="#949494">---------------</font> 

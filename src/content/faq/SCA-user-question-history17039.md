@@ -1,11 +1,11 @@
 ---
 id: "question-history-17039"
 title: "spring boot [2.7.18] is not compatible with "
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的问题描述，问题在于Spring Boot版本2.7.18与当前使用的Spring Cloud版本不兼容。为了解决这一问题，我们需要遵循以下逻辑步骤进行分析和处理：### 1. 分析问题原因首先，需要明确的是，Spring Cloud和Spring Boot之间存在版本兼容性的问题。Sprin"
-tags: ["sca","spring-cloud-alibaba","spring","boot","2718","compatibility","issue"]
-keywords: ["sca","spring-cloud-alibaba","spring","boot","2718","compatibility","issue"]
+tags: ["sca","spring-boot","2718","spring-cloud","兼容性","解决方案","release-train"]
+keywords: ["sca","spring-boot","2718","spring-cloud","兼容性","解决方案","release-train"]
 ---
 
 ## 用户问题 ： 

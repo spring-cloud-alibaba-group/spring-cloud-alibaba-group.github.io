@@ -1,11 +1,11 @@
 ---
 id: "question-history-15566"
 title: "`com.alibaba.cloud.ai.tongyi.audio.transcrip"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您提供的问题，您想了解的是关于`com.alibaba.cloud.ai.tongyi.audio.transcription.api.AudioTranscriptionResult`这个类所在的包位置。虽然直接的包路径信息未在给定的知识段落中明确提到，但根据描述，我们可以推断它属于Sprin"
-tags: ["spring-cloud-alibaba","comalibabacloud","ai","tongyi","audio","transcription"]
-keywords: ["spring-cloud-alibaba","comalibabacloud","ai","tongyi","audio","transcription"]
+tags: ["spring-cloud-alibaba","comalibabacloud","ai","tongyi","audio","transcription","api"]
+keywords: ["spring-cloud-alibaba","comalibabacloud","ai","tongyi","audio","transcription","api"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-16854"
 title: "spring 的二级缓存也能解决含aop在内的循环依赖问题么？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，关于Spring Cloud Alibaba（SCA）的介绍并未直接涉及Spring框架的二级缓存及AOP（面向切面编程）中的循环依赖问题。Spring Cloud Alibaba主要关注于提供微服务开发的解决方案，如服务发现(Nacos)、流量控制(Sentinel)、分布式事"
-tags: ["spring-cloud-alibaba","二级缓存","AOP","循环依赖","解决方案"]
-keywords: ["spring-cloud-alibaba","二级缓存","AOP","循环依赖","解决方案"]
+tags: ["sca","spring","cloud","alibaba","二级缓存","循环依赖","AOP"]
+keywords: ["sca","spring","cloud","alibaba","二级缓存","循环依赖","AOP"]
 ---
 
 ## 用户问题 ： 

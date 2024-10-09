@@ -1,9 +1,9 @@
 ---
 id: "question-history-12570"
 title: "springboot脚手架"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
-description: "在关于`sca(spring-cloud-alibaba)`与`springboot脚手架`的问题时，我们可以依据已有的知识进行分析并给出指导。### 分析问题原因`sca(spring-cloud-alibaba)`是基于Spring Cloud的一套微服务解决方案，提供了包括服务发现、配置中心、"
+description: "在回答关于`sca(spring-cloud-alibaba)`与`springboot脚手架`的问题时，我们可以依据已有的知识进行分析并给出指导。### 分析问题原因`sca(spring-cloud-alibaba)`是基于Spring Cloud的一套微服务解决方案，提供了包括服务发现、配置中"
 tags: ["sca","spring-cloud-alibaba","springboot","脚手架"]
 keywords: ["sca","spring-cloud-alibaba","springboot","脚手架"]
 ---
@@ -14,7 +14,7 @@ keywords: ["sca","spring-cloud-alibaba","springboot","脚手架"]
 ---------------
 ## 专家官方解答 ：
 
-在关于`sca(spring-cloud-alibaba)`与`springboot脚手架`的问题时，我们可以依据已有的知识进行分析并给出指导。
+在回答关于`sca(spring-cloud-alibaba)`与`springboot脚手架`的问题时，我们可以依据已有的知识进行分析并给出指导。
 
 ### 分析问题原因
 `sca(spring-cloud-alibaba)`是基于Spring Cloud的一套微服务解决方案，提供了包括服务发现、配置中心、消息队列等多种服务治理能力。而`springboot脚手架`则指的是使用Spring Boot快速搭建应用的基础框架结构，它通过starter依赖极大地简化了配置和启动过程。

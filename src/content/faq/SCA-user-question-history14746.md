@@ -1,11 +1,11 @@
 ---
 id: "question-history-14746"
 title: "spring cloud alibaba 组件匹配关系是怎样的？"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba组件之间的匹配关系主要取决于Spring Cloud Alibaba版本与各子组件（如Sentinel、Nacos、RocketMQ、Dubbo和Seata）的兼容性。根据提供的信息，我们可以总结出以下匹配规则：### 分析原因：用户想了解Spring Clo"
-tags: ["spring","cloud","alibaba","sca","组件","匹配","关系"]
-keywords: ["spring","cloud","alibaba","sca","组件","匹配","关系"]
+tags: ["sca","spring","cloud","alibaba","组件","匹配","关系"]
+keywords: ["sca","spring","cloud","alibaba","组件","匹配","关系"]
 ---
 
 ## 用户问题 ： 

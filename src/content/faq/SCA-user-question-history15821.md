@@ -1,11 +1,11 @@
 ---
 id: "question-history-15821"
 title: "使用Spring Cloud Alibaba AI对接大模型对话服务时，如何集成和利用知"
-date: "2024-06-21"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在使用Spring Cloud Alibaba AI对接大模型对话服务并集成与利用知识库时，虽然直接的集成步骤在提供的知识中未明确给出，但我们可以根据Spring Cloud Alibaba AI的设计理念与功能概述推导出一个大致的集成策略。以下是基于现有知识的分析与建议：### 分析问题原因1. "
-tags: ["Spring","Cloud","Alibaba","AI","大模型","对话","服务"]
-keywords: ["Spring","Cloud","Alibaba","AI","大模型","对话","服务"]
+tags: ["sca","spring-cloud-alibaba","AI","对接","大模型","对话服务","集成"]
+keywords: ["sca","spring-cloud-alibaba","AI","对接","大模型","对话服务","集成"]
 ---
 
 ## 用户问题 ： 

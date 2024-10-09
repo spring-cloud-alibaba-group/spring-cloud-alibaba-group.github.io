@@ -1,11 +1,11 @@
 ---
 id: "question-history-13940"
 title: "springboot集成ai插件的具体做法"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
-description: "为了关于`sca(spring-cloud-alibaba)` Spring Boot集成AI插件的具体做法，我们首先需要理解几个关键点从已有的知识内容中：1. **Spring AI简介**：它是一个为AI工程设计的应用框架，旨在将Spring生态系统的灵活性和模块化带入AI开发，并通过标准化接口"
-tags: ["spring-cloud-alibaba","springboot","AI","插件","集成","具体","做法"]
-keywords: ["spring-cloud-alibaba","springboot","AI","插件","集成","具体","做法"]
+description: "为了回答关于`sca(spring-cloud-alibaba)` Spring Boot集成AI插件的具体做法，我们首先需要理解几个关键点从已有的知识内容中：1. **Spring AI简介**：它是一个为AI工程设计的应用框架，旨在将Spring生态系统的灵活性和模块化带入AI开发，并通过标准化"
+tags: ["sca","springboot","集成","ai","插件","具体","做法"]
+keywords: ["sca","springboot","集成","ai","插件","具体","做法"]
 ---
 
 ## 用户问题 ： 
@@ -14,7 +14,7 @@ keywords: ["spring-cloud-alibaba","springboot","AI","插件","集成","具体","
 ---------------
 ## 专家官方解答 ：
 
-为了关于`sca(spring-cloud-alibaba)` Spring Boot集成AI插件的具体做法，我们首先需要理解几个关键点从已有的知识内容中：
+为了回答关于`sca(spring-cloud-alibaba)` Spring Boot集成AI插件的具体做法，我们首先需要理解几个关键点从已有的知识内容中：
 
 1. **Spring AI简介**：它是一个为AI工程设计的应用框架，旨在将Spring生态系统的灵活性和模块化带入AI开发，并通过标准化接口实现不同AI提供商的接入，简化开发和迁移工作。
 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-15561"
 title: "有基于spring boot3的spring cloud alibaba框架嘛"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据已有的知识内容，可以确认的是Spring Cloud Alibaba确实支持基于Spring Boot 3的框架。具体来说：1. **兼容性确认**: 在提供的信息中，明确提到了Spring Cloud Alibaba支持Spring Boot 3.2.4及更低版本的对应关系。例如，当Sprin"
-tags: ["spring","boot3","sca","spring-cloud-alibaba框架"]
-keywords: ["spring","boot3","sca","spring-cloud-alibaba框架"]
+tags: ["sca","spring-boot3","spring-cloud-alibaba","框架","存在","支持","更新"]
+keywords: ["sca","spring-boot3","spring-cloud-alibaba","框架","存在","支持","更新"]
 ---
 
 ## 用户问题 ： 

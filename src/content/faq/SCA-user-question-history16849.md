@@ -1,11 +1,11 @@
 ---
 id: "question-history-16849"
 title: "spring能否使用@value注入static final静态常量？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Java中，使用`@Value`注解从属性文件中注入值时，它通常用于实例字段，无法直接用于为静态final字段注入值，因为Spring的依赖注入发生在Bean实例化之后，而静态字段在类加载时就需要初始化完成，这早于Spring容器初始化的时间点。因此，按照标准做法，Spring框架不支持直接使用`"
-tags: ["sca","spring-cloud-alibaba","@value","注入","static","final","静态"]
-keywords: ["sca","spring-cloud-alibaba","@value","注入","static","final","静态"]
+tags: ["spring-cloud-alibaba","@value","注入","static","final","静态常量","spring"]
+keywords: ["spring-cloud-alibaba","@value","注入","static","final","静态常量","spring"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-14757"
 title: "spring boot 应用启动流程原理"
-date: "2024-05-30"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba下的Spring Boot应用启动流程原理主要遵循标准Spring Boot应用的启动机制，但会集成Alibaba提供的微服务组件，增强服务发现、配置管理、分布式事务处理等功能。基于已有的知识，我们可以概述其启动流程如下：### 1. **打包为Fat Jar"
-tags: ["spring","cloud","alibaba","application","startup","process","principle"]
-keywords: ["spring","cloud","alibaba","application","startup","process","principle"]
+tags: ["sca","spring-cloud-alibaba","spring-boot","应用","启动","流程","原理"]
+keywords: ["sca","spring-cloud-alibaba","spring-boot","应用","启动","流程","原理"]
 ---
 
 ## 用户问题 ： 

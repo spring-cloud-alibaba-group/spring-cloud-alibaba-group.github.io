@@ -1,11 +1,11 @@
 ---
 id: "question-history-16204"
 title: "spring cloud alibaba org.springframework.ai."
-date: "2024-07-15"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，针对问题`sca(spring-cloud-alibaba) spring cloud alibaba org.springframework.ai.chat.model.ChatModel 找不到`，我们可以分析并解答如下：**原因分析：**1. **版本不匹配**: 用户可能"
-tags: ["spring","cloud","alibaba","ChatModel","找不到"]
-keywords: ["spring","cloud","alibaba","ChatModel","找不到"]
+tags: ["sca","spring-cloud-alibaba","spring","cloud","alibaba","orgspringframeworkai","chat"]
+keywords: ["sca","spring-cloud-alibaba","spring","cloud","alibaba","orgspringframeworkai","chat"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-15571"
 title: "The spring.config.import property is missing"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "这个问题是因为在Spring Boot或Spring Cloud应用的配置文件中（如application.properties或application.yml），缺少了必要的`spring.config.import=nacos:`属性来导入Nacos作为配置中心。根据我了解的知识中的描述，这通常"
-tags: ["springconfigimport","nacos","entry","missing","sca"]
-keywords: ["springconfigimport","nacos","entry","missing","sca"]
+tags: ["spring-cloud-alibaba","springconfigimport","nacos","entry","问题"]
+keywords: ["spring-cloud-alibaba","springconfigimport","nacos","entry","问题"]
 ---
 
 ## 用户问题 ： 

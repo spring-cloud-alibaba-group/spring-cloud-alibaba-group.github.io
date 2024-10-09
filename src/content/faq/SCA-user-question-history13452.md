@@ -1,11 +1,11 @@
 ---
 id: "question-history-13452"
 title: "创建springboot项目 ，包含sca所有组件"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的问题，您想创建一个包含Spring Cloud Alibaba（SCA）所有组件的Spring Boot项目。基于提供的知识内容，以下是详细的步骤指南：### 1. 使用Spring Initializr创建基础Spring Boot项目首先，访问[Spring Initializr](ht"
-tags: ["springboot","sca","spring-cloud-alibaba","组件","创建","项目","包含"]
-keywords: ["springboot","sca","spring-cloud-alibaba","组件","创建","项目","包含"]
+tags: ["sca","spring-cloud-alibaba","springboot","项目","组件","创建","包含"]
+keywords: ["sca","spring-cloud-alibaba","springboot","项目","组件","创建","包含"]
 ---
 
 ## 用户问题 ： 

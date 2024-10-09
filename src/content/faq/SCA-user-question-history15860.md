@@ -1,11 +1,11 @@
 ---
 id: "question-history-15860"
 title: "如何避免在Spring Cloud Alibaba项目中重复配置Nacos地址"
-date: "2024-06-25"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba项目中，为了避免在不同服务或配置文件中重复配置Nacos地址，可以采用以下策略，基于我了解的知识中的相关内容进行分析与建议：### 分析原因1. **集中管理配置**：在微服务架构中，重复配置如Nacos地址会增加维护成本，特别是当服务数量增加时，更改配置就"
-tags: ["Spring","Cloud","Alibaba","Nacos","地址","重复","配置"]
-keywords: ["Spring","Cloud","Alibaba","Nacos","地址","重复","配置"]
+tags: ["sca","spring-cloud-alibaba","避免","重复配置","Nacos","地址","Spring"]
+keywords: ["sca","spring-cloud-alibaba","避免","重复配置","Nacos","地址","Spring"]
 ---
 
 ## 用户问题 ： 

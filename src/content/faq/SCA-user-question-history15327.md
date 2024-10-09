@@ -1,11 +1,11 @@
 ---
 id: "question-history-15327"
 title: "springai 接入通义大模型的步骤"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "接入Sca(Spring Cloud Alibaba) SpringAI到通义大模型的详细步骤如下：1. **环境准备**：   - 确保Java Development Kit (JDK)版本在JDK 17或更高版本。2. **申请API密钥**：   - 访问[阿里云百炼页面](https://"
-tags: ["sca","spring-cloud-alibaba","springai","通义","大模型","接入",""]
-keywords: ["sca","spring-cloud-alibaba","springai","通义","大模型","接入",""]
+tags: ["sca","spring-cloud-alibaba","springai","通义大模型","接入",""]
+keywords: ["sca","spring-cloud-alibaba","springai","通义大模型","接入",""]
 ---
 
 ## 用户问题 ： 
@@ -107,7 +107,7 @@ keywords: ["sca","spring-cloud-alibaba","springai","通义","大模型","接入"
 
 ## 参考链接 ：
 
-* 专家经验：sca ai 调用通义大模型实现聊天交互 
+* 专家经验：spring ai alibaba 使用说明 
  
  * 专家经验：sca ai (spring cloud alibaba ai）介绍 
 

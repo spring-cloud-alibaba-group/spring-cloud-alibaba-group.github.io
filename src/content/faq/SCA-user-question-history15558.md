@@ -1,7 +1,7 @@
 ---
 id: "question-history-15558"
 title: "Spring AI 0.8.1 怎么找不到"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据我的知识库，您提到的问题Sca(spring-cloud-alibaba) Spring AI 0.8.1 怎么找不到，其原因在于Spring官方并没有将spring-ai相关的包发布到Maven的中央仓库中。因此，直接从中央仓库搜索或依赖这个版本会显示找不到。为了解决这个问题，您可以按照以下步"
 tags: ["sca","spring-cloud-alibaba","Spring","AI","081","找不到"]

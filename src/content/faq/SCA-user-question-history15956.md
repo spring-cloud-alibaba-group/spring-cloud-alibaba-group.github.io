@@ -1,11 +1,11 @@
 ---
 id: "question-history-15956"
 title: "Add a spring.config.import=nacos: property t"
-date: "2024-06-27"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据已有的知识内容，针对您的问题“sca(spring-cloud-alibaba) Add a spring.config.import=nacos: property to your configuration.If configuration is not required 怎么处理？”可以这"
-tags: ["spring-cloud-alibaba","springconfigimport","nacos","配置"]
-keywords: ["spring-cloud-alibaba","springconfigimport","nacos","配置"]
+tags: ["sca","spring-cloud-alibaba","springconfigimport","nacos","configuration","required","处理"]
+keywords: ["sca","spring-cloud-alibaba","springconfigimport","nacos","configuration","required","处理"]
 ---
 
 ## 用户问题 ： 

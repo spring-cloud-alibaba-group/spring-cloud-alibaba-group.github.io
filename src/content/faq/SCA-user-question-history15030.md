@@ -1,11 +1,11 @@
 ---
 id: "question-history-15030"
 title: "spring cloud alibaba 分布式事务"
-date: "2024-06-05"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba中，分布式事务主要是通过Seata组件来实现的。Seata（Simple Extensible Autonomous Transaction Architecture）提供了一种高性能、易于使用的分布式事务解决方案，它支持常见的事务模式，如AT（Automa"
-tags: ["spring","cloud","alibaba","分布式","事务","sca"]
-keywords: ["spring","cloud","alibaba","分布式","事务","sca"]
+tags: ["sca","spring","cloud","alibaba","分布式","事务","处理"]
+keywords: ["sca","spring","cloud","alibaba","分布式","事务","处理"]
 ---
 
 ## 用户问题 ： 

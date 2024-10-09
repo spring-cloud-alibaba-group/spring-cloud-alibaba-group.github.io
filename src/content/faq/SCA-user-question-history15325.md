@@ -1,11 +1,11 @@
 ---
 id: "question-history-15325"
 title: "Spring AI 0.8.1 怎么找不到？"
-date: "2024-06-13"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "unexpected error"
-tags: ["sca","spring-cloud-alibaba","Spring","AI","081","找不到"]
-keywords: ["sca","spring-cloud-alibaba","Spring","AI","081","找不到"]
+tags: ["sca","spring-cloud-alibaba","Spring","AI","081","找不到","版本"]
+keywords: ["sca","spring-cloud-alibaba","Spring","AI","081","找不到","版本"]
 ---
 
 ## 用户问题 ： 

@@ -1,7 +1,7 @@
 ---
 id: "question-history-12508"
 title: "eclipse创建springboot项目"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Eclipse中创建一个基于Spring Cloud Alibaba (Sca)的Spring Boot项目，您可以遵循以下步骤操作：1. **使用Spring Initializr服务**：   - 首先，虽然Eclipse自带了Spring Project Wizard，但为了确保能方便地集成"
 tags: ["sca","spring-cloud-alibaba","eclipse","创建","springboot","项目"]

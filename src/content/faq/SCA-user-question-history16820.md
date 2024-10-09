@@ -1,11 +1,11 @@
 ---
 id: "question-history-16820"
 title: "spring的加载机制？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的问题，关于Spring Cloud Alibaba（SCA）的加载机制并非直接在提供的知识概述中详细阐述。但是，我们可以基于Spring Boot和Spring Cloud的基本原理来推测SCA的工作方式，因为Spring Cloud Alibaba作为Spring Cloud生态的一部分，"
-tags: ["spring-cloud-alibaba","spring","加载","机制"]
-keywords: ["spring-cloud-alibaba","spring","加载","机制"]
+tags: ["sca","spring","cloud","alibaba","spring","加载","机制"]
+keywords: ["sca","spring","cloud","alibaba","spring","加载","机制"]
 ---
 
 ## 用户问题 ： 

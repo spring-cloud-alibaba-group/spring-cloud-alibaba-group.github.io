@@ -1,7 +1,7 @@
 ---
 id: "question-history-14683"
 title: "refreshEnabled 默认值"
-date: "2024-05-29"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba中，`refreshEnabled`属性主要用于控制Nacos Config客户端是否自动刷新配置，默认情况下，这个属性的值是`true`。这意味着，当Nacos Config Server上的配置发生改变时，客户端会自动拉取最新的配置并更新到本地，从而实现"
 tags: ["sca","spring-cloud-alibaba","refreshEnabled","默认值"]
@@ -16,7 +16,7 @@ keywords: ["sca","spring-cloud-alibaba","refreshEnabled","默认值"]
 
 在Spring Cloud Alibaba中，`refreshEnabled`属性主要用于控制Nacos Config客户端是否自动刷新配置，默认情况下，这个属性的值是`true`。这意味着，当Nacos Config Server上的配置发生改变时，客户端会自动拉取最新的配置并更新到本地，从而实现配置的动态刷新。
 
-根据 我了解的知识 中提及的文档资源，特别是[Nacos Config](https://github.com/spring-cloud-incubator/spring-cloud-alibaba/wiki/Nacos-config)，虽然该文档没有直接列出所有属性的默认值，但依据Spring Cloud Alibaba的一般实践和配置管理的常规理解，默认开启配置自动刷新是业界常见做法。因此，可以确认`refreshEnabled`的默认值为`true`。
+根据 {{{知识}}} 中提及的文档资源，特别是[Nacos Config](https://github.com/spring-cloud-incubator/spring-cloud-alibaba/wiki/Nacos-config)，虽然该文档没有直接列出所有属性的默认值，但依据Spring Cloud Alibaba的一般实践和配置管理的常规理解，默认开启配置自动刷新是业界常见做法。因此，可以确认`refreshEnabled`的默认值为`true`。
 
 **总结：**
 - `sca(spring-cloud-alibaba)`中`refreshEnabled`的默认值为`true`，表示配置自动刷新功能默认开启。

@@ -1,11 +1,11 @@
 ---
 id: "question-history-15025"
 title: "spring cloud alibaba 2022.0.0.0 最低jdk版本"
-date: "2024-06-05"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据已有的知识内容，我们无法直接获取到Spring Cloud Alibaba 2022.0.0.0最低支持的JDK版本信息。为了更准确地帮助您，我建议查阅Spring Cloud Alibaba的官方文档或者发布说明，这些通常会包含对最低Java版本的要求。您可以通过访问[官方文档](https:"
-tags: ["spring","cloud","alibaba","2022000","最低","jdk","版本"]
-keywords: ["spring","cloud","alibaba","2022000","最低","jdk","版本"]
+tags: ["sca","spring-cloud-alibaba","2022000","jdk","版本","更新"]
+keywords: ["sca","spring-cloud-alibaba","2022000","jdk","版本","更新"]
 ---
 
 ## 用户问题 ： 

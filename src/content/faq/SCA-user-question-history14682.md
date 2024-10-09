@@ -1,9 +1,9 @@
 ---
 id: "question-history-14682"
 title: "我的nacos是2.3.0版本的 我的springboot是2.4.2版本的 那么我的c"
-date: "2024-05-29"
+date: "2024-09-26"
 category: "expertConsultation"
-description: "根据你提供的信息，Nacos版本为2.3.0，Spring Boot版本为2.4.2。根据我了解的知识中的版本对应关系，我们可以这样分析：1. 查找Spring Boot 2.4.2对应的Spring Cloud Alibaba版本：在第2篇参考内容中，可以看到Spring Boot 2.4.2与S"
+description: "根据你提供的信息，Nacos版本为2.3.0，Spring Boot版本为2.4.2。根据知识中的版本对应关系，我们可以这样分析：1. 查找Spring Boot 2.4.2对应的Spring Cloud Alibaba版本：在第2篇参考内容中，可以看到Spring Boot 2.4.2与Sprin"
 tags: ["sca","spring-cloud-alibaba","nacos","230","springboot","242","cloud"]
 keywords: ["sca","spring-cloud-alibaba","nacos","230","springboot","242","cloud"]
 ---
@@ -14,7 +14,7 @@ keywords: ["sca","spring-cloud-alibaba","nacos","230","springboot","242","cloud"
 ---------------
 ## 专家官方解答 ：
 
-根据你提供的信息，Nacos版本为2.3.0，Spring Boot版本为2.4.2。根据我了解的知识中的版本对应关系，我们可以这样分析：
+根据你提供的信息，Nacos版本为2.3.0，Spring Boot版本为2.4.2。根据{{{知识}}}中的版本对应关系，我们可以这样分析：
 
 1. 查找Spring Boot 2.4.2对应的Spring Cloud Alibaba版本：在第2篇参考内容中，可以看到Spring Boot 2.4.2与Spring Cloud Alibaba 2021.1或2.2.5.RELEASE或2.1.4.RELEASE或2.0.4.RELEASE相对应。但为了更精确地匹配，我们需要找到与Nacos 2.3.0相符合的版本。
 

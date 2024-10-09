@@ -1,11 +1,11 @@
 ---
 id: "question-history-17036"
 title: "springcloud微服务"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的问题 sca(spring-cloud-alibaba) springcloud微服务，您似乎希望了解如何使用Spring Cloud Alibaba进行微服务架构的实践。基于提供的知识内容，我将分步骤为您解析如何从Spring Boot单体应用升级到Spring Cloud微服务，并特别关"
-tags: ["spring-cloud-alibaba","microservice","sca"]
-keywords: ["spring-cloud-alibaba","microservice","sca"]
+tags: ["sca","spring-cloud-alibaba","springcloud","微服务"]
+keywords: ["sca","spring-cloud-alibaba","springcloud","微服务"]
 ---
 
 ## 用户问题 ： 
@@ -52,7 +52,7 @@ keywords: ["spring-cloud-alibaba","microservice","sca"]
 
 ## 参考链接 ：
 
-* 专家经验：sca(spring-cloud-alibaba) Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
+* 专家经验：Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
 
 
  <font color="#949494">---------------</font> 

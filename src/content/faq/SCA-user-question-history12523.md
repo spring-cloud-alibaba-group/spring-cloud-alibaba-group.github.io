@@ -1,7 +1,7 @@
 ---
 id: "question-history-12523"
 title: "springboot netty"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba环境中整合Spring Boot与Netty来提供WebSocket服务的步骤如下：1. **添加Netty依赖**：   首先，在你的Spring Boot项目的`pom.xml`文件中加入Netty的依赖。确保使用的是最新稳定版本的Netty库，例如： "
 tags: ["sca","spring-cloud-alibaba","springboot","netty"]

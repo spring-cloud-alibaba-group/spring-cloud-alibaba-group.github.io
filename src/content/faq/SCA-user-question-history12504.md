@@ -1,7 +1,7 @@
 ---
 id: "question-history-12504"
 title: "创建springboot项目"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (Sca)中创建Spring Boot项目，可以遵循以下详细步骤：1. **项目初始化**   - 访问[Spring Initializr阿里云版](https://start.aliyun.com)，这是一个快速生成Spring Boot项目配置的平台"
 tags: ["sca","spring-cloud-alibaba","springboot","创建","项目"]

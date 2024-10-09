@@ -1,11 +1,11 @@
 ---
 id: "question-history-16875"
 title: "SpringBoot 要使用 @Transactional 怎么用？maven依赖 代码"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "为了在 Spring Boot 应用中使用 `@Transactional` 注解来管理事务，你需要确保已经正确设置了 Maven 依赖并合理地在代码中应用该注解。虽然 Spring Cloud Alibaba 主要关注微服务架构中的服务发现、配置管理、限流降级等组件，但 `@Transaction"
-tags: ["SpringCloud","Alibaba","SpringBoot","Transactional","maven","依赖","代码"]
-keywords: ["SpringCloud","Alibaba","SpringBoot","Transactional","maven","依赖","代码"]
+tags: ["sca","spring-cloud-alibaba","SpringBoot","@Transactional","maven","依赖","代码样例"]
+keywords: ["sca","spring-cloud-alibaba","SpringBoot","@Transactional","maven","依赖","代码样例"]
 ---
 
 ## 用户问题 ： 

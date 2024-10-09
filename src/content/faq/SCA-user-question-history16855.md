@@ -1,11 +1,11 @@
 ---
 id: "question-history-16855"
 title: "Spring 使用 @Import 是什么意思？有什么作用？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring框架中，`@Import`注解是一个类级别的元注解，主要用于告诉Spring容器需要导入额外的Bean定义到当前的ApplicationContext中。这个功能在Spring Cloud Alibaba的上下文中同样适用，尽管它更侧重于微服务架构的支持，但基本的Spring机制如`@"
-tags: ["Spring","使用","@Import","作用","注解","引入","类"]
-keywords: ["Spring","使用","@Import","作用","注解","引入","类"]
+tags: ["sca","spring-cloud-alibaba","Spring","@Import","作用","意思","解释"]
+keywords: ["sca","spring-cloud-alibaba","Spring","@Import","作用","意思","解释"]
 ---
 
 ## 用户问题 ： 

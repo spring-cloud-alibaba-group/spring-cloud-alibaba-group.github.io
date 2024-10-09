@@ -1,11 +1,11 @@
 ---
 id: "question-history-15336"
 title: "spring cloud 和 spring cloud alibaba的区别"
-date: "2024-06-14"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "首先，让我们明确Spring Cloud与Spring Cloud Alibaba的主要区别，基于已有的知识内容：1. **定位与集成生态：**   - **Spring Cloud** 是一套全面的微服务解决方案，它为基于Spring Boot的应用程序提供了云应用开发所需的配置管理、服务发现、断"
-tags: ["spring","cloud","alibaba","区别"]
-keywords: ["spring","cloud","alibaba","区别"]
+tags: ["sca","spring-cloud-alibaba","spring","cloud","alibaba","区别","对比"]
+keywords: ["sca","spring-cloud-alibaba","spring","cloud","alibaba","区别","对比"]
 ---
 
 ## 用户问题 ： 

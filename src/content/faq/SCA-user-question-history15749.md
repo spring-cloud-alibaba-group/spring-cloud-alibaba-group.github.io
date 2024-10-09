@@ -1,11 +1,11 @@
 ---
 id: "question-history-15749"
 title: "spring cloud  alibaba ai 怎么支持通义的配置参数？"
-date: "2024-06-19"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要支持Spring Cloud Alibaba AI中的通义配置参数，您可以遵循以下步骤进行配置与使用：1. **确保技术栈兼容性**：   - 确保您的Java开发环境使用的是JDK 17或更高版本。2. **获取阿里云API密钥**：   - 访问[阿里云百炼页面](https://www.al"
-tags: ["spring-cloud-alibaba","spring","cloud","alibaba","通义","配置","参数"]
-keywords: ["spring-cloud-alibaba","spring","cloud","alibaba","通义","配置","参数"]
+tags: ["sca","spring-cloud-alibaba","spring","cloud","alibaba","ai","支持"]
+keywords: ["sca","spring-cloud-alibaba","spring","cloud","alibaba","ai","支持"]
 ---
 
 ## 用户问题 ： 
@@ -79,7 +79,7 @@ keywords: ["spring-cloud-alibaba","spring","cloud","alibaba","通义","配置","
 
 ## 参考链接 ：
 
-* 专家经验：sca ai 调用通义大模型实现聊天交互 
+* 专家经验：spring ai alibaba 使用说明 
  
  * 专家经验：sca ai (spring cloud alibaba ai）介绍 
 

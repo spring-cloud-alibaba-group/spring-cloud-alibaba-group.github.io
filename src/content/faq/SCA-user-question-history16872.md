@@ -1,11 +1,11 @@
 ---
 id: "question-history-16872"
 title: "spring boot maven 打包提示程序包不存在怎么办"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "当您在使用 Spring Cloud Alibaba 配合 Spring Boot 进行 Maven 打包时遇到“程序包不存在”的提示，这通常意味着 Maven 在构建过程中无法找到某些依赖库。根据这一情况，我们可以依据以下步骤进行排查和解决：### 1. 检查`pom.xml`文件确保您的`pom"
-tags: ["spring-cloud-alibaba","spring","boot","maven","打包","提示","程序包"]
-keywords: ["spring-cloud-alibaba","spring","boot","maven","打包","提示","程序包"]
+tags: ["sca","spring-cloud-alibaba","spring","boot","maven","打包","问题"]
+keywords: ["sca","spring-cloud-alibaba","spring","boot","maven","打包","问题"]
 ---
 
 ## 用户问题 ： 

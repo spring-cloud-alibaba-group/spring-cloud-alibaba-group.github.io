@@ -1,7 +1,7 @@
 ---
 id: "question-history-14687"
 title: "spring.cloud.nacos.discovery.server-addr"
-date: "2024-05-29"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在使用Spring Cloud Alibaba时，`spring.cloud.nacos.discovery.server-addr`配置项是非常关键的，它用于指定Nacos服务器的地址，以便于服务发现功能能够正常工作。根据已有的知识，我们可以这样理解和配置它：1. **配置作用理解：**   - "
 tags: ["sca","spring-cloud-alibaba","nacos","discovery","server-addr","配置","问题"]

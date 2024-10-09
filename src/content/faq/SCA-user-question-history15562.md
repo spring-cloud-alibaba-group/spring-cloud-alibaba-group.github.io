@@ -1,11 +1,11 @@
 ---
 id: "question-history-15562"
 title: "spring cloud与spring cloud Alibaba版本对应关系"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据已有的知识，我可以详细解答关于 Spring Cloud 与 Spring Cloud Alibaba (SCA) 版本对应关系的问题。### 分析原因Spring Cloud Alibaba 是基于 Spring Cloud 的一套微服务解决方案，为开发者提供了阿里巴巴开源组件（如 Nacos"
-tags: ["spring","cloud","alibaba","版本","对应","关系"]
-keywords: ["spring","cloud","alibaba","版本","对应","关系"]
+tags: ["sca","spring-cloud-alibaba","spring","cloud","版本","对应","关系"]
+keywords: ["sca","spring-cloud-alibaba","spring","cloud","版本","对应","关系"]
 ---
 
 ## 用户问题 ： 

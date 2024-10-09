@@ -1,11 +1,11 @@
 ---
 id: "question-history-15555"
 title: "启动后报错 Connect to telnet server error: 127.0."
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您提供的错误信息，`Connect to telnet server error: 127.0.0.1 3658 java.net.ConnectException: 拒绝连接 (Connection refused)`，这表明您的应用程序尝试连接到本地的某个服务（端口3658，可能误写为Nac"
-tags: ["spring-cloud-alibaba","连接","拒绝","错误","报错","telnet","server"]
-keywords: ["spring-cloud-alibaba","连接","拒绝","错误","报错","telnet","server"]
+tags: ["sca","spring-cloud-alibaba","启动","报错","Connect","telnet","server"]
+keywords: ["sca","spring-cloud-alibaba","启动","报错","Connect","telnet","server"]
 ---
 
 ## 用户问题 ： 

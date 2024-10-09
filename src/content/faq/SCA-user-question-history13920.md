@@ -1,11 +1,11 @@
 ---
 id: "question-history-13920"
 title: "spring ai 是什么"
-date: "2024-05-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Sca(Spring Cloud Alibaba) Spring AI 是一个专为AI应用开发设计的框架实现，它结合了Spring Cloud Alibaba的技术栈与Spring AI的理念。Spring AI的核心优势在于它标准化了不同AI服务提供商（例如OpenAI、Azure、阿里云等）的接"
-tags: ["sca","spring-cloud-alibaba","spring","ai"]
-keywords: ["sca","spring-cloud-alibaba","spring","ai"]
+tags: ["sca","spring-cloud-alibaba","spring","ai","解释","分析","应用"]
+keywords: ["sca","spring-cloud-alibaba","spring","ai","解释","分析","应用"]
 ---
 
 ## 用户问题 ： 

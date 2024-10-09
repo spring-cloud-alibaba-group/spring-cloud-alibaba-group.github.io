@@ -1,11 +1,11 @@
 ---
 id: "question-history-16427"
 title: "我想导入spring-cloud-alibaba-dependencies ，maven"
-date: "2024-08-01"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Maven中，`mavenBom`（Bill of Materials，物料清单）和直接添加`dependency`有以下几点区别：1. **版本管理**: `mavenBom`主要用于集中管理一组依赖的版本号。当你引入一个BOM时，你实际上是在告诉Maven使用BOM中指定的所有依赖的版本，而无"
-tags: ["spring-cloud-alibaba","mavenBom","dependency","区别","导入","使用"]
-keywords: ["spring-cloud-alibaba","mavenBom","dependency","区别","导入","使用"]
+tags: ["sca","spring-cloud-alibaba","mavenBom","dependency","区别","导入","spring-cloud-alibaba-dependencies"]
+keywords: ["sca","spring-cloud-alibaba","mavenBom","dependency","区别","导入","spring-cloud-alibaba-dependencies"]
 ---
 
 ## 用户问题 ： 

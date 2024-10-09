@@ -1,7 +1,7 @@
 ---
 id: "question-history-12512"
 title: "springboot mqtt"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (Sca) 中集成 MQTT，虽然直接的参考内容未提供，但我们可以基于Spring Boot的一般集成方式，结合Sca的特性来进行分析与指导。下面是如何在Spring Boot项目中集成MQTT的步骤，同时考虑与Sca的兼容性：### 分析问题原因MQTT"
 tags: ["sca","spring-cloud-alibaba","springboot","mqtt"]

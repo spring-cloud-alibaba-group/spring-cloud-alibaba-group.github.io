@@ -1,11 +1,11 @@
 ---
 id: "question-history-16892"
 title: "在 springboot 中如何使用 nacos 做配置中心？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "为了在Spring Boot应用中使用Nacos作为配置中心，结合Spring Cloud Alibaba (SCA)，你可以遵循以下步骤操作：### 1. 环境准备与依赖引入首先，确保你的开发环境已准备好Java开发工具包(JDK)以及Maven或Gradle等构建工具。接着，在你的Spring "
-tags: ["spring-cloud-alibaba","nacos","springboot","配置中心","使用"]
-keywords: ["spring-cloud-alibaba","nacos","springboot","配置中心","使用"]
+tags: ["sca","spring-cloud-alibaba","springboot","nacos","配置中心","使用","整合"]
+keywords: ["sca","spring-cloud-alibaba","springboot","nacos","配置中心","使用","整合"]
 ---
 
 ## 用户问题 ： 

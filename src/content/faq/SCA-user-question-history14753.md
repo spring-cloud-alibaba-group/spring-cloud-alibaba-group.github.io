@@ -1,11 +1,11 @@
 ---
 id: "question-history-14753"
 title: "springboot定时任务怎么做？"
-date: "2024-05-30"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (Sca)环境中，实现Spring Boot定时任务的方法与标准Spring Boot应用中的做法基本一致。以下是详细步骤：1. **启用定时任务**：   首先，在你的配置类中通过添加`@EnableScheduling`注解来启用定时任务功能。这将激活"
-tags: ["spring-cloud-alibaba","springboot","定时","任务","实现","方法"]
-keywords: ["spring-cloud-alibaba","springboot","定时","任务","实现","方法"]
+tags: ["sca","spring-cloud-alibaba","springboot","定时任务","实现","方法教程"]
+keywords: ["sca","spring-cloud-alibaba","springboot","定时任务","实现","方法教程"]
 ---
 
 ## 用户问题 ： 

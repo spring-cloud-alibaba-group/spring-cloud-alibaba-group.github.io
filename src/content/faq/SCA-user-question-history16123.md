@@ -1,11 +1,11 @@
 ---
 id: "question-history-16123"
 title: "spring-boot-starter-dubbo 目前有哪些版本，如果dubbo的版本"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的信息，关于`sca(spring-cloud-alibaba)`中`spring-boot-starter-dubbo`的版本直接提及并不详细，但我们可以根据Spring Cloud Alibaba各分支与Spring Boot版本的适配情况，间接推断适用的Dubbo版本范围。Dubbo "
-tags: ["sca","spring-cloud-alibaba","spring-boot-starter-dubbo","版本","推荐","26x","27x"]
-keywords: ["sca","spring-cloud-alibaba","spring-boot-starter-dubbo","版本","推荐","26x","27x"]
+tags: ["sca","spring-boot-starter-dubbo","版本","26x","27x","推荐","使用"]
+keywords: ["sca","spring-boot-starter-dubbo","版本","26x","27x","推荐","使用"]
 ---
 
 ## 用户问题 ： 

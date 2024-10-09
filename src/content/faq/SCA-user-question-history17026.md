@@ -1,7 +1,7 @@
 ---
 id: "question-history-17026"
 title: "spring cloud 最新版本"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，Spring Cloud Alibaba的最新版本应该与Spring Cloud的最新版本相匹配以确保兼容性。当前Spring Cloud的最新版本是2023.0.x（代号Leyton），它支持Spring Boot的3.3.x和3.2.x版本。尽管直接信息未列出Spring C"
 tags: ["sca","spring-cloud-alibaba","spring","cloud","最新版本"]

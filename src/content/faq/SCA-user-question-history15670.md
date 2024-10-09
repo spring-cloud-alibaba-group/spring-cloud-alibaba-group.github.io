@@ -1,11 +1,11 @@
 ---
 id: "question-history-15670"
 title: "spring.cloud.alibaba.seata.tx‐service‐group"
-date: "2024-06-18"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba中，`spring.cloud.alibaba.seata.tx-service-group`这个配置项是Seata（分布式事务组件）使用的，用于指定事务群组的名称。这个配置帮助Seata识别和管理不同服务间的事务，确保分布式事务的一致性。根据你的问题，你可"
-tags: ["spring","cloud","alibaba","seata","tx-service-group"]
-keywords: ["spring","cloud","alibaba","seata","tx-service-group"]
+tags: ["sca","spring-cloud-alibaba","seata","tx-service-group","分布式事务","管理","阿里巴巴云"]
+keywords: ["sca","spring-cloud-alibaba","seata","tx-service-group","分布式事务","管理","阿里巴巴云"]
 ---
 
 ## 用户问题 ： 

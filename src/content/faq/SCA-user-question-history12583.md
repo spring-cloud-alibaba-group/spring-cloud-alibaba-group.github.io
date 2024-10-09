@@ -1,7 +1,7 @@
 ---
 id: "question-history-12583"
 title: "springboot测试类具体怎么做？能否给一些样例"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba项目中进行Spring Boot应用的测试，主要可以通过单元测试和集成测试来确保服务的正确性。以下是一个基于Spring Boot的单元测试样例，结合了Spring Cloud Alibaba的环境，虽然参考内容未直接提及Spring Cloud Aliba"
 tags: ["sca","spring-cloud-alibaba","springboot","测试类","样例"]

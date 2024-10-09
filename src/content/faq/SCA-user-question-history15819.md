@@ -1,11 +1,11 @@
 ---
 id: "question-history-15819"
 title: "com.alibaba.cloud.ai.tongyi.exception.TongYi"
-date: "2024-06-21"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据你提供的错误信息`com.alibaba.cloud.ai.tongyi.exception.TongYiException: Can not find api-key`，问题很明显是由于系统在配置中未能找到必要的API密钥(api-key)所导致的。根据我了解的知识中的内容，我们可以按照以下步"
-tags: ["spring-cloud-alibaba","TongYiException","api-key"]
-keywords: ["spring-cloud-alibaba","TongYiException","api-key"]
+tags: ["sca","spring-cloud-alibaba","comalibabacloudai","tongyi-exception","TongYiException","api-key","not-found"]
+keywords: ["sca","spring-cloud-alibaba","comalibabacloudai","tongyi-exception","TongYiException","api-key","not-found"]
 ---
 
 ## 用户问题 ： 
@@ -53,7 +53,7 @@ keywords: ["spring-cloud-alibaba","TongYiException","api-key"]
 
 ## 参考链接 ：
 
-* 专家经验：sca ai 调用通义大模型实现聊天交互 
+* 专家经验：spring ai alibaba 使用说明 
  
  * 专家经验：sca ai (spring cloud alibaba ai）介绍 
 

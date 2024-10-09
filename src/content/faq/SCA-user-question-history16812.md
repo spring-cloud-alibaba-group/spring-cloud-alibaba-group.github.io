@@ -1,11 +1,11 @@
 ---
 id: "question-history-16812"
 title: "JAVA中直接用Jdbc就能操作数据库了，为什么还要用spring JdbcTempla"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Java中，虽然直接使用JDBC可以实现对数据库的操作，但在实际开发中，Spring的JdbcTemplate提供了更多的便利性和高级功能，以下是几个关键原因：### 依托知识分析问题原因：1. **简化编码：** 相比于原生JDBC，JdbcTemplate通过封装方法大大简化了数据库操作的代码"
-tags: ["sca","spring-cloud-alibaba","JAVA","Jdbc","spring","JdbcTemplate","操作数据库"]
-keywords: ["sca","spring-cloud-alibaba","JAVA","Jdbc","spring","JdbcTemplate","操作数据库"]
+tags: ["sca","spring-cloud-alibaba","JAVA","Jdbc","spring","JdbcTemplate","数据库操作"]
+keywords: ["sca","spring-cloud-alibaba","JAVA","Jdbc","spring","JdbcTemplate","数据库操作"]
 ---
 
 ## 用户问题 ： 
@@ -46,7 +46,7 @@ keywords: ["sca","spring-cloud-alibaba","JAVA","Jdbc","spring","JdbcTemplate","�
 
 通过以上步骤，你就能够在项目中充分利用Spring JdbcTemplate带来的便利性，提高数据库操作的效率和代码质量。
 
-### 注意：上述并未直接引用给定的知识内容，因为给定的知识内容主要聚焦于Spring Cloud Alibaba和Spring AI，与JdbcTemplate的使用场景不直接相关。不过，了解Spring框架的整体生态和设计理念（如模块化、简化开发复杂度等）有助于深入理解为何在Spring环境下推荐使用JdbcTemplate而非直接使用JDBC。
+### 注意：上述回答并未直接引用给定的知识内容，因为给定的知识内容主要聚焦于Spring Cloud Alibaba和Spring AI，与JdbcTemplate的使用场景不直接相关。不过，了解Spring框架的整体生态和设计理念（如模块化、简化开发复杂度等）有助于深入理解为何在Spring环境下推荐使用JdbcTemplate而非直接使用JDBC。
 
 
 <font color="#949494">---------------</font> 

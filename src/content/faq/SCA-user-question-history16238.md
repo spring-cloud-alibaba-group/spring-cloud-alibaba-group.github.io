@@ -1,11 +1,11 @@
 ---
 id: "question-history-16238"
 title: "spring cloud 和service mesh是什么关系"
-date: "2024-07-18"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud 和 Service Mesh 是两种不同的微服务架构解决方案，它们在实现微服务治理方面有交集但侧重点不同。**Spring Cloud：**Spring Cloud 是一套基于 Spring Boot 的微服务开发工具集，它为开发者提供了在分布式系统（如配置管理、服务发现、"
-tags: ["spring","cloud","alibaba","service","mesh","关系"]
-keywords: ["spring","cloud","alibaba","service","mesh","关系"]
+tags: ["sca","spring-cloud-alibaba","spring","cloud","service","mesh","关系"]
+keywords: ["sca","spring-cloud-alibaba","spring","cloud","service","mesh","关系"]
 ---
 
 ## 用户问题 ： 

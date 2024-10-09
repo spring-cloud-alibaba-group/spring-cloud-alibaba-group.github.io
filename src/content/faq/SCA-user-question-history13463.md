@@ -1,11 +1,11 @@
 ---
 id: "question-history-13463"
 title: "spring-cloud-starter-alibaba-seata 如何使用"
-date: "2024-05-14"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要在Spring Cloud Alibaba项目中使用`spring-cloud-starter-alibaba-seata`进行分布式事务管理，您可以遵循以下步骤：1. **添加依赖**：   在您的Spring Cloud项目中，确保已经引入了Spring Cloud Alibaba的依赖，并添"
-tags: ["sca","spring-cloud-alibaba","spring-cloud-starter-alibaba-seata","如何","使用"]
-keywords: ["sca","spring-cloud-alibaba","spring-cloud-starter-alibaba-seata","如何","使用"]
+tags: ["sca","spring-cloud-alibaba","starter-seata","使用方法"]
+keywords: ["sca","spring-cloud-alibaba","starter-seata","使用方法"]
 ---
 
 ## 用户问题 ： 

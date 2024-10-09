@@ -1,11 +1,11 @@
 ---
 id: "question-history-14620"
 title: "怎么用spring cloud alibaba ai 实现一个rag方案？"
-date: "2024-05-27"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要使用Spring Cloud Alibaba AI实现一个RAG（ Retrieval-Augmented Generation，检索增强生成）方案，首先需要理解RAG的核心概念，即结合检索系统的结果来辅助生成模型进行更精准的内容生成。接下来，根据Spring Cloud Alibaba AI提供"
-tags: ["sca","spring-cloud-alibaba","ai","rag方案","实现","方法","示例"]
-keywords: ["sca","spring-cloud-alibaba","ai","rag方案","实现","方法","示例"]
+tags: ["sca","spring-cloud-alibaba","ai","实现","rag方案"]
+keywords: ["sca","spring-cloud-alibaba","ai","实现","rag方案"]
 ---
 
 ## 用户问题 ： 

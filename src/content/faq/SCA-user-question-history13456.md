@@ -1,11 +1,11 @@
 ---
 id: "question-history-13456"
 title: "引入 spring cloud alibaba seata 相关依赖"
-date: "2024-05-14"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "为了在Spring Cloud Alibaba项目中引入Seata来实现分布式事务管理，你需要按照以下步骤操作：### 分析依赖关系根据提供的知识内容，我们可以看到不同版本的Spring Cloud Alibaba与Seata存在特定的版本对应关系。确保选择与你的Spring Cloud Aliba"
-tags: ["sca","spring-cloud-alibaba","seata","引入","相关","依赖"]
-keywords: ["sca","spring-cloud-alibaba","seata","引入","相关","依赖"]
+tags: ["sca","spring-cloud-alibaba","seata","依赖","引入","相关","模块"]
+keywords: ["sca","spring-cloud-alibaba","seata","依赖","引入","相关","模块"]
 ---
 
 ## 用户问题 ： 

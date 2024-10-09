@@ -1,11 +1,11 @@
 ---
 id: "question-history-16211"
 title: "想了解关于`com.alibaba.cloud.ai.tongyi.audio.tran"
-date: "2024-07-15"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您想了解的`com.alibaba.cloud.ai.tongyi.audio.transcription.api.AudioTranscriptionPrompt`使用方法或相关功能，虽然在提供的知识概述中并未直接提及这个类的具体使用细节，但我们可以根据Spring Cloud Alibaba"
-tags: ["spring-cloud-alibaba","comalibabacloudaitongyiaudiotranscriptionapiAudioTranscriptionPrompt","使用方法","相关功能"]
-keywords: ["spring-cloud-alibaba","comalibabacloudaitongyiaudiotranscriptionapiAudioTranscriptionPrompt","使用方法","相关功能"]
+tags: ["sca","spring-cloud-alibaba","audio","transcription","api","使用方法","相关功能"]
+keywords: ["sca","spring-cloud-alibaba","audio","transcription","api","使用方法","相关功能"]
 ---
 
 ## 用户问题 ： 

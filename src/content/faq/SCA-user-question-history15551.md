@@ -1,11 +1,11 @@
 ---
 id: "question-history-15551"
 title: "如何接入Spring AI并创建一个继承自`AbstractTongYiServiceI"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "为了接入Spring AI并创建一个继承自`AbstractTongYiServiceImpl`的服务实现类，您可以遵循以下详细步骤：### 步骤分析与准备1. **确保API密钥已获取**：   - 根据知识中提及的方法，在阿里云百炼页面申请并记录您的通义千问API-KEY，这是与模型交互的关键凭"
-tags: ["sca","spring-cloud-alibaba","Spring","AI","AbstractTongYiServiceImpl","服务","实现类"]
-keywords: ["sca","spring-cloud-alibaba","Spring","AI","AbstractTongYiServiceImpl","服务","实现类"]
+tags: ["sca","spring-cloud-alibaba","Spring","AI","AbstractTongYiServiceImpl","服务","实现"]
+keywords: ["sca","spring-cloud-alibaba","Spring","AI","AbstractTongYiServiceImpl","服务","实现"]
 ---
 
 ## 用户问题 ： 
@@ -74,7 +74,7 @@ public class MyTongYiServiceImpl extends AbstractTongYiServiceImpl {
 
 ## 参考链接 ：
 
-* 专家经验：sca ai 调用通义大模型实现聊天交互 
+* 专家经验：spring ai alibaba 使用说明 
  
  * 专家经验：sca ai (spring cloud alibaba ai）介绍 
 

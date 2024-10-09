@@ -1,11 +1,11 @@
 ---
 id: "question-history-16889"
 title: "spring cloud alibaba有哪些主要模块？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Sca(Spring Cloud Alibaba)主要包含以下几个核心模块：1. **Nacos Discovery**: 负责服务的注册与发现，提供了基于Nacos的服务实例管理能力。[详细文档及使用手册](https://sca.aliyun.com/zh-cn/docs/next/user-g"
-tags: ["spring","cloud","alibaba","sca","主要","模块"]
-keywords: ["spring","cloud","alibaba","sca","主要","模块"]
+tags: ["sca","spring","cloud","alibaba","模块","主要","组件"]
+keywords: ["sca","spring","cloud","alibaba","模块","主要","组件"]
 ---
 
 ## 用户问题 ： 
@@ -34,7 +34,7 @@ Sca(Spring Cloud Alibaba)主要包含以下几个核心模块：
 
 ## 参考链接 ：
 
-* 专家经验：sca(spring-cloud-alibaba) Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
+* 专家经验：Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
 
 
  <font color="#949494">---------------</font> 

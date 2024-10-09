@@ -1,11 +1,11 @@
 ---
 id: "question-history-15329"
 title: "springai 调用 通义千问的详解"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的问题，您想了解如何使用Spring Cloud Alibaba (SCA AI) 调用通义千问的详细过程。以下是基于提供的知识内容为您整理的详细步骤和解释：### 步骤与解释：#### 1. 确保技术栈兼容性确保您的Java开发环境使用的是JDK 17或更高版本，因为这是使用Spring C"
-tags: ["sca","spring-cloud-alibaba","springai","通义千问","调用","详解"]
-keywords: ["sca","spring-cloud-alibaba","springai","通义千问","调用","详解"]
+tags: ["sca","spring-cloud-alibaba","springai","调用","通义千问","详解"]
+keywords: ["sca","spring-cloud-alibaba","springai","调用","通义千问","详解"]
 ---
 
 ## 用户问题 ： 
@@ -86,7 +86,7 @@ spring.cloud.ai.tongyi.chat.options.api-key=sk-a3d73b1709bf4a178c28ed7c8b3b5axx
 
 ## 参考链接 ：
 
-* 专家经验：sca ai 调用通义大模型实现聊天交互 
+* 专家经验：spring ai alibaba 使用说明 
  
  * 专家经验：sca ai (spring cloud alibaba ai）介绍 
 

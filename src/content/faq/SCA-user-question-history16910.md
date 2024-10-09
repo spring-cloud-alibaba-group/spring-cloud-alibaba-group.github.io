@@ -1,11 +1,11 @@
 ---
 id: "question-history-16910"
 title: "用 springboot 与 mybatis 如何配置多数据源？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
-description: "在如何在使用Spring Boot与MyBatis时配置多数据源的问题之前，我们先明确虽然直接的配置指南不在提供的Spring Cloud Alibaba版本对应信息中，但基于Spring Boot和MyBatis的基础配置是通用的，且不受特定Spring Cloud Alibaba版本直接影响。因"
-tags: ["spring-cloud-alibaba","springboot","mybatis","多数据源","配置","方法","详解"]
-keywords: ["spring-cloud-alibaba","springboot","mybatis","多数据源","配置","方法","详解"]
+description: "在回答如何在使用Spring Boot与MyBatis时配置多数据源的问题之前，我们先明确虽然直接的配置指南不在提供的Spring Cloud Alibaba版本对应信息中，但基于Spring Boot和MyBatis的基础配置是通用的，且不受特定Spring Cloud Alibaba版本直接影响"
+tags: ["sca","spring-cloud-alibaba","springboot","mybatis","多数据源","配置"]
+keywords: ["sca","spring-cloud-alibaba","springboot","mybatis","多数据源","配置"]
 ---
 
 ## 用户问题 ： 
@@ -14,7 +14,7 @@ keywords: ["spring-cloud-alibaba","springboot","mybatis","多数据源","配置"
 ---------------
 ## 专家官方解答 ：
 
-在如何在使用Spring Boot与MyBatis时配置多数据源的问题之前，我们先明确虽然直接的配置指南不在提供的Spring Cloud Alibaba版本对应信息中，但基于Spring Boot和MyBatis的基础配置是通用的，且不受特定Spring Cloud Alibaba版本直接影响。因此，我们可以基于Spring Boot和MyBatis的标准实践来指导配置多数据源的过程。下面的步骤将帮助您完成这一配置：
+在回答如何在使用Spring Boot与MyBatis时配置多数据源的问题之前，我们先明确虽然直接的配置指南不在提供的Spring Cloud Alibaba版本对应信息中，但基于Spring Boot和MyBatis的基础配置是通用的，且不受特定Spring Cloud Alibaba版本直接影响。因此，我们可以基于Spring Boot和MyBatis的标准实践来指导配置多数据源的过程。下面的步骤将帮助您完成这一配置：
 
 ### 配置多数据源的步骤：
 

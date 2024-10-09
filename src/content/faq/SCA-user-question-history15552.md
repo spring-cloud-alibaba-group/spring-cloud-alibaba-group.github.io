@@ -1,11 +1,11 @@
 ---
 id: "question-history-15552"
 title: "spring cloud alibaba微服务项目中怎么做认证鉴权"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba微服务项目中实现认证鉴权，可以采用Spring Security或OAuth2等安全框架结合Alibaba生态中的相关组件来完成。虽然直接的参考内容未详细覆盖认证鉴权的具体实施步骤，但我可以根据Spring Cloud Alibaba的基本特性和常用实践，为"
-tags: ["spring","cloud","alibaba","认证","鉴权","微服务","sca"]
-keywords: ["spring","cloud","alibaba","认证","鉴权","微服务","sca"]
+tags: ["sca","spring-cloud-alibaba","微服务","认证","鉴权","项目","实现"]
+keywords: ["sca","spring-cloud-alibaba","微服务","认证","鉴权","项目","实现"]
 ---
 
 ## 用户问题 ： 

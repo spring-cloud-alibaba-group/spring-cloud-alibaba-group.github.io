@@ -1,11 +1,11 @@
 ---
 id: "question-history-13368"
 title: "spring-cloud-alibaba整合nacos配置中心教程"
-date: "2024-05-13"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要整合Spring Cloud Alibaba与Nacos配置中心，您可以遵循以下步骤进行设置：1. **添加依赖**：   在您的Spring Boot项目中，需要添加Spring Cloud Alibaba的起步依赖，特别是`spring-cloud-starter-alibaba-nacos-"
-tags: ["sca","spring-cloud-alibaba","nacos","配置中心","教程","整合"]
-keywords: ["sca","spring-cloud-alibaba","nacos","配置中心","教程","整合"]
+tags: ["sca","spring-cloud-alibaba","nacos","配置中心","整合","教程"]
+keywords: ["sca","spring-cloud-alibaba","nacos","配置中心","整合","教程"]
 ---
 
 ## 用户问题 ： 

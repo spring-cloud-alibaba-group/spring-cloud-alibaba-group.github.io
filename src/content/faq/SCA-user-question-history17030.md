@@ -1,11 +1,11 @@
 ---
 id: "question-history-17030"
 title: "springcloud 版本"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
-description: "根据您的问题，您想了解的是Spring Cloud Alibaba（SCA）对应的Spring Cloud版本。根据提供的知识内容，我们可以直接从表格中查找对应关系。****如果您想了解特定Spring Cloud Alibaba版本所对应的Spring Cloud版本，可以参考以下信息摘自知识内容"
-tags: ["sca","spring-cloud-alibaba","springcloud","版本"]
-keywords: ["sca","spring-cloud-alibaba","springcloud","版本"]
+description: "根据您的问题，您想了解的是Spring Cloud Alibaba（SCA）对应的Spring Cloud版本。根据提供的知识内容，我们可以直接从表格中查找对应关系。**回答：**如果您想了解特定Spring Cloud Alibaba版本所对应的Spring Cloud版本，可以参考以下信息摘自知"
+tags: ["sca","spring-cloud-alibaba","springcloud","版本","控制","高可用","微服务"]
+keywords: ["sca","spring-cloud-alibaba","springcloud","版本","控制","高可用","微服务"]
 ---
 
 ## 用户问题 ： 
@@ -16,7 +16,7 @@ keywords: ["sca","spring-cloud-alibaba","springcloud","版本"]
 
 根据您的问题，您想了解的是Spring Cloud Alibaba（SCA）对应的Spring Cloud版本。根据提供的知识内容，我们可以直接从表格中查找对应关系。
 
-****
+**回答：**
 
 如果您想了解特定Spring Cloud Alibaba版本所对应的Spring Cloud版本，可以参考以下信息摘自知识内容：
 

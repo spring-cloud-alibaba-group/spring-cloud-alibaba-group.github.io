@@ -1,11 +1,11 @@
 ---
 id: "question-history-12568"
 title: "idea创建springboot"
-date: "2024-05-27"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在IntelliJ IDEA中使用Spring Cloud Alibaba创建Spring Boot项目的步骤如下：1. **访问Spring Initializr for Alibaba**: 首先，访问阿里云提供的Spring Boot项目初始化工具 [https://start.aliyun."
-tags: ["sca","spring-cloud-alibaba","idea","springboot","创建"]
-keywords: ["sca","spring-cloud-alibaba","idea","springboot","创建"]
+tags: ["sca","spring-cloud-alibaba","idea","springboot","创建","工具","构建"]
+keywords: ["sca","spring-cloud-alibaba","idea","springboot","创建","工具","构建"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-15816"
 title: "spring-cloud-starter-alibaba-ai 无法引入 如何处理"
-date: "2024-06-21"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "遇到`spring-cloud-starter-alibaba-ai`无法引入的问题，其主要原因在于Spring官方并未将`spring-ai`包发布到Maven中央仓库中。鉴于此，你可以按照以下步骤操作来解决这一问题：### 解决步骤#### Maven项目1. **修改`pom.xml`文件**"
-tags: ["sca","spring-cloud-alibaba","引入","无法","处理"]
-keywords: ["sca","spring-cloud-alibaba","引入","无法","处理"]
+tags: ["sca","spring-cloud-starter-alibaba-ai","无法引入","处理","方法"]
+keywords: ["sca","spring-cloud-starter-alibaba-ai","无法引入","处理","方法"]
 ---
 
 ## 用户问题 ： 

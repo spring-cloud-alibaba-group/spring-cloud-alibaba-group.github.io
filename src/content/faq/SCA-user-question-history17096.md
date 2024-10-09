@@ -1,11 +1,11 @@
 ---
 id: "question-history-17096"
 title: "springboot2.7.18 对应的spring cloud版本"
-date: "2024-09-12"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据已有的知识内容，我们并没有直接找到关于Spring Boot 2.7.18对应Spring Cloud版本的明确信息。但是，我们可以尝试通过分析已有数据的趋势和逻辑来进行推断。首先，让我们回顾一下知识中提供的信息。表格展示了不同Spring Cloud Alibaba版本与其依赖组件（包括Nac"
-tags: ["sca","spring-cloud-alibaba","springboot","2718","spring","cloud","版本"]
-keywords: ["sca","spring-cloud-alibaba","springboot","2718","spring","cloud","版本"]
+tags: ["sca","spring-cloud-alibaba","springboot","2718","版本","对应"]
+keywords: ["sca","spring-cloud-alibaba","springboot","2718","版本","对应"]
 ---
 
 ## 用户问题 ： 

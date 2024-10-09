@@ -1,11 +1,11 @@
 ---
 id: "question-history-15557"
 title: "Spring boot版本为2.4.6 对应的nacos版本是多少"
-date: "2024-09-12"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，我们可以分析Spring Cloud Alibaba（SCA）对应Nacos版本的信息。问题是关于Spring Boot版本2.4.6对应的Nacos版本是多少。首先，让我们在知识内容中查找与Spring Boot 2.4.6相关联的记录。由于直接的版本匹配可能不总是存在，我们通"
-tags: ["spring","cloud","alibaba","nacos","version","compatibility","chart"]
-keywords: ["spring","cloud","alibaba","nacos","version","compatibility","chart"]
+tags: ["sca","spring-cloud-alibaba","Spring-boot","246","nacos","版本","对应"]
+keywords: ["sca","spring-cloud-alibaba","Spring-boot","246","nacos","版本","对应"]
 ---
 
 ## 用户问题 ： 

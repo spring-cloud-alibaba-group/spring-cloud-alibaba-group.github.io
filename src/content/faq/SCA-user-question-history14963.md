@@ -1,11 +1,11 @@
 ---
 id: "question-history-14963"
 title: "spirng-cloud-starter-alibaba-ai 最新版本"
-date: "2024-09-12"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，关于`sca(spring-cloud-alibaba)`的介绍以及版本发布信息，并没有直接提及`spring-cloud-starter-alibaba-ai`的最新版本号。但是，我们可以根据Spring Cloud Alibaba项目的常规命名规则和版本发布模式来进行推理和指"
-tags: ["sca","spring-cloud-alibaba","spirng-cloud-starter-alibaba-ai","最新","版本"]
-keywords: ["sca","spring-cloud-alibaba","spirng-cloud-starter-alibaba-ai","最新","版本"]
+tags: ["sca","spring-cloud-alibaba","starter","ai","最新版本"]
+keywords: ["sca","spring-cloud-alibaba","starter","ai","最新版本"]
 ---
 
 ## 用户问题 ： 

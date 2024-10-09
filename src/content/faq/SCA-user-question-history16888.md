@@ -1,11 +1,11 @@
 ---
 id: "question-history-16888"
 title: "spring整合quartz定时器启动报：batch acquisition of 0 "
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您提供的问题，您提到的是在Spring Cloud Alibaba项目中整合Quartz定时任务时，启动时日志显示“batch acquisition of 0 triggers”，这通常意味着Quartz没有找到任何待触发的任务。这不一定意味着整合失败，而是可能因为以下几种情况：1. **配置"
-tags: ["spring-cloud-alibaba","quartz","定时器","启动","报错","batch","acquisition"]
-keywords: ["spring-cloud-alibaba","quartz","定时器","启动","报错","batch","acquisition"]
+tags: ["sca","spring","cloud","alibaba整合","quartz","定时器","报错"]
+keywords: ["sca","spring","cloud","alibaba整合","quartz","定时器","报错"]
 ---
 
 ## 用户问题 ： 

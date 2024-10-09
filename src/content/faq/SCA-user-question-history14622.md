@@ -1,11 +1,11 @@
 ---
 id: "question-history-14622"
 title: "怎么用spring ai 接入通义千问？"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要使用Spring Cloud Alibaba接入通义千问，您可以按照以下详细步骤操作：1. **环境准备**：   - 确保您的开发环境已安装JDK 17或更高版本。2. **申请API-Key**：   - 访问[阿里云百炼页面](https://www.aliyun.com/product/b"
-tags: ["sca","spring-cloud-alibaba","spring","ai","通义千问","接入","方法"]
-keywords: ["sca","spring-cloud-alibaba","spring","ai","通义千问","接入","方法"]
+tags: ["sca","spring-cloud-alibaba","spring","ai","通义千问","接入","使用"]
+keywords: ["sca","spring-cloud-alibaba","spring","ai","通义千问","接入","使用"]
 ---
 
 ## 用户问题 ： 
@@ -107,7 +107,7 @@ keywords: ["sca","spring-cloud-alibaba","spring","ai","通义千问","接入","�
 
 ## 参考链接 ：
 
-* 专家经验：sca ai 调用通义大模型实现聊天交互 
+* 专家经验：spring ai alibaba 使用说明 
  
  * 专家经验：sca ai (spring cloud alibaba ai）介绍 
 

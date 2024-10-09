@@ -1,7 +1,7 @@
 ---
 id: "question-history-12561"
 title: "springboot重定向"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (SCA)集成的SpringBoot应用中处理重定向，其原理和标准SpringBoot应用一致。重定向通常涉及到HTTP状态码的改变，特别是302（临时重定向）或301（永久重定向），以指导客户端从当前请求的URL跳转到另一个URL。尽管参考内容未直接提及"
 tags: ["sca","spring-cloud-alibaba","springboot","重定向"]

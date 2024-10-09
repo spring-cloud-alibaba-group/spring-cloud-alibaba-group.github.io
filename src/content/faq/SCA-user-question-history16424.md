@@ -1,11 +1,11 @@
 ---
 id: "question-history-16424"
 title: "TongYiException: Can not find api-key"
-date: "2024-08-01"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "当遇到错误信息 `TongYiException: Can not find api-key` 时，根据我了解的知识中的分析，这个问题通常是由于在配置Spring Cloud Alibaba AI时，没有正确设置或遗漏了访问通义大模型所需的API密钥所致。以下是解决该问题的详细步骤：1. **检查配"
-tags: ["sca","spring-cloud-alibaba","TongYiException","api-key","not","found"]
-keywords: ["sca","spring-cloud-alibaba","TongYiException","api-key","not","found"]
+tags: ["sca","spring-cloud-alibaba","TongYiException","api-key","find","Can","not"]
+keywords: ["sca","spring-cloud-alibaba","TongYiException","api-key","find","Can","not"]
 ---
 
 ## 用户问题 ： 
@@ -54,7 +54,7 @@ keywords: ["sca","spring-cloud-alibaba","TongYiException","api-key","not","found
 
 ## 参考链接 ：
 
-* 专家经验：sca ai 调用通义大模型实现聊天交互 
+* 专家经验：spring ai alibaba 使用说明 
  
  * 专家经验：sca ai (spring cloud alibaba ai）介绍 
 

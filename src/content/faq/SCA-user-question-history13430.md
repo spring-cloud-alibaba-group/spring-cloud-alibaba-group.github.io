@@ -1,11 +1,11 @@
 ---
 id: "question-history-13430"
 title: "spring-cloud-starter-alibaba-nacos-config 对应"
-date: "2024-06-03"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，我们可以分析确定`spring-cloud-starter-alibaba-nacos-config`对应的Nacos服务端版本。在Spring Cloud Alibaba的版本与Nacos版本对应关系中，可以看到不同版本的Spring Cloud Alibaba对应的Nacos"
-tags: ["spring-cloud-alibaba","nacos服务端","版本"]
-keywords: ["spring-cloud-alibaba","nacos服务端","版本"]
+tags: ["sca","spring-cloud","alibaba","nacos-config","nacos","服务端","版本"]
+keywords: ["sca","spring-cloud","alibaba","nacos-config","nacos","服务端","版本"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-12522"
 title: "springboot连接mysql"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在sca（Spring Cloud Alibaba）与Spring Boot环境中连接MySQL数据库，您可以遵循以下步骤操作：1. **添加MySQL驱动依赖**   在您的`pom.xml`文件中，添加MySQL驱动作为依赖项，以便Spring Boot能够识别并使用MySQL数据库。   ``"
-tags: ["sca","spring-cloud-alibaba","springboot","mysql","连接"]
-keywords: ["sca","spring-cloud-alibaba","springboot","mysql","连接"]
+tags: ["sca","spring-cloud-alibaba","springboot","mysql","连接","数据库","集成"]
+keywords: ["sca","spring-cloud-alibaba","springboot","mysql","连接","数据库","集成"]
 ---
 
 ## 用户问题 ： 

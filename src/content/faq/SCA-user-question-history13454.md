@@ -1,7 +1,7 @@
 ---
 id: "question-history-13454"
 title: "SCA添加seata怎么部署配置？"
-date: "2024-05-21"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "为了在SCA（Spring Cloud Alibaba）项目中添加Seata以实现分布式事务的支持，您需要遵循以下部署配置步骤：### 1. 启动 Seata Server#### 配置数据库及表结构- **创建UNDO_LOG表**：用于AT模式下存储事务回滚信息。```sqlCREATE TAB"
 tags: ["sca","spring-cloud-alibaba","seata","部署","配置"]

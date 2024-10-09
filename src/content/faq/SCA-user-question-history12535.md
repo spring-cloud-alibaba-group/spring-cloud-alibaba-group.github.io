@@ -1,7 +1,7 @@
 ---
 id: "question-history-12535"
 title: "springboot是什么"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba (SCA) 是一套微服务解决方案，它为分布式系统开发提供了一系列表现优异的组件和服务。而 Spring Boot 是一个简化 Spring 应用程序初始搭建及开发过程的框架，旨在快速、简便地创建独立运行的、生产级别的基于 Spring 的应用程序。当我们将 "
 tags: ["sca","spring-cloud-alibaba","springboot","是什么"]

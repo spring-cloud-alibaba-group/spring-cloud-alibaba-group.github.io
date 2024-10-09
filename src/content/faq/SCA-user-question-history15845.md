@@ -1,11 +1,11 @@
 ---
 id: "question-history-15845"
 title: "程序包org.springframework.ai.chat.model不存在"
-date: "2024-06-21"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据你提供的问题「sca(spring-cloud-alibaba) 程序包org.springframework.ai.chat.model不存在」，我可以依托现有知识进行分析和解答。**原因分析：**你在使用Spring Cloud Alibaba时遇到`org.springframework."
-tags: ["sca","spring-cloud-alibaba","程序包","不存在"]
-keywords: ["sca","spring-cloud-alibaba","程序包","不存在"]
+tags: ["sca","spring-cloud-alibaba","orgspringframeworkaichatmodel","不存在","程序包","问题","错误"]
+keywords: ["sca","spring-cloud-alibaba","orgspringframeworkaichatmodel","不存在","程序包","问题","错误"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-16877"
 title: "spring modulith是干啥的？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，没有直接提及“Spring Modulith”的概念。Spring Modulith并非Spring Cloud Alibaba直接涉及的概念，它更多关联于Spring Framework和模块化设计原则，尤其是与Spring应用的内部结构和模块化有关。Spring Moduli"
-tags: ["sca","spring-cloud-alibaba","modulith","微服务","架构","一体化","解决方案"]
-keywords: ["sca","spring-cloud-alibaba","modulith","微服务","架构","一体化","解决方案"]
+tags: ["sca","spring-cloud-alibaba","spring","modulith","微服务","架构","模块化"]
+keywords: ["sca","spring-cloud-alibaba","spring","modulith","微服务","架构","模块化"]
 ---
 
 ## 用户问题 ： 

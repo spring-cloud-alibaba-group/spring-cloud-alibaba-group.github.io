@@ -1,7 +1,7 @@
 ---
 id: "question-history-12511"
 title: "springboot security"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (SCA)与Spring Boot环境中集成Spring Security，主要是为了增强应用的安全性，实现认证与授权等功能。虽然直接关联的知识点未详细提供关于Spring Security的集成步骤，但基于Spring Boot和Spring Secur"
 tags: ["sca","spring-cloud-alibaba","springboot","security"]

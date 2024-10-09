@@ -1,11 +1,11 @@
 ---
 id: "question-history-14605"
 title: "云原生 Spring Cloud Alibaba Gateway 服务网关开发样例实战"
-date: "2024-05-27"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在进行云原生环境下使用Spring Cloud Alibaba Gateway作为服务网关的开发样例实战时，可以遵循以下步骤：### 1. 环境准备与依赖引入- **启动Nacos作为服务注册与配置中心**：根据[快速开始](https://sca.aliyun.com/zh-cn/docs/nex"
-tags: ["sca","spring-cloud-alibaba","云原生","Gateway","服务网关","开发样例","实战"]
-keywords: ["sca","spring-cloud-alibaba","云原生","Gateway","服务网关","开发样例","实战"]
+tags: ["sca","spring-cloud-alibaba","云原生","Spring","Cloud","Alibaba","Gateway"]
+keywords: ["sca","spring-cloud-alibaba","云原生","Spring","Cloud","Alibaba","Gateway"]
 ---
 
 ## 用户问题 ： 

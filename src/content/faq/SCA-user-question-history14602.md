@@ -1,7 +1,7 @@
 ---
 id: "question-history-14602"
 title: "阿里巴巴解决方案之Spring Cloud Alibaba介绍"
-date: "2024-05-27"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba是阿里巴巴提供的一个全面的微服务解决方案，它旨在与Spring Cloud生态无缝集成，为使用Spring Boot和Spring Cloud的团队提供一站式微服务治理能力。以下是关于Spring Cloud Alibaba的详细介绍：1. **核心优势与功能"
 tags: ["sca","spring-cloud-alibaba","阿里巴巴","Spring","Cloud","Alibaba","介绍"]

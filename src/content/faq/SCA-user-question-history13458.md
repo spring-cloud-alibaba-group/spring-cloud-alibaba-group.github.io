@@ -1,7 +1,7 @@
 ---
 id: "question-history-13458"
 title: "springboot 事务处理"
-date: "2024-05-14"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在使用Spring Cloud Alibaba构建的Spring Boot应用中处理事务，主要是依赖于Spring Framework本身的事务管理机制，尤其是使用Spring的声明式事务管理(@Transactional注解)。虽然直接的版本对应关系和组件集成不直接涉及事务处理的细节，但确保Spr"
 tags: ["sca","spring-cloud-alibaba","springboot","事务处理"]

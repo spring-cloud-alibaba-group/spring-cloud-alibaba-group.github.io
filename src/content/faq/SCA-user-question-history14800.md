@@ -1,11 +1,11 @@
 ---
 id: "question-history-14800"
 title: "怎么使用 org.springframework.cache.caffeine.Caff"
-date: "2024-05-30"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在使用Spring Cloud Alibaba时，若想集成`org.springframework.cache.caffeine.CaffeineCache`作为缓存实现，尽管Spring Cloud Alibaba主要关注于服务发现、配置管理等微服务特性，但你可以利用Spring Framewor"
-tags: ["sca","spring-cloud-alibaba","CaffeineCache","使用","方法"]
-keywords: ["sca","spring-cloud-alibaba","CaffeineCache","使用","方法"]
+tags: ["sca","spring-cloud-alibaba","orgspringframeworkcachecaffeine","CaffeineCache","使用","教程","配置"]
+keywords: ["sca","spring-cloud-alibaba","orgspringframeworkcachecaffeine","CaffeineCache","使用","教程","配置"]
 ---
 
 ## 用户问题 ： 

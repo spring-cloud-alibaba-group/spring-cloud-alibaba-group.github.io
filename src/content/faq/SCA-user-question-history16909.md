@@ -1,11 +1,11 @@
 ---
 id: "question-history-16909"
 title: "Spring,Spring MVC,Spring Boot 之间什么关系"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring、Spring MVC、Spring Boot 三者之间存在密切的关系，它们都是Spring家族的重要成员，共同构成了现代Java Web应用程序开发的基石。下面我将依托已有的知识来阐述它们之间的关系：1. **Spring框架**（知识: #sca(spring-cloud-aliba"
-tags: ["Spring","Cloud","Alibaba","Spring","MVC","Spring","Boot"]
-keywords: ["Spring","Cloud","Alibaba","Spring","MVC","Spring","Boot"]
+tags: ["sca","spring","cloud","alibaba","spring","mvc","spring"]
+keywords: ["sca","spring","cloud","alibaba","spring","mvc","spring"]
 ---
 
 ## 用户问题 ： 

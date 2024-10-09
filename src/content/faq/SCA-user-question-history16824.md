@@ -1,7 +1,7 @@
 ---
 id: "question-history-16824"
 title: "spring boot 和微服务的关系"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Boot 和微服务的关系可以从以下几个方面理解：1. **基础与框架**：首先，Spring Boot 是一个简化 Spring 应用开发的框架，它通过提供“约定优于配置”的原则、内嵌式服务器、自动配置等功能，极大地加快了单个应用程序的开发速度。而微服务是一种架构风格，它提倡将大型复杂"
 tags: ["sca","spring-cloud-alibaba","spring","boot","微服务","关系"]
@@ -44,7 +44,7 @@ Spring Boot 和微服务的关系可以从以下几个方面理解：
 
 ## 参考链接 ：
 
-* 专家经验：sca(spring-cloud-alibaba) Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
+* 专家经验：Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
 
 
  <font color="#949494">---------------</font> 

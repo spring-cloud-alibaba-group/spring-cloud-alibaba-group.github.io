@@ -1,11 +1,11 @@
 ---
 id: "question-history-15815"
 title: "spring cloud alibaba项目创建脚手架"
-date: "2024-06-21"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在创建Spring Cloud Alibaba项目脚手架时，可以遵循以下步骤，依据您已有的技术栈和需求，这些步骤融合了从Spring Cloud Alibaba的定位优势到实际操作的指导：### 步骤分析与指导#### 1. 确定技术栈与工具- **评估技术背景**：确认您的团队熟悉Spring B"
-tags: ["spring","cloud","alibaba","创建","脚手架","sca","项目"]
-keywords: ["spring","cloud","alibaba","创建","脚手架","sca","项目"]
+tags: ["sca","spring-cloud-alibaba","云原生","微服务","框架","脚手架","项目创建"]
+keywords: ["sca","spring-cloud-alibaba","云原生","微服务","框架","脚手架","项目创建"]
 ---
 
 ## 用户问题 ： 

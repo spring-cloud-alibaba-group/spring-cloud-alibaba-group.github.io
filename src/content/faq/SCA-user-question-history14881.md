@@ -1,11 +1,11 @@
 ---
 id: "question-history-14881"
 title: "feign调用时是如何通过服务名到nacos中寻址的？服务发现与服务路由"
-date: "2024-06-02"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba环境中，Feign调用时通过服务名到Nacos中寻址的过程可以分为以下几个步骤：1. **服务启动与注册：**   当一个服务应用（包含Feign客户端）启动时，它会根据配置的`spring.cloud.nacos.discovery.*`属性自动向Naco"
-tags: ["sca","feign","服务名","nacos","寻址","服务发现","服务路由"]
-keywords: ["sca","feign","服务名","nacos","寻址","服务发现","服务路由"]
+tags: ["sca","spring-cloud-alibaba","feign","调用","nacos","服务名","服务发现"]
+keywords: ["sca","spring-cloud-alibaba","feign","调用","nacos","服务名","服务发现"]
 ---
 
 ## 用户问题 ： 

@@ -1,7 +1,7 @@
 ---
 id: "question-history-12581"
 title: "微服务架构springcloud"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在微服务架构中，Spring Cloud Alibaba（Sca）为Spring Cloud生态提供了阿里云服务的支持，增强了微服务治理能力。针对您提及的Spring Cloud Alibaba与WebSocket服务的整合，虽然直接关联性不大，但理解您想探讨的是如何在基于Sca的微服务架构中集成W"
 tags: ["sca","spring-cloud-alibaba","微服务架构","springcloud"]

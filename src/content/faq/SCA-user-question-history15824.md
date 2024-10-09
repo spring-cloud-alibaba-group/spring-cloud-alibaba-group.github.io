@@ -1,11 +1,11 @@
 ---
 id: "question-history-15824"
 title: "spring cloud alibaba ai使用的是什么模型"
-date: "2024-06-21"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba AI主要使用了阿里云的通义大模型系列进行AI能力的集成。这些模型涵盖了多种应用场景，例如对话、文生图、文生语音等，并且提供了OutputParser（实现从String到自动POJO映射）、Prompt Template以及让AI模型接入外部数据（Promp"
-tags: ["spring","cloud","alibaba","sca","ai","模型","使用"]
-keywords: ["spring","cloud","alibaba","sca","ai","模型","使用"]
+tags: ["sca","spring-cloud-alibaba","spring","cloud","alibaba","ai","模型"]
+keywords: ["sca","spring-cloud-alibaba","spring","cloud","alibaba","ai","模型"]
 ---
 
 ## 用户问题 ： 
@@ -34,7 +34,7 @@ Spring Cloud Alibaba AI主要使用了阿里云的通义大模型系列进行AI�
  
  * 专家经验：spring ai alibaba 是否支持其他模型比如open ai？ 
  
- * 专家经验：sca ai 调用通义大模型实现聊天交互 
+ * 专家经验：spring ai alibaba 使用说明 
 
 
  <font color="#949494">---------------</font> 

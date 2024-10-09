@@ -1,11 +1,11 @@
 ---
 id: "question-history-15668"
 title: "spring cloud alibaba版本说明"
-date: "2024-06-18"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的询问，您想了解关于`Spring Cloud Alibaba (SCA)`版本说明的相关信息。以下是根据已有知识整理的详细说明：### Spring Boot与Spring Cloud Alibaba版本对应关系选择适合的Spring Cloud Alibaba版本需依据您使用的Spring"
-tags: ["spring","cloud","alibaba","版本","说明"]
-keywords: ["spring","cloud","alibaba","版本","说明"]
+tags: ["sca","spring","cloud","alibaba","版本","说明"]
+keywords: ["sca","spring","cloud","alibaba","版本","说明"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-16851"
 title: "在 Spring 中，annotation 的 @autowired 的原理是什么？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring中，`@Autowired`注解是用来实现依赖注入（Dependency Injection, DI）的一个关键注解。尽管`@Autowired`的详细原理并不直接属于Spring Cloud Alibaba的知识范畴，但基于Spring框架的基本机制，我可以为您解析其工作原理。下面我"
-tags: ["Spring","Cloud","Alibaba","sca","@Autowired","注解","原理"]
-keywords: ["Spring","Cloud","Alibaba","sca","@Autowired","注解","原理"]
+tags: ["sca","spring-cloud-alibaba","spring","annotation","autowired","原理"]
+keywords: ["sca","spring-cloud-alibaba","spring","annotation","autowired","原理"]
 ---
 
 ## 用户问题 ： 

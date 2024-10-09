@@ -1,11 +1,11 @@
 ---
 id: "question-history-12536"
 title: "springboot连接数据库"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Sca（Spring Cloud Alibaba）与Spring Boot环境中连接数据库，主要涉及配置数据源以及实体、Repository的使用。虽然直接的步骤在提供的知识中未明确给出，但基于Spring Boot的一般实践，以下是连接数据库的通用步骤，这些步骤同样适用于集成在Spring Cl"
-tags: ["sca","spring-cloud-alibaba","springboot","连接","数据库"]
-keywords: ["sca","spring-cloud-alibaba","springboot","连接","数据库"]
+tags: ["sca","spring-cloud-alibaba","springboot","连接数据库"]
+keywords: ["sca","spring-cloud-alibaba","springboot","连接数据库"]
 ---
 
 ## 用户问题 ： 

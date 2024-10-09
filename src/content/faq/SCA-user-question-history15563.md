@@ -1,11 +1,11 @@
 ---
 id: "question-history-15563"
 title: "Spring Cloud Alibaba AI报错Consider defining a"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据你的描述，你遇到了在使用Spring Cloud Alibaba AI时的报错信息：“Consider defining a bean of type 'org.springframework.ai.chat.ChatClient' in your configuration.” 这个错误提示意"
-tags: ["spring","cloud","alibaba","ai","chat","client","configuration"]
-keywords: ["spring","cloud","alibaba","ai","chat","client","configuration"]
+tags: ["Spring","Cloud","Alibaba","AI","报错","Bean","定义"]
+keywords: ["Spring","Cloud","Alibaba","AI","报错","Bean","定义"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-12580"
 title: "springmvc的执行流程是怎样的？"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Sca（Spring Cloud Alibaba）中的Spring MVC执行流程与标准Spring MVC流程基本一致，以下是详细步骤：1. **接收请求**：当用户的HTTP请求到达Spring Boot应用时，由默认的Servlet容器（通常是Tomcat）接收。2. **请求分发**：Ser"
-tags: ["sca","spring-cloud-alibaba","springmvc","执行","流程","怎样"]
-keywords: ["sca","spring-cloud-alibaba","springmvc","执行","流程","怎样"]
+tags: ["sca","spring-cloud-alibaba","springmvc","执行流程"]
+keywords: ["sca","spring-cloud-alibaba","springmvc","执行流程"]
 ---
 
 ## 用户问题 ： 

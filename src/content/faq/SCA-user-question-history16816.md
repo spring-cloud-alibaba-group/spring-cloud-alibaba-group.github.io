@@ -1,11 +1,11 @@
 ---
 id: "question-history-16816"
 title: "spring的依赖注入有什么优势？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba 对 Spring 依赖注入的优势主要体现在其对微服务架构支持的增强上，这得益于 Spring Cloud 本身的特性以及 Alibaba 提供的丰富组件。尽管参考内容未直接阐述依赖注入的优势，但可以从Spring Cloud Alibaba的集成特性和功能间"
-tags: ["spring-cloud-alibaba","依赖","注入","优势"]
-keywords: ["spring-cloud-alibaba","依赖","注入","优势"]
+tags: ["sca","spring-cloud-alibaba","spring","依赖注入","优势"]
+keywords: ["sca","spring-cloud-alibaba","spring","依赖注入","优势"]
 ---
 
 ## 用户问题 ： 
@@ -39,7 +39,7 @@ Spring Cloud Alibaba 对 Spring 依赖注入的优势主要体现在其对微服
 
 ## 参考链接 ：
 
-* 专家经验：sca(spring-cloud-alibaba) Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
+* 专家经验：Spring Boot 单体应用升级 Spring Cloud 微服务最佳实践 
 
 
  <font color="#949494">---------------</font> 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-14973"
 title: "springboot 2.6.7对应的alibaba cloud版本"
-date: "2024-06-05"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据已知信息，Spring Boot 2.6.7 对应的 Spring Cloud Alibaba 版本可以在给定的知识中查找。在提供的表格中，直接匹配 Spring Boot 2.6.7 并没有确切的结果，但我们可以找到最接近的版本——2.6.3 和 2.6.11，分别对应了 Spring Clo"
-tags: ["sca","spring-cloud-alibaba","springboot","267","alibaba","cloud","版本"]
-keywords: ["sca","spring-cloud-alibaba","springboot","267","alibaba","cloud","版本"]
+tags: ["sca","spring-cloud-alibaba","springboot","267","alibaba-cloud","版本","对应"]
+keywords: ["sca","spring-cloud-alibaba","springboot","267","alibaba-cloud","版本","对应"]
 ---
 
 ## 用户问题 ： 

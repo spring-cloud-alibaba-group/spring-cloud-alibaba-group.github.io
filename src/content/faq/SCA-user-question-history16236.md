@@ -1,11 +1,11 @@
 ---
 id: "question-history-16236"
 title: "我怎么初始化springcloudalibaba"
-date: "2024-07-18"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要初始化Spring Cloud Alibaba项目，你可以遵循以下步骤，这些步骤基于提供的知识内容：1. **确认JDK版本**：首先，请确保你的开发环境安装了JDK 17或更高版本，因为Spring Cloud Alibaba 2023.0.1.0需要此版本的支持。2. **添加依赖**：在你的"
-tags: ["sca","spring-cloud-alibaba","初始化","方法","教程","使用指南"]
-keywords: ["sca","spring-cloud-alibaba","初始化","方法","教程","使用指南"]
+tags: ["sca","spring-cloud-alibaba","初始化","springcloudalibaba"]
+keywords: ["sca","spring-cloud-alibaba","初始化","springcloudalibaba"]
 ---
 
 ## 用户问题 ： 
@@ -71,7 +71,7 @@ keywords: ["sca","spring-cloud-alibaba","初始化","方法","教程","使用指
 
 ## 参考链接 ：
 
-* 专家经验：sca ai 调用通义大模型实现聊天交互 
+* 专家经验：spring ai alibaba 使用说明 
 
 
  <font color="#949494">---------------</font> 

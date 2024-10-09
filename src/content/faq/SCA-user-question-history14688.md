@@ -1,11 +1,11 @@
 ---
 id: "question-history-14688"
 title: "springcloud alibana的默认数据库连接池使用什么"
-date: "2024-05-29"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba项目中，默认使用的数据库连接池是Apache Druid。这一信息可以从提供的配置示例看出，其中提到了诸如`spring.datasource.druid.url`、`spring.datasource.druid.username`等配置项，这些都是Dru"
-tags: ["sca","spring-cloud-alibaba","默认","数据库","连接池"]
-keywords: ["sca","spring-cloud-alibaba","默认","数据库","连接池"]
+tags: ["sca","spring-cloud-alibaba","springcloud","alibaba","默认","数据库","连接池"]
+keywords: ["sca","spring-cloud-alibaba","springcloud","alibaba","默认","数据库","连接池"]
 ---
 
 ## 用户问题 ： 

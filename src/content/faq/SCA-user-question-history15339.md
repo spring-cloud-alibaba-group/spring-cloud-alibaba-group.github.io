@@ -1,11 +1,11 @@
 ---
 id: "question-history-15339"
 title: "spring-boot3怎么用maven导入spring-cloud-alibaba"
-date: "2024-06-14"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "为了帮助您导入Spring Cloud Alibaba到基于Spring Boot 3的Maven项目中，我们可以遵循以下步骤。虽然提供的知识内容没有直接涵盖Spring Boot 3与Spring Cloud Alibaba的集成步骤，但可以根据Spring Cloud Alibaba的基本集成方"
-tags: ["spring-boot3","sca","maven","导入","spring-cloud-alibaba"]
-keywords: ["spring-boot3","sca","maven","导入","spring-cloud-alibaba"]
+tags: ["sca","spring-cloud-alibaba","spring-boot3","maven","导入","使用","方法"]
+keywords: ["sca","spring-cloud-alibaba","spring-boot3","maven","导入","使用","方法"]
 ---
 
 ## 用户问题 ： 

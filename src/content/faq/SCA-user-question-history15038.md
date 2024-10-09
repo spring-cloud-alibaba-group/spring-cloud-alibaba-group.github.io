@@ -1,11 +1,11 @@
 ---
 id: "question-history-15038"
 title: "spirng cloud alibaba 组件"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Sca（Spring Cloud Alibaba）是Spring Cloud生态与Alibaba开源技术栈的融合，为微服务架构提供了一套解决方案，它集成了阿里巴巴中间件团队开源的多个组件，旨在帮助开发者构建更加稳定、高效并且可扩展的分布式系统。以下是Sca中几个核心的Spring Cloud Ali"
-tags: ["sca","spring","cloud","alibaba","组件"]
-keywords: ["sca","spring","cloud","alibaba","组件"]
+tags: ["sca","spring","cloud","alibaba","组件","整合","分布式"]
+keywords: ["sca","spring","cloud","alibaba","组件","整合","分布式"]
 ---
 
 ## 用户问题 ： 

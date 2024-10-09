@@ -1,11 +1,11 @@
 ---
 id: "question-history-14811"
 title: "spring-cloud-starter-stream-rocketmq 整合配置"
-date: "2024-05-30"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "要整合 Spring Cloud Alibaba 项目与 `spring-cloud-starter-stream-rocketmq`，实现RocketMQ的消息通信功能，可以遵循以下步骤：### 确保环境准备1. **安装RocketMQ Server**     确保已有RocketMQ服务器运"
-tags: ["spring-cloud-alibaba","rocketmq","整合","配置"]
-keywords: ["spring-cloud-alibaba","rocketmq","整合","配置"]
+tags: ["sca","spring-cloud","alibaba","starter","stream","rocketmq","整合"]
+keywords: ["sca","spring-cloud","alibaba","starter","stream","rocketmq","整合"]
 ---
 
 ## 用户问题 ： 

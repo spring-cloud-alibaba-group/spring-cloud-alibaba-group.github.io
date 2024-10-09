@@ -1,11 +1,11 @@
 ---
 id: "question-history-16239"
 title: "Sentinel 支持spring cloud gateway mvc模式吗"
-date: "2024-07-18"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据已有的知识内容，我没有直接找到关于Sca(Spring Cloud Alibaba) Sentinel 是否支持Spring Cloud Gateway MVC模式的具体信息。不过，我可以依据现有的知识为您提供一些相关分析与指导。首先，让我们回顾一下Spring Cloud Alibaba的关键"
-tags: ["sca","spring-cloud-alibaba","Sentinel","spring","cloud","gateway","mvc"]
-keywords: ["sca","spring-cloud-alibaba","Sentinel","spring","cloud","gateway","mvc"]
+tags: ["sca","spring-cloud-alibaba","Sentinel","spring-cloud-gateway","mvc","支持","模式"]
+keywords: ["sca","spring-cloud-alibaba","Sentinel","spring-cloud-gateway","mvc","支持","模式"]
 ---
 
 ## 用户问题 ： 

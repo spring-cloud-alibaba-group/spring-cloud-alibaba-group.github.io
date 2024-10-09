@@ -1,11 +1,11 @@
 ---
 id: "question-history-16243"
 title: "springcloudalibaba和dubbo版本兼容，springboot版本为2."
-date: "2024-07-18"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据你提供的信息，Spring Boot版本为2.6.3，对应的Spring Cloud Alibaba版本为2021.0.1.0。从我了解的知识中我们可以找到这个版本对应的Dubbo版本信息：- 对于Spring Cloud Alibaba 2021.0.1.0，Dubbo的版本号标记为~，这通常"
-tags: ["sca","springcloudalibaba","dubbo","版本","兼容","springboot","202101"]
-keywords: ["sca","springcloudalibaba","dubbo","版本","兼容","springboot","202101"]
+tags: ["sca","spring-cloud-alibaba","dubbo","兼容","springboot","263","springcloud"]
+keywords: ["sca","spring-cloud-alibaba","dubbo","兼容","springboot","263","springcloud"]
 ---
 
 ## 用户问题 ： 

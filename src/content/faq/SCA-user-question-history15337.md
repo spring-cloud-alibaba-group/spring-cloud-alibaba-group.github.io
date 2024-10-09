@@ -1,11 +1,11 @@
 ---
 id: "question-history-15337"
 title: "spring cloud ribbon依赖 ，以及使用loadbalancer如何指定负"
-date: "2024-06-14"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba体系中，关于`spring cloud ribbon依赖`以及如何使用`LoadBalancerClient`指定负载均衡策略的问题，我们可以这样分析：### 分析问题原因根据我了解的知识中提到的，Spring Cloud Alibaba虽然自身不直接提供服"
-tags: ["spring","cloud","alibaba","ribbon","loadbalancer","策略","指定"]
-keywords: ["spring","cloud","alibaba","ribbon","loadbalancer","策略","指定"]
+tags: ["sca","spring-cloud-alibaba","spring-cloud","ribbon","loadbalancer","负载均衡","策略"]
+keywords: ["sca","spring-cloud-alibaba","spring-cloud","ribbon","loadbalancer","负载均衡","策略"]
 ---
 
 ## 用户问题 ： 

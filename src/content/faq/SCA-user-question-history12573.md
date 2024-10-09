@@ -1,7 +1,7 @@
 ---
 id: "question-history-12573"
 title: "springboot简介"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Sca（Spring Cloud Alibaba）是Spring Cloud体系中的一员，专门针对阿里巴巴微服务解决方案的一套组件。它将阿里巴巴中间件团队开发的分布式解决方案与Spring Boot框架紧密结合，提供了诸如服务发现、配置管理、熔断降级、分布式事务等微服务治理能力。关于Sca（Spri"
 tags: ["sca","spring-cloud-alibaba","springboot","简介"]

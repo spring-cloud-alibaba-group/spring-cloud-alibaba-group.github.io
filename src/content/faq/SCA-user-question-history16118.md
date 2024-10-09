@@ -1,11 +1,11 @@
 ---
 id: "question-history-16118"
 title: "Spring Cloud Alibaba 目前有哪些release版本"
-date: "2024-07-05"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的知识内容，Spring Cloud Alibaba 目前有以下release版本：1. **2023.0.1.0**2. **2023.0.0.0-RC1**3. **2022.0.0.0**4. **2022.0.0.0-RC2**5. **2022.0.0.0-RC1**6. **20"
-tags: ["Spring","Cloud","Alibaba","release","版本"]
-keywords: ["Spring","Cloud","Alibaba","release","版本"]
+tags: ["spring-cloud-alibaba","release","版本现状"]
+keywords: ["spring-cloud-alibaba","release","版本现状"]
 ---
 
 ## 用户问题 ： 

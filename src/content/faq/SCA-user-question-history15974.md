@@ -1,11 +1,11 @@
 ---
 id: "question-history-15974"
 title: "按照步骤添加了 dependencyManagement   dependencies "
-date: "2024-07-01"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的描述和提供的依赖配置，您遇到的问题是`AbstractTongYiServiceImpl`类找不到。首先，让我们依托现有知识分析这一情况。从知识内容中，我们知道`AbstractTongYiServiceImpl`是原始AI Demo中的一部分，但实际上并不强制需要继承该抽象类。相反，推荐的"
-tags: ["sca","spring-cloud-alibaba","dependencyManagement","dependencies","groupId","artifactId","version"]
-keywords: ["sca","spring-cloud-alibaba","dependencyManagement","dependencies","groupId","artifactId","version"]
+tags: ["sca","spring-cloud-alibaba","dependencyManagement","dependencies","error","classNotFound","solution"]
+keywords: ["sca","spring-cloud-alibaba","dependencyManagement","dependencies","error","classNotFound","solution"]
 ---
 
 ## 用户问题 ： 

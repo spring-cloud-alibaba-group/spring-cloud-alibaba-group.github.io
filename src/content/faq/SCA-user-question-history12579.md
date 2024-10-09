@@ -1,11 +1,11 @@
 ---
 id: "question-history-12579"
 title: "springmvc常用注解有哪些？分别是什么意思？"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring MVC 在 Spring Cloud Alibaba (SCA) 环境中使用的注解与标准Spring MVC相同，这些注解对于构建RESTful服务、处理请求、数据绑定等至关重要。以下是一些常用的Spring MVC注解及其含义：### 1. `@Controller`- **含义**"
-tags: ["sca","spring-cloud-alibaba","springmvc","注解","意思","常用"]
-keywords: ["sca","spring-cloud-alibaba","springmvc","注解","意思","常用"]
+tags: ["sca","spring-cloud-alibaba","springmvc","注解","意思","常用","分别"]
+keywords: ["sca","spring-cloud-alibaba","springmvc","注解","意思","常用","分别"]
 ---
 
 ## 用户问题 ： 

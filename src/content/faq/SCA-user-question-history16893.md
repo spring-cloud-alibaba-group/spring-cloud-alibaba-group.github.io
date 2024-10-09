@@ -1,11 +1,11 @@
 ---
 id: "question-history-16893"
 title: "Spring的bean会被垃圾回收自动回收吗？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据现有的我了解的知识, 没有直接涉及到Spring Bean的垃圾回收机制的详细说明。但是，我可以基于Spring框架的基本原理来解答您的问题。在Spring框架中，Bean的生命周期管理是通过Spring容器来控制的，包括Bean的创建、初始化、使用以及销毁。默认情况下，Spring中的Sing"
-tags: ["spring-cloud-alibaba","Spring","bean","垃圾回收","自动","回收","问题"]
-keywords: ["spring-cloud-alibaba","Spring","bean","垃圾回收","自动","回收","问题"]
+tags: ["sca","spring","cloud","alibaba","bean","垃圾回收","自动回收"]
+keywords: ["sca","spring","cloud","alibaba","bean","垃圾回收","自动回收"]
 ---
 
 ## 用户问题 ： 

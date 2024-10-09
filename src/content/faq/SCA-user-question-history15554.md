@@ -1,11 +1,11 @@
 ---
 id: "question-history-15554"
 title: "在尝试获取`org.springframework.ai:spring-ai-core:"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据你提供的信息以及我了解的知识中的相关内容，遇到`org.springframework.ai:spring-ai-core:jar:0.8.1`依赖无法获取的问题，主要是因为Spring官方没有将spring-ai相关包发布到Maven中央仓库。鉴于你已经尝试了使用`-U`标志强制更新快照但问题"
-tags: ["sca","spring-cloud-alibaba","依赖","获取","不到","更新","快照"]
-keywords: ["sca","spring-cloud-alibaba","依赖","获取","不到","更新","快照"]
+tags: ["sca","spring-cloud-alibaba","依赖","获取","orgspringframeworkai","spring-ai-core","jar"]
+keywords: ["sca","spring-cloud-alibaba","依赖","获取","orgspringframeworkai","spring-ai-core","jar"]
 ---
 
 ## 用户问题 ： 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-13947"
 title: "springcloudalibaba组件介绍"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据您的问题，您想了解的是Spring Cloud Alibaba（SCA）组件的介绍。在提供的知识内容中，已经详细介绍了Spring Cloud Alibaba的关键组件及其用途，下面我将依据这些信息为您概述Sca（Spring Cloud Alibaba）的主要组件及其功能，并提供相应的链接以便"
-tags: ["sca","spring-cloud-alibaba","组件","介绍"]
-keywords: ["sca","spring-cloud-alibaba","组件","介绍"]
+tags: ["sca","spring-cloud-alibaba","springcloudalibaba","组件","介绍"]
+keywords: ["sca","spring-cloud-alibaba","springcloudalibaba","组件","介绍"]
 ---
 
 ## 用户问题 ： 

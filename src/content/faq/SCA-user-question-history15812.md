@@ -1,11 +1,11 @@
 ---
 id: "question-history-15812"
 title: "spring alibaba ai支持接入哪些大模型？收费吗？"
-date: "2024-06-21"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba AI 支持接入包括但不限于以下大模型：1. **通义千问**：这是基于阿里云的大型语言模型服务，提供了丰富的文本生成和对话能力。2. **Llama**和其他模型：虽然直接提及的支持集中在通义系列，但根据说明，Spring AI 体系设计的初衷是支持所有模型"
-tags: ["spring-cloud-alibaba","alibaba","ai","大模型","接入","支持","收费"]
-keywords: ["spring-cloud-alibaba","alibaba","ai","大模型","接入","支持","收费"]
+tags: ["sca","spring-cloud-alibaba","spring","alibaba","ai","大模型","收费"]
+keywords: ["sca","spring-cloud-alibaba","spring","alibaba","ai","大模型","收费"]
 ---
 
 ## 用户问题 ： 
@@ -33,7 +33,7 @@ Spring Cloud Alibaba AI 支持接入包括但不限于以下大模型：
  
  * 专家经验：spring ai alibaba 是否支持其他模型比如open ai？ 
  
- * 专家经验：sca ai 调用通义大模型实现聊天交互 
+ * 专家经验：spring ai alibaba 使用说明 
 
 
  <font color="#949494">---------------</font> 

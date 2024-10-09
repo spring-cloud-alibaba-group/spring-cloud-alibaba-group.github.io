@@ -1,11 +1,11 @@
 ---
 id: "question-history-15547"
 title: "如何快速上手spring cloud alibaba"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "为了帮助您快速上手Spring Cloud Alibaba，我们可以按照以下步骤进行：1. **了解Spring Cloud Alibaba基础**   首先，熟悉Spring Cloud Alibaba的核心组件及其功能。根据提供的知识，Spring Cloud Alibaba提供了服务发现（Na"
-tags: ["spring","cloud","alibaba","快速","上手"]
-keywords: ["spring","cloud","alibaba","快速","上手"]
+tags: ["sca","spring-cloud-alibaba","快速上手","spring","cloud","alibaba"]
+keywords: ["sca","spring-cloud-alibaba","快速上手","spring","cloud","alibaba"]
 ---
 
 ## 用户问题 ： 

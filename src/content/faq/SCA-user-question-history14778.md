@@ -1,11 +1,11 @@
 ---
 id: "question-history-14778"
 title: "springcloudalibaba如何接入grpc"
-date: "2024-05-30"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba可以通过Spring Cloud OpenFeign或Spring Cloud Gateway来接入gRPC服务，下面以Spring Cloud Gateway为例，结合您提及的Nacos服务发现机制，说明如何接入gRPC服务。请注意，以下步骤是基于您已具备的"
-tags: ["spring-cloud-alibaba","grpc","接入","方法"]
-keywords: ["spring-cloud-alibaba","grpc","接入","方法"]
+tags: ["sca","spring-cloud-alibaba","springcloudalibaba","grpc","接入","整合","使用"]
+keywords: ["sca","spring-cloud-alibaba","springcloudalibaba","grpc","接入","整合","使用"]
 ---
 
 ## 用户问题 ： 

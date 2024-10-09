@@ -1,7 +1,7 @@
 ---
 id: "question-history-13362"
 title: "springboot整合nacos配置中心"
-date: "2024-05-13"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "为了整合Spring Boot与Nacos配置中心，您可以遵循以下步骤进行操作，这些步骤基于提供的知识内容：### 步骤分析与操作指南1. **添加依赖**   - 首先，在您的`pom.xml`或Gradle构建文件中，确保添加了`spring-cloud-starter-alibaba-naco"
 tags: ["sca","spring-cloud-alibaba","springboot","nacos","配置中心","整合"]

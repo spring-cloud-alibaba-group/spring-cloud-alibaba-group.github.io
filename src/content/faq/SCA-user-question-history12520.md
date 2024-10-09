@@ -1,7 +1,7 @@
 ---
 id: "question-history-12520"
 title: "springboot logback"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在Spring Cloud Alibaba (SCA)与Spring Boot集成的项目中配置Logback进行日志管理，虽然参考内容未直接提供详细的Logback配置步骤，但基于对Spring Boot的一般理解，可以遵循以下逻辑进行配置：### 分析问题原因日志记录是任何应用程序的重要组成部分，"
 tags: ["sca","spring-cloud-alibaba","springboot","logback"]

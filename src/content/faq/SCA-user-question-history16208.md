@@ -1,11 +1,11 @@
 ---
 id: "question-history-16208"
 title: "spring-cloud-config-server什么版本对应Spring Cloud"
-date: "2024-07-15"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据提供的信息，Spring Cloud Alibaba Version 2023.0.1.0 对应的是 Spring Boot Version 3.2.4。这意味着如果您想使用 Spring Cloud Alibaba 版本为 2023.0.1.0，您应该选择 Spring Boot 3.2.4 "
-tags: ["spring-cloud-alibaba","config-server","版本","对应","2023010"]
-keywords: ["spring-cloud-alibaba","config-server","版本","对应","2023010"]
+tags: ["sca","spring-cloud-config-server","版本","对应","Spring","Cloud","Alibaba"]
+keywords: ["sca","spring-cloud-config-server","版本","对应","Spring","Cloud","Alibaba"]
 ---
 
 ## 用户问题 ： 

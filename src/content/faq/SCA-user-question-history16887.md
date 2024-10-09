@@ -1,11 +1,11 @@
 ---
 id: "question-history-16887"
 title: "SpringBoot为什么可以使用Jar包启动？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Sca(spring-cloud-alibaba) SpringBoot能够使用Jar包启动的原因，主要归功于Spring Boot设计的核心特性之一——内嵌式Servlet容器。这在我了解的知识的第1篇参考内容中有所体现。下面详细解析这一过程：1. **内嵌式Servlet容器**：Spring "
-tags: ["SpringBoot","Jar","包启动","sca","spring-cloud-alibaba"]
-keywords: ["SpringBoot","Jar","包启动","sca","spring-cloud-alibaba"]
+tags: ["SpringCloud","Alibaba","SpringBoot","Jar包","启动原因"]
+keywords: ["SpringCloud","Alibaba","SpringBoot","Jar包","启动原因"]
 ---
 
 ## 用户问题 ： 

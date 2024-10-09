@@ -1,11 +1,11 @@
 ---
 id: "question-history-16172"
 title: "Springboot和springcloud的区别是什么"
-date: "2024-07-09"
+date: "2024-09-26"
 category: "expertConsultation"
-description: "内容如下：首先，我们来明确**Spring Boot**与**Spring Cloud**之间的核心区别，依据提供的知识内容：1. **目的与定位不同：**   - **Spring Boot**主要聚焦于简化Spring应用的开发、配置与部署流程。它通过提供默认配置、Starter依赖简化Mave"
-tags: ["Springboot","springcloud","sca","区别"]
-keywords: ["Springboot","springcloud","sca","区别"]
+description: "回答内容如下：首先，我们来明确**Spring Boot**与**Spring Cloud**之间的核心区别，依据提供的知识内容：1. **目的与定位不同：**   - **Spring Boot**主要聚焦于简化Spring应用的开发、配置与部署流程。它通过提供默认配置、Starter依赖简化Ma"
+tags: ["sca","springboot","springcloud","区别Springboot和springcloud的区别是什么"]
+keywords: ["sca","springboot","springcloud","区别Springboot和springcloud的区别是什么"]
 ---
 
 ## 用户问题 ： 
@@ -14,7 +14,7 @@ keywords: ["Springboot","springcloud","sca","区别"]
 ---------------
 ## 专家官方解答 ：
 
-内容如下：
+回答内容如下：
 
 首先，我们来明确**Spring Boot**与**Spring Cloud**之间的核心区别，依据提供的知识内容：
 

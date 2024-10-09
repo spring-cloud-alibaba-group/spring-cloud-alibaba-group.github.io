@@ -1,11 +1,11 @@
 ---
 id: "question-history-16876"
 title: "vue如何和springboot整合  比如用post请求的话，具体点"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "在整合Spring Cloud Alibaba的Spring Boot后端应用与Vue前端框架时，主要涉及前后端分离的架构设计，通过API接口进行交互。这里虽然没有直接的参考内容讲述Vue与Spring Boot的整合，但可以根据通用的前后端分离实践来指导。以下是基于RESTful API设计的Po"
-tags: ["spring-cloud-alibaba","vue","springboot","整合","post","请求"]
-keywords: ["spring-cloud-alibaba","vue","springboot","整合","post","请求"]
+tags: ["sca","spring-cloud-alibaba","vue","springboot","整合","post","请求"]
+keywords: ["sca","spring-cloud-alibaba","vue","springboot","整合","post","请求"]
 ---
 
 ## 用户问题 ： 

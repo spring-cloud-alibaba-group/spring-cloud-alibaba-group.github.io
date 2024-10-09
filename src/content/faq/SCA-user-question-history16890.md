@@ -1,11 +1,11 @@
 ---
 id: "question-history-16890"
 title: "Spring，SpringMVC，SpringBoot，SpringCloud有什么区别"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "首先，让我们明确Spring、SpringMVC、SpringBoot、SpringCloud这四个概念的区别和联系，基于已有的知识内容，虽然直接信息不多，但我们可以从它们在Java企业应用开发中的角色和功能入手来分析。### SpringSpring是一个开源的Java平台，提供了全面的基础设施支"
-tags: ["Spring","SpringMVC","SpringBoot","SpringCloud","sca","区别","联系"]
-keywords: ["Spring","SpringMVC","SpringBoot","SpringCloud","sca","区别","联系"]
+tags: ["Spring","Cloud","Alibaba","SCA","Spring","MVC","Boot"]
+keywords: ["Spring","Cloud","Alibaba","SCA","Spring","MVC","Boot"]
 ---
 
 ## 用户问题 ： 

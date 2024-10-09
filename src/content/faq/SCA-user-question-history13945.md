@@ -1,11 +1,11 @@
 ---
 id: "question-history-13945"
 title: "spring-cloud-alibaba组件有哪些？"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba组件包括但不限于以下几个核心部分：1. **服务发现与配置管理** - [Nacos](https://github.com/alibaba/spring-cloud-alibaba/tree/master/spring-cloud-alibaba-examp"
-tags: ["spring-cloud-alibaba","sca","组件","有哪些"]
-keywords: ["spring-cloud-alibaba","sca","组件","有哪些"]
+tags: ["sca","spring-cloud-alibaba","组件有哪些"]
+keywords: ["sca","spring-cloud-alibaba","组件有哪些"]
 ---
 
 ## 用户问题 ： 

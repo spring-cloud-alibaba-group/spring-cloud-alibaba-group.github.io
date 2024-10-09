@@ -1,11 +1,11 @@
 ---
 id: "question-history-17041"
 title: "spring boot 2.7 对应spring cloud哪个版本？"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据我了解的知识，Spring Boot 2.7 对应的 Spring Cloud 版本可以在表格中查找。在2021.x分支中，我们可以看到适配Spring Boot 2.7.x的条目是： Spring Cloud Alibaba Version  Spring Cloud Version   Sp"
-tags: ["sca","spring-cloud-alibaba","spring","boot","27","spring","cloud"]
-keywords: ["sca","spring-cloud-alibaba","spring","boot","27","spring","cloud"]
+tags: ["sca","spring-boot","27","spring-cloud","版本","对应"]
+keywords: ["sca","spring-boot","27","spring-cloud","版本","对应"]
 ---
 
 ## 用户问题 ： 

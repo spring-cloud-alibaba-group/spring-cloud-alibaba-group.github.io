@@ -1,11 +1,11 @@
 ---
 id: "question-history-14975"
 title: "spring-cloud-alibaba 2.2.5.release 兼容的boot版本"
-date: "2024-09-12"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据我了解的知识，Spring Cloud Alibaba版本2.2.5.RELEASE对应的Spring Boot版本信息如下：- **Spring Cloud Alibaba Version**: 2.2.0.RELEASE- **Spring Cloud Version**: Spring C"
-tags: ["spring-cloud-alibaba","225release","compatible","boot","version"]
-keywords: ["spring-cloud-alibaba","225release","compatible","boot","version"]
+tags: ["sca","spring-cloud-alibaba","225release","兼容","boot","版本"]
+keywords: ["sca","spring-cloud-alibaba","225release","兼容","boot","版本"]
 ---
 
 ## 用户问题 ： 

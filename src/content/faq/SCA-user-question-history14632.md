@@ -1,11 +1,11 @@
 ---
 id: "question-history-14632"
 title: "springcloudalibaba组件有哪些"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba组件包括但不限于以下核心组件：1. **服务发现与注册 - Nacos**   Nacos 提供了服务发现与配置管理功能，允许服务实例在Nacos Server注册并被其他服务发现，同时支持动态配置服务。2. **分布式配置中心 - Nacos Config*"
-tags: ["spring","cloud","alibaba","sca","组件","有哪些"]
-keywords: ["spring","cloud","alibaba","sca","组件","有哪些"]
+tags: ["sca","spring-cloud-alibaba","springcloudalibaba","组件概述"]
+keywords: ["sca","spring-cloud-alibaba","springcloudalibaba","组件概述"]
 ---
 
 ## 用户问题 ： 

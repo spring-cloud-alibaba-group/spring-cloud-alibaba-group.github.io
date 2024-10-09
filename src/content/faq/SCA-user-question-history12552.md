@@ -1,7 +1,7 @@
 ---
 id: "question-history-12552"
 title: "springboot和springmvc"
-date: "2024-04-28"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Sca（Spring Cloud Alibaba）是在Spring Boot的基础上提供了微服务开发的一系列组件与解决方案，而Spring MVC是Spring框架中用于构建Web应用程序的一个模块，主要用于处理HTTP请求。当讨论Sca SpringBoot与Spring MVC的集成时，实际上是"
 tags: ["sca","spring-cloud-alibaba","springboot","springmvc"]

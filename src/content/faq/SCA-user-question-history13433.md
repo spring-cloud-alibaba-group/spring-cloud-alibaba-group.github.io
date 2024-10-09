@@ -1,11 +1,11 @@
 ---
 id: "question-history-13433"
 title: "springcloud alibaba 五大组件 介绍"
-date: "2024-09-11"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "Spring Cloud Alibaba 是一套基于 Spring Cloud 的微服务解决方案，它为分布式系统开发提供了一系列功能组件，以帮助开发者构建云原生应用。特别地，它集成了阿里巴巴开源的多个优秀中间件，形成了Spring Cloud生态中的“全家桶”解决方案。以下是Spring Cloud"
-tags: ["sca","spring-cloud-alibaba","五大","组件","介绍"]
-keywords: ["sca","spring-cloud-alibaba","五大","组件","介绍"]
+tags: ["sca","spring-cloud-alibaba","springcloud","alibaba","五大组件","介绍"]
+keywords: ["sca","spring-cloud-alibaba","springcloud","alibaba","五大组件","介绍"]
 ---
 
 ## 用户问题 ： 

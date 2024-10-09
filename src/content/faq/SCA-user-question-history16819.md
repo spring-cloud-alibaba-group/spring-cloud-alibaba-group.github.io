@@ -1,11 +1,11 @@
 ---
 id: "question-history-16819"
 title: "Spring 拦截器和过滤器的区别？"
-date: "2024-09-09"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "虽然在提供的知识: Spring Cloud Alibaba 是什么内容中并未直接涉及Spring拦截器（Interceptor）和过滤器（Filter）的区别，但基于普遍的Spring知识体系，我可以为您解答这一问题。### 拦截器（Interceptor）与过滤器（Filter）的基本概念###"
-tags: ["Spring","拦截器","过滤器","区别","sca","spring-cloud-alibaba"]
-keywords: ["Spring","拦截器","过滤器","区别","sca","spring-cloud-alibaba"]
+tags: ["sca","spring","cloud","alibaba","拦截器","过滤器","区别"]
+keywords: ["sca","spring","cloud","alibaba","拦截器","过滤器","区别"]
 ---
 
 ## 用户问题 ： 

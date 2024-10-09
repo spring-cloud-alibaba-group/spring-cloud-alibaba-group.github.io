@@ -1,11 +1,11 @@
 ---
 id: "question-history-15813"
 title: "如何快速创建spring cloud项目"
-date: "2024-06-21"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "根据已有的知识内容，您可以按照以下详细步骤快速创建一个基于Spring Cloud Alibaba的Spring Boot项目：1. **访问Spring Initializr Alibaba**: 首先，访问阿里云提供的Spring Boot项目初始化工具，网址为[https://start.al"
-tags: ["sca","spring-cloud-alibaba","创建","Spring","Cloud","项目","快速"]
-keywords: ["sca","spring-cloud-alibaba","创建","Spring","Cloud","项目","快速"]
+tags: ["sca","spring-cloud-alibaba","快速","创建","spring","cloud","项目"]
+keywords: ["sca","spring-cloud-alibaba","快速","创建","spring","cloud","项目"]
 ---
 
 ## 用户问题 ： 

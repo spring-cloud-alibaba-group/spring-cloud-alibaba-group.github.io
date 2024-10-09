@@ -1,11 +1,11 @@
 ---
 id: "question-history-15548"
 title: "springboot和spring cloud版本对应关系"
-date: "2024-06-17"
+date: "2024-09-26"
 category: "expertConsultation"
-description: "根据已有的知识内容，我可以直接您的问题。以下是Spring Boot与Spring Cloud Alibaba（SCA）以及对应的Spring Cloud版本之间的关系：### Spring Boot与Spring Cloud Alibaba版本对应关系 **Spring Boot Version*"
-tags: ["sca","spring-cloud-alibaba","springboot","spring","cloud","版本","对应"]
-keywords: ["sca","spring-cloud-alibaba","springboot","spring","cloud","版本","对应"]
+description: "根据已有的知识内容，我可以直接回答您的问题。以下是Spring Boot与Spring Cloud Alibaba（SCA）以及对应的Spring Cloud版本之间的关系：### Spring Boot与Spring Cloud Alibaba版本对应关系 **Spring Boot Versio"
+tags: ["sca","springboot","spring","cloud","版本","对应","关系"]
+keywords: ["sca","springboot","spring","cloud","版本","对应","关系"]
 ---
 
 ## 用户问题 ： 
@@ -14,7 +14,7 @@ keywords: ["sca","spring-cloud-alibaba","springboot","spring","cloud","版本","
 ---------------
 ## 专家官方解答 ：
 
-根据已有的知识内容，我可以直接您的问题。以下是Spring Boot与Spring Cloud Alibaba（SCA）以及对应的Spring Cloud版本之间的关系：
+根据已有的知识内容，我可以直接回答您的问题。以下是Spring Boot与Spring Cloud Alibaba（SCA）以及对应的Spring Cloud版本之间的关系：
 
 ### Spring Boot与Spring Cloud Alibaba版本对应关系
 

@@ -1,11 +1,11 @@
 ---
 id: "question-history-15863"
 title: "获取Spring Cloud Alibaba AI使用的API-KEY"
-date: "2024-06-25"
+date: "2024-09-26"
 category: "expertConsultation"
 description: "为了获取Spring Cloud Alibaba AI使用的API-KEY，你需要按照以下步骤操作：1. **确保环境要求**：首先，请确认你的开发环境中的JDK版本为JDK 17或以上，因为这是使用Spring Cloud Alibaba AI组件的基本要求。2. **申请API-KEY**：  "
-tags: ["Spring","Cloud","Alibaba","API","KEY"]
-keywords: ["Spring","Cloud","Alibaba","API","KEY"]
+tags: ["sca","spring-cloud-alibaba","AI","API-KEY","获取","使用"]
+keywords: ["sca","spring-cloud-alibaba","AI","API-KEY","获取","使用"]
 ---
 
 ## 用户问题 ： 
@@ -71,7 +71,7 @@ keywords: ["Spring","Cloud","Alibaba","API","KEY"]
 
 ## 参考链接 ：
 
-* 专家经验：sca ai 调用通义大模型实现聊天交互 
+* 专家经验：spring ai alibaba 使用说明 
 
 
  <font color="#949494">---------------</font> 
