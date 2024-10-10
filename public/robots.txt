@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /docs/2022/
+Disallow: /docs/2021/
+Disallow: /docs/2.2.x/
+Sitemap: https://sca.aliyun.com/sitemap-index.xml
