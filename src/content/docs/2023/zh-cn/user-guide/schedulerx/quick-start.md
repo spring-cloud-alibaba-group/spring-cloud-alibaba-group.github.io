@@ -9,18 +9,18 @@ description: schedulerx
 # 接入云上版本
 接入Spring分布式定时任务，最简单的方式就是直接接入阿里云托管的[分布式任务调度平台SchedulerX](https://www.aliyun.com/ntms/middleware/schedulerx)，不但完全兼容Spring @Scheduled 注解，还具有高可用、高安全、高性能、免运维、低成本等特点。
 任务调度平台SchedulerX的任务管理平台，可以帮助您动态新增、修改、运维定时任务，还有报警监控、历史记录、日志服务、链路追踪等企业级可观测方案，为您的定时任务稳定运行保驾护航。
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/jpeg/23156875/1714380620901-ac56feee-c76f-4e2e-8734-efec929d48c3.jpeg)
+![](/img/1728554015375.png)
 ## 接入步骤
 
 1. 登录[SchedulerX控制台](https://schedulerx2.console.aliyun.com/public/AppList)，免费开通服务。
 2. 参考[接入文档](https://help.aliyun.com/zh/schedulerx/user-guide/spring-jobs?spm=5176.14256785.help.dexternal.f09e126dAXAvEs#p-9sy-0ay-hgx)接入，每个账号拥有5个免费任务额度。
 
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/23156875/1714372692175-124953b0-5f7b-4b75-98b4-0db7e65c2959.png#clientId=u68590545-eb8b-4&from=paste&height=532&id=u72d922ad&originHeight=1064&originWidth=3070&originalType=binary&ratio=2&rotation=0&showTitle=false&size=1285311&status=done&style=none&taskId=u0b6fa2b0-bc33-47f2-907c-89b4fa8fe1d&title=&width=1535)
+![image.png](/img/1728554015702.png)
 
 # 本地接入方式
 不借助云产品，本地接入方式可以再结合 [@SchedulerLock](https://github.com/lukas-krecan/ShedLock) 注解来实现分布式定时任务。
 @SchedulerLock 注解是一个分布式锁的框架，结合@Scheduled 注解，可以保证任务同一时间，在多个节点上只会执行一次。该框架支持多种分布式锁的实现，比如Jdbc、Zookeeper、Redis等。原理如下
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/jpeg/67910/1710923161344-bf71de34-6845-4edb-a514-b49ac06ec5bd.jpeg)
+![](/img/1728554015888.png)
 ## 接入步骤
 下面以Mysql分布式锁为例，演示分布式任务的接入过程
 

@@ -65,28 +65,28 @@ spring.cloud.nacos.discovery.metadata.version=${SPRING_CLOUD_NACOS_DEMO_VERSION}
 
 Higress 支持多种服务来源，包括 Nacos/Zookeeper/DNS/固定 IP，通过创建 Nacos 服务来源，Higress 就可以发现注册到 Nacos 上的服务，从而完成转发请求到这些服务上。
 进入 Higress 控制台（[http://console.higress.io/](http://console.higress.io/)）,点击 **服务来源-创建服务来源 **以创建服务来源。这里选择 Nacos 2.X，然后填写注册中心的地址，端口，命名空间，服务分组等信息。注册中心的地址可以填写 ip 或者域名，本文将 Nacos 部署在本地 K8s 中，通过 K8s service 暴露 Nacos 端口，因此这里填写对应的 service 域名。
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/51256826/1687772623545-4677cbc2-9267-4568-a8d2-5a8dd0bbe11f.png#clientId=u342f6e2a-ef02-4&from=paste&height=922&id=u6c1be13d&originHeight=922&originWidth=2555&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1298745&status=done&style=none&taskId=u2440284e-5aa1-45da-a7da-698cb9ad1fb&title=&width=2555)
+![image.png](/img/1728554001427.png)
 配置好 Nacos 服务来源后，我们可以在**服务列表**中看到我们刚刚部署好的应用。
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/51256826/1687773460061-c1de6371-1e2c-44d5-bd32-b7dc3be2ee1b.png#clientId=u342f6e2a-ef02-4&from=paste&height=517&id=u688985dc&originHeight=517&originWidth=2543&originalType=binary&ratio=1&rotation=0&showTitle=false&size=751396&status=done&style=none&taskId=u7bb5a941-4b2f-45d3-9334-30774222500&title=&width=2543)
+![image.png](/img/1728554001750.png)
 
 ### 创建域名和路由
 
 在 Higress 控制台上点击**域名管理-创建域名**，创建一条 demo.springcloud.com 域名用于后续的访问。
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/51256826/1687777521179-08627334-20f7-4b98-8c9e-a803df7f33e0.png#clientId=u342f6e2a-ef02-4&from=paste&height=382&id=uc61db0da&originHeight=382&originWidth=2546&originalType=binary&ratio=1&rotation=0&showTitle=false&size=541042&status=done&style=none&taskId=ucf3c9393-3a4e-4836-950d-b3b11062cf7&title=&width=2546)
+![image.png](/img/1728554002090.png)
 点击路由配置-创建路由，创建一条名为 demo 的路由，域名选择我们刚刚创建好的 demo.springcloud.com，目标服务选择我们在 1.2 中看到的 Spring Cloud 应用，path 配置为/version。
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/51256826/1687777967733-f53c95f8-b8c2-490f-b2f3-a17d4e0bf6d7.png#clientId=u342f6e2a-ef02-4&from=paste&height=967&id=uee1eb08d&originHeight=967&originWidth=2547&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1377522&status=done&style=none&taskId=u2c59bdb8-4e49-416d-9de7-a00b6ace559&title=&width=2547)
+![image.png](/img/1728554002503.png)
 
 ### 请求验证
 
 接下来我们就可以用配置好的路由来访问 Spring Cloud 应用了，在请求时需要将 demo.springcloud.com 域名解析到本地 ip，如下所示，可以成功得到返回结果。
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/51256826/1687778494154-ebc8a89d-49ac-41f5-8a80-5ca5662c89af.png#clientId=u342f6e2a-ef02-4&from=paste&height=102&id=u36bbf1dd&originHeight=102&originWidth=1924&originalType=binary&ratio=1&rotation=0&showTitle=false&size=109435&status=done&style=none&taskId=u126c8ae2-1f80-49c5-8320-39dfe4f8dc6&title=&width=1924)
+![image.png](/img/1728554002730.png)
 注：如果您将 Higress 的 80 和 443 端口通过 LoadBalancer 的方式暴露出来，这里需要将本地 ip 替换为对应 LoadBalancer 的 ip，详见[Higress 快速开始文档](https://higress.io/zh-cn/docs/user/quickstart#%E5%9C%BA%E6%99%AF%E4%B8%80%E5%9C%A8%E6%A0%87%E5%87%86-k8s-%E9%9B%86%E7%BE%A4%E4%B8%AD%E4%BD%BF%E7%94%A8)。
 
 ## 利用 Higress 进行蓝绿发布
 
 在蓝绿发布中，有两套相同的运行环境，一套是当前正在使用的生产环境（蓝色环境），另一套是新版本的测试环境（绿色环境）。新版本的代码只在绿色环境中运行，测试通过后，直接将流量切换到绿色环境中，从而完成新版本的上线。与此同时蓝色环境作为热备环境，当绿色环境出现问题需要回滚时，也可以直接将流量全部再切换回蓝色环境。
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/51256826/1687595620976-6df717ca-e63e-4218-9a9d-b4cd62eed329.png#clientId=u713eb46d-a888-4&from=paste&height=362&id=wOI0d&originHeight=362&originWidth=1640&originalType=binary&ratio=1&rotation=0&showTitle=false&size=222636&status=done&style=none&taskId=u85f29bf9-8562-4add-9046-bc43115b884&title=&width=1640)
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/51256826/1687595775371-14d3f31e-2f77-43f2-8431-71a0cd634759.png#clientId=u0575f9fc-9c38-4&from=paste&height=366&id=ZV9EZ&originHeight=366&originWidth=1626&originalType=binary&ratio=1&rotation=0&showTitle=false&size=219325&status=done&style=none&taskId=ucd793c55-524a-4c26-82eb-f89808e1ef6&title=&width=1626)
+![image.png](/img/1728554003006.png)
+![image.png](/img/1728554003246.png)
 
 ### 部署新版本应用
 
@@ -119,12 +119,12 @@ spec:
 ```
 
 部署完毕后，我们可以在 Higress 控制台的**服务列表**中看到应用已经有两个 endpoint 了，如下图所示：
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/51256826/1687779713589-f87569b5-ec77-4f4a-a965-5f30989e0009.png#clientId=u342f6e2a-ef02-4&from=paste&height=477&id=u8498dbac&originHeight=477&originWidth=2532&originalType=binary&ratio=1&rotation=0&showTitle=false&size=693504&status=done&style=none&taskId=ud66ab839-78c2-4fe1-8f36-607eb2e9ad2&title=&width=2532)
+![image.png](/img/1728554003535.png)
 
 ### 为服务划分子集
 
 部署完 v2 版本的应用后，我们可以在 Nacos 控制台（ http://localhost:8848/nacos ） 上看到 service-provider 这个服务有两个 ip，它们的 metadata 中的 version 字段分别为 v1 和 v2。Higress 可以根据服务的元信息将服务划分为不同的子集（subset），从而将请求转发到新版本或者老版本的应用中去。
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/51256826/1687779555184-90811f86-4718-44a9-8531-cd580894bb3c.png#clientId=u342f6e2a-ef02-4&from=paste&height=845&id=udd8c192d&originHeight=845&originWidth=2331&originalType=binary&ratio=1&rotation=0&showTitle=false&size=978309&status=done&style=none&taskId=u3a664a21-354c-4af3-9e03-31f5a1983ad&title=&width=2331)
+![image.png](/img/1728554003930.png)
 在本地 K8s 集群中 apply 如下资源，从而根据应用元信息中的 version 字段将服务划分为 v1 和 v2 两个子集。
 
 ```yaml
@@ -147,7 +147,7 @@ spec:
 ### 修改 ingress 路由规则
 
 新版本应用上线后，我们需要把流量全部切到新版本应用中去，这时只需要简单地修改一下我们在 1.3 中创建的路由即可。我们可以在本地 K8s 集群中找到如下 ingress 资源，这对应了我们在 1.3 中创建的那条路由。
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/51256826/1687780517296-9e272366-6280-4abf-86b3-c37b645f3416.png#clientId=u342f6e2a-ef02-4&from=paste&height=142&id=uc0f11ee4&originHeight=142&originWidth=1420&originalType=binary&ratio=1&rotation=0&showTitle=false&size=113481&status=done&style=none&taskId=u3bf137c4-d0ef-40cc-9213-3a4f8b86826&title=&width=1420)
+![image.png](/img/1728554004176.png)
 我们直接编辑这条 ingress 资源，将 `higress.io/destination` 这条 annotation 的 value 改为 `service-provider.DEFAULT-GROUP.public.nacos v2`，即可将路由的目标服务修改为 v2 子集。
 
 ```yaml
@@ -180,13 +180,13 @@ spec:
 ### 请求验证
 
 我们再发送请求，可以看到此时得到的是 v2 版本应用的返回结果，如此便实现了新版本的上线发布。
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/51256826/1687781128741-f7def37c-33b1-48df-b22c-bb6c2edffea0.png#clientId=u342f6e2a-ef02-4&from=paste&height=96&id=u4d3c6c95&originHeight=96&originWidth=1916&originalType=binary&ratio=1&rotation=0&showTitle=false&size=105602&status=done&style=none&taskId=u2676bd86-3f0c-49a9-8ec5-28d26110ba4&title=&width=1916)
+![image.png](/img/1728554004391.png)
 如果发现已上线的新版本出现问题需要回滚，只需要修改 ingress 路由中的 `higress.io/destination`，将值更改为 `service-provider.DEFAULT-GROUP.public.nacos v1` 即可完成回滚。
 
 ## 利用 Higress 进行金丝雀发布
 
 金丝雀发布是将少量的请求引流到新版本上，因此部署新版本服务只需极小数的实例。验证新版本符合预期后，逐步调整流量权重比例，使得流量慢慢从老版本迁移至新版本，期间可以根据设置的流量比例，对新版本服务进行扩容，同时对老版本服务进行缩容，使得底层资源得到最大化利用。
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/51256826/1687595956867-de62589f-3386-41fb-85ea-27fbaa3d154f.png#clientId=u0575f9fc-9c38-4&from=paste&height=1334&id=sKwHm&originHeight=1334&originWidth=1662&originalType=binary&ratio=1&rotation=0&showTitle=false&size=541378&status=done&style=none&taskId=u26168deb-ca81-40dd-8b37-8ad30786ed2&title=&width=1662)
+![image.png](/img/1728554004656.png)
 
 ### 修改 ingress 路由规则
 
@@ -205,13 +205,13 @@ metadata:
 ### 请求验证
 
 连续发送 20 条请求，可以看到 v1 和 v2 的比例符合我们在 ingress 中配置的比例。随着灰度的进行，可以逐渐调大 v2 版本的流量比例，最终完成新版本的平滑上线。
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/51256826/1687831781904-4c520e5e-9fac-48ac-a5c8-7bf4e60a5bb8.png#clientId=u9b61baf2-4bca-4&from=paste&height=900&id=u1b3efc0c&originHeight=900&originWidth=2518&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1097648&status=done&style=none&taskId=u58a0234a-adb7-417a-ac9e-f2ad3174b54&title=&width=2518)
+![image.png](/img/1728554005107.png)
 
 ## 利用 Higress 进行 A/B Testing 发布
 
 A/B 测试基于用户请求的元信息将流量路由到新版本，这是一种基于请求内容匹配的灰度发布策略。只有匹配特定规则的请求才会被引流到新版本，常见的做法包括基于 HTTP Header 和 Cookie 。基于 HTTP Header 方式，例如 User-Agent 的值为 Android 的请求 （来自 Android 系统的请求）可以访问新版本，其他系统仍然访问旧版本。基于 Cookie 方式，Cookie 中通常包含具有业务语义的用户信息，例如普通用户可以访问新版本，VIP 用户仍然访问旧版本。
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/51256826/1687596083908-663b663f-6ef9-49ea-a7dc-bee5e43dca46.png#clientId=u0575f9fc-9c38-4&from=paste&height=362&id=ifrsZ&originHeight=362&originWidth=1658&originalType=binary&ratio=1&rotation=0&showTitle=false&size=227030&status=done&style=none&taskId=u76762318-38ab-40f4-9c4b-d7d00ebd6d6&title=&width=1658)
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/51256826/1687596199735-6ae11b53-aaf4-4d52-ac49-95e1f0247065.png#clientId=u0575f9fc-9c38-4&from=paste&height=364&id=p1iIv&originHeight=364&originWidth=1678&originalType=binary&ratio=1&rotation=0&showTitle=false&size=177244&status=done&style=none&taskId=u86ef783b-9a15-4aa0-b66c-3107ba25f46&title=&width=1678)
+![image.png](/img/1728554005363.png)
+![image.png](/img/1728554005538.png)
 
 ### 修改 ingress 路由规则
 
@@ -257,7 +257,7 @@ spec:
 ### 请求验证
 
 可以看到来自 Android 系统的请求被转发到了 v2 版本，其余系统仍访问 v1 版本。
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/51256826/1687834110563-5f7d397c-a7ba-4fc4-82a9-fa6a5729a2c2.png#clientId=u9b61baf2-4bca-4&from=paste&height=280&id=ue7b2943d&originHeight=280&originWidth=3060&originalType=binary&ratio=1&rotation=0&showTitle=false&size=411876&status=done&style=none&taskId=uef2c54db-359c-4096-bf54-48f2c3eb489&title=&width=3060)
+![image.png](/img/1728554005783.png)
 当新版本验证完毕需要全量上线时，只需要将 demo 路由的 `higress.io/destination` 注解修改为 v2 版本，并删除 demo-ab 路由，这样所有流量就都会访问 v2 版本了。
 
 ## 加入 Higress 和 Spring Cloud Aliaba 社区
@@ -266,6 +266,6 @@ Spring Cloud Alibaba 社区交流群：钉钉群号 2415000986
 
 Higress 社区交流群：
 
-![higress-comm.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/22499/1687846710178-4f586c7e-4167-4031-9545-31d73679b32b.png#clientId=u6f2573e4-9612-4&from=ui&id=u2cad2756&originHeight=405&originWidth=720&originalType=binary&ratio=1&rotation=0&showTitle=false&size=95558&status=done&style=none&taskId=u6c6a9223-d0b9-4a0e-8eec-03188388463&title=)
+![higress-comm.png](/img/1728554006079.png)
 
 Higress 社区交流钉钉群中有历次 Higress 社区周会录屏，包括本文中提到的结合 Spring Cloud 应用发布的完整实操视频。

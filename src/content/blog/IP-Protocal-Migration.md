@@ -30,14 +30,14 @@ IPv6 协议（后文简称 IPv6）作为 IPv4 之后被采用的下一代互联�
 ### 微服务双栈迁移方案
 
 上文介绍的方案更多的是一般化的方法论。但具体到微服务系统中，远程调用过程如何实现多协议栈共存以便帮助企业用户平滑进行协议栈的迁移呢？
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679207793618-9c431106-93a2-452f-be71-32185f826569.png#clientId=u0b49bd32-d731-4&from=paste&height=386&id=F7Hec&name=image.png&originHeight=772&originWidth=1464&originalType=binary&ratio=2&rotation=0&showTitle=false&size=71775&status=done&style=none&taskId=u05d69bc5-9d7e-4646-987b-e869da537ba&title=&width=732)
+![image.png](/img/1728553997624.png)
 上图是当前业界微服务系统中服务之间普遍采用的远程调用过程架构图，本文接下来介绍如何基于双栈技术实现微服务应用的协议栈平滑迁移的常用方式。
 
 ### 双注册双订阅实现协议栈平滑迁移
 
 在微服务系统中，相比于单栈环境下，只有一个 IP 地址，微服务的注册与发现过程都基于该地址完成服务远程调用。在多协议栈共存的环境中，其本质就是要解决服务注册和发现过程怎么使用 IP 地址的问题。
 梳理清楚了问题，就不难发现基于双注册双订阅的方法可以较好地解决微服务系统中多协议栈共存的问题，以便实现微服务系统协议栈的平滑迁移。该方案的服务注册和订阅过程可以被描述为下图所示：
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679216863247-e13d938b-a2a5-4965-b417-0d323d1c11fd.png#clientId=u21221381-1afe-4&from=paste&height=534&id=R9qXH&name=image.png&originHeight=1068&originWidth=1352&originalType=binary&ratio=2&rotation=0&showTitle=false&size=115412&status=done&style=none&taskId=u4adc2aaa-4fcc-4830-aca5-beccded9a22&title=&width=676)
+![image.png](/img/1728553997852.png)
 
 采用双注册双订阅实现微服务系统平滑进行 IP 协议栈迁移的过程可以被大致描述为以下步骤：
 
@@ -50,7 +50,7 @@ IPv6 协议（后文简称 IPv6）作为 IPv4 之后被采用的下一代互联�
 
 双注册双订阅的方法虽然很自然和清晰，但是其由于服务注册过程中针对双栈环境中的应用会多注册一条 IP 地址对应的记录，会降低注册中心的服务承载量。
 因此，也可以基于 DNS 技术实现多协议栈共存，解决微服务系统协议栈迁移的方法。其本质是将原来的注册服务实例地址过程变成注册服务实例域名（这里域名更多是实例标识作用），可实现在注册中心所注册服务实例记录数量不变的情况下，通过额外的 DNS 域名系统存储服务域名所对应的双栈 IP 地址，从而实现多协议栈的共存。采用该方案的服务注册和订阅过程如下图所示：
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679217073664-4fc6c45d-b58c-4ae7-b446-ba0c3ff60400.png#clientId=u21221381-1afe-4&from=paste&height=462&id=u23c7c9fd&name=image.png&originHeight=924&originWidth=1600&originalType=binary&ratio=2&rotation=0&showTitle=false&size=141458&status=done&style=none&taskId=ud6e287ba-8c6f-404a-975b-53976811967&title=&width=800)
+![image.png](/img/1728553998161.png)
 基于 DNS 技术实现微服务系统平滑进行 IP 地址迁移的过程可以被大致描述为以下步骤：
 
 1. 在新的应用升级或者发版之前，对相关微服务应用进行 IP 地址协议栈改造，让其同时支持 IPv4 和 IPv6 双协议栈。改造后的应用需要将本机的双栈 IP 地址信息和本应用实例特点的域名注册到系统的 DNS 服务上。
@@ -91,19 +91,19 @@ spring.cloud.loadbalancer.nacos.enabled=true
 ## 服务注册
 
 如下本文演示用的服务提供者实例 Pod 信息：
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679227819209-cb1b2ad6-4402-4075-aced-065f76160da4.png#clientId=uf73c13f1-991a-4&from=paste&height=156&id=u81a5cd10&name=image.png&originHeight=312&originWidth=2446&originalType=binary&ratio=2&rotation=0&showTitle=false&size=204807&status=done&style=none&taskId=uefd0add8-a6af-4436-807e-6606dc783fd&title=&width=1223)
+![image.png](/img/1728553998472.png)
 基于 Spring Cloud Alibaba 协议栈共存迁移功能，其在注册中心上的服务实例列表信息：
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679227850292-4c9d3cae-9a3a-4464-b863-17d4390bbb17.png#clientId=uf73c13f1-991a-4&from=paste&height=126&id=u78988947&name=image.png&originHeight=252&originWidth=2554&originalType=binary&ratio=2&rotation=0&showTitle=false&size=143946&status=done&style=none&taskId=u05f1052d-335b-4533-a72e-66a703f4b3d&title=&width=1277)
+![image.png](/img/1728553998688.png)
 
 ## 服务消费
 
 单栈环境服务消费者：
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679280217276-9e3cd3dc-b181-49a9-b6cf-c156e6720112.png#clientId=uf73c13f1-991a-4&from=paste&height=154&id=u326c0cf1&name=image.png&originHeight=308&originWidth=2462&originalType=binary&ratio=2&rotation=0&showTitle=false&size=181070&status=done&style=none&taskId=uddf23c9b-d437-4022-8d3b-9b3edf72c14&title=&width=1231)
+![image.png](/img/1728553999038.png)
 服务调用成功以后，服务提供者会打印调用消费者的调用 IP 地址：
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679280312813-4cb6d6e3-8a65-4be4-8660-b8af1cbecc23.png#clientId=uf73c13f1-991a-4&from=paste&height=181&id=u77731e53&name=image.png&originHeight=362&originWidth=2248&originalType=binary&ratio=2&rotation=0&showTitle=false&size=185950&status=done&style=none&taskId=u1b6c29bc-8997-4926-affd-f4a5f252ff3&title=&width=1124)
+![image.png](/img/1728553999323.png)
 从上述返回结果来看，IPv4 单栈环境中的消费者由于仅支持单栈，所以一直通过 IPv4 协议栈向双栈服务提供者发起请求。
 双栈环境服务消费者：
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679280399202-87209390-cddf-4f48-b53c-d035f67312c9.png#clientId=uf73c13f1-991a-4&from=paste&height=153&id=u7b1bfd9e&name=image.png&originHeight=306&originWidth=2436&originalType=binary&ratio=2&rotation=0&showTitle=false&size=192353&status=done&style=none&taskId=u4f98585e-d87d-466b-b7de-0c6d25df563&title=&width=1218)
+![image.png](/img/1728553999571.png)
 服务调用成功以后，服务提供者会打印调用消费者的调用 IP 地址，可以看到打印的是消费者的 IPv6 地址：
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/21257183/1679280496522-771aa27f-3c61-4c27-b2ba-931bfa3702d0.png#clientId=uf73c13f1-991a-4&from=paste&height=155&id=u808935b7&name=image.png&originHeight=310&originWidth=2252&originalType=binary&ratio=2&rotation=0&showTitle=false&size=202478&status=done&style=none&taskId=u68cd3a36-1de8-4598-b73d-c027faf51f8&title=&width=1126)
+![image.png](/img/1728553999806.png)
 从上述返回结果来看，IPv4/IPv6 双栈环境中的消费者由于支持 IPv6，为了实现协议栈向 IPv6 的迁移，所以默认一直通过 IPv6 协议栈向双栈服务提供者发起请求。
