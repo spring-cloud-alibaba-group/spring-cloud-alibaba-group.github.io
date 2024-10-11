@@ -1,6 +1,6 @@
 ---
-title: "使用通义千问定制自己的代码助手"
-description: "使用通义千问定制自己的代码助手"
+title: "使用 Spring AI Alibaba 和通义千问定制自己的代码助手"
+description: "使用 Spring AI Alibaba 和通义千问定制自己的代码助手"
 date: "2024-10-10"
 category: "case"
 keywords: ["SCA"]
@@ -22,7 +22,7 @@ authors: "CH3CHO"
 
 <font style="color:rgb(37, 39, 42);">我一般会把建表语句贴出来，放到代码文件中，然后通义灵码就可以根据建表语句去实时生成相关的代码，一点一点补全。</font>
 
-![](/img/1728611632896.png)
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/webp/299576/1728376174568-383cbb58-1a43-4022-b0ed-d11874f83c8f.webp)
 
 <font style="color:rgb(37, 39, 42);">问题清楚了，我们接下来就通过大模型一步步自己定制一个解决这个问题的工具。</font>
 
@@ -50,7 +50,7 @@ authors: "CH3CHO"
 
 <font style="color:rgb(37, 39, 42);">大语言模型在处理任务时，可以通过 Function Calling 判断是否需要引入外部工具以解决当前任务，有了这个能力，我们就可以定制访问数据库的插件。</font>
 
-![](/img/1728611633234.png)
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/webp/299576/1728376174666-82facdbc-6f37-4bb8-9c36-ce0fcffdc120.webp)
 
 <font style="color:rgb(37, 39, 42);">原理看着复杂，总结起来也比较简单，Function Calling帮我们做了两件事情：</font>
 
@@ -60,13 +60,13 @@ authors: "CH3CHO"
 
 <font style="color:rgb(37, 39, 42);">例如，当用户输入“请帮我给user_info这张表生成代码”时，系统会调用GetTableSchema函数，并提取“user_info”作为参数。</font>
 
-![](/img/1728611633640.png)
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/webp/299576/1728376174573-bbcdf97a-2273-430c-b313-3c07011161f8.webp)
 
-![](/img/1728611633875.png)
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/webp/299576/1728376174552-e7e97ee5-956f-4637-86de-d2406fad06eb.webp)
 
 <font style="color:rgb(37, 39, 42);">然后，只需要简单的一行注册代码就行，其中最关键的就是第二个参数description。他描述了这个函数的功能，大模型会自己判断什么时候去调用它。</font>
 
-![](/img/1728611634195.png)
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/webp/299576/1728376174541-870ad6f6-b83c-428b-9d09-01b6cb872564.webp)
 
 <font style="color:rgb(37, 39, 42);">有了GetTableSchema的自定义函数还不够，大模型不知道你需要生成的代是什么风格，接下来就需要用到RAG。</font>
 
@@ -75,7 +75,7 @@ authors: "CH3CHO"
 
 <font style="color:rgb(37, 39, 42);">从原理上说，生成式的语言模型，在回答问题的时候，他在不断的做文字接龙，在预测下一个“文字”。根据什么预测呢？根据训练这个语言模型时候所用的语料。通过RAG我们增强了调用大模型时候的上下文，给了他更多的相关信息，所以他能生成和我们代码风格相似的代码。有兴趣可以看这一篇《</font>[<font style="color:rgb(37, 39, 42);">从0到精通，读懂这一篇就够了，RAG：检索增强的前世今生</font>](https://mp.weixin.qq.com/s/jlYrPRRw8kAeBLTEVFoBTg?spm=ata.21736010.0.0.21437aadrawHSE)<font style="color:rgb(37, 39, 42);">》。</font>
 
-![](/img/1728611634426.png)
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/webp/299576/1728376175713-37c09b39-9d8c-4971-b1a4-6ae1e771cd84.webp)
 
 <font style="color:rgb(37, 39, 42);">对照上图，我们先来看一下，一个RAG过程：</font>
 
@@ -93,7 +93,7 @@ authors: "CH3CHO"
 
 <font style="color:rgb(37, 39, 42);">如果想要扩展一下，想让大模型帮忙生成更高层的业务代码，也可以建立一个当前代码库的向量数据库。</font>
 
-![](/img/1728611634906.png)
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/webp/299576/1728376175751-8393805b-50cb-402b-8ecd-c0f872566d80.webp)
 
 <font style="color:rgb(37, 39, 42);">这块代码偷懒了，Step1中本可以做成自动读取配置文件中的代码路径，为了省事，我把相关代码Copy了一份到项目中。</font>
 
@@ -112,20 +112,20 @@ authors: "CH3CHO"
 
 <font style="color:rgb(37, 39, 42);">我们现在需要把用户的原始问题和特定的知识相结合，变成新的Prompt，最终他长这样：</font>
 
-![](/img/1728611635184.png)
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/webp/299576/1728376175753-e5e48ff9-1955-4fd1-89fd-368b3d7dd767.webp)
 
 <font style="color:rgb(37, 39, 42);">将我们上面得到的知识填充到里面即可。</font>
 
-![](/img/1728611635438.png)
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/webp/299576/1728376175758-caae1ede-7c0c-421c-b2f5-bfd5aa6b8f99.webp)
 
 # **<font style="color:rgb(34, 35, 40);">实现效果</font>**
 <font style="color:rgb(37, 39, 42);">问题1：请根据num_user_operation表生成代码</font>
 
-![](/img/1728611635830.png)
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/webp/299576/1728376175830-54037c50-3e8a-4932-a5e3-3de51e78d73f.webp)
 
 <font style="color:rgb(37, 39, 42);">问题2：请帮我在这个代码的基础上生成一个update方法</font>
 
-![](/img/1728611636135.png)
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/webp/299576/1728376176067-3fe60194-dcbd-4959-9b6b-7da95323a5e2.webp)
 
 # **<font style="color:rgb(34, 35, 40);">总结</font>**
 <font style="color:rgb(37, 39, 42);">其实这小助手做了三个版本，第一个是纯粹使用Function Calling做的，里面生成代码的逻辑不是通过大模型实时生成的，而是拿到schema信息后循环拼凑起来的，大模型在里面的作用就是增加注释，然后结合对话记忆功能，在多次对话中可以进行代码的优化。</font>
