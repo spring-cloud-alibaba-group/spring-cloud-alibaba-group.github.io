@@ -67,11 +67,11 @@ ChatClient 类似于应用程序开发中的服务层，它为应用程序直接
 
 ## 处理 ChatClient 响应
 
-ChatClient API 提供了多种方法来格式化来自 AI 模型的响应。
+ChatClient API 提供了多种方法格式化来自 AI 模型的响应。
 
 ### 返回 ChatResponse
 
-AI 模型的响应是一种由[ChatResponse](https://docs.spring.io/spring-ai/reference/api/chatmodel.html#ChatResponse)类型定义的丰富结构。它包含响应生成相关的元数据，同时它还可以包含多个子响应（称为[Generation](https://docs.spring.io/spring-ai/reference/api/chatmodel.html#Generation)），每个子响应都有自己的元数据。元数据包括用于创建响应的令牌（token）数量信息（在英文中，每个令牌大约为一个单词的 3/4），了解令牌信息很重要，因为 AI 模型根据每个请求使用的令牌数量收费。
+AI 模型的响应是一种由 [ChatResponse](https://docs.spring.io/spring-ai/reference/api/chatmodel.html#ChatResponse)类型定义的丰富结构。响应类型中包含模型生成的相关元数据信息，同时它还可以包含多个子响应（称为 [Generation](https://docs.spring.io/spring-ai/reference/api/chatmodel.html#Generation)），每个子响应都有自己的元数据。元数据包括用于创建响应的令牌（token）数量信息（在英文中，每个令牌大约为一个单词的 3/4），了解令牌信息很重要，因为 AI 模型根据每个请求使用的令牌数量收费。
 
 下面的代码段显示了通过调用 `chatResponse()` 返回 `ChatResponse` 的示例，相比于调用 `content()` 方法，这里在调用 `call()` 方法之后调用 `chatResponse()`。
 
