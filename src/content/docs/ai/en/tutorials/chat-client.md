@@ -84,7 +84,7 @@ AI 模型的响应是一种由 [ChatResponse](https://docs.spring.io/spring-ai/r
 
 ### 返回实体类（Entity）
 
-您经常希望返回一个预先定义好的实体类型响应，Spring AI 框架可以自动替我们完成从 `String` 到实体类的转换，调用`entity()` 方法可完成响应数据转换。
+如果您希望应用接口返回一个预先定义好的实体类型（即完成实体 Bean 的映射），Spring AI Alibaba 框架也提供了将模型响应映射到 Java Bean 的转换，您可以在模型的 call() 方法之后调用`entity()` 实现。
 
 例如，给定 Java record（POJO）定义：
 
@@ -114,7 +114,7 @@ AI 模型的响应是一种由 [ChatResponse](https://docs.spring.io/spring-ai/r
 
 ### 流式响应
 
-`stream` 方法是一种异步的、持续的获得模型响应的方式：
+`stream` 方法是一种异步的、持续获得模型响应的方式：
 
 ```java
     Flux<String> output = chatClient.prompt()
@@ -130,7 +130,7 @@ AI 模型的响应是一种由 [ChatResponse](https://docs.spring.io/spring-ai/r
 `ChatClient.call()` 方法支持几种不同类型的响应格式。
 
 *   `String content()`：返回响应的字符串内容
-*   `ChatResponse chatResponse()`：返回`ChatResponse`包含多个代以及有关响应的元数据的对象，例如，使用了多少个令牌来创建响应。
+*   `ChatResponse chatResponse()`：返回`ChatResponse`包含多个 Generation 以及有关响应的元数据的对象。例如，使用了多少个令牌来创建响应。
 *   `entity` 返回 Java 类型
     *   entity(ParameterizedTypeReference<T> type)：用于返回实体类型的集合。
     *   entity(Class<T> type): 用于返回特定的实体类型。
@@ -138,105 +138,107 @@ AI 模型的响应是一种由 [ChatResponse](https://docs.spring.io/spring-ai/r
 
 ## stream() 返回值
 
-您还可以调用该`stream`方法而`call`不是，在指定`stream`方法后`ChatClient`，响应类型有几个选项：
+您还可以调用 `stream()` 方法来获得模型的响应，而不是只使用 `call()` 方法，`strem()` 方法的响应类型有以下几种选项：
 
-*   `Flux<String> content()`：返回由AI模型生成的字符串的Flux。
-*   `Flux<ChatResponse> chatResponse()`：返回对象的 Flux `ChatResponse`，其中包含有关响应的附加元数据。
+*   `Flux<String> content()`：返回由 AI 模型生成的 `Flux<String>` 对象。
+*   `Flux<ChatResponse> chatResponse()`：返回 `Flux<ChatResponse>` 对象，其中包含模型相应的元数据和其他信息。
 
-## 定制 ChatClient 默认值
+## 自定义 ChatClient 默认值
 
-在前面 ChatClient 的初步体验中，我们使用 `ChatClient.Builder.build()` 快速创建了一个 ChatClient 实例，**开发者还可以通过修改 `ChatClient.Builder` 定制 ChatClient 实例**。
+在前面 ChatClient 的初步体验中，我们使用 `ChatClient.Builder.build()` 快速创建了一个 ChatClient 实例，**开发者还可以使用 `ChatClient.Builder` 来自定义 ChatClient 实例的相关属性**。
 
-注意，**创建 ChatClient 时指定的配置将作为与模型交互时的默认参数，这样可以避免每次调用都重复设置**。
+注意：**创建 ChatClient 时指定的配置将作为与模型交互时的默认参数，这样可以避免每次调用都重复设置**。
 
 ### 设置默认 System Message
 
-在以下示例中，我们为 ChatClient 设置了一个默认的 system message（以海盗风格回答所有问题），这样，当 ChatClient 与模型交互时都会自动携带这条 system message，用户只需要指定 user message 即可。
+在以下示例中，我们为 ChatClient 设置了一个默认的 system message（以海盗风格回答所有问题）。当 ChatClient 与模型交互时都会自动携带这条 system message，用户只需要指定 user message 即可。
 
 ```java
-    @Configuration
-    class Config {
+@Configuration
+class Config {
 
-        @Bean
-        ChatClient chatClient(ChatClient.Builder builder) {
-            return builder.defaultSystem("You are a friendly chat bot that answers question in the voice of a Pirate")
-                    .build();
-        }
-
+    @Bean
+    ChatClient chatClient(ChatClient.Builder builder) {
+        return builder.defaultSystem("You are a friendly chat bot that answers question in the voice of a Pirate")
+                .build();
     }
+
+}
 ```
 
-在 Controller 中使用这个 ChatClient
+在 Controller 中使用自定义的 ChatClient 实例：
 
 ```java
-    @RestController
-    class AIController {
+@RestController
+class AIController {
 
-    	private final ChatClient chatClient;
+    private final ChatClient chatClient;
 
-    	AIController(ChatClient chatClient) {
-    		this.chatClient = chatClient;
-    	}
-
-    	@GetMapping("/ai/simple")
-    	public Map<String, String> completion(@RequestParam(value = "message", defaultValue = "Tell me a joke") String message) {
-    		return Map.of("completion", chatClient.prompt().user(message).call().content());
-    	}
+    AIController(ChatClient chatClient) {
+        this.chatClient = chatClient;
     }
+
+    @GetMapping("/ai/simple")
+    public Map<String, String> completion(@RequestParam(value = "message", defaultValue = "Tell me a joke") String message) {
+        return Map.of("completion", chatClient.prompt().user(message).call().content());
+    }
+}
 ```
 
 启动示例，通过 curl 测试效果：
 
 ```shell
 > curl localhost:8080/ai/simple
+
 {"generation":"Why did the pirate go to the comedy club? To hear some arrr-rated jokes! Arrr, matey!"}
 ```
 
-在上面 `builder.defaultSystem()` 创建 ChatClient 的时，我们还可以选择使用模板，类似 "You are a friendly chat bot that answers question in the voice of a {voice}"，这让我们有机会在每次调用前修改请求参数。
+在上面 `builder.defaultSystem()` 创建 ChatClient 时。我们还可以选择使用 Prompt 模板，类似 "You are a friendly chat bot that answers question in the voice of a {voice}"，这让我们有机会在每次调用前修改请求参数。
 
 ```java
-    @Configuration
-    class Config {
+@Configuration
+class Config {
 
-        @Bean
-        ChatClient chatClient(ChatClient.Builder builder) {
-            return builder.defaultSystem("You are a friendly chat bot that answers question in the voice of a {voice}")
-                    .build();
-        }
-
+    @Bean
+    ChatClient chatClient(ChatClient.Builder builder) {
+        return builder.defaultSystem("You are a friendly chat bot that answers question in the voice of a {voice}")
+                .build();
     }
 
-    @RestController
-    class AIController {
-    	private final ChatClient chatClient
-    	AIController(ChatClient chatClient) {
-    		this.chatClient = chatClient;
-    	}
-    	@GetMapping("/ai")
-    	Map<String, String> completion(@RequestParam(value = "message", defaultValue = "Tell me a joke") String message, String voice) {
-    		return Map.of(
-    				"completion",
-    				chatClient.prompt()
-    						.system(sp -> sp.param("voice", voice))
-    						.user(message)
-    						.call()
-    						.content());
-    	}
+}
+
+@RestController
+class AIController {
+    private final ChatClient chatClient
+    AIController(ChatClient chatClient) {
+        this.chatClient = chatClient;
     }
+    @GetMapping("/ai")
+    Map<String, String> completion(@RequestParam(value = "message", defaultValue = "Tell me a joke") String message, String voice) {
+        return Map.of(
+                "completion",
+                chatClient.prompt()
+                        .system(sp -> sp.param("voice", voice))
+                        .user(message)
+                        .call()
+                        .content());
+    }
+}
 ```
 
-答案是
+答案是：
 
 ```shell
-    http localhost:8080/ai voice=='Robert DeNiro'
-    {
-        "completion": "You talkin' to me? Okay, here's a joke for ya: Why couldn't the bicycle stand up by itself? Because it was two tired! Classic, right?"
-    }
+http localhost:8080/ai voice=='Robert DeNiro'
+
+{
+    "completion": "You talkin' to me? Okay, here's a joke for ya: Why couldn't the bicycle stand up by itself? Because it was two tired! Classic, right?"
+}
 ```
 
 ### 其他默认设置
 
-除了 `defaultSystem` 之外，您还可以在 `ChatClient.Builder` 级别上指定其他默认提示。
+除了 `defaultSystem` 之外，您还可以在 `ChatClient.Builder` 中指定其他默认提示词。
 
 *   `defaultOptions(ChatOptions chatOptions)`：传入 `ChatOptions` 类中定义的可移植选项或特定于模型实现的如 `DashScopeChatOptions` 选项。有关特定于模型的`ChatOptions`实现的更多信息，请参阅 JavaDocs。
 
@@ -267,7 +269,7 @@ AI 模型的响应是一种由 [ChatResponse](https://docs.spring.io/spring-ai/r
 
 ## Advisors
 
-在使用用户输入文本构建 Prompt 调用 AI 模型时，一个常见模式是使用上下文数据附加或扩充 Prompt，最终使用扩充后的 Prompt 与模型交互。
+在使用用户输入文本构建 Prompt 调用 AI 模型时。一个常见模式是使用上下文数据附加或扩充 Prompt，最终使用扩充后的 Prompt 与模型交互。
 
 这些用于扩充 Prompt 的上下文数据可以是不同类型的，常见类型包括：
 
@@ -283,12 +285,12 @@ AI 模型的响应是一种由 [ChatResponse](https://docs.spring.io/spring-ai/r
 假设您已将数据加载到中 `VectorStore`，则可以通过向 `ChatClient` 提供 `QuestionAnswerAdvisor` 实例来执行检索增强生成 (RAG ) 。
 
 ```java
-    ChatResponse response = ChatClient.builder(chatModel)
-            .build().prompt()
-            .advisors(new QuestionAnswerAdvisor(vectorStore, SearchRequest.defaults()))
-            .user(userText)
-            .call()
-            .chatResponse();
+ChatResponse response = ChatClient.builder(chatModel)
+        .build().prompt()
+        .advisors(new QuestionAnswerAdvisor(vectorStore, SearchRequest.defaults()))
+        .user(userText)
+        .call()
+        .chatResponse();
 ```
 
 在此示例中，`SearchRequest.defaults()` 将对 Vector 向量数据库中的所有文档执行相似性搜索。为了限制要搜索的文档类型，`SearchRequest` 采用了可移植到任意向量数据库中的类似 SQL 筛选表达式。
@@ -298,16 +300,16 @@ AI 模型的响应是一种由 [ChatResponse](https://docs.spring.io/spring-ai/r
 `SearchRequest` 使用 `FILTER_EXPRESSION` Advisor 上下文参数在运行时更新过滤表达式：
 
 ```java
-    ChatClient chatClient = ChatClient.builder(chatModel)
-        .defaultAdvisors(new QuestionAnswerAdvisor(vectorStore, SearchRequest.defaults()))
-        .build();
+ChatClient chatClient = ChatClient.builder(chatModel)
+    .defaultAdvisors(new QuestionAnswerAdvisor(vectorStore, SearchRequest.defaults()))
+    .build();
 
-    // Update filter expression at runtime
-    String content = chatClient.prompt()
-        .user("Please answer my question XYZ")
-        .advisors(a -> a.param(QuestionAnswerAdvisor.FILTER_EXPRESSION, "type == 'Spring'"))
-        .call()
-        .content();
+// Update filter expression at runtime
+String content = chatClient.prompt()
+    .user("Please answer my question XYZ")
+    .advisors(a -> a.param(QuestionAnswerAdvisor.FILTER_EXPRESSION, "type == 'Spring'"))
+    .call()
+    .content();
 ```
 
 该 `FILTER_EXPRESSION` 参数允许您根据提供的表达式动态过滤搜索结果。
@@ -334,47 +336,47 @@ AI 模型的响应是一种由 [ChatResponse](https://docs.spring.io/spring-ai/r
 下面的 `@Service` 提供了一个使用多个 Advisor 的示例实现：
 
 ```java
-    import static org.springframework.ai.chat.client.advisor.AbstractChatMemoryAdvisor.CHAT_MEMORY_CONVERSATION_ID_KEY;
-    import static org.springframework.ai.chat.client.advisor.AbstractChatMemoryAdvisor.CHAT_MEMORY_RETRIEVE_SIZE_KEY;
+import static org.springframework.ai.chat.client.advisor.AbstractChatMemoryAdvisor.CHAT_MEMORY_CONVERSATION_ID_KEY;
+import static org.springframework.ai.chat.client.advisor.AbstractChatMemoryAdvisor.CHAT_MEMORY_RETRIEVE_SIZE_KEY;
 
-    @Service
-    public class CustomerSupportAssistant {
+@Service
+public class CustomerSupportAssistant {
 
-        private final ChatClient chatClient;
+    private final ChatClient chatClient;
 
-        public CustomerSupportAssistant(ChatClient.Builder builder, VectorStore vectorStore, ChatMemory chatMemory) {
+    public CustomerSupportAssistant(ChatClient.Builder builder, VectorStore vectorStore, ChatMemory chatMemory) {
 
-        this.chatClient = builder
-                .defaultSystem("""
-                        You are a customer chat support agent of an airline named "Funnair".", Respond in a friendly,
-                        helpful, and joyful manner.
+    this.chatClient = builder
+            .defaultSystem("""
+                    You are a customer chat support agent of an airline named "Funnair".", Respond in a friendly,
+                    helpful, and joyful manner.
 
-                        Before providing information about a booking or cancelling a booking, you MUST always
-                        get the following information from the user: booking number, customer first name and last name.
+                    Before providing information about a booking or cancelling a booking, you MUST always
+                    get the following information from the user: booking number, customer first name and last name.
 
-                        Before changing a booking you MUST ensure it is permitted by the terms.
+                    Before changing a booking you MUST ensure it is permitted by the terms.
 
-                        If there is a charge for the change, you MUST ask the user to consent before proceeding.
-                        """)
-                .defaultAdvisors(
-                        new PromptChatMemoryAdvisor(chatMemory),
-                        // new MessageChatMemoryAdvisor(chatMemory), // CHAT MEMORY
-                        new QuestionAnswerAdvisor(vectorStore, SearchRequest.defaults()),
-                        new LoggingAdvisor()) // RAG
-                .defaultFunctions("getBookingDetails", "changeBooking", "cancelBooking") // FUNCTION CALLING
-                .build();
+                    If there is a charge for the change, you MUST ask the user to consent before proceeding.
+                    """)
+            .defaultAdvisors(
+                    new PromptChatMemoryAdvisor(chatMemory),
+                    // new MessageChatMemoryAdvisor(chatMemory), // CHAT MEMORY
+                    new QuestionAnswerAdvisor(vectorStore, SearchRequest.defaults()),
+                    new LoggingAdvisor()) // RAG
+            .defaultFunctions("getBookingDetails", "changeBooking", "cancelBooking") // FUNCTION CALLING
+            .build();
+}
+
+public Flux<String> chat(String chatId, String userMessageContent) {
+
+    return this.chatClient.prompt()
+            .user(userMessageContent)
+            .advisors(a -> a
+                    .param(CHAT_MEMORY_CONVERSATION_ID_KEY, chatId)
+                    .param(CHAT_MEMORY_RETRIEVE_SIZE_KEY, 100))
+            .stream().content();
     }
-
-    public Flux<String> chat(String chatId, String userMessageContent) {
-
-        return this.chatClient.prompt()
-                .user(userMessageContent)
-                .advisors(a -> a
-                        .param(CHAT_MEMORY_CONVERSATION_ID_KEY, chatId)
-                        .param(CHAT_MEMORY_RETRIEVE_SIZE_KEY, 100))
-                .stream().content();
-        }
-    }
+}
 ```
 
 ### 日志记录
@@ -384,11 +386,11 @@ AI 模型的响应是一种由 [ChatResponse](https://docs.spring.io/spring-ai/r
 要启用日志记录，请在创建 ChatClient 时将 `SimpleLoggerAdvisor` 添加到 Advisor 链中。建议将其添加到链的末尾：
 
 ```java
-    ChatResponse response = ChatClient.create(chatModel).prompt()
-            .advisors(new SimpleLoggerAdvisor())
-            .user("Tell me a joke?")
-            .call()
-            .chatResponse();
+ChatResponse response = ChatClient.create(chatModel).prompt()
+        .advisors(new SimpleLoggerAdvisor())
+        .user("Tell me a joke?")
+        .call()
+        .chatResponse();
 ```
 
 要查看日志，请将 Advisor 包的日志记录级别设置为 `DEBUG`：
@@ -402,19 +404,19 @@ org.springframework.ai.chat.client.advisor=DEBUG
 您可以使用以下构造函数自定义如何使用 `SimpleLoggerAdvisor` 记录来自 AdvisedRequest 和 ChatResponse 的数据：
 
 ```java
-    SimpleLoggerAdvisor(
-        Function<AdvisedRequest, String> requestToString,
-        Function<ChatResponse, String> responseToString
-    )
+SimpleLoggerAdvisor(
+    Function<AdvisedRequest, String> requestToString,
+    Function<ChatResponse, String> responseToString
+)
 ```
 
 使用示例：
 
 ```java
-    javaCopySimpleLoggerAdvisor customLogger = new SimpleLoggerAdvisor(
-        request -> "Custom request: " + request.userText,
-        response -> "Custom response: " + response.getResult()
-    );
+javaCopySimpleLoggerAdvisor customLogger = new SimpleLoggerAdvisor(
+    request -> "Custom request: " + request.userText,
+    response -> "Custom response: " + response.getResult()
+);
 ```
 
 这使得您可以根据您的特定需求定制需要记录的信息。
