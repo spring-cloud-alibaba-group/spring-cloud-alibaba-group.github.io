@@ -1,0 +1,208 @@
+---
+title: "AI 驱动的 Java 开发框架：Spring AI Alibaba"
+description: "AI 驱动的 Java 开发框架：Spring AI Alibaba"
+date: "2024-10-11"
+category: "article"
+keywords: ["SCA"]
+authors: "CH3CHO"
+---
+
+阅读原文地址：[https://sca.aliyun.com/ai/](https://sca.aliyun.com/ai/)
+
+
+
+本文作者系阿里云云原生微服务技术负责人，Spring AI Alibaba 发起人彦林，望陶和隆基对可观测和 RocketMQ 部分内容亦有贡献。
+
+
+
+摘要：随着生成式 AI 的快速发展，基于 AI 开发框架构建 AI 应用的诉求迅速增长，涌现出了包括 LangChain、LlamaIndex 等开发框架，但大部分框架只提供了 Python 语言的实现。但这些开发框架对于国内习惯了 Spring 开发范式的 Java 开发者而言，并非十分友好和丝滑。因此，我们基于 Spring AI 发布并快速演进 Spring AI Alibaba，通过提供一种方便的 API 抽象，帮助 Java 开发者简化 AI 应用的开发。同时，提供了完整的开源配套，包括可观测、网关、消息队列、配置中心等。
+
+## **一、应用框架发展趋势**
+应用架构历经了单体架构、LAMP 架构、SOA 架构、微服务架构、云原生架构。
+
+
+
+下图左边是典型的云原生应用架构，采用了容器 、微服务和声明式 API 基数。 其中，微服务按照业务模块进行拆分，架构做无状态改造，将存储下沉到数据库；微服务跑在容器上进行按量伸缩，从而把研发效率和运维发挥到极致。
+
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726479306106-f541de4b-3943-43bd-9694-8ea3cb8f52e7.png)
+
+右图的 AI 原生应用架构，则是基于大模型（大脑），Agent 驱动（手脚）进行构建。其中，Agent 有三个架构原则：
+
++ **API First，开放协同**：OpenAI 作为全球最大售卖 API 公司，通过 API 快速构建了生态和营收，加速创新，大模型企业无不例外通过 API 来向外提供服务。
++ **事件驱动，提升吞吐：**不同于经典应用，大模型处理速度慢，长链接流式推送消耗大，因此需要消息解耦，提升吞吐。
++ **AIOPS，一键诊断：**相比经典应用，大模型失败率更高，定位难度更大，因此需要更智能的诊断工具。
+
+
+
+### **<font style="color:black;">AI Agent 框架发展趋势</font>**
+AI Agent 的发展大致可以分为以下3个阶段：
+
+
+
++ 第一阶段：2022年 ，ChatGPT 3.0发布，震惊世界，但是当时数据幻觉，数据质量，数据格式问题非常多，很快行业推出了 LangChain 试图来解决这些问题；但是随着模型能力的增强，原有的问题逐步得到解决，但是由于大模型迭代迅速，Langchain 的过度封装，反而没有减少工程师们的代码量，额外带来了复杂度。
++ 第二阶段：2023年，随着 ChatGPT 4.0 / LIama 3.0 / Qwen 2.5 的推出，模型能力进一步提升，早期提示词的价值逐步弱化，LlamaIndex 因其更简单的体系抽象，更加符合当前的需求。
++ 第三阶段：2024年，随着多模态发展，模型能力持续突破，在过去的两年框架以 Python 为主，但是对于中国 42.9%[1] 的 Java 开发者会选择是什么来构建 AI 应用呢？ 写 Python？ 写 Java 版 Langchain / LlamaIndex ？ 还是基于 Spring 体系进行构建？
+
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726479675527-902db3bf-aca4-49e8-8cea-9b0f66117c61.png)
+
+
+
+## <font style="color:black;">二、Spring AI Alibaba 重磅发布</font>
+随着生成式 AI 的快速发展，基于 AI 开发框架构建 AI 应用的诉求迅速增长，涌现出了包括 LangChain、LlamaIndex 等开发框架，它们为 Python 开发者提供了方便的 API 抽象。但这些开发框架对于国内习惯了 Spring 开发范式的 Java 开发者而言，并非十分友好和丝滑。因此，我们基于 Spring AI 发布并快速演进 Spring AI Alibaba，通过提供一种方便的 API 抽象，帮助 Java 开发者简化 AI 应用的开发，一步迈入 AI 原生时代。
+
+
+
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726726040805-5f82c69a-0988-4b70-bc95-c522f76597a1.png)
+
+
+
+同时，我们发布了配套组件，更完整的帮助 Java 开发者简化 AI 应用的开发。
+
++ Higress：作为 AI 网关，<font style="color:rgb(0, 0, 0);">支持多模型适配、流式输出、请求/Tokens 限流防护、长连接无损热更新，支持最小请求数负载均衡，并借助</font>丰富的 AI 插件，帮助开发者零代码构建 AI 应用，守住安全合规底线。
++ <font style="color:rgb(0, 0, 0);">OTel：基于开源 Open Telemetry Python SDK 进行了扩展，发布可观测探针，为 GenAI 应用可观测而生，能自动获取大模型调用各个阶段的数据，全面提升 LLM 应用的可观测性。</font>
++ Apache RocketMQ：<font style="color:rgb(0, 0, 0);">支持主动 POP 消费模式，自适应负载均衡，动态消费超时时长，适应不同算力消耗的请求，实时数据驱动 RAG 架构，</font>提升吞吐量和实时性。
++ Nacos Python SDK：提升灵活性，动态调整提示词模版、算法、相关度等参数。
+
+  
+这一套开源矩阵具备“自用、开源、商业”三位一体的优势，包括：
+
++ 阿里内部大规模验证，通义 / PAI / 百炼长期打磨。
++ 具备完整的生态和组件，覆盖应用开发的主链路。
++ 支持主流大模型，低代码、甚至无代码构建企业级 AI 应用。
++ 深度集成阿里云百炼、云原生应用开发平台 CAP，开箱即用。
+
+
+
+Spring AI Alibaba 已完整提供 <font style="color:rgb(0, 0, 0);">Model、Prompt、RAG、Tools 等 AI 应用开发所需的必备能力，将兼具提示词模板、函数调用、格式化输出等低层次抽象，以及 RAG、智能体、对话记忆等高层次抽象。</font>
+
+<font style="color:rgb(0, 0, 0);"></font>
+
+<font style="color:rgb(0, 0, 0);">项目地址：https://github.com/alibaba/spring-ai-alibaba</font>
+
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/133108/1726838675106-b2fa3f6a-6ec4-40a1-8312-1890f9a2c03c.png)
+
+#### **<font style="color:black;">Higress：</font>****<font style="color:#181818;">零代码构建 AI 应用</font>**
+我们可以很快构建 AI 应用，但是如何确保上线后不出问题呢？ 
+
++ <font style="color:rgb(0, 0, 0);">相比 Web 应用，LLM 应用的内容生成时间更长，对话连续性对用户体验至关重要，如何避免后端插件更新导致的服务中断？Higress 使用 Envoy 作为数据面，对网关配置、和连接无关的配置做了合理抽象，并通过 WASM 插件形式实现了热更新，避免后端插件更新导致的服务中断。</font>
++ <font style="color:rgb(0, 0, 0);">相比传统 Web 应用，LLM 应用在服务端处理单个请求的资源消耗会大幅超过客户端，来自客户端的攻击成本更低，后端的资源开销更大，如何加固后端架构稳定性？Higress 提供了 Token 流控能力，并且集成 WAF 插件，在入口建立安全防线。</font>
++ <font style="color:rgb(0, 0, 0);">不同于传统 Web 应用基于信息的匹配关系，LLM 应用生成的内容则是基于人工智能推理，如果保障生产内容的合规和安全？例如近期有两家公司因为内容合规问题导致股市大跌，Higress 通过滤网插件，帮助用户在流量入口处守住了合规底线。</font>
++ <font style="color:rgb(0, 0, 0);">当接入多个大模型 API 时，如何屏蔽不同模型厂商 API 的调用差异，来提升单一大模型的调用失败率？Higress 提供了 AI Proxy 插件，构建高可用 AI 服务，如通义 2.5 失败，Failover 到通义2.0；或者自建大模型失败，Failover 到通义模型等。</font>
+
+
+
+此外，为了解决 RT 问题，Higress 在入口构建缓存（对接 Redis ），RAG 能力（对接向量数据库），降低 RT，降低了大模型的调用成本。
+
+
+
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726479707542-68d84fd6-c0ff-4c9f-85b9-978b64fffd8d.png)
+
+
+
+#### **<font style="color:black;">OTel: 提升大模型应用可观测性</font>**
+大模型失败率较高，数据幻觉需要检测，对输出进行评估等。为了解决这个挑战，我们基于 OTel Python 探针构建了阿里云 OTel python 发行版，增加了常见的大模型的埋点，以更好的观测和大模型的交互过程，预计在 9 月正式上线。
+
+
+
+在构建的过程中我们也看到 OTel 社区正在讨论中的 GenAI 语义约定，因此我们的发行版也严格的遵循了最新 GenAI 语义约定，同时支持了常见的大模型框架例如 LlamaIndex，Langchain，PromtFlow 以及 通义千问2，OpenAI 等大模型。
+
+
+
+在社区 GenAI 规范的基础上，我们还增加了额外的精细化的埋点和 Attribute，能够观测到更加细节的交互过程，包括支持 session_id 在多个 traceId 之前进行传播，以方便在一个会话中关联多个调用链。有了这些埋点之后，客户可以方便的在专属大模型视图中查看与大模型交互的信息，包括各种 RAG 的过程，调用大模型的入参出参，消耗的 token 等等，这些增强我们也计划贡献给社区。
+
+
+
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726479720544-2175561e-5d89-4741-bc72-dc8ef7ee59e9.png)
+
+
+
+#### <font style="color:black;">Nacos：提升 Agent 灵活性</font>
+模型上线后，我们为了不断提升效果，需要不断优化各种参数和配置。传统做法是改一个参数就重启发布一次； 这样效率低下，且发布对业务业务流量有损。
+
+
+
+因此，我们把提示词模版/相关的参数存储在在 Nacos 配置中心，通过动态配置可以实时修改，无需重启就能发布应用；为了满足安全合规要求，把对大模型调用过程中定义的脱敏规则、密钥，以及数据源外置到 Nacos 配置中心；最后，为了提升模型的稳定性，需要做好 A/B 测试，可以把模型版本、参数、流控规则，也存储在 Nacos 配置中心。
+
+
+
+可见，通过 Nacos 可以大幅提升 Agent 的灵活性。
+
+
+
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726479732368-24cdd1d9-ea82-4a7c-8218-5a508712ac96.png)
+
+
+
+#### **<font style="color:#292929;">Apache RocketMQ：提升 AI 应用吞吐量和实时性</font>**
+在推理场景，私域数据向量化后，提供给 AI 应用搜索增强，但是这个模式私域数据不能及时更新，为了提升整体链路实时性，可以通过事件流集成关键事件，实时 Embedding 向量数据库、更新私有数据存储，全面提升 AI 应用实时性、个性化和准确度。
+
+AI 原生应用请求往往耗时过久，全面采用同步调用会使得系统性能急剧恶化，响应慢，影响客户体验。通过引入RocketMQ 事件驱动架构、解耦快慢服务，能显著提升性能和体验。面临 AI 应用请求耗时方差大，资源消耗不均匀的特点，RocketMQ 支持主动 Pop 消费模式，动态消费超时时长，能够实时结合模型实例负载和推理请求特点，自适应负载均衡。
+
+
+
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726726167543-acdb111e-31eb-44ec-a307-1c7b4b888640.png)
+
+
+
+## **三、Java AI 开发框架的落地&实践**
+相信通过上面的介绍，大家对于构建生成式 AI 应用已经跃跃欲试了，但是选择哪些场景投入产出比较高呢？ 下面简单分享一下我们的思路。
+
+### **<font style="color:black;">AI 落地场景</font>**
+是不是所有的业务都能用 AI 解决呢？ 目前看不是的。 那 AI 适合做什么场景呢？目前看，适合**容错性高**、**结构化强**的场景。
+
+
+
+我们在做开源社区的时候发现社区的 Issue 非常多，但是无法响应开发者需求，因此我们想如果构建一个 AI 答疑专家，帮助开发者解决场景问题，构建新型开源社区协作模式，这个就非常有价值。 
+
+
+
+因此我们落地第一个场景是 AI 答疑专家，解决开源社区答疑问题，提升开源社区活跃度。
+
+
+
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726479757641-55dbe8e9-3685-4458-ab6b-7f83abfe660e.png)
+
+### AI 技术选型
+我们在技术上有三个技术选型 ： Prompt / RAG / 微调
+
++ Prompt：效果略有提升，但是不能带来本质改变；
++ 微调：成本比较高，我们的数据还不断迭代过程中无法承受；
++ RAG：无论是成本、效果，还是可持续迭代性，都是目前最高投入产出比模式，因此我们采用了 RAG 为主的技术方案。
+
+
+
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726479767780-76d70df8-9613-4e03-b50e-f09464ad795e.png)
+
+
+
+### AI 应用实践
+#### **<font style="color:black;">AI 答疑专家 实践</font>**
+AI 答疑专家基于百炼的通义2.5模型，将开源文档、电子书、常见问题灌入百炼数据中心，进行了向量化；通过 Spring AI Alibaba 对接通义模型和 RAG 能力，搜索到了 TOP3 的相关度信息，进行压缩提炼。并通过 Higress 将服务发布到开源官网和钉钉机器人，在入口构建安全合规防线。最后通过 AI 答疑专家不断与开发者沟通，收集反馈。通过 Chat-Admin 处理反馈差的信息，补充文档，优化数据。
+
+
+
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726479778646-0830f0ea-c433-4f3e-8632-a493b1e61323.png)
+
+#### **<font style="color:black;">AI 答疑专家-落地效果 </font>**
+落地效果非常显著，开源官网的流量提升了20 %，人工答疑成本降低20%，准确率可达 90%+，并且完成了私域数据 、 AI 专家反馈机制、人工订正的正循环。
+
+
+
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726479789712-6513fc8b-4798-4562-8380-9d82137b002c.png)
+
+
+
+#### **<font style="color:black;">AI 答疑专家 -AIPaaS 雏形</font>**
+最后我们构建了 AI 行业专家解决方案，沉淀了 AIPaaS 的雏形，以模型未核心，Agent驱动，充分挖掘私域数据，打造行业 AI 专家！ 
+
+
+
+![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726731456207-c17db613-5077-45d4-9ca8-53b5791f8023.png)
+
+
+
+未来，我们将提供 <font style="color:rgb(0, 0, 0);">Spring AI Alibaba 和阿里巴巴整体开源生态的深度适配，包括 Prompt Template 管理、事件驱动的 AI 应用程序、更多 Vector Database 支持、函数计算等部署模式、可观测性建设、AI 代理节点开发能力，如绿网、限流、多模型切换和开发者工具集，旨在构建业内最完整的 AI 驱动的 Java 开发框架生态。</font>
+
+
+
+
