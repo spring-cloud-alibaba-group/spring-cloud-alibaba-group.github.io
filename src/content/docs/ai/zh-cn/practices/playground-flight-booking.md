@@ -17,7 +17,7 @@ description: "Spring AI 与通义千问集成，使用 Spring AI 开发 Java AI 
 #### 完整架构图
 <font style="color:#5e5e5e;">基于这样一个</font>智能机票助手目标，我们绘制了一个如下图所示的架构图：
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/54037/1726885568393-66764b19-a8cb-4788-bb98-c301fce7c8e4.png)
+![](/img/1728554016353.png)
 
 
 
@@ -29,7 +29,7 @@ description: "Spring AI 与通义千问集成，使用 Spring AI 开发 Java AI 
 
 <font style="color:#5e5e5e;"></font>
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/54037/1726912043221-e23df6ca-dddc-46b9-b7f2-02d791d150fa.png)
+![](/img/1728554016631.png)
 
 <font style="color:#5e5e5e;"></font>
 
@@ -40,7 +40,7 @@ description: "Spring AI 与通义千问集成，使用 Spring AI 开发 Java AI 
 
 
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/54037/1727063147426-6df413c8-bcd2-4966-b0c0-178279ab2752.png)
+![](/img/1728554016827.png)
 
 <font style="color:#5e5e5e;"></font>
 
@@ -55,7 +55,7 @@ description: "Spring AI 与通义千问集成，使用 Spring AI 开发 Java AI 
 
 <font style="color:#5e5e5e;"></font>
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/54037/1726913577931-fdcd7e06-90ec-4dad-9547-bc63016e0bf2.png)
+![](/img/1728554017286.png)
 
 
 
@@ -70,7 +70,7 @@ description: "Spring AI 与通义千问集成，使用 Spring AI 开发 Java AI 
 4. <font style="color:#5e5e5e;">RAG、Vector Store，机票预定、改签、退票等相关规则</font>
 
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/54037/1726914000870-648040e8-d109-4f08-ab27-ebfcef0079f9.png)
+![](/img/1728554017504.png)
 
 
 #### 使用 ChatClient 完成编码
@@ -105,5 +105,5 @@ this.chatClient = modelBuilder
 
 最终，我们开发的示例运行效果如下所示：
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/54037/1726916955378-bd0b89ff-6d2e-4cda-a0b7-7cf22c680fb9.png)
+![](/img/1728554017887.png)
 

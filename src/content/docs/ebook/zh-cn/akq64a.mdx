@@ -16,20 +16,20 @@ Service Mesh 的出现，为异构微服务体系治理打开了一种全新的�
 
 下图是一个 Istio 的典型架构
 
-![图 2-4-1](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/54319/1648167126495-deeddd9c-0ad1-4fb1-a042-993ce8f3f577.png#clientId=u8629d84e-74bc-4&from=ui&id=uD1Ep&originHeight=1667&originWidth=2667&originalType=binary&ratio=1&rotation=0&showTitle=true&size=63664&status=done&style=none&taskId=u66743ba6-0813-47df-a2df-d89358f4fb9&title=%E5%9B%BE%202-4-1 "图 2-4-1")<br />Istiod 作为控制面的统一组件，负责对接服务注册发现、路由规则管理、证书管理等能力，Envoy Proxy 作为数据面Sidecar代理业务流量，Istio 和Envoy Proxy 之间通过XDS 接口完成服务发现、路由规则等数据的传递，同时Istio 也提供了MCP Over XDS接口对接外部注册中心，如Nacos。
+![图 2-4-1](/img/1728554018205.png)<br />Istiod 作为控制面的统一组件，负责对接服务注册发现、路由规则管理、证书管理等能力，Envoy Proxy 作为数据面Sidecar代理业务流量，Istio 和Envoy Proxy 之间通过XDS 接口完成服务发现、路由规则等数据的传递，同时Istio 也提供了MCP Over XDS接口对接外部注册中心，如Nacos。
 
-Istio除了支持东西向的流量代理之外，还支持南北流量的代理，通过Istio Ingress Gateway 作为入口的网关，通过Istio Egress Gateway作为出口网关，这样Istio将可以对全域流量进行治理。 <br />![图 2-4-2](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/54319/1648167137794-7a944cd5-7f25-4b54-b7ff-2da6451db9cc.png#clientId=u8629d84e-74bc-4&from=ui&id=o4nCS&originHeight=1667&originWidth=2668&originalType=binary&ratio=1&rotation=0&showTitle=true&size=85446&status=done&style=none&taskId=uae32a6f2-d58a-430e-a3ee-bde10f2f6e0&title=%E5%9B%BE%202-4-2 "图 2-4-2")
+Istio除了支持东西向的流量代理之外，还支持南北流量的代理，通过Istio Ingress Gateway 作为入口的网关，通过Istio Egress Gateway作为出口网关，这样Istio将可以对全域流量进行治理。 <br />![图 2-4-2](/img/1728554018411.png)
 
 在云原生微服务治理中提供了基于ASM Istio的服务治理能力，包含标签路由、服务鉴权、故障注入、金丝雀发布、服务测试、无损上下线等。
 
-![图 2-4-3](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/54319/1648167149596-8e23c5a7-4c43-43fd-8ff0-9370f882b99c.png#clientId=u8629d84e-74bc-4&from=ui&id=u1732d799&originHeight=1667&originWidth=2668&originalType=binary&ratio=1&rotation=0&showTitle=true&size=91926&status=done&style=none&taskId=u57fcaf53-cd38-495c-b82f-453ec347c44&title=%E5%9B%BE%202-4-3 "图 2-4-3")
+![图 2-4-3](/img/1728554018634.png)
 
 <a name="Lssgn"></a>
 #### 流量劫持能力
 
 iptables 是 Linux 内核中的防火墙软件 netfilter 的管理工具，位于用户空间，同时也是 netfilter 的一部分。Netfilter 位于内核空间，不仅有网络地址转换的功能，也具备数据包内容修改、以及数据包过滤等防火墙功能。
 
-在kubernetes的方案中，Istio会在开启了Sidecar注入标记的Pod中注入一个Init Container和一个普通容器istio-proxy，Init Container容器会执行一段iptables脚本，根据脚本的参数，将Inbound和OutBound流量都导入到Envoy指定的端口上，Istio-Proxy容器由2个进程组成，Pilot Agent会用来获取Envoy的启动配置，然后创建一个Envoy的进程，同时会对Envoy 进程进行健康检查。<br />![图 2-4-4](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/54319/1648167160370-ebf7869d-5a7a-4e1a-bebb-c6cf9fcffb56.png#clientId=u8629d84e-74bc-4&from=ui&id=u50361e15&originHeight=1667&originWidth=2667&originalType=binary&ratio=1&rotation=0&showTitle=true&size=246945&status=done&style=none&taskId=u10c5770c-7fcf-4d4e-83b4-4bf52e2b315&title=%E5%9B%BE%202-4-4 "图 2-4-4")
+在kubernetes的方案中，Istio会在开启了Sidecar注入标记的Pod中注入一个Init Container和一个普通容器istio-proxy，Init Container容器会执行一段iptables脚本，根据脚本的参数，将Inbound和OutBound流量都导入到Envoy指定的端口上，Istio-Proxy容器由2个进程组成，Pilot Agent会用来获取Envoy的启动配置，然后创建一个Envoy的进程，同时会对Envoy 进程进行健康检查。<br />![图 2-4-4](/img/1728554018904.png)
 
 
 <a name="kZI7a"></a>
@@ -56,4 +56,4 @@ Outbound handler 的作用是将 iptables 拦截到的本地应用程序发出�
 
 Istio通过Sidecar将服务治理的能力进行了标准化和统一化，比如故障注入、金丝雀发布、负载均衡、服务鉴权，同时还提供了可观测的能力，如Metrics、日志。<br />Envoy 是 Istio 中的 Sidecar 官方标配，是一个面向服务架构的高性能网络代理，由 C++ 语言实现，拥有强大的定制化能力。Envoy 是面向服务架构设计的L7代理和通信总线，核心是一个 L3/L4 网络代理。可插入 filter 链机制允许开发人员编写 filter 来执行不同的 TCP 代理任务并将其插入到主体服务中。Envoy 还支持额外的 HTTP L7 filter 层。可以将 HTTP filter 插入执行不同任务的 HTTP 连接管理子系统，可以查看每个Envoy的Config Dump看到Http filter配置，Envoy 根据这些配置决定如何执行对应的流量处理流程。
 
-![图 2-4-5](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/54319/1648167197142-ee219d28-b01c-46cb-804a-48f5b659ed69.png#clientId=u8629d84e-74bc-4&from=ui&id=u83c90e99&originHeight=1667&originWidth=2668&originalType=binary&ratio=1&rotation=0&showTitle=true&size=25335&status=done&style=none&taskId=u82ef7680-dc4f-4dea-992d-a9e6ff89316&title=%E5%9B%BE%202-4-5 "图 2-4-5")<br />Envoy 提供的过滤器包括侦听器过滤器（Listener Filters）、网络过滤器（Network Filters）、HTTP过滤器（HTTP Filters）三种类型，它们共同组成了一个层次化的过滤器链，侦听器过滤器在初始连接阶段访问原始数据并操作 L4 连接的元数据，网络过滤器访问和操作 L4 连接上的原始数据，即TCP数据包，HTTP 过滤器在 L7 上运行，由网络过滤器（即 HTTP 连接管理器，HTTP Connection Manager）创建。这些过滤器用于访问、操作 HTTP 请求和响应。
+![图 2-4-5](/img/1728554019111.png)<br />Envoy 提供的过滤器包括侦听器过滤器（Listener Filters）、网络过滤器（Network Filters）、HTTP过滤器（HTTP Filters）三种类型，它们共同组成了一个层次化的过滤器链，侦听器过滤器在初始连接阶段访问原始数据并操作 L4 连接的元数据，网络过滤器访问和操作 L4 连接上的原始数据，即TCP数据包，HTTP 过滤器在 L7 上运行，由网络过滤器（即 HTTP 连接管理器，HTTP Connection Manager）创建。这些过滤器用于访问、操作 HTTP 请求和响应。

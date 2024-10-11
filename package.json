@@ -23,6 +23,7 @@
     "@serverless-cd/goat-ui": "^0.0.30",
     "astro": "4.9.1",
     "astro-compress": "^2.2.11",
+    "node-fetch": "^2.x",
     "date-fns": "^3.4.0",
     "lodash": "^4.17.21",
     "lodash.clonedeep": "^4.5.0",

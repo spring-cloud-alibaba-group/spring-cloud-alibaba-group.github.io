@@ -10,19 +10,19 @@ This chapter will demonstrate the use of [@Scheduled](https://spring.io/guides/g
 # Access to cloud version
 The simplest way to connect to Spring's distributed scheduled tasks is to directly connect to the Alibaba Cloud hosted [Distributed Task Scheduling Platform SchedularX](https://www.aliyun.com/ntms/middleware/schedulerx) Not only is it fully compatible with Spring @Schedule annotations, but it also features high availability, high security, high performance, maintenance free, and low cost.
 The task management platform of the Task Scheduling Platform SchedularX can help you dynamically add, modify, and operate scheduled tasks, as well as enterprise level observable solutions such as alarm monitoring, historical recording, log services, and link tracking, ensuring the stable operation of your scheduled tasks.
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/jpeg/23156875/1714380620901-ac56feee-c76f-4e2e-8734-efec929d48c3.jpeg)
+![](/img/1728554014729.png)
 ## Access steps
 
 1. Log in to the [SchedulerX Console](https://schedulerx2.console.aliyun.com/public/AppList) Open the service for free.
 2. Reference [access document](https://help.aliyun.com/zh/schedulerx/user-guide/spring-jobs?spm=5176.14256785.help.dexternal.f09e126dAXAvEs#p-9sy-0ay-hgx) access, each account has 5 free task quotas.
 
 
-![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/23156875/1714372692175-124953b0-5f7b-4b75-98b4-0db7e65c2959.png#clientId=u68590545-eb8b-4&from=paste&height=532&id=u72d922ad&originHeight=1064&originWidth=3070&originalType=binary&ratio=2&rotation=0&showTitle=false&size=1285311&status=done&style=none&taskId=u0b6fa2b0-bc33-47f2-907c-89b4fa8fe1d&title=&width=1535)
+![image.png](/img/1728554015051.png)
 
 # Local access method
 Without relying on cloud products, local access methods can be combined with [@ Scheduling Lock](https://github.com/lukas-krecan/ShedLock) Annotate to implement distributed scheduled tasks.
 @The Scheduling Lock annotation is a framework for distributed locks, combined with the @ Scheduling annotation, to ensure that tasks are executed only once on multiple nodes at the same time. This framework supports the implementation of various distributed locks, such as Jdbc, Zookeeper, Redis, etc. The principle is as follows
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/jpeg/67910/1710923161344-bf71de34-6845-4edb-a514-b49ac06ec5bd.jpeg)
+![](/img/1728554015204.png)
 ## Access steps
 Taking MySQL distributed lock as an example, demonstrate the access process of distributed tasks
 
