@@ -1,7 +1,7 @@
 ---
 title: "AI 驱动的 Java 开发框架：Spring AI Alibaba"
 description: "AI 驱动的 Java 开发框架：Spring AI Alibaba"
-date: "2024-10-11"
+date: "2024-09-21"
 category: "article"
 keywords: ["SCA"]
 authors: "CH3CHO"
