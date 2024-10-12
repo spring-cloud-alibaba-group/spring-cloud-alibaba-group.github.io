@@ -24,13 +24,13 @@ authors: "CH3CHO"
 
 下图左边是典型的云原生应用架构，采用了容器 、微服务和声明式 API 基数。 其中，微服务按照业务模块进行拆分，架构做无状态改造，将存储下沉到数据库；微服务跑在容器上进行按量伸缩，从而把研发效率和运维发挥到极致。
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726479306106-f541de4b-3943-43bd-9694-8ea3cb8f52e7.png)
+![](/img/1728698819896.png)
 
 右图的 AI 原生应用架构，则是基于大模型（大脑），Agent 驱动（手脚）进行构建。其中，Agent 有三个架构原则：
 
 + **API First，开放协同**：OpenAI 作为全球最大售卖 API 公司，通过 API 快速构建了生态和营收，加速创新，大模型企业无不例外通过 API 来向外提供服务。
-+ **事件驱动，提升吞吐：**不同于经典应用，大模型处理速度慢，长链接流式推送消耗大，因此需要消息解耦，提升吞吐。
-+ **AIOPS，一键诊断：**相比经典应用，大模型失败率更高，定位难度更大，因此需要更智能的诊断工具。
++ **事件驱动，提升吞吐**：不同于经典应用，大模型处理速度慢，长链接流式推送消耗大，因此需要消息解耦，提升吞吐。
++ **AIOPS，一键诊断**：相比经典应用，大模型失败率更高，定位难度更大，因此需要更智能的诊断工具。
 
 
 
@@ -43,7 +43,7 @@ AI Agent 的发展大致可以分为以下3个阶段：
 + 第二阶段：2023年，随着 ChatGPT 4.0 / LIama 3.0 / Qwen 2.5 的推出，模型能力进一步提升，早期提示词的价值逐步弱化，LlamaIndex 因其更简单的体系抽象，更加符合当前的需求。
 + 第三阶段：2024年，随着多模态发展，模型能力持续突破，在过去的两年框架以 Python 为主，但是对于中国 42.9%[1] 的 Java 开发者会选择是什么来构建 AI 应用呢？ 写 Python？ 写 Java 版 Langchain / LlamaIndex ？ 还是基于 Spring 体系进行构建？
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726479675527-902db3bf-aca4-49e8-8cea-9b0f66117c61.png)
+![](/img/1728698820660.png)
 
 
 
@@ -52,7 +52,7 @@ AI Agent 的发展大致可以分为以下3个阶段：
 
 
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726726040805-5f82c69a-0988-4b70-bc95-c522f76597a1.png)
+![](/img/1728698822003.png)
 
 
 
@@ -79,9 +79,9 @@ Spring AI Alibaba 已完整提供 <font style="color:rgb(0, 0, 0);">Model、Prom
 
 <font style="color:rgb(0, 0, 0);">项目地址：https://github.com/alibaba/spring-ai-alibaba</font>
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/133108/1726838675106-b2fa3f6a-6ec4-40a1-8312-1890f9a2c03c.png)
+![](/img/1728698823383.png)
 
-#### **<font style="color:black;">Higress：</font>****<font style="color:#181818;">零代码构建 AI 应用</font>**
+#### **<font style="color:black;">Higress：</font>零代码构建 AI 应用**
 我们可以很快构建 AI 应用，但是如何确保上线后不出问题呢？ 
 
 + <font style="color:rgb(0, 0, 0);">相比 Web 应用，LLM 应用的内容生成时间更长，对话连续性对用户体验至关重要，如何避免后端插件更新导致的服务中断？Higress 使用 Envoy 作为数据面，对网关配置、和连接无关的配置做了合理抽象，并通过 WASM 插件形式实现了热更新，避免后端插件更新导致的服务中断。</font>
@@ -95,7 +95,7 @@ Spring AI Alibaba 已完整提供 <font style="color:rgb(0, 0, 0);">Model、Prom
 
 
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726479707542-68d84fd6-c0ff-4c9f-85b9-978b64fffd8d.png)
+![](/img/1728698824078.png)
 
 
 
@@ -112,7 +112,7 @@ Spring AI Alibaba 已完整提供 <font style="color:rgb(0, 0, 0);">Model、Prom
 
 
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726479720544-2175561e-5d89-4741-bc72-dc8ef7ee59e9.png)
+![](/img/1728698825139.png)
 
 
 
@@ -129,7 +129,7 @@ Spring AI Alibaba 已完整提供 <font style="color:rgb(0, 0, 0);">Model、Prom
 
 
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726479732368-24cdd1d9-ea82-4a7c-8218-5a508712ac96.png)
+![](/img/1728698825745.png)
 
 
 
@@ -140,7 +140,7 @@ AI 原生应用请求往往耗时过久，全面采用同步调用会使得系�
 
 
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726726167543-acdb111e-31eb-44ec-a307-1c7b4b888640.png)
+![](/img/1728698826673.png)
 
 
 
@@ -160,7 +160,7 @@ AI 原生应用请求往往耗时过久，全面采用同步调用会使得系�
 
 
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726479757641-55dbe8e9-3685-4458-ab6b-7f83abfe660e.png)
+![](/img/1728698827816.png)
 
 ### AI 技术选型
 我们在技术上有三个技术选型 ： Prompt / RAG / 微调
@@ -171,7 +171,7 @@ AI 原生应用请求往往耗时过久，全面采用同步调用会使得系�
 
 
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726479767780-76d70df8-9613-4e03-b50e-f09464ad795e.png)
+![](/img/1728698828526.png)
 
 
 
@@ -181,14 +181,14 @@ AI 答疑专家基于百炼的通义2.5模型，将开源文档、电子书、�
 
 
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726479778646-0830f0ea-c433-4f3e-8632-a493b1e61323.png)
+![](/img/1728698829160.png)
 
 #### **<font style="color:black;">AI 答疑专家-落地效果 </font>**
 落地效果非常显著，开源官网的流量提升了20 %，人工答疑成本降低20%，准确率可达 90%+，并且完成了私域数据 、 AI 专家反馈机制、人工订正的正循环。
 
 
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726479789712-6513fc8b-4798-4562-8380-9d82137b002c.png)
+![](/img/1728698829745.png)
 
 
 
@@ -197,7 +197,7 @@ AI 答疑专家基于百炼的通义2.5模型，将开源文档、电子书、�
 
 
 
-![](https://intranetproxy.alipay.com/skylark/lark/0/2024/png/9687/1726731456207-c17db613-5077-45d4-9ca8-53b5791f8023.png)
+![](/img/1728698831200.png)
 
 
 
