@@ -42,8 +42,14 @@
 						"link": "docs/developer/contributor-guide/reporting-security-issues_dev/"
 					}
                 ]
-			}
-
+			},
+            {
+                "label": "Spring AI Alibaba 应用框架挑战赛开赛",
+                "translations": {
+                    "en": "Application Framework Challenge kicks off"
+                },
+                "link": "docs/developer/contributor-guide/application-framework-challenge-kicks/"
+            }
 		]
 	}
 
