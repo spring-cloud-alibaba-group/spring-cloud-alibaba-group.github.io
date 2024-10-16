@@ -6,9 +6,9 @@ import { getEntries } from "astro:content";
 
 // 吊顶提示文案
 export const TOPBAR = {
-    "text": "云栖回顾 | 2024 云栖大会微服务和网关相关演讲材料",
-    "mobileText": "云栖回顾 | 2024 云栖大会微服务和网关相关演讲材料",
-    "link": "https://developer.aliyun.com/ebook/8379",
+    "text": "总计30万奖金，Spring AI Alibaba 应用框架挑战赛开赛",
+    "mobileText": "总计30万奖金，Spring AI Alibaba 应用框架挑战赛开赛",
+    "link": "https://sca.aliyun.com/docs/developer/contributor-guide/application-framework-challenge-kicks/",
     "target": "_blank",
     "display": true
 }
