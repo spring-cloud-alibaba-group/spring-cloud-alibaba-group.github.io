@@ -67,6 +67,7 @@ export default {
 	'commmon.footer.actions.enterprise': 'Enterprise',
 	'commmon.footer.actions.mse': 'Cloud Service MSE',
 	'commmon.footer.actions.edas': 'Cloud Service EDAS',
+	'commmon.footer.friend.link': 'Friend Link',
 	'commmon.actions.download': 'Download',
 
 	'home.title': 'Spring Cloud Alibaba official website _ Springboot _ Microservices practical tutorial - Alibaba Cloud',
