@@ -69,7 +69,9 @@ export default {
 	'commmon.footer.actions.enterprise': '企业版',
 	'commmon.footer.actions.mse': '云服务 MSE',
 	'commmon.footer.actions.edas': '云服务 EDAS',
+	'commmon.footer.friend.link': '友情链接',
 	'commmon.actions.download': '下载',
+	
 
 	'home.title': 'Spring Cloud Alibaba官网_基于Springboot的微服务教程-阿里云',
 	'home.description': 'Spring Cloud Alibaba 为分布式应用开发提供一站式解决方案。它包含开发分布式应用程序所需的所有组件，使您可以轻松地使用 Spring Cloud 微服务框架开发应用程序。',
