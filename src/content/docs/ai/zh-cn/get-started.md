@@ -118,4 +118,4 @@ Spring AI Alibaba 实现了与阿里云通义模型的完整适配，接下来�
 ### 高级示例
 * [使用 RAG 开发 Q&A 答疑助手](./practices/rag)
 * [具备连续对话能力的聊天机器人](./practices/memory)
-*
+
