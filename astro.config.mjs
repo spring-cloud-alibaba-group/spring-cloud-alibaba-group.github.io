@@ -8,6 +8,7 @@ import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
 import preact from "@astrojs/preact";
 import rehypeExternalLinks from 'rehype-external-links'
+import compress from "astro-compress";
 
 import { remarkRemoveMdLinks, remarkRemovePlainLanguageCode, remarkRemoveRepeatHeader, addPrefixImageLink, setLinkReferrer } from './src/utils/frontmatter.mjs';
 import { ANALYTICS, SITE } from './src/utils/config.ts';
@@ -81,7 +82,8 @@ export default defineConfig({
 		...whenExternalScripts(() =>
 		partytown({
 		  config: { forward: ['dataLayer.push'] },
-		})
+		}),
+		compress()
 	  ),
 	],
 	markdown: {

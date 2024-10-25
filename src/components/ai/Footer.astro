@@ -1,8 +1,49 @@
 ---
 import { useTranslations } from "@i18n/util";
 import { LinkButton } from "@serverless-cd/goat-ui"
-import { SITE } from "@utils/config";
 const t = useTranslations(Astro);
+const friendLinks = [
+  { 
+    label: 'Nacos', 
+    link: 'https://nacos.io/' 
+  },
+  { 
+    label: 'SpringCloudAlibaba', 
+    link: 'https://sca.aliyun.com/' 
+  },
+  { 
+    label: 'Arthas', 
+    link: 'https://arthas.aliyun.com/' 
+  },
+  { 
+    label: 'Dubbo', 
+    link: 'https://cn.dubbo.apache.org/zh-cn/' 
+  },
+  { 
+    label: 'Sentinel', 
+    link: 'http://sentinelguard.io' 
+  },
+  { 
+    label: 'Higress', 
+    link: 'https://higress.io/' 
+  },
+  { 
+    label: 'RocketMQ', 
+    link: 'https://rocketmq.io/' 
+  },
+  { 
+    label: '可观测中文', 
+    link: 'https://observability.cn/' 
+  },
+  { 
+    label: 'OpenKruise', 
+    link: 'https://openkruise.io/' 
+  },
+  { 
+    label: 'serverless-devs', 
+    link: 'https://www.serverless-devs.com/' 
+  },
+];
 ---
 
 <footer-layout
@@ -132,6 +173,13 @@ const t = useTranslations(Astro);
   <div
     class="bottom_watermark text-[.875rem] text-info leading-6 text-center tracking-normal lg:pb-1 lg:pt-8"
   >
+    <p class="text-neutral-500 flex pb-4 flex-wrap gap-2 lg:gap-4 justify-center">
+      <!-- 友情链接 -->
+      {t('commmon.footer.friend.link')}：
+      {
+        friendLinks.map(item => <a href={item.link} target="_blank" class="hover:text-primary transition-colors">{item.label}</a>)
+      }
+    </p>
     © Spring Cloud Albaba Authors 2024 | Documentation Distributed under <a
       href="https://creativecommons.org/licenses/by/4.0"
       target="_blank">CC-BY-4.0</a
