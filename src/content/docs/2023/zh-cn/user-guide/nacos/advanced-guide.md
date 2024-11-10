@@ -10,13 +10,13 @@ description: Advanced, Nacos, Guide.
 
 ### profile 粒度的配置
 
-spring-cloud-starter-alibaba-nacos-config 在加载服务配置时：
+spring-cloud-starter-alibaba-nacos-config 在加载服务配置时，
 
 不仅仅加载了以 dataId 为 ${spring.application.name}.${file-extension:properties} 为前缀的基础配置，
 
 还加载了 dataId 为 ${spring.application.name}-${profile}.${file-extension:properties} 的基础配置。
 
-在日常开发中如果遇到多套环境下的不同配置，可以通过 Spring 提供的 ${spring.profiles.active} 这个配置项选择不同情况下的配置。
+在日常开发中如果遇到多套环境下的不同配置，可以通过 Spring 提供的 ${spring.profiles.active} 配置项选择不同开发环境下的配置。
 
 ```properties
 spring.profiles.active=develop
@@ -53,7 +53,7 @@ public class ProviderApplication {
 
 控制台输出结果如下：
 
-```markdown
+```text
 in develop-env enviroment; user name :nacos-config-yaml-update; age: 68
 2018-11-02 15:34:25.013 INFO 33014 --- [ Thread-11] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6f1c29b7: startup date [Fri Nov 02 15:33:57 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@63355449
 ```
@@ -64,7 +64,7 @@ in develop-env enviroment; user name :nacos-config-yaml-update; age: 68
 spring.profiles.active=product
 ```
 
-同时生产环境上 Nacos 需要添加对应 dataId 的基础配置。例如，在生成环境下的 Nacos 添加了 dataId 为：nacos-config-product.yaml 的配置：
+同时生产环境上 Nacos 需要添加对应 dataId 的基础配置。例如，在生产环境下的 Nacos 添加了 dataId 为：nacos-config-product.yaml 的配置：
 
 ```markdown
 Data ID: nacos-config-product.yaml
@@ -82,14 +82,14 @@ in product-env enviroment; user name :nacos-config-yaml-update; age: 68
 
 > Note:
 >
-> 此案例中我们通过 `spring.profiles.active=<profilename>` 的方式写死在配置文件中，而在真正的项目实施过程中这个变量的值是需要不同环境而有不同的值。这个时候通常的做法是通过 `-Dspring.profiles.active=<profile>` 参数指定其配置来达到环境间灵活的切换。
+> 此案例中我们通过 `spring.profiles.active=<profilename>` 的方式写死在配置文件中，而在真正的项目实施过程中这个变量的值是根据不同环境有不同的值。这个时候通常的做法是通过 `-Dspring.profiles.active=<profile>` 参数指定其配置来达到环境间配置的灵活切换。
 
 ### 自定义 Namespace 的配置
 
 Nacos 内部有 [Namespace](https://nacos.io/zh-cn/docs/concepts.html) 的概念:
 
-> 用于进行租户粒度的配置隔离。不同的命名空间下，可以存在相同的 Group 或 Data ID 的配置。Namespace 的常用场景之一是不同环境的配置的区分隔离，
-> 例如开发测试环境和生产环境的资源（如配置、服务）隔离等。
+> 用于进行租户粒度的配置隔离。不同的命名空间下，可以存在相同的 Group 或 Data ID 的配置。Namespace 的常用场景之一是不同环境下配置的区分隔离，
+> 例如开发环境和生产环境的资源（如配置、服务）隔离等。
 > 在没有明确指定 ${spring.cloud.nacos.config.namespace} 配置的情况下， 默认使用的是 Nacos 中 public 命名空间即默认的命名空间。如果需要使用自定义的命名空间，可以通过以下配置来实现：
 
 ```properties
@@ -124,9 +124,9 @@ Nacos Config 目前提供了三种配置能力从 Nacos 拉取相关的配置：
 
 当三种方式共同使用时，他们的一个优先级关系是: **_A < B < C_**
 
-### springc.config.import 引入
+### spring.config.import 引入
 
-这里假设有一个配置文件 bootstrap.yml，升级到 2021.0.1.0 以上的版本应该怎么配置呢？
+这里假设有一个配置文件 bootstrap.yml，升级到 2021.x 及以上的版本应该怎么配置呢？
 
 ```yml
 # bootstrap.yml
@@ -168,7 +168,7 @@ spring:
 1. 如果使用 spring.config.import 就不能使用 bootstrap.yml/properties 引入配置的方式了；
 2. 如果引入了 spring-cloud-starter-alibaba-nacos-config，并且使用 import 方式导入配置, 项目启动时会自动检测是否引入了 nacos 条目，如果没有 import nacos 条目，会出现如下错误：
 
-```markdown
+```text
 The spring.config.import property is missing a nacos: entry
 
 Action:
@@ -178,9 +178,9 @@ If configuration is not required add spring.config.import=optional:nacos: instea
 To disable this check, set spring.cloud.nacos.config.import-check.enabled=false.
 ```
 
-可以通过手动设置 spring.cloud.nacos.config.import-check.enabled=false 关闭它，但是不建议这么做，这个功能可以帮助你检查是否引入多余依赖
+可以通过手动设置 spring.cloud.nacos.config.import-check.enabled=false 关闭它，但是不建议这么做，这个功能可以帮助检查是否引入多余依赖。
 
-假如想保留以前的使用方式 ( bootstrap 引入配置)，你只需要添加依赖 spring-cloud-starter-bootstrap 依赖，不需要修改一行代码即可完成配置方式的切换！
+假如想保留以前的使用方式 (bootstrap 引入)，只需要添加依赖 spring-cloud-starter-bootstrap 依赖，不需要修改一行代码即可完成配置方式的切换！
 
 ### 配置项参考
 
