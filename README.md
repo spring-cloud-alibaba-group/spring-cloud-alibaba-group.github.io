@@ -7,7 +7,7 @@
 ### Environmental preparation
 
 > If you do not want to install the dependent components locally, refer to the following [How Docker Environments Work](#docker-mode).
-> The project source code is based on docusaurus v2.4.1, so to compile and run this project, you need to ensure that the Node. JS is installed.
+> The project source code is based on Docusaurus v2.4.1, so to compile and run this project, you need to ensure that the Node. JS is installed.
 
 - Node.js version 16.14+
 
