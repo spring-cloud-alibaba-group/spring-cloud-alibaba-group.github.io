@@ -27,7 +27,7 @@ spring.cloud.nacos.discovery.server-addr=127.0.0.1:8848
 则 Higress 的 McpBridge 中亦无需指定命名空间：
 
 ```yaml
-apiVersion: networking.higress.io/v1
+apiVersion: networking.higress.cn/v1
 kind: McpBridge
 metadata:
   name: default
@@ -54,7 +54,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
-    higress.io/destination: my-service.DEFAULT-GROUP.public.nacos
+    higress.cn/destination: my-service.DEFAULT-GROUP.public.nacos
   name: demo
   namespace: default
 spec:
@@ -63,14 +63,14 @@ spec:
       paths:
       - backend:
           resource:
-            apiGroup: networking.higress.io
+            apiGroup: networking.higress.cn
             kind: McpBridge
             name: default
         path: /api
         pathType: Prefix
 ```
 
-注意这里通过注解 `higress.io/destination` 指定路由最终要转发到的目标服务。
+注意这里通过注解 `higress.cn/destination` 指定路由最终要转发到的目标服务。
 
 对于 Nacos 来源的服务，这里的目标服务格式为：“服务名称.服务分组.命名空间 ID.nacos”，注意这里需要遵循 DNS 域名格式，因此服务分组中的下划线 '\_' 被转换成了横杠 '-'。命名空间未指定时，这里默认值为 "public"。
 
@@ -90,7 +90,7 @@ spring.cloud.nacos.discovery.group=custom-group
 则 Higress 的 McpBridge 做相应配置即可
 
 ```yaml
-apiVersion: networking.higress.io/v1
+apiVersion: networking.higress.cn/v1
 kind: McpBridge
 metadata:
   name: default
@@ -119,7 +119,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
-    higress.io/destination: my-service.custom-group.d8ac64f3-xxxx-xxxx-xxxx-47a814ecf358.nacos
+    higress.cn/destination: my-service.custom-group.d8ac64f3-xxxx-xxxx-xxxx-47a814ecf358.nacos
   name: demo
   namespace: default
 spec:
@@ -128,7 +128,7 @@ spec:
       paths:
       - backend:
           resource:
-            apiGroup: networking.higress.io
+            apiGroup: networking.higress.cn
             kind: McpBridge
             name: default
         path: /api
@@ -154,7 +154,7 @@ spring.cloud.zookeeper.discovery.register=true
 则 Higress 的 McpBridge 中亦无需指定 zkServicePath ：
 
 ```yaml
-apiVersion: networking.higress.io/v1
+apiVersion: networking.higress.cn/v1
 kind: McpBridge
 metadata:
   name: default
@@ -178,7 +178,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
-    higress.io/destination: my-service.services.zookeeper
+    higress.cn/destination: my-service.services.zookeeper
   name: demo
   namespace: default
 spec:
@@ -187,7 +187,7 @@ spec:
       paths:
       - backend:
           resource:
-            apiGroup: networking.higress.io
+            apiGroup: networking.higress.cn
             kind: McpBridge
             name: default
         path: /api
@@ -212,7 +212,7 @@ spring.cloud.zookeeper.discovery.root=my-services-root
 则 Higress 的 McpBridge 中亦需指定 zkServicePath ：
 
 ```yaml
-apiVersion: networking.higress.io/v1
+apiVersion: networking.higress.cn/v1
 kind: McpBridge
 metadata:
   name: default
@@ -239,7 +239,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
-    higress.io/destination: my-service.my-services-root.zookeeper
+    higress.cn/destination: my-service.my-services-root.zookeeper
   name: demo
   namespace: default
 spec:
@@ -248,7 +248,7 @@ spec:
       paths:
       - backend:
           resource:
-            apiGroup: networking.higress.io
+            apiGroup: networking.higress.cn
             kind: McpBridge
             name: default
         path: /api

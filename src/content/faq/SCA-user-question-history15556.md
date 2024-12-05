@@ -34,7 +34,7 @@ spring.cloud.nacos.discovery.group=your-group
 - 在 Kubernetes 集群中创建 `McpBridge` 资源对象，指定 Nacos 作为注册中心，包括 Nacos 地址、端口、命名空间 ID（如果有）、服务分组等信息。
 
 ```yaml
-apiVersion: networking.higress.io/v1
+apiVersion: networking.higress.cn/v1
 kind: McpBridge
 metadata:
   name: default
@@ -52,14 +52,14 @@ spec:
 ```
 
 ### 4. **定义路由规则**
-- 通过 Kubernetes 的 Ingress 资源来定义路由规则，指定服务的转发目标。这里利用 `higress.io/destination` 注解指向 Nacos 中的服务实例。
+- 通过 Kubernetes 的 Ingress 资源来定义路由规则，指定服务的转发目标。这里利用 `higress.cn/destination` 注解指向 Nacos 中的服务实例。
 
 ```yaml
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
-    higress.io/destination: service-name.group-id.namespace-id.nacos
+    higress.cn/destination: service-name.group-id.namespace-id.nacos
   name: demo-route
   namespace: default
 spec:
@@ -70,7 +70,7 @@ spec:
         pathType: Prefix
         backend:
           resource:
-            apiGroup: networking.higress.io
+            apiGroup: networking.higress.cn
             kind: McpBridge
             name: default
 ```
@@ -78,7 +78,7 @@ spec:
 ### 解释：
 - **服务注册**：应用启动时向 Nacos 注册服务，提供服务地址和元数据。
 - **配置 Higress**：Higress 通过 McpBridge 配置与 Nacos 集成，使得 Higress 能够从 Nacos 获取服务列表。
-- **动态路由**：Ingress 规则中通过 `higress.io/destination` 注解直接引用 Nacos 中的服务实例，实现了动态路由配置。当 Nacos 中的服务实例变化时，Higress 能自动感知并调整路由规则，无需手动干预。
+- **动态路由**：Ingress 规则中通过 `higress.cn/destination` 注解直接引用 Nacos 中的服务实例，实现了动态路由配置。当 Nacos 中的服务实例变化时，Higress 能自动感知并调整路由规则，无需手动干预。
 
 通过以上步骤，Spring Cloud Gateway 成功地与 Nacos 集成，实现了服务发现与动态路由配置，提高了微服务架构的灵活性和可维护性。
 

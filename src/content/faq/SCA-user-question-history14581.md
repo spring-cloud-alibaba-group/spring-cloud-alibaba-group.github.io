@@ -23,7 +23,7 @@ keywords: ["sca","spring-cloud-alibaba","higress","spring","cloud","gateway","�
    - 在 Kubernetes 集群中部署 Higress 控制器。
    - 创建 `McpBridge` 资源以连接到 Nacos 注册中心。根据您的需求，定义命名空间、服务分组等信息。例如，若不指定命名空间和自定义分组，配置如下 YAML 示例所示的 `McpBridge` 资源：
      ```yaml
-     apiVersion: networking.higress.io/v1
+     apiVersion: networking.higress.cn/v1
      kind: McpBridge
      metadata:
        name: default
@@ -46,7 +46,7 @@ keywords: ["sca","spring-cloud-alibaba","higress","spring","cloud","gateway","�
      kind: Ingress
      metadata:
        annotations:
-         higress.io/destination: my-service.DEFAULT-GROUP.public.nacos
+         higress.cn/destination: my-service.DEFAULT-GROUP.public.nacos
        name: demo
        namespace: default
      spec:
@@ -55,7 +55,7 @@ keywords: ["sca","spring-cloud-alibaba","higress","spring","cloud","gateway","�
              paths:
                - backend:
                    resource:
-                     apiGroup: networking.higress.io
+                     apiGroup: networking.higress.cn
                      kind: McpBridge
                      name: default
                  path: /api

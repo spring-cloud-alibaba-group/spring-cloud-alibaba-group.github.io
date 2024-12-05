@@ -23,7 +23,7 @@ keywords: ["sca","spring-cloud-alibaba","higress","集成",""]
    - 在Kubernetes集群中部署Higress及其相关资源。创建一个`McpBridge`资源来定义Nacos作为服务注册中心。根据你的需求，决定是否在`application.properties`中指定命名空间和服务分组，并相应地配置Higress的`McpBridge`。示例配置已在参考内容中给出，确保`domain`、`port`、以及如果有指定的`nacosNamespaceId`和`nacosGroups`配置正确。
 
 3. **定义Ingress规则**：
-   - 创建或更新Kubernetes的`Ingress`资源来指定路由规则，将特定路径的请求转发到由Nacos管理的服务实例。利用`higress.io/destination`注解指定目标服务，格式遵循“服务名称.服务分组.命名空间ID.nacos”。例如，如果你的服务名为`my-service`，分组为`DEFAULT_GROUP`，且未特别指定命名空间ID，则应如示例所示配置。
+   - 创建或更新Kubernetes的`Ingress`资源来指定路由规则，将特定路径的请求转发到由Nacos管理的服务实例。利用`higress.cn/destination`注解指定目标服务，格式遵循“服务名称.服务分组.命名空间ID.nacos”。例如，如果你的服务名为`my-service`，分组为`DEFAULT_GROUP`，且未特别指定命名空间ID，则应如示例所示配置。
 
 4. **验证服务发现与路由**：
    - 应用所有配置更改后，确保所有服务包括Higress都正常运行。随后，尝试访问配置的路由前缀（如/api），验证请求是否被正确路由到由Nacos注册的服务实例上。

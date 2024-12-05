@@ -76,7 +76,7 @@ spring.application.name=your-grpc-service
 如果您在Kubernetes环境中使用Higress作为网关，参照之前的知识内容，确保正确配置了McpBridge以识别Nacos中的服务实例，并且路由规则正确指向了gRPC服务。
 
 ```yaml
-apiVersion: networking.higress.io/v1
+apiVersion: networking.higress.cn/v1
 kind: McpBridge
 metadata:
   name: default

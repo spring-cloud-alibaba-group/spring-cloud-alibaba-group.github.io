@@ -27,7 +27,7 @@ keywords: ["sca","spring-cloud-alibaba","集成","higress"]
    - 在 Kubernetes 环境中，你需要创建一个 `McpBridge` 资源来定义 Nacos 作为服务注册中心的配置。这包括指定 Nacos 的访问地址、端口、命名空间ID（如果有指定）和服务分组。
 
    ```yaml
-   apiVersion: networking.higress.io/v1
+   apiVersion: networking.higress.cn/v1
    kind: McpBridge
    metadata:
      name: default
@@ -52,7 +52,7 @@ keywords: ["sca","spring-cloud-alibaba","集成","higress"]
    kind: Ingress
    metadata:
      annotations:
-       higress.io/destination: ${你的服务名称}.${你的服务分组}.${你的命名空间ID}.nacos
+       higress.cn/destination: ${你的服务名称}.${你的服务分组}.${你的命名空间ID}.nacos
      name: demo
      namespace: default
    spec:
@@ -61,7 +61,7 @@ keywords: ["sca","spring-cloud-alibaba","集成","higress"]
          paths:
          - backend:
              resource:
-               apiGroup: networking.higress.io
+               apiGroup: networking.higress.cn
                kind: McpBridge
                name: default
            path: /你的路径前缀

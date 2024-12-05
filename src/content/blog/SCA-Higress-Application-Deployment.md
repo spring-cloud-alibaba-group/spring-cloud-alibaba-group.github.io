@@ -17,7 +17,7 @@ Higress 是阿里巴巴开源的一款下一代云原生微服务网关。Higres
 
 ### 前提条件
 
-1. 安装 Higress，并安装 Istio CRD，参考[Higress 安装部署文档](https://higress.io/zh-cn/docs/ops/deploy-by-helm/#%E6%94%AF%E6%8C%81-istio-crd%E5%8F%AF%E9%80%89)。
+1. 安装 Higress，并安装 Istio CRD，参考[Higress 安装部署文档](https://higress.cn/zh-cn/docs/ops/deploy-by-helm/#%E6%94%AF%E6%8C%81-istio-crd%E5%8F%AF%E9%80%89)。
 2. 安装 Naocs，参考[Nacos 安装部署文档](https://nacos.io/zh-cn/docs/v2/quickstart/quick-start.html)。
 
 Higress 支持将 Nacos，Spring Cloud 应用部署于 K8s 集群内，或者独立于 K8s 进行部署。为了演示方便，本文将 Higress，Nacos，Spring Cloud 应用都部署在本地 K8s 集群。
@@ -64,7 +64,7 @@ spring.cloud.nacos.discovery.metadata.version=${SPRING_CLOUD_NACOS_DEMO_VERSION}
 ### 配置服务来源
 
 Higress 支持多种服务来源，包括 Nacos/Zookeeper/DNS/固定 IP，通过创建 Nacos 服务来源，Higress 就可以发现注册到 Nacos 上的服务，从而完成转发请求到这些服务上。
-进入 Higress 控制台（[http://console.higress.io/](http://console.higress.io/)）,点击 **服务来源-创建服务来源 **以创建服务来源。这里选择 Nacos 2.X，然后填写注册中心的地址，端口，命名空间，服务分组等信息。注册中心的地址可以填写 ip 或者域名，本文将 Nacos 部署在本地 K8s 中，通过 K8s service 暴露 Nacos 端口，因此这里填写对应的 service 域名。
+进入 Higress 控制台（[http://console.higress.cn/](http://console.higress.cn/)）,点击 **服务来源-创建服务来源 **以创建服务来源。这里选择 Nacos 2.X，然后填写注册中心的地址，端口，命名空间，服务分组等信息。注册中心的地址可以填写 ip 或者域名，本文将 Nacos 部署在本地 K8s 中，通过 K8s service 暴露 Nacos 端口，因此这里填写对应的 service 域名。
 ![image.png](/img/1728554001427.png)
 配置好 Nacos 服务来源后，我们可以在**服务列表**中看到我们刚刚部署好的应用。
 ![image.png](/img/1728554001750.png)
@@ -80,7 +80,7 @@ Higress 支持多种服务来源，包括 Nacos/Zookeeper/DNS/固定 IP，通过
 
 接下来我们就可以用配置好的路由来访问 Spring Cloud 应用了，在请求时需要将 demo.springcloud.com 域名解析到本地 ip，如下所示，可以成功得到返回结果。
 ![image.png](/img/1728554002730.png)
-注：如果您将 Higress 的 80 和 443 端口通过 LoadBalancer 的方式暴露出来，这里需要将本地 ip 替换为对应 LoadBalancer 的 ip，详见[Higress 快速开始文档](https://higress.io/zh-cn/docs/user/quickstart#%E5%9C%BA%E6%99%AF%E4%B8%80%E5%9C%A8%E6%A0%87%E5%87%86-k8s-%E9%9B%86%E7%BE%A4%E4%B8%AD%E4%BD%BF%E7%94%A8)。
+注：如果您将 Higress 的 80 和 443 端口通过 LoadBalancer 的方式暴露出来，这里需要将本地 ip 替换为对应 LoadBalancer 的 ip，详见[Higress 快速开始文档](https://higress.cn/zh-cn/docs/user/quickstart#%E5%9C%BA%E6%99%AF%E4%B8%80%E5%9C%A8%E6%A0%87%E5%87%86-k8s-%E9%9B%86%E7%BE%A4%E4%B8%AD%E4%BD%BF%E7%94%A8)。
 
 ## 利用 Higress 进行蓝绿发布
 
@@ -148,18 +148,18 @@ spec:
 
 新版本应用上线后，我们需要把流量全部切到新版本应用中去，这时只需要简单地修改一下我们在 1.3 中创建的路由即可。我们可以在本地 K8s 集群中找到如下 ingress 资源，这对应了我们在 1.3 中创建的那条路由。
 ![image.png](/img/1728554004176.png)
-我们直接编辑这条 ingress 资源，将 `higress.io/destination` 这条 annotation 的 value 改为 `service-provider.DEFAULT-GROUP.public.nacos v2`，即可将路由的目标服务修改为 v2 子集。
+我们直接编辑这条 ingress 资源，将 `higress.cn/destination` 这条 annotation 的 value 改为 `service-provider.DEFAULT-GROUP.public.nacos v2`，即可将路由的目标服务修改为 v2 子集。
 
 ```yaml
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
-    higress.io/destination: service-provider.DEFAULT-GROUP.public.nacos v2
-    higress.io/ignore-path-case: "false"
+    higress.cn/destination: service-provider.DEFAULT-GROUP.public.nacos v2
+    higress.cn/ignore-path-case: "false"
   labels:
-    higress.io/domain_demo.springcloud.com: "true"
-    higress.io/resource-definer: higress
+    higress.cn/domain_demo.springcloud.com: "true"
+    higress.cn/resource-definer: higress
   name: demo
   namespace: higress-system
 spec:
@@ -170,7 +170,7 @@ spec:
         paths:
           - backend:
               resource:
-                apiGroup: networking.higress.io
+                apiGroup: networking.higress.cn
                 kind: McpBridge
                 name: default
             path: /version
@@ -181,7 +181,7 @@ spec:
 
 我们再发送请求，可以看到此时得到的是 v2 版本应用的返回结果，如此便实现了新版本的上线发布。
 ![image.png](/img/1728554004391.png)
-如果发现已上线的新版本出现问题需要回滚，只需要修改 ingress 路由中的 `higress.io/destination`，将值更改为 `service-provider.DEFAULT-GROUP.public.nacos v1` 即可完成回滚。
+如果发现已上线的新版本出现问题需要回滚，只需要修改 ingress 路由中的 `higress.cn/destination`，将值更改为 `service-provider.DEFAULT-GROUP.public.nacos v1` 即可完成回滚。
 
 ## 利用 Higress 进行金丝雀发布
 
@@ -190,12 +190,12 @@ spec:
 
 ### 修改 ingress 路由规则
 
-Higress 可以通过一条 Ingress 注解轻松完成应用的金丝雀发布。我们编辑 2.3 中的 ingress 资源，将 ingress 中的 `higress.io/destination` 注解按如下方式进行修改：
+Higress 可以通过一条 Ingress 注解轻松完成应用的金丝雀发布。我们编辑 2.3 中的 ingress 资源，将 ingress 中的 `higress.cn/destination` 注解按如下方式进行修改：
 
 ```yaml
 metadata:
   annotations:
-    higress.io/destination: |
+    higress.cn/destination: |
       80% service-provider.DEFAULT-GROUP.public.nacos v1
       20% service-provider.DEFAULT-GROUP.public.nacos v2
 ```
@@ -215,12 +215,12 @@ A/B 测试基于用户请求的元信息将流量路由到新版本，这是一�
 
 ### 修改 ingress 路由规则
 
-在本示例中，我们通过 HTTP header 中的 User-Agent 对流量进行区分，将 Android 系统的流量转发到 v2 版本，其他系统的流量仍保持 v1 版本。首先修改 2.3 中名叫 demo 的 ingress 资源，将 `higress.io/destination` 修改为 v1 版本，代表目前线上的流量全部会打到原来的 v1 版本：
+在本示例中，我们通过 HTTP header 中的 User-Agent 对流量进行区分，将 Android 系统的流量转发到 v2 版本，其他系统的流量仍保持 v1 版本。首先修改 2.3 中名叫 demo 的 ingress 资源，将 `higress.cn/destination` 修改为 v1 版本，代表目前线上的流量全部会打到原来的 v1 版本：
 
 ```yaml
 metadata:
   annotations:
-    higress.io/destination: service-provider.DEFAULT-GROUP.public.nacos v1
+    higress.cn/destination: service-provider.DEFAULT-GROUP.public.nacos v1
 ```
 
 当新版本部署完成后，再新建一条如下所示的 ingress 路由。这里采用正则匹配的方式，当 User-Agent 中含有 Android 时，将请求转发到 v2 版本的服务。
@@ -229,14 +229,14 @@ metadata:
 kind: Ingress
 metadata:
   annotations:
-    higress.io/destination: service-provider.DEFAULT-GROUP.public.nacos v2
-    higress.io/canary: "true"
-    higress.io/canary-by-header: "User-Agent"
-    higress.io/canary-by-header-pattern: ".*Android.*"
-    higress.io/ignore-path-case: "false"
+    higress.cn/destination: service-provider.DEFAULT-GROUP.public.nacos v2
+    higress.cn/canary: "true"
+    higress.cn/canary-by-header: "User-Agent"
+    higress.cn/canary-by-header-pattern: ".*Android.*"
+    higress.cn/ignore-path-case: "false"
   labels:
-    higress.io/domain_demo.springcloud.com: "true"
-    higress.io/resource-definer: higress
+    higress.cn/domain_demo.springcloud.com: "true"
+    higress.cn/resource-definer: higress
   name: demo-ab
   namespace: higress-system
 spec:
@@ -247,7 +247,7 @@ spec:
         paths:
           - backend:
               resource:
-                apiGroup: networking.higress.io
+                apiGroup: networking.higress.cn
                 kind: McpBridge
                 name: default
             path: /version
@@ -258,7 +258,7 @@ spec:
 
 可以看到来自 Android 系统的请求被转发到了 v2 版本，其余系统仍访问 v1 版本。
 ![image.png](/img/1728554005783.png)
-当新版本验证完毕需要全量上线时，只需要将 demo 路由的 `higress.io/destination` 注解修改为 v2 版本，并删除 demo-ab 路由，这样所有流量就都会访问 v2 版本了。
+当新版本验证完毕需要全量上线时，只需要将 demo 路由的 `higress.cn/destination` 注解修改为 v2 版本，并删除 demo-ab 路由，这样所有流量就都会访问 v2 版本了。
 
 ## 加入 Higress 和 Spring Cloud Aliaba 社区
 

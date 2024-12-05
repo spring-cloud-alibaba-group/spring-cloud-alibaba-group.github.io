@@ -34,7 +34,7 @@ Higress 网关在这里扮演了微服务网关的角色，它能够与 Nacos �
 在 Kubernetes 环境中，你需要创建一个 `McpBridge` 资源对象来定义如何与 Nacos 交互。这个配置会告诉 Higress 如何从 Nacos 服务列表中发现并路由到后端服务。示例配置如下：
 
 ```yaml
-apiVersion: networking.higress.io/v1
+apiVersion: networking.higress.cn/v1
 kind: McpBridge
 metadata:
   name: default
@@ -53,14 +53,14 @@ spec:
 
 #### 2.2. 创建 Ingress 规则
 
-接下来，定义 Ingress 规则来指定请求的路由规则。通过在 Ingress 的注解中指定 `higress.io/destination`，可以定义请求应该被转发到哪个服务。例如，将 `/api` 前缀的请求路由到名为 `my-service` 的服务：
+接下来，定义 Ingress 规则来指定请求的路由规则。通过在 Ingress 的注解中指定 `higress.cn/destination`，可以定义请求应该被转发到哪个服务。例如，将 `/api` 前缀的请求路由到名为 `my-service` 的服务：
 
 ```yaml
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
-    higress.io/destination: my-service.DEFAULT-GROUP.public.nacos
+    higress.cn/destination: my-service.DEFAULT-GROUP.public.nacos
   name: demo
   namespace: default
 spec:
@@ -71,14 +71,14 @@ spec:
         pathType: Prefix
         backend:
           resource:
-            apiGroup: networking.higress.io
+            apiGroup: networking.higress.cn
             kind: McpBridge
             name: default
 ```
 
 ### 3. 动态路由的实现原理
 
-Higress 网关通过查询 Nacos 注册中心，获取到所有注册的服务实例列表。当有请求到达网关时，根据 Ingress 中配置的路由规则，如 `higress.io/destination`，找到对应的服务实例，并将请求透明地转发到该实例上。这样，每当 Nacos 中的服务实例发生变化时（比如新增或下线），Higress 网关都能自动感知并调整路由策略，实现了动态路由。
+Higress 网关通过查询 Nacos 注册中心，获取到所有注册的服务实例列表。当有请求到达网关时，根据 Ingress 中配置的路由规则，如 `higress.cn/destination`，找到对应的服务实例，并将请求透明地转发到该实例上。这样，每当 Nacos 中的服务实例发生变化时（比如新增或下线），Higress 网关都能自动感知并调整路由策略，实现了动态路由。
 
 ### 4. 结论
 
