@@ -7,7 +7,7 @@
 ### 环境准备
 
 > 如果不想在本地安装依赖组件，可参考下文 [Docker 环境运行方式](#docker-方式运行)。
-> 项目源码基于 docusaurus v2.4.1 构建，因此要编译运行本项目需确保安装 Node.js 。
+> 项目源码基于 Docusaurus v2.4.1 构建，因此要编译运行本项目需确保安装 Node.js 。
 
 - Node.js version 16.14+
 
