@@ -2,7 +2,7 @@ name: Upload to OSS
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["develop-astro-sca"]
+    branches: ["main"]
 
 jobs:
   upload-to-oss:
