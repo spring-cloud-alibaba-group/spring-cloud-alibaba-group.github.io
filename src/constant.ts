@@ -6,9 +6,9 @@ import { getEntries } from "astro:content";
 
 // 吊顶提示文案
 export const TOPBAR = {
-    "text": "总计30万奖金，Spring AI Alibaba 应用框架挑战赛开赛",
-    "mobileText": "总计30万奖金，Spring AI Alibaba 应用框架挑战赛开赛",
-    "link": "https://sca.aliyun.com/docs/developer/contributor-guide/application-framework-challenge-kicks/",
+    "text": "铭师堂的云原生升级实践",
+    "mobileText": "铭师堂的云原生升级实践",
+    "link": "https://sca.aliyun.com/blog/sca-gvr7dx_awbbpb_ral75a2omuhugqd5/?spm=5176.29160081.0.0.74805c72AGrDlB\u0026source=blog/",
     "target": "_blank",
     "display": true
 }
