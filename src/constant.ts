@@ -449,13 +449,6 @@ export const ProductDisplayCardData = [
     href: "docs/2023/user-guide/seata/quick-start/",
   },
   {
-    cover: "https://img.alicdn.com/imgextra/i2/O1CN01HzKXZY29J7h0UIGJ5_!!6000000008046-0-tps-1000-1500.jpg",
-    coverPosition: "bottom",
-    title: "Spring AI",
-    body: "home.introduction.card.AI.des",
-    href: "docs/2023/user-guide/ai/quick-start/",
-  },
-  {
     cover: "https://img.alicdn.com/imgextra/i2/O1CN01k1amBw1U0RHtPPlvH_!!6000000002455-0-tps-1000-1500.jpg",
     coverPosition: "bottom",
     title: "Spring Boot",

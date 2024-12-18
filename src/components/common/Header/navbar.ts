@@ -56,14 +56,4 @@ export default [
     relativePosition: 'page',
     activePath: ["/learn"],
   },
-  {
-    label: "Spring AI Alibaba",
-    translations: {
-      en: "Spring AI Alibaba",
-    },
-    trigger: "click",
-    target: "_self",
-    route: "/ai/",
-    activePath: ["/ai/"],
-  },
 ];
