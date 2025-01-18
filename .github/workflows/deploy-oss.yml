@@ -19,6 +19,8 @@ jobs:
       with:
         node-version: 18
         registry-url: https://registry.npmjs.org/
+    - name: Install And Build
+      run: npm i && npm run build
     - name: Install ossutil
       run: |
         curl -L http://gosspublic.alicdn.com/ossutil/1.7.0/ossutil64 -o /tmp/ossutil64
