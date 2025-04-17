@@ -6,9 +6,9 @@ import { getEntries } from "astro:content";
 
 // 吊顶提示文案
 export const TOPBAR = {
-    "text": "铭师堂的云原生升级实践",
-    "mobileText": "铭师堂的云原生升级实践",
-    "link": "https://sca.aliyun.com/blog/sca-gvr7dx_awbbpb_ral75a2omuhugqd5/?spm=5176.29160081.0.0.74805c72AGrDlB\u0026source=blog/",
+    "text": "下载《AI 应用 \u0026 AI Agent 开发新范式》电子书，了解构建 AI Agent 和 MCP Server 的一线实践。",
+    "mobileText": "下载《AI 应用 \u0026 AI Agent 开发新范式》电子书，了解构建 AI Agent 和 MCP Server 的一线实践。",
+    "link": "https://developer.aliyun.com/ebook/8442",
     "target": "_blank",
     "display": false
 }
