@@ -50,6 +50,8 @@ Nacos Server 启动成功之后，浏览器地址栏输入 `http://ip:8848/nacos
        import:
          - nacos:nacos-config-example.properties?refreshEnabled=true
    ```
+   * 2023.0.1.3 及以上版本 `spring.cloud.nacos.config.shared-configs`、`extension-configs` 以及默认加载的 `application.name` 配置已经废弃， 以上版本请统一使用 `spring.config.import` 方式导入 Nacos 配置，见issue [#3998](https://github.com/alibaba/spring-cloud-alibaba/issues/3998)
+   * `bootstrap.yml` 以及 `bootstrap.properties` 已不推荐使用，请使用 `application.yml` 或者 `application.properties`
 
 3. 完成上述两步后，应用会从 Nacos Server 中获取相应的配置，并添加在 Spring Environment 的 PropertySources 中。假设我们通过 Nacos 作为配置中心保存应用服务的部分配置，有以下几种方式实现：
 
