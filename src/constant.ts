@@ -6,9 +6,9 @@ import { getEntries } from "astro:content";
 
 // 吊顶提示文案
 export const TOPBAR = {
-    "text": "新一代 Agentic Coding 平台 Qoder 来了",
-    "mobileText": "新一代 Agentic Coding 平台 Qoder 来了",
-    "link": "https://qoder.com/",
+    "text": "阿里云发布《AI 原生应用架构白皮书》",
+    "mobileText": "阿里云发布《AI 原生应用架构白皮书》",
+    "link": "https://developer.aliyun.com/ebook/8479",
     "target": "_blank",
     "display": false
 }
