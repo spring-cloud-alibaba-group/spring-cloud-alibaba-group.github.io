@@ -9,6 +9,8 @@ const starlightPath = path.join(curDirname, 'node_modules/@astrojs/starlight');
 // 获取docs目录下的一级文件夹
 let docsFile = await fs.readdir('src/content/docs');
 docsFile = docsFile.filter((item) => item !== '.DS_Store')
+// 按长度降序排序，确保正则匹配时长模式优先（如 2025.1.x 在 2025 之前匹配）
+docsFile.sort((a, b) => b.length - a.length)
 
 /**
  * @description: 替换 utils/route-data.ts
@@ -30,14 +32,51 @@ const replaceRouteData = async () => {
  *
  */
 const replaceNavigation = async () => {
+	const originFile = path.join(starlightPath, "/utils/navigation.ts");
+	const originContent = (await fs.readFile(originFile)).toString();
+	const isPatched = originContent.includes('categories: any');
+
+	if (isPatched) {
+		/**
+		 * 已经打过补丁，只需更新版本列表
+		 * 从 versionRegex 行提取旧版本列表，然后全部替换为新列表
+		 */
+		let content = originContent;
+		const versionMatch = content.match(/versionRegex = \/.*?\(([^)]+)\)/);
+		if (versionMatch && versionMatch[1]) {
+			const oldList = versionMatch[1];
+			const newList = docsFile.join('|');
+			if (oldList !== newList) {
+				content = content.replaceAll(oldList, newList);
+			}
+		}
+
+		// linkFromRoute 的正则已经是幂等的，可以直接重新应用
+		const linkFromRouteRegex = /function linkFromRoute\(route: Route, currentPathname: string\): Link {[\s\S]*?}/;
+		content = content.replace(
+			linkFromRouteRegex,
+			`function linkFromRoute(route: Route, currentPathname: string): Link {
+			return makeLink(
+				slugToPathname(route.slug,route.id),
+				route.entry.data.sidebar.label || route.entry.data.title,
+				currentPathname,
+				route.entry.data.sidebar.badge,
+				route.entry.data.sidebar.attrs
+			);
+		}\n`
+		);
+
+		await fs.writeFile(originFile, content);
+		return;
+	}
+
 	/**
+	 * 首次打补丁 - 原始逻辑
 	 * 获取当前页面的 sidebar， 左侧菜单动态加载
 	 * 根据页面路由获取sidebar
 	 */
-	const originFile = path.join(starlightPath, "/utils/navigation.ts");
-	const originContent = await fs.readFile(originFile);
 	const sideBarRegex = /export function getSidebar\(pathname\: string\, locale\: string \| undefined\).+\n(.+)/;
-	const sideBarContent = originContent.toString().replace(
+	const sideBarContent = originContent.replace(
 		sideBarRegex,
 		`export function getSidebar(pathname: string, locale: string | undefined, categories: any): SidebarEntry[] {
 		const routes = getLocaleRoutes(locale);
@@ -131,19 +170,39 @@ const replace404Astro = async () => {
  */
 const replaceSlugs = async () => {
 	const originFile = path.join(starlightPath, "/utils/slugs.ts");
-	const originContent = await fs.readFile(originFile);
+	const originContent = (await fs.readFile(originFile)).toString();
+
+	// 动态计算需要特殊处理的版本：名称中包含 . 的版本目录 + developer + ebook
+	const dotVersions = docsFile.filter(f => f.includes('.'));
+	const slugVersionList = [...dotVersions, 'developer', 'ebook'].join('|');
+
+	const isPatched = originContent.includes('slugToPathname(slug: string, id: string)');
+
+	if (isPatched) {
+		/**
+		 * 已经打过补丁，只需更新版本正则
+		 */
+		let content = originContent;
+		content = content.replace(
+			/const regex = \/([^/]+)\/;/,
+			`const regex = /${slugVersionList}/;`
+		);
+		await fs.writeFile(originFile, content);
+		return;
+	}
 
 	/**
+	 * 首次打补丁 - 原始逻辑
 	 * 获取当前页面的 id，生成正确的 pathname
 	 * 主要为2.2.x版本的autogenerate生成正确的sidebar
 	 */
 	const linkFromRouteRegex = /export function slugToPathname\(slug\: string\)\: string {[\s\S]*?}/;
-	const linkFromRouteContent = originContent.toString().replace(
+	const linkFromRouteContent = originContent.replace(
 		linkFromRouteRegex,
 		`export function slugToPathname(slug: string, id: string): string {
 			// 2.2.x/zh-cn/overview/version-explain.md
 			let param = slugToParam(slug);
-			const regex = /2.2.x|developer|ebook/;
+			const regex = /${slugVersionList}/;
 			const [curVersion,lang, ...rest] = id.split('/');
 			const match = regex.exec(curVersion);
 			if (match) {
