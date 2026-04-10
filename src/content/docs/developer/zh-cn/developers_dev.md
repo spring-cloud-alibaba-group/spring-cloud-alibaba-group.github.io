@@ -34,6 +34,7 @@ description: Spring Cloud Alibaba 维护者名单
 | 阮胜      | ruansheng8    | Committer | chrisruans@gmail.com    | 智业软件股份有限公司   |
 | 刘子明    | 123liuziming  | Committer | 448918299@qq.com        | 北京大学研究生         |
 | 姬世文    | yuluo-yx      | Committer | karashouk.pan@gmail.com | ~                      |
+| 徐晓伟    | xuxiaowei-com-cn | Committer | xuxiaowei@xuxiaowei.com.cn | ~                   |
 
 ## 社区角色与晋升机制
 
