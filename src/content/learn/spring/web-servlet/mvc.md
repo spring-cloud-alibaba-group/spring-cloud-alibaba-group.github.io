@@ -3462,8 +3462,6 @@ Scripting Engine
 
 [Nashorn](http://openjdk.java.net/projects/nashorn/)
 
-[EJS](http://www.embeddedjs.com/)
-
 [Nashorn](http://openjdk.java.net/projects/nashorn/)
 
 [ERB](http://www.stuartellis.eu/articles/erb/)
