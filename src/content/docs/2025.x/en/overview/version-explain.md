@@ -11,10 +11,11 @@ The 2025.x branch includes two major version lines, each adapted to different Sp
 
 ### 2025.1.x
 
-Adapted to Spring Boot 4.0.x and Spring Cloud 2025.1.x.
+Adapted to Spring Boot 4.1.x and Spring Cloud 2025.1.x.
 
 | Spring Cloud Alibaba Version | Spring Cloud Version | Spring Boot Version |
 |------------------------------| -------------------- | ------------------- |
+| 2025.1.0.1                   | 2025.1.2             | 4.1.0               |
 | 2025.1.0.0                   | 2025.1.0             | 4.0.0               |
 
 ### 2025.0.x
@@ -23,6 +24,7 @@ Adapted to Spring Boot 3.5.x and Spring Cloud 2025.0.x.
 
 | Spring Cloud Alibaba Version | Spring Cloud Version | Spring Boot Version |
 |------------------------------| -------------------- | ------------------- |
+| 2025.0.0.1                   | 2025.0.0             | 3.5.0               |
 | 2025.0.0.0                   | 2025.0.0             | 3.5.0               |
 
 ## Component Version Relationship
@@ -31,5 +33,7 @@ Each Spring Cloud Alibaba version and the corresponding component versions it ad
 
 | Spring Cloud Alibaba Version | Sentinel Version | Nacos Version | RocketMQ Version | SchedulerX Version | Seata Version |
 |------------------------------| ---------------- | ------------- | ---------------- | ------------------ | ------------- |
+| 2025.1.0.1                   | 1.8.10           | 3.1.1         | 5.3.1            | 1.14.2             | 2.6.0         |
 | 2025.1.0.0                   | 1.8.9            | 3.1.1         | 5.3.1            | 1.13.3             | 2.5.0         |
+| 2025.0.0.1                   | 1.8.10           | 3.1.1         | 5.3.1            | 1.14.2             | 2.5.0         |
 | 2025.0.0.0                   | 1.8.9            | 3.0.3         | 5.3.1            | 1.13.1             | 2.5.0         |

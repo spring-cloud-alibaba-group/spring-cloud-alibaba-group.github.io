@@ -54,7 +54,7 @@ The version features are as follows:
 
 - [2025.0.x](https://github.com/alibaba/spring-cloud-alibaba/tree/2025.0.x): Adapted to Spring Boot 3.5.x and Spring Cloud 2025.0.x.
 
-- [2025.1.x](https://github.com/alibaba/spring-cloud-alibaba/tree/2025.1.x): Adapted to Spring Boot 4.0.x and Spring Cloud 2025.1.x.
+- [2025.1.x](https://github.com/alibaba/spring-cloud-alibaba/tree/2025.1.x): Adapted to Spring Boot 4.1.x and Spring Cloud 2025.1.x.
 
 ---
 
