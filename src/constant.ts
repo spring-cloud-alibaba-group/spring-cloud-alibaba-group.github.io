@@ -30,6 +30,16 @@ export const DOCS_BANNER = {
 // TODO: 文档Header数据
 export const DOCS_ITEM = [
   {
+    key: "2026.x",
+    label: "2026.x",
+    target: "_self",
+    link: "/docs/2026.x/overview/what-is-sca/",
+    translations: {
+      en: "2026.x",
+      link: "/en/docs/2026.x/overview/what-is-sca/",
+    }
+  },
+  {
     key: "2025.x",
     label: "2025.x",
     target: "_self",
