@@ -281,7 +281,7 @@ Nacos 配置管理示例源码参考：[Nacos 配置管理示例](https://github
 
 本章节只是为了便于您理解接入方式，此处只涉及 Ribbon、RestTemplate、FeignClient 相关内容，如果已经使用了其他服务发现组件，可以通过直接替换依赖来接入 spring-cloud-starter-alibaba-nacos-config。
 
-1. 添加 @LoadBlanced 注解，使得 RestTemplate 接入 Ribbon：
+1. 添加 @LoadBalanced 注解，使得 RestTemplate 接入 Ribbon：
 
    ```java
    @Bean
